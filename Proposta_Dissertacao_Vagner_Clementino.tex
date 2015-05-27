@@ -1,0 +1,58 @@
+\documentclass[msc,proposal]{ppgccufmg} % ou [msc] para dissertações
+										% de mestrado. Para propostas ou
+										% projetos, usar [phd,project],
+										% [msc,proposal], etc.
+\usepackage[brazil]{babel} % ajusta vários detalhes para
+						   % documentos escritos em português,
+						   % principalmente hifenização
+\usepackage[T1]{fontenc}   % permite a hifenização de
+						   % palavras acentuadas
+\usepackage[utf8x]{inputenc} % ou [utf8x] para quem prefere
+							 % usar a codificação UTF-8
+\usepackage{graphicx} % define o comando \includegraphics
+					  % para a inclusão de figuras
+\usepackage[square]{natbib} % permite citações naturalmente
+							% integradas ao texto
+\begin{document}
+\ppgccufmg{
+title={Uma linguagem para modelagem conceitual em XBRL},
+author={Vagner Clementino},
+university={Universidade Federal de Minas Gerais},
+course={Ciência da Computação},
+address={Belo Horizonte},
+date={2015-05},
+advisor={Rodolfo Rezende},
+abstract={Resumo}{resumo},
+}
+\chapter{Introdução}
+\label{ch:intro}
+No cenário atual, onde os sistemas de informação tem se tornado grandes e complexos, vemos a existência de um ecossistema de sistemas, também conhecidos como \textit{System of System} (SoS) \cite{Nakagawa:2013:SAF:2489850.2489853}. Organizações de grande porte, como os governos nacionais, precisam projetar sistemas de sistema ao invés vez de sistemas isolados a fim de enfrentar desafios tais como: $(i)$ colaboração entre organizações financiadas e geridas de forma independente; $(ii)$ migração para um ambiente orientado a serviços (SOA\footnote{Service Oriented Architecture }); $(iii)$ processos de testes e verificação da conformidade para sistemas de sistemas. Neste contexto, surge a necessidade do desenvolvimento de \textit{abordagens, técnicas e tecnologias} para a interação e evolução dos SoS.
+     
+     
+
+\chapter{Revisão da Literatura}
+\label{ch:revisao}
+
+
+\chapter{Objetivos}
+\label{ch:objetivos}
+
+
+\chapter{Metodologia}
+\label{ch:metodologia}
+
+% Incluindo bibliografia:
+\ppgccbibliography{./bib/bibliografia}
+% apêndices, se houver
+%\begin{appendices}
+%\chapter{Um apêndice}
+%...conteúdo do apêndice...
+%\chapter{Outro apêndice}
+%...conteúdo do apêndice...
+%\end{appendices}
+% anexos, se houver
+\begin{attachments}
+\chapter{Cronograma}
+\label{att:cronograma}
+\end{attachments}
+\end{document}
