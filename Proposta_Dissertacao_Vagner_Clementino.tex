@@ -24,6 +24,8 @@ urlcolor=black,
 linkcolor=black,
 filecolor=black,
 ]{hyperref}
+\usepackage[table,xcdraw]{xcolor}
+
 
 \begin{document}
 \ppgccufmg{
@@ -116,7 +118,7 @@ No próximo capítulos iremos revisar a literatura relativo à definição de on
 \chapter{Revisão da Literatura}
 \label{ch:revisao}
 
-Bosch:2013:APD:2575980.2575988 apresenta um estudo sobre a criação de ontologias com base em XML Schemas. Arquivos no formato XML Schemas são utilizados por linguagem como XBRL para definir os conceitos a serem utilizados em determinado domínio.Neste sentido, todas as informações localizadas m XML Schemas podem ser reutilizados a fim de reduzir a necessidade de criar ontologias de domínio a partir do zero. Os autores argumentam que o tempo e esforço economizado poderiam ser utilizados para acrescentar informações semânticas específicas do domínio específico, tendo em vista que est tipo de detalhamento não existem nos esquemasXML Schemas.
+\cite{Bosch:2013:APD:2575980.2575988} apresentam um estudo sobre a criação de ontologias com base em XML Schemas. Arquivos no formato XML Schemas são utilizados por linguagem como XBRL para definir os conceitos a serem utilizados em determinado domínio.Neste sentido, todas as informações localizadas m XML Schemas podem ser reutilizados a fim de reduzir a necessidade de criar ontologias de domínio a partir do zero. Os autores argumentam que o tempo e esforço economizado poderiam ser utilizados para acrescentar informações semânticas específicas do domínio específico, tendo em vista que est tipo de detalhamento não existem nos esquemasXML Schemas.
 
 Em \cite{journals/ijcsa/Pierre08} há uma discussão sobre alguns dos problemas do uso de representações formais no domínio da contabilidade. O objetivo do autor era construir uma representação das informações financeiras de uma forma eficiente. Todavia, devido a própria maneira que a contabilidade é construída, basicamente de leis e normas, existem diversos problemas na representação dos elementos da mesma. Não obstante, Pierre considera a XBRL como uma boa alternativa para uma representação formal da contabilidade. O autor ressalta que a XBRL trouxe novos elementos para o processo de criação de relatórios financeiros: $(i)$ facilidade na produção e publicação das informações contábeis; $(ii)$ compartilhamento e possibilidade comparação partilha de informação; $(iii)$ verificação e certificação da informação; $(iv)$ ganho no processo de análise. Ele conclui que XBRL é bom padrão para armazenar informações, contudo, faz uma crítica ao padrão por não fornecer nenhuma formalização explícita de dados financeiros ou das normas contabilísticas.
 
@@ -146,10 +148,14 @@ Finalizado o levantamento teórico do trabalho, o próximo passo é definir os e
 \section{Ferramenta de Modelagem}
 \label{sec:ferramenta}
 
-
+A adoção de uma nova notação será facilitade se existirem ferramentas que facilitem a sua criação, alteração e disponibilização. Neste sentido, faria pouco sentido definir uma linguagem conceitual para a XBRL sem, contudo, criar uma ferramenta que lhe desse apoio. Assim, uma das etapas deste trabalho será o desenvolvimento de uma ferramenta que possibilite a criação de diagrama no modelo proposto. Esta ferramenta será de suma importânica na última etapa do trabalho, que trata da avaliãção da linguagem proposta.
 
 \section{Avaliação}
 \label{sec:avaliacao}
+
+A fim de avaliar se a linguagem proposto atendeu aos seus requisitos, será realizadas uma bateria de testes com diferentes usúarios. O baseline será o \textit{XBRL Abstract Model}, onde prentende-se analisar fatores como capacidade de comunicação, expressividade, dentre outros aspectos das duas linguagens.
+
+O experimentos de avaliação será composto de duas etapas. Em um primeiro momento, profissionais de tecnologia da informação e contabilidade, serão convidados a modelar uma taxonomia XBRL utilizando a linguagem proposta e o XBRL Abstract Model. Posteriormente, estes diagramas serão avaliados por outros profissionais no tocante as aspectos como expressividade. Estes dados serão tabulados para posterior avaliação.
 
 % Incluindo bibliografia:
 \ppgccbibliography{./bib/bibliografia}
@@ -164,5 +170,22 @@ Finalizado o levantamento teórico do trabalho, o próximo passo é definir os e
 \begin{attachments}
 \chapter{Cronograma}
 \label{attch:cronograma}
+
+\begin{table}[h]
+\begin{tabular}{|c|l|c|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\textbf{\#} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{Atividade}} & \textbf{Início (MM/AAAA)} & \textbf{Termino  (MM/AAAA)} \\ \hline
+01          & Revisão da literatura                                           & 07/2015                   & 08/2015                     \\ \hline
+02          & Revisão da especificação XBRL                                   & 09/2015                   & 09/2015                     \\ \hline
+03          & Definição da linguagem                                          & 10/2015                   & 12/2015                     \\ \hline
+04          & Construção da ferramenta                                        & 01/2016                   & 02/2016                     \\ \hline
+05          & Avaliação da linguagem                                          & 03/2016                   & 03/2016                     \\ \hline
+06          & Redigir a dissertação                                           & 04/2015                   & 05/2016                     \\ \hline
+07          & Defesa da dissertação                                           & 07/2016                   & 07/2016                     \\ \hline
+\end{tabular}
+\label{tab:cronograma}
+\end{table}
+
 \end{attachments}
 \end{document}
