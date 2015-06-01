@@ -102,7 +102,25 @@ A solução utilizada para minimizar estes problemas é adoção de uma linguage
 \label{fig:fluxo_info_xbrl}
 \end{figure}
 
-Apesar de sua importância e crescente adoção, o \textit{XBRL Consortium} sentiu a necessidade de definir um modelo abstrato da XBRL (\cite{xbrl_preserve_promote_particite}) que facilitasse a compreensão da linguagem pelos profissionais da tecnologia da informação.Em 2012 foi proposto o \textit{XBRL Abstract Model 2.0}\footnote{\url{http://www.xbrl.org/Specification/abstractmodel-primary/PWD-2012-06-06/abstractmodel-primary-pwd-2012-06-06.html}} que consiste basicamente de uma versão estendida da UML com objetivo de captura aspectos semânticos da XBRL. 
+Apesar de sua importância e crescente adoção, o \textit{XBRL Consortium} sentiu a necessidade de definir um modelo abstrato da XBRL (\cite{xbrl_preserve_promote_particite}) que facilitasse a compreensão da linguagem pelos profissionais da tecnologia da informação.Em 2012 foi proposto o \textit{XBRL Abstract Model 2.0}\footnote{\url{http://www.xbrl.org/Specification/abstractmodel-primary/PWD-2012-06-06/abstractmodel-primary-pwd-2012-06-06.html}} que consiste basicamente de uma versão estendida da UML com objetivo de captura aspectos semânticos da XBRL.
+
+No contexto da XBRL, uma ontologia é denominada como \textit{Taxonomia XBRL}{}. Consiste de um dicionário estruturado que resume o conjunto de conceitos contábeis/financeiros utilizado por determinada organização ou país. A partir de uma taxonomia é possível criar as \textit{Instâncias XBRL}, que contêm efetivamente os dados contábeis e financeiros que são assim trocados pelas empresas e as organizações envolvidas. Em síntese, a taxonomia é molde/validador para os documentos de instância XBRL.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=1.0\textwidth]{img/documentos_in_xbrl.eps}
+\caption{Documentos na estrutura XBRL.}
+\label{fig:fluxo_info_xbrl}
+\end{figure}
+
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=.75\textwidth]{img/taxonomia.eps}
+\caption{Taxonomia XBRL.}
+\label{fig:fluxo_info_xbrl}
+\end{figure}
+
 
 Um modelo abstrato deverá remover do seu escopo qualquer questão relativa à implementação do objeto modelado. Neste sentido, no caso de XBRL, o modelo abstrato deveria remover todas as referências a XML, o que não ocorreu no XBRL Abstract Model. Ademais, apesar da UML ser largamente utilizada entre os profissionais de Tecnologia da Informação, o seu uso para comunicação com os demais stakeholders muitas vezes não é o ideal (\cite{peixoto2008comparison}).
 
