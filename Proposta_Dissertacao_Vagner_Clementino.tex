@@ -101,7 +101,7 @@ Uma solução utilizada para minimizar estes problemas é adoção de uma lingua
 \label{fig:fluxo_info_xbrl}
 \end{figure}
 
-Apesar de sua importância e crescente adoção, o \textit{XBRL Consortium} sentiu a necessidade de definir um modelo abstrato da XBRL (\cite{xbrl_preserve_promote_particite}) que facilitasse a compreensão da linguagem pelos profissionais da tecnologia da informação.Em 2012 foi proposto o \textit{XBRL Abstract Model 2.0}\footnote{\url{http://www.xbrl.org/Specification/abstractmodel-primary/PWD-2012-06-06/abstractmodel-primary-pwd-2012-06-06.html}} que consiste basicamente de uma versão estendida da UML com objetivo de capturar os aspectos semânticos da XBRL.
+Apesar de sua importância e crescente adoção, o \textit{XBRL Consortium} sentiu a necessidade de definir um modelo abstrato da XBRL (\cite{xbrl_preserve_promote_particite}) que facilitasse a compreensão da linguagem pelos profissionais da tecnologia da informação.Em 2012 foi proposto o \textit{XBRL Abstract Model 2.0}\footnote{\url{http://www.xbrl.org/Specification/abstractmodel-primary/PWD-2012-06-06/abstractmodel-primary-pwd-2012-06-06.html}} que consiste basicamente de uma versão estendida da \textit{Unified Modeling Language} (UML)\cite{booch2000uml} com objetivo de capturar os aspectos semânticos da XBRL.
 
 No contexto da XBRL, uma ontologia é denominada como \textit{Taxonomia XBRL}{}. Consiste de um dicionário estruturado que resume o conjunto de conceitos contábeis/financeiros utilizado por determinada organização ou país. A partir de uma taxonomia é possível criar as \textit{Instâncias XBRL}, que contêm efetivamente os dados contábeis e financeiros que são assim trocados pelas empresas e as organizações envolvidas. Em síntese, a taxonomia é molde/validador para os documentos de instância XBRL.
 
@@ -148,15 +148,15 @@ Nos próximos capítulos iremos revisar a literatura relativo à definição de 
 \chapter{Revisão da Literatura}
 \label{ch:revisao}
 
-\cite{Bosch:2013:APD:2575980.2575988} apresentam um estudo sobre a criação de ontologias com base em XML Schemas. Arquivos no formato XML Schemas são utilizados por linguagem como XBRL para definir os conceitos a serem utilizados em determinado domínio. Neste sentido, todas as informações localizadas em um XML Schemas podem ser reutilizados a fim de reduzir a necessidade de criar ontologias de domínio a partir do zero. Os autores argumentam que o tempo e esforço economizados poderiam ser utilizados para acrescentar informação semântica inerente ao domínio, tendo em vista que este tipo de detalhamento não existem nos XML Schemas.
+No trabalho de \cite{Bosch:2013:APD:2575980.2575988} é apresentado um estudo sobre a criação de ontologias com base em XML Schemas. Arquivos no formato XML Schemas são utilizados por linguagem como XBRL para definir os conceitos a serem utilizados em determinado domínio. Neste sentido, todas as informações localizadas em um XML Schemas podem ser reutilizados a fim de reduzir a necessidade de criar ontologias de domínio a partir do zero. Os autores argumentam que o tempo e esforço economizados poderiam ser utilizados para acrescentar informação semântica inerente ao domínio, tendo em vista que este tipo de detalhamento não existem nos XML Schemas.
 
 Em \cite{journals/ijcsa/Pierre08} há uma discussão sobre alguns dos problemas do uso de representações formais no domínio da contabilidade. O objetivo do autor era construir uma representação das informações financeiras de uma forma eficiente. Todavia, devido a própria maneira que a contabilidade é construída, basicamente de leis e normas, existem diversos problemas na representação dos elementos da mesma. Não obstante, Pierre considera a XBRL como uma boa alternativa para uma representação formal da contabilidade. O autor ressalta que a XBRL trouxe novos elementos para o processo de criação de relatórios financeiros: $(i)$ facilidade na produção e publicação das informações contábeis; $(ii)$ compartilhamento e possibilidade comparação partilha de informação; $(iii)$ verificação e certificação da informação; $(iv)$ ganho no processo de análise. Ele conclui que XBRL é bom padrão para armazenar informações, contudo, faz uma crítica ao padrão por não fornecer nenhuma formalização explícita de dados financeiros ou das normas contabilísticas.
 
-\cite{lupacsc2010role} realiza uma análise do REA Framework\footnote{\url{http://reatechnology.com/}} como uma ontologia de contabilidade para sistemas de informação. Os elementos básicos do REA são recursos, eventos, agentes, fluxos, controle e \textit{duality} (\cite{mccarthy1982rea}). Os autores estendem o REA a fim de possibilitar a adição e compartilhamento do conhecimento.
+Os pesquisadores \cite{lupacsc2010role} realizam uma análise do REA Framework\footnote{\url{http://reatechnology.com/}} como uma ontologia de contabilidade para sistemas de informação. Os elementos básicos do REA são recursos, eventos, agentes, fluxos, controle e \textit{duality} (\cite{mccarthy1982rea}). Os autores estendem o REA a fim de possibilitar a adição e compartilhamento do conhecimento.
 
-\cite{gailly2007positioning} utilizaram a UML para representar graficamente ontologias baseadas no REA. Os autores utilizaram metodologias tradicionais para a criação de ontologias para desenvolver o modelo proposto e argumentam que REA é uma ontologia de domínio do negócio. Eles concluem que linguagens conceituais tais como UML possuem a riqueza necessária para representar REA componentes ontológicos. Todavia, alguns detalhes dos elementos representados não são capazes de serem explicitados.
+Em \cite{gailly2007positioning} utilizou-se a UML para representar graficamente ontologias baseadas no REA. Os autores utilizaram metodologias tradicionais para a criação de ontologias para desenvolver o modelo proposto e argumentam que REA é uma ontologia de domínio do negócio. Eles concluem que linguagens conceituais tais como UML possuem a riqueza necessária para representar REA componentes ontológicos. Todavia, alguns detalhes dos elementos representados não são capazes de serem explicitados.
 
-\cite{sugumaran2002ontologies} discutem a criação, uso e gestão de ontologias para modelagem conceitual. Eles também propõe um processo para gestão de ontologias. Os objetivos dos trabalho incluem demostrar a importância de ontologias na modelagem conceitual e propor um modelo baseada em heurística  para a criação de ontologias em determinado domínio. Eles observam que a maioria das ontologias são criadas manualmente e que não existe uma metodologia largamente aceita para construção das mesmas. O seu método de criação ontologia proposto é composto por quatro etapas. O primeiro passo é a identificação de termos básicos do domínio. Isto inclui duas subetapas: a identificação dos termos mais frequentes e a identificação de sinônimos e termos relacionados. O segundo passo é a identificação dos relacionamentos. Existem três tipos de relações: relações entre termos básicos, relações entre ontologias, e as relações entre ontologias e sub-ontologias. O terceiro passo é a identificação de restrições e regras do domínio. O quarto passo é a identificação de restrições de nível superior. Estas restrições capturar o conhecimento de domínio. Os autores observam ainda que, enquanto a maioria das ontologias são construídos estaticamente, a maioria dos domínios, na verdade, evoluem com o tempo. O desenvolvimento de uma ontologia deve incluir esta evolução.
+No trabalho de \cite{sugumaran2002ontologies} há a discussão da criação, uso e gestão de ontologias para modelagem conceitual. Eles também propõe um processo para gestão de ontologias. Os objetivos dos trabalho incluem demostrar a importância de ontologias na modelagem conceitual e propor um modelo baseada em heurística  para a criação de ontologias em determinado domínio. Eles observam que a maioria das ontologias são criadas manualmente e que não existe uma metodologia largamente aceita para construção das mesmas. O seu método de criação ontologia proposto é composto por quatro etapas. O primeiro passo é a identificação de termos básicos do domínio. Isto inclui duas subetapas: a identificação dos termos mais frequentes e a identificação de sinônimos e termos relacionados. O segundo passo é a identificação dos relacionamentos. Existem três tipos de relações: relações entre termos básicos, relações entre ontologias, e as relações entre ontologias e sub-ontologias. O terceiro passo é a identificação de restrições e regras do domínio. O quarto passo é a identificação de restrições de nível superior. Estas restrições capturar o conhecimento de domínio. Os autores observam ainda que, enquanto a maioria das ontologias são construídos estaticamente, a maioria dos domínios, na verdade, evoluem com o tempo. O desenvolvimento de uma ontologia deve incluir esta evolução.
 
 \chapter{Metodologia}
 \label{ch:metodologia}
@@ -168,7 +168,7 @@ O processo de desenvolvimento deste trabalho pode ser dividido em quatro partes 
 
 O primeiro passo no desenvolvimento do trabalho será revisar a literatura relativa a criação de ontologias, especialmente no domínio contábil e financeiro. Conforme proposto por \cite{wohlin2012experimentation} será definido um protocolo de revisão com o objetivo de conduzir o processo de coleta de artigos. Este protocolo conterá, dentre outros tópicos, os critérios de seleção de trabalhos, estratégia para extração de dados; definição de questões de pesquisas, dentre outros. O protocolo será revisto com o orientador visando garantir suas consistência e validade.
 
-Nesta etapa também será revisada a especificação da XBRL\footnote{\url{http://specifications.xbrl.org/specifications.html}} com o objetivo de conseguir subsídios para a criação da ontologia. Conforme discutido em \cite{lupacsc2010role}{}, um dos passos para criação de uma ontologia efetiva é a identificação de termos básicos do domínio. Nesta tarefa poderá utilizado técnicas de recuperação da informação como índices invertidos (\cite{baeza1999modern}).
+Nesta etapa também será revisada a especificação da XBRL\footnote{\url{http://specifications.xbrl.org/specifications.html}} com o objetivo de conseguir subsídios para a criação da ontologia. Conforme discutido em \cite{lupacsc2010role}{}, um dos passos para criação de uma ontologia efetiva é a identificação de termos básicos do domínio. Nesta tarefa poderá utilizado técnicas de recuperação da informação como índices invertidos \cite{baeza1999modern}.
 
 \section{Desenvolvimento da Linguagem}
 \label{sec:dese_lingugem}
@@ -192,11 +192,7 @@ O experimento de avaliação será composto de duas etapas. Em um primeiro momen
 
 Conforme pôde ser observado, a XBRL vêm se tornando de fato um padrão para intercâmbio de dados contáveis e financeiros. Contudo, apesar de sua crescente adoção, não há uma notação que possibilite a modelagem de sua taxonomia. Tentando preencher esta lacuna, o trabalho ora proposto pretende definir uma linguagem conceitual para criação de taxonomias em XRL. Para tanto, a tabela \ref{tab:cronograma} descreve as atividades que serão realizadas para atingir este objetivo.
 
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-% \usepackage[table,xcdraw]{xcolor}
-% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[h]
+\begin{table}[!h]
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|l|c|c|}
 \hline
@@ -228,19 +224,4 @@ Conforme pôde ser observado, a XBRL vêm se tornando de fato um padrão para in
 
 % Incluindo bibliografia:
 \ppgccbibliography{./bib/bibliografia}
-% apêndices, se houver
-%\begin{appendices}
-%\chapter{Um apêndice}
-%...conteúdo do apêndice...
-%\chapter{Outro apêndice}
-%...conteúdo do apêndice...
-%\end{appendices}
-% anexos, se houver
-%\begin{attachments}
-%\chapter{Cronograma}
-%\label{attch:cronograma}
-
-
-
-%\end{attachments}
 \end{document}
