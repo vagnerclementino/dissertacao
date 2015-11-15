@@ -41,21 +41,41 @@ abstract={Resumo}{resumo},
 }
 \chapter{Introdução}
 \label{ch:Contexto}
-No cenário atual, onde os sistemas de informação tem se tornado grandes e complexos, vemos a existência de um ecossistema de sistemas, também conhecidos como \textit{Systems of Systems} (SoS) \cite{Nakagawa:2013:SAF:2489850.2489853}. Organizações de grande porte, como os governos municipais, estaduais ou federal ou mesmo empresas multinacionais, precisam projetar sistemas de sistema ao invés vez de sistemas isolados a fim de enfrentar desafios tais como: $(i)$ colaboração entre organizações financiadas e geridas de forma independente; $(ii)$ migração para um ambiente orientado a serviços (SOA\footnote{Service Oriented Architecture }); $(iii)$ processos de testes e verificação da conformidade para sistemas de sistemas. Neste contexto, surge a necessidade do desenvolvimento de \textit{abordagens, técnicas e tecnologias} para a interação e evolução dos SoS.
+No cenário atual, onde os sistemas de informação tem se tornado grandes e
+complexos, vemos a existência de um ecossistema de sistemas, também conhecidos
+como Sistemas de Sistema \textit{Systems of Systems} (SoS)
+\cite{Nakagawa:2013:SAF:2489850.2489853}. Organizações de grande porte, como os
+governos municipais, estaduais ou federal ou mesmo empresas multinacionais,
+precisam projetar \textit{SoS} ao invés vez de sistemas isolados a fim de enfrentar desafios tais como: $(i)$ colaboração entre organizações financiadas e geridas de forma independente; $(ii)$ migração para um ambiente orientado a serviços (SOA\footnote{Service Oriented Architecture }); $(iii)$ processos de testes e verificação da conformidade para Sistemas de Sistema. Neste contexto, surge a necessidade do desenvolvimento de \textit{abordagens, técnicas e tecnologias} para a interação e evolução dos SoS.
 
-No tocante a interoperabilidade de dados, diversos padrões vêm sendo propostos. Mais recentemente o formato JSON \cite{RFC4627} vêm crescendo em popularidade, contudo, o intercâmbio de dados é realizado primordialmente através da XML (Extensible Markup Language\footnote{\url{http://www.w3.org/XML/}}) e seus derivados. Na área medica, o padrão HL7 V3 message\footnote{\url{http://www.hl7.org/}} vêm sendo largamente adotado para troca de mensagem entre sistemas médicos \cite{Andrikopoulos:2013:TEO:2491845.2491890}{}. No contexto dos Sistemas de Informação Geográficas (SIG) a GML (Geography Markup Language\footnote{\url{http://www.opengeospatial.org/standards/gml}}) consolidou-se com o principal instrumento para interoperabilidade de dados geográficos \cite{gmlpaper}{}. Na área financeira diversas linguagens de marcação vêm sendo utilizadas para o intercâmbio de informações na Internet: \textit{Open Financial Exchange}\footnote{\url{http://www.ofx.net/}} (OFX), \textit{Eletronic Business Using XML}\footnote{\url{http://www.ebxml.org}} (ebXML), \textit{Financial Information eXchange}\footnote{\url{https://fixspec.com/}} (FIX), \textit{Market Data Definition Language}\footnote{\url{http://www.mddl.org}}, dentre outras \cite{xbrl_conceitos_aplicacoes}{}.
+No tocante a interoperabilidade de dados, diversos padrões vêm sendo
+propostos. Mais recentemente o formato JSON \cite{RFC4627} vêm crescendo em
+popularidade, contudo, o intercâmbio de dados é realizado primordialmente
+através da linguagem XML (Extensible Markup
+Language\footnote{\url{http://www.w3.org/XML/}}) e suas derivadas. Na área
+médica, o padrão HL7 V3 message\footnote{\url{http://www.hl7.org/}} vêm sendo
+largamente adotado para troca de mensagem entre sistemas de informação \cite{Andrikopoulos:2013:TEO:2491845.2491890}{}. No contexto dos Sistemas de Informação Geográficas (SIG) a GML (Geography Markup Language\footnote{\url{http://www.opengeospatial.org/standards/gml}}) consolidou-se com o principal instrumento para interoperabilidade de dados geográficos \cite{gmlpaper}{}. Na área financeira diversas linguagens de marcação vêm sendo utilizadas para o intercâmbio de informações na Internet: \textit{Open Financial Exchange}\footnote{\url{http://www.ofx.net/}} (OFX), \textit{Eletronic Business Using XML}\footnote{\url{http://www.ebxml.org}} (ebXML), \textit{Financial Information eXchange}\footnote{\url{https://fixspec.com/}} (FIX), \textit{Market Data Definition Language}\footnote{\url{http://www.mddl.org}}, dentre outras \cite{xbrl_conceitos_aplicacoes}{}.
 
-Com o advento da Web as linguagens de marcação cresceram em importância sobretudo devido a necessidade de se adicionar significado a informações sendo transferidas. Contudo, o padrão HTML (Hypertext
+Com o advento da Web as linguagens de marcação cresceram em importância, sobretudo devido a necessidade de se adicionar significado a informações sendo transferidas. Contudo, o padrão HTML (Hypertext
 Markup Language) foi desenvolvido com objetivo de descrever \textit{como} a informação deve ser apresentada e não possui compromisso com o significado da informação. Nos meados da década de 1980,  a Organização para Padronização Internacional (ISO) propôs uma metalinguagem padrão a fim de etiquetar informações com conteúdo semântico. Esta linguagem foi denominada como \textit{Standard Generalized Markup Language} (SGML) \cite{smith1988sgml}.
 
-A linguagem SGML, embora fosse capaz de definir diferentes tipos de marcação, a sua flexibilidade trouxe como preço a complexidade. O conceito era correto, todavia, havia a necessidade de ser mais simples. Com este objetivo em mente, um pequeno grupo de trabalho e um maior número de interessados começou a trabalhar em
+A linguagem SGML, embora fosse capaz de definir diferentes tipos de marcação,
+era de outra forma bastante complexa. O conceito era correto, todavia, havia a necessidade de ser mais simples. Com este objetivo em mente, um pequeno grupo de trabalho e um maior número de interessados começou a trabalhar em
 meados dos anos 1990 em um subconjunto de SGML conhecido como \textit{Extensible Markup Language} (XML). A versão 1.0 foi publicada em 1996 e, dois anos mais tarde, o World Wide Web Consortium\footnote{\url{http://www.w3.org}} (W3C) publicou uma versão revisada \cite{Fawcett:2012:BX:2408362}{}.
 
 Conforme exposto, a XML foi especificada a partir da SGML, na tentativa de se resolver as limitações da HTML
 e da SGML. Neste sentido, um documento em XML pode ser publicado na Web, interpretado por pessoas
 ou processado por aplicações. Apropriando-se desta características da XML, diversas linguagens vêm sendo propostas com a finalidade de troca de informações.
 
-A XBRL (\textit{eXtensible Business Reporting Language}) é uma linguagem para divulgação e intercâmbio de informações financeiras baseada em XML\cite{xbrl_conceitos_aplicacoes}. O padrão vem sendo adotado por diversas instituições e empresas em todo mundo com o suporte de um consórcio global\footnote{\url{www.xbrl.org}} com mais de 650 membros que incentivam a criação de jurisdições locais. Atualmente o consórcio conta com 24 jurisdições, sendo que em países como  Estados Unidos, Grã-Bretanha e Austrália, a XBRL já é a linguagem oficial para entrega de relatórios à órgãos de governo. A Figura \ref{fig:world_map} exibe os países que estão promovendo a adoção da XBRL.
+A XBRL (\textit{eXtensible Business Reporting Language}) é uma linguagem para
+divulgação e intercâmbio de informações financeiras baseada em
+XML\cite{xbrl_conceitos_aplicacoes}. O padrão vem sendo adotado por diversas
+instituições e empresas em todo mundo com o suporte de um consórcio
+global\footnote{\url{www.xbrl.org}} com mais de 650 membros que incentivam a
+criação de jurisdições locais. Atualmente o consórcio conta com 24 jurisdições,
+sendo que em países como  Estados Unidos, Grã-Bretanha e Austrália, a XBRL já é
+a linguagem oficial para entrega de relatórios à órgãos de governo. A Figura
+\ref{fig:world_map} exibe em cinza os países que estão promovendo a adoção da XBRL.
 
 \begin{figure}[hbtp]
 \centering
@@ -68,14 +88,44 @@ Os estudos para definição da XBRL iniciaram em 1998 nos Estados Unidos pelo co
 
 A linguagem XBRL define a estrutura básica dos documentos de instância, que são aqueles que portam os dados, e possibilita ainda a especificação de taxonomias que podem ser criadas para acomodar particularidades de cada organização por meio da introdução de novos elementos, denominados conceitos. Neste sentido, a linguagem possui elementos que facilitam a sua extensão e, por consequência, a adoção em diversos contextos.
 
-Apesar de sua crescente adoção, falta à XBRL uma notação que facilite a sua modelagem e a comunicação entre as diferentes partes interessadas (\textit{`interessados"}. A necessidade de um modelo abstrato para a XBRL foi manifestada pelo próprio \textit{XBRL Consortium}. Em 2010 (\cite{xbrl_preserve_promote_particite}), o consórcio declarou que a criação de um modelo conceitual é uma das seis iniciativas que darão suporte a contínua adoção do padrão. Com o objetivo de preencher esta lacuna propõe neste documento o desenvolvimento de uma linguagem conceitual para a XBRL. A seguir descreve-se como o documento está estruturado.
+%Apesar de sua crescente adoção, falta à XBRL uma notação que facilite a sua modelagem e a comunicação entre as diferentes partes interessadas (\textit{`interessados"}. A necessidade de um modelo abstrato para a XBRL foi manifestada pelo próprio \textit{XBRL Consortium}. Em 2010 (\cite{xbrl_preserve_promote_particite}), o consórcio declarou que a criação de um modelo conceitual é uma das seis iniciativas que darão suporte a contínua adoção do padrão. Com o objetivo de preencher esta lacuna propõe neste documento o desenvolvimento de uma linguagem conceitual para a XBRL. A seguir descreve-se como o documento está estruturado.
 
-No Capítulo \ref{ch:justificativa} discute-se as justificativas para adoção da XBRL bem como da criação de uma linguagem conceitual. O Capítulo \ref{ch:revisao} apresenta-se a revisão da literatura no tocante a criação de ontologias em diversos campos dos conhecimento, especialmente para área financeira e contábil. No Capítulo \ref{ch:metodologia} é discutida a metologia a ser aplicada. No Apêndice \ref{attch:cronograma} é exibido o cronograma do trabalho.
+Tendo em vista determinação da Secretaria do Tesouro Nacional, órgão
+vinculado ao  Ministério da Fazenda do Brasil, que definiu o XBRL como
+padrão para o envio de relatórios de prestação de contas pelos entes
+federativos (estados e municípios) por meio do SICONFI – Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro \cite{nt_03_2013}, surge a necessidade por parte
+daquelas organizações do \textit{desenvolvimento ou aquisição} de sistemas de
+informação capazes de criar, processar e enviar informações no formato
+XBRL. Um cenário onde tal situação ocorre tal necessidade é latente é em prefeituras de cidades de pequeno e médio porte que necessitam prestar contas via \textit{XBRL}, contudo
+não possuem conhecimento ou tempo necessário para desenvolver alguma ferramenta que suporte a linguagem.
+
+Neste sentido, verifica-se que existe a demanda por parte das organizações,
+especialmente as entidades públicas, de referências de qualidade sobre o
+assunto de \textit{XBRL}. Neste contexto, se faz necessário a definição de um
+conjunto de diretrizes que suportem o processo de construção de ferramentas
+Business Report (Relatórios do Negócio)  que dão suporte ao XBRL. Este
+conjunto de diretrizes pode \textit{subsidiar a tomada de decisão} por parte
+dos gestores públicos sobre a aquisição de tais ferramentas.
+Além disso, um trabalho neste sentido poderia subsidiar o desenvolvimento de novas ferramentas que venham preencher as eventuais lacunas existentes nos sistemas atuais. Ademais, traz o foco da comunidade científica sobre um assunto que vêm crescendo bastante nos últimos anos, dentre outros motivos, devido à necessidade das organizações públicas ou privadas de serem cada vez mais transparentes.
+
+
+No Capítulo \ref{ch:justificativa} discute-se as justificativas para adoção da
+XBRL bem como da definição das diretrizes. O Capítulo \ref{ch:revisao}
+apresenta-se a revisão da literatura a adoção da XBRL e dos trabalhos que
+propões diretrizes para construção de ferramentas nas Relatórios de Negócio. No
+Capítulo \ref{ch:metodologia} é discutida a metologia a ser aplicada. No
+Capítulo \ref{ch:conclusao_trab_futuros}, especialmente na Tabela \ref{tab:cronograma} é exibido o cronograma do trabalho.
 
 \chapter{Justificativa}
 \label{ch:justificativa}
 
-Nas organizações as informações contábeis e financeiras são armazenadas em diversos formatos (planilhas eletrônicas, documentos de texto, bancos de dados relacionais e etc). Não obstante, se faz necessário a transformação destas informações em um formato único a fim de facilitar a sua recuperação bem como a sua transmissão para outros sistemas. O processo de transformação e redirecionamento da informação internamente na organização, entre a organização e sua filiais ou mesmo entre a empresa e os governos. Este fluxo de informação, especialmente para a geração de relatórios, é exibido na Figura \ref{fig:fluxo_dados}.
+Nas organizações as informações contábeis e financeiras são armazenadas em
+diversos formatos (planilhas eletrônicas, documentos de texto, bancos de dados
+relacionais e etc).
+Não obstante, se faz necessário a transformação destas informações em um
+formato único a fim de facilitar a sua recuperação bem como a sua transmissão
+para outros sistemas.
+ O processo de transformação e redirecionamento da informação ocorre internamente na organização, entre a organização e sua filiais ou mesmo entre a empresa e os governos. Este fluxo de informação, especialmente para a geração de relatórios, é exibido na Figura \ref{fig:fluxo_dados}.
 
 \begin{figure}[hbtp]
 \centering
@@ -84,8 +134,14 @@ Nas organizações as informações contábeis e financeiras são armazenadas em
 \label{fig:fluxo_dados}
 \end{figure}
 
-Se pensarmos em uma organização que necessita receber informações de diversos locais, como por exemplo o governo federal de um país que solicite a prestação de contas de estados e municípios, onde cada ente possui seu próprio sistema para registro dos fatos financeiros. Neste contexto, haverá a necessidade de se criar diferentes interfaces para a conversão de formatos e padrões de contabilização. A Figura \ref{fig:interfaces} ilustra este cenário.
-
+Se pensarmos em uma organização que necessita receber informações de diversos
+locais, como por exemplo o governo federal de um país que solicite a prestação
+de contas de estados e municípios,
+onde cada ente possui seu próprio sistema para registro dos fatos financeiros
+tal processo é extremamente complexo.
+Neste contexto, haverá a necessidade de se criar diferentes interfaces para a
+conversão de formatos e padrões de contabilização.
+A Figura \ref{fig:interfaces} ilustra este cenário.
 
 \begin{figure}[hbtp]
 \centering
@@ -163,7 +219,10 @@ No trabalho de \cite{sugumaran2002ontologies} há a discussão da criação, uso
 \chapter{Metodologia}
 \label{ch:metodologia}
 
-O processo de desenvolvimento deste trabalho pode ser dividido em quatro partes principais: $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ - Desenvolvimento da Linguagem}; $III$\textit{ - Construção da Ferramenta}; $IV$\textit{ - Avaliação}. Cada uma das etapas é detalhada nas próximas seções.
+O processo de desenvolvimento deste trabalho pode ser dividido em quatro partes
+principais: $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ -
+  Pequisa com Usuário (Survey)}; $III$\textit{ - Construção da Ferramenta
+  (Prova de Conceito)}; $IV$\textit{ - Avaliação (Estudo de Caso)}. Cada uma das etapas é detalhada nas próximas seções.
 
 \section{Revisão Sistemática da Literatura}
 \label{sec:revisao_sistematica}
