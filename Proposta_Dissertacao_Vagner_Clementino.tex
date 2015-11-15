@@ -1,18 +1,18 @@
 \documentclass[msc,proposal,hidelot,hideabstract]{ppgccufmg} % ou [msc] para dissertações
-										% de mestrado. Para propostas ou
-										% projetos, usar [phd,project],
-										% [msc,proposal], etc.
+                                        % de mestrado. Para propostas ou
+                                        % projetos, usar [phd,project],
+                                        % [msc,proposal], etc.
 \usepackage[brazil]{babel} % ajusta vários detalhes para
-						   % documentos escritos em português,
-						   % principalmente hifenização
+                           % documentos escritos em português,
+                           % principalmente hifenização
 \usepackage[T1]{fontenc}   % permite a hifenização de
-						   % palavras acentuadas
+                           % palavras acentuadas
 \usepackage[utf8x]{inputenc} % ou [utf8x] para quem prefere
-							 % usar a codificação UTF-8
+                             % usar a codificação UTF-8
 \usepackage{graphicx} % define o comando \includegraphics
-					  % para a inclusão de Figuras
+                      % para a inclusão de Figuras
 %\usepackage[square]{natbib} % permite citações naturalmente
-							% integradas ao texto
+                            % integradas ao texto
 \usepackage[a4paper,
 portuguese,
 bookmarks=true,
@@ -28,7 +28,9 @@ filecolor=black,
 
 \begin{document}
 \ppgccufmg{
-title={Uma linguagem para modelagem conceitual em XBRL},
+title={Presto:\\
+Diretrizes Construção de Sistemas para Extração de Relatórios de Negócio\\
+no Contexto da XBRL},
 author={Vagner Clementino},
 university={Universidade Federal de Minas Gerais},
 course={Ciência da Computação},
@@ -40,7 +42,7 @@ abstract={Resumo}{resumo},
 \chapter{Introdução}
 \label{ch:Contexto}
 No cenário atual, onde os sistemas de informação tem se tornado grandes e complexos, vemos a existência de um ecossistema de sistemas, também conhecidos como \textit{Systems of Systems} (SoS) \cite{Nakagawa:2013:SAF:2489850.2489853}. Organizações de grande porte, como os governos municipais, estaduais ou federal ou mesmo empresas multinacionais, precisam projetar sistemas de sistema ao invés vez de sistemas isolados a fim de enfrentar desafios tais como: $(i)$ colaboração entre organizações financiadas e geridas de forma independente; $(ii)$ migração para um ambiente orientado a serviços (SOA\footnote{Service Oriented Architecture }); $(iii)$ processos de testes e verificação da conformidade para sistemas de sistemas. Neste contexto, surge a necessidade do desenvolvimento de \textit{abordagens, técnicas e tecnologias} para a interação e evolução dos SoS.
-     
+
 No tocante a interoperabilidade de dados, diversos padrões vêm sendo propostos. Mais recentemente o formato JSON \cite{RFC4627} vêm crescendo em popularidade, contudo, o intercâmbio de dados é realizado primordialmente através da XML (Extensible Markup Language\footnote{\url{http://www.w3.org/XML/}}) e seus derivados. Na área medica, o padrão HL7 V3 message\footnote{\url{http://www.hl7.org/}} vêm sendo largamente adotado para troca de mensagem entre sistemas médicos \cite{Andrikopoulos:2013:TEO:2491845.2491890}{}. No contexto dos Sistemas de Informação Geográficas (SIG) a GML (Geography Markup Language\footnote{\url{http://www.opengeospatial.org/standards/gml}}) consolidou-se com o principal instrumento para interoperabilidade de dados geográficos \cite{gmlpaper}{}. Na área financeira diversas linguagens de marcação vêm sendo utilizadas para o intercâmbio de informações na Internet: \textit{Open Financial Exchange}\footnote{\url{http://www.ofx.net/}} (OFX), \textit{Eletronic Business Using XML}\footnote{\url{http://www.ebxml.org}} (ebXML), \textit{Financial Information eXchange}\footnote{\url{https://fixspec.com/}} (FIX), \textit{Market Data Definition Language}\footnote{\url{http://www.mddl.org}}, dentre outras \cite{xbrl_conceitos_aplicacoes}{}.
 
 Com o advento da Web as linguagens de marcação cresceram em importância sobretudo devido a necessidade de se adicionar significado a informações sendo transferidas. Contudo, o padrão HTML (Hypertext
@@ -116,12 +118,12 @@ de relatórios, sendo composta de um esquema, que compreende de um dicionário d
 \label{fig:docs_xbrl}
 \end{figure}
 
-Conforme exposto, uma taxonomia em XBRL é representada através de um arquivo na linguagem XML Schema (\textit{.xsd}). A Figura \ref{fig:taxonomia_xbrl} demonstra como um determinado conceicto é representado em uma taxonomia XBRL. Apesar de um arquivo \textit{.xsd} ser facilmente processado por computadores, o seu entendimento por parte dos seres humanos é mais difícil, sobretudo para profissionais que não tenham conhecimento prévio da XML. A Figura \ref{fig:arquivo_xsd} exibe uma parte de um arquivo \textit{.xsd} que corresponde à taxonomia proposta pela Secretaria de Tesouro Nacional\footnote{Disponível em \url{https://siconfi.tesouro.gov.br/siconfi/pages/public/taxonomia/taxonomia_list.jsf}}. 
+Conforme exposto, uma taxonomia em XBRL é representada através de um arquivo na linguagem XML Schema (\textit{.xsd}). A Figura \ref{fig:taxonomia_xbrl} demonstra como um determinado conceito é representado em uma taxonomia XBRL. Apesar de um arquivo \textit{.xsd} ser facilmente processado por computadores, o seu entendimento por parte dos seres humanos é mais difícil, sobretudo para profissionais que não tenham conhecimento prévio da XML. A Figura \ref{fig:arquivo_xsd} exibe uma parte de um arquivo \textit{.xsd} que corresponde à taxonomia proposta pela Secretaria de Tesouro Nacional\footnote{Disponível em \url{https://siconfi.tesouro.gov.br/siconfi/pages/public/taxonomia/taxonomia_list.jsf}}.
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=.5\textwidth]{img/taxonomia.eps}
-\caption{Taxonomia XBRL.}
+\caption{Modelo Conceitual da Taxonomia XBRL.}
 \label{fig:taxonomia_xbrl}
 \end{figure}
 
@@ -132,17 +134,17 @@ Conforme exposto, uma taxonomia em XBRL é representada através de um arquivo n
 \label{fig:arquivo_xsd}
 \end{figure}
 
-Suponha a comunicação entre uma equipe interdisciplinar utilizando apenas o arquivo exibido na Figura \ref{fig:arquivo_xsd}. Naturalmente haveria um prejuízo no processo comunicativo devido à inerente complexidade de um XML Schema. Desta forma, se faz necessário definir algum tipo de notação que facilite a comunicação entre os projetista de uma taxonomia XBRL, bem como propicie o densevolvimento de modelos de taxonomia que poderia, através de ferramentas de \textit{forward engineering}, criar os arquivos \textit{.xsd}{}.
+Suponha a comunicação entre uma equipe interdisciplinar utilizando apenas o arquivo exibido na Figura \ref{fig:arquivo_xsd}. Naturalmente haveria um prejuízo no processo comunicativo devido à inerente complexidade de um XML Schema. Desta forma, se faz necessário definir algum tipo de notação que facilite a comunicação entre os projetista de uma taxonomia XBRL, bem como propicie o desenvolvimento de modelos de taxonomia que poderia, através de ferramentas de \textit{forward engineering}, criar os arquivos \textit{.xsd}{}.
 
 Um modelo abstrato deverá remover do seu escopo qualquer questão relativa à implementação do objeto modelado. Neste sentido, no caso de XBRL, o modelo abstrato deveria remover todas as referências a XML, o que não ocorreu no XBRL Abstract Model. Ademais, apesar da UML ser largamente utilizada entre os profissionais de Tecnologia da Informação, o seu uso para comunicação com os demais interessados muitas vezes não é o ideal (\cite{peixoto2008comparison}).
 
 Neste contexto se faz necessário a proposição de linguagem conceitual para a XBRL com as seguintes características:
  \begin{itemize}
- 	\item Não contenha questões relativa ao XML
- 	\item Possibilite o desenho de aplicações que utilizem a XBRL
- 	\item Facilite a comunicação entre os diversos interessados envolvidos no domínio da XBRL.
+    \item Não contenha questões relativa ao XML
+    \item Possibilite o desenho de aplicações que utilizem a XBRL
+    \item Facilite a comunicação entre os diversos interessados envolvidos no domínio da XBRL.
  \end{itemize}
- 
+
 Nos próximos capítulos iremos revisar a literatura relativo à definição de ontologias, especialmente no domínio contábil e financeiro.
 
 \chapter{Revisão da Literatura}
@@ -156,61 +158,152 @@ Os pesquisadores \cite{lupacsc2010role} realizam uma análise do REA Framework\f
 
 Em \cite{gailly2007positioning} utilizou-se a UML para representar graficamente ontologias baseadas no REA. Os autores utilizaram metodologias tradicionais para a criação de ontologias para desenvolver o modelo proposto e argumentam que REA é uma ontologia de domínio do negócio. Eles concluem que linguagens conceituais tais como UML possuem a riqueza necessária para representar REA componentes ontológicos. Todavia, alguns detalhes dos elementos representados não são capazes de serem explicitados.
 
-No trabalho de \cite{sugumaran2002ontologies} há a discussão da criação, uso e gestão de ontologias para modelagem conceitual. Eles também propõe um processo para gestão de ontologias. Os objetivos dos trabalho incluem demostrar a importância de ontologias na modelagem conceitual e propor um modelo baseada em heurística  para a criação de ontologias em determinado domínio. Eles observam que a maioria das ontologias são criadas manualmente e que não existe uma metodologia largamente aceita para construção das mesmas. O seu método de criação ontologia proposto é composto por quatro etapas. O primeiro passo é a identificação de termos básicos do domínio. Isto inclui duas subetapas: a identificação dos termos mais frequentes e a identificação de sinônimos e termos relacionados. O segundo passo é a identificação dos relacionamentos. Existem três tipos de relações: relações entre termos básicos, relações entre ontologias, e as relações entre ontologias e sub-ontologias. O terceiro passo é a identificação de restrições e regras do domínio. O quarto passo é a identificação de restrições de nível superior. Estas restrições capturar o conhecimento de domínio. Os autores observam ainda que, enquanto a maioria das ontologias são construídos estaticamente, a maioria dos domínios, na verdade, evoluem com o tempo. O desenvolvimento de uma ontologia deve incluir esta evolução.
+No trabalho de \cite{sugumaran2002ontologies} há a discussão da criação, uso e gestão de ontologias para modelagem conceitual. Eles também propõe um processo para gestão de ontologias. Os objetivos dos trabalho incluem demostrar a importância de ontologias na modelagem conceitual e propor um modelo baseada em heurística  para a criação de ontologias em determinado domínio. Eles observam que a maioria das ontologias são criadas manualmente e que não existe uma metodologia largamente aceita para construção das mesmas. O seu método de criação ontologia proposto é composto por quatro etapas. O primeiro passo é a identificação de termos básicos do domínio. Isto inclui duas eta-pau: a identificação dos termos mais frequentes e a identificação de sinônimos e termos relacionados. O segundo passo é a identificação dos relacionamentos. Existem três tipos de relações: relações entre termos básicos, relações entre ontologias, e as relações entre ontologias e sub-ontologias. O terceiro passo é a identificação de restrições e regras do domínio. O quarto passo é a identificação de restrições de nível superior. Estas restrições capturar o conhecimento de domínio. Os autores observam ainda que, enquanto a maioria das ontologias são construídos estaticamente, a maioria dos domínios, na verdade, evoluem com o tempo. O desenvolvimento de uma ontologia deve incluir esta evolução.
 
 \chapter{Metodologia}
 \label{ch:metodologia}
 
 O processo de desenvolvimento deste trabalho pode ser dividido em quatro partes principais: $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ - Desenvolvimento da Linguagem}; $III$\textit{ - Construção da Ferramenta}; $IV$\textit{ - Avaliação}. Cada uma das etapas é detalhada nas próximas seções.
 
-\section{Revisão Sistemática}
+\section{Revisão Sistemática da Literatura}
 \label{sec:revisao_sistematica}
 
-O primeiro passo no desenvolvimento do trabalho será revisar a literatura relativa a criação de ontologias, especialmente no domínio contábil e financeiro. Conforme proposto por \cite{wohlin2012experimentation} será definido um protocolo de revisão com o objetivo de conduzir o processo de coleta de artigos. Este protocolo conterá, dentre outros tópicos, os critérios de seleção de trabalhos, estratégia para extração de dados; definição de questões de pesquisas, dentre outros. O protocolo será revisto com o orientador visando garantir suas consistência e validade.
+Uma \textit{Revisão Sistemática da Literatura} - SLR (do inglês Systematic Literature Review) é uma
+metodologia científica cujo objetivo é identificar, avaliar e interpretar
+\textit{toda} pesquisa \textit{relevante} sobre uma questão de pesquisa, área
+ou fenômeno de
+interesse\cite{keele2007guidelines,wohlin2012experimentation}. Neste trabalho
+será utilizada as diretrizes proposta \cite{keele2007guidelines} no qual uma
+Revisão Sistemática deve seguir os seguintes passos:
 
-Nesta etapa também será revisada a especificação da XBRL\footnote{\url{http://specifications.xbrl.org/specifications.html}} com o objetivo de conseguir subsídios para a criação da ontologia. Conforme discutido em \cite{lupacsc2010role}{}, um dos passos para criação de uma ontologia efetiva é a identificação de termos básicos do domínio. Nesta tarefa poderá utilizado técnicas de recuperação da informação como índices invertidos \cite{baeza1999modern}.
+\begin{enumerate}
+  \item \textbf{Planejamento}
+  \begin{enumerate}
+    \item \textit{Identificar a necessidade da Revisão}
+    \item \textit{Especificar questões de pesquisa}
+    \item \textit{Desenvolver o Protocolo da Revisão}
+  \end{enumerate}
+  \item \textbf{Condução/Execução}
+  \begin{enumerate}
+    \item \textit{Seleção dos Estudos Primários}
+    \item \textit{Análise da qualidade dos Estudos Primários}
+     \item \textit{Extração dos Dados}
+     \item \textit{Sintetização dos Dados}
+   \end{enumerate}
+  \item \textbf{Escrita/Publicação}
+  \begin{enumerate}
+    \item \textit{Redigir documento com os resultados da Revisão}
+    \item \textit{Redigir documento com lições aprendidas}
+  \end{enumerate}
+\end{enumerate}
 
-\section{Desenvolvimento da Linguagem}
-\label{sec:dese_lingugem}
 
-Finalizado o levantamento teórico do trabalho, o próximo passo é definir os elementos da linguagem. Por se tratar de uma linguagem conceitual visando a facilitar modelagem e a comunicação da XBRL, nesta fase será construído os elementos gráficos da linguagem. Tais elementos irão se apropriar dos objetos de linguagens como a UML e a BPMN, contudo, fornecendo primitivas adequadas para a representação dos dados contábeis e financeiros.
+Dentro do escopo da dissertação, o desenvolvimento de uma Revisão Sistemática
+tem por objetivo avaliar \textit{ferramentas para Relatórios de Negócio com suporte à linguagem XBRL}. \textit{Relatórios  de Negócio (Business Report)} é o produto final do  processo de divulgação pública de dados operacionais e financeiras de uma organização ou ainda a prestação regular de informações para os gestores dentro de uma empresa visado apoiá-los no processo de tomada de decisão.
+\cite{lymer1999business}. Há uma terceira via da área de  Relatórios de Negócio está relacionada ao processo de prestação de contas por entes públicos aos governos nacionais.
 
-\section{Ferramenta de Modelagem}
-\label{sec:ferramenta}
+Tendo em vista determinação da Secretaria do Tesouro Nacional, órgão
+vinculado ao  Ministério da Fazenda do Brasil, que definiu o XBRL como
+padrão para o envio de relatórios de prestação de contas pelos entes
+federativos (estados e municípios) por meio do SICONFI – Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro \cite{nt_03_2013}, surge a necessidade por parte
+daquelas organizações do \textit{desenvolvimento ou aquisição} de sistemas de
+informação capazes de criar, processar e enviar informações no formato
+XBRL. Um cenário onde tal situação ocorre tal necessidade é latente é em prefeituras de cidades de pequeno e médio porte que necessitam prestar contas via \textit{XBRL}, contudo
+não possuem conhecimento ou tempo necessário para desenvolver alguma ferramenta que suporte a linguagem.
 
-A adoção de uma nova notação será facilitada se existirem ferramentas que facilitem a sua criação, alteração e disponibilização. Neste sentido, faria pouco sentido definir uma linguagem conceitual para a XBRL sem, contudo, criar uma ferramenta que lhe desse apoio. Assim, uma das etapas deste trabalho será o desenvolvimento de uma ferramenta que possibilite a criação de diagrama no modelo proposto. Esta ferramenta será de suma importância na última etapa do trabalho, que trata da avaliação da linguagem proposta.
+Neste sentido, verifica-se que existe a demanda por parte das organizações, especialmente as entidades públicas, de referências de qualidade sobre o assunto de \textit{XBRL}. Neste contexto, entende-se que uma Revisão Sistemática da Literatura - SLR  que avaliasse as ferramentas para Business Report que dão suporte ao XBRL pode \textit{subsidiar a tomada de decisão} por parte dos gestores públicos sobre a aquisição de tais ferramentas. Além disso, um trabalho neste sentido poderia subsidiar o desenvolvimento de novas ferramentas que venham preencher as eventuais lacunas existentes nos sistemas atuais. Ademais, traz o foco da comunidade científica sobre um assunto que vêm crescendo bastante nos últimos anos, dentre outros motivos, devido à necessidade das organizações públicas ou privadas de serem cada vez mais transparentes.
+
+A presente \textit{SLR} reponderá as seguintes questões de pesquisa:
+
+\begin{itemize}
+  \item \textbf{$Q1$}: Quais são as ferramentas para Relatórios de Negócio que
+    suportam a XBRL?
+  \item \textbf{$Q2$}: Quais são os atributos comuns as ferramentas
+    que possibilitem a comparação entre elas?
+  \item \textbf{$Q3$}: Existem casos reais de utilização da ferramenta
+    (Estudos de Casos, Whitepapers e etc)?
+  \item \textbf{$Q4$}: Qual setor da economia (governos, medicina, setor financeiro) a ferramenta possui histórico de utilização?
+\end{itemize}
+
+\section{Pesquisa com Usuário}
+\label{sec:survey}
+
+Uma \textbf{Pesquisa com Usuário (Survey)} é um processo de
+coleta de informações de ou sobre
+\textit{pessoas} para descrever, comparar ou explicar seus
+conhecimentos, atitudes e comportamento sobre um determinado
+assunto\cite{fink2003survey}. Uma Pesquisa com Usuário geralmente é conduzida em retrospectiva, ou seja, tem como
+objetivo avaliar a utilização por um determinado período de uma
+ferramenta ou técnica \cite{kitchenham2009systematic}.
+
+O objetivo desta etapa do trabalho é coletar informações e experiências de
+pessoas que estão vinculadas com o processo de geração de Relatórios de
+Negócio, especialmente àqueles que trabalhem com o envio de prestação de
+contas. Esta faceta do Relatório de Negócio foi escolhida tendo em vista a
+facilidade do autor em encontrar pessoas que trabalham neste processo.
+
+Findada a Pesquisa com o Usuário serão coletadas informações e experiências que
+podem subsidiar a definição das diretrizes para a construção de um sistema
+para extração de relatórios de negócio.
+
+\section{Prova de Conceito}
+\label{sec:prova-conceito}
+
+Com o objetivo de avaliar na prática o conjunto de diretrizes propostas, será
+realizada uma Prova de Conceito mediante a construção de uma ferramenta para
+extração de Relatórios de Negócio em XBRL utilizadas a diretrizes propostas
+nesta dissertação. Tendo em vista o pouco tempo disponível para a construção da
+ferramenta, esta apenas possibilitará a geração de um único relatório
+denominado ``Matriz de Saldos Contábeis''. O processo de desenvolvimento da
+ferramenta utilizada na Prova de Conceito será realizada no estilo agilista, onde seriam feitas algumas
+iterações cobrindo os requisitos considerados mais prioritários.
 
 \section{Avaliação}
 \label{sec:avaliacao}
 
-A fim de avaliar se a linguagem proposto atendeu aos seus requisitos, será realizadas uma bateria de testes com diferentes usuários. A linha de base ("baseline") será o \textit{XBRL Abstract Model}, onde pretende-se analisar fatores como capacidade de comunicação, expressividade, dentre outros aspectos das duas linguagens.
+Com o objetivo de avaliar a diretrizes proposta por este trabalhado,
+materializadas na ferramenta a ser construída como Prova de Conceito, será
+realizada um Estudo de Caso. Segundo \cite{wohlin2012experimentation} um Estudo
+de Caso é método empírico com o objetivo de investigar um objeto ou fenômeno em
+seu contexto. A principal vantagem desta metologia é que os resultados são mais
+realistas, todavia, estes resultados são difíceis de generalizar.
 
-O experimento de avaliação será composto de duas etapas. Em um primeiro momento, profissionais de tecnologia da informação e contabilidade, serão convidados a modelar uma taxonomia XBRL utilizando a linguagem proposta e o XBRL Abstract Model. Posteriormente, estes diagramas serão avaliados por outros profissionais no tocante as aspectos como expressividade. Estes dados serão tabulados para posterior avaliação.
+Neste sentido, propõe-se a utilização da ferramenta descrita na Seção \ref{sec:prova-conceito} como Prova de
+Conceito para a geração do relatório ``Matriz de Saldos Contábeis'' no âmbito
+da Empresa de Informática de Belo Horizonte - PRODABEL. A empresa foi escolhida
+por conta do autor trabalhar na mesma e, portanto, possuir maior facilidade
+para a condução do Estudo de Caso. Avalia-se ainda a aplicação do Estudo de
+Caso em outros locais a fim de obter um maior conjunto de dados.
 
 \chapter{Conclusão e Trabalhos Futuros}
 \label{ch:conclusao_trab_futuros}
 
-Conforme pôde ser observado, a XBRL vêm se tornando de fato um padrão para intercâmbio de dados contáveis e financeiros. Contudo, apesar de sua crescente adoção, não há uma notação que possibilite a modelagem de sua taxonomia. Tentando preencher esta lacuna, o trabalho ora proposto pretende definir uma linguagem conceitual para criação de taxonomias em XRL. Para tanto, a tabela \ref{tab:cronograma} descreve as atividades que serão realizadas para atingir este objetivo.
+Conforme pôde ser observado, a XBRL vêm se tornando de fato um padrão para
+intercâmbio de dados contáveis e financeiros. Contudo, apesar de sua crescente
+adoção, exitem poucos trabalhos e ferramentas que suportem o processo de geração
+de Relatórios de Negócio naquela linguagem.  Tentando preencher esta lacuna, o
+trabalho ora proposto pretende definir um conjunto de diretrizes para criação
+de ferramentas para a extração de Relatórios de Negócio que suportem a XBRL. Para tanto, a tabela \ref{tab:cronograma} descreve as atividades que serão realizadas para atingir este objetivo.
 
 \begin{table}[!h]
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|l|c|c|}
 \hline
-\rowcolor[HTML]{C0C0C0} 
+\rowcolor[HTML]{C0C0C0}
 {\textbf{\#}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}{\textbf{Atividade}}} & {\textbf{Início(MM/AAAA)} } & {\textbf{Término(MM/AAAA)}}\\ \hline
 1 & Revisão da literatura & 07/2015 & 08/2015 \\ \hline
 2 & Ponto de Controle 01: reunião com o orientador & 08/2015 & 08/2015 \\ \hline
 3 & Revisão da especificação XBRL & 09/2015 & 09/2015 \\ \hline
 4 & Ponto de Controle 02: reunião com o orientador & 09/2015 & 09/2015 \\ \hline
-5 & Definição da linguagem & 10/2015 & 12/2015 \\ \hline
+5 & Revisão Sistemática da Literatura & 10/2015 & 12/2015 \\ \hline
 6 & Ponto de Controle 03: reunião com o orientador & 10/2015 & 10/2015 \\ \hline
 7 & Ponto de Controle 04: reunião com o orientador & 11/2015 & 11/2015 \\ \hline
 8 & Ponto de Controle 05: reunião com o orientador & 12/2015 & 12/2015 \\ \hline
-9 & Construção da ferramenta & 01/2016 & 02/2016 \\ \hline
+9 & Pesquisa com Usuário & 01/2016 & 02/2016 \\ \hline
 10 & Ponto de Controle 06: reunião com o orientador & 01/2016 & 01/2016 \\ \hline
 11 & Ponto de Controle 07: reunião com o orientador & 02/2016 & 02/2016 \\ \hline
 12 & Ponto de Controle 08: reunião com o orientador & 03/2016 & 03/2016 \\ \hline
-13 & Avaliação da linguagem & 03/2016 & 03/2016 \\ \hline
+13 & Prova de Conceito: Construção da Ferramenta & 03/2016 & 04/2016 \\ \hline
 14 & Ponto de Controle 09: reunião com o orientador & 04/2015 & 04/2015 \\ \hline
 15 & Redigir a dissertação & 04/2015 & 05/2016 \\ \hline
 16 & Ponto de Controle 10: reunião com o orientador & 05/2016 & 05/2016 \\ \hline
