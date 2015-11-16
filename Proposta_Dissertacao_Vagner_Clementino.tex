@@ -29,7 +29,8 @@ filecolor=black,
 \begin{document}
 \ppgccufmg{
 title={Presto:\\
-Diretrizes Construção de Sistemas para Extração de Relatórios de Negócio\\
+Diretrizes para Construção de Sistemas \\
+de Extração de Relatórios de Negócio\\
 no Contexto da XBRL},
 author={Vagner Clementino},
 university={Universidade Federal de Minas Gerais},
@@ -54,7 +55,11 @@ popularidade, contudo, o intercâmbio de dados é realizado primordialmente
 através da linguagem XML (Extensible Markup
 Language\footnote{\url{http://www.w3.org/XML/}}) e suas derivadas. Na área
 médica, o padrão HL7 V3 message\footnote{\url{http://www.hl7.org/}} vêm sendo
-largamente adotado para troca de mensagem entre sistemas de informação \cite{Andrikopoulos:2013:TEO:2491845.2491890}{}. No contexto dos Sistemas de Informação Geográficas (SIG) a GML (Geography Markup Language\footnote{\url{http://www.opengeospatial.org/standards/gml}}) consolidou-se com o principal instrumento para interoperabilidade de dados geográficos \cite{gmlpaper}{}. Na área financeira diversas linguagens de marcação vêm sendo utilizadas para o intercâmbio de informações na Internet: \textit{Open Financial Exchange}\footnote{\url{http://www.ofx.net/}} (OFX), \textit{Eletronic Business Using XML}\footnote{\url{http://www.ebxml.org}} (ebXML), \textit{Financial Information eXchange}\footnote{\url{https://fixspec.com/}} (FIX), \textit{Market Data Definition Language}\footnote{\url{http://www.mddl.org}}, dentre outras \cite{xbrl_conceitos_aplicacoes}{}.
+largamente adotado para troca de mensagem entre sistemas de informação
+\cite{Andrikopoulos:2013:TEO:2491845.2491890}{}. No contexto dos Sistemas de
+Informação Geográficas (SIG) a GML (Geography Markup
+Language\footnote{\url{http://www.opengeospatial.org/standards/gml}})
+consolidou-se como a principal instrumento para interoperabilidade de dados geográficos \cite{gmlpaper}{}. Na área financeira diversas linguagens de marcação vêm sendo utilizadas para o intercâmbio de informações na Internet: \textit{Open Financial Exchange}\footnote{\url{http://www.ofx.net/}} (OFX), \textit{Eletronic Business Using XML}\footnote{\url{http://www.ebxml.org}} (ebXML), \textit{Financial Information eXchange}\footnote{\url{https://fixspec.com/}} (FIX), \textit{Market Data Definition Language}\footnote{\url{http://www.mddl.org}}, dentre outras \cite{xbrl_conceitos_aplicacoes}{}.
 
 Com o advento da Web as linguagens de marcação cresceram em importância, sobretudo devido a necessidade de se adicionar significado a informações sendo transferidas. Contudo, o padrão HTML (Hypertext
 Markup Language) foi desenvolvido com objetivo de descrever \textit{como} a informação deve ser apresentada e não possui compromisso com o significado da informação. Nos meados da década de 1980,  a Organização para Padronização Internacional (ISO) propôs uma metalinguagem padrão a fim de etiquetar informações com conteúdo semântico. Esta linguagem foi denominada como \textit{Standard Generalized Markup Language} (SGML) \cite{smith1988sgml}.
@@ -96,7 +101,7 @@ padrão para o envio de relatórios de prestação de contas pelos entes
 federativos (estados e municípios) por meio do SICONFI – Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro \cite{nt_03_2013}, surge a necessidade por parte
 daquelas organizações do \textit{desenvolvimento ou aquisição} de sistemas de
 informação capazes de criar, processar e enviar informações no formato
-XBRL. Um cenário onde tal situação ocorre tal necessidade é latente é em prefeituras de cidades de pequeno e médio porte que necessitam prestar contas via \textit{XBRL}, contudo
+XBRL. Um cenário onde tal necessidade é latente é em prefeituras de cidades de pequeno e médio porte que necessitam prestar contas via \textit{XBRL}, contudo
 não possuem conhecimento ou tempo necessário para desenvolver alguma ferramenta que suporte a linguagem.
 
 Neste sentido, verifica-se que existe a demanda por parte das organizações,
@@ -125,7 +130,9 @@ relacionais e etc).
 Não obstante, se faz necessário a transformação destas informações em um
 formato único a fim de facilitar a sua recuperação bem como a sua transmissão
 para outros sistemas.
- O processo de transformação e redirecionamento da informação ocorre internamente na organização, entre a organização e sua filiais ou mesmo entre a empresa e os governos. Este fluxo de informação, especialmente para a geração de relatórios, é exibido na Figura \ref{fig:fluxo_dados}.
+ O processo de transformação e redirecionamento da informação ocorre
+ internamente na organização ou mesmo em suas filiais. Existe a possibilidade
+ de troca de informação entre uma empresa e os governos. Este fluxo de informação, especialmente para a geração de relatórios, é exibido na Figura \ref{fig:fluxo_dados}.
 
 \begin{figure}[hbtp]
 \centering
@@ -258,8 +265,8 @@ Revisão Sistemática deve seguir os seguintes passos:
 
 
 Dentro do escopo da dissertação, o desenvolvimento de uma Revisão Sistemática
-tem por objetivo avaliar \textit{ferramentas para Relatórios de Negócio com suporte à linguagem XBRL}. \textit{Relatórios  de Negócio (Business Report)} é o produto final do  processo de divulgação pública de dados operacionais e financeiras de uma organização ou ainda a prestação regular de informações para os gestores dentro de uma empresa visado apoiá-los no processo de tomada de decisão.
-\cite{lymer1999business}. Há uma terceira via da área de  Relatórios de Negócio está relacionada ao processo de prestação de contas por entes públicos aos governos nacionais.
+tem por objetivo avaliar \textit{ferramentas para Relatórios de Negócio com suporte à linguagem XBRL}. \textit{Relatórios  de Negócio (Business Report)} é o produto final do  processo de divulgação pública de dados operacionais e financeiras de uma organização ou ainda a prestação regular de informações para os gestores dentro de uma empresa visando apoiá-los no processo de tomada de decisão.
+\cite{lymer1999business}. Há uma terceira via da área de Relatórios de Negócio está relacionada ao processo de prestação de contas por entes públicos aos governos nacionais.
 
 Tendo em vista determinação da Secretaria do Tesouro Nacional, órgão
 vinculado ao  Ministério da Fazenda do Brasil, que definiu o XBRL como
@@ -267,7 +274,7 @@ padrão para o envio de relatórios de prestação de contas pelos entes
 federativos (estados e municípios) por meio do SICONFI – Sistema de Informações Contábeis e Fiscais do Setor Público Brasileiro \cite{nt_03_2013}, surge a necessidade por parte
 daquelas organizações do \textit{desenvolvimento ou aquisição} de sistemas de
 informação capazes de criar, processar e enviar informações no formato
-XBRL. Um cenário onde tal situação ocorre tal necessidade é latente é em prefeituras de cidades de pequeno e médio porte que necessitam prestar contas via \textit{XBRL}, contudo
+XBRL. Um cenário onde tal situação ocorre é em prefeituras de cidades de pequeno e médio porte que necessitam prestar contas via \textit{XBRL}, contudo
 não possuem conhecimento ou tempo necessário para desenvolver alguma ferramenta que suporte a linguagem.
 
 Neste sentido, verifica-se que existe a demanda por parte das organizações, especialmente as entidades públicas, de referências de qualidade sobre o assunto de \textit{XBRL}. Neste contexto, entende-se que uma Revisão Sistemática da Literatura - SLR  que avaliasse as ferramentas para Business Report que dão suporte ao XBRL pode \textit{subsidiar a tomada de decisão} por parte dos gestores públicos sobre a aquisição de tais ferramentas. Além disso, um trabalho neste sentido poderia subsidiar o desenvolvimento de novas ferramentas que venham preencher as eventuais lacunas existentes nos sistemas atuais. Ademais, traz o foco da comunidade científica sobre um assunto que vêm crescendo bastante nos últimos anos, dentre outros motivos, devido à necessidade das organizações públicas ou privadas de serem cada vez mais transparentes.
@@ -322,7 +329,7 @@ iterações cobrindo os requisitos considerados mais prioritários.
 
 Com o objetivo de avaliar a diretrizes proposta por este trabalhado,
 materializadas na ferramenta a ser construída como Prova de Conceito, será
-realizada um Estudo de Caso. Segundo \cite{wohlin2012experimentation} um Estudo
+realizado um Estudo de Caso. Segundo \cite{wohlin2012experimentation} um Estudo
 de Caso é método empírico com o objetivo de investigar um objeto ou fenômeno em
 seu contexto. A principal vantagem desta metologia é que os resultados são mais
 realistas, todavia, estes resultados são difíceis de generalizar.
@@ -330,7 +337,7 @@ realistas, todavia, estes resultados são difíceis de generalizar.
 Neste sentido, propõe-se a utilização da ferramenta descrita na Seção \ref{sec:prova-conceito} como Prova de
 Conceito para a geração do relatório ``Matriz de Saldos Contábeis'' no âmbito
 da Empresa de Informática de Belo Horizonte - PRODABEL. A empresa foi escolhida
-por conta do autor trabalhar na mesma e, portanto, possuir maior facilidade
+devido ao autor ser funcionário da mesma e, portanto, possuir maior facilidade
 para a condução do Estudo de Caso. Avalia-se ainda a aplicação do Estudo de
 Caso em outros locais a fim de obter um maior conjunto de dados.
 
