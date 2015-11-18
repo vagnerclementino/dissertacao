@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{graphicx,url}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+
+\title{Rascunho Proposta de Dissertação:\\
+Recomendação de Demandas Utilizando Rede Neural
+}
+\author{Vagner Clementino \\
+       \url{vagnercs@dcc.ufmg.br}}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Introdução}
+\label{sec:intro}
+
+\section{Justificativa}
+\label{sec:justificativa}
+
+\begin{itemize}
+\item Redução da troca de contexto (context switch)
+\item Aumento da produtividade
+\item Trabalhos de recomendação de novas demandas utilizam análise textual
+  através de técnicas de Recuperação da Informação (Information Retrieve - IR)
+
+\end{itemize}
+
+\section{Revisão da Literatura}
+\label{sec:revisao}
+
+Em \cite{5741246}
+
+
+\section{Metologia}
+\label{sec:medotologia}
+
+\subsection{Revisão Sistemática da Literatura}
+\label{sec:slr}
+
+Será realizada uma Revisão Sistemática da Literatura seguindo as diretrizes por
+\cite{keele2007guidelines} a fim de responder as seguintes questões de
+pesquisa:
+
+
+\begin{itemize}
+  \item \textbf{$Q1$}: Quais são as metodologias/técnicas utilizar para
+    recomendação de novas demandas?
+  \item \textbf{$Q2$}: Qual procedimento utilizado para avaliar a
+    técnica/metodologia proposta?
+  \item \textbf{$Q3$}: Em qual tipo de projeto (comercial ou código-aberto) a
+    metodologia/técnica proposto foi aplicada?
+\end{itemize}
+
+
+
+
+
+\subsection{Prova de Conceito}
+\label{sec:prova-de-conceito}
+
+Como prova de conceito da técnica proposta será construída uma ferramenta que
+possibilite a recomendação de novas demandas a serem tratadas baseada em uma ``demanda-semente''.
+
+
+\subsection{Avaliação}
+\label{sec:avaliacao}
+
+Será realizada um \textit{Quasi-Experimento} \cite{wohlin2012experimentation}
+com o desenvolvedores da Empresa de Informática de Belo Horizonte - PRODABEL
+visando avaliar as sugestões proposta neste trabalho comparada com as demandas
+sugeridas pela gerência imediata e por um outro programador do mesmo setor. O
+participante deverá informar qual ``lista de sugestão'' aumentaria sua
+produtividade e reduziria a troca de contexto.
+
+
+\section{Cronograma e Próximas Atividades}
+\label{sec:cronograma}
+
+
+\bibliographystyle{unsrt}%Used BibTeX style is unsrt
+\bibliography{rascunho}
+
+\end{document}
