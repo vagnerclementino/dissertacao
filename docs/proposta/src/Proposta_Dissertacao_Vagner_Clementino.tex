@@ -47,10 +47,7 @@ projeto e desenvolvimento de software, no últimos anos o processo de manter o
 software vem ganhando relevância devido, primordialmente, à seu custo
 associado.
 
-No Capítulo \ref{ch:justificativa} discute-se as justificativas para adoção da
-XBRL bem como da definição das diretrizes. O Capítulo \ref{ch:revisao}
-apresenta-se a revisão da literatura a adoção da XBRL e dos trabalhos que
-propões diretrizes para construção de ferramentas nas Relatórios de Negócio. No
+No Capítulo \ref{ch:justificativa} . O Capítulo \ref{ch:revisao} . No
 Capítulo \ref{ch:metodologia} é discutida a metologia a ser aplicada. No
 Capítulo \ref{ch:conclusao_trab_futuros}, especialmente na Tabela \ref{tab:cronograma} é exibido o cronograma do trabalho.
 
@@ -86,7 +83,7 @@ que para todo j no subconjunto J seja similar a i em um grau maior ou igual a s.
 \chapter{Revisão da Literatura}
 \label{ch:revisao}
 
-Em \cite{5741246} é proposto um processo denominado PASM (Process for Arranging
+No trabalho de Junio et al. \cite{5741246} é proposto um processo denominado PASM (Process for Arranging
 Software Maintenance Requests) que propõe lidar com tarefas de manutenção como
 projetos de software. Para tanto, utilizou-se técnicas de análise de
 agrupamento (clustering) a fim de melhor compreender e comparar as demandas de
@@ -94,20 +91,19 @@ manutenção. Os resultados demostraram que depois de adotar PASM os
 desenvolvedores têm dedicado mais tempo para análise e validação e menos tempo
 para as tarefas de execução e de codificação.
 
-Em \cite{101186} é proposto um plugin para a ferramenta de Controle de Demanda -
-Issue Tracking System (ITS) Bugzilla \footnote{\url{https://www.bugzilla.org/}}
+\textit{NextBug} \cite{101186} é uma extensão (plugin) para a ferramenta de Controle de Demanda -
+Issue Tracking System (ITS) Bugzilla\footnote{\url{https://www.bugzilla.org/}}
 que recomenda novos bugs para um desenvolvedor baseado no bug que ele esteja
-tratando atualmente. O plugin sugere novos bugs com base em técnicas de
-Recuperação de Informação\cite{baeza1999modern}.
+tratando atualmente. O objetivo da extensão é sugerir bugs com base em técnicas de
+Recuperação de Informação \cite{baeza1999modern}.
 
 
 \chapter{Metodologia}
 \label{ch:metodologia}
 
-O processo de desenvolvimento deste trabalho pode ser dividido em quatro partes
-principais: $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ -
-  Pequisa com Usuário (Survey)}; $III$\textit{ - Construção da Ferramenta
-  (Prova de Conceito)}; $IV$\textit{ - Avaliação (Estudo de Caso)}. Cada uma das etapas é detalhada nas próximas seções.
+O processo de desenvolvimento deste trabalho pode ser dividido nas seguintes
+etapas $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ - Construção da Ferramenta
+  (Prova de Conceito)}; $IV$\textit{ - Avaliação}. Cada uma das etapas é detalhada nas próximas seções.
 
 \section{Revisão Sistemática da Literatura}
 \label{sec:revisao_sistematica}
@@ -115,8 +111,7 @@ principais: $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ -
 Uma \textit{Revisão Sistemática da Literatura} - SLR (do inglês Systematic Literature Review) é uma
 metodologia científica cujo objetivo é identificar, avaliar e interpretar
 \textit{toda} pesquisa \textit{relevante} sobre uma questão de pesquisa, área
-ou fenômeno de
-interesse\cite{keele2007guidelines,wohlin2012experimentation}. Neste trabalho
+ou fenômeno de interesse \cite{keele2007guidelines,wohlin2012experimentation}. Neste trabalho
 será utilizada as diretrizes proposta \cite{keele2007guidelines} no qual uma
 Revisão Sistemática deve seguir os seguintes passos:
 
@@ -141,43 +136,35 @@ Revisão Sistemática deve seguir os seguintes passos:
   \end{enumerate}
 \end{enumerate}
 
-Será realizada uma Revisão Sistemática da Literatura seguindo as diretrizes por
-\cite{keele2007guidelines} a fim de responder as seguintes questões de
+A SRL proposta segue as diretrizes por
+\cite{keele2007guidelines} e visa responder as seguintes questões de
 pesquisa:
 
-
 \begin{itemize}
-  \item \textbf{$Q1$}: Quais são as metodologias/técnicas utilizar para
+  \item \textbf{$Q1$}: Quais são as metodologias/técnicas utilizadas para
     recomendação de novas demandas?
-  \item \textbf{$Q2$}: Qual procedimento utilizado para avaliar a
+  \item \textbf{$Q2$}: Quais são as metodologias/técnicas utilizadas para
+    remoção de bugs duplicados?
+    \item \textbf{$Q3$}: Qual procedimento utilizado para avaliar a
     técnica/metodologia proposta?
-  \item \textbf{$Q3$}: Em qual tipo de projeto (comercial ou código-aberto) a
+  \item \textbf{$Q4$}: Em qual tipo de projeto (comercial ou código-aberto) a
     metodologia/técnica proposto foi aplicada?
 \end{itemize}
 
-
-\section{Prova de Conceito}
+\section{Construção da Ferramenta}
 \label{sec:prova-conceito}
 
 Como prova de conceito da técnica proposta será construída uma ferramenta que
-possibilite a recomendação de novas demandas a serem tratadas baseada em uma ``demanda-semente''.
-Com intuito de reduzir o problema da troca de contexto e ao mesmo aumentar a
-produtividade de equipes de manutenção de software é proposto uma ferramenta
-para recomendação de demandas similares utilizando Redes Neurais.
-
+possibilite a recomendação de novas demandas a serem tratadas baseada em uma
+``demanda-semente''. Com intuito de reduzir o problema da troca de contexto e
+ao mesmo aumentar a produtividade de equipes de manutenção de software é
+proposto uma ferramenta para recomendação de demandas similares utilizando Redes Neurais.
 
 \section{Avaliação}
 \label{sec:avaliacao}
 
-Será realizada um \textit{Quasi-Experimento} \cite{wohlin2012experimentation}
-com o desenvolvedores da Empresa de Informática de Belo Horizonte - PRODABEL
-visando avaliar as sugestões proposta neste trabalho comparada com as demandas
-sugeridas pela gerência imediata e por um outro programador do mesmo setor. O
-participante deverá informar qual ``lista de sugestão'' aumentaria sua
-produtividade e reduziria a troca de contexto.
-
 Com o objetivo de avaliar a ferramentas prposto nes trebablho será realizado um
-experimento utilizando a base de dados de demandas de manutenção de uma empresa
+\textit{Quasi-Experimento} \cite{wohlin2012experimentation} utilizando a base de dados de demandas de manutenção de uma empresa
 de software real. Dado que uma demanda i foi atribuida a um desenvolvedor d,
 serão geradas 03 listas de suguestões: uma lista proposta pelo gerente imediato
 de d; outra proposta por um desenvolver do mesmo setor de d; e a terceira
@@ -189,42 +176,31 @@ aumentar sua produtividade.
 \chapter{Conclusão e Trabalhos Futuros}
 \label{ch:conclusao_trab_futuros}
 
-Conforme pôde ser observado, a XBRL vêm se tornando de fato um padrão para
-intercâmbio de dados contáveis e financeiros. Contudo, apesar de sua crescente
-adoção, exitem poucos trabalhos e ferramentas que suportem o processo de geração
-de Relatórios de Negócio naquela linguagem.  Tentando preencher esta lacuna, o
-trabalho ora proposto pretende definir um conjunto de diretrizes para criação
-de ferramentas para a extração de Relatórios de Negócio que suportem a XBRL. Para tanto, a tabela \ref{tab:cronograma} descreve as atividades que serão realizadas para atingir este objetivo.
+Para tanto, a tabela \ref{tab:cronograma} descreve as atividades que serão realizadas para atingir este objetivo.
 
-\begin{table}[!h]
+\begin{table}[ht]
+\centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|l|c|c|}
 \hline
-\rowcolor[HTML]{C0C0C0}
-{\textbf{\#}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}{\textbf{Atividade}}} & {\textbf{Início(MM/AAAA)} } & {\textbf{Término(MM/AAAA)}}\\ \hline
-1 & Revisão da literatura & 07/2015 & 08/2015 \\ \hline
-2 & Ponto de Controle 01: reunião com o orientador & 08/2015 & 08/2015 \\ \hline
-3 & Revisão da especificação XBRL & 09/2015 & 09/2015 \\ \hline
-4 & Ponto de Controle 02: reunião com o orientador & 09/2015 & 09/2015 \\ \hline
-5 & Revisão Sistemática da Literatura & 10/2015 & 12/2015 \\ \hline
-6 & Ponto de Controle 03: reunião com o orientador & 10/2015 & 10/2015 \\ \hline
-7 & Ponto de Controle 04: reunião com o orientador & 11/2015 & 11/2015 \\ \hline
-8 & Ponto de Controle 05: reunião com o orientador & 12/2015 & 12/2015 \\ \hline
-9 & Pesquisa com Usuário & 01/2016 & 02/2016 \\ \hline
-10 & Ponto de Controle 06: reunião com o orientador & 01/2016 & 01/2016 \\ \hline
-11 & Ponto de Controle 07: reunião com o orientador & 02/2016 & 02/2016 \\ \hline
-12 & Ponto de Controle 08: reunião com o orientador & 03/2016 & 03/2016 \\ \hline
-13 & Prova de Conceito: Construção da Ferramenta & 03/2016 & 04/2016 \\ \hline
-14 & Ponto de Controle 09: reunião com o orientador & 04/2015 & 04/2015 \\ \hline
-15 & Redigir a dissertação & 04/2015 & 05/2016 \\ \hline
-16 & Ponto de Controle 10: reunião com o orientador & 05/2016 & 05/2016 \\ \hline
-17 & Defesa da dissertação & 07/2016 & 07/2016 \\ \hline
+\rowcolor[HTML]{EFEFEF}
+\# & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{Atividade}} & \textbf{Início (MM/AAAA)} & \textbf{Término (MM/AAAA)} \\ \hline
+01 & Revisão da Literatura & \textit{10/2015} & \textit{11/2015} \\ \hline
+02 & Ponto de Controle 01 – Reunião com orientador sobre Revisão da Literatura & \textit{12/2016} & \textit{12/2016} \\ \hline
+03 & Avaliação da Técnica de Rede Neural & \textit{01/2016} & \textit{01/2016} \\ \hline
+04 & Ponto de Controle 02 – Reunião com orientador sobre a Técnica de Rede Neural & \textit{02/2016} & \textit{02/2016} \\ \hline
+05 & Implementação da Ferramenta & \textit{02/2016} & \textit{04/2016} \\ \hline
+06 & Ponto de Controle 03 – Avaliação da Ferramenta Avaliada & \textit{05/2016} & \textit{05/2016} \\ \hline
+07 & Experimento de Avaliação da Ferramenta & \textit{05/2016} & \textit{05/2016} \\ \hline
+08 & Ponto de Controle 04 – Avaliação do Experimento junto com o orientador & \textit{05/2016} & \textit{05/2016} \\ \hline
+09 & Finalização do texto da dissertação & \textit{06/2016} & \textit{07/2016} \\ \hline
+10 & Ponto de Controle 05 – Avaliação do texto da dissertação com o orientador & \textit{07/2016} & \textit{07/2016} \\ \hline
+11 & Defesa da dissertação & \textit{07/2016} & \textit{07/2016} \\ \hline
 \end{tabular}
 }
-\caption{Cronograma do projeto}
+\caption{Cronograma de execução do trabalho}
 \label{tab:cronograma}
 \end{table}
-
 
 % Incluindo bibliografia:
 \ppgccbibliography{../bib/bibliografia}
