@@ -1,0 +1,58 @@
+* Contexto
+Dentro do ciclo de vida do produto de software o processo de manutenção tem
+papel fundamental. Apesar de não ter merecido tanta atenção quanto a parte de
+projeto e desenvolvimento de software, no últimos anos o processo de manter o
+software vem ganhando relevância devido, primordialmente, à seu custo
+associado.
+
+* Problema
+Dois problemas podem afetar a produtividade do desenvolvedor, e por conseguinte
+toda a equipe de manutenção, são as demandas duplicadas e a troca de
+contexto. No primeiro caso, temos um mesmo problema sendo reportado por
+diversos usuários em demandas distintas. No segundo, a dificuldade analisar
+duas demandas totalmente distintas uma da outra. Diversas trabalhos vêm sendo
+realizados no intuito de remover bug duplicados da base de dados dos Sistemas
+de Controle de Demandas (Issue Tracking System - ITS).
+Com relação ao problema da troca de contexto, existem na literatura trabalhos
+com objetivo de recomendar demandas similares, evitando a repetição de algumas
+tarefas e por consequência a produtividade do desenvolvedor.
+O problema de recomendar demandas similares pode ser definido formalmente da
+seguinte forma:
+
+Seja I o conjunto de demandas de manutenção para um sistema S qualquer de
+cardinalidade n. Seja i
+um demanda pertencente ao conjunto I e que foi atribuída para um desenvolver
+d. Pede-se que seja encontrado um subconjunto J de I, de tamanho k << n, tal
+que para todo j no subconjunto J seja similar a i em um grau maior ou igual a s.
+* Solução
+Com intuito de reduzir o problema da troca de contexto e ao mesmo aumentar a
+produtividade de equipes de manutenção de software é proposto uma ferramenta
+para recomendação de demandas similares utilizando Redes Neurais.
+* Avalição
+
+Com o objetivo de avaliar a ferramentas prposto nes trebablho será realizado um
+experimento utilizando a base de dados de demandas de manutenção de uma empresa
+de software real. Dado que uma demanda i foi atribuida a um desenvolvedor d,
+serão geradas 03 listas de suguestões: uma lista proposta pelo gerente imediato
+de d; outra proposta por um desenvolver do mesmo setor de d; e a terceira
+gerada por nossa ferramenta. Naturalmente o desenvolvedor não saberá a origem
+de nenhum das listas.  De posse das três listas pediremos ao
+desenvolvedor d que informe qual delas pode reduzir a troca de contexto e
+aumentar sua produtividade.
+
+------------------------------------------------------------
+* Dissertação como um Projeto
+** Objetivo do Projeto
+*** Qual é o alvo, foco,
+** Justificativa do Projeto
+*** Porque, Qual a razão
+** Produtos que serão construídos
+** Partes Interessadas
+** Escopo do Projeto
+** Cronograma Preliminar
+** Definir Marcos e Pontos de Controles
+** Limite do Projeto
+*** O que o projeto irá Entregar
+*** O que o projeto não irá entregar
+** Premissas
+** Riscos Associados ao Projeto

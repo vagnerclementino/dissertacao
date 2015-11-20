@@ -1,8 +1,8 @@
 NAME=Proposta_Dissertacao_Vagner_Clementino
-BIBLIOGRAPHY=./bib/bibliografia
+BIBLIOGRAPHY=../bib/bibliografia
 DIR_PDF_NAME=./pdf
 all: aspell compile clean
-compile: $(NAME).tex $(BIBLIOGRAPHY).bib	
+compile: $(NAME).tex $(BIBLIOGRAPHY).bib
 	@pdflatex -shell-escape $(NAME).tex
 	@bibtex $(NAME)
 	@pdflatex $(NAME).tex
