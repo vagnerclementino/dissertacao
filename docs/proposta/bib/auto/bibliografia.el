@@ -22,5 +22,8 @@
     "April200973"
     "930170"
     "Runeson:2007:DDD:1248820.1248882"
-    "koskinen2003software")))
+    "koskinen2003software"
+    "Alipour:2013:CAT:2487085.2487123"
+    "6671283"
+    "09639314")))
 

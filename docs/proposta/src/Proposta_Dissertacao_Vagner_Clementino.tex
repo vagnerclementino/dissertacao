@@ -53,12 +53,12 @@ Capítulo \ref{ch:conclusao_trab_futuros}, especialmente na Tabela \ref{tab:cron
 
 \chapter{Justificativa}
 \label{ch:justificativa}
-Desde o final da década de 1970 há um aumento do custo da manutenção de software. Na
-Tabela \ref{tab:software-cost} verifica-se essa tendência. Em um trabalho mais
+Desde o final da década de 1970 percebe-se o aumento do custo referente as
+atividades de  manutenção de software. Na
+Tabela \ref{tab:software-cost}, adaptada de  \cite{koskinen2003software},  é possível verificar esta tendência. Em um trabalho mais
 recente \cite{1423995}, Yong \& Mookerjee propõe um modelo que reduz o custos de
 manutenção e reposição durante a vida útil de um sistema de software. O modelo
-proposto demonstrou quem em algumas situações é melhor substituir um sistema
-do que mantê-lo.
+proposto demonstrou quem em algumas situações é \textit{melhor substituir um sistema do que mantê-lo}.
 
 \begin{table}[ht]
 \resizebox{\textwidth}{!}{%
@@ -82,20 +82,21 @@ do que mantê-lo.
 
 Com o objetivo de mensurar o custo relativo à manutenção de software
 \cite{benaroch2013primary,5873461,ren2011research}, bem com melhoria as
-atividades relacionadas ao processo de manutenção
-\cite{April200973}, \cite{930170} e \cite{5741246} mediante a proposição
-de modelos. Nesta mesma linha alguns estudo possuem o foco na melhoria da
-produtividade do desenvolvedor mediante a remoção de Requisições de Mudança - Modification Request (MR) ou ainda a sugestão de MR's similares que possibilitam a redução da mudança de contexto (context switch).
+atividades relacionadas ao processo de manutenção  mediante a proposição
+de modelos \cite{April200973}, \cite{930170} e \cite{5741246} diversos
+trabalhos vêm sendo propostos. Nesta mesma linha de pesquisa, alguns estudo
+focam na melhoria da produtividade do desenvolvedor através de ações como a remoção de Requisições de Mudança -
+Modification Request (MR) duplicadas
+\cite{Alipour:2013:CAT:2487085.2487123,6671283,09639314} ou ainda recomendando
+MR's similares que reduzem a mudança de contexto (context switch) \cite{5741246,101186}.
 
-Em geral afim de remover duplicadas ou sugerir MR's similares são utilizadas de
+Em geral, afim de remover duplicadas ou sugerir MR's similares são utilizadas de
 técnicas de Recuperação da Informação - Information Retrieve
-\cite{baeza1999modern} sobre o texto da Requisição. Nos trabalhos de
-\cite{101186} e \cite{Runeson:2007:DDD:1248820.1248882}. Apesar dos resultados
-relevantes obtidos por estes estudo verifica-se que a técnica é fortemente
+\cite{baeza1999modern} tomando como base a descrição textual da Requisição \cite{101186,Runeson:2007:DDD:1248820.1248882}. Apesar dos resultados
+relevantes obtidos por esta técnica verifica-se que ela é fortemente
 dependente da forma que o solicitante da MR descreve a sua requisição. Além disso
-há problema dos sinônimos em que demandas similares mas escritas com palavras
-distintas podem não ser recuperadas.
-
+há problema dos sinônimos, em que demandas similares mas, escritas com palavras
+diferentes, podem não ser recuperadas.
 
 Neste contexto é proposto uma ferramenta para recomendação de Requisições de
 Mudanças similares utilizando Redes Neurais. Uma ferramenta deste tipo trará os
@@ -118,14 +119,15 @@ seguinte benefícios:
 %Com relação ao problema da troca de contexto, existem na literatura trabalhos
 %com objetivo de recomendar demandas similares, evitando a repetição de algumas
 %tarefas e por consequência a produtividade do desenvolvedor.
-O problema de recomendar demandas similares pode ser definido formalmente da
-seguinte forma:
+O problema de recomendar Requisições de Mudanças similares pode ser definido
+formalmente conforme segue:
 
-Seja $I$ o conjunto de Requisições de Mudanças (MR) de cardinalidade $n$ para um
-sistema $S$ qualquer. Seja $i$ um MR tal que $i \in I$ e que foi atribuída para um desenvolver
+Seja $I$ o conjunto de Requisições de Mudanças (MR) em aberto para um
+sistema $S$ qualquer. A cardinalidade de $I$ é dada por $n$. Seja $i$ um MR,
+tal que $i \in I$, que foi atribuída para um desenvolver
 $d$. Pede-se que seja encontrado um subconjunto $J \subset I$, de tamanho $k \ll n$, tal
-que para todo $j$, tal $j \in J$, seja similar a $i$ em um grau maior ou igual a
-$s$. Onde $s$ é limiar inferior de similaridade. Neste o problema se resume em
+que para todo $j$, tal que $j \in J$, seja similar a $i$ em um grau maior ou igual a
+$s$. Onde $s$ é limiar inferior de similaridade. Neste caso, o problema se resume em
 encontrar uma função de similaridade a ser aplicada a cada elemento $m \in I$,
 onde $m \neq i$.
 
@@ -185,8 +187,7 @@ Revisão Sistemática deve seguir os seguintes passos:
   \end{enumerate}
 \end{enumerate}
 
-A SRL proposta segue as diretrizes por
-\cite{keele2007guidelines} e visa responder as seguintes questões de
+A SRL que será realizada visa responder as seguintes questões de
 pesquisa:
 
 \begin{itemize}
@@ -204,23 +205,26 @@ pesquisa:
 \label{sec:prova-conceito}
 
 Como prova de conceito da técnica proposta será construída uma ferramenta que
-possibilite a recomendação de novas demandas a serem tratadas baseada em uma
-``demanda-semente''. Com intuito de reduzir o problema da troca de contexto e
-ao mesmo aumentar a produtividade de equipes de manutenção de software é
-proposto uma ferramenta para recomendação de demandas similares utilizando Redes Neurais.
+possibilite a recomendação Requisições de Mudança  a serem tratadas a partir de
+uma demanda base, denominada ``demanda-semente''. Esta ferramenta utilizar da
+técnica de Redes Neurais para encontrar as demais similares. O plano é que a
+base de dados a ser utilizada seja de uma empresa de desenvolvimento a fim de validarmos
+a ferramenta em uma situação real. Maiores detalhes sobre o processo de
+avaliação estão descritos na Seção \ref{sec:avaliacao}.
 
 \section{Avaliação}
 \label{sec:avaliacao}
 
 Com o objetivo de avaliar a ferramentas proposto neste trabalho será realizado um
 \textit{Quasi-Experimento} \cite{wohlin2012experimentation} utilizando a base de dados de demandas de manutenção de uma empresa
-de software real. Dado que uma demanda i foi atribuída a um desenvolvedor d,
-serão geradas 03 listas de sugestões: uma lista proposta pelo gerente imediato
-de d; outra proposta por um desenvolver do mesmo setor de d; e a terceira
-gerada por nossa ferramenta. Naturalmente o desenvolvedor não saberá a origem
+de software real. O experimento consistirá de dado que uma demanda $i$ foi atribuída a um desenvolvedor $d$,
+serão geradas 03 listas de sugestões: $(i)$ lista produzida pelo gerente imediato
+de $d$;$(ii)$ lista feita por um desenvolver do mesmo setor de $d$; $(iii)$
+gerada pela ferramenta proposta. Naturalmente o desenvolvedor não saberá a origem
 de nenhum das listas.  De posse das três listas pediremos ao
-desenvolvedor d que informe qual delas pode reduzir a troca de contexto e
-aumentar sua produtividade.
+desenvolvedor $d$ que informe qual delas pode reduzir a troca de contexto e
+aumentar sua produtividade. Espera-se a lista proposta pela nossa ferramenta
+possua o melhor desempenho na maioria dos casos.
 
 \chapter{Conclusão e Trabalhos Futuros}
 \label{ch:conclusao_trab_futuros}
