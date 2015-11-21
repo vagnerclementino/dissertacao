@@ -25,7 +25,7 @@ linkcolor=black,
 filecolor=black,
 ]{hyperref}
 \usepackage[table,xcdraw]{xcolor}
-
+\usepackage{amsmath}
 \begin{document}
 \ppgccufmg{
 title={Uma Ferramenta para\\
@@ -53,32 +53,81 @@ Capítulo \ref{ch:conclusao_trab_futuros}, especialmente na Tabela \ref{tab:cron
 
 \chapter{Justificativa}
 \label{ch:justificativa}
+Desde o final da década de 1970 há um aumento do custo da manutenção de software. Na
+Tabela \ref{tab:software-cost} verifica-se essa tendência. Em um trabalho mais
+recente \cite{1423995}, Yong \& Mookerjee propõe um modelo que reduz o custos de
+manutenção e reposição durante a vida útil de um sistema de software. O modelo
+proposto demonstrou quem em algumas situações é melhor substituir um sistema
+do que mantê-lo.
+
+\begin{table}[ht]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[HTML]{FFFFFF}
+\textbf{Ano} & \textbf{Proporção} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{Metodologia}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{Referência}} \\ \hline
+2000 & \textgreater90\% & $\frac{\text{(Custo com manutenção e evolução do software)}}{\text{(Custo total do software)}}$ &\cite{846201} \\ \hline
+1993 & 75\% & $\frac{\text{(Manutenção de Software)}}{\text{(Orçamento com Sistemas de Informação)}}$ & \cite{swe.cost.legacy2}\\ \hline
+1990 & \textgreater90\% & $\frac{\text{(Custo com manutenção de sistema)}}{\text{(Custo total com Software)}}$ & \cite{moad1990maintaining}\\ \hline
+1988 & 60-70\% & $\frac{\text{(Manutenção de software)}}{\text{(Orçamento com a operação de Sistemas de Gerenciamento da Informação)}}$ & \cite{Port1988}\\ \hline
+1984 & 65-75\% & $\frac{\text{(Esforço gasto em manutenção de software)}}{\text{(Tempo total disponível para esforço em Engenharia de Software)}}$ & \cite{McKee:1984:MFD:1499310.1499334}\\ \hline
+1981 & 50\% & $\frac{\text{(Tempo gasto com manutenção de software)}}{\text{(Tempo Total)}}$ & \cite{Lientz:1981:PAS:358790.358796}\\ \hline
+1979 & 67\% & $\frac{\text{(Custo com Manutenção)}}{\text{(Custo Total com Software)}}$ & \cite{Zelkowitz:1979:PSE:578504}\\ \hline
+\end{tabular}
+}
+\caption{Proporção do Custo de Manutenção de Software. Adaptado de \cite{koskinen2003software}}
+\label{tab:software-cost}
+\end{table}
+
+
+Com o objetivo de mensurar o custo relativo à manutenção de software
+\cite{benaroch2013primary,5873461,ren2011research}, bem com melhoria as
+atividades relacionadas ao processo de manutenção
+\cite{April200973}, \cite{930170} e \cite{5741246} mediante a proposição
+de modelos. Nesta mesma linha alguns estudo possuem o foco na melhoria da
+produtividade do desenvolvedor mediante a remoção de Requisições de Mudança - Modification Request (MR) ou ainda a sugestão de MR's similares que possibilitam a redução da mudança de contexto (context switch).
+
+Em geral afim de remover duplicadas ou sugerir MR's similares são utilizadas de
+técnicas de Recuperação da Informação - Information Retrieve
+\cite{baeza1999modern} sobre o texto da Requisição. Nos trabalhos de
+\cite{101186} e \cite{Runeson:2007:DDD:1248820.1248882}. Apesar dos resultados
+relevantes obtidos por estes estudo verifica-se que a técnica é fortemente
+dependente da forma que o solicitante da MR descreve a sua requisição. Além disso
+há problema dos sinônimos em que demandas similares mas escritas com palavras
+distintas podem não ser recuperadas.
+
+
+Neste contexto é proposto uma ferramenta para recomendação de Requisições de
+Mudanças similares utilizando Redes Neurais. Uma ferramenta deste tipo trará os
+seguinte benefícios:
 
 \begin{itemize}
-\item Redução da troca de contexto (context switch)
-\item Aumento da produtividade
-\item Trabalhos de recomendação de novas demandas utilizam análise textual através de técnicas de Recuperação da Informação (Information Retrieve - IR)
+\item \textit{Redução da troca de contexto (context switch)};
+\item \textit{Aumento da produtividade};
+\item \textit{Melhorar a qualidade das MR's sugeridas através de uma técnica mais
+  potente do que aquelas da Recuperação da Informação}.
 \end{itemize}
 
-Dois problemas podem afetar a produtividade do desenvolvedor, e por conseguinte
-toda a equipe de manutenção, são as demandas duplicadas e a troca de
-contexto. No primeiro caso, temos um mesmo problema sendo reportado por
-diversos usuários em demandas distintas. No segundo, a dificuldade analisar
-duas demandas totalmente distintas uma da outra. Diversas trabalhos vêm sendo
-realizados no intuito de remover bug duplicados da base de dados dos Sistemas
-de Controle de Demandas (Issue Tracking System - ITS).
-Com relação ao problema da troca de contexto, existem na literatura trabalhos
-com objetivo de recomendar demandas similares, evitando a repetição de algumas
-tarefas e por consequência a produtividade do desenvolvedor.
+%Dois problemas podem afetar a produtividade do desenvolvedor, e por conseguinte
+%toda a equipe de manutenção, são as demandas duplicadas e a troca de
+%contexto. No primeiro caso, temos um mesmo problema sendo reportado por
+%diversos usuários em demandas distintas. No segundo, a dificuldade analisar
+%duas demandas totalmente distintas uma da outra. Diversas trabalhos vêm sendo
+%realizados no intuito de remover bug duplicados da base de dados dos Sistemas
+%de Controle de Demandas (Issue Tracking System - ITS).
+%Com relação ao problema da troca de contexto, existem na literatura trabalhos
+%com objetivo de recomendar demandas similares, evitando a repetição de algumas
+%tarefas e por consequência a produtividade do desenvolvedor.
 O problema de recomendar demandas similares pode ser definido formalmente da
 seguinte forma:
 
-Seja I o conjunto de demandas de manutenção para um sistema S qualquer de
-cardinalidade n. Seja i
-um demanda pertencente ao conjunto I e que foi atribuída para um desenvolver
-d. Pede-se que seja encontrado um subconjunto J de I, de tamanho $k << n$, tal
-que para todo j no subconjunto J seja similar a i em um grau maior ou igual a s.
-
+Seja $I$ o conjunto de Requisições de Mudanças (MR) de cardinalidade $n$ para um
+sistema $S$ qualquer. Seja $i$ um MR tal que $i \in I$ e que foi atribuída para um desenvolver
+$d$. Pede-se que seja encontrado um subconjunto $J \subset I$, de tamanho $k \ll n$, tal
+que para todo $j$, tal $j \in J$, seja similar a $i$ em um grau maior ou igual a
+$s$. Onde $s$ é limiar inferior de similaridade. Neste o problema se resume em
+encontrar uma função de similaridade a ser aplicada a cada elemento $m \in I$,
+onde $m \neq i$.
 
 \chapter{Revisão da Literatura}
 \label{ch:revisao}
@@ -163,10 +212,10 @@ proposto uma ferramenta para recomendação de demandas similares utilizando Red
 \section{Avaliação}
 \label{sec:avaliacao}
 
-Com o objetivo de avaliar a ferramentas prposto nes trebablho será realizado um
+Com o objetivo de avaliar a ferramentas proposto neste trabalho será realizado um
 \textit{Quasi-Experimento} \cite{wohlin2012experimentation} utilizando a base de dados de demandas de manutenção de uma empresa
-de software real. Dado que uma demanda i foi atribuida a um desenvolvedor d,
-serão geradas 03 listas de suguestões: uma lista proposta pelo gerente imediato
+de software real. Dado que uma demanda i foi atribuída a um desenvolvedor d,
+serão geradas 03 listas de sugestões: uma lista proposta pelo gerente imediato
 de d; outra proposta por um desenvolver do mesmo setor de d; e a terceira
 gerada por nossa ferramenta. Naturalmente o desenvolvedor não saberá a origem
 de nenhum das listas.  De posse das três listas pediremos ao

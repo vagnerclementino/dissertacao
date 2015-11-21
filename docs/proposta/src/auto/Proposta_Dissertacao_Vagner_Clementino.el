@@ -22,10 +22,12 @@
     "inputenc"
     "graphicx"
     "hyperref"
-    "xcolor")
+    "xcolor"
+    "amsmath")
    (LaTeX-add-labels
     "ch:intro"
     "ch:justificativa"
+    "tab:software-cost"
     "ch:revisao"
     "ch:metodologia"
     "sec:revisao_sistematica"
