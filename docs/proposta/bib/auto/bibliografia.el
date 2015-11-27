@@ -25,5 +25,8 @@
     "koskinen2003software"
     "Alipour:2013:CAT:2487085.2487123"
     "6671283"
-    "09639314")))
+    "09639314"
+    "zimmermann2005mining"
+    "kaur2015review"
+    "1703974")))
 

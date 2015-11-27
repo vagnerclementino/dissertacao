@@ -28,9 +28,10 @@ filecolor=black,
 \usepackage{amsmath}
 \begin{document}
 \ppgccufmg{
-title={Uma Ferramenta para\\
+title={Uma Metodologia para\\
 Recomendação de \\
-Demandas Similares},
+Requisições de Mudanças \\
+Similares},
 author={Vagner Clementino dos Santos},
 university={Universidade Federal de Minas Gerais},
 course={Ciência da Computação},
@@ -53,32 +54,75 @@ Capítulo \ref{ch:conclusao_trab_futuros}, especialmente na Tabela \ref{tab:cron
 
 \chapter{Justificativa}
 \label{ch:justificativa}
-Desde o final da década de 1970 percebe-se o aumento do custo referente as
-atividades de  manutenção de software. Na
-Tabela \ref{tab:software-cost}, adaptada de  \cite{koskinen2003software},  é possível verificar esta tendência. Em um trabalho mais
-recente \cite{1423995}, Yong \& Mookerjee propõe um modelo que reduz o custos de
+Desde o final da década de 1970 \cite{Zelkowitz:1979:PSE:578504}  percebe-se o aumento do custo referente as
+atividades de  manutenção de software.
+%Na Tabela \ref{tab:software-cost}, adaptada de  \cite{koskinen2003software},
+%é possível verificar esta tendência.
+Em um trabalho mais recente \cite{1423995}, Yong \& Mookerjee propõe um modelo que reduz o custos de
 manutenção e reposição durante a vida útil de um sistema de software. O modelo
-proposto demonstrou quem em algumas situações é \textit{melhor substituir um sistema do que mantê-lo}.
+proposto demonstrou quem em algumas situações é \textit{melhor substituir um
+  sistema do que mantê-lo}. Com o objetivo de mensurar o custo do software
+algum trabalhos vêm desenvolvendo novos modelos a fim de melhorar a acurácia
+dos valores obtidos. Alguns destes trabalhos descrevem que o custo para manter
+um sistema pode chegar a 60\% \cite{kaur2015review}. Este mesmo percentual
+refere-se ao total de desenvolvedores dedicados à tarefas de manutenção de
+sistemas \cite{Zhang_2003}. Neste contexto, existe também por parte da acadêmia quando da
+industria o interesse no desenvolvimento de técnicas que reduzem o esforço das
+tarefas de manutenção de software ao mesmo tempo que reduza o seu custo.
 
-\begin{table}[ht]
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|}
-\hline
-\rowcolor[HTML]{FFFFFF}
-\textbf{Ano} & \textbf{Proporção} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{Metodologia}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{Referência}} \\ \hline
-2000 & \textgreater90\% & $\frac{\text{(Custo com manutenção e evolução do software)}}{\text{(Custo total do software)}}$ &\cite{846201} \\ \hline
-1993 & 75\% & $\frac{\text{(Manutenção de Software)}}{\text{(Orçamento com Sistemas de Informação)}}$ & \cite{swe.cost.legacy2}\\ \hline
-1990 & \textgreater90\% & $\frac{\text{(Custo com manutenção de sistema)}}{\text{(Custo total com Software)}}$ & \cite{moad1990maintaining}\\ \hline
-1988 & 60-70\% & $\frac{\text{(Manutenção de software)}}{\text{(Orçamento com a operação de Sistemas de Gerenciamento da Informação)}}$ & \cite{Port1988}\\ \hline
-1984 & 65-75\% & $\frac{\text{(Esforço gasto em manutenção de software)}}{\text{(Tempo total disponível para esforço em Engenharia de Software)}}$ & \cite{McKee:1984:MFD:1499310.1499334}\\ \hline
-1981 & 50\% & $\frac{\text{(Tempo gasto com manutenção de software)}}{\text{(Tempo Total)}}$ & \cite{Lientz:1981:PAS:358790.358796}\\ \hline
-1979 & 67\% & $\frac{\text{(Custo com Manutenção)}}{\text{(Custo Total com Software)}}$ & \cite{Zelkowitz:1979:PSE:578504}\\ \hline
-\end{tabular}
-}
-\caption{Proporção do Custo de Manutenção de Software. Adaptado de \cite{koskinen2003software}}
-\label{tab:software-cost}
-\end{table}
+%\begin{table}[ht]
+%\resizebox{\textwidth}{!}{%
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%\rowcolor[HTML]{FFFFFF}
+%\textbf{Ano} & \textbf{Proporção} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{Metodologia}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\textbf{Referência}} \\ \hline
+%2000 & \textgreater90\% & $\frac{\text{(Custo com manutenção e evolução do software)}}{\text{(Custo total do software)}}$ &\cite{846201} \\ \hline
+%1993 & 75\% & $\frac{\text{(Manutenção de Software)}}{\text{(Orçamento com Sistemas de Informação)}}$ & \cite{swe.cost.legacy2}\\ \hline
+%1990 & \textgreater90\% & $\frac{\text{(Custo com manutenção de sistema)}}{\text{(Custo total com Software)}}$ & \cite{moad1990maintaining}\\ \hline
+%1988 & 60-70\% & $\frac{\text{(Manutenção de software)}}{\text{(Orçamento com a operação de Sistemas de Gerenciamento da Informação)}}$ & \cite{Port1988}\\ \hline
+%1984 & 65-75\% & $\frac{\text{(Esforço gasto em manutenção de software)}}{\text{(Tempo total disponível para esforço em Engenharia de Software)}}$ & \cite{McKee:1984:MFD:1499310.1499334}\\ \hline
+%1981 & 50\% & $\frac{\text{(Tempo gasto com manutenção de software)}}{\text{(Tempo Total)}}$ & \cite{Lientz:1981:PAS:358790.358796}\\ \hline
+%1979 & 67\% & $\frac{\text{(Custo com Manutenção)}}{\text{(Custo Total com Software)}}$ & \cite{Zelkowitz:1979:PSE:578504}\\ \hline
+%\end{tabular}
+%}
+%\caption{Proporção do Custo de Manutenção de Software. Adaptado de \cite{koskinen2003software}}
+%\label{tab:software-cost}
+%\end{table}
+%
 
+Uma possível forma de reduzir o custo de manutenção de um sistema de software é
+aumentar a produtividade do desenvolvedor devotado às atividade de
+manutenção. No contexto do processo de desenvolvimento de software tradicional,
+conforme supõe a \textit{ISO/IEC 14764} \cite{1703974}, a manutenção de
+software pode estruturada conforme a Figura \ref{fig:maintence-process}.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=.75\textwidth]{../img/maintence_process.eps}
+\caption{Processo de manutenção de software da norma ISO/IEC 14764. Adaptado: \cite{1703974}}
+\label{fig:maintence-process}
+\end{figure}
+
+Na atividade \textit{1 - Implementação do processo (Process
+Implementation)} os planos e procedimentos a serem executados
+durante a fase de manutenção devem ser estabelecidos e aprovados. Muitos o
+plano proposto define o processo de atribuição das MR's para os
+desenvolvedores. Esta tomada de decisão geralmente leva em conta a prioridade
+do serviço a ser realizado, as habilidades do programador dentre outros
+critérios. Todavia, este processo poderia obter melhores resultados se a cada
+Requisição atribuída a um desenvolvedor, outras similares, também pudessem ser
+sugeridas.
+
+
+Tal tomada de decisão apoiada por alguma metodologia para recomendar MR's
+similares trará os seguinte benefícios:
+
+\begin{itemize}
+\item \textit{Redução da troca de contexto (context switch)};
+\item \textit{Aumento da produtividade};
+\item \textit{Melhorar a qualidade das MR's sugeridas através de uma técnica mais
+  potente do que aquelas da Recuperação da Informação}.
+\end{itemize}
 
 Com o objetivo de mensurar o custo relativo à manutenção de software
 \cite{benaroch2013primary,5873461,ren2011research}, bem com melhoria as
@@ -99,26 +143,8 @@ há problema dos sinônimos, em que demandas similares mas, escritas com palavra
 diferentes, podem não ser recuperadas.
 
 Neste contexto é proposto uma ferramenta para recomendação de Requisições de
-Mudanças similares utilizando Redes Neurais. Uma ferramenta deste tipo trará os
-seguinte benefícios:
+Mudanças similares utilizando Redes Neurais.
 
-\begin{itemize}
-\item \textit{Redução da troca de contexto (context switch)};
-\item \textit{Aumento da produtividade};
-\item \textit{Melhorar a qualidade das MR's sugeridas através de uma técnica mais
-  potente do que aquelas da Recuperação da Informação}.
-\end{itemize}
-
-%Dois problemas podem afetar a produtividade do desenvolvedor, e por conseguinte
-%toda a equipe de manutenção, são as demandas duplicadas e a troca de
-%contexto. No primeiro caso, temos um mesmo problema sendo reportado por
-%diversos usuários em demandas distintas. No segundo, a dificuldade analisar
-%duas demandas totalmente distintas uma da outra. Diversas trabalhos vêm sendo
-%realizados no intuito de remover bug duplicados da base de dados dos Sistemas
-%de Controle de Demandas (Issue Tracking System - ITS).
-%Com relação ao problema da troca de contexto, existem na literatura trabalhos
-%com objetivo de recomendar demandas similares, evitando a repetição de algumas
-%tarefas e por consequência a produtividade do desenvolvedor.
 O problema de recomendar Requisições de Mudanças similares pode ser definido
 formalmente conforme segue:
 
@@ -148,13 +174,11 @@ que recomenda novos bugs para um desenvolvedor baseado no bug que ele esteja
 tratando atualmente. O objetivo da extensão é sugerir bugs com base em técnicas de
 Recuperação de Informação \cite{baeza1999modern}.
 
-
 \chapter{Metodologia}
 \label{ch:metodologia}
 
 O processo de desenvolvimento deste trabalho pode ser dividido nas seguintes
-etapas $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ - Construção da Ferramenta
-  (Prova de Conceito)}; $IV$\textit{ - Avaliação}. Cada uma das etapas é detalhada nas próximas seções.
+etapas $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ - Prova de Conceito)}; $IV$\textit{ - Avaliação}. Cada uma das etapas é detalhada nas próximas seções.
 
 \section{Revisão Sistemática da Literatura}
 \label{sec:revisao_sistematica}
@@ -187,30 +211,47 @@ Revisão Sistemática deve seguir os seguintes passos:
   \end{enumerate}
 \end{enumerate}
 
-A SRL que será realizada visa responder as seguintes questões de
+Com o objetivo de entender melhor o contexto do problema da sugestão de MR's
+similares, será realizada uma SRL que se propõe a responder as seguintes
+questões:  A SRL que será realizada visa responder as seguintes questões de
 pesquisa:
 
 \begin{itemize}
-  \item \textbf{$Q1$}: Quais são as metodologias/técnicas utilizadas para
-    recomendação de novas demandas?
-  \item \textbf{$Q2$}: Quais são as metodologias/técnicas utilizadas para
+  \item \textbf{$Q1$}: Quais são os aspectos mais importantes suportados pelas
+    metodologias/ferramentas de recomendação de Requisições de Mudança e
     remoção de bugs duplicados?
-    \item \textbf{$Q3$}: Qual procedimento utilizado para avaliar a
-    técnica/metodologia proposta?
-  \item \textbf{$Q4$}: Em qual tipo de projeto (comercial ou código-aberto) a
-    metodologia/técnica proposto foi aplicada?
+  \item \textbf{$Q2$}: Como as ferramentas/metodologias atualmente disponíveis
+    para recomendação de Requisições de Mudança auxiliam na tomada de decisões
+    durante o processo de Manutenção de Software?
+  \item \textbf{$Q3$}: Quais são as metodologias/técnicas utilizadas para
+    recomendação de Requisições de Mudança e bugs duplicados?
+  \item \textbf{$Q5$}: Qual procedimento utilizado para avaliar a
+    técnica/metodologia proposta para recomendação de Requisições de Mudança similares e
+    bugs duplicados?
+  \item \textbf{$Q6$}: Em qual tipo de projeto (comercial ou código-aberto) a
+    metodologia/ferramenta foi aplicada?
+  \item \textbf{$Q7$} : Qual processo de software (tradicional, ágil, TDD e
+    etc) envolvido no contexto no qual a ferramenta/metodologia foi aplicada?
 \end{itemize}
 
-\section{Construção da Ferramenta}
+
+
+\section{Prova de Conceito}
 \label{sec:prova-conceito}
 
-Como prova de conceito da técnica proposta será construída uma ferramenta que
-possibilite a recomendação Requisições de Mudança  a serem tratadas a partir de
-uma demanda base, denominada ``demanda-semente''. Esta ferramenta utilizar da
-técnica de Redes Neurais para encontrar as demais similares. O plano é que a
-base de dados a ser utilizada seja de uma empresa de desenvolvimento a fim de validarmos
-a ferramenta em uma situação real. Maiores detalhes sobre o processo de
-avaliação estão descritos na Seção \ref{sec:avaliacao}.
+Como prova de conceito da técnica proposta pretende-se construir uma que
+possibilite a recomendação Requisições de Mudança similares. A proposta é que a
+ferramenta utilize técnicas para detecção de similaridades que não dependam
+exclusivamente da Recuperação da Informação (Information Retrieve), como por
+exemplo nos trabalho propostos por  Rocha et al. \cite{101186} e Runeson et
+al. \cite{Runeson:2007:DDD:1248820.1248882}. Será realizado um estudo
+exploratório a fim de verificar qual técnica será mais adequada. Neste sentido
+os resultados da Revisão Sistemática da Literatura (Seção \ref{sec:revisao})
+ajudará neste decisão. Todavia, o trabalho de  Rocha et al. \cite{101186} fica
+sendo a linha de base (baseline) deste estudo, cujo objetivo é utilizar uma
+técnica apresente melhores resultados, utilizados como métricas Feedback e
+Precision \cite{zimmermann2005mining}. A avaliação da ferramenta proposta como
+Prova de Conceito está descrita com maiores detalhes na \ref{sec:avaliacao}.
 
 \section{Avaliação}
 \label{sec:avaliacao}
