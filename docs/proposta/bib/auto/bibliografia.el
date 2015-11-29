@@ -28,5 +28,14 @@
     "09639314"
     "zimmermann2005mining"
     "kaur2015review"
-    "1703974")))
+    "1703974"
+    "159342"
+    "Lientz:1980:SMM:601062"
+    "Baysal:2013:SAP:2486788.2486957"
+    "Herrin:1985:SMC:323287.323383"
+    "hirota1994approach"
+    "baysal2012qualitative"
+    "Thung:2014:BIT:2635868.2661678"
+    "Thung:2014:DIT:2642937.2648627"
+    "Kononenko:2014:DED:2591062.2591075")))
 

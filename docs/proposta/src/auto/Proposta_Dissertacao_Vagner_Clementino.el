@@ -26,8 +26,8 @@
     "amsmath")
    (LaTeX-add-labels
     "ch:intro"
+    "fig:modification-request"
     "ch:justificativa"
-    "fig:maintence-process"
     "ch:revisao"
     "ch:metodologia"
     "sec:revisao_sistematica"
