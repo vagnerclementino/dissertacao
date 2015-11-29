@@ -28,10 +28,8 @@ filecolor=black,
 \usepackage{amsmath}
 \begin{document}
 \ppgccufmg{
-title={Uma Metodologia para\\
-Recomendação de \\
-Requisições de Mudanças \\
-Similares},
+title={Um estudo de ferramentas de \\
+Suporte de Problemas de Software},
 author={Vagner Clementino dos Santos},
 university={Universidade Federal de Minas Gerais},
 course={Ciência da Computação},
@@ -43,32 +41,106 @@ abstract={Resumo}{resumo},
 \chapter{Introdução}
 \label{ch:intro}
 Dentro do ciclo de vida do produto de software o processo de manutenção tem
-papel fundamental. Apesar de não ter merecido tanta atenção quanto a parte de
-projeto e desenvolvimento de software, no últimos anos o processo de manter o
-software vem ganhando relevância devido, primordialmente, à seu custo
-associado.
+papel fundamental. Apesar de tradicionalmente não ter merecido tanta atenção quanto projeto e
+desenvolvimento, nos  últimos anos o processo de manter o software vem ganhando
+relevância devido, primordialmente, à percepção do seu grande custo associado.
 
-No Capítulo \ref{ch:justificativa} . O Capítulo \ref{ch:revisao} . No
-Capítulo \ref{ch:metodologia} é discutida a metologia a ser aplicada. No
-Capítulo \ref{ch:conclusao_trab_futuros}, especialmente na Tabela \ref{tab:cronograma} é exibido o cronograma do trabalho.
+A Manutenção pode ser definida como o processo de modificar um componente ou um
+sistema de software após a sua entrega a fim de corrigir falhas, melhorar o
+desempenho ou outro atributo, ou adaptá-lo para mudanças ambientais
+\cite{159342}. De outra forma, a Manutenibilidade é uma propriedade de um
+sistema ou componente de software com relação ao grau de \textit{facilidade}
+que ele pode ser corrigido, melhorado ou adaptado para mudanças ambientais \cite{159342}.
+
+As manutenções no software podem ser divididas em Manutenção Corretiva, Adaptativa, Perfectiva e Preventiva \cite{Lientz:1980:SMM:601062,159342}. A
+Manutenção Corretiva lida com a reparação de falhas encontradas. A Manutenção
+Adaptativa têm o foco na adaptação do software devido à mudanças ocorridas no
+ambiente em que ele está inserido. A Manutenção Perfectiva trabalha com
+melhorias funcionais do sistema, incluindo atividade de aumento do desempenho
+ou aperfeiçoamento de interfaces do usuário. A Manutenção Preventiva se preocupa com atividades
+que possibilitem aumento da manutenibilidade do sistema. A \textit{ISO 14764}
+\cite{1703974} propõe a divisão da tarefa de manutenção nos quatros tipos
+descritos anteriormente e agrupa-os em termo único denominado
+\textit{Requisição de Mudança - Modification Request (MR)}, conforme a Figura \ref{fig:modification-request}
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=.75\textwidth]{../img/modification_request.eps}
+\caption{Tipos de manutenção segundo a norma ISO/IEC 14764. Extraído de
+  \cite{1703974}}
+\label{fig:modification-request}
+\end{figure}
+
+Em  um ambiente real de desenvolvimento e manutenção de software, independente do tipo
+de Requisição de Mudança (MR) a ser tratada, existe a necessidade de
+monitoramento das MR's, especialmente por conta do seu volume. Esse controle é geralmente realizado
+por Sistemas de Controle de Demandas - Issue Tracking Systems (ITS) que ajudam
+os desenvolvedores na correção colaborativa de bugs e
+implementação de novas funcionalidades.  Os ITS's são também utilizados por gestores, analistas de qualidade  e usuários finais para
+tarefas tais como gerenciamento de projetos, comunicação e discussão e revisões
+de código. A maioria desses sistemas são projetados em torno do termo "demanda"
+(bug, defeito, bilhete, recurso, etc.), contudo, cada vez mais este modelo parece
+ser distante das necessidades práticas dos projetos de software \cite{Baysal:2013:SAP:2486788.2486957}.
+
+Neste trabalho de dissertação vamos elaborar um modelo conceitual de referência
+dos Sistemas de Controle de Demandas (ITS) ao mesmo tempo em que iremos discutir os aspectos que
+são considerados mais importantes do ponto de vista da literatura da área bem como a partir de pontos de vistas de alguns
+profissionais. De forma particular vamos estudar os mecanismos de
+personalização que algumas destas ferramentas permitem. Existe a previsão de
+criarmos alguma possível extensão (plugin) para os ITS's  a ser identificada ao
+longo do trabalho.
+
+%sta proposta de dissertação está estruturada da seguinte forma: o  Capítulo \ref{ch:justificativa} . O Capítulo \ref{ch:revisao} . No
+%capítulo \ref{ch:metodologia} é discutida a metologia a ser aplicada. No
+%Capítulo \ref{ch:conclusao_trab_futuros}, especialmente na Tabela \ref{tab:cronograma} é exibido o cronograma do trabalho.
 
 \chapter{Justificativa}
 \label{ch:justificativa}
-Desde o final da década de 1970 \cite{Zelkowitz:1979:PSE:578504}  percebe-se o aumento do custo referente as
-atividades de  manutenção de software.
+Desde o final da década de 1970 \cite{Zelkowitz:1979:PSE:578504} percebe-se o aumento do custo referente as
+atividades de  manutenção de software. Nas décadas de 1980 de 1990 alguns
+trabalhos tiveram seu foco no desenvolvimento de modelos de mensuração do custo
+para manter o software \cite{Herrin:1985:SMC:323287.323383,hirota1994approach}.
 %Na Tabela \ref{tab:software-cost}, adaptada de  \cite{koskinen2003software},
 %é possível verificar esta tendência.
-Em um trabalho mais recente \cite{1423995}, Yong \& Mookerjee propõe um modelo que reduz o custos de
+Em um trabalho mais recente, Yong \& Mookerjee \cite{1423995}  propõe um modelo que reduz o custos de
 manutenção e reposição durante a vida útil de um sistema de software. O modelo
 proposto demonstrou quem em algumas situações é \textit{melhor substituir um
-  sistema do que mantê-lo}. Com o objetivo de mensurar o custo do software
-algum trabalhos vêm desenvolvendo novos modelos a fim de melhorar a acurácia
-dos valores obtidos. Alguns destes trabalhos descrevem que o custo para manter
-um sistema pode chegar a 60\% \cite{kaur2015review}. Este mesmo percentual
+  sistema do que mantê-lo}. Em outros estudos há menção de que o custo de
+manutenção pode chegar a 60\% do custo total do software \cite{kaur2015review}. Este mesmo percentual
 refere-se ao total de desenvolvedores dedicados à tarefas de manutenção de
-sistemas \cite{Zhang_2003}. Neste contexto, existe também por parte da acadêmia quando da
-industria o interesse no desenvolvimento de técnicas que reduzem o esforço das
+sistemas \cite{Zhang_2003}. Neste contexto, existe um interesse por parte da
+academia quanto da industria no desenvolvimento de processo, técnicas e ferramentas que reduzem o esforço das
 tarefas de manutenção de software ao mesmo tempo que reduza o seu custo.
+
+O desenvolvimento e a manutenção de software envolve diversos tipos de métodos,
+técnicas e ferramentas. Em especial no processo de manutenção, um aspecto
+importante são as diversas Requisições de Mudanças (MR) que devem ser
+gerenciadas. Este controle é realizado pelos Sistemas de Controle de Demandas -
+Issue Tracking Systems (ITS) cujo uso vêm crescendo em importância sobretudo
+por utilização por gestores, analistas da qualidade e usuários finais para
+atividades como tomada de decisão, comunicação dentre outras.
+
+Grande parte do ITS's desenvolvem suas funcionalidades em torno do termo
+``demanda" (bug, defeito, bilhete, recurso, etc.). Todavia, o que se percebe na
+prática é que essa modelagem parece ser distante das necessidades práticas dos projetos de software, especialmente
+no ponto de vista dos desenvolvedores \cite{Baysal:2013:SAP:2486788.2486957}.
+
+Um exemplo deste desacoplamento do ITS's com a necessidade de seus usuários
+pode ser visto no trabalho proposto por Baysal \& Holme \cite{baysal2012qualitative} no qual desenvolvedores que utilizam o Sistema de
+Controle de Demanda Bugzilla\footnote{\url{https://www.bugzilla.org}} relatam a
+dificuldade em manter uma compreensão global das MR's em que eles estão
+envolvidos e que eles desejam um suporte melhorado para a Consciência
+Situacional - Situational Awareness, ou seja, gostariam de estar cientes da
+situação global do projeto bem como das atividades que outras pessoas estão realizando. Um outro sinal da necessidade de evolução do
+ITS's pode ser observado pelos diversas extensões (plugin) propostos para
+aquele tipo de ferramenta que existem na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Thung:2014:DIT:2642937.264862,Kononenko:2014:DED:2591062.2591075}
+
+Diante do exposto, é proposto neste  trabalho de dissertação a elaboração de Modelo Conceitual de Referência
+dos Sistemas de Controle de Demandas. Vamos discutir os aspectos que são
+considerados mais importantes do ponto de vista da literatura
+da área bem como a partir de pontos de vistas de alguns profissionais. De forma particular vamos estudar os mecanismos de
+personalização que algumas destas ferramentas permitem e tentaremos ainda criar alguns exemplos de personalização para alguma possível
+extensão a ser identificada ao longo do trabalho.
 
 %\begin{table}[ht]
 %\resizebox{\textwidth}{!}{%
@@ -90,73 +162,73 @@ tarefas de manutenção de software ao mesmo tempo que reduza o seu custo.
 %\end{table}
 %
 
-Uma possível forma de reduzir o custo de manutenção de um sistema de software é
-aumentar a produtividade do desenvolvedor devotado às atividade de
-manutenção. No contexto do processo de desenvolvimento de software tradicional,
-conforme supõe a \textit{ISO/IEC 14764} \cite{1703974}, a manutenção de
-software pode estruturada conforme a Figura \ref{fig:maintence-process}.
-
-\begin{figure}[hbtp]
-\centering
-\includegraphics[width=.75\textwidth]{../img/maintence_process.eps}
-\caption{Processo de manutenção de software da norma ISO/IEC 14764. Adaptado: \cite{1703974}}
-\label{fig:maintence-process}
-\end{figure}
-
-Na atividade \textit{1 - Implementação do processo (Process
-Implementation)} os planos e procedimentos a serem executados
-durante a fase de manutenção devem ser estabelecidos e aprovados. Muitos o
-plano proposto define o processo de atribuição das MR's para os
-desenvolvedores. Esta tomada de decisão geralmente leva em conta a prioridade
-do serviço a ser realizado, as habilidades do programador dentre outros
-critérios. Todavia, este processo poderia obter melhores resultados se a cada
-Requisição atribuída a um desenvolvedor, outras similares, também pudessem ser
-sugeridas.
-
-
-Tal tomada de decisão apoiada por alguma metodologia para recomendar MR's
-similares trará os seguinte benefícios:
-
-\begin{itemize}
-\item \textit{Redução da troca de contexto (context switch)};
-\item \textit{Aumento da produtividade};
-\item \textit{Melhorar a qualidade das MR's sugeridas através de uma técnica mais
-  potente do que aquelas da Recuperação da Informação}.
-\end{itemize}
-
-Com o objetivo de mensurar o custo relativo à manutenção de software
-\cite{benaroch2013primary,5873461,ren2011research}, bem com melhoria as
-atividades relacionadas ao processo de manutenção  mediante a proposição
-de modelos \cite{April200973}, \cite{930170} e \cite{5741246} diversos
-trabalhos vêm sendo propostos. Nesta mesma linha de pesquisa, alguns estudo
-focam na melhoria da produtividade do desenvolvedor através de ações como a remoção de Requisições de Mudança -
-Modification Request (MR) duplicadas
-\cite{Alipour:2013:CAT:2487085.2487123,6671283,09639314} ou ainda recomendando
-MR's similares que reduzem a mudança de contexto (context switch) \cite{5741246,101186}.
-
-Em geral, afim de remover duplicadas ou sugerir MR's similares são utilizadas de
-técnicas de Recuperação da Informação - Information Retrieve
-\cite{baeza1999modern} tomando como base a descrição textual da Requisição \cite{101186,Runeson:2007:DDD:1248820.1248882}. Apesar dos resultados
-relevantes obtidos por esta técnica verifica-se que ela é fortemente
-dependente da forma que o solicitante da MR descreve a sua requisição. Além disso
-há problema dos sinônimos, em que demandas similares mas, escritas com palavras
-diferentes, podem não ser recuperadas.
-
-Neste contexto é proposto uma ferramenta para recomendação de Requisições de
-Mudanças similares utilizando Redes Neurais.
-
-O problema de recomendar Requisições de Mudanças similares pode ser definido
-formalmente conforme segue:
-
-Seja $I$ o conjunto de Requisições de Mudanças (MR) em aberto para um
-sistema $S$ qualquer. A cardinalidade de $I$ é dada por $n$. Seja $i$ um MR,
-tal que $i \in I$, que foi atribuída para um desenvolver
-$d$. Pede-se que seja encontrado um subconjunto $J \subset I$, de tamanho $k \ll n$, tal
-que para todo $j$, tal que $j \in J$, seja similar a $i$ em um grau maior ou igual a
-$s$. Onde $s$ é limiar inferior de similaridade. Neste caso, o problema se resume em
-encontrar uma função de similaridade a ser aplicada a cada elemento $m \in I$,
-onde $m \neq i$.
-
+%Uma possível forma de reduzir o custo de manutenção de um sistema de software é
+%aumentar a produtividade do desenvolvedor devotado às atividade de
+%manutenção. No contexto do processo de desenvolvimento de software tradicional,
+%conforme supõe a \textit{ISO/IEC 14764} \cite{1703974}, a manutenção de
+%software pode estruturada conforme a Figura \ref{fig:maintence-process}.
+%
+%\begin{figure}[hbtp]
+%\centering
+%\includegraphics[width=.75\textwidth]{../img/maintence_process.eps}
+%\caption{Processo de manutenção de software da norma ISO/IEC 14764. Adaptado: \cite{1703974}}
+%\label{fig:maintence-process}
+%\end{figure}
+%
+%Na atividade \textit{1 - Implementação do processo (Process
+%Implementation)} os planos e procedimentos a serem executados
+%durante a fase de manutenção devem ser estabelecidos e aprovados. Muitos o
+%plano proposto define o processo de atribuição das MR's para os
+%desenvolvedores. Esta tomada de decisão geralmente leva em conta a prioridade
+%do serviço a ser realizado, as habilidades do programador dentre outros
+%critérios. Todavia, este processo poderia obter melhores resultados se a cada
+%Requisição atribuída a um desenvolvedor, outras similares, também pudessem ser
+%sugeridas.
+%
+%
+%Tal tomada de decisão apoiada por alguma metodologia para recomendar MR's
+%similares trará os seguinte benefícios:
+%
+%\begin{itemize}
+%\item \textit{Redução da troca de contexto (context switch)};
+%\item \textit{Aumento da produtividade};
+%\item \textit{Melhorar a qualidade das MR's sugeridas através de uma técnica mais
+%  potente do que aquelas da Recuperação da Informação}.
+%\end{itemize}
+%%
+%Com o objetivo de mensurar o cuto relativo à manutenção de software%
+%\cite{benaroch2013primary,587341,ren2011research}, bem com melhoria as%
+%atividades relacionadas ao procsso de manutenção  mediante a proposição%
+%de modelos \cite{April200973}, cite{930170} e \cite{5741246} diversos%
+%trabalhos vêm sendo propostos. esta mesma linha de pesquisa, alguns estudo%
+%focam na melhoria da produtividde do desenvolvedor através de ações como a remoção de Requisições de Mudança -%
+%Modification Request (MR) dupliadas%
+%\cite{Alipour:2013:CAT:2487085.487123,6671283,09639314} ou ainda recomendando%
+%MR's similares que reduzem a muança de contexto (context switch) \cite{5741246,101186}.%
+%%
+%Em geral, afim de remover dupiadas ou sugerir MR's similares são utilizadas de%
+%técnicas de Recuperação da Infomação - Information Retrieve%
+%\cite{baeza1999modern} tomando omo base a descrição textual da Requisição \cite{101186,Runeson:2007:DDD:1248820.1248882}. Apesar dos resultados%
+%relevantes obtidos por esta técica verifica-se que ela é fortemente%
+%dependente da forma que o solictante da MR descreve a sua requisição. Além disso%
+%há problema dos sinônimos, em qe demandas similares mas, escritas com palavras%
+%diferentes, podem não ser recupradas.%
+%%
+%Neste contexto é proposto umafrramenta para recomendação de Requisições de%
+%Mudanças similares utilizando Rdes Neurais.%
+%%
+%O problema de recomendar Requsções de Mudanças similares pode ser definido%
+%formalmente conforme segue:%
+%%
+%eja $I$ o conjunto de Requisçes de Mudanças (MR) em aberto para um%
+%sistema $S$ qualquer. A cardinaidade de $I$ é dada por $n$. Seja $i$ um MR,%
+%tal que $i \in I$, que foi atriuída para um desenvolver%
+%$d$. Pede-se que seja encontrad um subconjunto $J \subset I$, de tamanho $k \ll n$, tal%
+%que para todo $j$, tal que $j \n J$, seja similar a $i$ em um grau maior ou igual a%
+%$s$. Onde $s$ é limiar inferiorde similaridade. Neste caso, o problema se resume em%
+%encontrar uma função de similardade a ser aplicada a cada elemento $m \in I$,%
+%onde $m \neq i$.%
+%
 \chapter{Revisão da Literatura}
 \label{ch:revisao}
 
