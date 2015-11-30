@@ -41,9 +41,9 @@ abstract={Resumo}{resumo},
 \chapter{Introdução}
 \label{ch:intro}
 Dentro do ciclo de vida do produto de software o processo de manutenção tem
-papel fundamental. Apesar de tradicionalmente não ter merecido tanta atenção quanto projeto e
-desenvolvimento, nos  últimos anos o processo de manter o software vem ganhando
-relevância devido, primordialmente, à percepção do seu grande custo associado.
+papel fundamental. Devido ao seu alto custo, em alguns casos chegando em 60\%
+do custo total do software \cite{kaur2015review}, este processo deve ter sua
+importância considerada tanto pela comunidade científica quanto pela indústria.
 
 A Manutenção pode ser definida como o processo de modificar um componente ou um
 sistema de software após a sua entrega a fim de corrigir falhas, melhorar o
@@ -80,15 +80,31 @@ implementação de novas funcionalidades.  Os ITS's são também utilizados por 
 tarefas tais como gerenciamento de projetos, comunicação e discussão e revisões
 de código. A maioria desses sistemas são projetados em torno do termo "demanda"
 (bug, defeito, bilhete, recurso, etc.), contudo, cada vez mais este modelo parece
-ser distante das necessidades práticas dos projetos de software \cite{Baysal:2013:SAP:2486788.2486957}.
+ser distante das necessidades práticas dos projetos de software
+\cite{Baysal:2013:SAP:2486788.2486957}.
+
+A manutenção de software muitas vezes aparece ligada aos processos tradicionais
+de desenvolvimento de software. Existe um mito de que o métodos ágeis estão
+principalmente concentrados na fase de desenvolvimento
+\cite{kajko2009model}. No entanto, especialistas em software cada vez mais
+avaliam que práticas ágeis podem ser adaptadas à evolução do software. Isso não
+é totalmente surpreendente, já que métodos ágeis enfatizam a importância das
+pessoas, o desenvolvimento incremental, a redução de riscos, e teste contínuo -
+fatores que contribuem para a evolução e manutenção  eficaz de um software
+\cite{thomas2006agile}.
+
+Desta forma tanto em um contexto que utilize processo de manutenção
+``tradicional'' ou em que se aplique métodos ágeis pode-se tirar proveito das
+ITS's para um melhor desempenho das atividades de manutenção.
 
 Neste trabalho de dissertação vamos elaborar um modelo conceitual de referência
 dos Sistemas de Controle de Demandas (ITS) ao mesmo tempo em que iremos discutir os aspectos que
-são considerados mais importantes do ponto de vista da literatura da área bem como a partir de pontos de vistas de alguns
+são considerados mais importantes do ponto de vista da literatura, bem como a partir de pontos de vistas de alguns
 profissionais. De forma particular vamos estudar os mecanismos de
-personalização que algumas destas ferramentas permitem. Existe a previsão de
-criarmos alguma possível extensão (plugin) para os ITS's  a ser identificada ao
-longo do trabalho.
+personalização que algumas destas ferramentas permitem. A partir dos resultados destas avaliações, caso o esforço seja
+compatível com os prazos e recursos disponíveis, queremos elaborar extensões (plugins)
+para uma ou mais (plugin) com o objetivo de apresentar e
+discutir nossa experiência.
 
 %sta proposta de dissertação está estruturada da seguinte forma: o  Capítulo \ref{ch:justificativa} . O Capítulo \ref{ch:revisao} . No
 %capítulo \ref{ch:metodologia} é discutida a metologia a ser aplicada. No
@@ -109,8 +125,16 @@ proposto demonstrou quem em algumas situações é \textit{melhor substituir um
 manutenção pode chegar a 60\% do custo total do software \cite{kaur2015review}. Este mesmo percentual
 refere-se ao total de desenvolvedores dedicados à tarefas de manutenção de
 sistemas \cite{Zhang_2003}. Neste contexto, existe um interesse por parte da
-academia quanto da industria no desenvolvimento de processo, técnicas e ferramentas que reduzem o esforço das
+academia e da industria no desenvolvimento de processos, técnicas e ferramentas que reduzem o esforço das
 tarefas de manutenção de software ao mesmo tempo que reduza o seu custo.
+
+A manutenção não necessariamente exige que o processo de software envolvido
+seja o tradicional. Percebe-se alguns exemplos de adoção das práticas ágeis
+para fins de manutenção e evolução do software \cite{kajko2009model}. Tal
+tendência não é surpreendente tendo em vista que métodos ágeis enfatizam
+características úteis, tais como desenvolvimento incremental e teste contínuo
+que agregam valor para a evolução e manutenção eficaz de um software
+\cite{thomas2006agile}.
 
 O desenvolvimento e a manutenção de software envolve diversos tipos de métodos,
 técnicas e ferramentas. Em especial no processo de manutenção, um aspecto
@@ -133,10 +157,10 @@ envolvidos e que eles desejam um suporte melhorado para a Consciência
 Situacional - Situational Awareness, ou seja, gostariam de estar cientes da
 situação global do projeto bem como das atividades que outras pessoas estão realizando. Um outro sinal da necessidade de evolução do
 ITS's pode ser observado pelos diversas extensões (plugin) propostos para
-aquele tipo de ferramenta que existem na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Thung:2014:DIT:2642937.264862,Kononenko:2014:DED:2591062.2591075}
+aquele tipo de ferramenta que existem na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}
 
-Diante do exposto, é proposto neste  trabalho de dissertação a elaboração de Modelo Conceitual de Referência
-dos Sistemas de Controle de Demandas. Vamos discutir os aspectos que são
+Diante do exposto, é proposto neste  trabalho de dissertação a elaboração de
+Modelo Conceitual de Referência dos Sistemas de Controle de Demandas. Vamos discutir os aspectos que são
 considerados mais importantes do ponto de vista da literatura
 da área bem como a partir de pontos de vistas de alguns profissionais. De forma particular vamos estudar os mecanismos de
 personalização que algumas destas ferramentas permitem e tentaremos ainda criar alguns exemplos de personalização para alguma possível
@@ -232,6 +256,57 @@ extensão a ser identificada ao longo do trabalho.
 \chapter{Revisão da Literatura}
 \label{ch:revisao}
 
+Uma tendência natural de um software é evoluir a fim de atender novos
+requisitos ou alterações no ambiente no qual ele está inserido. Em uma séria de
+estudos Lehman et al. propõe um conjunto de oito leis da evolução do
+software. Segundo a lei da Mudança Contínua (Continuing Change)
+ declara que um programa que é utilizado em um
+ambiente real necessariamente deve mudar ou se tornará
+progressivamente menos útil \cite{lehman1980understanding}. Segundo a lei da
+Complexidade Crescente (Increasing complexity) afirma que quando um sistema em
+evolução muda, sua estrutura tende a ser torna mais complexa. Nesta situação
+recursos extras devem ser disponibilizados a fim de preservar e simplificar a
+estrutura do software \cite{lehman1980understanding}. Em outra de suas lei
+Lehman et al., conhecida como Crescimento Contínuo (Continuing
+growth), há a afirmação de que as funcionalidades oferecidas por um sistema tem
+que crescer para manter a satisfação do usuário \cite{lehman1997metrics}. As
+  leis de Lehman tem sido largamente validadas, especialmente aquelas
+  relacionadas a tamanho e complexidade, e demostram que o processo de
+  manutenção de software deve ter no mínimo o mesmo nível de importância que os de projeto e execução.
+
+Após percebida a importância do processo de manutenção de software,
+alguns trabalhos foram propostos visando mensurar o seu custo bem como propor
+processos visando a redução envolvidas neste tipo de atividade e por
+conseguinte a redução do custo de manter o software.
+
+No trabalho de Herrin \cite{Herrin:1985:SMC:323287.323383} foi proposto um modelo matemático com o
+objetivo de avaliar o impacto financeiro da atividade de manutenção de
+processamento de dados de uma universidade no orçamento da instituição. O
+modelo propõe que o valor disponível para desenvolvimento de um novo sistema é
+função inversa do custo de manutenção do software existente. Desta forma, o
+fato de se manter um sistema durante muito tempo poderá impossibilitar a
+aquisição ou desenvolvimento de um novo sistema.
+
+No estudo de Hirota et al. \cite{hirota1994approach} é proposto a utilização de
+Ripple Análise para predizer o custo da manutenção de software. A Ripple
+Análise é uma forma de analisar informações de fluxo de dados das variáveis
+dentro de um determinado contexto de um programa. Os valores retornados pela
+aplicação da técnica foram denominadas Complexidade Ripple. Os resultados
+demostraram que a Complexidade Ripple está mais relacionada ao entendimento do
+software do que as métricas padrão, como linhas de código, complexidade
+ciclomática e função pontos. Desta forma, a Complexidade Ripple poderia ser
+utilizada para predizer os custo de manutenção de um sistema.
+
+Mediante o uso de Redes Neurais Shula \& Misra
+\cite{Shukla:2008:ESM:1342211.1342232} propõe um estudo para medir o custo de
+manutenção de software. O trabalho propõe a utilização de outras métricas além
+de linha de código ou pontos de função para medir o tamanho e o custo do
+processo de manutenção. Os resultados demonstraram a possibilidade de
+construção de um modelo de mensuração de custo utilizando Redes
+Neurais. Contudo, os resultados são sensíveis a escolha da arquitetura e
+parâmetros de treino, os quais idealmente deveriam ser preparados por um
+especialista no sistema a ser avaliado.
+
 No trabalho de Junio et al. \cite{5741246} é proposto um processo denominado PASM (Process for Arranging
 Software Maintenance Requests) que propõe lidar com tarefas de manutenção como
 projetos de software. Para tanto, utilizou-se técnicas de análise de
@@ -240,17 +315,48 @@ manutenção. Os resultados demostraram que depois de adotar PASM os
 desenvolvedores têm dedicado mais tempo para análise e validação e menos tempo
 para as tarefas de execução e de codificação.
 
+Diante a crescente importância dos Sistemas de Controle de Demandas -
+Issue Tracking Systems (ITS) no processo de manutenção de software, diversos
+trabalhos vêm sendo propostos com o objetivo de estendê-los através de novas
+funcionalidade.
+
+\textit{Buglocalizer} \cite{Thung:2014:BIT:2635868.2661678} é uma extensão para o Bugzilla que possibilita a
+localização dos arquivos do código fonte que estão relacionados ao defeito
+relatado. A ferramenta extrai texto dos campos de sumário e descrição de um
+determinado erro reportado no Bugzilla. Este texto é comparado com o código
+fonte através de técnicas de Recuperação da Informação \cite{baeza1999modern}.
+
 \textit{NextBug} \cite{101186} é uma extensão (plugin) para a ferramenta de Controle de Demanda -
 Issue Tracking System (ITS) Bugzilla\footnote{\url{https://www.bugzilla.org/}}
 que recomenda novos bugs para um desenvolvedor baseado no bug que ele esteja
 tratando atualmente. O objetivo da extensão é sugerir bugs com base em técnicas de
 Recuperação de Informação \cite{baeza1999modern}.
 
+No trabalho de Kononenko et al. \cite{Kononenko:2014:DED:2591062.2591075} é
+apresentada uma ferramenta denominada \textit{DASH} cujo objetivo é agrupar as
+demandas que são relevantes para as atividades e tarefas de um
+desenvolvedor. Naturalmente todas as demandas ditas relevantes estão sob a
+responsabilidade de um mesmo programador. O principal objetivo desta
+ferramenta é aumentar a Consciência Situacional - Situational Awareness dos
+desenvolvedores. Segundo os autores, o principal ganho do uso da ferramenta é
+que os desenvolvedores podem gerenciar melhor o excesso de informação e ficar
+mais ciente da evolução das demais demandas do sistema.
+
+
+Na ferramenta proposta por Thung et al. \cite{Thung:2014:DIT:2642937.2648627} o
+foco é na determinação de bug duplicados. A contribuição deste trabalho é a
+integração do estado da arte das técnicas não supervisionadas para detecção de
+bugs duplicados conforme proposto por Runeson et
+al. \cite{Runeson:2007:DDD:1248820.1248882}. A ferramenta utiliza o Modelo de
+Vetor Espacial (Vetor Space Model) como métrica de similaridade entre os bugs e
+fornece aos desenvolvedores uma lista de possíveis duplicatas.
+
 \chapter{Metodologia}
 \label{ch:metodologia}
 
 O processo de desenvolvimento deste trabalho pode ser dividido nas seguintes
-etapas $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ - Prova de Conceito)}; $IV$\textit{ - Avaliação}. Cada uma das etapas é detalhada nas próximas seções.
+etapas $I$\textit{ - Revisão Sistemática da Literatura}; $II$\textit{ - Pesquisa
+  com Profissionais (Survey)} $III$\textit{ - Prova de Conceito)}; $IV$\textit{ - Avaliação}. Cada uma das etapas é detalhada nas próximas seções.
 
 \section{Revisão Sistemática da Literatura}
 \label{sec:revisao_sistematica}
@@ -285,59 +391,51 @@ Revisão Sistemática deve seguir os seguintes passos:
 
 Com o objetivo de entender melhor o contexto do problema da sugestão de MR's
 similares, será realizada uma SRL que se propõe a responder as seguintes
-questões:  A SRL que será realizada visa responder as seguintes questões de
+questões:  A SRL visa responder as seguintes questões de
 pesquisa:
 
 \begin{itemize}
-  \item \textbf{$Q1$}: Quais são os aspectos mais importantes suportados pelas
-    metodologias/ferramentas de recomendação de Requisições de Mudança e
-    remoção de bugs duplicados?
-  \item \textbf{$Q2$}: Como as ferramentas/metodologias atualmente disponíveis
-    para recomendação de Requisições de Mudança auxiliam na tomada de decisões
-    durante o processo de Manutenção de Software?
-  \item \textbf{$Q3$}: Quais são as metodologias/técnicas utilizadas para
-    recomendação de Requisições de Mudança e bugs duplicados?
-  \item \textbf{$Q5$}: Qual procedimento utilizado para avaliar a
-    técnica/metodologia proposta para recomendação de Requisições de Mudança similares e
-    bugs duplicados?
-  \item \textbf{$Q6$}: Em qual tipo de projeto (comercial ou código-aberto) a
-    metodologia/ferramenta foi aplicada?
-  \item \textbf{$Q7$} : Qual processo de software (tradicional, ágil, TDD e
-    etc) envolvido no contexto no qual a ferramenta/metodologia foi aplicada?
-\end{itemize}
+  \item \textbf{$Q1$}: Quais os problemas os Sistemas de Controle de Demanda tentam dar maior suporte?
+  \item \textbf{$Q2$}: Quais são os atributos mais importantes dos Sistemas de
+    Controle de Demandas?
+  \item \textbf{$Q3$}: Quais atributos a comunidade envolvida com manutenção de
+    software sente maior ausências nestas ferramentas?
+  \end{itemize}
 
+\section{Pesquisa com Profissionais}
+\label{sec:survey}
+Com o objetivo de coletar os aspectos mais importantes das ITS's do ponto de
+vista dos profissionais ligados à manutenção de software será realizada uma
+ pesquisa (survey). O planejamento e o desenho da pesquisa seguirá
+as diretrizes propostas em \cite{wohlin2012experimentation}.
 
+A população da pesquisa proposta é a comunidade envolvida com o processo de
+manutenção de software e que faça uso de ITS's. Neste contexto, seriam
+possíveis amostras os desenvolvedores envolvidas com tarefas de manutenção nos
+projetos da Mozilla \footnote{\url{https://bugzilla.mozilla.org/}} ou da
+Eclipse Foundation \footnote{\url{https://bugs.eclipse.org/bugs/}}. Durante a
+execução da dissertação será avaliado qual amostra caracteriza melhor a
+população do estudo.
 
 \section{Prova de Conceito}
 \label{sec:prova-conceito}
 
-Como prova de conceito da técnica proposta pretende-se construir uma que
-possibilite a recomendação Requisições de Mudança similares. A proposta é que a
-ferramenta utilize técnicas para detecção de similaridades que não dependam
-exclusivamente da Recuperação da Informação (Information Retrieve), como por
-exemplo nos trabalho propostos por  Rocha et al. \cite{101186} e Runeson et
-al. \cite{Runeson:2007:DDD:1248820.1248882}. Será realizado um estudo
-exploratório a fim de verificar qual técnica será mais adequada. Neste sentido
-os resultados da Revisão Sistemática da Literatura (Seção \ref{sec:revisao})
-ajudará neste decisão. Todavia, o trabalho de  Rocha et al. \cite{101186} fica
-sendo a linha de base (baseline) deste estudo, cujo objetivo é utilizar uma
-técnica apresente melhores resultados, utilizados como métricas Feedback e
-Precision \cite{zimmermann2005mining}. A avaliação da ferramenta proposta como
-Prova de Conceito está descrita com maiores detalhes na \ref{sec:avaliacao}.
+A partir dos resultados da Revisão Sistemática e da Pesquisa com o
+profissionais, caso o esforço seja compatível com os prazos e recursos disponíveis, queremos
+elaborar extensões para uma ou mais ferramentas como Prova de Conceito. Posteriormente esta extensão
+será apresenta e avaliada mediante a realização de um experimento (Seção
+\ref{sec:avaliacao}). Havendo alguma ferramenta similar a extensão proposta será utilizada como \textit{baseline}.
 
 \section{Avaliação}
 \label{sec:avaliacao}
 
-Com o objetivo de avaliar a ferramentas proposto neste trabalho será realizado um
-\textit{Quasi-Experimento} \cite{wohlin2012experimentation} utilizando a base de dados de demandas de manutenção de uma empresa
-de software real. O experimento consistirá de dado que uma demanda $i$ foi atribuída a um desenvolvedor $d$,
-serão geradas 03 listas de sugestões: $(i)$ lista produzida pelo gerente imediato
-de $d$;$(ii)$ lista feita por um desenvolver do mesmo setor de $d$; $(iii)$
-gerada pela ferramenta proposta. Naturalmente o desenvolvedor não saberá a origem
-de nenhum das listas.  De posse das três listas pediremos ao
-desenvolvedor $d$ que informe qual delas pode reduzir a troca de contexto e
-aumentar sua produtividade. Espera-se a lista proposta pela nossa ferramenta
-possua o melhor desempenho na maioria dos casos.
+Com o objetivo de avaliar a extensão descrita na Seção \ref{sec:prova-conceito}
+trabalho será realizado um \textit{Experimento}
+\cite{wohlin2012experimentation} utilizando a base de dados de demandas de
+manutenção de uma empresa de software real. Este experimento será conduzido com
+o objetivo de avaliar a utilização de uma extensão para ITS's em um ambiente de
+desenvolvimento e manutenção de software real. Os dados serão coletados tomando
+como ponto de vistas dos desenvolvedores e dos gerentes.
 
 \chapter{Conclusão e Trabalhos Futuros}
 \label{ch:conclusao_trab_futuros}

@@ -37,5 +37,10 @@
     "baysal2012qualitative"
     "Thung:2014:BIT:2635868.2661678"
     "Thung:2014:DIT:2642937.2648627"
-    "Kononenko:2014:DED:2591062.2591075")))
+    "Kononenko:2014:DED:2591062.2591075"
+    "lehman1980understanding"
+    "lehman1997metrics"
+    "Shukla:2008:ESM:1342211.1342232"
+    "kajko2009model"
+    "thomas2006agile")))
 
