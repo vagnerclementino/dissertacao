@@ -42,5 +42,10 @@
     "lehman1997metrics"
     "Shukla:2008:ESM:1342211.1342232"
     "kajko2009model"
-    "thomas2006agile")))
+    "thomas2006agile"
+    "yu2013empirical"
+    "bettenburg2008makes"
+    "Bertram:2010:CCB:1718918.1718972"
+    "5070993"
+    "Breu:2010:INB:1718918.1718973")))
 

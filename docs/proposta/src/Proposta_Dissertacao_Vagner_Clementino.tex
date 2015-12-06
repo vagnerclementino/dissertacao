@@ -48,16 +48,19 @@ importância considerada tanto pela comunidade científica quanto pela indústri
 A Manutenção pode ser definida como o processo de modificar um componente ou um
 sistema de software após a sua entrega a fim de corrigir falhas, melhorar o
 desempenho ou outro atributo, ou adaptá-lo para mudanças ambientais
-\cite{159342}. De outra forma, a Manutenibilidade é uma propriedade de um
+\cite{{159342}}. De outra forma, a Manutenibilidade é uma propriedade de um
 sistema ou componente de software com relação ao grau de \textit{facilidade}
-que ele pode ser corrigido, melhorado ou adaptado para mudanças ambientais \cite{159342}.
+que ele pode ser corrigido, melhorado ou adaptado para mudanças ambientais
+\cite{{159342}}.
 
 As manutenções no software podem ser divididas em Manutenção Corretiva, Adaptativa, Perfectiva e Preventiva \cite{Lientz:1980:SMM:601062,159342}. A
 Manutenção Corretiva lida com a reparação de falhas encontradas. A Manutenção
 Adaptativa têm o foco na adaptação do software devido à mudanças ocorridas no
 ambiente em que ele está inserido. A Manutenção Perfectiva trabalha com
-melhorias funcionais do sistema, incluindo atividade de aumento do desempenho
-ou aperfeiçoamento de interfaces do usuário. A Manutenção Preventiva se preocupa com atividades
+a modificação de um produto de software com o objetivo de detectar e corrigir
+falhas latentes antes que elas se manifestem como falhas. A Manutenção
+Perfectiva fornece melhorias na documentação, desempenho e
+manutenibilidade e outros atributos do sistema. A Manutenção Preventiva se preocupa com atividades
 que possibilitem aumento da manutenibilidade do sistema. A \textit{ISO 14764}
 \cite{1703974} propõe a divisão da tarefa de manutenção nos quatros tipos
 descritos anteriormente e agrupa-os em termo único denominado
@@ -71,12 +74,16 @@ descritos anteriormente e agrupa-os em termo único denominado
 \label{fig:modification-request}
 \end{figure}
 
-Em  um ambiente real de desenvolvimento e manutenção de software, independente do tipo
+Em um ambiente real de desenvolvimento e manutenção de software, independente do tipo
 de Requisição de Mudança (MR) a ser tratada, existe a necessidade de
 monitoramento das MR's, especialmente por conta do seu volume. Esse controle é geralmente realizado
 por Sistemas de Controle de Demandas - Issue Tracking Systems (ITS) que ajudam
-os desenvolvedores na correção colaborativa de bugs e
-implementação de novas funcionalidades.  Os ITS's são também utilizados por gestores, analistas de qualidade  e usuários finais para
+os desenvolvedores na correção de forma individual ou colaborativa de bugs  ou
+mesmo na implementação de novas funcionalidades. Verifica-se na literatura diversos
+sinônimos para os Sistemas de Controle de Demanda (Sistema de Controle de
+Defeitos - Bug Tracking Systems, Sistema de Gerenciamento da Requisição -
+Request Management System e outros ), todavia, de modo geral, o
+termo se refere as ferramentas utilizadas pelas organizações para \textit{suporte de problemas de software}. Os ITS's são também utilizados por gestores, analistas de qualidade e usuários finais para
 tarefas tais como gerenciamento de projetos, comunicação e discussão e revisões
 de código. A maioria desses sistemas são projetados em torno do termo "demanda"
 (bug, defeito, bilhete, recurso, etc.), contudo, cada vez mais este modelo parece
@@ -112,21 +119,23 @@ discutir nossa experiência.
 
 \chapter{Justificativa}
 \label{ch:justificativa}
-Desde o final da década de 1970 \cite{Zelkowitz:1979:PSE:578504} percebe-se o aumento do custo referente as
-atividades de  manutenção de software. Nas décadas de 1980 de 1990 alguns
-trabalhos tiveram seu foco no desenvolvimento de modelos de mensuração do custo
-para manter o software \cite{Herrin:1985:SMC:323287.323383,hirota1994approach}.
+%Desde o final da década de 1970 \cite{Zelkowitz:1979:PSE:578504} percebe-se o aumento do custo referente as
+%atividades de  manutenção de software. Nas décadas de 1980 de 1990 alguns
+%trabalhos tiveram seu foco no desenvolvimento de modelos de mensuração do custo
+%para manter o software \cite{Herrin:1985:SMC:323287.323383,hirota1994approach}.
 %Na Tabela \ref{tab:software-cost}, adaptada de  \cite{koskinen2003software},
 %é possível verificar esta tendência.
-Em um trabalho mais recente, Yong \& Mookerjee \cite{1423995}  propõe um modelo que reduz o custos de
-manutenção e reposição durante a vida útil de um sistema de software. O modelo
+Dada a cada vez maior presença de software em todos os setores da sociedade
+existe um interesse por parte da academia e da industria no desenvolvimento de
+processos, técnicas e ferramentas que reduzam o esforço e o custo das tarefas
+desenvolvimento de software em geral e das tarefas de manutenção de software em
+particular. No trabalho de Yong \& Mookerjee \cite{1423995}  exite a proposição
+de um modelo que reduz o custos de manutenção e reposição durante a vida útil de um sistema de software. O modelo
 proposto demonstrou quem em algumas situações é \textit{melhor substituir um
   sistema do que mantê-lo}. Em outros estudos há menção de que o custo de
 manutenção pode chegar a 60\% do custo total do software \cite{kaur2015review}. Este mesmo percentual
 refere-se ao total de desenvolvedores dedicados à tarefas de manutenção de
-sistemas \cite{Zhang_2003}. Neste contexto, existe um interesse por parte da
-academia e da industria no desenvolvimento de processos, técnicas e ferramentas que reduzem o esforço das
-tarefas de manutenção de software ao mesmo tempo que reduza o seu custo.
+sistemas \cite{Zhang_2003}.
 
 A manutenção não necessariamente exige que o processo de software envolvido
 seja o tradicional. Percebe-se alguns exemplos de adoção das práticas ágeis
@@ -144,13 +153,11 @@ Issue Tracking Systems (ITS) cujo uso vêm crescendo em importância sobretudo
 por utilização por gestores, analistas da qualidade e usuários finais para
 atividades como tomada de decisão, comunicação dentre outras.
 
-Grande parte do ITS's desenvolvem suas funcionalidades em torno do termo
-``demanda" (bug, defeito, bilhete, recurso, etc.). Todavia, o que se percebe na
-prática é que essa modelagem parece ser distante das necessidades práticas dos projetos de software, especialmente
-no ponto de vista dos desenvolvedores \cite{Baysal:2013:SAP:2486788.2486957}.
-
-Um exemplo deste desacoplamento do ITS's com a necessidade de seus usuários
-pode ser visto no trabalho proposto por Baysal \& Holme \cite{baysal2012qualitative} no qual desenvolvedores que utilizam o Sistema de
+A utilizada de  ``demanda'' como conceito central para as as ferramentas de
+suporte de problemas de software parece ser distante das necessidades práticas dos projetos de software, especialmente
+no ponto de vista dos desenvolvedores
+\cite{Baysal:2013:SAP:2486788.2486957}. Um exemplo deste desacoplamento do
+ITS's com a necessidade de seus usuários pode ser visto no trabalho proposto por Baysal \& Holme \cite{baysal2012qualitative} no qual desenvolvedores que utilizam o Sistema de
 Controle de Demanda Bugzilla\footnote{\url{https://www.bugzilla.org}} relatam a
 dificuldade em manter uma compreensão global das MR's em que eles estão
 envolvidos e que eles desejam um suporte melhorado para a Consciência
@@ -259,25 +266,23 @@ extensão a ser identificada ao longo do trabalho.
 Uma tendência natural de um software é evoluir a fim de atender novos
 requisitos ou alterações no ambiente no qual ele está inserido. Em uma séria de
 estudos Lehman et al. propõe um conjunto de oito leis da evolução do
-software. Segundo a lei da Mudança Contínua (Continuing Change)
- declara que um programa que é utilizado em um
+software. Dentre elas podemos destacar as leis da Mudança Contínua (Continuing
+Change) e da Complexidade Crescente (Increasing complexity). Segundo a lei da
+Mudança Contínua declara que um programa que é utilizado em um
 ambiente real necessariamente deve mudar ou se tornará
-progressivamente menos útil \cite{lehman1980understanding}. Segundo a lei da
+progressivamente menos útil \cite{lehman1980understanding}. A lei da
 Complexidade Crescente (Increasing complexity) afirma que quando um sistema em
 evolução muda, sua estrutura tende a ser torna mais complexa. Nesta situação
 recursos extras devem ser disponibilizados a fim de preservar e simplificar a
-estrutura do software \cite{lehman1980understanding}. Em outra de suas lei
-Lehman et al., conhecida como Crescimento Contínuo (Continuing
-growth), há a afirmação de que as funcionalidades oferecidas por um sistema tem
-que crescer para manter a satisfação do usuário \cite{lehman1997metrics}. As
-  leis de Lehman tem sido largamente validadas, especialmente aquelas
-  relacionadas a tamanho e complexidade, e demostram que o processo de
-  manutenção de software deve ter no mínimo o mesmo nível de importância que os de projeto e execução.
+estrutura do software \cite{lehman1980understanding}. As leis de Lehman tem
+sido largamente validadas, especialmente aquelas relacionadas a tamanho e
+complexidade, e demostram que o processo de manutenção de software deve ter no
+mínimo o mesmo nível de importância que os de projeto e execução. Em um
+trabalho recente Yu \& Mishra \cite{{yu2013empirical}} examinam e avaliam de forma empírica
+as Leis de Lehman com relação a evolução da qualidade do software.
 
-Após percebida a importância do processo de manutenção de software,
-alguns trabalhos foram propostos visando mensurar o seu custo bem como propor
-processos visando a redução envolvidas neste tipo de atividade e por
-conseguinte a redução do custo de manter o software.
+Percebida a importância do processo de manutenção de software, alguns trabalhos foram propostos visando mensurar o seu custo bem como propor
+processos visando a redução envolvidas neste tipo de atividade e por conseguinte a redução do custo de manter o software.
 
 No trabalho de Herrin \cite{Herrin:1985:SMC:323287.323383} foi proposto um modelo matemático com o
 objetivo de avaliar o impacto financeiro da atividade de manutenção de
@@ -317,18 +322,62 @@ para as tarefas de execução e de codificação.
 
 Diante a crescente importância dos Sistemas de Controle de Demandas -
 Issue Tracking Systems (ITS) no processo de manutenção de software, diversos
-trabalhos vêm sendo propostos com o objetivo de estendê-los através de novas
-funcionalidade.
+trabalhos vêm sendo propostos com o objetivo de entender como eles estão sendo
+utilizados na prática e sugerir melhorias no desenho para desenvolver futuros
+ITS's.
 
-\textit{Buglocalizer} \cite{Thung:2014:BIT:2635868.2661678} é uma extensão para o Bugzilla que possibilita a
+
+No estudo realizado por Bettenburg et al. \cite{bettenburg2008makes} foi
+desenvolvida uma pesquisa (\textit{survey}) entre desenvolvedores e usuários dos
+projetos Apache\footnote{\url{http://www.apache.org/}},
+Eclipse\footnote{\url{https://www.eclipse.org}} e
+Mozilla\footnote{\url{https://www.mozilla.org}} a fim de verificar o que
+produziria um bom Sistema de Controle de Demanda. Os resultados demonstraram
+que do ponto de vistas dos desenvolvedores foram considerados como úteis
+funchões tais como reprodução do erro, pilha de erros (stack traces) e casos de
+testes. A partir deste resultado foi construído um protótipo de um ITS
+capaz de conduzir os usuários na coleta e fornecimento de um maior número de
+informações úteis.
+
+Avaliando o controle de demandas como um processo social, Bertram et
+al. \cite{Bertram:2010:CCB:1718918.1718972} realizaram um estudo qualitativo em
+Sistemas de Controle da Demanda (ITS) quanto utilizados por pequenas equipes de
+desenvolvimento de software. Os resultados mostraram que um ITS não é apenas um
+banco de dados de rastreamento de bugs, recursos ou  pedidos de informação, mas
+também atua como um ponto focal para a comunicação e coordenação para diversas
+partes interessadas (stakeholders) dentro e fora da equipe de software. Os
+clientes, gerentes de projeto, o pessoal envolvido com a garantia da qualidade
+e programadores, contribuem em conjunto para o conhecimento compartilhado
+e a dentro do contexto dos ITS's.
+
+
+Em Zimmermann et al. \cite{5070993} é discutido a importância de que a
+informação descrita em uma Requisição de Mudança (MR) seja relevante e completa
+fim de que o defeito reportado seja resolvido rapidamente. Contudo, na prática
+a informação apenas chega ao desenvolvedor com a qualidade requerida após
+diversas interações com o usuário final. Com o objetivo de minimizar este
+problema os autores propõe um conjunto de diretrizes para construção de um
+Sistema de Controle de Demandas capaz de reunir informações relevantes a partir do usuário e identificar arquivos que precisam
+ser corrigidos para resolver o defeito.
+
+No trabalho de Breu et al.\cite{Breu:2010:INB:1718918.1718973} o foco é
+analisar o papel dos ITS's no suporte à colaboração entre desenvolvedores e
+usuários de um software. A partir da análise quantitativa e qualidade de uma
+amostra de bugs reportados nos Sistemas de Controle de Demandas de dois
+projetos de software livre, foi possível verificar que os usuários desempenham
+um papel além de simplesmente reportar uma falha: a sua participação ativa e
+permanente se mostrou importante no progresso da resolução dos bugs que eles
+descreveram.
+
+O desenvolvimento de novas funcionalidades em ITS's, mediante a capacidade de
+extensão propiciada por alguns deles vêm sendo explorada na literatura. \textit{Buglocalizer} \cite{Thung:2014:BIT:2635868.2661678} é uma extensão para o Bugzilla\footnote{\url{https://www.bugzilla.org/}} que possibilita a
 localização dos arquivos do código fonte que estão relacionados ao defeito
 relatado. A ferramenta extrai texto dos campos de sumário e descrição de um
 determinado erro reportado no Bugzilla. Este texto é comparado com o código
 fonte através de técnicas de Recuperação da Informação \cite{baeza1999modern}.
 
 \textit{NextBug} \cite{101186} é uma extensão (plugin) para a ferramenta de Controle de Demanda -
-Issue Tracking System (ITS) Bugzilla\footnote{\url{https://www.bugzilla.org/}}
-que recomenda novos bugs para um desenvolvedor baseado no bug que ele esteja
+Issue Tracking System (ITS) Bugzilla que recomenda novos bugs para um desenvolvedor baseado no bug que ele esteja
 tratando atualmente. O objetivo da extensão é sugerir bugs com base em técnicas de
 Recuperação de Informação \cite{baeza1999modern}.
 
