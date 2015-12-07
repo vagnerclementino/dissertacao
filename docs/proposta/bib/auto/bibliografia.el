@@ -47,5 +47,7 @@
     "bettenburg2008makes"
     "Bertram:2010:CCB:1718918.1718972"
     "5070993"
-    "Breu:2010:INB:1718918.1718973")))
+    "Breu:2010:INB:1718918.1718973"
+    "bilal2005using"
+    "haney1972module")))
 
