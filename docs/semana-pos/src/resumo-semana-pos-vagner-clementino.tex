@@ -32,28 +32,45 @@
 \maketitle
 %Sugiro um parágrafo para contexto e motivação, um para o problema e breve estado da arte (ex: o atual estado da arte não considera...) e outro para os objetivos e resultados (esperados e/ou alcançados até o momento).
 
-\todo[inline]{BEGIN: Parágrafo sobre Contexto}
-Dentro do ciclo de vida de um produto de software o processo de manutenção tem
-papel fundamental. Devido ao seu alto custo, em alguns casos chegando em 60\%
-do custo total do software \cite{kaur2015review}, este processo deve ter sua
-importância considerada tanto pela comunidade científica quanto pela indústria.
-\todo[inline]{END: Parágrafo sobre Contexto}
 
-\todo[inline]{BEGIN: Parágrafo sobre Motivação}
-\todo[inline]{END: Parágrafo sobre Motivação}
+Dentro do ciclo de vida do software o processo de manutenção tem papel fundamental. Devido ao seu alto custo, em alguns casos chegando a 60\% do total\cite{kaur2015review}, sua importância vêm sendo considerada tanto pela comunidade científica quanto pela indústria. A manutenção em software podem ser dividida em \textit{Corretiva, Adaptativa, Perfectiva e Preventiva} \cite{Lientz:1980:SMM:601062,159342}. A \textit{ISO 14764} \cite{1703974} agrupa todos estes nomes em único termo denominado \textit{Requisição de Mudança - Modification Request (RM)}.
+
+Em um ambiente real de manutenção de software existe a necessidade de gerenciar as Requisição de Mudança (RM), especialmente por conta do seu volume. Esse controle é realizado por Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems  que ajudam os desenvolvedores na correção de forma individual ou colaborativa de defeitos (bugs) e no suporte à implementação de novas funcionalidades. Verifica-se na literatura diversos sinônimos para os Sistemas de Controle de Demanda (Sistema de Controle de Defeitos - Bug Tracking Systems, Sistema de Gerenciamento da Requisição - Request Management System e outros ), todavia, de modo geral, o termo se refere as ferramentas utilizadas pelas organizações para \textit{suporte de problemas de software}.
 
 
-\todo[inline]{BEGIN: Parágrafo sobre Problema}
-\todo[inline]{END: Parágrafo sobre Problema}
+Diante da maior presença de software em todos os setores da sociedade se faz necessário o desenvolvimento de processos, técnicas e ferramentas que reduzam o esforço e o custo do desenvolvimento manutenção do software. Neste linha o trabalho de Yong \& Mookerjee \cite{1423995}   propõe reduzir o custos de manutenção e reposição durante a vida útil de um sistema de software. O modelo
+proposto demonstrou quem em algumas situações é \textit{melhor substituir um sistema do que mantê-lo}.
 
+Neste contexto, os Sistemas de Controle de Demandas(SCD) vêm crescendo em importância tendo em vista sua utilização por gestores, analistas da qualidade e usuários finais para atividades tais como tomada de decisão e comunicação, dentre outras. Não obstante, a utilização de  ``demanda'' como conceito central para as ferramentas de suporte de problemas de software parece ser distante das necessidades práticas dos projetos de software, especialmente no ponto de vista dos desenvolvedores \cite{Baysal:2013:SAP:2486788.2486957}. Um exemplo deste desacoplamento do SCD's com a necessidade de seus usuários pode ser visto no trabalho proposto por Baysal \& Holme \cite{baysal2012qualitative} no qual desenvolvedores que utilizam o Bugzilla\footnote{\url{https://www.bugzilla.org}} relatam a dificuldade em manter uma compreensão global das RM's em que eles estão envolvidos. Segundo os desenvolvedores seria interessante que a ferramenta
+tivesse um suporte melhorado para a Consciência Situacional - Situational Awareness, ou seja, eles gostariam de estar cientes da situação global do projeto bem como das atividades que outras pessoas estão realizando. 
 
-\todo[inline]{BEGIN: Parágrafo sobre Estado da Arte}
-\todo[inline]{END: Parágrafo sobre Estado da Arte}
+Neste ponto temos a seguinte situação: apesar da crescente utilização e importância dos SCD's estes sistemas aparentemente não estão atendendo as necessidades dos diversos interessados(stakeholders) do processo de manutenção de software. Um sinal da necessidade de evolução do SCD's pode ser observado com base nas diversas extensões (plugins) propostos na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}. 
 
+Neste contexto, é proposto um estudo sobre os Sistemas de Controle de Demandas no qual se discutirá os aspectos que são considerados mais importantes do ponto de vista da literatura da área bem como
+a partir do ponto de vista de profissionais envolvidos com tarefas de manutenção de software. De forma particular vamos estudar os mecanismos de personalização que algumas destas ferramentas permitem e tentaremos ainda criar exemplos de personalização para alguma possível extensão a ser identificada ao longo do trabalho.
 
-\todo[inline]{BEGIN: Parágrafo sobre Resultados}
-\todo[inline]{END: Parágrafo sobre Resultados}
+O desenvolvimento de novas funcionalidades em SCD's, mediante a capacidade de
+extensão propiciada por alguns deles vêm sendo explorada na
+literatura. \textit{Buglocalizer} \cite{Thung:2014:BIT:2635868.2661678} é uma
+extensão para o Bugzilla que possibilita a localização dos arquivos do código fonte que estão relacionados ao defeito relatado. \textit{NextBug} \cite{101186} é uma extensão para o Bugzilla que
+recomenda novos bugs para um desenvolvedor baseado no defeito que ele esteja
+tratando atualmente. No trabalho de Kononenko et al. \cite{Kononenko:2014:DED:2591062.2591075} é
+apresentada uma ferramenta denominada \textit{DASH} cujo objetivo é agrupar as
+demandas que são relevantes para as atividades de um desenvolvedor. Na ferramenta proposta por Thung et al. \cite{Thung:2014:DIT:2642937.2648627} o foco é na determinação de defeitos duplicados. A contribuição deste trabalho é a integração do estado da arte das técnicas não supervisionadas para detecção de
+falhas duplicadas conforme proposto por Runeson et al.\cite{Runeson:2007:DDD:1248820.1248882}.
 
+A Manutenção de Software é um processo complexo e caro que merece atenção da
+comunidade acadêmica e da indústria no desenvolvimento de técnicas, processo e
+ferramentas que reduzam o seu custo e o esforço envolvido. Neste contexto, os
+Sistemas de Controle de Demanda desempenha um papel fundamental que ultrapassa
+a simples função de registrar falhas em software. Neste sentido é proposto um estudo sobre os Sistemas de Controle de Demandas no qual se discutirá os aspectos que são considerados mais importantes do ponto de vista da literatura da área bem como a partir do ponto de vista de profissionais envolvidos com tarefas de manutenção de software. Este estudo pretende obter os seguintes resultados:
+
+\begin{enumerate}[(i)]
+	\item Caracterização dos Sistemas de Controle de Demandas com base nos requisitos comum a todos eles;
+	\item Mapeamento das propostas de extensões existente na literatura;
+	\item Coleta da opinião dos profissionais envolvidos em tarefas de manutenção sobre os problemas e soluções oferecidas por este tipo de ferramenta
+	\item Desenvolvimento de uma extensão a ser identificada ao longo do trabalho
+\end{enumerate}
 
 
 \bibliographystyle{sbc}
