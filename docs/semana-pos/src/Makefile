@@ -1,6 +1,6 @@
 NAME=resumo-semana-pos-vagner-clementino
 BIBLIOGRAPHY=../bib/$(NAME).bib
-DIR_PDF_NAME=../pdf/
+DIR_PDF_NAME=../output/
 all: aspell compile clean
 compile: $(NAME).tex #$(BIBLIOGRAPHY).bib
 	@pdflatex -shell-escape $(NAME).tex
@@ -8,7 +8,6 @@ compile: $(NAME).tex #$(BIBLIOGRAPHY).bib
 	@pdflatex $(NAME).tex
 	@pdflatex $(NAME).tex
 	@latex2rtf $(NAME).tex
-	@pandoc -s $(NAME).tex -o $(NAME).docx
 	@evince $(NAME).pdf
 	@libreoffice $(NAME).rtf
 	@mv $(NAME).pdf $(DIR_PDF_NAME)
