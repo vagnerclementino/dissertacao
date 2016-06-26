@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: resumo-semana-pos-vagner-clementino.aux
+The style file: sbc.bst
+I couldn't open database file ../bib/resumo-semana-pos-vagner-clementino.bib
+---line 25 of file resumo-semana-pos-vagner-clementino.aux
+ : \bibdata{../bib/resumo-semana-pos-vagner-clementino
+ :                                                    }
+I'm skipping whatever remains of this command
+I found no database files---while reading file resumo-semana-pos-vagner-clementino.aux
+Warning--I didn't find a database entry for "kaur2015review"
+Warning--I didn't find a database entry for "Lientz:1980:SMM:601062"
+Warning--I didn't find a database entry for "159342"
+Warning--I didn't find a database entry for "1703974"
+Warning--I didn't find a database entry for "1423995"
+Warning--I didn't find a database entry for "Baysal:2013:SAP:2486788.2486957"
+Warning--I didn't find a database entry for "baysal2012qualitative"
+Warning--I didn't find a database entry for "101186"
+Warning--I didn't find a database entry for "Thung:2014:BIT:2635868.2661678"
+Warning--I didn't find a database entry for "Kononenko:2014:DED:2591062.2591075"
+Warning--I didn't find a database entry for "Thung:2014:DIT:2642937.2648627"
+Warning--I didn't find a database entry for "Runeson:2007:DDD:1248820.1248882"
+You've used 0 entries,
+            1935 wiz_defined-function locations,
+            489 strings with 4179 characters,
+and the built_in function-call counts, 17 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There were 2 error messages)

@@ -1,3 +1,4 @@
+% !TeX encoding   = UTF-8
 % $Header$
 
 \documentclass[t,14pt,mathserif]{beamer}
@@ -52,7 +53,7 @@
 \subtitle {Semana da Pós 2016}
 
 \author[] % (optional, use only with lots of authors)
-{Vagner Clementino%~\inst{1}% 
+{Vagner Clementino\\%~\inst{1}% 
 	\and Rodolfo Resende - Orientador%\inst{1}%
 	}
 % - Give the names in the same order as the appear in the paper.
@@ -122,8 +123,8 @@
   \titlepage
 \end{frame}
 
-\begin{frame}{Outline}
-  \tableofcontents[pausesections]
+\begin{frame}{Agenda}
+  \tableofcontents
   % You might wish to add the option [pausesections]
 \end{frame}
 
@@ -145,39 +146,140 @@
 % - If you omit details that are vital to the proof/implementation,
 %   just say so once. Everybody will be happy with that.
 
-\section{Context}
+\section{Contexto}
 
-\begin{frame}{Contribution in Open Source System (OSS)}
+\begin{frame}{Contexto}
+	
+	\begin{itemize}
+		\item Dentro do ciclo de vida do software o processo de manutenção tem papel fundamental.
+		\item Devido ao seu alto custo, em alguns casos chegando a 60\% do total \cite{kaur2015review}, sua importância vêm sendo considerada tanto pela comunidade científica quanto pela indústria.
+	\end{itemize}
   
   
 	
 \end{frame}
 
-
-\section{Motivation}
-
-
-
-
-\section{Proposed Work}
-
-
-
-
-
+\begin{frame}{Contexto}
+	
+	\begin{itemize}
+		\item A manutenção de software pode ser dividida em \textit{Corretiva, Adaptativa, Perfectiva e Preventiva} \cite{Lientz:1980:SMM:601062,159342}.
+		\item A \textit{ISO 14764} \cite{1703974} agrupa os tipos de manutenção em um único termo denominado \textit{Requisição de Mudança - Modification Request (RM)}.
+	\end{itemize}
+	
+	
+	
+\end{frame}
 
 
+\section{Motivação}
+
+\begin{frame}{Motivação}
+	
+	\begin{itemize}
+		\item Gerenciar as atividades de manutenção e seus respectivos artefatos possui um alto custo.
+		\item Neste contexto, as Ferramentas de Suporte de Problemas de Software ou Sistemas de Controle de Demandas (Issue Tracking Systems) possuem um papel fundamental.
+			\begin{itemize}
+				\item Facilitam o gerenciamento das MR's
+				\item Centralizam a comunicação entre os diversos interessados (stakeholders)
+			\end{itemize}
+	\end{itemize}
+	
+	
+	
+\end{frame}
+
+\begin{frame}{Ferramentas de Suporte de Problemas de Software}
+	
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[scale=.3]{../img/issue-tracking-sytem.png}
+		\end{figure}
+	
+	
+	
+\end{frame}
+
+\begin{frame}{Motivação}
+
+	\begin{itemize}
+		\item A utilização de  ``demanda'' parece estar distante das necessidades práticas dos projetos, especialmente no ponto de vista dos desenvolvedores \cite{Baysal:2013:SAP:2486788.2486957}.
+		\item Apesar da crescente importância dos SCD's estes sistemas aparentemente não estão atendendo as necessidades dos diversos interessados(stakeholders)
+		\item Diversas extensões (plugins) estão sendo propostas na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}.
+	\end{itemize}	
+	
+\end{frame}
 
 
+\section{Objetivo}
+
+\begin{frame}{Objetivo}
+	
+	\begin{itemize}
+		\item Estudar as Ferramentas de Suporte de Problemas de Software visando:
+		  
+			\begin{itemize}
+				\item \textit{Entender} os requisitos básicos deste tipo de ferramenta
+				\item \textit{Mapear} as extensões para FSPS que estão sendo propostas na literatura
+				\item \textit{Avaliar} sobre o ponto de vista dos profissionais envolvidos em manutenção  a situação atual dos FSPS
+				\item \textit{Propor} novas extensões para os FSPS
+			\end{itemize}
+		
+	\end{itemize}	
+	
+\end{frame}
+
+\section{Metodologia}
+\begin{frame}{Metodologia}
+	\begin{itemize}
+		\item Mapeamento Sistemático da Literatura \cite{kitchenham2007guidelines}
+		\item Caracterização de Requisitos das Ferramentas de Suporte de Problemas de Software (FSPS)
+		\item Pesquisa (Survey) com os desenvolvedores \cite{wohlin2012experimentation}
+		\item Desenvolvimento de extensões para as FSPS's
+	\end{itemize}
+\end{frame}
+
+\section{Resultados}
+
+\begin{frame}{Mapeamento Sistemático da Literatura}
+	
+	\begin{itemize}
+		\item Situação: Feito	
+    \end{itemize}
+	
+	\begin{figure}[hbtp]
+		\centering
+		\includegraphics[scale=.39]{../img/mapeamento.png}
+	\end{figure}
+		
+\end{frame}
+
+\begin{frame}{Caracterização de Requisitos das FSPS}
+		\begin{itemize}
+			\item Situação: Em andamento
+			\item Resultados Parciais:
+				\begin{itemize}
+					 \item CRUD dos problemas
+					 \item CRUD de interessados (desenvolvedores, usuários, gerentes de projeto e etc)
+					 \item Regras relacionando Problemas vs Interessados
+		             \item Classificação (Prioridade e Severidade)				
+				\end{itemize}
+	    \end{itemize}
+\end{frame}
+
+\begin{frame}{Survey com os desenvolvedores}
+		\begin{itemize}
+			\item Situação: Em andamento
+			\item Atividades:
+			\begin{itemize}
+				\item Planejamento do Survey (Feito)
+				\item Ferramenta de Coleta (Em andamento)
+				\item "Survey Piloto" (Em andamento)					
+			\end{itemize}
+		\end{itemize}
+\end{frame}
 
 
-
-
-
-
-
-
-\begin{frame}{Questions?}
+\begin{frame}{Dúvidas?}
 
 	\begin{figure}[hbtp]
 		\centering
@@ -191,7 +293,8 @@
 \begin{frame}[allowframebreaks]
    \frametitle{References}
    \bibliographystyle{IEEEtranS}
-   \bibliography{IEEEfull,../bib/bibliografia}
+   \bibliography{IEEEfull,semana-da-pos-vagner-clementino}
 \end{frame}
 
 \end{document}
+	

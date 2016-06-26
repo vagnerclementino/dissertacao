@@ -1,6 +1,6 @@
 NAME=semana-da-pos-vagner-clementino
-BIBLIOGRAPHY=../bib/semana-da-pos-vagner-clementino
-DIR_PDF_NAME=../pdf/
+BIBLIOGRAPHY=semana-da-pos-vagner-clementino
+DIR_PDF_NAME=../output/
 all: aspell compile clean
 compile: $(NAME).tex $(BIBLIOGRAPHY).bib	
 	@pdflatex -shell-escape $(NAME).tex
