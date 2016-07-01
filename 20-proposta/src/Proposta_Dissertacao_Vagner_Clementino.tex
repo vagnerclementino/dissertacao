@@ -46,10 +46,10 @@ advisor={Rodolfo F. Resende},
 
 Dentro do ciclo de vida de um produto de software o processo de manutenção tem
 papel fundamental. Devido ao seu alto custo, em alguns casos chegando em 60\%
-do preço final do software \cite{kaur2015review}, a atividade relacionadas a manter e evoluir software tem sua importância considerada tanto pela comunidade científica quanto pela indústria.
+do custo final \cite{kaur2015review}, as atividades relacionadas a manter e evoluir software tem sua importância considerada tanto pela comunidade científica quanto pela indústria.
 
 \todo[inline]{BEGIN: DEFINIÇÕES}
-\textit{Manutenção}, dentre outros aspectos, corresponde ao o processo de modificar um componente ou sistema de software após a sua entrega com o objetivo de \textit{corrigir falhas, melhorar o desempenho ou adaptá-lo devido à mudanças ambientais} \cite{{159342}}. De maneira relacionada, \textit{Manutenibilidade} é a propriedade de um sistema ou componente de software com relação ao grau de \textit{facilidade} que ele pode ser corrigido, melhorado ou adaptado \cite{{159342}}.
+A \textit{Manutenção}, dentre outros aspectos, corresponde ao processo de modificar um componente ou sistema de software após a sua entrega com o objetivo de \textit{corrigir falhas, melhorar o desempenho ou adaptá-lo devido à mudanças ambientais} \cite{{159342}}. De maneira relacionada, \textit{Manutenibilidade} é a propriedade de um sistema ou componente de software com relação ao grau de \textit{facilidade} que ele pode ser corrigido, melhorado ou adaptado \cite{{159342}}.
 
 As manutenções em software podem ser divididas em \textit{Corretiva, Adaptativa, Perfectiva e Preventiva} \cite{Lientz:1980:SMM:601062,159342}. A Manutenção Corretiva lida com a reparação de falhas encontradas. A Adaptativa tem o seu foco na adaptação do software devido à mudanças ocorridas no ambiente em que ele está inserido. A Perfectiva trabalha com a modificação de um produto de software com o objetivo de detectar e corrigir falhas latentes antes que elas se manifestem como tal. A  Perfectiva fornece melhorias na documentação, desempenho ou manutenibilidade do sistema. A Preventiva se preocupa com atividades que possibilitem aumento da manutenibilidade do sistema. A \textit{ISO 14764} \cite{1703974} propõe a divisão da tarefa de manutenção nos quatro tipos descritos anteriormente e agrupa-os em um termo único denominado \textit{Requisição de Mudança - Modification Request (RM)}, conforme pode ser visto pela Figura \ref{fig:modification-request}
 
@@ -63,44 +63,38 @@ As manutenções em software podem ser divididas em \textit{Corretiva, Adaptativ
 \todo[inline]{BEGIN: DEFINIÇÕES}
 
 \todo[inline]{BEGIN: NOMECLATURA FERRAMENTA}
-Esse controle é geralmente realizado por Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems,  que ajudam os desenvolvedores na correção de forma individual ou colaborativa, dentre outros de defeitos (bugs) e desenvolvimento de novas funcionalidades. Verifica-se na literatura diversos sinônimos para os Sistemas de Controle de Demanda (Sistema de Controle de
-Defeitos - Bug Tracking Systems, Sistema de Gerenciamento da Requisição -
-Request Management System e outros ), todavia, de modo geral, o
-termo se refere as ferramentas utilizadas pelas organizações para \textit{gerenciar as Requisições de Mudança}. Os SCD's podem ainda serem utilizados por gestores, analistas de qualidade e usuários finais para atividades tais como gerenciamento de projetos, comunicação, discussão e revisões
-de código.
+
+Em alguns contextos de desenvolvimento, por conta do volume das Requisições de Mudança, se faz necessário a utilização de ferramentas para que seja possível gerenciá-las. Esse controle é geralmente realizado por Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems,  que ajudam os desenvolvedores na correção de forma individual ou colaborativa, dentre outros de defeitos (bugs) e desenvolvimento de novas funcionalidades. Não existe na literatura uma nomenclatura comum para este tipo de ferramenta. Em alguns estudo é possível verificar nomes tais comoSistema de Controle de
+Defeitos - Bug Tracking Systems, Sistema de Gerenciamento da Requisição - Request Management System, dentre outros. Todavia, de modo geral, o termo se refere as ferramentas utilizadas pelas organizações para \textit{gerenciar as Requisições de Mudança}. Os SCD's podem ainda serem utilizados por gestores, analistas de qualidade e usuários finais para atividades tais como gerenciamento de projetos, comunicação, discussão e revisões de código. Neste trabalho utilizaremos o termo \texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) para definir este tipo de ferramenta.
 \todo[inline]{END: NOMECLATURA}
 
 \todo[inline]{BEGIN: MANUTENÇÃO ÁGIL}
 
-Grande parte da literatura em manutenção de software tratam de técnicas e metodologias tradicionais da Engenharia de Software. Contudo, é cada vez mais latente a adoção de metodologias ágeis em projetos de sucesso \cite{Serrador2015}, mesmo em áreas não relativas à tecnologia da informação. Neste contexto, verifica-se uma tendência de que os departamentos dedicados à manutenção de software estão bem cientes da metodologia ágil e estão começando a experimentá-las em suas atividades \cite{Heeager2015}. Apesar de desenvolvimento e manutenção de software serem atividades distintas \todo{Esta é uma visão tradicional. Devemos aceitá-la?}, esta última adaptar característica da primeira visando a melhoria do seu desempenho. Dentre as características do métodos ágeis passíveis de serem utilizadas em tarefas de manutenção podemos citar processo de desenvolvimento interativo, maior envolvimento do cliente, comunicação face a face, testes frequentes, entre outras.
+Grande parte da literatura em manutenção de software tratam de técnicas e metodologias tradicionais da Engenharia de Software. Contudo, é cada vez mais latente a adoção de metodologias ágeis em projetos de sucesso \cite{Serrador2015}, mesmo em áreas não relativas à Tecnologia da Informação. Neste contexto, verifica-se uma tendência de que os departamentos dedicados à manutenção de software se mostrem interessados na metodologia ágil e que comecem a experimentá-las em suas atividades \cite{Heeager2015}. Apesar de desenvolvimento e manutenção de software serem atividades distintas \todo{Esta é uma visão tradicional. Devemos aceitá-la?}, esta última pode adaptar característica da primeira visando a melhoria do seu desempenho. Dentre as características do métodos ágeis passíveis de serem utilizadas em tarefas de manutenção podemos citar o desenvolvimento interativo, um maior envolvimento do cliente, a comunicação face a face, testes frequentes, dentre outras.
 
 \todo[inline]{END: MANUTENÇÃO ÁGIL}
 
 
 \todo[inline]{BEGIN: JUSTIFICATIVA}
-Da mesma forma que o ocorreu no desenvolvimento de software, é possível verificar uma crescente adoção de técnicas da metodologia ágil na manutenção de software \cite{Soltan2016,Devulapally2015, Heeager2015}. Neste contexto, é natural que ferramentas que dão suporte à manutenção de software, tal como as FSPS, tenham que evoluir a esta nova forma de trabalhar. Mesmo em um ambiente tradicional de  desenvolvimento e manutenção de software, verifica-se a necessidade de adequação das FSPS. Tal siutação ocorre tendo em vista que a maioria desses sistemas são projetados em torno do termo "demanda"
-(bug, defeito, bilhete, recurso, etc.), contudo, cada vez mais este modelo parece
-ser distante das necessidades práticas dos projetos de software. No trabalho de Baysal e outros \cite{Baysal:2013:SAP:2486788.2486957} revelou com desenvolvedores enfrentam dificuldades para manter uma compreensão global das demandas no qual estão envolvidos (impacto, relação com outros módulos ou demandas e etc.). Apesar da crescente importância dos SCD's, percebe-se um aparente desacoplamento com as necessidades dos diversos interessados(stakeholders) na manutenção e evolução de software. Um sinal deste distanciamento pode ser observado pelas diversas extensões (plugins) propostas na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}.
+Da mesma forma que o ocorre no desenvolvimento de software, é possível verificar uma crescente adoção de técnicas da metodologia ágil na manutenção de software \cite{Soltan2016,Devulapally2015, Heeager2015}. Neste contexto, é natural que ferramentas que dão suporte à manutenção, tal como as FGRM, tenham que evoluir para se adaptar a esta nova forma de trabalhar. Mesmo em um ambiente tradicional de  desenvolvimento e manutenção de software, verifica-se a necessidade de adequação das FGRM's. Uma das justificativas deste exigência de alteração se deve ao fato que a maioria desses sistemas são projetados em torno do termo "demanda" (bug, defeito, bilhete, recurso, etc.), contudo, cada vez mais este modelo parece ser distante das necessidades práticas dos projetos de software. No trabalho de Baysal e outros \cite{Baysal:2013:SAP:2486788.2486957} revelou com desenvolvedores enfrentam dificuldades para manter uma compreensão global das demandas no qual estão envolvidos (impacto, relação com outros módulos ou demandas e etc.). 
 
-
-todo[inline]{END: JUSTIFICATIVA}
+\todo[inline]{END: JUSTIFICATIVA}
 
 \todo[inline]{BEGIN: OBJETIVOS GERAIS}
-Neste trabalho de dissertação vamos estudar as Ferramentas de Gerenciamento de Requisição de Mudança
- (FGRM) com o objetivo de \textit{(i)} entender as funcionalidades comuns deste tipo de ferramenta; \textit{(ii)} mapear as extensões para as FGRM's que estão sendo propostas na literatura; \textit{(iii)} avaliar sobre o ponto de vista dos profissionais a situação atual das FGRM; \textit{(iv)} propor novas extensões para as FGRM.
+Apesar da inegável importância das FSPS's, percebe-se um aparente desacoplamento com as necessidades dos diversos interessados(stakeholders) na manutenção e evolução de software. Um sinal deste distanciamento pode ser observado pelas diversas extensões (plugins) propostas na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}. Neste sentido, este trabalho de dissertação se propõe em realizar um estudo com o objetivo de entender como as Ferramentas de Gerenciamento de Requisição de Mudança estão sendo melhoradas ou estendidas no contexto da transformação do processo de desenvolvimento de software, bem como da manutenção, de um modelo tradicional para um outro que incorpora diversas práticas ágeis. O intuito é analisar como as FGRM estão sendo modificadas tando do ponto de vistas dos profissionais envolvido em manutenção de software quanto da literatura da área. 
 \todo[inline]{END: OBJETIVOS GERAIS} 
  
 \todo[inline]{BEGIN: ESTRUTURA DA PROPOSTA}	
 Esta proposta de dissertação está estruturada da seguinte forma: o  Capítulo
 \ref{ch:justificativa} discute a relevância deste trabalho no contexto da Engenharia de Software, em especial no processo de Manutenção de Software. O Capítulo \ref{ch:revisao} revisa a literatura com relação aos trabalhos desenvolvidos sobre Manutenção de Software; é dado um foco especial
-nos estudos que focam nas FGRM's. No Capítulo \ref{ch:metodologia} é discutida a metologia a ser aplicada visando a elaboração do trabalho. No Capítulo \ref{ch:conclusao_trab_futuros} é apresentado o cronograma de atividades da dissertação através da Tabela \ref{tab:cronograma}.
+nos estudos que focam nas FGRM's, bem como da adoção da metodologia ágil nas tarefas de manutenção. No Capítulo \ref{ch:metodologia} é discutida a metologia a ser aplicada visando a elaboração do trabalho. No Capítulo \ref{ch:conclusao_trab_futuros} é apresentado o cronograma de atividades da dissertação através da Tabela \ref{tab:cronograma}.
 \todo[inline]{END: ESTRUTURA DA PROPOSTA}
 
 \chapter{Justificativa}
 \label{ch:justificativa}
 Desde o final da década de 1970 \cite{Zelkowitz:1979:PSE:578504} percebe-se o aumento do custo referente as atividades de  manutenção de software. Nas décadas de 1980 e 1990 alguns
 trabalhos tiveram seu foco no desenvolvimento de modelos de mensuração do custo
-para manter o software \cite{Herrin:1985:SMC:323287.323383,hirota1994approach}. Apesar da evolução das metologias da manutenção de software a estimativa é que nas últimas duas décadas o custo de manutenção tenha aumentado em 50\% \cite{koskinen2010software}. Esta tendência pode ser observada na Figura \ref{fig:software-maintence-costs} no qual é possível verificar a evolução do custo da manutenção de software como fração do custo total do produto.
+para manter o software \cite{Herrin:1985:SMC:323287.323383,hirota1994approach}. Apesar da evolução das metologias de manutenção a estimativa é que nas últimas duas décadas o custo de manutenção tenha aumentado em 50\% \cite{koskinen2010software}. Esta tendência pode ser observada na Figura \ref{fig:software-maintence-costs} no qual é possível verificar a evolução do custo da manutenção de software como fração do custo total do produto.
 
 \begin{figure}
 \centering
