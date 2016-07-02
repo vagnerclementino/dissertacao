@@ -29,6 +29,7 @@ filecolor=black,
 \usepackage{amsmath}
 
 \usepackage{todonotes}
+\usepackage{pdfpages}
 \begin{document}
 \ppgccufmg{
 title={Um Estudo de Ferramentas de \\
@@ -51,7 +52,7 @@ do custo final \cite{kaur2015review}, as atividades relacionadas a manter e evol
 \todo[inline]{BEGIN: DEFINIÇÕES}
 A \textit{Manutenção}, dentre outros aspectos, corresponde ao processo de modificar um componente ou sistema de software após a sua entrega com o objetivo de \textit{corrigir falhas, melhorar o desempenho ou adaptá-lo devido à mudanças ambientais} \cite{{159342}}. De maneira relacionada, \textit{Manutenibilidade} é a propriedade de um sistema ou componente de software com relação ao grau de \textit{facilidade} que ele pode ser corrigido, melhorado ou adaptado \cite{{159342}}.
 
-As manutenções em software podem ser divididas em \textit{Corretiva, Adaptativa, Perfectiva e Preventiva} \cite{Lientz:1980:SMM:601062,159342}. A Manutenção Corretiva lida com a reparação de falhas encontradas. A Adaptativa tem o seu foco na adaptação do software devido à mudanças ocorridas no ambiente em que ele está inserido. A Perfectiva trabalha com a modificação de um produto de software com o objetivo de detectar e corrigir falhas latentes antes que elas se manifestem como tal. A  Perfectiva fornece melhorias na documentação, desempenho ou manutenibilidade do sistema. A Preventiva se preocupa com atividades que possibilitem aumento da manutenibilidade do sistema. A \textit{ISO 14764} \cite{1703974} propõe a divisão da tarefa de manutenção nos quatro tipos descritos anteriormente e agrupa-os em um termo único denominado \textit{Requisição de Mudança - Modification Request (RM)}, conforme pode ser visto pela Figura \ref{fig:modification-request}
+As manutenções em software podem ser divididas em \textit{Corretiva, Adaptativa, Perfectiva e Preventiva} \cite{Lientz:1980:SMM:601062,159342}. A Manutenção Corretiva lida com a reparação de falhas encontradas. A Adaptativa tem o seu foco na adequação do software devido à mudanças ocorridas no ambiente em que ele está inserido. A Perfectiva trabalha com o objetivo de detectar e corrigir falhas latentes antes que elas se manifestem como tal. A  Perfectiva fornece melhorias na documentação, desempenho ou manutenibilidade do sistema. A Preventiva se preocupa com atividades que possibilitem aumento da manutenibilidade do sistema. A \textit{ISO 14764} \cite{1703974} propõe a divisão da tarefa de manutenção nos quatro tipos descritos anteriormente e agrupa-os em um termo único denominado \textit{Requisição de Mudança - Modification Request (RM)}, conforme pode ser visto pela Figura \ref{fig:modification-request}
 
 \begin{figure}[hbtp]
 \centering
@@ -62,26 +63,26 @@ As manutenções em software podem ser divididas em \textit{Corretiva, Adaptativ
 \end{figure}
 \todo[inline]{BEGIN: DEFINIÇÕES}
 
-\todo[inline]{BEGIN: NOMECLATURA FERRAMENTA}
+\todo[inline]{BEGIN: NOMENCLATURA FERRAMENTA}
 
-Em alguns contextos de desenvolvimento, por conta do volume das Requisições de Mudança, se faz necessário a utilização de ferramentas para que seja possível gerenciá-las. Esse controle é geralmente realizado por Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems,  que ajudam os desenvolvedores na correção de forma individual ou colaborativa, dentre outros de defeitos (bugs) e desenvolvimento de novas funcionalidades. Não existe na literatura uma nomenclatura comum para este tipo de ferramenta. Em alguns estudo é possível verificar nomes tais comoSistema de Controle de
-Defeitos - Bug Tracking Systems, Sistema de Gerenciamento da Requisição - Request Management System, dentre outros. Todavia, de modo geral, o termo se refere as ferramentas utilizadas pelas organizações para \textit{gerenciar as Requisições de Mudança}. Os SCD's podem ainda serem utilizados por gestores, analistas de qualidade e usuários finais para atividades tais como gerenciamento de projetos, comunicação, discussão e revisões de código. Neste trabalho utilizaremos o termo \texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) para definir este tipo de ferramenta.
-\todo[inline]{END: NOMECLATURA}
+Em alguns contextos de desenvolvimento, por conta do volume das Requisições de Mudança, se faz necessário a utilização de ferramentas com o objetivo de gerenciar esta demanda. Esse controle é geralmente realizado por Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems, que ajudam os desenvolvedores na correção de forma individual ou colaborativa de defeitos (bugs), no desenvolvimento de novas funcionalidades, dentre outras tarefas relativas à manutenção de software. Não existe na literatura uma nomenclatura comum para este tipo de ferramenta. Em alguns estudo é possível verificar nomes tais como Sistema de Controle de
+Defeitos - Bug Tracking Systems, Sistema de Gerenciamento da Requisição - Request Management System, Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems e diversos nomes afins. Todavia, de modo geral, o termo se refere as ferramentas utilizadas pelas organizações para \textit{gerenciar as Requisições de Mudança}. Estas ferramenta pode ainda ser utilizada por gestores, analistas de qualidade e usuários finais para atividades tais como gerenciamento de projetos, comunicação, discussão e revisões de código. Neste trabalho utilizaremos o termo \texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) para definir este tipo de ferramenta.
+\todo[inline]{END: NOMENCLATURA}
 
 \todo[inline]{BEGIN: MANUTENÇÃO ÁGIL}
 
-Grande parte da literatura em manutenção de software tratam de técnicas e metodologias tradicionais da Engenharia de Software. Contudo, é cada vez mais latente a adoção de metodologias ágeis em projetos de sucesso \cite{Serrador2015}, mesmo em áreas não relativas à Tecnologia da Informação. Neste contexto, verifica-se uma tendência de que os departamentos dedicados à manutenção de software se mostrem interessados na metodologia ágil e que comecem a experimentá-las em suas atividades \cite{Heeager2015}. Apesar de desenvolvimento e manutenção de software serem atividades distintas \todo{Esta é uma visão tradicional. Devemos aceitá-la?}, esta última pode adaptar característica da primeira visando a melhoria do seu desempenho. Dentre as características do métodos ágeis passíveis de serem utilizadas em tarefas de manutenção podemos citar o desenvolvimento interativo, um maior envolvimento do cliente, a comunicação face a face, testes frequentes, dentre outras.
+Grande parte da literatura em manutenção de software tratam de técnicas e metodologias tradicionais da Engenharia de Software. Não obstante é cada vez mais latente a adoção de metodologias ágeis em projetos de sucesso \cite{Serrador2015}, mesmo em áreas não relativas à Tecnologia da Informação. Neste contexto, verifica-se uma tendência de que os departamentos dedicados à manutenção de software se mostrem interessados na metodologia ágil e que tenham o interesse em experimentá-las em suas atividades \cite{Heeager2015}. Apesar da maioria dos textos em Engenharia de Software  tratar desenvolvimento e manutenção de software como atividades com naturezas distintas, esta última pode adaptar característica da primeira visando a melhoria do seu desempenho. Dentre as características do métodos propostos pelos agilistas passíveis de serem utilizadas em tarefas de manutenção podemos citar o desenvolvimento interativo, um maior envolvimento do cliente, a comunicação face a face, testes frequentes, dentre outras.
 
 \todo[inline]{END: MANUTENÇÃO ÁGIL}
 
 
 \todo[inline]{BEGIN: JUSTIFICATIVA}
-Da mesma forma que o ocorre no desenvolvimento de software, é possível verificar uma crescente adoção de técnicas da metodologia ágil na manutenção de software \cite{Soltan2016,Devulapally2015, Heeager2015}. Neste contexto, é natural que ferramentas que dão suporte à manutenção, tal como as FGRM, tenham que evoluir para se adaptar a esta nova forma de trabalhar. Mesmo em um ambiente tradicional de  desenvolvimento e manutenção de software, verifica-se a necessidade de adequação das FGRM's. Uma das justificativas deste exigência de alteração se deve ao fato que a maioria desses sistemas são projetados em torno do termo "demanda" (bug, defeito, bilhete, recurso, etc.), contudo, cada vez mais este modelo parece ser distante das necessidades práticas dos projetos de software. No trabalho de Baysal e outros \cite{Baysal:2013:SAP:2486788.2486957} revelou com desenvolvedores enfrentam dificuldades para manter uma compreensão global das demandas no qual estão envolvidos (impacto, relação com outros módulos ou demandas e etc.). 
+Da mesma forma que o ocorre no desenvolvimento de software, é possível verificar uma crescente adoção de técnicas da metodologia ágil na manutenção de software \cite{Soltan2016,Devulapally2015, Heeager2015}. Neste contexto, é natural que ferramentas que dão suporte à manutenção, tal como as FGRM, tenham que evoluir para se adaptar a esta nova forma de trabalhar. Mesmo em um ambiente tradicional de  desenvolvimento e manutenção de software, verifica-se a necessidade de adequação das FGRM's. Uma das justificativas deste exigência se deve ao fato que a maioria desses sistemas são projetados em torno do termo "demanda" (bug, defeito, bilhete, recurso, etc.), contudo, cada vez mais este modelo parece ser distante das necessidades práticas dos projetos de software. No trabalho de Baysal e outros \cite{Baysal:2013:SAP:2486788.2486957} revelou com desenvolvedores enfrentam dificuldades para manter uma compreensão global das demandas no qual estão envolvidos (impacto, relação com outros módulos ou demandas e etc.), o que poderia ser melhorado com a proposição de um novo tipo de FGRM.
 
 \todo[inline]{END: JUSTIFICATIVA}
 
 \todo[inline]{BEGIN: OBJETIVOS GERAIS}
-Apesar da inegável importância das FSPS's, percebe-se um aparente desacoplamento com as necessidades dos diversos interessados(stakeholders) na manutenção e evolução de software. Um sinal deste distanciamento pode ser observado pelas diversas extensões (plugins) propostas na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}. Neste sentido, este trabalho de dissertação se propõe em realizar um estudo com o objetivo de entender como as Ferramentas de Gerenciamento de Requisição de Mudança estão sendo melhoradas ou estendidas no contexto da transformação do processo de desenvolvimento de software, bem como da manutenção, de um modelo tradicional para um outro que incorpora diversas práticas ágeis. O intuito é analisar como as FGRM estão sendo modificadas tando do ponto de vistas dos profissionais envolvido em manutenção de software quanto da literatura da área. 
+Apesar da inegável importância das FSPS's, percebe-se um aparente desacoplamento deste tipo de ferramenta com as necessidades dos diversos interessados(stakeholders) na manutenção e evolução de software. Um sinal deste distanciamento pode ser observado pelas diversas extensões (plugins) propostas na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}. Neste sentido, este trabalho de dissertação se propõe em realizar um estudo com o objetivo de entender como as Ferramentas de Gerenciamento de Requisição de Mudança estão sendo melhoradas ou estendidas no contexto da transformação do processo de desenvolvimento de software, bem como da manutenção, de um modelo tradicional para outro que incorpora cada vez mais metodologias ágeis. O intuito é analisar como as FGRM estão sendo modificadas com base na literatura da área em contraste do ponto de vista dos profissionais envolvidos em manutenção de software.
 \todo[inline]{END: OBJETIVOS GERAIS} 
  
 \todo[inline]{BEGIN: ESTRUTURA DA PROPOSTA}	
@@ -107,19 +108,17 @@ para manter o software \cite{Herrin:1985:SMC:323287.323383,hirota1994approach}. 
 Diante da maior presença de software em todos os setores da sociedade
 existe um interesse por parte da academia e da industria no desenvolvimento de
 processos, técnicas e ferramentas que reduzam o esforço e o custo das tarefas
-do desenvolvimento de manutenção. Neste linha, o trabalho de Yong \& Mookerjee \cite{1423995}  propõe um modelo que reduz o custos de manutenção e reposição durante a vida útil de um sistema de software. O modelo demonstrou que em algumas situações é \textit{melhor substituir um sistema do que mantê-lo}. Em outros estudos há menção de que o custo de manutenção pode chegar a 60\% do custo total do software \cite{kaur2015review}. Este mesmo percentual refere-se ao total de desenvolvedores dedicados à tarefas de manutenção de sistemas \cite{Zhang_2003}.
+de desenvolvimento e manutenção de software. Neste linha, o trabalho de Yong \& Mookerjee \cite{1423995}  propõe um modelo que reduz o custos de manutenção e reposição durante a vida útil de um sistema de software. O modelo demonstrou que em algumas situações é \textit{melhor substituir um sistema do que mantê-lo}. Em outros estudos há menção de que o custo de manutenção pode chegar a 60\% do custo total do software \cite{kaur2015review}. Este mesmo percentual também reflete o total de desenvolvedores dedicados à tarefas de manutenção de sistemas \cite{Zhang_2003}.
 
 A manutenção não necessariamente exige que o processo de software envolvido
 seja o tradicional. Percebe-se alguns exemplos de adoção das práticas ágeis
-para fins de manutenção e evolução do software \cite{kajko2009model}. Tal
+para fins de manutenção e evolução do software \cite{kajko2009model, Heeager2015, Devulapally2015,Naz2016}. Tal
 tendência não é surpreendente tendo em vista que métodos ágeis enfatizam
 características úteis à eficiência da implementação de software, tais como desenvolvimento incremental e teste contínuo que agregam valor para a evolução e manutenção eficaz de um sistema
-\cite{thomas2006agile}.
+\cite{thomas2006agile}. Dentro deste tendência verifica-se a necessidade de que as ferramentas envolvidas no suporte à manutenção de software se adequem à este nova forma de manter software. 
 
 O desenvolvimento e a manutenção de software envolvem diversos tipos de métodos,
-técnicas e ferramentas. Em especial no processo de manutenção, um aspecto
-importante são as diversas Requisições de Mudanças que devem ser
-gerenciadas. Este controle é realizado pelas Ferramentas de Gerenciamento de Requisição de Mudanças (FGRM) cujo uso vêm crescendo em importância, sobretudo, por sua utilização por gestores, analistas da qualidade e usuários finais para atividades como tomada de decisão e comunicação, dentre outras.
+técnicas e ferramentas. Em especial no processo de manutenção, um importante aspecto são as diversas Requisições de Mudanças que devem ser gerenciadas. Este controle é realizado pelas Ferramentas de Gerenciamento de Requisição de Mudanças (FGRM) cujo uso vêm crescendo em importância, sobretudo, por sua utilização por gestores, analistas da qualidade e usuários finais para atividades como tomada de decisão e comunicação.
 
 A utilização de  \textit{``demanda''} como conceito central para Ferramentas de Gerenciamento de Requisição de Mudanças (FGRM) parece ser distante das necessidades práticas dos projetos de software, especialmente no ponto de vista dos desenvolvedores \cite{Baysal:2013:SAP:2486788.2486957}. Um exemplo deste desacoplamento das FGRM com a necessidade de seus usuários pode ser visto no trabalho proposto por Baysal \& Holme \cite{baysal2012qualitative} no qual desenvolvedores que utilizam o Bugzilla\footnote{\url{https://www.bugzilla.org}} relatam a
 dificuldade em manter uma compreensão global das RM's em que eles estão
@@ -127,7 +126,7 @@ envolvidos. Segundo os desenvolvedores seria interessante que a ferramenta
 tivesse um suporte melhorado para a Consciência Situacional - Situational
 Awareness. Em síntese, eles gostariam de estar cientes da situação global do
 projeto bem como das atividades que outras pessoas estão realizando. Um outro
-sinal da necessidade de evolução do deste tipo de ferramenta pode ser observado considerando as diversas extensões (plugins) propostas na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}
+sinal da necessidade de evolução do deste tipo de ferramenta pode ser observado considerando as diversas extensões (plugins) propostas na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}.
 
 Neste contexto, é proposto neste projeto de dissertação a elaboração de um estudo das as Ferramentas de Gerenciamento de Requisição de Mudança (FGRM) como o objetivo de \textit{(i)} entender os requisitos comuns deste tipo de ferramenta; \textit{(ii)} mapear as extensões para as FGRM que estão sendo propostas na literatura; \textit{(iii)} avaliar sobre o ponto de vista dos profissionais a situação atual dos FGRM; \textit{(iv)} propor novas extensões para as FGRM. Vamos discutir os aspectos que são
 considerados mais importantes a partir da literatura da área bem como dos pontos de vistas de alguns profissionais. De forma particular, iremos estudar os mecanismos de personalização que algumas destas ferramentas permitem e tentaremos ainda criar exemplos de personalização para alguma possível extensão a ser identificada ao longo do trabalho.
@@ -158,6 +157,16 @@ Mediante o uso de Redes Neurais Shula \& Misra
 \cite{Shukla:2008:ESM:1342211.1342232} propõe um estudo para medir o custo de
 manutenção de software. O trabalho discute a utilização de outras métricas além
 de linha de código e pontos de função para medir  tamanho e custo do processo de manutenção. Os resultados demonstraram a possibilidade de construir um modelo para medir o custo utilizando Redes Neurais. Contudo, os resultados são sensíveis a escolha da arquitetura e parâmetros de treino, os quais idealmente deveriam ser preparados por um especialista no sistema (oráculo).
+
+\todo[inline]{Colocar refências sobre Agile Maintenance}
+
+A dinamicidade do ambiente de negócios tem levado a diversas organizações a adotar metodologias ágeis, desde de que elas auxiliam no atendimento às novas exigências do cliente \cite{Devulapally2015}. Esta tendência é mais forte no desenvolvimento de software e nos últimos anos vem ocorro de forma gradativa na manutenção. 
+
+No trabalho de Kajko-Mattsson e Nyfjord \cite{4755767} foi proposto um modelo ágil para manutenção que apropria diferentes práticas do Extreme Programming e do Scrum. Segundo os autores a junção desta duas metodologias resulta na inclusão de práticas úteis tanto do ponto de vista do gerente do projeto bem como dos desenvolvedores. O modelo encoraja diversas práticas tais como \textit{product backlog}, testes antes da codificação, planejamento iterativo, dentre outras.
+
+A adoção na manutenção de software de algumas práticas propostas pelos agilistas foram analisadas durante 08 meses em estudo proposto por Svensson \& Host \cite{1402140}. Ao utilizar o Extreme Programming (XP) no processo de manutenção os autores concluíram que é muito difícil fazer uso do XP sem que seja realizadas adequações no desenho de diversas práticas a fim de adequar as necessidades do time de desenvolvimento.
+
+O estudo Heeager \& Rose \cite{Heeager2015} propõe um conjunto de nove heurísticas com o objetivo de ajudar a profissionais da manutenção de software na adoção de práticas propostas pelos agilistas. O trabalho consistiu da inclusão do Scrum na rotina de trabalho de departamento de manutenção de software de uma organização de grande porte. Os autores argumentam que os métodos ágeis, quando aplicado ao trabalho de desenvolvimento, têm certas características relativamente bem compreendidas, no entanto o trabalho de manutenção difere do de desenvolvimento em certos aspectos e, portanto, é razoável esperar desafiador a implementação de métodos ágeis em um departamento de manutenção.
 
 Diante da crescente importância das Ferramenta de Gerenciamento de Requisição de Mudanças (FGRM) no processo de manutenção de software, diversos trabalhos vêm sendo propostos com o objetivo de entender como elas estão sendo utilizadas bem como sugerir melhorias no desenho para desenvolver futuras FGRM's.
 
@@ -282,34 +291,37 @@ A partir dos resultados do Mapeamento Sistemática, do Estudo de Caracterizaçã
 \label{ch:conclusao_trab_futuros}
 
 A Manutenção de Software é um processo complexo e caro e, portanto,  merece atenção da
-comunidade acadêmica e da indústria. Desta forma, emerge a necessidade do desenvolvimento de técnicas, processo e ferramentas que reduzam o custo e o esforço envolvidos nas atividades de manutenção e evolução de software. Neste contexto, as Ferramentas de Gerenciamento de Requisição de Mudança desempenham um papel fundamental que ultrapassa a simples função de registrar falhas em software. Neste sentido é proposto o estudo para entender o papel desta ferramenta, analisar a literatura sobre o assunto e discutir os aspectos que são considerados mais importantes do ponto de vista dos profissionais. As atividades para atingir o objetivo da dissertação são exibidas de forma macro na Tabela \ref{tab:cronograma}. No desenvolvimento da dissertação será realizado um
-cronograma mais detalhado das atividades.
+comunidade acadêmica e da indústria. Desta forma, emerge a necessidade do desenvolvimento de técnicas, processo e ferramentas que reduzam o custo e o esforço envolvidos nas atividades de manutenção e evolução de software. Neste contexto, as Ferramentas de Gerenciamento de Requisição de Mudança desempenham um papel fundamental que ultrapassa a simples função de registrar falhas em software. Neste sentido é proposto o estudo para entender o papel desta ferramenta, analisar a literatura sobre o assunto e discutir os aspectos que são considerados mais importantes do ponto de vista dos profissionais. As atividades para atingir o objetivo da dissertação são exibidas de forma macro na Tabela \ref{tab:cronograma}. No desenvolvimento da dissertação será realizado um cronograma mais detalhado das atividades.
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
-\begin{table}[]
-	\label{tab:cronograma}
-	\centering
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|l|c|c|}
-			\hline
-			\multicolumn{4}{|c|}{\textbf{CRONOGRAMA DISSERTAÇÃO}}                                                                                                                 \\ \hline
-			\# & \multicolumn{1}{c|}{\textbf{Atividade}}                                               & \textit{\textbf{Início (MM/AAAA)}} & \textit{\textbf{Término (MM/AAAA)}} \\ \hline
-			01 & Mapeamento  Sistemático da Literatura                                                 & \textit{03/2016}                   & \textit{06/2016}                    \\ \hline
-			02 & Ponto de Controle 01 – Reunião com orientador sobre Revisão Sistemática da Literatura & \textit{06/2016}                   & \textit{06/2016}                    \\ \hline
-			03 & Caracterização das Ferramentas de Gerenciamento de Requisição de Mudança              & \textit{06/2016}                   & \textit{07/2016}                    \\ \hline
-			04 & Ponto de Controle 02 – Reunião com orientador sobre a Caracterização das FGRM           & \textit{07/2016}                   & \textit{07/2016}                    \\ \hline
-			05 & Pesquisa com Profissionais                                                            & \textit{08/2016}                   & \textit{09/2016}                    \\ \hline
-			06 & Ponto de Controle 03 – Reunião com orientador sobre a Pesquisa com o Profissionais    & \textit{09/2016}                   & \textit{09/2016}                    \\ \hline
-			07 & Implementação da Ferramenta                                                           & \textit{09/2016}                   & \textit{10/2016}                    \\ \hline
-			08 & Ponto de Controle 03 – Avaliação da Ferramenta Avaliada                               & \textit{10/2016}                   & \textit{10/2016}                    \\ \hline
-			09 & Experimento de Avaliação da Ferramenta                                                & \textit{11/2016}                   & \textit{11/2016}                    \\ \hline
-			10 & Ponto de Controle 04 – Avaliação do Experimento junto com o orientador                & \textit{11/2016}                   & \textit{11/2016}                    \\ \hline
-			11 & Finalização do texto da dissertação                                                   & \textit{12/2017}                   & \textit{12/2016}                    \\ \hline
-			12 & Ponto de Controle 05 – Avaliação do texto da dissertação com o orientador             & \textit{01/2017}                   & \textit{01/2017}                    \\ \hline
-			13 & Defesa da dissertação                                                                 & \textit{01/2017}                   & \textit{01/2017}                    \\ \hline
-		\end{tabular}%
-	}
-\end{table}
+%\begin{table}[]
+%	\label{tab:cronograma}
+%	\centering
+%	\resizebox{\textwidth}{!}{%
+%		\begin{tabular}{|l|l|c|c|}
+%			\hline
+%			\multicolumn{4}{|c|}{\textbf{CRONOGRAMA DISSERTAÇÃO}}                                                                                                                 \\ \hline
+%			\# & \multicolumn{1}{c|}{\textbf{Atividade}}                                               & \textit{\textbf{Início (MM/AAAA)}} & \textit{\textbf{Término (MM/AAAA)}} \\ \hline
+%			01 & Mapeamento  Sistemático da Literatura                                                 & \textit{03/2016}                   & \textit{06/2016}                    \\ \hline
+%			02 & Ponto de Controle 01 – Reunião com orientador sobre Revisão Sistemática da Literatura & \textit{06/2016}                   & \textit{06/2016}                    \\ \hline
+%			03 & Caracterização das Ferramentas de Gerenciamento de Requisição de Mudança              & \textit{06/2016}                   & \textit{07/2016}                    \\ \hline
+%			04 & Ponto de Controle 02 – Reunião com orientador sobre a Caracterização das FGRM           & \textit{07/2016}                   & \textit{07/2016}                    \\ \hline
+%			05 & Pesquisa com Profissionais                                                            & \textit{08/2016}                   & \textit{09/2016}                    \\ \hline
+%			06 & Ponto de Controle 03 – Reunião com orientador sobre a Pesquisa com o Profissionais    & \textit{09/2016}                   & \textit{09/2016}                    \\ \hline
+%			07 & Implementação da Ferramenta                                                           & \textit{09/2016}                   & \textit{10/2016}                    \\ \hline
+%			08 & Ponto de Controle 03 – Avaliação da Ferramenta Avaliada                               & \textit{10/2016}                   & \textit{10/2016}                    \\ \hline
+%			09 & Experimento de Avaliação da Ferramenta                                                & \textit{11/2016}                   & \textit{11/2016}                    \\ \hline
+%			10 & Ponto de Controle 04 – Avaliação do Experimento junto com o orientador                & \textit{11/2016}                   & \textit{11/2016}                    \\ \hline
+%			11 & Finalização do texto da dissertação                                                   & \textit{12/2017}                   & \textit{12/2016}                    \\ \hline
+%			12 & Ponto de Controle 05 – Avaliação do texto da dissertação com o orientador             & \textit{01/2017}                   & \textit{01/2017}                    \\ \hline
+%			13 & Defesa da dissertação                                                                 & \textit{01/2017}                   & \textit{01/2017}                    \\ \hline
+%		\end{tabular}%
+%	}
+%\end{table}
+
+\appendix
+\section{Apêndice A}
+\includepdf{../img/Cronograma-Atividades-Dissertacao.pdf}
 % Incluindo bibliografia:
 \ppgccbibliography{../bib/bibliografia}
 \end{document}

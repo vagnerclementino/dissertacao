@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Relatorio-Progresso-Vagner-Clementino.aux
+The style file: acm.bst
+Database file #1: relatorio.bib
+Warning--empty publisher in keele2007guidelines
+You've used 3 entries,
+            2253 wiz_defined-function locations,
+            543 strings with 4565 characters,
+and the built_in function-call counts, 917 in all, are:
+= -- 80
+> -- 46
+< -- 0
++ -- 19
+- -- 16
+* -- 64
+:= -- 162
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 16
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 38
+empty$ -- 78
+format.name$ -- 16
+if$ -- 187
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 4
+newline$ -- 18
+num.names$ -- 6
+pop$ -- 24
+preamble$ -- 1
+purify$ -- 14
+quote$ -- 0
+skip$ -- 18
+stack$ -- 0
+substring$ -- 30
+swap$ -- 6
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 1
+while$ -- 7
+width$ -- 4
+write$ -- 32
+(There was 1 warning)
