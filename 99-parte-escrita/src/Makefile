@@ -8,7 +8,6 @@ compile: $(NAME).tex $(BIBLIOGRAPHY).bib
 	@pdflatex $(NAME).tex
 	@pdflatex $(NAME).tex
 	@latex2rtf $(NAME).tex
-	@latex2html $(NAME).tex
 	@mv $(NAME).pdf $(DIR_PDF_NAME)
 	@mv $(NAME).rtf $(DIR_PDF_NAME)
 	@evince $(DIR_PDF_NAME)/$(NAME).pdf
