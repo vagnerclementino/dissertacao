@@ -1,0 +1,36 @@
+Base de Dados;Setença de Busca
+ACM Digital Library;"(""issue tracking"" OR ""bug tracking"" OR ""issue-tracking"" OR ""bug-tracking""  OR ""bug repository"" OR ""issue repository"") AND (""issue report"" OR ""bug report"" OR ""bug priorization"" OR ""bug fix"" OR ""bug assigment"" OR ""bug reassigment"" OR ""bug triage""    OR ""duplicate bug"" OR ""reopened bug"" OR ""bug impact"" OR ""bug localization"" OR ""bug prediction""  OR ""bug risk"" OR ""bug severity"" OR ""bug classification"") AND (""extension"" OR ""plugin"" OR ""add-on"" OR ""tool"" OR ""improving"" OR ""personalization"")"
+IEEE Explore;"(""Document Title"":""issue tracking"") OR
+(""Document Title"":""bug tracking"") OR
+(""Document Title"":""issue-tracking"") OR
+(""Document Title"":""bug-tracking"") OR
+(""Document Title"":""bug repository"") OR
+(""Document Title"":""issue repository"") AND
+(""Document Title"":""issue report"" OR
+ ""Document Title"":""bug report""  OR
+ ""Document Title"":""bug priorization"" OR
+""Document Title"":""bug fix"" OR
+""Document Title"":""bug assigment"" OR
+""Document Title"":""bug reassigment"" OR
+""Document Title"":""bug triage"" OR
+""Document Title"":""duplicate bug"" OR
+""Document Title"":""reopened bug"" OR
+""Document Title"":""bug impact"" OR
+""Document Title"":""bug localization"" OR
+""Document Title"":""bug prediction"" OR
+""Document Title"":""bug risk"" OR
+""Document Title"":""bug severity"" OR
+""Document Title"":""bug classification""
+ ) AND (""Document Title"":""extension"" OR
+""Document Title"":""plugin"" OR
+""Document Title"":""add-on"" OR
+""Document Title"":""tool"" OR
+""Document Title"":""improving"" OR
+""Document Title"":""personalization"")"
+Inspec/Compendex;"(((""issue tracking"" OR ""bug tracking"" OR ""issue-tracking"" OR ""bug-tracking"" OR ""bug repository"" OR ""issue repository"") WN KY) AND ((""issue report"" OR ""bug report"" OR ""bug priorization"" OR ""bug fix"" OR ""bug assigment"" OR ""bug reassigment"" OR ""bug triage"" OR ""duplicate bug"" OR ""reopened bug"" OR ""bug impact"" OR ""bug localization"") WN KY)) AND ((""extension"" OR ""plugin"" OR ""add-on"" OR ""tool"" OR ""improving"" OR ""personalization"") WN KY))
+
+OR
+
+(((""issue tracking"" OR ""bug tracking"" OR ""issue-tracking"" OR ""bug-tracking"" OR ""bug repository"" OR ""issue repository"") WN KY) AND ((""bug prediction""  OR ""bug risk"" OR ""bug severity"" OR ""bug classification"") WN KY)) AND ((""extension"" OR ""plugin"" OR ""add-on"" OR ""tool"" OR ""improving"" OR ""personalization"") WN KY))
+"
+Scopus;"( TITLE-ABS-KEY ( ( ""issue tracking""  OR  ""bug tracking""  OR  ""issue-tracking""  OR  ""bug-tracking""  OR  ""bug repository""  OR  ""issue repository"" ) ) )  AND  ( TITLE-ABS-KEY ( ""issue report""  OR  ""bug report""  OR  ""bug priorization""  OR  ""bug fix""  OR  ""bug assigment""  OR  ""bug reassigment""  OR  ""bug triage""  OR  ""duplicate bug""  OR  ""reopened bug""  OR  ""bug impact""  OR  ""bug localization""  OR  ""bug prediction""  OR  ""bug risk""  OR  ""bug severity"" ) )  AND  ( TITLE-ABS-KEY ( ""extension""  OR  ""plugin""  OR  ""add-on""  OR  ""tool""  OR  ""improving""  OR  ""personalization"" ) )"
