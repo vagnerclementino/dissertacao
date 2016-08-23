@@ -270,43 +270,45 @@ falhas duplicadas conforme proposto por Runeson et al. \cite{Runeson:2007:DDD:12
 \section{Metodologia de Pesquisa}
 \label{sec:map-metodologia}
 
-Um \textit{Mapeamento Sistemático da Literatura}, também conhecido como Estudo de Escopo (Scoping Studies), tem como objetivos fornecer uma visão geral de determinada área de pesquisa, estabelecer se existem evidências de estudos sobre determinado tema e fornecer uma indicação da quantidade de trabalho da linha de pesquisa sob análise \cite{keele2007guidelines,wohlin2012experimentation}. Nesta dissertação empregamos as diretrizes propostas por \cite{Petersen2008}, que são largamente utilizadas na literatura, de forma a produzirmos uma revisão mais sistemática de modo a propiciar maior facilidade de replicação e extensão deste trabalho. Em particular, foi definido um conjunto de questões de pesquisa que foram utilizadas no processo de busca e seleção dos estudos primários. Em seguida, foram construídos esquemas de classificação com base nos dados extraídos  dos artigos. Por fim, foi realizada a análise e sintetização dos dados. A estrutura desta seção está de acordo com o processo descrito por Petersen e outros, de modo que cada subseção representa uma das etapas propostas.
+Um \textit{Mapeamento Sistemático da Literatura}, também conhecido como Estudo de Escopo (Scoping Studies), tem como objetivos fornecer uma visão geral de determinada área de pesquisa, estabelecer se existem evidências de estudos sobre determinado tema e fornecer uma indicação da quantidade de trabalho da linha de pesquisa sob análise \cite{keele2007guidelines,wohlin2012experimentation}. Nesta dissertação empregamos as diretrizes propostas por \cite{Petersen2008}, que são largamente utilizadas na literatura, de forma a produzirmos uma revisão mais sistemática de modo a propiciar maior facilidade de replicação e extensão deste trabalho. Em particular, foi definido um conjunto de questões de pesquisa que foram utilizadas no processo de busca e seleção dos estudos primários. Em seguida, foram construídos esquemas de classificação com base nos dados extraídos  dos artigos. Por fim, foi realizada a análise e sintetização dos dados. A estrutura desta seção está de acordo com o processo descrito por \textit{Petersen e outros}, de modo que cada subseção representa uma das etapas propostas.
 
 \subsection{Questões de Pesquisa}
 \label{subsec:map-questoes-de-pesquisa}
 
 O objetivo deste mapeamento sistemático é entender o estado da arte da pesquisa sobre FGRM. Em especial, o foco é identificar as extensões que estão sendo propostas para este tipo de ferramenta. No escopo deste trabalho, uma extensão é um componente de software que adiciona uma característica específica para um programa de computador \footnote{\url{https://en.wikipedia.org/wiki/Plug-in_(computing)}}. Assim, a fim de alcançar e guiar os objetivos desta parte do trabalho, foram definidas as seguintes questões de pesquisa:
 
-
 \begin{itemize}
-	\item \textbf{$RQ_1$}: \textit{Quais são as funcionalidades propostas para estender as FGRM?}
-	\item \textbf{$RQ_2$}: \textit{Quais papeis envolvidos no processo de manutenção de software a extensão visa dar suporte?}
-	\item \textbf{$RQ_3$}: \textit{Qual técnica foi utilizada para desenvolver a extensão?}
-	\item \textbf{$RQ_4$}: \textit{Quais as FGRM estão sendo estendidas?}
+	\item \textbf{Questão 01}: \textit{Quais são as funcionalidades propostas para estender as FGRM?}
+	\item \textbf{Questão 02}: \textit{Quais papeis envolvidos no processo de manutenção de software a extensão visa dar suporte?}
+	\item \textbf{Questão 03}: \textit{Qual técnica foi utilizada para desenvolver a extensão?}
+	\item \textbf{Questão 04}: \textit{Quais as FGRM estão sendo estendidas?}
 
 \end{itemize}
+
 
 \subsection{Pesquisa da Literatura}
 \label{subsec:map-pesquisa-literatura}
 
 Com o objetivo de encontrar o conjunto de estudos mais relevantes bem como eliminar aqueles que não são capazes de responder as questões de pesquisas propostas, adotamos os seguintes critérios:
 
+\todo[inline]{Verificar o impacto de restringir os estudos mais recentes, ou seja, dos últimos cinco anos.}
+
 \begin{itemize}
 	\item Critérios de Inclusão
 		\begin{itemize}
 			 \item Artigos publicados em conferências e periódicos (journals)
-			 \item Artigos publicados até o ano de 2016 \footnote{Não foi definido um período de início da pesquisa}
+			 \item Artigos publicados até o ano de 2016\footnote{Foram considerados neste estudos artigos publicados até maio/2016, data de realização da pesquisa nas base de dados}
 			 \item Artigos escritos em língua inglesa
 		\end{itemize}
 	\item Critérios de Exclusão
 		\begin{itemize}
 			\item Livros e literatura cinza (gray literature)
-			\item Artigos que não possuem relação com FSPS
+			\item Artigos que não possuem relação com FGRM
 			\item Estudos duplicados, neste caso apenas foi considerada a versão mais completa do trabalho
 		\end{itemize}
 \end{itemize}
 
-Os estudos primários foram coletados mediante a aplicação de sentenças de buscas nas seguintes bibliotecas digitais: \textit{IEEE Explore, ACM Digital Library, Scopus, e Inspec/Compendex}. As bases de dados foram escolhidas com base na experiência reportada por Dyba e outros \cite{dybaa2007applying}  no qual verificou-se que o uso daquelas bases eram capazes de reunir os artigos de diversas outras utilizadas no estudo. As sentenças de buscas foram produzidas com base na metodologia PICO (Population, Intervention, Comparison and Outcomes) que é sugerida por Kitchenham e Charters\cite{keele2007guidelines} para ajudar pesquisadores na formulação de termos, com base nas questões de pesquisa, que serão aplicados às bases de dados. As sentenças de busca aplicadas a cada base de dados é apresenta na Tabla do Apêndice \todo[inline]{Incluir tabela com as sentenças de busca}. 
+Os estudos primários foram coletados mediante a aplicação de sentenças de buscas nas seguintes bibliotecas digitais: \textit{IEEE Explore, ACM Digital Library, Scopus, e Inspec/Compendex}. As bases de dados foram escolhidas com base na experiência reportada por Dyba e outros \cite{dybaa2007applying}  no qual verificou-se que o uso daquelas bases eram capazes de reunir os artigos de diversas outras utilizadas no estudo. As sentenças de buscas foram produzidas com base na metodologia PICO (Population, Intervention, Comparison and Outcomes) que é sugerida por Kitchenham e Charters\cite{keele2007guidelines} para ajudar pesquisadores na formulação de termos, com base nas questões de pesquisa, que serão aplicados às bases de dados. As sentenças de busca aplicadas a cada base de dados é apresenta na Tabela \ref{tab:setenca-por-base-dados} do Apêndice \ref{app:apendice-a}. 
 
 
 Após a condução da busca automatizada nas base de dados citadas chegamos a um total de 286 artigos. A Tabela \ref{tab:estudos-por-base-dados} exibe o conjunto inicial de estudos recuperados por base de dados. Os trabalhos inicialmente coletados foram avaliados, através da ferramenta \textit{JabRef}\footnote{\url{https://www.jabref.org/}}, em busca de possíveis duplicados. Ao final desta análise obtivemos um total de 229 estudos. Finalmente os artigos foram analisados com base na leitura do título e resumo. Nos casos em que o título e resumo não eram capazes de caracterizar o estudo uma leitura completa do texto foi realizada. O processo descrito resultou em 116 estudos incluídos neste estudo.
@@ -332,15 +334,21 @@ Com o objetivo de mapear os estudos sobre extensões das FGRM's foram propostos 
 
 
 \subsubsection{Classificação por Tipo de Extensão}
+\label{subsubsec:map-esquema-suporte-problema}
 
 
 \subsubsection{Classificação por Suporte Oferecido}
+\label{subsubsec:map-esquema-suporte-papel-man}
 
+Na questão envolvendo papeis não temos o objetivo de elaborar uma taxonomia de papeis envolvidos na manutenção em função de supormos que isto corresponde a um esforço bem extenso. Nossa ação é identificar quais artigos trabalham com a noção de
+quais papeis ou seja relatar se existem papeis ou não e quais são eles sem envolver em uma consolidação
 
 \subsubsection{Classificação por Técnicas de Recuperação da Informação}
+\label{subsubsec:map-esaquema-tecnicas-ir}
 
 
 \subsubsection{Classificação por Ferramenta Estendida}
+\label{subsubsec:map-esquema-ferramenta}
 
 
 \section{Resultados}
@@ -354,8 +362,6 @@ Com o objetivo de mapear os estudos sobre extensões das FGRM's foram propostos 
 
 \chapter{Caracterização das Ferramentas de Gerenciamento de Requisição de Mudança}
 \label{ch:caracterizacao}
-
-
 
 
 \section{Introdução}
@@ -430,17 +436,29 @@ A partir dos resultados do Mapeamento Sistemática, do Estudo de Caracterizaçã
 A Manutenção de Software é um processo complexo e caro e, portanto,  merece atenção da
 comunidade acadêmica e da indústria. Desta forma, emerge a necessidade do desenvolvimento de técnicas, processo e ferramentas que reduzam o custo e o esforço envolvidos nas atividades de manutenção e evolução de software. Neste contexto, as Ferramentas de Gerenciamento de Requisição de Mudança desempenham um papel fundamental que ultrapassa a simples função de registrar falhas em software. Neste sentido é proposto o estudo para entender o papel desta ferramenta, analisar a literatura sobre o assunto e discutir os aspectos que são considerados mais importantes do ponto de vista dos profissionais. Para alcançarmos este objetivo é proposto um Cronograma de Atividade conforme exibido no Anexo \ref{anexo:cronograma}. As atividades que compõe cada etapa do trabalho estão descritas no Anexo \ref{anexo:atividades}.
 
-\chapter*{Apêndices}
-\label{ch:apendice}
-\appendix
-\section{Anexo A}
-\label{anexo:cronograma}
-\includepdf{../img/Cronograma-Atividades-Dissertacao.pdf}
-
-\section{Anexo B}
-\label{anexo:atividades}
-\includepdf{../img/Detalhamento-Atividades-Dissertacao.pdf}
 
 % Incluindo bibliografia:
 \ppgccbibliography{../bib/bibliografia}
+
+% apêndices, se houver
+\begin{appendices}
+	\chapter{Instrumentos do Mapeamento Sistemático}
+	 \label{ch:app-instrumentos-mapeamento}
+	  \begin{table}[htb]
+	  	\centering
+	  	\caption{Setença de Busca por Base de Dados}
+	  	\label{tab:setenca-por-base-dados}
+	  	\begin{tabular}{ll}
+	  		\hline
+	  		\textbf{Base de Dados} & \textbf{Sentença de Busca}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+	  		ACM Digital Library    & ("issue tracking" \\OR "bug tracking" OR "issue-tracking" OR "bug-tracking"  OR "bug repository" OR "issue repository") AND ("issue report" OR "bug report" OR "bug priorization" OR "bug fix" OR "bug assigment" OR "bug reassigment" OR "bug triage"    OR "duplicate bug" OR "reopened bug" OR "bug impact" OR "bug localization" OR "bug prediction"  OR "bug risk" OR "bug severity" OR "bug classification") AND ("extension" OR "plugin" OR "add-on" OR "tool" OR "improving" OR "personalization")                                                                                                                                                                                                                                                                                                                                                                                                                                                            \\
+	  		IEEE Explore           & ("Document Title":"issue tracking") OR("Document Title":"bug tracking") OR("Document Title":"issue-tracking") OR("Document Title":"bug-tracking") OR("Document Title":"bug repository") OR("Document Title":"issue repository") AND("Document Title":"issue report" OR "Document Title":"bug report"  OR "Document Title":"bug priorization" OR"Document Title":"bug fix" OR"Document Title":"bug assigment" OR"Document Title":"bug reassigment" OR"Document Title":"bug triage" OR"Document Title":"duplicate bug" OR"Document Title":"reopened bug" OR"Document Title":"bug impact" OR"Document Title":"bug localization" OR"Document Title":"bug prediction" OR"Document Title":"bug risk" OR"Document Title":"bug severity" OR"Document Title":"bug classification" ) AND ("Document Title":"extension" OR"Document Title":"plugin" OR"Document Title":"add-on" OR"Document Title":"tool" OR"Document Title":"improving" OR"Document Title":"personalization") \\
+	  		Inspec/Compendex       & ((("issue tracking" OR "bug tracking" OR "issue-tracking" OR "bug-tracking" OR "bug repository" OR "issue repository") WN KY) AND (("issue report" OR "bug report" OR "bug priorization" OR "bug fix" OR "bug assigment" OR "bug reassigment" OR "bug triage" OR "duplicate bug" OR "reopened bug" OR "bug impact" OR "bug localization") WN KY)) AND (("extension" OR "plugin" OR "add-on" OR "tool" OR "improving" OR "personalization") WN KY))OR((("issue tracking" OR "bug tracking" OR "issue-tracking" OR "bug-tracking" OR "bug repository" OR "issue repository") WN KY) AND (("bug prediction"  OR "bug risk" OR "bug severity" OR "bug classification") WN KY)) AND (("extension" OR "plugin" OR "add-on" OR "tool" OR "improving" OR "personalization") WN KY))                                                                                                                                                                                         \\
+	  		Scopus                 & ( TITLE-ABS-KEY ( ( "issue tracking"  OR  "bug tracking"  OR  "issue-tracking"  OR  "bug-tracking"  OR  "bug repository"  OR  "issue repository" ) ) )  AND  ( TITLE-ABS-KEY ( "issue report"  OR  "bug report"  OR  "bug priorization"  OR  "bug fix"  OR  "bug assigment"  OR  "bug reassigment"  OR  "bug triage"  OR  "duplicate bug"  OR  "reopened bug"  OR  "bug impact"  OR  "bug localization"  OR  "bug prediction"  OR  "bug risk"  OR  "bug severity" ) )  AND  ( TITLE-ABS-KEY ( "extension"  OR  "plugin"  OR  "add-on"  OR  "tool"  OR  "improving"  OR  "personalization" ) )                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
+	  	\end{tabular}
+	  \end{table}
+\end{appendices}
+
+
+
 \end{document}
