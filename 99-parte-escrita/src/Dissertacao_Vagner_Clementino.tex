@@ -31,6 +31,7 @@ filecolor=black,
 \usepackage{todonotes}
 \usepackage{pdfpages}
 \usepackage{capt-of}
+\usepackage{svg}
 \begin{document}
 
 \ppgccufmg{
@@ -271,17 +272,17 @@ falhas duplicadas conforme proposto por Runeson et al. \cite{Runeson:2007:DDD:12
 \section{Metodologia de Pesquisa}
 \label{sec:map-metodologia}
 
-Um \textit{Mapeamento Sistemático da Literatura}, também conhecido como Estudo de Escopo (Scoping Studies), tem como objetivos fornecer uma visão geral de determinada área de pesquisa, estabelecer se existem evidências de estudos sobre determinado tema e fornecer uma indicação da quantidade de trabalho da linha de pesquisa sob análise \cite{keele2007guidelines,wohlin2012experimentation}. Nesta dissertação empregamos as diretrizes propostas por \cite{Petersen2008}, que são largamente utilizadas na literatura, de forma a produzirmos uma revisão mais sistemática de modo a propiciar maior facilidade de replicação e extensão deste trabalho. Em particular, foi definido um conjunto de questões de pesquisa que foram utilizadas no processo de busca e seleção dos estudos primários. Em seguida, foram construídos esquemas de classificação com base nos dados extraídos  dos artigos. Por fim, foi realizada a análise e sintetização dos dados. A estrutura desta seção está de acordo com o processo descrito por \textit{Petersen e outros}, de modo que cada subseção representa uma das etapas propostas.
+Um \textit{Mapeamento Sistemático da Literatura}, também conhecido como Estudo de Escopo (Scoping Studies), tem como objetivos fornecer uma visão geral de determinada área de pesquisa, estabelecer a existência de evidências de estudos sobre determinado tema e fornecer uma indicação da quantidade de trabalho da linha de pesquisa sob análise \cite{keele2007guidelines,wohlin2012experimentation}. Nesta dissertação empregamos as diretrizes propostas por Petersen e outros \cite{Petersen2008} de forma a produzirmos uma revisão de maneira sistemática afim de propiciar maior facilidade de replicação e extensão do mapeamento realizado. Em particular, definimos um conjunto de questões de pesquisa que foram utilizadas no processo de busca e seleção dos estudos primários. Em seguida, foram construídos esquemas de classificação com base nos dados extraídos  dos artigos. Por fim, foi realizada a análise e sintetização dos dados. A estrutura desta seção está de acordo com o processo descrito por \textit{Petersen e outros}, de modo que cada subseção representa uma das etapas propostas pelos autores.
 
 \subsection{Questões de Pesquisa}
 \label{subsec:map-questoes-de-pesquisa}
 
-O objetivo deste mapeamento sistemático é entender o estado da arte da pesquisa sobre FGRM. Em especial, o foco é identificar as extensões que estão sendo propostas para este tipo de ferramenta. No escopo deste trabalho, uma extensão é um componente de software que adiciona uma característica específica para um programa de computador \footnote{\url{https://en.wikipedia.org/wiki/Plug-in_(computing)}}. Assim, a fim de alcançar e guiar os objetivos desta parte do trabalho, foram definidas as seguintes questões de pesquisa:
+O objetivo deste mapeamento sistemático é entender o estado da arte da pesquisa sobre FGRM. Em especial, o foco é identificar as extensões que estão sendo propostas para este tipo de ferramenta. No escopo deste trabalho, uma extensão é um componente de software que adiciona uma característica específica para um programa de computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in_(computing)}}. Assim, a fim de alcançar e guiar os objetivos desta parte do trabalho, foram definidas as seguintes questões de pesquisa:
 
 \begin{itemize}
 	\item \textbf{Questão 01}: \textit{Quais são as funcionalidades propostas para estender as FGRM?}
-	\item \textbf{Questão 02}: \textit{Quais papeis envolvidos no processo de manutenção de software a extensão visa dar suporte?}
-	\item \textbf{Questão 03}: \textit{Qual técnica foi utilizada para desenvolver a extensão?}
+	\item \textbf{Questão 02}: \textit{Quais papeis envolvidos no processo de manutenção de software as extensões visam dar suporte?}
+	\item \textbf{Questão 03}: \textit{Qual técnica ou método foi utilizada para desenvolver a extensão?}
 	\item \textbf{Questão 04}: \textit{Quais as FGRM estão sendo estendidas?}
 
 \end{itemize}
@@ -290,7 +291,7 @@ O objetivo deste mapeamento sistemático é entender o estado da arte da pesquis
 \subsection{Pesquisa da Literatura}
 \label{subsec:map-pesquisa-literatura}
 
-Com o objetivo de encontrar o conjunto de estudos mais relevantes bem como eliminar aqueles que não são capazes de responder as questões de pesquisas propostas, adotamos os seguintes critérios:
+Com o objetivo de encontrar o conjunto de estudos mais relevantes, bem como eliminar aqueles que não são capazes de responder as questões de pesquisas propostas, adotamos os seguintes critérios para inclusão ou exclusão dos estudos:
 
 \todo[inline]{Verificar o impacto de restringir os estudos mais recentes, ou seja, dos últimos cinco anos.}
 
@@ -298,7 +299,7 @@ Com o objetivo de encontrar o conjunto de estudos mais relevantes bem como elimi
 	\item Critérios de Inclusão
 		\begin{itemize}
 			 \item Artigos publicados em conferências e periódicos (journals)
-			 \item Artigos publicados até o ano de 2016\footnote{Foram considerados neste estudos artigos publicados até maio/2016, data de realização da pesquisa nas base de dados}
+			 \item Estudos publicados a partir de 2010\footnote{Foram considerados neste estudo artigos publicados até maio/2016, data de realização da pesquisa nas base de dados.}
 			 \item Artigos escritos em língua inglesa
 		\end{itemize}
 	\item Critérios de Exclusão
@@ -309,13 +310,22 @@ Com o objetivo de encontrar o conjunto de estudos mais relevantes bem como elimi
 		\end{itemize}
 \end{itemize}
 
-Os estudos primários foram coletados mediante a aplicação de sentenças de buscas nas seguintes bibliotecas digitais: \textit{IEEE Explore, ACM Digital Library, Scopus, e Inspec/Compendex}. As bases de dados foram escolhidas com base na experiência reportada por Dyba e outros \cite{dybaa2007applying}  no qual verificou-se que o uso daquelas bases eram capazes de reunir os artigos de diversas outras utilizadas no estudo. As sentenças de buscas foram produzidas com base na metodologia PICO (Population, Intervention, Comparison and Outcomes) que é sugerida por Kitchenham e Charters\cite{keele2007guidelines} para ajudar pesquisadores na formulação de termos, com base nas questões de pesquisa, que serão aplicados às bases de dados. As sentenças de busca aplicadas a cada base de dados é apresenta na Tabela \ref{tab:setenca-por-base-dados} do Apêndice \ref{ch:app-instrumentos-mapeamento}.
+Os estudos primários foram coletados mediante a aplicação de sentenças de buscas nas seguintes bibliotecas digitais: \textit{IEEE Explore, ACM Digital Library, Scopus, e Inspec/Compendex}. As bases de dados foram escolhidas com base na experiência reportada por Dyba e outros \cite{dybaa2007applying}  no qual verificou-se que o uso de apenas algumas bases era capaz de produzir um resultado similar a utilização de um conjunto maior de biblioteca digitais. As sentenças de buscas foram produzidas com base na metodologia PICO (Population, Intervention, Comparison and Outcomes) que é sugerida por Kitchenham e Charters \cite{keele2007guidelines} para ajudar pesquisadores na formulação de termos tomando como base as questões de pesquisa, que serão aplicados às bases de dados. As sentenças de busca aplicadas a cada base de dados são apresentadas na Tabela \ref{tab:setenca-por-base-dados} do Apêndice \ref{ch:app-instrumentos-mapeamento}.
 
 
-Após a condução da busca automatizada nas base de dados citadas chegamos a um total de 286 artigos. A Tabela \ref{tab:estudos-por-base-dados} exibe o conjunto inicial de estudos recuperados por base de dados. Os trabalhos inicialmente coletados foram avaliados, através da ferramenta \textit{JabRef}\footnote{\url{https://www.jabref.org/}}, em busca de possíveis duplicados. Ao final desta análise obtivemos um total de 229 estudos. Finalmente os artigos foram analisados com base na leitura do título e resumo. Nos casos em que o título e resumo não eram capazes de caracterizar o estudo uma leitura completa do texto foi realizada. O processo descrito resultou em 116 estudos incluídos neste estudo.
+Após a condução da busca automatizada nas base de dados chegamos a um total de 286 artigos. A Tabela \ref{tab:estudos-por-base-dados} exibe o conjunto inicial de estudos recuperados por base de dados. Os trabalhos coletados foram avaliados, através da ferramenta \textit{JabRef}\footnote{\url{https://www.jabref.org/}}, em busca de possíveis duplicados tendo em vista a utilização de diferentes bases de dados. A busca por artigos duplicados resultou na exclusão de 81 documentos de modo que obtivemos um total de 205 estudos ao final do processo. Finalmente os artigos foram analisados com base na leitura do título e resumo. Nos casos em que o título e resumo não eram capazes de caracterizar o estudo uma leitura completa do texto foi realizada. O processo descrito resultou em 95 estudos incluídos neste trabalho. A Figura \ref{fig:diagrama-processo-selecao}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{../img/diagrama-processo-selecao.pdf}
+	 \caption{Número de artigos incluídos durante o processo de seleção dos estudos. Baseado em \cite{Petersen2015}}
+	\label{fig:diagrama-processo-selecao}
+\end{figure}
 
 \begin{table}[htb]
 	\centering
+	\caption{Número de Estudos Recuperados por Base de Dados}
+	\label{tab:estudos-por-base-dados}
 	\begin{tabular}{cc}
 		\hline
 		\textbf{Base de Dados} & \textbf{Total} \\ \hline
@@ -324,14 +334,13 @@ Após a condução da busca automatizada nas base de dados citadas chegamos a um
 		Inspec/Compendex       & 22             \\
 		Scopus                 & 55             \\ \hline
 	\end{tabular}
-	\caption{Número de Estudos por Base de Dados}
-	\label{tab:estudos-por-base-dados}
+
 \end{table}
 
 \subsection{Esquemas de Classificação}
 \label{subsec:map-esquemas-classificacao}
 
-Com o objetivo de mapear os estudos sobre extensões das FGRM's foram propostos quatro esquemas de classificação para os estudos considerados. O primeiro esquema organiza os artigos pela tipo de funcionalidade proposta para estender as FGRM's. A segunda categorização distribuí os estudos pelo o papel no processo de manutenção de software a extensão visa dar suporte. A terceira é uma classificação baseada na taxonomia para modelos de Recuperação da Informação (Information Retrieve - IR). Em particular, utilizamos este esquema tendo em vista que as extensões propostas na literatura utilizam algum tipo de suporte de modelos de IR. O último esquema apresenta quais das ferramentas existentes na indústria que estão sendo estendidas na literatura. Esta taxonomia nos fornece uma visão se as extensões propostas são de um foco geral ou se há algum tipo de ferramenta para o qual existe um maior número de extensão. Em seguida discutiremos cada esquema de classificação em detalhe.
+Com o objetivo de mapear os estudos sobre extensões das FGRM's foram propostos quatro esquemas de classificação. O primeiro esquema organiza os artigos pela tipo de funcionalidade proposta para estender as FGRM's. A segunda categorização distribuí os estudos pelo o papel no processo de manutenção de software a extensão visa dar suporte. A terceira é uma classificação baseada na taxonomia para modelos de Recuperação da Informação (Information Retrieve - IR). Em particular, utilizamos este esquema tendo em vista que as extensões propostas na literatura utilizam algum tipo de suporte de modelos de IR. O último esquema apresenta quais das ferramentas existentes na indústria que estão sendo estendidas na literatura. Esta taxonomia nos fornece uma visão se as extensões propostas são de um foco geral ou se há algum tipo de ferramenta para o qual existe um maior número de extensão. Em seguida discutiremos cada esquema de classificação em detalhe.
 
 
 \subsubsection{Classificação por Tipo de Extensão}
