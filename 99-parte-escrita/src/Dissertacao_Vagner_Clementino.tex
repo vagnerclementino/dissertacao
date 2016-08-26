@@ -280,7 +280,7 @@ Um \textit{Mapeamento Sistemático da Literatura}, também conhecido como Estudo
 O objetivo deste mapeamento sistemático é entender o estado da arte da pesquisa sobre FGRM. Em especial, o foco é identificar as extensões que estão sendo propostas para este tipo de ferramenta. No escopo deste trabalho, uma extensão é um componente de software que adiciona uma característica específica para um programa de computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in_(computing)}}. Assim, a fim de alcançar e guiar os objetivos desta parte do trabalho, foram definidas as seguintes questões de pesquisa:
 
 \begin{itemize}
-	\item \textbf{Questão 01}: \textit{Quais são as funcionalidades propostas para estender as FGRM?}
+	\item \textbf{Questão 01}: \textit{Quais os problemas da atividade de manutenção de software as extensões das FGRM pretendem resolver?}
 	\item \textbf{Questão 02}: \textit{Quais papeis envolvidos no processo de manutenção de software as extensões visam dar suporte?}
 	\item \textbf{Questão 03}: \textit{Qual técnica ou método foi utilizada para desenvolver a extensão?}
 	\item \textbf{Questão 04}: \textit{Quais as FGRM estão sendo estendidas?}
@@ -292,8 +292,6 @@ O objetivo deste mapeamento sistemático é entender o estado da arte da pesquis
 \label{subsec:map-pesquisa-literatura}
 
 Com o objetivo de encontrar o conjunto de estudos mais relevantes, bem como eliminar aqueles que não são capazes de responder as questões de pesquisas propostas, adotamos os seguintes critérios para inclusão ou exclusão dos estudos:
-
-\todo[inline]{Verificar o impacto de restringir os estudos mais recentes, ou seja, dos últimos cinco anos.}
 
 \begin{itemize}
 	\item Critérios de Inclusão
@@ -340,14 +338,30 @@ Após a condução da busca automatizada nas base de dados chegamos a um total d
 \subsection{Esquemas de Classificação}
 \label{subsec:map-esquemas-classificacao}
 
-Com o objetivo de mapear os estudos sobre extensões das FGRM's foram propostos quatro esquemas de classificação. O primeiro esquema organiza os artigos pela tipo de funcionalidade proposta para estender as FGRM's. A segunda categorização distribuí os estudos pelo o papel no processo de manutenção de software a extensão visa dar suporte. A terceira é uma classificação baseada na taxonomia para modelos de Recuperação da Informação (Information Retrieve - IR). Em particular, utilizamos este esquema tendo em vista que as extensões propostas na literatura utilizam algum tipo de suporte de modelos de IR. O último esquema apresenta quais das ferramentas existentes na indústria que estão sendo estendidas na literatura. Esta taxonomia nos fornece uma visão se as extensões propostas são de um foco geral ou se há algum tipo de ferramenta para o qual existe um maior número de extensão. Em seguida discutiremos cada esquema de classificação em detalhe.
+Com o objetivo de mapear os estudos sobre extensões das FGRM's foram propostos quatro esquemas de classificação. O primeiro esquema organiza os artigos pelo tipo de problema da atividade de manutenção de software a extensão se propõe em solucionar. A segunda categorização distribuí os estudos pelo papel no processo de manutenção de software a extensão visa dar suporte. A terceira é uma classificação baseada na taxonomia para modelos de Recuperação da Informação (Information Retrieve - IR) proposta por Cerulo e Canfora \cite{cerulo2004taxonomy}. Em particular, utilizamos este esquema tendo em vista que as extensões propostas na literatura utilizam algum tipo de suporte de modelos de IR. O último esquema apresenta quais das ferramentas existentes na indústria que estão sendo estendidas na literatura. Esta taxonomia nos fornece uma visão se as extensões propostas são de um foco propositivo, ou seja, sem que exista uma implementação concreta da extensão, ou se há algum tipo de ferramenta no qual existe um maior número de extensões propostas. Em seguida discutiremos cada esquema de classificação em detalhe.
 
-
-\subsubsection{Classificação por Tipo de Extensão}
+\subsubsection{Classificação por Tipo de Problema}
 \label{subsubsec:map-esquema-suporte-problema}
 
+Existem diversos problemas relacionados com o processo de Manutenção de Software. Na década de 1980 pesquisas questionavam profissionais envolvidos com manutenção de software quais os principais problemas da área\cite{Lientz:1981:PAS:358790.358796}. Naturalmente a percepção dos desafios envolvidos com a manutenção de software alteram-se com tempo, desta forma, é sempre válido analisar a literatura com o objetivo de entender os problemas postos atualmente.
 
-\subsubsection{Classificação por Suporte Oferecido}
+Neste sentido, foi proposto um esquema de classificação que relacionasse os estudos pelo tipo de problema relacionado à manutenção de software a extensão pretende resolver. A construção da taxonomia se deu com base no processo definido por Petersen e outros \cite{Petersen2008}, o qual é realizado em duas etapas:
+
+\begin{enumerate}[I] 
+	\item analisar as palavras-chaves e conceitos que identifica as contribuições do estudo por meio da analise do título, palavras-chaves e resumo
+	\item após o término da etapa I, todas as palavras chaves são combinadas a fim de construir um conjunto de categorias para no qual os artigos devem ser classificados.
+\end{enumerate} 
+
+Os autores do referido processo recomendam que nos casos em que o resumo e o
+título do estudo não sejam capazes de caracterizá-lo, as seções de introdução e
+conclusão também devem ser analisadas. Mediante a aplicação do processo foi
+construído o esquema de classificação apresentado na Figura  .
+
+\todo[inline]{Incluir figura do esquema de classificação por problemas de software}
+\todo[inline]{Incluir tabela com os artigos em cada esquema proposto}
+\todo[inline]{Incluir no anexo uma tabela demonstrando como as palavras-chaves foram combinadas}
+
+\subsubsection{Classificação por Suporte à Papel da Manutenção de Software}
 \label{subsubsec:map-esquema-suporte-papel-man}
 
 Na questão envolvendo papeis não temos o objetivo de elaborar uma taxonomia de papeis envolvidos na manutenção em função de supormos que isto corresponde a um esforço bem extenso. Nossa ação é identificar quais artigos trabalham com a noção de
