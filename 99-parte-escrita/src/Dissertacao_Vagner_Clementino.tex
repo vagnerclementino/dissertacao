@@ -395,9 +395,28 @@ similar a Tabela apresenta as combinações realizadas para construir a taxonomi
 
 Um ponto em comum entre as diversas extensões para FGRM propostas na literatura é o fato delas utilizarem algum suporte de modelos de Recuperação de Informação (Information Retrieve - IR). Um modelo de IR visa solucionar um uma necessidade informacional de um usuário, representada como um conjunto de termos, no qual uma lista dos documentos mais relevantes devem ser recuperadas de uma coleção de documentos\cite{baeza1999modern}. 
 
-Com o objetivo de obter uma visão geral das técnicas que estão sendo utilizadas para implementar as extensões para as FGRM, realizamos a classificação dos estudos através da taxonomia proposta por Canfora e Cerulo\cite{cerulo2004taxonomy}. O esquema de classificação consiste em ..
+Com o objetivo de obter uma visão geral das técnicas que estão sendo utilizadas para implementar as
+extensões para as FGRM, realizamos a classificação dos estudos através da taxonomia proposta por
+Canfora e Cerulo\cite{cerulo2004taxonomy}. O esquema de classificação consiste em duas visões
+sobrepostas: uma taxonomia vertical que classifica os modelos de IR com relação ao seu conjunto
+de características básicas; e uma taxonomia horizontal que classifica os objetos de IR com respeito
+as suas tarefas, forma e contexto\cite{cerulo2004taxonomy}. Nesta dissertação utilizamos a
+classificação vertical tendo em vista que estamos interessados na técnica utilizada na implementação da extensão.
 
-\todo[inline]{Ler o artigo para melhor entender a taxonomia proposta}
+\todo[inline]{Verificar a necessidade de definir melhor alguns termos de IR. Ex. documento, consulta
+do usuário, problema da representação de similaridade}
+
+A taxonomia vertical é construída explorando duas características básicas de um Modelo de
+Recuperação da Informação: \textit{representação (representation)}, que é a forma adotada para representar ao mesmo
+tempo o documento e consulta do usuário; \textit{raciocínio (reasoning)}, ao qual se refere ao framework adotado
+para resolver o problema da representação de similaridade, ou seja, trata-se do conjunto de métodos, modelos e tecnologias utilizadas para realizar o casamento entre um documento e a consulta do usuário. O esquema de classificação proposto pelos autores é apresentado na Figura \ref{fig:information-retrieval-model}.
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{../img/information-retrieval-model.png}
+	\caption{Taxonomia vertical para Modelos de Recuperação da Informação. Adaptado de \cite{cerulo2004taxonomy}}
+	\label{fig:information-retrieval-model}
+\end{figure}
 
 \subsubsection{Classificação por Ferramenta Estendida}
 \label{subsubsec:map-esquema-ferramenta}
