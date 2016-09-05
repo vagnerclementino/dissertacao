@@ -27,7 +27,7 @@ filecolor=black,
 ]{hyperref}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{amsmath}
-
+\usepackage{multirow}
 \usepackage{todonotes}
 \usepackage{pdfpages}
 \usepackage{capt-of}
@@ -52,7 +52,7 @@ abstract=[english]{Abstract}{abstract},
 abstract={Resumo Estendido}{resumoest},
 dedication={dedicatoria},
 ack={agradecimentos},
-epigraphtext={A verdade é o contrário da mentira, \\
+	epigraphtext={A verdade é o contrário da mentira, \\
     e a mentira é o oposto da verdade.}{Autor desconhecido},
 indexkeys={1.~Computação --- Teses. 2.~Redes --- Teses. I.~Orientador.
     II.~Título.},
@@ -279,10 +279,9 @@ O objetivo deste mapeamento sistemático é entender o estado da arte da pesquis
 	\item \textbf{Questão 01}: \textit{Quais os problemas da atividade de manutenção de software as extensões das FGRM pretendem resolver?}
 	\item \textbf{Questão 02}: \textit{Quais papeis envolvidos no processo de manutenção de software as extensões visam dar suporte?}
 	\item \textbf{Questão 03}: \textit{Qual técnica ou método foi utilizada para desenvolver a extensão?}
-	\item \textbf{Questão 04}: \textit{Quais as FGRM estão sendo estendidas?}
+	\item \textbf{Questão 04}: \textit{Quais as FGRM disponíveis no mercados estão sendo estendidas?}
 
 \end{itemize}
-
 
 \subsection{Pesquisa da Literatura}
 \label{subsec:map-pesquisa-literatura}
@@ -295,7 +294,7 @@ Com o objetivo de encontrar o conjunto de estudos mais relevantes, bem como elim
 			 \item Artigos publicados em conferências e periódicos (journals)
 			 \item Estudos publicados a partir de 2010\footnote{Foram considerados neste estudo artigos publicados até maio/2016, data de realização da pesquisa nas base de dados.}
 			 \item Artigos escritos em língua inglesa e portuguesa
-			 \item Artigos disponíveis em versão integral
+			 \item Artigos disponíveis com texto completo
 		\end{itemize}
 	\item Critérios de Exclusão
 		\begin{itemize}
@@ -306,7 +305,6 @@ Com o objetivo de encontrar o conjunto de estudos mais relevantes, bem como elim
 \end{itemize}
 
 Os estudos primários foram coletados mediante a aplicação de sentenças de buscas nas seguintes bibliotecas digitais: \textit{IEEE Explore, ACM Digital Library, Scopus, e Inspec/Compendex}. As bases de dados foram escolhidas com base na experiência reportada por Dyba e outros \cite{dybaa2007applying}  no qual verificou-se que o uso de apenas algumas bases era capaz de produzir um resultado similar a utilização de um conjunto maior de biblioteca digitais. As sentenças de buscas foram produzidas com base na metodologia PICO (Population, Intervention, Comparison and Outcomes) que é sugerida por Kitchenham e Charters \cite{keele2007guidelines} para ajudar pesquisadores na formulação de termos tomando como base as questões de pesquisa, que serão aplicados às bases de dados. As sentenças de busca aplicadas a cada base de dados são apresentadas na Tabela \ref{tab:setenca-por-base-dados} do Apêndice \ref{ch:app-instrumentos-mapeamento}.
-
 
 Após a condução da busca automatizada nas base de dados chegamos a um total de 286 artigos. A Tabela
 \ref{tab:estudos-por-base-dados} exibe o conjunto inicial de estudos recuperados por base de dados.
@@ -346,82 +344,95 @@ descrito resultou em 94 estudos incluídos neste trabalho. A Figura \ref{fig:dia
 \subsection{Esquemas de Classificação}
 \label{subsec:map-esquemas-classificacao}
 
-Com o objetivo de mapear os estudos sobre extensões das FGRM's foram propostos quatro esquemas de classificação. O primeiro esquema organiza os artigos pelo tipo de problema da atividade de manutenção de software a extensão se propõe em solucionar. A segunda categorização distribuí os estudos pelo papel no processo de manutenção de software a extensão visa dar suporte. A terceira é uma classificação baseada na taxonomia para modelos de Recuperação da Informação (Information Retrieve - IR) proposta por Cerulo e Canfora \cite{cerulo2004taxonomy}. Em particular, utilizamos este esquema tendo em vista que as extensões propostas na literatura utilizam algum tipo de suporte de modelos de IR. O último esquema apresenta quais das ferramentas existentes na indústria que estão sendo estendidas na literatura. Esta taxonomia nos fornece uma visão se as extensões propostas são de um foco propositivo, ou seja, sem que exista uma implementação concreta da extensão, ou se há algum tipo de ferramenta no qual existe um maior número de extensões propostas. Em seguida discutiremos cada esquema de classificação em detalhe.
+Com o objetivo de mapear os estudos sobre extensões das FGRM's foram propostos quatro esquemas de classificação. O primeiro esquema organiza os artigos pelo tipo de problema da atividade de manutenção de software a extensão se propõe solucionar. A segunda categorização distribuí os estudos pelo papel no processo de manutenção de software a extensão visa dar suporte. A terceira é uma classificação baseada na taxonomia para modelos de Recuperação da Informação (Information Retrieve - IR) proposta por Cerulo e Canfora \cite{cerulo2004taxonomy}. Em particular, utilizamos este esquema tendo em vista que grande parte das extensões propostas na literatura utilizam algum tipo de suporte de modelos de IR. O último esquema apresenta quais das ferramentas existentes na indústria estão sendo estendidas na literatura. Esta taxonomia nos fornece uma visão se as extensões propostas são com um foco propositivo, ou seja, sem que exista uma implementação concreta da extensão, ou se há algum tipo de ferramenta no qual existe um maior número de extensões propostas. Em seguida discutiremos cada esquema de classificação em detalhe.
 
 \subsubsection{Classificação por Tipo de Problema}
 \label{subsubsec:map-esquema-suporte-problema}
 
-Existem diversos problemas relacionados com o processo de Manutenção de Software. Já na década de
-1980 pesquisas questionavam profissionais envolvidos com manutenção de software quais os principais
+Existem diversos problemas relacionados ao processo de Manutenção de Software. Já na década de
+1980 pesquisas questionavam os profissionais envolvidos com manutenção de software quais os principais
 problemas da área\cite{Lientz:1981:PAS:358790.358796}. Naturalmente a percepção dos desafios
-envolvidos com a manutenção de software se alteram com tempo, desta forma, é sempre válido
-revisar a literatura com o objetivo de entender os problemas que estão sendo estudados.
+envolvidos com a manutenção de software se altera com tempo, desta forma, é sempre válido
+revisar a literatura com o objetivo de entender quais os tipos de problemas estão sendo estudados.
 
 Neste sentido foi proposto um esquema de classificação que relaciona os estudos pelo tipo de
-problema a extensão pretende resolver. A construção da taxonomia se deu com base no processo
-definido por Petersen e outros \cite{Petersen2008}, o qual é composto por duas etapas:
+problema que a extensão pretende resolver. A construção da taxonomia se deu com base no processo
+definido por Petersen e outros \cite{Petersen2008}, o qual é composto de duas etapas:
 
 \begin{enumerate}[I] 
-	\item analisar as palavras-chaves e conceitos que identifica as contribuições do estudo por meio da analise do título, palavras-chaves e resumo
+	\item analisar as palavras-chaves e conceitos que identificam as contribuições do estudo por meio da analise do título e resumo
 	\item após o término da etapa I, todas as palavras chaves são combinadas a fim de construir um conjunto de categorias para no qual os artigos devem ser classificados.
 \end{enumerate} 
 
 Os autores recomendam que nos casos em que o resumo e o
-título do estudo não são capazes de caracterizá-lo, as seções de introdução e
+título do estudo não sejam capazes de caracterizá-lo, as seções de introdução e
 conclusão também devem ser analisadas. Para as bases de dados onde era informado mais de um conjunto
-de palavras-chaves foi utilizado aquelas informadas pelos autores. Mediante a aplicação do processo foi
-construído o esquema de classificação apresentado na Figura  .
+de palavras-chaves para um mesmo artigo, utilizamos aquelas que foram informadas pelos autores. Mediante a aplicação do processo foi
+construído o esquema de classificação apresentado na Figura
+\ref{fig:diagrama-esquema-problemas-manutencao}.
 
-\todo[inline]{Incluir figura do esquema de classificação por problemas de software}
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{../img/diagrama-esquema-problemas-manutencao.pdf}
 	\caption{Esquema de classificação proposto}
 	\label{fig:digrama-esquema-problemas-manutencao}
 \end{figure}
-\todo[inline]{Incluir tabela com os artigos em cada esquema proposto}
 \todo[inline]{Incluir no anexo uma tabela demonstrando como as palavras-chaves foram combinadas}
 
 \subsubsection{Classificação por Suporte ao Papel da Manutenção de Software}
 \label{subsubsec:map-esquema-suporte-papel-man}
 
-Da mesma forma que uma extensão proposta para as FGRM possui o foco em resolver determinado
-problema, supomos também que a extensão pode dar suporte a determinado papel desempenho no processo
-de Manutenção de Software. Por esta razão foi proposto uma taxonomia com intuito de classificar
-os artigos pelo suporte ao papel desempenhado no processo de manter software. O processo de
-construção é similar ao proposto por Petersen e outros e que foi que foi apresentado na
-subseção \ref{subsubsec:map-esquema-suporte-papel-man}. A principal diferença é que foi realizada
-uma leitura completa do estudo para os casos em que não foi possível identificar o papel o
-qual a extensão visa dar suporte quando da leitura do título, resumo e introdução.
+Da mesma forma que uma extensão proposta para as FGRM's visa resolver determinado
+problema, supomos ainda que a extensão pode dar suporte a determinado papel desempenhado no processo
+de Manutenção de Software. Para este fim utilizamos uma classificação modificada da proposta
+por \cite{Polo1999}. No trabalho de Polo e outros o objetivo era definição de uma estrutura adequada
+da equipe de manutenção de software mediante a clara identificação das tarefas que cada membro deve
+executar. Os papéis propostos pelo no estudo é produto da aplicação da metodologia MANTEMA\cite{756695} para
+manutenção em projetos de software bancários espanhóis, em especial aqueles em que a área de
+manutenção foi terceirizada (outsourcing). Os autores reforçam que apesar da taxonomia de papéis ter
+sido criada em um contexto específico, ela pode ser adequada para aplicação em outras situações.
 
-Triagers are responsible for assigning bugs to the most qualified developers
-These results are the product of the application of MANTEMA methodology for software maintenance [7] to Spanish banking projects.
+No escopo deste trabalho a taxonomia utiliza a proposta de Polo e outros com algumas adequações. Em
+especial, foram removidos os papéis que segundo o nosso entendimento estão mais vinculados a um
+contexto de manutenção terceirizada (outsourcing). Além disso, dividimos o papel "time de manutenção"
+(maintenance team) em \textit{Desenvolvedor e Analista de Qualidade} por entendemos que são papéis
+comuns a muito dos processos de manutenção existentes. Os papéis que compõe a taxonomia proposta
+estão descritos a seguir:
 
 \begin{description}
-	\item[Usuário Afetado]:  TODO
-	\item[Reportador]: TODO
-	\item[Gerente de Requisição de Mudança(Maintenance-request manager)]:
-	\item[Agendador(Scheduler)]:
-	\item[Desenvolvedor]:
-	\item[Analista de Qualidade]:
-	\item[Líder da Manutenção(Head of Maintenance)]:
+	\item[Usuário Afetado]: Indivíduo que utiliza o sistema do qual será produzida uma Requisição de
+		Mudança.
+	\item[Reportador]: Responsável por registrar a Requisição de Mudança na FGRM.
+	\item[Gerente de Requisição de Mudança(Maintenance-request manager)]: Responsável por decidir se
+		uma Requisição de Mudança será aceita ou rejeitada e qual tipo de manutenção deverá ser
+		aplicada. Posteriormente cabe a ele/ela encaminhar a RM para o Agendador.
+	\item[Agendador(Scheduler)]: Deve planejar a fila de Requisições de Mudança aceitas. Também
+		estão no rol de responsabilidades deste papel a atribuição das RM's para o desenvolver
+		mais apto.
+	\item[Desenvolvedor]: Responsável realizar as ações que irão solucionar a Requisição de Mudança.
+	\item[Analista de Qualidade]: Avaliam uma Requisição de Mudança que foi solucionada por um
+		Desenvolvedor afim de verificar se a RM foi corretamente resolvida.
+	\item[Líder da Manutenção(Head of Maintenance)]: Tem por responsabilidade definir os padrões
+		e procedimentos que compõe o processo de manutenção que será utilizado.
 \end{description}
+
+Apesar da taxonomia de papéis utilizada derivar de um contexto de manutenção de software específico
+(setor bancário e empresas com a área de manutenção terceirizada), ela é capaz de acoplar com outros
+tipos de processo de manutenção de software, como aquele proposto por Ihara e outros
+\cite{Ihara:2009:AMI:1595808.1595833}. Naquele estudo foi criada uma representação de um processo
+de modificação de bugs tomando como base as diversas situações que um bug possui em uma FGRM no contexto de projetos de código aberto. O processo resultante é facilmente acoplável com a taxonomia utilizada em
+nosso estudo.
 
 Cabe ressaltar que está fora do escopo deste estudo elaborar uma taxonomia de papeis envolvidos na
 Manutenção de Software em função de supormos que isto corresponde a um esforço bem extenso. Nossa
 ação é identificar quais artigos trabalham com a noção de quais papeis a extensão pretender dar
 suporte,  ou seja,  relatar se existem papeis e quais são eles,  sem com isso, envolver em uma
-consolidação definitiva. A Figura exibe a classificação obtida a partir dos estudos. De forma
-similar a Tabela apresenta as combinações realizadas para construir a taxonomia. 
-T
-\todo[inline]{Incluir figura do esquema de classificação por papéis na manutenção de software}
-\todo[inline]{Incluir tabela com os artigos em cada esquema proposto}
-\todo[inline]{Incluir no anexo uma tabela demonstrando como as palavras-chaves foram combinadas}
+consolidação definitiva.
 
 \subsubsection{Classificação por Técnicas de Recuperação da Informação}
 \label{subsubsec:map-esaquema-tecnicas-ir}
 
-Um ponto em comum entre as diversas extensões para FGRM propostas na literatura é o fato delas utilizarem algum suporte de modelos de Recuperação de Informação (Information Retrieve - IR). Um modelo de IR visa solucionar um uma necessidade informacional de um usuário, representada como um conjunto de termos, no qual uma lista dos documentos mais relevantes devem ser recuperadas de uma coleção de documentos\cite{baeza1999modern}. 
+Um ponto em comum entre as diversas extensões para FGRM propostas na literatura é o fato delas utilizarem algum suporte de modelos de Recuperação de Informação (Information Retrieve - IR). Um modelo de IR visa solucionar um uma necessidade informacional de um usuário, representada como um conjunto de termos, no qual uma lista dos documentos mais relevantes devem ser recuperadas de uma coleção \cite{baeza1999modern}. 
 
 Com o objetivo de obter uma visão geral das técnicas que estão sendo utilizadas para implementar as
 extensões para as FGRM, realizamos a classificação dos estudos através da taxonomia proposta por
@@ -459,6 +470,44 @@ Para produzirmos a taxonomia realizarmos a leitura do resumo e da introdução d
 
 \section{Resultados}
 \label{sec:resutaldos}
+
+\subsection{Extensões para Problemas na Manutenção de Software}
+\label{sub:extensões_para_problemas_na_manutenção_de_software}
+
+% Inclusão da tabela
+\input{tb-taxonomia-problemas-manutencao.tex}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{../img/bubble-plot-problema-manutencao.pdf}
+	\caption{Total de artigos por categoria de problema}
+	\label{fig:bubble-plot-problema-manutencao}
+\end{figure}
+\subsubsection{Classificação de Requisições de Mudança}
+\label{ssub:classificação_de_requisições_de_mudança}
+
+\subsubsection{Duplicação}
+\subsubsection{Categorização}
+\subsubsection{Estimativa de Esforço}
+
+
+
+\subsection{Extensões com Suporte à Papeis}
+\label{sub:extensões_com_suporte_à_papeis}
+
+
+\subsection{Técnicas de IR Utilizadas pelas Extensões}
+\label{sub:técnicas_de_ir_utilizadaas_pelas_extensões}
+
+
+\subsection{Ferramentais Estendidas}
+\label{sub:ferrramentas_extendidas}
+
+
+
+
+
+
 
 \section{Limitações e Ameaças à Validade}
 
