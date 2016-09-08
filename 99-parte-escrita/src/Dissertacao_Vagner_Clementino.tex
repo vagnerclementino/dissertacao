@@ -64,7 +64,8 @@ indexkeys={1.~Computação --- Teses. 2.~Redes --- Teses. I.~Orientador.
 
 Dentro do ciclo de vida de um produto de software o processo de manutenção tem
 papel fundamental. Devido ao seu alto custo, em alguns casos chegando a 60\%
-do custo final \cite{kaur2015review}, as atividades relacionadas a manter e evoluir software tem sua importância considerada tanto pela comunidade científica quanto pela indústria.
+do custo final \cite{kaur2015review}, as atividades relacionadas a manter e evoluir software tem sua
+importância considerada tanto pela comunidade científica quanto pela indústria. Neste sentido, este trabalho de dissertação se propõe a investigar e contribuir no entendimento de como as Ferramentas de Gerenciamento de Requisição de Mudança estão sendo melhoradas ou estendidas no contexto da transformação do processo de desenvolvimento e manutenção de software de um modelo tradicional para outro que incorpora cada vez mais as práticas propostas pelos agilistas. O intuito é analisar como as FGRM estão sendo modificadas com base na literatura da área em contraste com o ponto de vista dos profissionais envolvidos em manutenção de software.
 
 A \textit{Manutenção}, dentre outros aspectos, corresponde ao processo de modificar um componente ou sistema de software após a sua entrega com o objetivo de \textit{corrigir falhas, melhorar o desempenho ou adaptá-lo devido à mudanças ambientais} \cite{{159342}}. De maneira relacionada, \textit{Manutenibilidade} é a propriedade de um sistema ou componente de software em relação ao grau de \textit{facilidade} que ele pode ser corrigido, melhorado ou adaptado \cite{{159342}}.
 
@@ -78,8 +79,21 @@ As manutenções em software podem ser divididas em \textit{Corretiva, Adaptativ
 \label{fig:modification-request}
 \end{figure}
 
-
-Por conta do volume das Requisições de Mudança se faz necessária a utilização de ferramentas com o objetivo de gerenciá-las. Esse controle é geralmente realizado por Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems, que auxiliam os desenvolvedores na correção de forma individual ou colaborativa de defeitos (bugs), no desenvolvimento de novas funcionalidades, dentre outras tarefas relativas à manutenção de software. Não existe na literatura uma nomenclatura comum para este tipo de ferramenta. Em alguns estudos é possível verificar nomes tais como Sistema de Controle de Defeito - Bug Tracking Systems, Sistema de Gerenciamento da Requisição - Request Management System, Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems e diversos nomes afins. Todavia, de modo geral, o termo se refere as ferramentas utilizadas pelas organizações para \textit{gerir as Requisições de Mudança}. Estas ferramentas podem ainda ser utilizadas por gestores, analistas de qualidade e usuários finais para atividades tais como gerenciamento de projetos, comunicação, discussão e revisões de código. Neste trabalho utilizaremos o termo \texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) ao referimos a esta ferramenta. A Tabela \ref{tab:exemplo} apresenta alguns exemplos de ferramentas que podem ser classificadas como FGRM. Também são listados serviços da Internet que oferecem funcionalidades presentes nas FGRM na forma de Software como Serviço.
+\todo[inline]{Fazer uma discussão melhor sobre as diferenças entre manutenção e evolução de
+	Software}
+Por conta do volume das Requisições de Mudança se faz necessária a utilização de ferramentas com o
+objetivo de gerenciá-las. Esse controle é geralmente realizado por Sistemas de Controle de Demandas
+(SCD)- Issue Tracking Systems, que auxiliam os desenvolvedores na correção de forma individual ou
+colaborativa de defeitos (bugs), no desenvolvimento de novas funcionalidades, dentre outras tarefas
+relativas à manutenção de software. Não existe na literatura uma nomenclatura comum para este tipo
+de ferramenta. Em alguns estudos é possível verificar nomes tais como Sistema de Controle de Defeito
+- Bug Tracking Systems, Sistema de Gerenciamento da Requisição - Request Management System, Sistemas
+de Controle de Demandas (SCD)- Issue Tracking Systems e diversos nomes afins. Todavia, de modo
+geral, o termo se refere as ferramentas utilizadas pelas organizações para \textit{gerir as
+	Requisições de Mudança}. Estas ferramentas podem ainda ser utilizadas por gestores, analistas de
+qualidade e usuários finais para atividades tais como gerenciamento de projetos, comunicação,
+discussão e revisões de código. Neste trabalho utilizaremos o termo \texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) ao referimos a este tipo de ferramenta.
+A Tabela \ref{tab:exemplo} apresenta alguns exemplos de ferramentas que podem ser classificadas como FGRM. Também são listados serviços da Internet que oferecem funcionalidades presentes nas FGRM na forma de Software como Serviço.
 
 \begin{table}[ht]
 	\centering
@@ -98,13 +112,22 @@ Por conta do volume das Requisições de Mudança se faz necessária a utilizaç
 	\label{tab:exemplo}
 \end{table}
 
-Grande parte da literatura em manutenção de software trata de técnicas e metodologias tradicionais da Engenharia de Software. Não obstante, é possível verificar um protagonismo das práticas propostas pelos agilistas em projetos de sucesso, mesmo em áreas não relativas à Tecnologia da Informação \cite{Serrador2015}. Neste contexto, verifica-se uma tendência que os departamentos dedicados à manutenção de software se mostrem interessados nas metodologias dos agilistas e que tenham vontade de experimentá-las em suas atividades \cite{Heeager2015}. Apesar da maioria dos textos em Engenharia de Software tratarem desenvolvimento e manutenção como atividades com natureza distintas, esta última pode adaptar características da primeira visando a melhoria do seu desempenho. Dentre as práticas propostas pelos agilistas passíveis de serem utilizadas em tarefas de manutenção é possível citar o desenvolvimento iterativo, maior envolvimento do cliente, comunicação face a face, testes frequentes, dentre outras.
+Grande parte da literatura de manutenção de software trata de técnicas e metodologias tradicionais da Engenharia de Software. Não obstante, é possível verificar um protagonismo das práticas propostas pelos agilistas em projetos de sucesso, mesmo em áreas não relativas à Tecnologia da Informação \cite{Serrador2015}. Neste contexto, verifica-se uma tendência que os departamentos dedicados à manutenção de software se mostrem interessados nas metodologias dos agilistas e que tenham vontade de experimentá-las em suas atividades \cite{Heeager2015}. Apesar da maioria dos textos em Engenharia de Software tratarem desenvolvimento e manutenção como atividades com natureza distintas, esta última pode adaptar características da primeira visando a melhoria do seu desempenho. Dentre as práticas propostas pelos agilistas passíveis de serem utilizadas em tarefas de manutenção é possível citar o desenvolvimento iterativo, maior envolvimento do cliente, comunicação face a face, testes frequentes, dentre outras.
 
-Da mesma forma que ocorre no desenvolvimento de software, é possível verificar uma crescente adoção de técnicas da metodologia ágil na manutenção de software \cite{Soltan2016,Devulapally2015, Heeager2015}. Neste contexto, é natural que ferramentas que dão suporte à manutenção, tal como as FGRM's, tenham que evoluir para se adaptar a esta nova forma de trabalhar. Mesmo em um ambiente tradicional de  desenvolvimento e manutenção de software, verifica-se a necessidade de adequação das FGRM's. Uma das justificativas desta exigência se deve ao fato que a maioria desses sistemas são projetados em torno do termo "demanda" (bug, defeito, bilhete, recurso, etc.), contudo, cada vez mais este modelo parece estar distante das necessidades práticas dos projetos de software \cite{Baysal:2013:SAP:2486788.2486957}.
+Da mesma forma que ocorre no desenvolvimento de software, é possível verificar uma crescente adoção
+de técnicas da metodologia ágil na manutenção de software \cite{Soltan2016,Devulapally2015,
+	Heeager2015}. Neste contexto, é natural que ferramentas que dão suporte à manutenção, tal como
+as FGRM's, tenham que evoluir para se adaptar a esta nova forma de trabalhar. Mesmo em um ambiente
+tradicional de  desenvolvimento e manutenção de software, verifica-se a necessidade de adequação das
+FGRM's. Uma das justificativas desta exigência se deve ao fato que a maioria desses sistemas são
+projetados em torno do termo "demanda" (bug, defeito, bilhete, recurso, etc.), contudo, cada vez
+mais este modelo parece estar distante das necessidades práticas dos projetos de software,
+resultando, por exemplo, que os desenvolvedores tenham um
+baixo entendimento da situação geral bem como das atividades das outras pessoas
+envolvidas no projeto \cite{Baysal:2013:SAP:2486788.2486957}
 
 
-
-Apesar da inegável importância das FGRM's, percebe-se um aparente desacoplamento deste tipo de ferramenta com as necessidades das diversas partes interessadas (stakeholders) na manutenção e evolução de software. Um sinal deste distanciamento pode ser observado pelas diversas extensões (plugins) propostas na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}. Neste sentido, este trabalho de dissertação se propõe a investigar e contribuir no entendimento de como as Ferramentas de Gerenciamento de Requisição de Mudança estão sendo melhoradas ou estendidas no contexto da transformação do processo de desenvolvimento e manutenção de software de um modelo tradicional para outro que incorpora cada vez mais as práticas propostas pelos agilistas. O intuito é analisar como as FGRM estão sendo modificadas com base na literatura da área em contraste com o ponto de vista dos profissionais envolvidos em manutenção de software.
+Apesar da inegável importância das FGRM's, percebe-se um aparente desacoplamento deste tipo de ferramenta com as necessidades das diversas partes interessadas (stakeholders) na manutenção e evolução de software. Um sinal deste distanciamento pode ser observado pelas diversas extensões (plugins) propostas na literatura \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}.
  
 \section{Justificativa}
 \label{sec:intro-justificativa}
@@ -268,7 +291,18 @@ falhas duplicadas conforme proposto por Runeson et al. \cite{Runeson:2007:DDD:12
 \section{Metodologia de Pesquisa}
 \label{sec:map-metodologia}
 
-Um \textit{Mapeamento Sistemático da Literatura}, também conhecido como Estudo de Escopo (Scoping Studies), tem como objetivos fornecer uma visão geral de determinada área de pesquisa, estabelecer a existência de evidências de estudos sobre determinado tema e fornecer uma indicação da quantidade de trabalho da linha de pesquisa sob análise \cite{keele2007guidelines,wohlin2012experimentation}. Nesta dissertação empregamos as diretrizes propostas por Petersen e outros \cite{Petersen2008} de forma a produzirmos uma revisão de maneira sistemática afim de propiciar maior facilidade de replicação e extensão do mapeamento realizado. Em particular, definimos um conjunto de questões de pesquisa que foram utilizadas no processo de busca e seleção dos estudos primários. Em seguida, foram construídos esquemas de classificação com base nos dados extraídos  dos artigos. Por fim, foi realizada a análise e sintetização dos dados. A estrutura desta seção está de acordo com o processo descrito por \textit{Petersen e outros}, de modo que cada subseção representa uma das etapas propostas pelos autores.
+Um \textit{Mapeamento Sistemático da Literatura}, também conhecido como Estudo de Escopo (Scoping
+Studies), tem como objetivos fornecer uma visão geral de determinada área de pesquisa, estabelecer a
+existência de evidências de estudos sobre determinado tema e fornecer uma indicação da quantidade de
+trabalho da linha de pesquisa sob análise \cite{keele2007guidelines,wohlin2012experimentation}.
+Nesta dissertação empregamos as diretrizes propostas por Petersen e outros \cite{Petersen2008} de
+forma a produzirmos uma revisão de maneira sistemática afim de propiciar maior facilidade de
+replicação e extensão do mapeamento realizado. Em particular, definimos um conjunto de questões de
+pesquisa que foram utilizadas no processo de busca e seleção dos estudos primários. Em seguida,
+foram construídos esquemas de classificação com base nos dados extraídos  dos artigos. Por fim, foi
+realizada a análise e sintetização dos dados com o objetivo de posicionar os estudos em suas
+respectivas classes na taxonomia. A estrutura desta seção está de acordo com o processo descrito 
+por \textit{Petersen e outros}, de modo que cada subseção representa uma das etapas propostas pelos autores.
 
 \subsection{Questões de Pesquisa}
 \label{subsec:map-questoes-de-pesquisa}
@@ -278,7 +312,7 @@ O objetivo deste mapeamento sistemático é entender o estado da arte da pesquis
 \begin{itemize}
 	\item \textbf{Questão 01}: \textit{Quais os problemas da atividade de manutenção de software as extensões das FGRM pretendem resolver?}
 	\item \textbf{Questão 02}: \textit{Quais papeis envolvidos no processo de manutenção de software as extensões visam dar suporte?}
-	\item \textbf{Questão 03}: \textit{Qual técnica ou método foi utilizada para desenvolver a extensão?}
+	\item \textbf{Questão 03}: \textit{Qual o modelo de Recuperação da Informação foi utilizada para desenvolver a extensão?}
 	\item \textbf{Questão 04}: \textit{Quais as FGRM disponíveis no mercados estão sendo estendidas?}
 
 \end{itemize}
