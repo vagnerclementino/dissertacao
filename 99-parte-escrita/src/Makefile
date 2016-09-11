@@ -12,5 +12,7 @@ compile: $(NAME).tex $(BIBLIOGRAPHY).bib
 	@echo Gerado os arquivos $(NAME).pdf $(DIR_PDF_NAME)
 clean:
 	@rm -rf ${NAME}.aux ${NAME}.blg ${NAME}.bbl ${NAME}.dvi ${NAME}.ps ${NAME}.log ${NAME}.toc ${NAME}.out ${NAME}.nav ${NAME}.snm ${NAME}.synctex.gz *.bak ${NAME}.lof ${NAME}.lot
-aspell: $(NAME).tex
-	aspell --encoding="utf-8" -c -t=tex --lang="pt_BR" $(NAME).tex
+aspell: $(find . -name \*.tex -print)
+	@for f in $$(find . -name \*.tex -print); do\
+		aspell --encoding="utf-8" -c -t=tex --lang="pt_BR" $$f; \
+	done;	
