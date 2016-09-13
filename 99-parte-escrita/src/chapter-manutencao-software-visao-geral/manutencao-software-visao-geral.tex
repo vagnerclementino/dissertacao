@@ -1,9 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Objetivo:
-%Autor:
-%Data Criação:
-%Data Modificação:
-%Data Revisão:
+%Objetivo: Descrever os principais conceitos relativos a Manutenção de Software
+%		   envolvidos na dissertação
+%Autores: Vagner Clementino <vagnercs@dcc.ufmg.br> e Rodolfo Resende <rodolfo@dcc.ufmg.br>
+%Data Criação: Ter Set 13 19:22:37 BRT 2016
+%Data Modificação: Ter Set 13 19:23:03 BRT 2016
+%Data Revisão: 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Manutenção de Software: Uma Visão Geral}
@@ -83,3 +84,174 @@ Na ferramenta proposta por Thung et al.~\cite{Thung:2014:DIT:2642937.2648627} o
 foco é na determinação de defeitos duplicados. A contribuição deste trabalho é a
 integração do estado da arte de técnicas não supervisionadas para detecção de
 falhas duplicadas conforme proposto por Runeson et al.~\cite{Runeson:2007:DDD:1248820.1248882}. A ferramenta utiliza o Modelo de Vetor Espacial (Vetor Space Model) como métrica de similaridade entre os defeitos e fornece aos desenvolvedores uma lista de possíveis duplicatas.
+
+Once in operation, anomalies are uncovered, operating environments change, and new user requirements surface. The maintenance phase of the life cycle commences upon delivery, but maintenance activities occur much earlier.
+
+
+\section{Conceitos Fundamentais}
+\label{sec:conceitos_basicos}
+Esta primeira seção introduz os conceitos e terminologias que ajudam no entendimento do papel e
+escopo da Manutenção de Software. De uma maneira geral, podemos definir atividade de manter software
+como a totalidade das ações necessárias para fornecer algum tipo de suporte ao produto de software. 
+Não obstante, encontramos na literatura outras definições mais elaboradas sobre o conceito de
+Manutenção de Software. 
+
+Software maintenance is defined in the IEEE Standard for
+Software Maintenance, IEEE 1219, as the modification of
+a software product after delivery to correct faults, to
+improve performance or other attributes, or to adapt the
+to a modified environment. The standard also
+product
+addresses maintenance activities prior to delivery of the
+software product, but only in an information appendix of
+the standard.
+
+The IEEE/EIA 12207 standard for software life cycle
+processes essentially depicts maintenance as one of the
+primary life cycle processes, and describes maintenance
+undergoing
+product
+software
+as the process of a
+“modification to code and associated documentation due
+to a problem or the need for improvement. The objective
+while
+is to modify the existing software product
+preserving its integrity.” ISO/IEC 14764, the international
+defines
+software
+standard for software maintenance,
+maintenance in the same terms as IEEE/EIA 12207 and
+emphasizes the pre-delivery aspects of maintenance,
+planning, for example.
+
+ISO/IEC defines maintainability as one of the quality characteristics (ISO9126-01)
+
+Maintenance is needed to ensure that the software continues
+to satisfy user requirements. Maintenance. Lehman first addressed software maintenance and evolution of systems in 1969. Over a period of twenty years, his research led to the formulation of eight “Laws of Evolution”. [Leh97] Key findings
+include the fact that maintenance is
+evolutionary developments, and that
+maintenance decisions are aided by understanding what happens to systems (and software) over time.
+Others state that maintenance is continued development, except that there is
+an extra input (or constraint)–existing large
+software is never complete and continues to evolve. As it evolves, it grows more complex unless some
+action is taken to reduce this complexity
+
+
+\section{Requisição de Mudança}
+\label{sec:requisição_de_mudanca}
+Lientz \& Swanson initially defined three categories of maintenance: corrective,
+This definition was later updated in the Standard for Software Engineering-Software Maintenance,
+ISO/IEC 14764 to include four categories, as follows:
+? Corrective maintenance: Reactive modification of a software product performed after delivery to
+correct discovered problems
+? Adaptive maintenance: Modification of a software product performed after delivery to keep a
+software product
+usable in a changed or changing environment
+? Perfective maintenance: Modification of a software product after delivery to improve performance
+or maintainability
+? Preventive maintenance: Modification of a software product after delivery to detect and correct
+latent
+faults in the software product before they become effective faults
+
+
+ISO/IEC 14764 classifies adaptive and perfective
+maintenance as enhancements. It also groups together the corrective and preventive maintenance
+categories into a correction category, as shown in Table 1.
+Preventive
+maintenance, the newest category, is most often performed on software products where safety is
+critical.
+\begin{table}[htpb]
+
+	\centering
+	\caption{Categorias da Requisição de Mudanças. Adaptado de SWEBOK~\cite{4425813}}
+	\label{tab:categorias_requisicao_mudanca}
+	\begin{tabular}{l|l|l|}
+		\cline{2-3}
+	 & \textbf{Correção} & \textbf{Melhoria} \\ \hline
+	 \multicolumn{1}{|l|}{\textbf{Próativa}} & Preventiva & Perfectiva \\ \hline
+	 \multicolumn{1}{|l|}{\textbf{Reativa}} & Corretiva & Adaptativa \\ \hline
+	\end{tabular}
+ \end{table} 
+
+Apesar das diferentes nomeclatura existentes na literatura The change request,
+sometimes called a modification
+request (MR) and often called a problem report (PR),
+ 
+ \section{O processo de Manutenção de Software}
+\label{sec:o_processo_de_manutecao_de_software}
+
+Software process is a set of activities, methods, practices, and transformations which people use to
+develop and maintain software and the associated products. [Pau93] At Modification requests are logged and tracked, the impact of proposed changes is determined, code and other software artifacts are modified, testing is conducted, and a new version of the software product is released
+
+The Maintenance Process subarea provides references and standards used to implement the software
+maintenance process.
+\subsection{Manutenção de Software Tradicional}
+\label{subsec:manutenção_de_software_tradicional}
+Maintenance processes provide needed activities and
+detailed inputs/outputs to those activities, and are described in software maintenance standards
+IEEE 1219 and ISO/IEC 14764.
+The maintenance process model described in the Standard for Software Maintenance (IEEE1219) starts
+with the software maintenance effort during the post-delivery stage and discusses items such as
+planning for maintenance. That process is depicted in Figure 2.
+
+SO/IEC 14764 [ISO14764-99]
+is an elaboration of the
+IEEE/EIA 12207.0-96 maintenance process. The activities of the ISO/IEC maintenance process are
+similar to those of the IEEE, except that they are aggregated a little differently. The maintenance
+process activities developed by ISO/IEC are shown in Figure 3.
+
+Each of the ISO/IEC 14764 primary software maintenance activities is further broken down into tasks,
+as follows.
+
+?Process Implementation ? Problem and Modification Analysis ? Modification Implementation ?
+Maintenance Review/Acceptance ? Migration ? Software Retirement
+
+As already noted, many maintenance activities are similar to those of software development.
+Maintainers perform analysis, design, coding, testing, and documentation. They must track
+requirements in their activities just as is done in development, and update
+documentation as
+baselines
+change.
+
+ntainers and rerouted to a developer
+[Dor02],
+(Apr01)
+? Modification Request and Problem Report Help Desk: an end-user support function that triggers the
+assessment, prioritization, and costing
+of
+modification requests [Ben00]
+? Impact Analysis (see section 2.1.3 for details) ? Software Support: help
+and advice to users
+concerning a request for information (for example, business rules, validation, data meaning and
+ad-hoc requests/reports) (Apr03)
+? Service Level Agreements (SLAs) and specialized (domain-specific) maintenance contracts which are
+the responsibility of the maintainers (Apr01)
+
+
+Assess the risk of a given release and develop a back-out plan in case problems should arise
+? Inform all the stakeholders
+
+\subsection{Manutenção de Software com Método dos Agilistas}
+\label{sub:manutenção_de_software_com_método_dos_agilistas}
+
+Recently, agile methodologies have been emerging which promote light processes. This requirement
+emerges from the ever- increasing demand for
+fast turn-around of maintenance
+services. Some experiments with Extreme maintenance are presented in
+
+\section{Ferramentas de Gerenciamento de Requisições de Mudança (FGRM)}
+\label{sec:ferramentas_de_gerenciameto_de_requisições_de_mudança}
+
+\subsection{Características Gerais}
+\label{subsec:caracteristicas_gerais}
+
+\subsection{Extensões para FGRM}
+\label{subsec:extensoes_para_fgrm}
+
+
+
+
+
+
+
