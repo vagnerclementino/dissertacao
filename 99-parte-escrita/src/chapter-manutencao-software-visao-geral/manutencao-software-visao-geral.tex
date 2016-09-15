@@ -92,69 +92,63 @@ Once in operation, anomalies are uncovered, operating environments change, and n
 \label{sec:conceitos_basicos}
 Esta primeira seção introduz os conceitos e terminologias que ajudam no entendimento do papel e
 escopo da Manutenção de Software. De uma maneira geral, podemos definir atividade de manter software
-como a totalidade das ações necessárias para fornecer algum tipo de suporte ao produto de software. 
-Não obstante, encontramos na literatura outras definições mais elaboradas sobre o conceito de
-Manutenção de Software. 
+como a totalidade das ações necessárias para fornecer determinado tipo de suporte ao produto de software. 
+Não obstante, encontramos na literatura outras definições mais elaboradas sobre o
+conceito.
 
-Manutenção de Software é definida pela IEEE 1219~\cite{720567} IEEE Padrão para a Manutenção de
+Manutenção de Software é definida pela IEEE 1219~\cite{720567}-~Padrão para a Manutenção de
 Software, como a modificação de um produto de software após a sua respectiva entrega com o objetivo
-de corrigir falhas, melhorar o desempenho ou outros atributos com a finalidade de adaptar à
-modificações ambientais. O padrão cita a ocorrência de atividade de manutenção antes da entrega
+de corrigir falhas, melhorar o desempenho ou outros atributos com a finalidade de adaptar o software
+as modificações ambientais. O padrão cita a ocorrência de atividade de manutenção antes da entrega
 propriamente dita, contudo, de forma bastante superficial.
 
 Posteriormente a IEEE/EIA 12207-~Padrão para o Processo de Ciclo de Vida do Software~\cite{707581}
-retrata a manutenção como um dos principais processos do ciclo de vida do software e descreve a
-manutenção como atividade de modificação do código e da documentação associada por conta de um
-problema ou da necessidade de melhoria~\cite{4425813}. Por outro a ISO/IEC 14764-~Padrão para
+retrata a manutenção como um dos principais processos do ciclo de vida do software. Em seu texto a
+manutenção é vista como atividade de modificação do código e da documentação associada devido a problema ou da necessidade de melhoria~\cite{4425813}. Por outro a ISO/IEC 14764-~Padrão para
 Manutenção de Software enfatiza aspectos pré-entrega da manutenção, como por exemplo o planejamento.
 
 De maneira relacionada, \textit{Manutenibilidade} é a propriedade de um sistema ou componente de
 software em relação ao grau de \textit{facilidade} que ele pode ser corrigido, melhorado ou
-adaptado~\cite{{159342}}.A ISO/IEC (ISO9126-01) define  a Manutenibilidade como uma característica de qualidade do processo de Manutenção.
+adaptado~\cite{{159342}}.A ISO/IEC (ISO9126-~01) define  a Manutenibilidade como uma característica de qualidade do processo de Manutenção.
 
-Apesar das diversas definições para o processo de Manutenção de Software é possível identificar dois
-aspectos comuns: manter e evoluir. A Manutenção é necessária para garantir que o software continuar
-capaz de satisfazer os resquisitos dos usuários. 
+Apesar das diversas definições para Manutenção de Software é possível identificar dois
+aspectos comuns: manter e evoluir. Apesar do termo evolução de software carecer de uma definição
+padrão, pesquisadores e práticos utilizam-o como substituto preferido para
+manutenção~\cite{Bennett:2000:SME:336512.336534}. Apesar de entendemos que os processos de manutenção e evolução possuem características distintas, não está no escopo discutir e apresentais tais diferenças. Neste sentido, utilizamos os termos \textit{manter} e
+\textit{evoluir} software de forma intercambiáveis. Caso em algum contexto haja a necessidade de
+diferenciação, ela será discutida.
 
-The term software evolution lacks a standard definition, but some researchers and practitioners use
-it as a preferable substitute for maintenance. In this chapter, we shall use maintenance to refer to
-general post-delivery activities, and evolution to refer to a particular phase in the staged model
-described
-
-Maintenance is needed to ensure that the software continues
-to satisfy user requirements. Maintenance. Lehman first addressed software maintenance and evolution of systems in 1969. Over a period of twenty years, his research led to the formulation of eight “Laws of Evolution”. [Leh97] Key findings
-include the fact that maintenance is
-evolutionary developments, and that
-maintenance decisions are aided by understanding what happens to systems (and software) over time.
-Others state that maintenance is continued development, except that there is
-an extra input (or constraint)–existing large
-software is never complete and continues to evolve. As it evolves, it grows more complex unless some
-action is taken to reduce this complexity
-
+A Manutenção é necessária para garantir que o software seja capaz de satisfazer os requisitos dos
+usuários. Neste sentido, a atividade de manter software é desenvolvimento contínuo de software,
+sobretudo pelo fato que alguns sistemas nunca estão completos e continuam a evoluir. Eles evoluem e
+crescem e um maior esforço é necessário para reduzir a sua complexidade.
 
 \section{Requisição de Mudança}
 \label{sec:requisição_de_mudanca}
-Lientz \& Swanson initially defined three categories of maintenance: corrective,
-This definition was later updated in the Standard for Software Engineering-Software Maintenance,
-ISO/IEC 14764 to include four categories, as follows:
-? Corrective maintenance: Reactive modification of a software product performed after delivery to
-correct discovered problems
-? Adaptive maintenance: Modification of a software product performed after delivery to keep a
-software product
-usable in a changed or changing environment
-? Perfective maintenance: Modification of a software product after delivery to improve performance
-or maintainability
-? Preventive maintenance: Modification of a software product after delivery to detect and correct
-latent
-faults in the software product before they become effective faults
+As manutenções em software podem ser divididas em \textit{Corretiva, Adaptativa, Perfectiva e Preventiva}~\cite{Lientz:1980:SMM:601062,159342}. A Manutenção
+Corretiva lida com a reparação de falhas encontradas. A Adaptativa tem o seu
+foco na adequação do software devido à mudanças ocorridas no ambiente em que ele
+está inserido. A Perfectiva trabalha para detectar e corrigir falhas latentes
+antes que elas se manifestem como tal. A  Perfectiva fornece melhorias na
+documentação, desempenho ou manutenibilidade do sistema. A Preventiva se
+preocupa com atividades que possibilitem aumento da manutenibilidade do sistema.
+A \textit{ISO 14764}~\cite{1703974} propõe a divisão da tarefa de manutenção nos
+quatro tipos descritos anteriormente e agrupa-os em um termo único denominado
+\textit{{Requisição de Mudança - Modification Request (RM)}}, conforme pode ser visto pela Figura~\ref{fig:modification-request}.
 
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=.75\textwidth]{chapter-intro/img/modification_request.eps}
+\caption{Tipos de manutenção segundo a norma ISO/IEC 14764. Extraído de
+  \cite{1703974}}
+\label{fig:modification-request}
+\end{figure}
 
-ISO/IEC 14764 classifies adaptive and perfective
-maintenance as enhancements. It also groups together the corrective and preventive maintenance
-categories into a correction category, as shown in Table 1.
-Preventive
-maintenance, the newest category, is most often performed on software products where safety is
-critical.
+A ISO/IEC 14764 classifica as manutenções adaptativas e perfectivas como melhorias e agrupa as
+manutenções corretivas e preventidas em uma categoria de correção, conforme exibido na
+Tabela~\ref{tab:categorias_requisicao_mudanca}. A manutenção preventiva é mais frequentemente
+realizada em produtos de software onde a seguranças é crítica. At Modification requests are logged and tracked, the impact of proposed changes is determined, code and other software artifacts are modified, testing is conducted, and a new version of the software product is released
+
 \begin{table}[htpb]
 
 	\centering
@@ -168,17 +162,16 @@ critical.
 	\end{tabular}
  \end{table} 
 
-Apesar das diferentes nomeclatura existentes na literatura The change request,
-sometimes called a modification
-request (MR) and often called a problem report (PR),
+Apesar das diferentes nomenclaturas existentes na literatura (demanda, bug, defeito, bilhete (ticket),
+Requisição de Modificação, Relato de Problema) uma Requisição de Mudança representa o relato,
+independente de sua estrutura, que têm por objetivo gerar uma manutenção ou evolução de um produto
+de software. 
  
  \section{O processo de Manutenção de Software}
 \label{sec:o_processo_de_manutecao_de_software}
 
-Software process is a set of activities, methods, practices, and transformations which people use to
-develop and maintain software and the associated products. [Pau93] At Modification requests are logged and tracked, the impact of proposed changes is determined, code and other software artifacts are modified, testing is conducted, and a new version of the software product is released
-
-The Maintenance Process subarea provides references and standards used to implement the software
+Um Processo de Software é o conjunto de atividades, métodos, práticas e transformações no qual
+pessoas utilizam para desenvolver e manter software e seus artefados associados~\cite{paulk1993key}. The Maintenance Process subarea provides references and standards used to implement the software
 maintenance process.
 \subsection{Manutenção de Software Tradicional}
 \label{subsec:manutenção_de_software_tradicional}
