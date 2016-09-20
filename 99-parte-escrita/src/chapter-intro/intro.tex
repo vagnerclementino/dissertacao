@@ -7,6 +7,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introdução}
 \label{ch:intro}
+\todo[inline]{O objetivo de seção é introduzir ao leitor na disciplina de Engenharia de Software, em
+especial quanto aos tipos de manutenção descritos na literatura e a utilização de uma ferramenta
+para o seu gerenciamento}
 
 Dentro do ciclo de vida de um produto de software o processo de manutenção tem
 papel fundamental. Devido ao seu alto custo, em alguns casos chegando a 60\%
@@ -64,9 +67,13 @@ Serviço~\cite{fox2013engineering}.
 	\caption{Exemplos de ferramentas e serviços da Internet. Adaptado de~\cite{cavalcanti2014challenges}}\label{tab:exemplo}
 \end{table}
 
+\section{Motivação}
+\label{sec:intro-motivacao}
 
-\section{Justificativa}
-\label{sec:intro-justificativa}
+
+\todo[inline]{O objetivo desta seção é apresentar a motivação do estudo. Em síntese, tenta responder
+a seguinte pergunta: Por que dentro do contexto da manutenção de software estudar as Ferramentas de
+Gerenciamento de Requisição de Mudança é IMPORTANTE?}
 Desde o final da década de 1970~\cite{Zelkowitz:1979:PSE:578504} percebe-se o aumento do custo
 referente as atividades de  manutenção de software. Nas décadas de 1980 e 1990 alguns trabalhos
 tiveram seu foco no desenvolvimento de modelos de mensuração do custo para manter o
@@ -95,11 +102,6 @@ tendência não é surpreendente tendo em vista que os métodos ``ágeis'' enfat
 características úteis à eficiência da implementação de software, tais como desenvolvimento incremental e teste contínuo que agregam valor para a evolução e manutenção eficaz de um sistema
 \cite{thomas2006agile}. Dentro desta tendência verifica-se a necessidade de que as ferramentas envolvidas no suporte à manutenção de software se adéquem à este nova forma de manter software. 
 
-\section{Motivação}
-\label{sec:intro-motivacao}
-
-\todo[inline]{Entender a diferença entre justificativa e motivação}
-
 
 Da mesma forma que ocorre no desenvolvimento de software, é possível verificar uma crescente adoção
 de técnicas da metodologia ágil na manutenção de software~\cite{Soltan2016,Devulapally2015,
@@ -114,8 +116,12 @@ baixo entendimento da situação geral bem como das atividades das outras pessoa
 projeto~\cite{Baysal:2013:SAP:2486788.2486957}
 
 
-\section{Problema}
+\section{Análise do Problema}
 \label{sec:intro-problema}
+
+\todo[inline]{OBJETIVO: Apresentar o problema que esta dissertação pretende resolver. O problema
+	deverá ser definido claramente ou deverão ser apresentadas provas da importância do mesmo dentro
+do escopo da Engenharia de Software}
 
 Apesar da inegável importância das FGRM's, percebe-se um aparente desacoplamento deste tipo de
 ferramenta com as necessidades das diversas partes interessadas (stakeholders) na manutenção e
@@ -144,8 +150,16 @@ outras pessoas estão realizando. Um outro sinal da necessidade de evolução de
 pode ser observado considerando as diversas extensões (plugins) propostas na literatura
 \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}.
 
-\section{Visão Geral da Trabalho}
+\section{Visão Geral do Estudo}
 \label{sec:intro-visao-geral}
+
+\todo[inline]{OBJETIVO: Apresentar de forma sucinta o objetivo da dissertação}
+
+In order to achieve the goal of this work, stated in the previous section, a context-aware
+architecture towards automating CR assignment is proposed. The construction of the architecture is based on two empirical studies: the systematic mapping study presented in Chapter 3, and the surveys with practitioners, presented in Chapter 4. Through the survey, we identified a set of functional and non-functional requirements
+that should be satisfied when assigning CRs to developers, and investigated if these requirements are implemented in current approaches identified in the mapping study. We observed only a small subset of the requirements that is implemented in these approaches. However, in order to achieve a better performance and leverage the approaches’ applicability, it is desirable to consider all these requirements together. It, in turn, requires the integration and coordination of information from different data sources. Such required information varies from project to project, as well as from one organization
+to another, characterizing the need for a context-aware approach. In this sense, our context-aware architecture is implemented by integrating current approaches found in the literature, which rely on IR models, and rule-based expert systems. The IR models deal with recommendation based on textual similarities and the expert systems reason on context information. Nevertheless, it is important to note that, although we are using the word automated to
+characterized our approach, it is still needed to perform manual configurations before and during the approach’s execution. Thus, when we say automated we are referring to the assignments that the approach is able to perform autonomously after it have been properly configured
 
 Neste sentido, este trabalho de dissertação investiga e contribui no entendimento de
 como as Ferramentas de Gerenciamento de Requisição de Mudança estão sendo melhoradas ou estendidas
@@ -162,7 +176,6 @@ Neste contexto, elaboramos um estudo das Ferramentas de Gerenciamento de Requisi
 	\item propor novas extensões para as FGRM\@.  
 \end{enumerate}
 
-
 Vamos discutir os aspectos que são considerados mais importantes a partir da literatura da área, bem
 como do ponto de vista de profissionais envolvidos em manutenção de software. De forma particular,
 iremos estudar os mecanismos de personalização que algumas destas ferramentas permitem e tentaremos
@@ -171,6 +184,31 @@ trabalho.
 
 \section{Metodologia de Pesquisa}
 \label{sec:intro-metodologia}
+\todo[inline]{OBJETIVO: Em linhas gerais apresenta como o problema descrito na seção anterior foi
+	resolvido mediante a apresentação da metodologia científica utilizada}
+
+
+This research design of this thesis is based on a multimethod approach (HESSE-BIBER,
+2010). Such approach combines two or more quantitative (or qualitative) methods in a single study,
+such as a survey and an experiment (HESSE-BIBER, 2010). Multimethod must not be confused with mixed
+method. In this last, methods for both qualitative and quantitative types of research are applied in
+a single study. On the other hand, multimethod studies combine different methods for a single
+research type
+
+When applying a multimethod approach, the triangulation is used to consolidate the
+results from the different methods, considering, however, that the same research question(s)
+was/were investigated in these methods. As a consequence, the triangulation of methods en- hances
+the conclusions and completeness of the study, bringing more credibility to the research findings
+(HESSE-BIBER, 2010). Figure 1.2 shows the multimethod research design applied in this thesis. The
+
+The design started by stating the research objective, which we defined in Section 1.2, and
+performing the initial literature review. This last provided the basic concepts and understanding of
+the area. Then, a systematic mapping study and a questionnaire-based survey were conducted. These
+two gathered detailed information on our research topic. Indeed, both of them were used to
+understand the key aspects of CR assignment and identify the set of requirements to automate the
+assignments. In the evidence synthesis step, these results were detailed and organized in order to
+formulate the approach to automate CR assignments, which was constructed in the next step. Finally,
+the research design states the validation of the proposed approach.
 
 O trabalho de dissertação pode ser dividido nas etapas listadas a seguir:
 
