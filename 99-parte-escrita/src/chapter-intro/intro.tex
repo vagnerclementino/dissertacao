@@ -134,10 +134,9 @@ importante no progresso da resolução das falhas que eles descreveram.
 
 
 Um outro importante benefício da utilização das FGRM é que as mudanças no software podem ser
-rapidamente identificada e reportada para os desenvolvedores~\cite{anvik2005coping}. Alem dísso, eles podem ajudar a estimar
+rapidamente identificada e reportada para os desenvolvedores~\cite{anvik2005coping}. Além disso, eles podem ajudar a estimar
 o custo do software, na análise de impacto, planejamento, rastreabilidade, descoberta do
 conhecimento~\cite{cavalcanti2013bug}.
-
 
 Não obstante, no contexto de utilização desta ferramentas diversos desafios se apresentam:
 duplicação RM's, pedidos de modificação que são abertos inadvertidamente, grande quantidade de RM's
@@ -205,18 +204,6 @@ oferecidas pelas FGRM.
 %características úteis à eficiência da implementação de software, tais como desenvolvimento incremental e teste contínuo que agregam valor para a evolução e manutenção eficaz de um sistema
 %\cite{thomas2006agile}. Dentro desta tendência verifica-se a necessidade de que as ferramentas envolvidas no suporte à manutenção de software se adéquem à este nova forma de manter software. 
 %
-%
-%Da mesma forma que ocorre no desenvolvimento de software, é possível verificar uma crescente adoção
-%de técnicas da metodologia ágil na manutenção de software~\cite{Soltan2016,Devulapally2015,
-%	Heeager2015}. Neste contexto, é natural que ferramentas que dão suporte à manutenção, tal como
-%as FGRM's, tenham que evoluir para se adaptar a esta nova forma de trabalhar. Mesmo em um ambiente
-%tradicional de  desenvolvimento e manutenção de software, verifica-se a necessidade de adequação das
-%FGRM's. Uma das justificativas desta exigência se deve ao fato que a maioria desses sistemas são
-%projetados em torno do termo ``demanda' (bug, defeito, bilhete, recurso, etc.), contudo, cada vez
-%mais este modelo parece estar distante das necessidades práticas dos projetos de software,
-%resultando, por exemplo, que os desenvolvedores tenham um
-%baixo entendimento da situação geral bem como das atividades das outras pessoas envolvidas no
-%projeto~\cite{Baysal:2013:SAP:2486788.2486957}
 
 
 \section{Análise do Problema}
@@ -226,31 +213,90 @@ oferecidas pelas FGRM.
 	deverá ser definido claramente ou deverão ser apresentadas provas da importância do mesmo dentro
 do escopo da Engenharia de Software}
 
-Apesar da inegável importância das FGRM's, percebe-se um aparente desacoplamento deste tipo de
-ferramenta com as necessidades das diversas partes interessadas (stakeholders) na manutenção e
-evolução de software. Um sinal deste distanciamento pode ser observado pelas diversas extensões
-(plugins) propostas na literatura
-\cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}.
- 
 O desenvolvimento e a manutenção de software envolvem diversos tipos de métodos, técnicas e
 ferramentas. Em especial no processo de manutenção, um importante aspecto são as diversas
-Requisições de Mudanças que devem ser gerenciadas. Este controle é realizado pelas Ferramentas de
-Gerenciamento de Requisição de Mudanças (FGRM) cujo o uso vem crescendo em importância, sobretudo,
-por sua utilização por gestores, analistas da qualidade e usuários finais para atividades como
-tomada de decisão e comunicação.
+Requisições de Mudanças que devem ser gerenciadas. Este controle é realizado pelas FGRM's cujo o uso
+vem crescendo em importância, sobretudo, por sua utilização por gestores, analistas da qualidade e
+usuários finais para atividades como tomada de decisão e comunicação. How-
+ever, most bug tracking systems are far from perfect. Many
+of them are merely better interfaces to a database that stores
+all reported bugs
 
-A utilização de  \textit{``demanda''} como conceito central para Ferramentas de Gerenciamento de
+Many
+of them are merely better interfaces to a database that stores
+all reported bugs. As a result, they often ask too much from
+end-users who are not familiar with development practices.
+At the same time they cause frustration for developers who
+are disappointed about the quality of bug reports submitted
+by users.
+
+Apesar da inegável importância das FGRM's, percebe-se um aparente desacoplamento deste tipo de
+ferramenta com as necessidades das diversas partes interessadas (stakeholders) na manutenção e
+evolução de software. A utilização de  \textit{``demanda''} como conceito central para Ferramentas de Gerenciamento de
 Requisição de Mudanças (FGRM) parece ser distante das necessidades práticas dos projetos de
 software, especialmente no ponto de vista dos desenvolvedores
-\cite{Baysal:2013:SAP:2486788.2486957}. Um exemplo deste desacoplamento das FGRM com a necessidade
-de seus usuários pode ser visto no trabalho proposto por Baysal \& Holme
-\cite{baysal2012qualitative} no qual desenvolvedores que utilizam o
-Bugzilla\footnote{\url{https://www.bugzilla.org}} relatam a dificuldade em manter uma compreensão
-global das RM's em que eles estão envolvidos. Segundo os desenvolvedores seria interessante que a
-ferramenta tivesse um suporte melhorado para a Consciência Situacional -~Situational Awareness. Em
-síntese, eles gostariam de estar cientes da situação global do projeto bem como das atividades que
-outras pessoas estão realizando. Um outro sinal da necessidade de evolução deste tipo de ferramenta
-pode ser observado considerando as diversas extensões (plugins) propostas na literatura
+\cite{Baysal:2013:SAP:2486788.2486957}.
+
+Um exemplo deste desacoplamento deste tipo de ferramenta com a necessidade de seus usuários pode ser visto no
+trabalho proposto por Baysal \& Holme \cite{baysal2012qualitative} no qual desenvolvedores que
+utilizam o Bugzilla\footnote{\url{https://www.bugzilla.org}} relatam a dificuldade em manter uma
+compreensão global das RM's em que eles estão envolvidos. Segundo os desenvolvedores seria
+interessante que a ferramenta tivesse um suporte melhorado para a Consciência Situacional
+-~Situational Awareness. Em síntese, eles gostariam de estar cientes da situação global do projeto
+bem como das atividades que outras pessoas estão realizando.
+
+Com o objetivo de melhorar as FGRM (issue tracking system), mediante a melhoria daquilo que é
+reportado aos dessenvolvedores, Zimmermann e outros discute quatro dimensões de melhorias deste tipo
+de ferramenta, conforme esquematizado na Figura~\ref{fig:dimensoes_melhorias_fgrm}:
+
+\begin{description}
+	\item[Informação] Estas melhorias foram diretamente a informação sendo fornecida pelo reportador
+					  da RM. Com ajuda da FGRM o responsável por relatar o bug, por exemplo, poderia ser motivado a
+					  coletar mais informação sobre o problema. O sistema poderia verificar a validade e consistência da
+					  informação repassada pelo usuário.  
+	\item[Processo]	  Melhorias com foco no processo visam dar suporte à adminstração de
+					  atividades relacionadas à solução de RM. Por exemplo, a triagem de RM, poderia ser automatizada
+					  visando acelar o processo. Como outros exemplos seriam uma melhor consciência do progresso realizado
+					  em cada RM ou mesmo fornecer ao usuário afetado uma estimativa de em quanto tempo a sua requisição
+					  será solucionada.
+	\item[Usuário]    Nesta dimensão estão incluídos tanto os usuário que relatam as RM's e os
+				      desenvolvedores. Os reportadores podem ser educados de qual informação fornecer e como
+				      coletá-la. Os desenvolvedores também podem beneficiar de um treinamento similar em qual informação
+					  esperar e como esta informação pode ser utilizada para solucionar a RM.
+	\item[Ferramenta] As melhorias centradas na ferramenta são realizadas nas funcionalidades
+					  fornecidas pelas FGRM. Elas podem reduzir a complexidade da coleta e fornecimento das
+					  informações necessárias para solucionar o RM. Por exemplo, as FGRM poderiam ser configuradas
+					  para automatica localizar a pilha de erro (stack trace) e adicioná-la ao erro reportado. A
+					  ferramenta poderia simplificar o processo de reprodução do erro mediante a simplicação do
+					  processo de capturas de telas. Estes exemploes visam ajudar com a coleta das informações
+					  necessárias pelos desenvolvedores para corrigir o bug, por exemplo. 
+\end{description}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.666666\linewidth]{chapter-intro/img/dimensoes_melhorias_fgrm.pdf}
+	\caption{Dimensões de melhoria das FGRM's. Adaptado de~\cite{zimmermann2005mining}}
+	\label{fig:dimensoes_melhorias_fgrm}
+\end{figure}
+
+%We believe that one reason for this
+%problem is that current bug tracking systems are merely in-
+%terfaces to relational databases that store the reported bugs.
+%They provide little or no support to reporters to help them
+%provide the information that developers need.
+
+
+Neste estudo estamos especialmente interessandos em analisar e propor as melhorias relátivas ao
+domínio da Ferramenta. Ao bem do nosso conhecimento é relativamento pequeno o número de trabalhos
+que avaliem de forma sistemática as funcionalidades oferecidas pelas FGRM e que faça relação com os
+estudos propostos na literatura. Além disso, os estudores anteriormente propostos não discute que da
+mesma forma que ocorre no desenvolvimento de software, é possível verificar uma crescente adoção de
+técnicas da metodologia ágil na manutenção de software~\cite{Soltan2016,Devulapally2015,
+	Heeager2015}. Neste contexto, é natural que ferramentas que dão suporte à manutenção, tal como
+as FGRM's, tenham que evoluir para se adaptar a esta nova forma de trabalhar. Mesmo em um ambiente
+tradicional de  desenvolvimento e manutenção de software, verifica-se a necessidade de adequação das
+FGRM's. Um outro sinal da necessidade de evolução deste tipo de ferramenta pode ser observado
+considerando as diversas extensões (plugins) propostas na literatura
 \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}.
 
 \section{Visão Geral do Estudo}
