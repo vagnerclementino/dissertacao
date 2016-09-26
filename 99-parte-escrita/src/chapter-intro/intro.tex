@@ -11,7 +11,7 @@
 \chapter{Introdução}
 \label{ch:intro}
 \todo[inline]{O objetivo de seção é introduzir ao leitor na disciplina de
-	Engenharia de Software, em especial quanto aos tipos de manutenção descritos
+	Manutenção de Software, em especial quanto aos tipos de manutenção descritos
 	na literatura e a utilização de uma ferramenta para o seu gerenciamento}
 
 Dentro do ciclo de vida de um produto de software o processo de manutenção tem
@@ -32,9 +32,10 @@ Figura~\ref{fig:software-maintence-costs} no qual é possível verificar a
 evolução do custo da manutenção de software como fração do custo total do
 produto.
 
-\begin{figure}
+\begin{figure}[htpb] 
 \centering
-\includegraphics[width=0.7\linewidth]{./chapter-intro/img/software-maintence-costs}
+\includegraphics[width=0.7\linewidth]
+				{./chapter-intro/img/software-maintence-costs}
 \caption{Evolução da manutenção de software como percentual do custo total.
 	Extraído de~\cite{engelbertink2010save}}
 \label{fig:software-maintence-costs}
@@ -115,17 +116,17 @@ Gerenciamento de Requisição de Mudança é IMPORTANTE?}
 Diante da maior presença de software em todos os setores da sociedade existe um
 interesse por parte da academia e da industria no desenvolvimento de processos,
 técnicas e \textit{ferramentas} que reduzam o esforço e o custo das tarefas de
-desenvolvimento e manutenção de software. Neste linha, o trabalho de Yong \&
+desenvolvimento e manutenção de software. Nesta linha, o trabalho de Yong \&
 Mookerjee~\cite{1423995}  propõe um modelo que reduz os custos de manutenção e
 reposição durante a vida útil de um sistema de software. O modelo demonstrou que
 em algumas situações é \textit{melhor substituir um sistema do que mantê-lo}.
 Este problema é agravado tendo em vista que o custo de manutenção que alguns
-necessita que 60\% dos desenvolvedores dedicados à tarefas de manutenção de
+necessitam que 60\% dos desenvolvedores dedicados à tarefas de manutenção de
 sistemas~\cite{Zhang_2003}.
 
 Diversos projetos de software, especialmente durante as etapas de
 desenvolvimento e teste do software, necessitam de uma ferramenta para gerenciar
-as suas Requisições de Mudança tendo em vista o seu volume bem como pela grande
+as suas Requisições~de~Mudança tendo em vista o seu volume bem como pela grande
 quantidade de pessoas inserir dados sobre os erros encontrados~\cite{1407819},
 por exemplo. Este tipo de ferramenta vêm sendo utilizados em projetos de código
 aberto (Apache, Linux, Open Office) bem como em organizações públicas e privadas
@@ -153,21 +154,20 @@ papel além de simplesmente reportar uma falha: a participação ativa e permane
 dos usuários finais foi importante no progresso da resolução das falhas que eles
 descreveram.
 
-
 Um outro importante benefício da utilização das FGRM é que as mudanças no
 software podem ser rapidamente identificada e reportada para os
 desenvolvedores~\cite{anvik2005coping}. Além disso, eles podem ajudar a estimar
 o custo do software, na análise de impacto, planejamento, rastreabilidade,
 descoberta do conhecimento~\cite{cavalcanti2013bug}.
 
-Não obstante, no contexto de utilização desta ferramentas diversos desafios se
-apresentam: duplicação RM's, pedidos de modificação que são abertos
-inadvertidamente, grande quantidade de RM's que devem ser atribuídas as
+Nesta mesma linha, no contexto de utilização destas ferramentas diversos
+desafios se apresentam: duplicação RM's, pedidos de modificação que são abertos
+	inadvertidamente, grande quantidade de RM's que devem ser atribuídas aos
 desenvolvedores, bugs descrito de forma incompleta, análise de impacto das RM's
 e RM's atribuídas de maneira incorreta~\cite{cavalcanti2014challenges}.  Diante
 de tantos problemas e desafios é importante entender como aquele tipo de
 ferramente vêm sendo utilizada bem como analisar o que está sendo proposta na
-literatura com objetivo de melhor as funcionalidades oferecidas pelas FGRM\@.
+literatura com objetivo de melhorar as funcionalidades oferecidas pelas FGRM\@.
 
 %No trabalho de Junio et al.~\cite{5741246} é proposto um processo denominado
 %PASM (Process for Arranging Software Maintenance Requests) que propõe lidar com
@@ -267,7 +267,7 @@ para a Consciência Situacional -~Situational Awareness. Em síntese, eles
 gostariam de estar cientes da situação global do projeto bem como das atividades
 que outras pessoas estão realizando.
 
-Um outro problema que é potencializado pela ausência de cetas funcionalidades
+Um outro problema que é potencializado pela ausência de certas funcionalidades
 nas FGRM são as RM's que acabam sendo relatadas de forma insatisfatória. Nesta
 situação os usuários acabam sendo questionados a inserir maiores detalhes que
 muitas vezes eles não tem conhecimento. Por outro lado, verifica-se uma
@@ -283,7 +283,7 @@ Figura~\ref{fig:dimensoes_melhorias_fgrm}:
 \begin{description}
 	\item[Informação] Estas melhorias focam diretamente na informação fornecida
 		pelo reportador da RM\@. Com ajuda da FGRM o responsável por descreve um
-		bug, por exemplo, poderia ser motivado a coletar mais informação sobre o
+		bug, por exemplo, poderia ser motivado a coletar mais informações sobre o
 		problema. O sistema poderia verificar a validade e consistência daquilo
 		que foi repassado pelo usuário.
    \item[Processo] Melhorias com foco no processo visam dar suporte à
@@ -310,7 +310,8 @@ Figura~\ref{fig:dimensoes_melhorias_fgrm}:
 \end{description}
 
 \begin{figure}[htpb] \centering
-	\includegraphics[width=0.666666\linewidth]{chapter-intro/img/dimensoes_melhorias_fgrm.pdf}
+	\includegraphics[width=0.666666\linewidth]
+	{chapter-intro/img/dimensoes_melhorias_fgrm.pdf}
 	\caption{Dimensões de melhoria das FGRM's. Adaptado
 		de~\cite{zimmermann2005mining}}\label{fig:dimensoes_melhorias_fgrm}
 \end{figure}
@@ -397,7 +398,7 @@ Com base dois estudos anteriores conduzimos uma pesquisa com
 profissionais envolvidos em manutenção de software onde pedimos que avaliassem
 os requisitos funcionais e não funcionais que poderiam melhorar as FGRM já
 existentes. O questionário também quis saber a opinião dos profissionais sobre a
-relevância das proposta de melhoria existente na literatura em sua
+relevância das propostas de melhorias existente na literatura em sua
 rotina.\todo{Incluir os resultado de forma sucinta da pesquisa com profissionais}
 
 \section{Metodologia de Pesquisa}
