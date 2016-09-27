@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Objetivo: Descrever os principais conceitos relativos a Manutenção de Software
 %		   envolvidos na dissertação
-%Autores: Vagner Clementino <vagnercs@dcc.ufmg.br> 
+%Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: Ter Set 13 19:22:37 BRT 2016
 %Modificação: Dom Set 25 15:53:04 BRT 2016
@@ -12,28 +12,29 @@
 \label{ch:visao-geral-manutencao}
 
 Uma tendência natural do software é evoluir a fim de atender aos novos
-requisitos e alterações no ambiente no qual ele está inserido. Em uma série de
+requisitos e alterações do ambiente no qual ele está inserido. Em uma série de
 estudos, Lehman propõe um conjunto de leis sobre a evolução do software. Dentre
 elas podemos destacar as leis da Mudança Contínua (Continuing Change) e da
-Complexidade Crescente (Increasing complexity). A primeira lei diz que um
-programa que é utilizado em um ambiente real deve mudar ou se tornará
-progressivamente menos útil~\cite{lehman1980understanding}. A lei da
-Complexidade Crescente (Increasing complexity) afirma que quando um sistema em
-evolução muda, sua estrutura tende a se tornar mais complexa. Nesta situação,
-recursos extras devem ser disponibilizados a fim de preservar e simplificar a
-estrutura do software~\cite{lehman1980understanding}. As leis de Lehman tem sido
-validadas, especialmente aquelas relacionadas a tamanho e complexidade do
-software. Em um trabalho recente Yu \& Mishra~\cite{{yu2013empirical}}
-examinaram de forma empírica as Leis de Lehman em relação a evolução da
-qualidade do software.
+Complexidade Crescente (Increasing complexity). A primeira diz que um programa
+que é utilizado em um ambiente real deve mudar ou se tornará progressivamente
+menos útil~\cite{lehman1980understanding}. A lei da Complexidade Crescente
+(Increasing complexity) afirma que quando um sistema em evolução muda, sua
+estrutura tende a se tornar mais complexa. Nesta situação, recursos extras devem
+ser disponibilizados a fim de preservar e simplificar a estrutura do
+software~\cite{lehman1980understanding}. As leis de Lehman tem sido validadas,
+especialmente aquelas relacionadas a tamanho e complexidade do software. Em um
+trabalho sobre o tema Yu \& Mishra~\cite{{yu2013empirical}} examinaram de forma
+empírica as Leis de Lehman em relação a evolução da qualidade do software. O
+estudo demonstrou que com base na métrica proposta que a qualidade de um produto
+de software declinará ao menos que uma restruturação é realizada.
 
 Conforme exposto, a mudança em um produto de software é inevitável. Desta forma,
 é importante a existência de uma área de estudo preocupada com o gerenciamento e
 controle destas mudanças. Dentro do escopo da Engenharia de Software esta tarefa
 fica a cargo da Manutenção de Software.  Nas próximas seções discutimos os
-conceitos básicos que mostram onde e como a Manutenção de Software se encaixa
-dentro da Engenharia de Software. São apresentados os conceitos que fazem da
-Manutenção de Software uma disciplina distinta.
+conceitos básicos que mostram onde e como a Manutenção se encaixa dentro da
+Engenharia de Software. São apresentados os conceitos que fazem da Manutenção de
+Software uma disciplina distinta.
 
 %Percebida a importância do processo de manutenção de software, alguns trabalhos
 %foram propostos visando mensurar o seu custo bem como propor processos com o
@@ -76,7 +77,7 @@ Manutenção de Software uma disciplina distinta.
 %adotar as metodologias propostas pelos agilistas pelo fato delas auxiliarem no
 %atendimento das exigências do cliente~\cite{Devulapally2015}. Esta tendência é
 %mais forte no desenvolvimento de software e nos últimos anos vem ocorrendo de
-%forma gradativa na manutenção. 
+%forma gradativa na manutenção.
 %
 %No trabalho de Kajko-Mattsson \& Nyfjord~\cite{4755767} foi proposto um modelo
 %ágil para manutenção que apropria diferentes práticas do Extreme Programming e
@@ -105,37 +106,39 @@ Manutenção de Software uma disciplina distinta.
 %
 \section{Conceitos Fundamentais}
 \label{sec:conceitos_basicos}
+
 Esta seção introduz os conceitos e terminologias que ajudam no entendimento do
 papel e escopo da Manutenção de Software. De uma maneira geral, podemos definir
 atividade de manter software como a totalidade das ações necessárias para
-fornecer determinado tipo de suporte a um produto de software.  Entretanto,
-encontramos na literatura outras definições mais elaboradas sobre o conceito.
+fornecer suporte a um produto de software. Entretanto, encontramos na literatura
+outras definições mais elaboradas sobre a área.
 
-Manutenção de Software é definida pela IEEE 1219~\cite{720567}-~Padrão para a
+Manutenção de Software é definida pela IEEE 1219~\cite{ISO-1219-1998}-~Padrão para a
 Manutenção de Software, como a modificação de um produto de software após a sua
 entrega com o objetivo de corrigir falhas, melhorar o desempenho ou outros
 atributos com a finalidade de adaptar o software as modificações ambientais. O
 padrão cita a ocorrência de atividade de manutenção antes da entrega
 propriamente dita, contudo, de forma bastante superficial.
 
-Posteriormente a IEEE/EIA 12207-~Padrão para o Processo de Ciclo de Vida do
-Software~\cite{707581} retrata a manutenção como um dos principais processos do
+Posteriormente a IEEE/EIA 12207~-~Padrão para o Processo de Ciclo de Vida do
+Software~\cite{{ISOIEC-12207-2008}} retrata a manutenção como um dos principais processos no
 ciclo de vida do software. Em seu texto a manutenção é vista como atividade de
-modificação do código e da documentação associada devido a algum problema ou
-necessidade de melhoria~\cite{4425813}. Por outro a ISO/IEC 14764-~Padrão para
-Manutenção de Software\todo{Incluir citação da ISO}~enfatiza aspectos
-pré-entrega da manutenção, como por exemplo o planejamento.
+modificação do código e da documentação associada e ocorre devido a algum
+problema ou necessidade de melhoria~\cite{IEEEComputerSociety:2014:GSE:2616205}.
+Por outro lado a ISO/IEC 14764~-~Padrão para Manutenção de
+Software~\cite{1703974}enfatiza aspectos pré-entrega da manutenção, como por
+exemplo o planejamento.
 
 De maneira relacionada, \textit{Manutenibilidade} é a propriedade de um sistema
 ou componente de software em relação ao grau de \textit{facilidade} que ele pode
-ser corrigido, melhorado ou adaptado~\cite{{159342}}. A ISO/IEC (ISO9126-~01)
-define a Manutenibilidade como uma característica de qualidade do processo de
-Manutenção.
+ser corrigido, melhorado ou adaptado~\cite{{159342}}. A ISO/IEC~
+9126~-~01~\cite{ISOIEC9126} define a Manutenibilidade como uma característica de
+qualidade do processo de Manutenção.
 
 Apesar das diversas definições para Manutenção de Software é possível
-identificar dois aspectos comuns: manter e evoluir. Apesar disso, o conceito de
-evolução de software carece de uma definição padrão na literatura, contudo,
-pesquisadores e profissionais utilizam o termo como substituto preferido para
+identificar dois aspectos comuns: manter e evoluir. O conceito de evolução de
+software carece de uma definição padrão na literatura, contudo, pesquisadores e
+profissionais utilizam o termo como substituto preferido para
 manutenção~\cite{Bennett:2000:SME:336512.336534}. Embora exista o entendimento
 que os processos de manutenção e evolução possuem características distintas, não
 está no escopo desta dissertação discutir e apresentar tais diferenças. Neste
@@ -146,11 +149,11 @@ diferenciação, ela será discutida.
 A Manutenção é necessária para garantir que o software seja capaz de satisfazer
 os requisitos dos usuários. Neste sentido, a atividade de manter software pode
 ser vista como um desenvolvimento contínuo, sobretudo, pelo fato que alguns
-sistemas nunca estão completos e continuam a evoluir. Eles evoluem e crescem e
-um maior esforço é necessário para reduzir a sua complexidade.
+sistemas nunca estão completos e continuam a evoluir.
 
 \section{Requisição de Mudança}
 \label{sec:requisição_de_mudanca}
+
 As manutenções em software podem ser divididas em \textit{Corretiva, Adaptativa,
 	Perfectiva e Preventiva}~\cite{Lientz:1980:SMM:601062,159342}.  A Manutenção
 Corretiva lida com a reparação de falhas encontradas. A Adaptativa tem o foco na
@@ -162,14 +165,10 @@ manutenção nos quatro tipos descritos anteriormente e agrupa-os em um termo
 único denominado \textit{{Requisição de Mudança~-~Modification Request (RM)}},
 conforme pode ser visto pela Figura~\ref{fig:modification-request}.
 
-\begin{figure}[hbtp]
-\centering
-\includegraphics[width=.75\textwidth]
-{chapter-intro/img/modification_request.eps}
-\caption{Tipos de manutenção segundo a norma ISO/IEC 14764. Extraído
-	de~\cite{1703974}}
-\label{fig:modification-request}
-\end{figure}
+\begin{figure}[hbtp] \centering \includegraphics[width=.75\textwidth]
+	{chapter-intro/img/modification_request.eps} \caption{Tipos de manutenção
+		segundo a norma ISO/IEC 14764. Extraído de~\cite{1703974}}
+	\label{fig:modification-request} \end{figure}
 
 A ISO/IEC 14764 classifica as manutenções adaptativas e perfectivas como
 melhorias e agrupa as manutenções corretivas e preventivas em uma única
@@ -181,86 +180,76 @@ mais críticos.
 %is determined, code and other software artifacts are modified, testing is
 %conducted, and a new version of the software product is released
 
-\begin{table}[htpb]
-	\centering
-	\caption{Categorias da Requisição de Mudanças. Adaptado de
+\begin{table}[htpb] \centering 	\begin{tabular}{l|l|l|} \cline{2-3} &
+		\textbf{Correção} & \textbf{Melhoria} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Pró-ativa}} & Preventiva & Perfectiva \\
+		\hline \multicolumn{1}{|l|}{\textbf{Reativa}} & Corretiva & Adaptativa
+		\\ \hline \end{tabular}\caption{Categorias da Requisição de Mudanças.
+		Adaptado de
 		SWEBOK~\cite{4425813}}\label{tab:categorias_requisicao_mudanca}
-	\begin{tabular}{l|l|l|}
-		\cline{2-3}
-	 & \textbf{Correção} & \textbf{Melhoria} \\ \hline
-	 \multicolumn{1}{|l|}{\textbf{Pró-ativa}} & Preventiva & Perfectiva \\ \hline
-	 \multicolumn{1}{|l|}{\textbf{Reativa}} & Corretiva & Adaptativa \\ \hline
-	\end{tabular}
- \end{table} 
+\end{table}
 
 Em síntese, apesar das diferentes nomenclaturas existentes na literatura
-(demanda, bug, defeito, bilhete (ticket), Requisição de Modificação, Relato de
-Problema) uma Requisição de Mudança representa o relato, independente de sua
-estrutura, que têm por objetivo gerar uma manutenção ou evolução de um produto
-de software. 
- 
- \section{O processo de Manutenção de Software}
-\label{sec:o_processo_de_manutecao_de_software}
+(demanda, bug, defeito, bilhete, tíquete, requisição de modificação, relato de
+problema) uma Requisição de Mudança representa o relato, independente de sua
+estrutura, que têm por objetivo gerar a manutenção ou evolução do software.
+
+\section{O processo de Manutenção de Software}
+ \label{sec:o_processo_de_manutecao_de_software}
 
 Um Processo de Software é o conjunto de atividades, métodos, práticas e
-transformações utilizadas para desenvolver e manter software e seus artefatos
-associados~\cite{paulk1993key}.  Independente do contexto em que a manutenção
-ocorra é importante que o processo de software esteja bem definido. Existe na
-literatura a proposição de alguns modelos do processo de manutenção de software,
-especialmente baseado em uma visão tradicional. Dentro daquela perspectiva
-desenvolvimento e manutenção possuem uma clara separação. Recentemente os
-métodos propostos pelos agilistas vêm sendo utilizados para manter software.
-Esta tendência surge da demanda crescente por serviços de manutenção com um
-retorno mais rápido. 
+transformações utilizadas para desenvolvê-lo ou mantê-lo bem como seus artefatos
+associados~\cite{paulk1993key}. Independente do contexto em que a manutenção
+ocorra é importante que o processo esteja bem definido. Existe na literatura a
+proposição de alguns modelos do processo de manutenção de software,
+especialmente baseado em uma visão tradicional no qual desenvolvimento e
+manutenção possuem uma clara separação. Recentemente os métodos propostos pelos
+agilistas vêm sendo utilizados para manter software. Esta tendência surge da
+demanda crescente por serviços de manutenção com um retorno mais rápido para o
+usuário.
 
 Nas próximas seções apresentamos alguns modelos encontrados na literatura na
-perspectiva tradicional, ao mesmo tempo descrevemos propostas recentes do uso da
-metodologia dos agilistas na manutenção de software. 
+perspectiva tradicional, ao mesmo tempo descrevemos propostas do uso da
+metodologia dos agilistas na manutenção de software.
 
 \subsection{Manutenção de Software Tradicional}
 \label{subsec:manutenção_de_software_tradicional}
 
-Em resumo, um processo de manutenção fornece as atividades e suas respectivas
-entradas e saídas.  Alguns modelos de processo são descritos nos padrões IEEE
-1219 e ISO/IEC 14764. O processo descrito no Padrão para Manutenção de Software
-(IEEE-~1219) indica que as atividade de manutenção de software iniciem após a
-entrega do produto de software. O padrão também discute itens para fins de
-planejamento da manutenção. As atividades que compõe o processo são apresentas
-na Figura~\ref{fig:ieee-1219-processo-man-software}
+Em resumo, um processo de manutenção de software descreve as atividades e suas
+respectivas entradas e saídas. Alguns modelos são descritos nos padrões IEEE
+1219 e ISO/IEC 14764. O processo especificado no Padrão para Manutenção de
+Software (IEEE-~1219) indica que as atividade de manutenção de software iniciem
+após a entrega do produto de software. O padrão também discute itens para fins
+de planejamento da manutenção. As atividades que compõe o processo são
+apresentas na Figura~\ref{fig:ieee-1219-processo-man-software}.
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.8\linewidth]{chapter-manutencao-software-visao-geral/img/ieee-1219-98-processo-manutencao.png}
+\begin{figure}[htpb] \centering
+	\includegraphics[width=0.7\linewidth]
+	{chapter-manutencao-software-visao-geral/img/ieee-1219-98-processo-manutencao.png}
 	\caption{IEEE 1219 -~Processo de Manutenção de Software}
-	\label{fig:ieee-1219-processo-man-software}
-\end{figure}
+	\label{fig:ieee-1219-processo-man-software} \end{figure}
 
 De maneira relacionada, na ISO/IEC 14764 as atividades que compõe o processo são
 similares aquelas propostas na IEEE-~1219, exceto pelo fato que elas são
 agregadas de uma forma diferente. O processo descrito na ISO/IEC~14764 são
 exibidas na Figura~\ref{fig:ieee-14764-processo-manutencao}
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.8\linewidth]{chapter-manutencao-software-visao-geral/img/ieee-14764-processo-manutencao.pdf}
+\begin{figure}[htpb] \centering
+	\includegraphics[width=0.7\linewidth]
+{chapter-manutencao-software-visao-geral/img/ieee-14764-processo-manutencao.pdf}
 	\caption{ISO/IEC~14764 Processo de Manutenção de Software}
-	\label{fig:ieee-14764-processo-manutencao}
-\end{figure}
+	\label{fig:ieee-14764-processo-manutencao} \end{figure}
 
 As atividades de manutenção propostas na ISO/IEC 14764 são detalhadas em tarefas
 conforme apresentadas a seguir:
 
-\begin{itemize}
-	\item Implementação do Processo
-	\item Análise e Modificação do Problema
-	\item Aceitação e Revisão da Manutenção
-	\item Migração
-	\item Aposentadoria do Software	
-\end{itemize}
+\begin{itemize} \item Implementação do Processo \item Análise e Modificação do
+		Problema \item Aceitação e Revisão da Manutenção \item Migração \item
+		Aposentadoria do Software	\end{itemize}
 
 É possível notar que algumas atividades realizadas durante a manutenção de
 software são similares a a outras presentes no desenvolvimento de software, como
-por exemplo, análise de desempenho, codificação, teste e documentação. Uma outra
+por exemplo, análise de desempenho, codificação, teste e documentação. Outra
 atividade comum à manter e desenvolver software é o gerenciamento dos
 requisitos. Nas duas situações os profissionais responsáveis por controlar os
 requisitos devem atualizar documentação  por conta de alterações ocorridas no
@@ -268,16 +257,16 @@ código fonte. Por outro lado certas atividades estão vinculadas apenas ao
 contexto da manutenção de software. Dentre elas podemos destacar:
 
 \begin{description}
-	\item[Suporte ao Usuário] Função de ajuda ao usuário final que podem
-		disparar ações tais como avaliação e priorização das Requisições de
-		Mudanças
-	\item [Análise de Impacto] \todo{Descreve melhor análise de
-			impacto}
-	\item [Suporte ao Uso de Software] Ajuda aos usuários final com relação a
-		determinada requisição de informação (regras de negócio, validação e
-		requisição de relatório)
-	\item [Acordo de Nível de Serviço] Definição de um nível mínimo de qualidade
-		que a atividade de manutenção deve ser realizada.	
+	\item[Suporte ao Usuário] Função de ajuda ao usuário final
+		que podem disparar ações tais como avaliação e priorização das
+		Requisições de Mudanças
+   	\item [Análise de Impacto] \todo{Descreve melhor
+			análise de impacto}
+   	\item [Suporte ao Uso de Software] Ajuda aos
+		usuários final com relação a determinada requisição de informação
+		(regras de negócio, validação e requisição de relatório)
+	\item [Acordo de Nível de Serviço] Definição de um nível mínimo de qualidade que a
+		atividade de manutenção deve ser realizada.
 \end{description}
 
 \subsection{Manutenção de Software com Método dos Agilistas}
@@ -301,9 +290,9 @@ cliente, comunicação face a face, testes frequentes, dentre outras.
 
 Alguns resultados demonstram certa dificuldade para implantação da metodologia
 dos agilista na manutenção de software~\cite{1402140}. Um dos possíveis
-problemas é a necessidade de adequação das práticas da organização de modo que
-elas podem se adequar as necessidades do time de desenvolvimento de software.
-Também foi possível verificar melhorias no aprendizado e produtividade da equipe
+problemas é a necessidade de adequação das práticas da organização de modo que a
+se adequar as necessidades do time de desenvolvimento.  Estudo apresentam
+resultados relativos à melhorias no aprendizado e produtividade da equipe
 mediante o aumento da moral, encorajamento e confiança entre os desenvolvedores,
 o que propicia uma alta motivação durante o processo de manutenção de
 software~\cite{Choudhari:2014:EIM:2557833.2557845}.
@@ -319,7 +308,7 @@ tipos de mudança e aprovar desvios relativos aos requisitos iniciais do
 projeto~\cite{4425813}. De uma forma mais ou menos estruturada este tipo de
 processo ocorre em diferente tipos de projeto de software, seja ele dentro de um
 processo de manutenção tradicional ou mesmo naqueles que utilizam os métodos
-propostos pelos agilistas. 
+propostos pelos agilistas.
 
 Por conta do volume das Requisições de Mudança se faz necessária a utilização de
 ferramentas com o objetivo de gerenciá-las. Esse controle é geralmente realizado
@@ -345,7 +334,7 @@ de Mudança. Em alguns casos, este tipo de ferramenta se tornou o ponto focal
 para comunicação e coordenação para diversas partes interessadas, dentro e além
 da equipe de manutenção~\cite{Bertram:2010:CCB:1718918.1718972}.  As FGRM's
 também servem como um repositório central para monitorar o progresso da RM,
-requisitar informações adicionais da pessoa responsável por redigir a requisição
+solicitar informações adicionais da pessoa responsável por redigir a requisição
 e o ponto de discussão para potenciais soluções um
 bug~\cite{zimmermann2009improving}.
 
@@ -364,10 +353,9 @@ propostas na literatura ou ainda mesmo a melhoria das já existentes. Uma
 possível forma de melhoria é através do uso de extensões. Na próxima seção
 discutiremos esta propriedade de algumas FGRM's que permitem a inclusão e
 modificação de funcionalidades e comportamentos da ferramenta segundo as
-necessidades do usuário. 
+necessidades do usuário.
 
-\subsection{Extensões em FGRM}
-\label{subsec:extensoes_fgrm}
+\subsection{Extensões em FGRM} \label{subsec:extensoes_fgrm}
 
 Em determinados domínios de aplicação é interessante desenvolver produtos de
 software com uma arquitetura que permita o sistema se adaptar às mudanças nos
@@ -375,15 +363,13 @@ requisitos. Existe naturalmente a possibilidade de incluir as novas
 funcionalidades dentro das já existentes no software, todavia, verificamos que
 sistemas que permitem extensões apresentam os seguintes benefícios:
 
-\begin{itemize}
-	\item Extensibilidade: o software pode se dinamicamente estendido mediante a
-		inclusão de novas características.
-	\item Desenvolvimento em Paralelo: Desde de que as funcionalidades podem ser
+\begin{itemize} \item Extensibilidade: o software pode se dinamicamente
+		estendido mediante a inclusão de novas características.  \item
+		Desenvolvimento em Paralelo: Desde de que as funcionalidades podem ser
 		implementadas como componentes separados, eles podem ser desenvolvidos
-		em paralelo por times diferentes
-	\item Simplicidade: uma  extensão tipicamente tem uma única funcionalidade,
-		desta forma os desenvolvedores possuem o único foco.
-\end{itemize}
+		em paralelo por times diferentes \item Simplicidade: uma  extensão
+		tipicamente tem uma única funcionalidade, desta forma os desenvolvedores
+		possuem o único foco.  \end{itemize}
 
 No escopo deste trabalho, uma extensão é um componente de software que adiciona
 uma característica ou comportamento específico para um programa de
