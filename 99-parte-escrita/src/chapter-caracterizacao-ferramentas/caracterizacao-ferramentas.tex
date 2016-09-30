@@ -1,38 +1,56 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Objetivo:
-%Autor:
-%Data Criação:
-%Data Modificação:
-%Data Revisão:
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Caracterização das Ferramentas de Gerenciamento de Requisição de Mudança}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Objetivo: Caracterizas as Ferramentas de Gerenciamento de Requisição de Mudança
+%		   com base nas suas funcionalidades
+%Autor: Vagner Clementino <vagnercs@dcc.ufmg.br>
+% 		Rodolfo Resende	<rodolfo@dcc.ufmg.br>
+%Criação: qua set 28 11:25:03 BRT 2016
+%Modificação: qua set 28 11:25:35 BRT 2016
+%Revisão: qua set 28 11:25:27 BRT 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Caracterização das Ferramentas de Gerenciamento de Requisição de
+	Mudança}
 \label{ch:caracterizacao}
 
 
 \section{Introdução}
-\todo[inline]{Definir conforme livro do wohlin(é assim que escreve??) o conceito de estudo
-	exploratório}
-Esta etapa do trabalho consiste de um estudo exploratório com o objetivo de determinar quais são as funcionalidades comuns às Ferramentas de Gerenciamento de Requisição de Mudança (FGRM). O estudo consistirá na leitura da documentação de alguns FGRM para que de forma sistemática seja levantado quais são as funcionalidades oferecidas pela ferramenta em análise. O método de escolha das FGRM será avaliado posteriormente, todavia, um possível ponto de partida é a lista disponível na Wikipédia que compara diversas FGRM\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
+\todo[inline]{OBJETIVO: Apresentar uma visão geral desta parate do estudo que
+consitirá de uma análise da funcionalidades oferecidas pelas FGRM}
+ \todo[inline]{Definir conforme livro do wohlin(é assim que escreve??) o
+	 conceito de estudo exploratório}
 
+
+Esta etapa do trabalho consiste de um estudo
+exploratório~\cite{wohlin2012experimentation} com o objetivo de determinar quais
+são as funcionalidades comuns às Ferramentas de Gerenciamento de Requisição de
+Mudança (FGRM). O estudo consistirá na leitura da documentação de alguns FGRM
+para que de forma sistemática seja levantado quais são as funcionalidades
+oferecidas pela ferramenta em análise. O método de escolha das FGRM será
+avaliado posteriormente, todavia, um possível ponto de partida é a lista
+disponível na Wikipédia que compara diversas
+FGRM\footnote{
+	\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
 \section{Objetivo do Capítulo}
 \label{sec:objetivo_do_capítulo}
 
 Neste capítulo realizamos um estudo exploratório com o objetivo de determinar as
-funcionalidades comuns as Ferramentas de Gerenciamento de Requisição de Mudanças existentes no
-mercado. A partir deste conjunto de compartilhado de funcionalidades é possível avaliar a
-contribuição das extensões que estão sendo propostas na literatura, conforme discutido no
+funcionalidades comuns as Ferramentas de Gerenciamento de Requisição de Mudanças
+existentes no mercado. A partir deste conjunto de compartilhado de
+funcionalidades é possível avaliar a contribuição das extensões que estão sendo
+propostas na literatura, conforme discutido no
 Capítulo\ref{ch:mapeamento-sistematico}.
 
-Acreditamos que o resultado deste estudo permitirá compreender melhor este tipo de ferramenta tomando como base as
-suas funcionalidades em comum. Também será possível propor extensões para as FGRM tendo em vista a
-possibilidade de determinar o conjunto mínimo de funções deste tipo de sistema. Uma outra possível
-contribuição é a possibilidade de criação de um esquema de caracterização com base nas funcionalidades oferecidas.
+Acreditamos que o resultado deste estudo permitirá compreender melhor este tipo
+de ferramenta tomando como base as suas funcionalidades em comum. Também será
+possível propor extensões para as FGRM tendo em vista a possibilidade de
+determinar o conjunto mínimo de funções deste tipo de sistema. Uma outra
+possível contribuição é a possibilidade de criação de um esquema de
+caracterização com base nas funcionalidades oferecidas.
 
 \section{Metodologia}
 \label{sec:metodologia}
 
-O processo de descoberta das funcionalidades comuns às FGRM é composto das etapas descritas a
-seguir:
+O processo de descoberta das funcionalidades comuns às FGRM é composto das
+etapas descritas a seguir:
 
 \begin{itemize}
 	\item Seleção das Ferramentas
@@ -45,25 +63,30 @@ Cada uma etapas é explicada em detalhes nas próximas seções.
 \subsection{Seleção das Ferramentas}
 \label{ssub:Seleção das Ferramentas}
 
-A primeira etapa consistiu na definição das ferramentas que seriam utilizadas neste estudo. Em uma
-inspeção inicial, verificamos a existência de mais de 50 FGRM disponíveis comercialmente ou de
-código aberto\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}. Contudo,
-devido a dificuldade de realizar a análise de cada uma daquelas ferramentas, optamos por escolher um
-subconjunto das ferramentas que fosse mais representativas, segundo o nosso conhecimento na área. A
-representatividade neste caso corresponde a notoriedade que a ferramenta possui dentro da literatura
-(Ex. Bugzilla) ou mesmo na industria (Ex. Github).
-\todo[inline]{Conforme sugestão do professor Rodolfo seria interessante avaliar quais das ferramentas
-têm real notoriedade com base na opinião de profissionais envolvidos em manutenção de software}
+A primeira etapa consistiu na definição das ferramentas que seriam utilizadas
+neste estudo. Em uma inspeção inicial, verificamos a existência de mais de 50
+FGRM disponíveis comercialmente ou de código
+aberto\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
+Contudo, devido a dificuldade de realizar a análise de cada uma daquelas
+ferramentas, optamos por escolher um subconjunto das ferramentas que fosse mais
+representativas, segundo o nosso conhecimento na área. A representatividade
+neste caso corresponde a notoriedade que a ferramenta possui dentro da
+literatura (Ex. Bugzilla) ou mesmo na industria (Ex. Github).
+\todo[inline]{Conforme sugestão do professor Rodolfo seria interessante avaliar
+	quais das ferramentas têm real notoriedade com base na opinião de
+	profissionais envolvidos em manutenção de software}
 
-As FGRM selecionadas foram inicialmente classificadas como \textit{"ferramentas"} e
-\textit{"serviços da internet"}. O primeiro grupo representa os softwares capazes de serem implantados
-na infraestrutura do seu cliente e do qual permite algum grau de personalização de alguns
-componentes, como por exemplo o bando de dados utilizado. No segundo grupo estão os software que
-ofertam a gerência das RM's mediante uma arquitetura do tipo Software como Serviço (Software as
-Service), onde certos tipos de alterações no comportamento do software por parte do usuário são mais restritas. As
-ferramentas selecionadas são apresentadas por tipo de categoria na Tabela
-\ref{tab:ferramentas_selecionadas}
-\todo[inline]{Incluir referência sobre Software como Serviço}
+As FGRM selecionadas foram inicialmente classificadas como
+\textit{"ferramentas"} e \textit{"serviços da internet"}. O primeiro grupo
+representa os softwares capazes de serem implantados na infraestrutura do seu
+cliente e do qual permite algum grau de personalização de alguns componentes,
+como por exemplo o bando de dados utilizado. No segundo grupo estão os software
+que ofertam a gerência das RM's mediante uma arquitetura do tipo Software como
+Serviço (Software as Service), onde certos tipos de alterações no comportamento
+do software por parte do usuário são mais restritas. As ferramentas selecionadas
+são apresentadas por tipo de categoria na Tabela
+\ref{tab:ferramentas_selecionadas} \todo[inline]{Incluir referência sobre
+	Software como Serviço}
 
 \begin{table}[ht]
 	\centering
@@ -90,32 +113,36 @@ ferramentas selecionadas são apresentadas por tipo de categoria na Tabela
 \subsection{Inspeção da Documentação}
 \label{ssub:Inspeção da Documentação}
 
-Neste etapa do trabalho realizamos a leitura do material disponível na internet para cada uma das
-ferramentas. Entre estes materiais inclui manual do usuário, manual do desenvolvedor, notas de
-lançamento e etc. Para cada uma das FGRM optamos por analisar a última versão estável do software a
-fim de analisarmos o que há de mais novo disponível aos usuários. A Tabela apresenta a versão
-analisada e o elo de ligação para cada uma da documentação utilizada neste estudo. Para aquelas
-ferramentas que apresentam documentação em mais de um idioma optamos sempre por utilizar aquela
-escrita em inglês por entendermos ser a que possivelmente mais atualizada.
+Neste etapa do trabalho realizamos a leitura do material disponível na internet
+para cada uma das ferramentas. Entre estes materiais inclui manual do usuário,
+manual do desenvolvedor, notas de lançamento e etc. Para cada uma das FGRM
+optamos por analisar a última versão estável do software a fim de analisarmos o
+que há de mais novo disponível aos usuários. A Tabela apresenta a versão
+analisada e o elo de ligação para cada uma da documentação utilizada neste
+estudo. Para aquelas ferramentas que apresentam documentação em mais de um
+idioma optamos sempre por utilizar aquela escrita em inglês por entendermos ser
+a que possivelmente mais atualizada.
 
 \subsection{Agrupamento das Funcionalidades}
 \label{ssub:Agrupamento das Funcionalidades}
 
-Esta etapa tem por objetivo agrupar as funcionalidades que aparecem com nomenclatura distintas em
-diferentes ferramentas, mas que apresentam o mesmo significado. Cabe ressaltar que o agrupamento de
-algumas funcionalidades pode depender de uma análise subjetiva de quem está realizando a atividade.
-Neste sentido, a fim de evitar algum tipo de viés o agrupamento foi realizado em duas etapas:
+Esta etapa tem por objetivo agrupar as funcionalidades que aparecem com
+nomenclatura distintas em diferentes ferramentas, mas que apresentam o mesmo
+significado. Cabe ressaltar que o agrupamento de algumas funcionalidades pode
+depender de uma análise subjetiva de quem está realizando a atividade.  Neste
+sentido, a fim de evitar algum tipo de viés o agrupamento foi realizado em duas
+etapas:
 
 \begin{description}
-	\item[Análise Individual] Neste etapa o autor e um outro especialista realizam de forma separada
-		os agrupamentos que acharem necessários
-	\item[Anaĺise Compartilhada] Em um segundo momento tanto o auto quanto o especialista discutem
-		as possíveis divergências até que um consenso seja obtido.	
-\end{description}
+	\item[Análise Individual] Neste etapa o autor e um outro especialista
+		realizam de forma separada os agrupamentos que acharem necessários
+	\item[Anaĺise Compartilhada] Em um segundo momento tanto o auto quanto o
+		especialista discutem as possíveis divergências até que um consenso seja
+		obtido.	\end{description}
 
-Após as duas etapas descritas anteriormente chegamos ao conjunto de funcionalidades descritos na
-Tabela. A coluna agrupamento exibe o nome comum para representas as funções descritas na coluna
-"nomenclatura original"
+Após as duas etapas descritas anteriormente chegamos ao conjunto de
+funcionalidades descritos na Tabela. A coluna agrupamento exibe o nome comum
+para representas as funções descritas na coluna "nomenclatura original"
 
 
 \section{Resultados}
