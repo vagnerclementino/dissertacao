@@ -15,84 +15,97 @@
 \section{Introdução}
 \todo[inline]{OBJETIVO: Apresentar uma visão geral desta parte do estudo que
 consistirá de uma análise da funcionalidades oferecidas pelas FGRM}
-Quando um organização ou mesmo um projeto de código aberto decide adotar uma
-Ferramenta de Gerenciamento de Requisições um desafio é encontrar aquela que
-melhor atende as suas necessidades. Um bom ponto de partida é analisar as
-funcionalidades oferecidas pelas ferramentas de interesse. De maneira
-relacionada, o pesquisador que tenha interesse em propor melhorias para este
-tipo de ferramenta precisa ter acesso ao conjunto básico de funções que compõe
-as FGRM's.
-Atualmente estão disponíveis um grande número de FGRM. Em uma inspeção inicial,
-verificamos a existência de mais de 50 FGRM disponíveis comercialmente ou de
-código
+
+Quando uma organização ou projeto software de código aberto decide adotar uma
+Ferramenta de Gerenciamento de Requisições de Mudança um desafio é encontrar
+aquela que melhor atende as suas necessidades. Um possível critério de seleção
+consiste das funcionalidades oferecidas pelas ferramentas de interesse. De
+maneira relacionada, o pesquisador que tenha o desejo de propor melhorias para
+este tipo de ferramenta possivelmente está interessado em analisar o conjunto de
+funções comuns que caracterizam as FGRM's.
+
+O numero de FGRM disponíveis atualmente é bastante elevado. Em uma inspeção
+inicial, verificamos a existência de mais de 50 FGRM's disponíveis
+comercialmente ou de código
 aberto\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
-Apesar das diversas opções disponíveis, ao bem do nosso conhecimento,
-desconhecemos alguns estudo que avaliasse de forma sistemática as
-funcionalidades oferecidas por este tipo de ferramenta. A partir deste conjunto
-de compartilhado de funcionalidades é possível avaliar a contribuição das
-extensões que estão sendo propostas na literatura, conforme discutido no
-Capítulo\ref{ch:mapeamento-sistematico}.
-Para alcançarmos este objetivo realizamos um estudo exploratório com o objetivo
-de determinar quais são as funcionalidades comuns às Ferramentas de
-Gerenciamento de Requisição de Mudança (FGRM). Um estudo exploratório está
-preocupado em estudo um objeto em sua configuração natural e deixa as
-descobertas surgirem da observação. Neste tipo de estudo nenhuma hipótese é
-definida previamente~\cite{wohlin2012experimentation}.
+Apesar das diferentes opções disponíveis, ao bem do nosso conhecimento,
+desconhecemos estudos que avaliem de forma sistemática as funcionalidades
+oferecidas por este tipo de ferramenta. Entendemos que a partir deste conjunto
+de compartilhado de funcionalidades é possível caracterizar as FGRM's ao mesmo
+tempo que possibilitar avaliar a contribuição das extensões que estão sendo
+propostas na literatura, conforme discutido no
+Capítulo\ref{ch:mapeamento-sistematico}.  Para alcançarmos este objetivo
+realizamos um estudo exploratório com o objetivo de determinar quais são as
+funcionalidades comuns às Ferramentas de Gerenciamento de Requisição de Mudança
+(FGRM). Um estudo exploratório está preocupado na análise de um objeto em sua
+configuração natural e deixa as descobertas surgirem da
+observação~\cite{wohlin2012experimentation}. Neste tipo de estudo nenhuma
+hipótese é definida.
 
-O estudo consistiu na leitura da documentação de algumas FGRM de modo a obter as
-funcionalidades oferecidas por cada ferramenta. As funções foram coletadas e
-organizadas utilizando a técnica de Cartões Ordenados (Sorting
-Cards)~\cite{5070993}. As FGRM utilizadas neste estudo foram escolhidas mediante
-uma pesquisa com profissionais (survey) no qual os participantes foram
-questionados a decidir quais ferramentas eram as mais representativas.
-
+O trabalho descrito neste capítulo consistiu na leitura da documentação de
+algumas FGRM de modo a obter as funcionalidades oferecidas por cada ferramenta.
+As funções foram coletadas e organizadas utilizando a técnica de Cartões
+Ordenados (Sorting Cards)~\cite{5070993}. As FGRM utilizadas neste estudo foram
+escolhidas mediante uma pesquisa com profissionais (survey) no qual os
+participantes foram questionados a definir quais das ferramentas apresentadas
+eram as mais representativas dentro do domínio de aplicação das FGRM's.
 
 \section{Objetivo do Capítulo}
 \label{sec:objetivo_do_capítulo}
 
 O primeiro objetivo deste capítulo é determinar as funcionalidades comuns as
-Ferramentas de Gerenciamento de Requisição de Mudanças dentre aqueles definidas
-como mais relevantes por profissionais envolvidos em manutenção e
-desenvolvimento de software. Em um segundo momento, o foco é caracterizar este
-tipo de ferramenta tomando como base as funções oferecidas.  Conforme já exposto
-a literatura apresenta diferentes nomenclaturas para este tipo de ferramenta
-(Sistema de Controle de Defeito - Bug Tracking Systems, Sistema de Gerenciamento
-da Requisição - Request Management System, Sistemas de Controle de Demandas
-(SCD)- Issue Tracking Systems), sem, contudo, se preocupar em diferenciá-las.
+Ferramentas de Gerenciamento de Requisição de Mudanças tomando como ponto de
+partida um conjunto mínimo de ferramentas que foram definidas como as mais
+relevantes por profissionais envolvidos em manutenção e desenvolvimento de
+software. Em um segundo momento, o foco é caracterizar este tipo de ferramenta
+tomando como base as funções oferecidas.  Conforme já exposto, a literatura em
+Manutenção de Software apresenta diferentes nomenclaturas para este tipo de
+ferramenta (Sistema de Controle de Defeito - Bug Tracking Systems, Sistema de
+Gerenciamento da Requisição - Request Management System, Sistemas de Controle de
+Demandas (SCD)- Issue Tracking Systems), sem, contudo, se preocupar em
+diferenciá-las.
 
 Acreditamos que o resultado deste estudo permitirá compreender melhor este tipo
 de ferramenta tomando como base as suas funcionalidades. Também será possível
-propor extensões para as FGRM tendo em vista a possibilidade de determinar o
-conjunto mínimo de funções deste tipo de sistema. Uma outra possível
-contribuição é a possibilidade de criação de um esquema de caracterização com
-base nas funcionalidades oferecidas.
+propor novas funções ou melhorias das já existentes tendo em vista a
+possibilidade de determinar o conjunto mínimo de funcionalidades deste tipo de
+sistema. Uma outra possível contribuição é a possibilidade de criação de um
+esquema de caracterização com base nas funcionalidades oferecidas.
 
 \section{Metodologia}
 \label{sec:metodologia}
 
-O processo de descoberta das funcionalidades comuns às FGRM é composto das
-etapas descritas a seguir:
+A fim de determinarmo o conjunto comum de funcionalidades das FGRM realizamos um
+estudo compostos das etapas descritas a seguir. O resultado do trabalho de cada
+etapa fui utilizado como entrada da próxima etapa. Antes do início de um nova
+fase de trabalho o resultado era avaliado afim de verificar possíveis
+inconsistências. Cada uma etapas é explicada em detalhes nas próximas seções. 
 
-\begin{itemize}
+\begin{enumerate}[(i)]
 	\item Seleção das Ferramentas
 	\item Inspeção da Documentação
 	\item Agrupamento das Funcionalidades
-\end{itemize}
-
-Cada uma etapas é explicada em detalhes nas próximas seções. 
+\end{enumerate}
 
 \subsection{Seleção das Ferramentas}
 \label{ssub:Seleção das Ferramentas}
 
-A primeira etapa consistiu na definição das ferramentas que seriam utilizadas
-neste estudo. Contudo, devido a dificuldade de realizar a análise de cada uma daquelas
-ferramentas, optamos por escolher um subconjunto das ferramentas que fosse mais
-representativas, segundo o nosso conhecimento na área. A representatividade
-neste caso corresponde a notoriedade que a ferramenta possui dentro da
-literatura (Ex. Bugzilla) ou mesmo na industria (Ex. Github).
-\todo[inline]{Conforme sugestão do professor Rodolfo seria interessante avaliar
-	quais das ferramentas têm real notoriedade com base na opinião de
-	profissionais envolvidos em manutenção de software}
+A primeira etapa consistiu na definição das ferramentas que seriam utilizadas no
+estudo. A partir de uma pesquisa na Internet obtivemos uma listagem com
+mais de 50 ferramentas que poderiam ser
+utilizadas\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
+Não obstante, devido ao pouco tempo disponível e devido a dificuldade de
+realizar a análise em cada uma daquelas ferramentas, optamos por escolher um
+subconjunto das ferramentas que fosse mais representativas, tomando como base a
+opinião de profissionais envolvidos em manutenção de software. A
+representatividade neste caso corresponde a opinião do profissional sobre
+notoriedade que a ferramenta possui dentro do seu domínio de aplicação em
+comparação com as demais que lhe foram apresentadas.
+
+A opinião dos profissionais foi obtida mediante a realização de uma pesquisa
+(survey~\cite{wohlin2012experimentation}) através de um formulário eletrônico.
+O formulário foi estruturado em duas partes principais: a formação de
+base do participante (background) e a avaliação das ferramentas. 
 
 As FGRM selecionadas foram inicialmente classificadas como
 \textit{"ferramentas"} e \textit{"serviços da internet"}. O primeiro grupo
