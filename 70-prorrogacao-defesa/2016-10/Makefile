@@ -10,7 +10,7 @@ compile: $(NAME).tex $(BIBLIOGRAPHY).bib
 	@echo Gerado o arquivo $(NAME).pdf
 clean:
 	@rm -rf ${NAME}.aux ${NAME}.blg ${NAME}.bbl ${NAME}.dvi ${NAME}.ps
-	${NAME}.log ${NAME}.toc ${NAME}.out ${NAME}.nav ${NAME}.snm
-	${NAME}.synctex.gz *.bak ${NAME}.lof ${NAME}.lot
+	@rm -rf ${NAME}.log ${NAME}.toc ${NAME}.out ${NAME}.nav ${NAME}.snm
+	@rm -rf ${NAME}.synctex.gz *.bak ${NAME}.lof ${NAME}.lot ${NAME}.idx
 aspell: $(find . -name \*.tex -print)
 	aspell --encoding="utf-8" -c -t=tex --lang="pt_BR" $(NAME).tex
