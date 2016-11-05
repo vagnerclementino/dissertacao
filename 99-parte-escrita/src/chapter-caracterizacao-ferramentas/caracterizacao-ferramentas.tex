@@ -13,79 +13,80 @@
 
 
 \section{Introdução}
-\todo[inline]{OBJETIVO:\@ Apresentar uma visão geral desta parte do estudo que
-consistirá de uma análise da funcionalidades oferecidas pelas FGRM}
+\todo[inline]{OBJETIVO:\@ Apresentar uma visão geral desta parte da dissertação
+que consistirá de uma análise da funcionalidades oferecidas pelas FGRM}
 
 Quando uma organização ou projeto software de código aberto decide adotar uma
 Ferramenta de Gerenciamento de Requisições de Mudança um desafio é encontrar
-aquela que melhor atenda suas necessidades. Um dos possíveis critérios de
-seleção esta nas funcionalidades oferecidas pelo software. Outros critérios
-podem envolver o custo bem como o suporte a falhas da ferramenta.  De maneira
-relacionada, o pesquisador que tenha o desejo de propor melhorias para as FGRM's
-possivelmente está interessado em analisar o conjunto de funções comuns que
-caracterizam as FGRM's.
+aquela que melhor atenda suas necessidades. Um possível critério de seleção pode
+ser as funcionalidades oferecidas pelo software. Outros critérios podem envolver
+o custo bem como o suporte a falhas da ferramenta. De maneira relacionada, o
+pesquisador que tenha o interesse em propor melhorias para as FGRM's também está
+interessado em analisar o conjunto de funções comuns que caracterizam as FGRM's.
 
-O numero de FGRM disponíveis atualmente é bastante elevado. Em uma inspeção
-inicial, verificamos a existência de mais de 50 ferramentas disponíveis
+O numero de FGRM's disponíveis atualmente é bastante elevado. Em uma inspeção
+inicial, verificamos a existência de mais de 50 ferramentas fornecidas
 comercialmente ou de código
 aberto\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
 Apesar das diferentes opções disponíveis, ao bem do nosso conhecimento,
 desconhecemos estudos que avaliem de forma sistemática as funcionalidades
-oferecidas por este tipo de software. Entendemos que a partir de um conjunto
-compartilhado de funcionalidades seja possível caracterizar as FGRM's ao mesmo
-tempo que possibilita avaliar a contribuição das extensões que estão sendo
-propostas na literatura, conforme discutido no
+oferecidas por este tipo de software a fim de compará-las. Entendemos que a
+partir de um conjunto compartilhado de funcionalidades seja possível
+caracterizar as FGRM's ao mesmo tempo que possibilita avaliar a contribuição das
+extensões que estão sendo propostas na literatura, conforme discutido no
 Capítulo\ref{ch:mapeamento-sistematico}.  Para alcançarmos este objetivo
 realizamos um estudo exploratório visando determinar quais são as
 funcionalidades comuns às Ferramentas de Gerenciamento de Requisição de Mudança
 (FGRM). Um estudo exploratório está preocupado na análise de um objeto em sua
 configuração natural e deixa as descobertas surgirem da própria
 observação~\cite{wohlin2012experimentation}. Neste tipo de estudo nenhuma
-hipótese é definida.
+hipótese é previamente definida.
 
 O trabalho descrito neste capítulo consistiu na leitura da documentação de
-algumas FGRM de modo a obter as funcionalidades oferecidas por cada ferramenta.
-As funções foram coletadas e organizadas utilizando a técnica de Cartões
-Ordenados (Sorting Cards)~\cite{5070993}. As FGRM' objeto deste estudo foram
-escolhidas com ajuda de profissionais envolvidos em manutenção de software.
-Através de uma pesquisa (survey) os profissionais foram questionados a definir
-quais das ferramentas apresentadas eram as mais representativas dentro do
-domínio de aplicação das FGRM's. A representativa neste contexto não está no
-número de projetos que utiliza determinada ferramenta, mas pelas caraterísticas
-que determinado software possui que o torna diferenciável dentro do seu domínio
-de aplicação.
+algumas FGRM de modo a sistematizar as funcionalidades oferecidas por cada
+ferramenta.  As funções foram coletadas e organizadas utilizando a técnica de
+Cartões Ordenados (Sorting Cards)~\cite{5070993, rugg2005sorting}. Devido ao
+alto volume de ferramentas disponíveis e ao grande esforço de analisar a
+documentação de todas elas, optamos por realizar este estudo com um conjunto
+mínimo que foi escolhido com a ajuda de profissionais envolvidos em manutenção
+de software.  Através de uma pesquisa (survey) os profissionais foram
+questionados a definir dentre as ferramentas apresentadas eram as mais
+representativas dentro do domínio de aplicação das FGRM's. A representativa
+neste contexto não está no número de projetos que utiliza determinada
+ferramenta, mas pelas caraterísticas que determinado software possui que o torna
+diferenciável dentro do seu domínio.
 
 \section{Objetivo do Capítulo}
 \label{sec:objetivo_do_capítulo}
 
-O primeiro objetivo deste capítulo é determinar as funcionalidades comuns às
+O objetivo inicial deste capítulo é determinar as funcionalidades comuns às
 Ferramentas de Gerenciamento de Requisição de Mudanças tomando como ponto de
 partida um conjunto mínimo de sistemas que foram definidas como as mais
 relevantes por profissionais envolvidos em manutenção e desenvolvimento de
 software. Em um segundo momento, o foco é caracterizar este tipo de ferramenta
-tomando como base as funções oferecidas. Conforme já exposto, a literatura em
-Manutenção de Software apresenta diferentes nomenclaturas para este tipo de
-ferramenta (Sistema de Controle de Defeito~-~Bug Tracking Systems, Sistema de
-Gerenciamento da Requisição~-~Request Management System, Sistemas de Controle de
-Demandas (SCD)~-~Issue Tracking Systems), sem, contudo, se preocupar em
-diferenciá-las.
+tomando como base as funcionalidades oferecidas pelos softwares. Conforme já
+exposto, a literatura em Manutenção de Software apresenta diferentes
+nomenclaturas para este tipo de ferramenta (Sistema de Controle de Defeito~-~Bug
+Tracking Systems, Sistema de Gerenciamento da Requisição~-~Request Management
+System, Sistemas de Controle de Demandas (SCD)~-~Issue Tracking Systems), sem,
+contudo, se preocupar em diferenciá-las.
 
 Acreditamos que o resultado deste estudo permitirá compreender melhor este tipo
-de software tomando como base as suas funcionalidades. Também será possível
-propor novas funções ou melhorias das já existentes tendo em vista a
-possibilidade de determinar o conjunto mínimo de funcionalidades deste tipo de
-sistema. Uma outra possível contribuição é a criação de um
-esquema de caracterização com base nas funcionalidades oferecidas.
+de software tomando como base o conjunto de funções que eles oferecem aos seus
+usuários. Também será possível propor novas funções ou melhorias das já
+existentes tendo em vista a possibilidade de determinar o conjunto mínimo de
+funcionalidades deste tipo de sistema. Uma outra possível contribuição é a
+criação de um esquema de caracterização com base nas funcionalidades oferecidas.
 
 \section{Metodologia}
 \label{sec:metodologia}
 
-A fim de determinarmos o conjunto comum de funcionalidades das FGRM realizamos
-um estudo compostos das etapas descritas a seguir. O resultado do trabalho de
-uma etapa fui utilizado como entrada da próxima. Antes do início de um nova fase
-de trabalho o resultado foi avaliado afim de verificar possíveis
-inconsistências. Cada uma das partes deste estudo é explicada em detalhes nas
-próximas seções.
+A fim de determinarmos o conjunto comum de funcionalidades das FGRM's realizamos
+um estudo exploratório dividido em três etapas listadas a seguir. O resultado
+obtido em determinada etapa fui utilizado para subsidiar as atividades de uma
+etapa posterior. Antes do início de um nova fase de trabalho o resultado foi
+avaliado afim de verificar possíveis inconsistências. Cada uma das partes deste
+estudo é explicada em detalhes nas próximas seções.
 
 \begin{enumerate}[(i)]
 	\item Seleção das Ferramentas
@@ -97,79 +98,98 @@ próximas seções.
 \label{subsec:selecao-ferramentas}
 
 A primeira etapa consistiu na definição das ferramentas que seriam utilizadas no
-estudo. A partir de uma pesquisa na Internet obtivemos um conjunto inicial de
-mais de 50 ferramentas
+estudo. A partir de uma pesquisa na Internet obtivemos um conjunto inicial de 50
+ferramentas
 utilizadas\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
 O Anexo exibe o conjunto de ferramentas levantadas para este estudo.
+\todo[inline]{Incluir anexo com as ferramentas utilizadas inicialmente}
 
-Não obstante, devido ao pouco tempo disponível e devido a dificuldade de
-realizar a análise em cada uma daquelas ferramentas, optamos por escolher um
-subconjunto de sistemas que fossem mais representativos, tomando como base a
-opinião de profissionais envolvidos em manutenção de software. A
-representatividade neste caso corresponde a opinião do profissional sobre
-notoriedade que a ferramenta possui dentro do seu domínio de aplicação em
-comparação com as demais que lhe foram apresentadas.
+Devido ao pouco tempo disponível e a dificuldade de realizar a análise em cada
+uma daquelas ferramentas, optamos por escolher um subconjunto de sistemas que
+fossem mais representativos, tomando como base a opinião de profissionais
+envolvidos em manutenção e desenvolvimento de software. A representatividade
+neste caso corresponde a opinião do profissional sobre notoriedade que a
+ferramenta possui dentro do seu domínio de aplicação em comparação com as demais
+que lhe foram apresentadas.
 
 A opinião dos profissionais foi obtida mediante a realização de uma pesquisa
 (survey~\cite{wohlin2012experimentation}) através de um formulário eletrônico.
-O formulário foi estruturado em duas partes principais: a formação de
-base do participante (background) e a avaliação das ferramentas. Na primeira
-parte da pesquisa com profissionais estávamos interessados em conhecer as
-características do respondente, especialmente, como descreveremos a seguir, o
-questionário foi replicado em três grupos distintos de profissionais. Na segunda
-parte do estudo apresentamos as ferramentas e foi pedido que o profissional
-avaliasse a relevância de cada uma através de questões de múltipla escolha
-utiliza uma escala do tipo Likert~\cite{robbins2011plotting}.
+O formulário foi estruturado em duas partes principais: a formação de base do
+participante (background) e a avaliação das ferramentas. Na primeira parte
+estávamos interessados em conhecer as características do respondente. Esta
+informação é relevante tendo em vista, como descreveremos a seguir, o
+questionário foi replicado em três grupos distintos de profissionais. Neste
+sentido, se torna possível realizar análises sobre como é formado cada um dos
+grupos de profissionais utilizados neste estudo. Na segunda parte da pesquisa
+apresentamos as ferramentas e foi pedido que o profissional avaliasse a
+relevância de cada uma através de questões de múltipla escolha utiliza uma
+escala do tipo Likert~\cite{robbins2011plotting}.
 
-Antes da efetiva aplicação do questionário nos profissionais envolvidos em
-manutenção de software, o documento foi validade em um processo de três etapas.
-Em um primeiro momento foi solicitado a dois pesquisadores experientes da área
-de Engenharia de Software que avaliassem o formulário inicialmente desenhado. A
-partir das sugestões obtidas dos pesquisadores efetuamos adequações no
-formulário e enviamos para dois profissionais envolvidos diretamente em
-manutenção de software. O critério utilizado para seleção dos profissionais foi
-o tempo dedicado à tarefa de manter software, que no caso específico eram de
-mais de dez anos. O formulário foi modificado com as sugestões dos profissionais
-finalizando desta forma a segunda etapa de validação. A última etapa consistiu
-na realização de um piloto com dez profissionais envolvidos em manutenção de uma
-empresa pública de informática. Os profissionais tiveram que efetivamente
-preencher o questionário, contudo, foram adicionadas questões as quais era
-possível inserir sugestões de melhoria. O resultado deste processo de validação
-é o questionário presente no Anexo
-\todo[inline]{Incluir anexo com o formulário final}
+Antes da efetiva aplicação do questionário no público-alvo do estudo, o
+documento foi validade em um processo de três etapas.Em um primeiro momento foi
+solicitado a dois pesquisadores experientes da área de Engenharia de Software
+que avaliassem o formulário inicialmente desenhado. A partir das sugestões
+obtidas dos pesquisadores foram realizadas adequações no formulário. Após as
+alteração a nova versão do documento foi enviado para dois profissionais
+envolvidos diretamente em manutenção de software. O critério utilizado para
+seleção dos profissionais foi o tempo dedicado à tarefa de manter software, que
+no caso dos profissionais escolhidos era em média de 10 anos. O formulário foi
+modificado com as sugestões dos profissionais finalizando desta forma a segunda
+etapa de validação. A última etapa consistiu na realização de um piloto com dez
+profissionais envolvidos em manutenção de uma empresa pública de informática. Os
+profissionais tiveram que efetivamente preencher o questionário, contudo, foram
+adicionadas questões as quais era possível inserir sugestões de melhoria. O
+resultado deste processo de validação é o questionário presente no Anexo. Como o
+público-alvo do questionário poderia incluir desenvolvedores de diferentes
+nacionalidades foi construído em uma versão em língua inglesa do formulário que
+consta no Anexo deste documento.
+
+\todo[inline]{Incluir anexo com o formulário final em português}
+\todo[inline]{Incluir anexo com o formulário final em inglês}
 
 A população de interesse deste survey é o conjunto de profissionais envolvidos
 em manutenção de software. Naturalmente é difícil definir o tamanho e
-características desta população de modo a definir uma amostra significativa.
-Neste sentido, visando reduzir possíveis víeis deste estudo, o questionário foi
-replicado em três grupos distintos:
+características desta população de modo a mensurar uma amostra significativa.
+Neste sentido, visando minimizar possíveis víeis deste estudo, o questionário
+foi replicado em três grupos distintos:
 
 \begin{description}
-	\item[Grupo 01:] Profissionais de uma empresa pública de informática
-	\item[Grupo 02] Profissionais que participam em projetos de código aberto
-	\item[Grupo 03:] Profissionais que participam de grupos de interesse em
-		aplicativos de comunicação em celular.	
+	\item[Grupo 01:] Profissionais de empresa pública e privada de
+			desenvolvimento e manutenção de software.
+	\item[Grupo 02:] Profissionais que contribuem em projetos de
+		código aberto
+   	\item[Grupo 03:] Profissionais que participam de grupos de
+		interesse em aplicativos de comunicação em celular.
 \end{description}
 
-:%We chose these projects because (1)
+%We chose these projects because (1)
 %they are active, real-world projects with a sizable code base, and
 %large numbers of users and developers,  and (2) bug reports from
 %these projects have been used previously in several studies involv-
 %ing bug report analyses [3, 13, 2, 4]. 
+Os participantes que compõe cada grupo foram escolhidos conforme critérios que
+são detalhados no Capítulo~\ref{ch:pesquisa-profissionais}. A reutilização desta
+base de desenvolvedores se deu por conta de ambas as pesquisas terem a mesma
+população como público-alvo, podendo neste caso compartilhar a mesma amostra.
+Ademais, como o survey descrito nesta seção foi realizada antes daquele descrito
+no Capítulo~ref{ch:pesquisa-profissionais}, as lições aprendidas no primeiro
+serviram para melhorar o processo de desenho e aplicação do segundo.
 
-As FGRM selecionadas foram inicialmente classificadas como
-\textit{''ferramentas''} e \textit{''serviços da internet''}. O primeiro grupo
-representa os softwares capazes de serem implantados na infraestrutura do seu
-cliente e do qual permite algum grau de personalização de alguns componentes,
-como por exemplo o bando de dados utilizado. No segundo grupo estão os software
-que ofertam a gerência das RM's mediante uma arquitetura do tipo Software como
-Serviço (Software as Service), onde certos tipos de alterações no comportamento
-do software por parte do usuário são mais restritas. As ferramentas selecionadas
-são apresentadas por tipo de categoria na
-Tabela~\ref{tab:ferramentas_selecionadas}
-
-\todo[inline]{Incluir referência sobre
-	Software como Serviço}
+Com base nos dados obtidos da pesquisa com os profissionais, as FGRM's foram
+classificadas como \textit{''ferramentas''} e \textit{''serviços da internet''}.
+O primeiro grupo representa os softwares que são capazes de serem implantados na
+infraestrutura do seu cliente e permite algum grau de personalização de pelo
+menos um dos componentes, como por exemplo, o banco de dados utilizado. No
+segundo grupo estão os software que ofertam a gerência das RM's mediante uma
+arquitetura do tipo Software como Serviço (Software as
+Service)~\cite{fox2013engineering}, onde certos tipos de alterações no
+comportamento do software são mais restritas. Acreditamos que ao escolher
+ferramentas dos dois tipos tipos descritos anteriormente iremos cobrir uma
+grande parte do domínio de aplicação das FGRM's. Tendo em vista o tempo
+disponível e esforço necessário para análise da documentação de cada uma das
+ferramentas ficou definido que seriam escolhidas 06 ferramentas para o estudo,
+sendo três de cada um dos grupos. Neste sentido, serão escolhidas as três
+ferramentas mais relevantes com base nos dados da pesquisa com os profissionais.
 
 \subsection{Inspeção da Documentação}
 \label{subsec:inspecao_doumentacao}
@@ -177,13 +197,17 @@ Tabela~\ref{tab:ferramentas_selecionadas}
 Nesta etapa do trabalho realizamos a leitura do material disponível na internet
 para cada uma das ferramentas selecionadas. Entre estes materiais utilizamos
 manual do usuário, manual do desenvolvedor, notas de lançamento e etc. Para cada
-uma das FGRM optamos por analisar a última versão estável do software a fim de
+uma das FGRM's optamos por analisar a última versão estável do software a fim de
 analisarmos o que há de mais novo disponível aos usuários. A Tabela apresenta a
 versão analisada e o elo de ligação para cada uma da documentação utilizada
 neste estudo. Para aquelas ferramentas que apresentam documentação em mais de um
 idioma optamos sempre por utilizar aquela escrita em inglês por entendermos ser
 a que possivelmente mais atualizada.
 
+\todo[inline]{Incluir tabela com os link de acesso às ferramentas}
+
+Os dados obtidos da leitura do material dísponíveis para cada ferramenta foram
+inseridos em cartões
 \subsection{Agrupamento das Funcionalidades}
 \label{subsec:agrupamento_fucionalidades}
 
