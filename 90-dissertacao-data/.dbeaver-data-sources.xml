@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="postgres-jdbc-156c9d8948c-24ee06b31cf65ffc" provider="postgresql" driver="postgres-jdbc" name="dissertacao@aws-dissertacao" create-date="1472265312160" update-date="1480893706214" login-date="1480894696227" save-password="true" show-system-objects="true" read-only="false">
+		<connection host="ec2-52-67-130-34.sa-east-1.compute.amazonaws.com." port="5432" server="" database="dissertacao" url="jdbc:postgresql://ec2-52-67-130-34.sa-east-1.compute.amazonaws.com.:5432/dissertacao" user="dissertacao" password="RyUIJFMQXjZl8w==" type="prod">
+			<property name="@dbeaver-show-non-default-db@" value="false"/>
+			<network-handler type="CONFIG" id="postgre_ssl" enabled="false" user="" save-password="false">
+				<property name="sslFactory" value=""/>
+				<property name="clientCert" value=""/>
+				<property name="clientKey" value=""/>
+				<property name="sslMode" value=""/>
+			</network-handler>
+			<network-handler type="PROXY" id="socks_proxy" enabled="false" user="" save-password="false">
+				<property name="socks-host" value=""/>
+				<property name="socks-port" value="1080"/>
+			</network-handler>
+			<network-handler type="TUNNEL" id="ssh_tunnel" enabled="false" user="" save-password="false">
+				<property name="port" value="22"/>
+				<property name="keyPath" value=""/>
+				<property name="host" value=""/>
+				<property name="authType" value="PASSWORD"/>
+			</network-handler>
+			<bootstrap autocommit="true" txnIsolation="2"/>
+		</connection>
+		<custom-property name="resultset.fetch.size" value="false"/>
+		<custom-property name="resultset.edit.key.use_all_columns" value="false"/>
+		<custom-property name="resultset.order.serverSide" value="true"/>
+		<custom-property name="resultset.maxrows" value="200"/>
+		<custom-property name="resultset.read.references" value="true"/>
+		<custom-property name="keep.statement.open" value="false"/>
+		<custom-property name="resultset.autofetch.next.segment" value="true"/>
+		<custom-property name="resultset.maxrows.sql" value="false"/>
+		<custom-property name="resultset.cancel.timeout" value="5000"/>
+		<custom-property name="resultset.read.metadata" value="true"/>
+		<custom-property name="query.rollback-on-error" value="false"/>
+	</data-source>
+	<data-source id="csvjdbc-1584175406f-36bd82d2dd48ec83" provider="generic" driver="csvjdbc" name="oss-comunity" create-date="1478567065064" update-date="1479125170518" login-date="1479161069587" save-password="true" show-system-objects="true" read-only="false">
+		<connection server="" database="/home/vagner/workspace/dissertacao-data/csv/oss-comunity" url="jdbc:relique:csv:/home/vagner/workspace/dissertacao-data/csv/oss-comunity" user="" type="dev">
+			<property name="quotechar" value="&quot;"/>
+			<property name="fileExtension" value=".csv"/>
+			<property name="separator" value=","/>
+			<property name="suppressHeaders" value="false"/>
+			<bootstrap/>
+		</connection>
+	</data-source>
+	<data-source id="csvjdbc-15862bbab41-624d55fff9ecd390" provider="generic" driver="csvjdbc" name="survey-avaliacao-ferramentas" create-date="1479125250025" update-date="1480895884044" login-date="1480895831689" save-password="true" show-system-objects="true" read-only="false">
+		<connection server="" database="/home/vagner/workspace/dissertacao/90-dissertacao-data/csv/survey-avaliacao-ferramentas" url="jdbc:relique:csv:/home/vagner/workspace/dissertacao/90-dissertacao-data/csv/survey-avaliacao-ferramentas" user="" type="dev">
+			<property name="quotechar" value="&quot;"/>
+			<property name="fileExtension" value=".csv"/>
+			<property name="separator" value=";"/>
+			<property name="suppressHeaders" value="false"/>
+			<bootstrap/>
+		</connection>
+	</data-source>
+</data-sources>
