@@ -1,0 +1,50 @@
+cod_issue_tracking_system	nome_issue_tracking_system	descricao	criador	licenca	linguagem_implementacao	back_end	ano_lancamento	url
+1	Apache Bloodhound	TESTE	Apache Software Foundation	Apache License	Python	MySQL, PostgreSQL, SQLite	2012	TESTE
+2	Assembla Tickets	TESTE	Assembla	Proprietary, hosted. Available for free for open source projects	Ruby	MySQL	2008	TESTE
+3	Axosoft	TESTE	Axosoft LLC	Proprietary, Saas	C#, .NET	SQL Server	2002	TESTE
+4	BMC Remedy Action Request System	TESTE	BMC Software	Proprietary	C, Java	DB2, Informix, SQL Server, Oracle, Sybase ASA	1992	TESTE
+5	Bontq	TESTE	Bontq LLC	Proprietary, hosted.	PHP, Java	PostgreSQL	2010	TESTE
+6	Brimir	TESTE	Ivaldi	AGPL	Ruby	MySQL, PostgreSQL	2013	TESTE
+7	Bugzilla	TESTE	Mozilla Foundation	MPL	Perl	MySQL, Oracle, PostgreSQL, SQLite	1998	TESTE
+8	Debbugs	TESTE	Debian	GPL	Perl	Flat file, Berkeley DB indexes[citation needed]	1994	TESTE
+9	FogBugz	TESTE	Fog Creek Software	Saas	ASP on Windows, PHP on Mac, FreeBSD, and Linux	SQL Server, MySQL	2000	TESTE
+10	Fossil SCM	TESTE	D. Richard Hipp	BSD	C	SQLite	2006	TESTE
+11	FusionForge	TESTE	Various (open source contributors)	GPLv2	PHP	PostgreSQL	2009	TESTE
+12	Gestionnaire libre de parc informatique	TESTE	INDEPNET	GPLv2	PHP	MySQL	2003	TESTE
+13	GNATS	TESTE	Free Software Foundation	GPL	C, Web Front-end In Perl	Text files with custom daemon/search engine	1992	TESTE
+14	Google Code Hosting	TESTE	Google Code	Proprietary, hosted; available for open source projects	Python	BigTable	2004	TESTE
+15	HP Quality Center	TESTE	Hewlett-Packard, formerly Mercury Interactive	Proprietary	.NET (client), Java (server)	Oracle, SQL Server	1995	TESTE
+16	IBM Rational ClearQuest	TESTE	Rational Software	Proprietary	kernel: executables for several platforms; hooks: Perl and Visual Basic	IBM DB2, Oracle, SQL Server, Access, Sybase ASA	1998	TESTE
+17	IBM Rational Team Concert	TESTE	Rational Software	Proprietary	kernel: Java; API: Java	IBM DB2, Oracle, SQL Server, Apache Derby	2008	TESTE
+18	JIRA	TESTE	Atlassian	Proprietary. Free community licenses for open source and academic projects	Java	MySQL, PostgreSQL, Oracle, SQL Server	2002	TESTE
+19	Kayako SupportSuite	TESTE	Kayako	Proprietary, some parts GPL	PHP	MySQL	2001	TESTE
+20	Launchpad	TESTE	Canonical Ltd.	AGPL	JavaScript, Python	PostgreSQL	2004	TESTE
+21	Liberum Help Desk	TESTE	Doug Luxem	GPL	ASP	SQL Server, Access	2000	TESTE
+22	MantisBT	TESTE	Various (open source contributors)	GPL	PHP	ADOdb (MySQL, PostgreSQL, SQL Server, etc.)	2000	TESTE
+23	Microsoft Dynamics CRM	TESTE	Microsoft	Proprietary, Commercial	.NET	Microsoft SQL Server	2003	TESTE
+24	org-mode	TESTE	Carsten Dominik	GPL	Emacs	Flat file	2003	TESTE
+25	Open-source Ticket Request System	TESTE	otrs.org	AGPL	Perl	MySQL, PostgreSQL, Oracle, SQL Server	2002	TESTE
+26	Pivotal Tracker	TESTE	Pivotal Labs	Proprietary, free version for public projects, non-profits and academic institutions	Ruby	Ruby on Rails, MySQL, Memcached	2008	TESTE
+27	Plain Ticket	TESTE	Turbine interactive	Proprietary, online, hosted.	Java	MySQL	2011	TESTE
+28	Planbox	TESTE	Planbox	Proprietary, free version	Java, PHP	MySQL	2009	TESTE
+29	QuickBase	TESTE	Intuit	Proprietary	Java	Proprietary, Oracle	2000	TESTE
+30	Redmine	TESTE	Jean-Philippe Lang	GPLv2	Ruby	MySQL, PostgreSQL, SQLite	2006	TESTE
+31	Request Tracker	TESTE	Best Practical Solutions, LLC	GPLv2	Perl	MySQL, PostgreSQL, Oracle, SQLite	1999	TESTE
+32	Roundup	TESTE	Ka-Ping Yee, Richard Jones	MIT license (ZPL v 2.0 for the template system)	Python	SQLite, MySQL, PostgreSQL, Berkeley DB	2001	TESTE
+33	StarTeam	TESTE	originally Starbase Corporation, currently Borland	Proprietary	C++, Java, etc.	SQL Server recommended, Oracle, DB2 supported	2011	TESTE
+34	Supportworks	TESTE	Hornbill Systems	Proprietary	C++ and PHP	SQL Server, MySQL, Oracle, Sybase	1994	TESTE
+35	SysAid	TESTE	SysAid Technologies	Proprietary	C#, Java	Derby, Microsoft SQL Server, MySQL, Oracle	2002	TESTE
+36	Targetprocess	TESTE	Taucraft	Proprietary	.NET	MS SQL	2005	TESTE
+37	Team Foundation Server	TESTE	Microsoft	Proprietary, Commercial	.NET	MS SQL Server 2005 & 2008	2005	TESTE
+38	Twproject	TESTE	Open Lab	Proprietary, some parts LGPL	Java	all relational (uses Hibernate)	2003	TESTE
+39	TechExcel's DevTrack	TESTE	TechExcel	Proprietary	C++, JavaScript	SQL Server, MySQL, Oracle, SQL Server Express	1997	TESTE
+40	TestTrack	TESTE	Seapine Software	Proprietary	C++, JavaScript	Oracle, PostgreSQL, SQL Server, SQLite	1996	TESTE
+41	The Bug Genie	TESTE	Various (open source contributors)	Mozilla Public License 1.1	PHP	MySQL, PostgreSQL, SQL Server	2003	TESTE
+42	Trac Bug Tracking System	TESTE	Edgewall Software	New BSD	Python	SQLite, PostgreSQL, MySQL	2006	TESTE
+43	TrackerSuite.Net	TESTE	Automation Centre	Proprietary	C#	SQL Server, SQL Server Express	2006	TESTE
+44	Tuleap	TESTE	enalean	GPLv2	php	LAMP, MySQL	2011	TESTE
+45	Usersnap Bug Tracking System	TESTE	Usersnap GmbH	Proprietary	Python, JavaScript	MongoDB,	2013	TESTE
+46	Web Help Desk	TESTE	MacsDesign Studio, LLC	Proprietary	Java	FrontBase, MySQL, OpenBase, Oracle, PostgreSQL, SQL Server	1999	TESTE
+47	Wrike Project management software	TESTE	Wrike, Inc.	Proprietary, hosted	Java	PostgreSQL	2006	TESTE
+48	YouTrack	TESTE	JetBrains s.r.o.	Proprietary, stand-alone and hosted, free version, free for open source projects	Java, MPS-based DSLs	JetBrains DB	2009	TESTE
+49	Zoho BugTracker	TESTE	Zoho Corp.	Proprietary	Java	MySQL	2011	TESTE
