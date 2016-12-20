@@ -4,6 +4,7 @@ CREATE TABLE mapeamento_its.temp_artigos_escolhidos (
 	id_temp_artigos_escolhidos SERIAL not null,
 	data_hora_preenchimento timestamp not null,
 	identificador_artigo varchar(500) not null,
+	ano_artigo int2 not null,
 	titulo_artigo varchar(500) not null,
 	resumo_artigo text not null,
 	palavras_chaves_artigo varchar(500) not null,
