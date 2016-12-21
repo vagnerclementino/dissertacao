@@ -196,3 +196,5 @@ TSWLatexianTemp*
 *\~
 .project
 .dbeaver-data-sources.xml
+.RData
+.Rhistory
