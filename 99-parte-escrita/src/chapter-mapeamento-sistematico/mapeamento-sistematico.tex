@@ -2,7 +2,7 @@
 %Objetivo: Mapeamento Sistemático da Literatura com o objetivo de avaliar
 %		   o que está sendo proposto de melhorias nas funcionalidades das
 % 		   FGRM
-%Autor:
+%Autor: Vagner Clementino e Rodolfo Resend
 %Criação: Ter Out 11 19:03:45 BRT 2016
 %Modificação: seg dez 19 21:41:29 BRST 2016
 %Revisão:
@@ -208,10 +208,6 @@ Figura~\ref{fig:diagrama-esquema-dimensao-melhorias}.
 
 
 
-
-
-
-
 \subsubsection{Classificação por Suporte ao Papel da Manutenção de Software}
 \label{subsubsec:map-esquema-suporte-papel-man}
 
@@ -343,31 +339,34 @@ analisado.
 
 Nesta seção apresentamos os resultados do Mapeamento Sistemático. Cada uma das
 taxonomias propostas é analisada mediante a apresentação dos estudos que possam
-exemplificar a classificação adotada.  Iniciamos pela classificação por
-problemas na Manutenção de Software, o qual dividimos os estudos por área e
-tópico de pesquisa. Seguimos com a análise dos estudo pelo papel ao qual a
-extensão visa dar suporte. Posteriormente analisamos os modelos de IR utilizados
-para implementar algumas das extensões propostas na literatura. Finalizamos esta
+exemplificar a classificação adotada.  Iniciamos com uma análise da frequência
+de publicação relativo à melhoria das funcionalidades das ferramentas.
+Posteriormente apresentamos os resultados pela classificação por problemas na
+Manutenção de Software, o qual dividimos os estudos por área e tópico de
+pesquisa. Seguimos com a análise dos estudo pelo papel ao qual a extensão visa
+dar suporte. Posteriormente analisamos os modelos de IR utilizados para
+implementar algumas das extensões propostas na literatura. Finalizamos esta
 análise com as ferramentas existentes no mercado que estão efetivamente sendo
 entendidas.
 
 \subsection{Frequência das Publicações}
 \label{sub:frequencia_publicacao}
+
 A Figura~\ref{fig:publicacao_por_ano} exibe o número de estudos primários
-identificados entre os anos 2010-2016. Dentre os estudos escolhidos no período
-em questão verificamos  que inicialmente foram publicados cinco estudos sobre o
-assunto
+identificados entre os anos 2010-2016, período de referência utilizado no
+mapeamento. Dentre os estudos escolhidos no período em questão verificamos que
+em 2010 foram publicados cinco estudos sobre o assunto
 \cite{sun2010discriminative,gegick2010identifying,song2010jdf,nagwani2010predictive,zimmermann2010makes}.
 Posteriormente verificamos um acréscimo no número de estudos no qual um
 significante aumento pode ser observado entre os anos de 2012-2014. O crescente
 número de estudos publicados sobre melhorias nas FGRM pode indicar que esta área
-vem sendo considerada altamente relevante pela comunidade acadêmica em em
+vem sendo considerada altamente relevante pela comunidade acadêmica em
 Engenharia de Software.
 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.9\linewidth]{chapter-mapeamento-sistematico/img/ano-publicao-estudos.pdf}
-	\caption{Publicações por ano.}
+	\caption{Número de estudos primários por ano de publicação.}
 	\label{fig:publicacao_por_ano}
 \end{figure}
 
@@ -376,13 +375,17 @@ Engenharia de Software.
 
 Nesta etapa do trabalho estamos interessados no estado da arte do estudo dos
 problemas encontrados na Manutenção de Software. Em especial, o nosso foco é
-entender que tipo de extensão para FGRM estão sendo proposta para solucionar
-este tipo de problema. Com base no mapeamento sistemático realizado a
-classificação do estudos é apresentada na
-Tabela~\ref{tab:taxonomia-problemas-manutencao}.
+entender que tipo de melhorias nas funcionalidades das FGRM estão sendo proposta
+na literatura. Com base no mapeamento sistemático realizado e nas dimensões de
+melhoria discutidas por Zimmermann e outros~\cite{5070993} construímos o esquema
+de classificação dos apresentado na
+Figura~\ref{fig:diagrama-esquema-dimensao-melhorias}
 
-O total de artigos por área de pesquisa e seus respectivos tópicos pode ser
-observado na Figura~\ref{fig:bubble-plo-problema-manutencao}
+Adicionalmente a tabela~\ref{tab:taxonomia-problemas-manutencao} exibe a
+distribuição dos estudos pela dimensaõ de melhoria e o seu respetivo tópico. De
+uma certa maneira o número de estudos  pode indicar a maturidade da pesquisa
+naquele tipo de assunto. Contudo, não representa diretamente a importânica do
+tópico no estudo sobre melhorias em FGRM's.
 
 % Inclusão da tabela
 \input{chapter-mapeamento-sistematico/tables/tb-taxonomia-problemas-manutencao.tex}

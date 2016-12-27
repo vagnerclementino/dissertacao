@@ -7,7 +7,7 @@ library(scales)
 #Declarando as variáveis do gráfico
 
 WORKSPACE <-"~/workspace/dissertacao/99-parte-escrita/R-scripts/" 
-CSV_FILE <-'./data/201612202103_total_por_dimensao.csv'
+CSV_FILE <-'./data/201612270022_total_por_topico.csv'
 FILE_SEPARATOR <- ","
 WIDTH_BAR <- .3
 LEGEND_NAME <- "Dimensões de Melhoria"
@@ -16,7 +16,7 @@ Y_LABEL <- "Total de artigos"
 GRAPH_TITLE <-"Total de Artigos por Dimensão de Melhoria"
 X_AXIS_INCREMENT <- 5
 IMG_DIR <-'./img/'
-FILE_NAME <- 'grafico_dim_melhoria_por_artigo'
+FILE_NAME <- 'grafico_topico_por_artigo'
 PS_FILE_NAME <-  paste(FILE_NAME,'.ps', sep='')
 PDF_FILE_NAME <- paste(FILE_NAME, '.pdf', sep='')
 PNG_FILE_NAME <- paste(FILE_NAME, '.png', sep='')
@@ -33,11 +33,11 @@ df_data <- read.csv(  file = CSV_FILE
 show(df_data)
 
 #Maior valor do eixo y
-ymax <- max(df_data$frequencia) * 1.5
+ymax <- max(df_data$total) * 1.5
 
 #Plotando o gráfico
-ggplot(data=df_data, aes(x=reorder(df_data$dimensao_melhoria, df_data$frequencia),
-                                    y=df_data$frequencia, fill=df_data$dimensao_melhoria
+ggplot(data=df_data, aes(x=reorder(df_data$topico, df_data$total),
+                                    y=df_data$total, fill=df_data$topico
                         )
        ) + 
   geom_bar(colour="black",
@@ -49,8 +49,8 @@ ggplot(data=df_data, aes(x=reorder(df_data$dimensao_melhoria, df_data$frequencia
   ylab(Y_LABEL) + # Set axis labels
   ggtitle(GRAPH_TITLE) +     # Set title
   theme_bw() +
-  coord_flip(ylim = c(0, ymax)) + 
-  geom_text(aes(label=df_data$frequencia, hjust=-.5)) +
+  # coord_flip(ylim = c(0, ymax)) + 
+  geom_text(aes(label=df_data$total, hjust=-.5)) +
   scale_y_discrete(limits = c(seq(0,ymax,by=X_AXIS_INCREMENT)))
 
 
