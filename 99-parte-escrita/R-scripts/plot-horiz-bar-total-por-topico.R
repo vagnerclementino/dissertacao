@@ -4,17 +4,17 @@ rm(list=ls(all=TRUE))
 #carregando as bibliotecas necessarias
 library(ggplot2)
 library(scales)
-#Declarando as variáveis do gráfico
 
+#Declarando as variáveis do gráfico
 WORKSPACE <-"~/workspace/dissertacao/99-parte-escrita/R-scripts/" 
 CSV_FILE <-'./data/201612270022_total_por_topico.csv'
 FILE_SEPARATOR <- ","
 WIDTH_BAR <- .3
-LEGEND_NAME <- "Dimensões de Melhoria"
-X_LABEL <- "Dimensão de Melhoria"
+LEGEND_NAME <- "Tópicos de Melhoria"
+X_LABEL <- "Tópico de Melhoria"
 Y_LABEL <- "Total de artigos" 
-GRAPH_TITLE <-"Total de Artigos por Dimensão de Melhoria"
-X_AXIS_INCREMENT <- 5
+GRAPH_TITLE <-"Total de Artigos por Tópico de Melhoria"
+X_AXIS_INCREMENT <- 2
 IMG_DIR <-'./img/'
 FILE_NAME <- 'grafico_topico_por_artigo'
 PS_FILE_NAME <-  paste(FILE_NAME,'.ps', sep='')
@@ -44,12 +44,15 @@ ggplot(data=df_data, aes(x=reorder(df_data$topico, df_data$total),
            stat="identity",
            position=position_dodge(),
            width=WIDTH_BAR) + # Thinner lines
-  scale_fill_grey(name=LEGEND_NAME) + # Set legend title
+  scale_fill_grey(name=LEGEND_NAME,
+                  start = 0,
+                  end = .9,
+                  guide = "none") + # Set legend title
   xlab(X_LABEL) + 
   ylab(Y_LABEL) + # Set axis labels
   ggtitle(GRAPH_TITLE) +     # Set title
-  theme_bw() +
-  # coord_flip(ylim = c(0, ymax)) + 
+  theme_bw( ) +
+  coord_flip(ylim = c(0, ymax)) + 
   geom_text(aes(label=df_data$total, hjust=-.5)) +
   scale_y_discrete(limits = c(seq(0,ymax,by=X_AXIS_INCREMENT)))
 
