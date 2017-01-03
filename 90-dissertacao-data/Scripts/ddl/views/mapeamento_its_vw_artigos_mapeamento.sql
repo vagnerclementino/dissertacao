@@ -1,3 +1,4 @@
+
 create or replace view mapeamento_its.vw_artigos_mapeamento as
 (SELECT identificador_artigo,
 	   titulo_artigo,
@@ -11,7 +12,8 @@ create or replace view mapeamento_its.vw_artigos_mapeamento as
 	   ferramenta_artigo,
 	   artigo_usa_base_ferramenta,
 	   virou_extensao_ferramenta,
-	   observacoes
+	   observacoes,
+     ano_artigo
 FROM mapeamento_its.temp_artigos_escolhidos
 where upper(artigo_sera_incluido) = 'SIM'
 );
