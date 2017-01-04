@@ -2,7 +2,7 @@
 %Objetivo: Mapeamento Sistemático da Literatura com o objetivo de avaliar
 %		   o que está sendo proposto de melhorias nas funcionalidades das
 % 		   FGRM
-%Autor: Vagner Clementino e Rodolfo Resend
+%Autor: Vagner Clementino e Rodolfo Resende
 %Criação: Ter Out 11 19:03:45 BRT 2016
 %Modificação: seg dez 19 21:41:29 BRST 2016
 %Revisão:
@@ -199,9 +199,9 @@ Figura~\ref{fig:diagrama-esquema-dimensao-melhorias}.
 \begin{figure}[tb]
 \centering
  \makebox[\textwidth]{\includegraphics[width=.9\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.pdf}}
-\caption{Esquema de classificação das melhorias propostas na litetura. Os
+\caption{Esquema de classificação das melhorias propostas na literatura. Os
 	retângulos representam as dimensões de melhorias e os polígonos de cantos
-	arredondados represetam as melhorias.}
+	arredondados representam as melhorias.}
 \label{fig:diagrama-esquema-dimensao-melhorias}
 \end{figure}
 \todo[inline]{Incluir no anexo uma tabela demonstrando como as palavras-chaves foram combinadas}
@@ -381,9 +381,9 @@ de classificação dos apresentado na
 Figura~\ref{fig:diagrama-esquema-dimensao-melhorias}
 
 Adicionalmente a tabela~\ref{tab:taxonomia-problemas-manutencao} exibe a
-distribuição dos estudos pela dimensaõ de melhoria e o seu respetivo tópico. De
+distribuição dos estudos pela dimensão de melhoria e o seu respetivo tópico. De
 uma certa maneira o número de estudos  pode indicar a maturidade da pesquisa
-naquele tipo de assunto. Contudo, não representa diretamente a importânica do
+naquele tipo de assunto. Contudo, não representa diretamente a importância do
 tópico no estudo sobre melhorias em FGRM's.
 
 % Inclusão da tabela
@@ -392,9 +392,9 @@ tópico no estudo sobre melhorias em FGRM's.
 \begin{figure}[tb]
 \centering
  \makebox[\textwidth]{\includegraphics[width=.9\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.pdf}}
-\caption{Esquema de classificação das melhorias propostas na litetura. Os
+\caption{Esquema de classificação das melhorias propostas na literatura. Os
 	retângulos representam as dimensões de melhorias e os polígonos de cantos
-	arredondados represetam as melhorias.}
+	arredondados representam as melhorias.}
 \label{fig:diagrama-esquema-dimensao-melhorias}
 \end{figure}
 
@@ -418,28 +418,104 @@ tópico no estudo sobre melhorias em FGRM's.
 Este ramo do esquema de classificação de classificação proposto foi criada para
 agrupar os estudos que discutem melhorias na dimensão Ferramenta. Conforme
 anteriormente exposto, esta classe acomoda estudos em tópicos como Localização
-	do Problema, Visualização, Busca e Monitoramento de RM's.
+	do Problema e Visualização de RM's.
 \paragraph{Localização do Problema}
 Os estudos incluídos neste tópico de classificação estão devotados ao problema
 de localizar a origem de um problema de software com base dos dados da RM.
-Trata-se do processo de estatísticamente localizar um bug utilizando os dado
+Trata-se do processo de estatisticamente localizar um bug utilizando os dado
 das RM's em conjunto com o código
 	fonte~\cite{Hovemeyer:2004:FBE:1052883.1052895}.
 
-\paragraph{Visualização de RM}
-Os estudos classificados neste tópicos proprõe melhorar a visualização das
-informações contidas em uma RM.
-\paragraph{Busca de RM}
+A tarefa de encontrar a origem de um falha de software é complexa de consome
+muito tempo. Em estudo Lucia e outros relataram que entre 84 a 93\% dos
+problemas em software afetam apenas 1-2 arquivos de
+código-fonte~\cite{thung2012faults}. Contudo não é fácil identificar esses
+poucos arquivos dos milhares de arquivos de código-fonte. Esta situação
+realça que localizar a origem de um problema (buggy files) é uma tarefa
+árdua~\cite{Thung:2014:BIT:2635868.2661678}.
 
-\paragraph{Monitoramento de RM}
+Neste contexto, pesquisadores vem propondo abordagens baseadas em
+Recuperação da Informação para localizar falhas com base no que está descritos
+nos relatos de bugs. Nessas abordagens existe a tentativa de encontrar entre
+o código fonte do sistema um subconjunto de arquivos de fonte que
+estão diretamente relacionados à solução do problema
+reportado~\cite{Wong:2014:BBF:2705615.2706096}.
+
+Com objetivo de melhorar a eficiência da Localização do Problema diversas
+informações contidas nas RM's estão sendo utilizadas. As diversas abordagens
+propostas utilizam informações como pilha-erros
+(stack-trace)~\cite{Wong:2014:BBF:2705615.2706096}, descrição e campos
+estruturados das RM's~\cite{Thung:2014:BIT:2635868.2661678}, o históricos de
+versões~\cite{Bangcharoensap:2012:LSC:2419061.2419428,corley2011recovering,Romo:2015:TAT:2745802.2745833}.
+
+Alguns dos estudos propostos foram incluídos em ferramentas largamente
+utilizadas no mercado utilizando as propriedades de extensão do
+software~\cite{Thung:2014:BIT:2635868.2661678,corley2011recovering}. Os autores
+argumentam que pelo fato de nenhuma das técnicas propostas na literatura
+estarem integradas às FGRM exite uma dificuldade de adoção da prática da
+localização automática de problemas pelos desenvolvedores. Neste sentido, eles
+argumentam sobre a necessidade da melhoria das funcionalidades das FGRM em
+especial com melhoria ou inclusão de funcionalidades nas FGRM's utilizando o que
+vem sendo proposto na literatura.
+
+\paragraph{Visualização de RM}
+Os estudos classificados neste tópicos propõe melhorar a visualização das
+informações contidas em uma RM. A tomada de decisão deve estar subsidiada por
+informações corretas. Este fato não é diferente na manutenção e desenvolvimento
+de software. Contudo, uma fonte de informação recebeu menos atenção do que o
+código fonte: os bugs no sistema. Pouco se sabe sobre o comportamento evolutivo,
+o tempo de vida, distribuição e estabilidade dos problemas reportados nas
+FGRM~\cite{hora2012bug}. Este problema é reforçado pela forma como as FGRM's
+armazenam os dados das RM's. Em geral, esses exibem informações sobre as RM's de
+forma textual, o que não é apenas complicado para para navegar, mas também
+dificulta a compreensão das intrincadas peças de informação que giram em torno
+dos problemas de software~\cite{dal2014bug}.
+
+Com o objetivos de apresentar novas forma de visualizar os dados de uma RM novos
+conceitos estão sendo propostos. No estudo de Hora e outros~\cite{hora2012bug} é
+apresentado o conceito de Mapa de Bugs (Bugs Maps) que é a ligação de uma RM com
+diversos outros artefatos de software como por exemplo o histórico de versões.
+No estudo de Lanza e  Dal Sasso~\cite{dal2014bug} o conceito de hiperligação
+entre documentos é utilizado para permitir a navegação entre os diversões
+artefatos que estão relacionados a um RM.
+
+Por outro lado, verificamos o artigo proposto por Takama e
+Kurosawa~\cite{takama2013application} onde a aplicação de tecnologias de
+visualização de informação foi empregada para o monitoramento das informações
+contidas nas RM's. A atualização das informações de uma RM quando gerenciada por
+uma FGRM são estruturadas como um fluxo de texto. Contudo, é difícil para as
+partes interessadas monitorar uma RM o tempo todo. Neste contexto, a solução
+proposta pelo autores visa suportar o monitoramento das RM apresentando ao
+usuário mediante animações as atualizações ocorridas em determinada RM.
+
+Por conta da natureza das melhorias propostas neste tópico de pesquisa,
+verificamos que diversos estudos foram prototipados em ferramentas. Desta forma,
+é possível avaliar as propostas através das ferramentas como o
+bugMaps~\cite{hora2012bug}, In* Bug~\cite{dal2014bug}.
 
 \subsubsection{Melhorias Propostas na Dimensão Informação}
 \label{ssub:melhorias_dim_informacao}
 
+Neste ramo do esquema de classificação foram acomodados os estudos que se propõe
+em melhorar a informação que as partes interessadas registram em uma RM. Ela é
+composta de dois principais tópicos: no primeiro temos o conjunto de
+funcionalidades que dão suporte ao registro de uma RM antes que ela seja
+armazenada na base de dados de uma FGRM; o segundo tópico se dedica aos artigos
+que visam organizar a informação já registrada em uma RM, de modo a facilitar o
+entendimento por parte dos desenvolvedores e demais profissionais envolvidos na
+manutenção de software.
+
 \paragraph{Suporte ao Registro da RM}
 
-\paragraph{Organização da Informação da RM}
+Durante o processo de correção de um problema de software verifica-se que a
+reprodução manual dos bugs é demorada e tediosa. Os mantenedores de software
+rotineiramente tentam reproduzir problemas não confirmados usando as informações
+contidas nas RM's que muitas vezes estão
+incompletos~\cite{White:2015:GRR:2820282.2820291}. Para complementar os dados
+necessários à resolução do problema o desenvolvedor deve solicitar ao
+responsável pelo relato da RM as informações necessárias.
 
+\paragraph{Organização da Informação da RM}
 
 \subsubsection{Melhorias Propostas na Dimensão Processo}
 \label{ssub:melhorias_dim_processo}
@@ -450,7 +526,7 @@ informações contidas em uma RM.
 
 \paragraph{Classificação da RM}
 
-\paragraph{Estimativa de Esfoço da RM}
+\paragraph{Estimativa de Esforço da RM}
 
 \subsubsection{Melhorias Propostas na Dimensão Usuário}
 \label{ssub:melhorias_dim_usuario}
