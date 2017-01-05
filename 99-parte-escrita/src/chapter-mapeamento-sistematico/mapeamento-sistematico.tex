@@ -513,15 +513,81 @@ rotineiramente tentam reproduzir problemas não confirmados usando as informaç�
 contidas nas RM's que muitas vezes estão
 incompletos~\cite{White:2015:GRR:2820282.2820291}. Para complementar os dados
 necessários à resolução do problema o desenvolvedor deve solicitar ao
-responsável pelo relato da RM as informações necessárias.
+responsável pelo relato da RM as informações necessárias. Os relatos
+contidos nas RM's podem conter informações valiosas que podem ser
+utilizadas para melhorar a qualidade da informação contidas em novos relatórios
+de problemas de software. Esta melhoria da qualidade pode implicar na redução do
+custo do processo de garantia de qualidade bem como aumentar a
+confiabilidade a confiabilidade do software com a redução gradativa de
+bugs~\cite{Tu:2014:MQI:2677832.2677844}.
+
+A pesquisa visando a melhoria da qualidade da informação fornecida nas RM's
+começa com estudos visando mensurar de alguma forma os relatos relizados pelos
+usuários. A determinação do que seria um bom relato de um problema de software
+foi obtido mediante uma pesquisa (survey) com profissionais devotadas à
+manutenção de software~\cite{Bettenburg2008a}. Em outro estudo os autores propõe
+as métricas que posteriomente serão utilizadas para avaliar o relato que compõe
+a RM~\cite{Tu:2014:MQI:2677832.2677844}.
+
+Um segundo nicho de estudos  nesta área está relacionado ao suporte na
+reprodução do erro do software. Estes estudos incluem tanto em registrar o
+conjunto de ações que resultaram no erro~\cite{White:2015:GRR:2820282.2820291},
+quanto em autocompletar as informações que compõe o relato do
+problema~\cite{moran2015auto}. Um ponto em comum deste dois estudos é que eles
+foram desenvolvido para o ambiente de desenvolvimento móvel, especial para o
+sistema Android~\footnote{\url{https://www.android.com/}}. Uma possível
+justificativa para este foco em aplicações móveis pode estar relacionado à
+inerente dificuldade em registrar um problema de software naquele ambiente de
+software. Neste sentido, a fim de ajudar aos mantenedores a obter relatos de
+maior qualidade a melhoria da usabilidade na forma de reportar os defeitos é
+importante.
+
+Muitos dos estudos realizados resultaram em ferramentas com a finalidade de
+realizar uma prova de conceito no tocante a dar suporte ao usuário em
+fornecer um relato de boa qualidade~\cite{Tu:2014:MQI:2677832.2677844,
+	Bettenburg2008a, Wu2011a,White:2015:GRR:2820282.2820291,moran2015auto} . Conforme anteriormente exposto, o
+desenvolvimento deste protótipos é importante para fomentar a pesquisa sobre a
+melhorias das FGRM.
 
 \paragraph{Organização da Informação da RM}
+
+Em algums casos não é possível aumentar a qualidade da informação fornecida em
+um relato de uma RM antes que ela seja armazenada em seu respectivo repositório.
+Nestas situações uma abordagem adotada é organizar de uma maneira previamente
+definidas as informações contidas em uma RM.
+
+Durante o processo de análise de uma RM, em especial para aquelas de caráter
+corretiva, existe a tendência dos desenvolvedores em procuram por problemas
+semelhantes que foram resolvidos no passado. No
+entanto, em diversas situações o desenvolvedor ainda precisa examinar manualmente o conteúdo dos bugs
+recomendados que podem variar em tamanho e complexidade~\cite{mani2012ausum}.
+Neste contexto, o resumo (sumarização) automático de RM's que tenham relação com
+problema em análise é uma maneira de reduzir a quantidade
+de dados que um desenvolvedor pode precisa analisar. A ferramenta denominda
+AUSUM~\cite{mani2012ausum} propóe uma abordagem, utilizando técnicas não
+supervisionadas de IR, de criar este resumo automático de um conjunto de relato
+de problemas.
 
 \subsubsection{Melhorias Propostas na Dimensão Processo}
 \label{ssub:melhorias_dim_processo}
 
 \paragraph{Localização de RM Duplicadas}
+O processo de localização de RM's Duplicadas consiste em avaliar se determinado
+relato já foi realizado em algum outro momento. Quando uma RM duplicada é
+identificada ele deve ser vinculada a outra que na literatura da área é
+denominada como RM Mestre. Geralmente a Mestre é aquela que foi incluída no
+repositório de erros em data anterior. Alguns estudos revelam que entre 10\% e
+30\% das RM's podem ser classificadas com duplicadas, o que causa um substancial
+impacto nas atividades de manutenção de
+software~\cite{anvik2005coping,cavalcanti2013bug,Runeson:2007:DDD:1248820.1248882}.
+Por conta do grande número de RM's duplicadas se faz necessário designar pessoas
+para manualmente analisar as Requisições de Mudanças que chegam com objetivo de
+evitar que as duplicatas cheguem as desenvolvedores~\cite{anvik2005coping}.
 
+O processo de identificação de RM's duplicadas requer um prévio conhecimento do
+conjunto de relatos existentes previamente no  projeto ou mediante a busca
+manual em toda base de dados da FGRM~\cite{banerjee2012automated,
+	Lerch:2013:FDY:2495256.2495763,hindle2016contextual}. 
 \paragraph{Atribuição (Triagem) de RM}
 
 \paragraph{Classificação da RM}
@@ -537,13 +603,8 @@ responsável pelo relato da RM as informações necessárias.
 	Software}
 \label{sub:extensões_com_suporte_a_papeis}
 
-\subsection{Técnicas de IR Utilizadas pelas Extensões}
-\label{sub:técnicas_de_ir_utilizadaas_pelas_extensões}
-
-
 \subsection{Ferramentais Estendidas}
 \label{sub:ferrramentas_extendidas}
-
 
 \section{Limitações e Ameaças à Validade}
 
