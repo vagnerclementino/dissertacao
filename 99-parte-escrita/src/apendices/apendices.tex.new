@@ -1,7 +1,0 @@
-\begin{appendices}
-	\chapter{Instrumentos do Mapeamento Sistemático}
-	 \label{ch:app-instrumentos-mapeamento}
-	 \includepdf[pages=-,scale=.8,pagecommand={\label{tab:setenca-por-base-dados}
-		 \captionof{table}{Sentença de Busca por Base de
-			 Dados}},linktodoc=true]{apendices/img/setenca-de-busca-por-base-dados.pdf}
-\end{appendices}
