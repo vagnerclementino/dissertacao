@@ -614,43 +614,11 @@ tempo extra para análise de uma RM bem como apoiar os desenvolvedores com
 informações adicionais~\cite{Lerch:2013:FDY:2495256.2495763,Thung2014}.
 
 \paragraph{Atribuição (Triagem) de RM}
-O processo de atribuição de RM, também conhecido como \textit{triagem}, possui
-como principal objetivo encontrar o desenvolvedor mais capacitado para manipular
-uma dada RM~\cite{cavalcanti2014challenges}. Existe a premissa que a escolha do
-desenvolvedor apropriado é crucial para obter um menor tempo para resolução de
-deterinada RM~\cite{di2002approach}. Estudos também discutem que o processo de
-atribuição deve considerar fatores tais como a carga de trabalho do
-desenvolvedor a prioridade da RM~\cite{aljarah2011selecting}.
 
 \paragraph{Classificação da RM}
-Independentemente do tipo e tamanho de um projeto é sempre importante determinar
-qual tipo manutençaõ deverá ser realizada tomando como base o relato de uma RM.
-Este processo consiste de forma resumida em classificar uma requisição com base
-em algum esquema de classificação previamente definido. Este esquema pode ser
-classificar em \textit{corretiva, perfectiva, preventiva ou
-	adaptaiva}~\cite{4425813} ou mesmo como \textit{resolver um problema de
-	software} ou \textit{implementar uma melhoria.}
-A diversa de categorias em determinado esquema de classificação  pode tornar
-complexo a tarefa, tendo em vista que em muitos casos não é fácil determinar os
-limites entre os tipos~\cite{antoniol2008bug}. Por exemplo, a uma classificação
-incorreta de um defeito como melhoria pode acarretar em atrasos no projeto ou
-mesmo fazendo que uma RM receba menos atençaõ do que ela
-mereça~\cite{cavalcanti2014challenges}.
 
 \paragraph{Estimativa de Esforço da RM}
-A gestão do custo e esforço de um  projeto de manutençaõ de software passa pelo
-controle do esforço necessário ao cumprimento de suas RM's. Os estudos que medem
-o esforço de uma RM utilizam em geral três forma para medir este
-esforço~\cite{cavalcanti2014challenges}: determinar o tempo para solucionar
-novas RM's; determinar os artefatos que são impactados por determinada RM;
-prever o número de novas RM's que poderão fazer parte do projeto.
 
-No primerio tipo de estudo
-
-O segundo grupo contêm os estuos
-
-
-O último tipo de trabalho se dedicar em prever
 \subsubsection{Melhorias Propostas na Dimensão Usuário}
 \label{ssub:melhorias_dim_usuario}
 

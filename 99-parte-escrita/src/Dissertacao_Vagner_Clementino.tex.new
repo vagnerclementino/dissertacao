@@ -1,0 +1,95 @@
+% !TeX encoding   = UTF-8
+\documentclass[msc]{ppgccufmg} % ou [msc] para dissertações
+                                        % de mestrado. Para propostas ou
+                                        % projetos, usar [phd,project],
+                                        % [msc,proposal], etc.
+\usepackage[brazil]{babel} % ajusta vários detalhes para
+                           % documentos escritos em português,
+                           % principalmente hifenização
+\usepackage[T1]{fontenc}   % permite a hifenização de
+                           % palavras acentuadas
+\usepackage[utf8x]{inputenc} % ou [utf8x] para quem prefere
+                             % usar a codificação UTF-8
+\usepackage{graphicx} % define o comando \includegraphics
+                      % para a inclusão de Figuras
+%\usepackage[square]{natbib} % permite citações naturalmente
+                            % integradas ao texto
+\usepackage[a4paper,
+portuguese,
+bookmarks=true,
+bookmarksnumbered=true,
+linktocpage,
+colorlinks=true,
+citecolor=black,
+urlcolor=black,
+linkcolor=black,
+filecolor=black,
+]{hyperref}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{todonotes}
+\usepackage{pdfpages}
+\usepackage{capt-of}
+\usepackage{svg}
+\usepackage{epsf}
+\usepackage{epstopdf}
+\usepackage{lscape}
+\usepackage{graphicx}
+\begin{document}
+
+\ppgccufmg{
+title={Um Estudo de Ferramentas de \\
+Gerenciamento de Requisição de Mudança},
+author={Vagner Clementino},
+authorrev={Clementino, Vagner},
+university={Universidade Federal de Minas Gerais},
+course={Ciência da Computação},
+address={Belo Horizonte},
+date={2016-12},
+advisor={Rodolfo F. Resende},
+keywords={Manutenção de Software, Ferramentas, Extensões},
+%approval={img/approvalsheet.eps},
+%approval=[-2.5cm][1]{aprovalsheet},
+abstract={Resumo}{./resumo/resumo},
+abstract=[english]{Abstract}{./abstract/abstract},
+abstract={Resumo Estendido}{./resumoest/resumoest},
+dedication={./dedicatoria/dedicatoria},
+ack={./agradecimentos/agradecimentos},
+	epigraphtext={A verdade é o contrário da mentira, \\
+    e a mentira é o oposto da verdade.}{Autor desconhecido},
+indexkeys={1.~Computação --- Teses. 2.~Redes --- Teses. I.~Orientador.
+    II.~Título.},
+}
+
+%Incluindo o fonte do Capítulo 01
+\input{./chapter-intro/intro.tex}
+
+%Incluindo o fonte do Capítulo 02
+\input{./chapter-manutencao-software-visao-geral/manutencao-software-visao-geral.tex}
+
+%Incluindo o fonte do Capítulo 03
+\input{./chapter-mapeamento-sistematico/mapeamento-sistematico.tex}
+
+%Incluindo o fonte do Capítulo 04
+\input{./chapter-caracterizacao-ferramentas/caracterizacao-ferramentas.tex}
+
+%Incluindo o fonte do Capítulo 05
+\input{./chapter-pesquisa-com-profissionais/pesquisa-com-profissionais.tex}
+
+%Incluindo o fonte do Capítulo 06
+\input{./chapter-extensoes-fgrm/extensoes-fgrm.tex}
+
+%Incluindo o fonte do Capítulo 07
+\input{./chapter-avaliacao-extensoes-fgrm/avaliacao-extensoes-fgrm.tex}
+
+%Incluindo o fonte do Capítulo 08
+\input{./chapter-conclusao/conclusao.tex}
+
+% Incluindo bibliografia:
+\ppgccbibliography{../bib/bibliografia}
+
+% apêndices, se houver
+\input{./apendices/apendices.tex}
+
+\end{document}

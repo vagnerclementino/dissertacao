@@ -1,6 +1,7 @@
 NAME=Dissertacao_Vagner_Clementino
 BIBLIOGRAPHY=../bib/bibliografia
 DIR_PDF_NAME=../output
+build: compile clean
 all: aspell compile clean
 compile: $(NAME).tex $(BIBLIOGRAPHY).bib
 	@pdflatex -shell-escape $(NAME).tex

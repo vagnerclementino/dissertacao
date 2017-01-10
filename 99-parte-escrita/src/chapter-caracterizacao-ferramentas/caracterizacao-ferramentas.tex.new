@@ -1,0 +1,321 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Objetivo: Caracterizas as Ferramentas de Gerenciamento de Requisição de Mudança
+%		   com base nas suas funcionalidades
+%Autor: Vagner Clementino <vagnercs@dcc.ufmg.br>
+% 		Rodolfo Resende	<rodolfo@dcc.ufmg.br>
+%Criação: qua set 28 11:25:03 BRT 2016
+%Modificação: Seg Nov  7 14:59:04 BRST 2016
+%Revisão: Seg Nov 21 20:51:41 BRST 2016
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Caracterização das Ferramentas de Gerenciamento de Requisição de
+	Mudança}
+\label{ch:caracterizacao}
+
+
+\section{Introdução}
+\todo[inline]{OBJETIVO:\@ Apresentar uma visão geral desta parte da dissertação
+que consistirá de uma análise da funcionalidades oferecidas pelas FGRM}
+
+Quando uma empresa ou projeto software de código aberto decide adotar uma
+Ferramenta de Gerenciamento de Requisições de Mudança~-~FGRM um desafio é
+encontrar aquela que melhor atenda suas necessidades. Um possível critério de
+seleção é o conjunto de funcionalidades oferecidas pelo software. Outros
+critérios podem envolver o custo bem como o suporte a falhas da ferramenta. De
+maneira relacionada, o pesquisador que estuda proposta de melhorias para as
+FGRM's pode estar está interessado em analisar o conjunto de funções
+comuns que caracterizam este tipo de software.
+
+O numero de FGRM's disponíveis atualmente é bastante elevado. Em uma inspeção
+inicial, verificamos a existência de mais de 50 ferramentas fornecidas
+comercialmente ou em código
+aberto\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
+Apesar das diversas opções disponíveis, ao bem do nosso conhecimento,
+desconhecemos estudos que avaliem sistematicamente as funcionalidades oferecidas
+por este tipo de ferramenta a fim de compará-las. Entendemos que a partir de um
+conjunto compartilhado de funções/comportamento seja possível caracterizar as
+FGRM's, ao mesmo tempo possibilita avaliar a contribuição de novas
+funcionalidades propostas na literatura, conforme discutido no
+Capítulo~\ref{ch:mapeamento-sistematico}. Para alcançarmos este objetivo,
+realizamos um estudo exploratório visando determinar as principais
+funcionalidades presentes nas FGRM's que dão suporte ao desenvolvimento e
+manutenção de software. Um estudo exploratório está preocupado com a análise do
+objeto em sua configuração natural e deixando que as descobertas surjam da
+própria observação~\cite{wohlin2012experimentation}. Neste tipo de estudo
+nenhuma hipótese é previamente definida.
+
+O trabalho descrito neste capítulo consistiu na leitura da documentação
+disponível na Internet algumas FGRM's de modo a sistematizar as funcionalidades
+oferecidas por cada ferramenta.  As funções foram coletadas e organizadas
+utilizando a técnica de Cartões de Classificação (Sorting Cards)~\cite{5070993,
+	rugg2005sorting}. Devido ao alto volume de ferramentas disponíveis e ao
+esforço necessário para analisar a documentação de todas elas, optamos por
+realizar este estudo com um conjunto mínimo escolhido com a ajuda de
+profissionais envolvidos em manutenção de software. Através de um levantamento
+(survey) onde os profissionais responderam dentre as ferramentas apresentadas
+quais eram as mais representativas dentro do domínio de aplicação das FGRM's. A
+representatividade neste contexto não está no número de projetos que utiliza
+determinada ferramenta, mas pelas caraterísticas que determinado software possui
+que o torna diferenciável dentro do seu domínio.
+
+\section{Objetivo do Capítulo}
+\label{sec:objetivo_do_capítulo}
+
+O objetivo inicial deste capítulo é apresentar e discutir as principais
+funcionalidades das FGRM's que dão suporte ao desenvolvimento e manutenção de
+software. Tomando como ponto de partida um conjunto de sistemas definidos como
+os mais relevantes por profissionais envolvidos em manutenção e desenvolvimento
+de software. Em um segundo momento, o foco foi caracterizar este tipo de
+ferramenta tomando como base as funcionalidades oferecidas pelos softwares.
+Conforme já exposto, a literatura em Manutenção de Software apresenta diferentes
+nomenclaturas para este tipo de ferramenta (Sistema de Controle de Defeito~-~Bug
+Tracking Systems, Sistema de Gerenciamento da Requisição~-~Request Management
+System, Sistemas de Controle de Demandas (SCD)~-~Issue Tracking Systems), sem,
+contudo, se preocupar em diferenciá-las.
+
+Acreditamos que o resultado deste estudo permitirá compreender melhor este tipo
+de software tomando como base o conjunto de funções que eles oferecem aos seus
+usuários. Também será possível propor novas funcionalidades ou melhorias das já
+existentes tendo em vista a possibilidade de determinar o conjunto mínimo de
+comportamentos deste tipo de ferramenta. Outra contribuição é a
+criação de uma taxonomia com base nas funcionalidades oferecidas.
+
+\section{Metodologia}
+\label{sec:metodologia}
+
+A fim de determinarmos o conjunto das principais funcionalidades das FGRM's que
+dão suporte à manutenção e desenvolvimento de software realizamos um estudo
+exploratório dividido em três etapas que serão listadas a seguir. O resultado
+obtido em etapa foi utilizado para subsidiar as atividades do etapa posterior.
+O início de uma nova fase do trabalho era precedido de uma avaliação geral afim
+de verificar possíveis inconsistências.
+
+\begin{enumerate}[(i)]
+	\item Seleção das Ferramentas
+	\item Inspeção da Documentação
+	\item Agrupamento das Funcionalidades
+\end{enumerate}
+
+\subsection{Seleção das Ferramentas}
+\label{subsec:selecao-ferramentas}
+
+A primeira etapa consistiu da definição das ferramentas que seriam utilizadas no
+estudo. A partir de uma pesquisa na Internet obtivemos um conjunto inicial de 50
+ferramentas~\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}
+que podem ser visualizadas no anexo A4.1. Devido ao esforço necessário e a
+dificuldade de realizar a análise em cada uma daquelas ferramentas, optamos por
+escolher um subconjunto de sistemas que fossem mais representativos, tomando
+como base a opinião de profissionais envolvidos em manutenção e desenvolvimento
+de software. A representatividade neste caso corresponde a opinião do
+profissional sobre notoriedade que a ferramenta possui dentro do seu domínio de
+aplicação em comparação com as demais que lhe foram apresentadas ou outras do
+qual tenha prévio conhecimento.
+\todo[inline]{Incluir anexo com as ferramentas utilizadas inicialmente}
+
+A opinião dos profissionais foi obtida mediante a realização de uma pesquisa
+(survey~\cite{wohlin2012experimentation}) realizada com o uso de um formulário
+eletrônico. O formulário foi estruturado em duas partes principais: a formação
+de base do participante (background) e a avaliação das ferramentas. Na primeira
+parte estávamos interessados em conhecer as características do respondente. Esta
+informação é relevante tendo em vista que, como descreveremos a seguir, o
+questionário foi replicado em três grupos distintos de profissionais. Neste
+sentido, foi possível realizar análises sobre como é formado cada um dos grupos
+que participaram deste estudo. Na segunda parte da pesquisa apresentamos as
+ferramentas e foi solicitado aos participantes que avaliassem a relevância de
+cada uma delas através de questões de múltipla escolha. As opções de respostas
+foram estruturadas em escala do tipo Likert~\cite{robbins2011plotting}.
+
+Antes da efetiva aplicação do questionário no público-alvo do estudo, o
+documento foi validado em um processo de três etapas. Na primeira parte foi
+solicitado a dois pesquisadores experientes da área de Engenharia de Software
+que avaliassem o formulário. A partir das sugestões obtidas dos pesquisadores
+foram realizadas adequações no documento. Após as alteração uma nova versão do
+formulário foi enviada para dois profissionais envolvidos diretamente em
+manutenção de software. O critério utilizado para seleção dos profissionais foi
+o tempo dedicado à tarefa de manter software, que no caso dos desenvolvedores
+escolhidos era em média de 10 anos. O formulário foi modificado com as sugestões
+dos profissionais finalizando a segunda etapa de validação. A última etapa
+consistiu na realização de um piloto com dez profissionais envolvidos em
+manutenção de uma empresa pública de informática. Os profissionais tiveram que
+preencher o questionário, contudo, foram adicionadas questões as quais era
+possível inserir sugestões de melhoria. O resultado deste processo de validação
+é o questionário presente no Anexo A4.2\@. Como o público-alvo do questionário
+poderia incluir desenvolvedores de diferentes nacionalidades foi construído em
+uma versão em língua inglesa do formulário que consta no Anexo deste documento.
+
+\todo[inline]{Incluir anexo com o formulário final em português}
+\todo[inline]{Incluir anexo com o formulário final em inglês}
+
+A população de interesse deste levantamento é o conjunto de profissionais
+envolvidos em manutenção de software. Naturalmente é difícil definir o tamanho e
+características desta população de modo a mensurar uma amostra significativa.
+Neste sentido, visando minimizar enviesamento deste estudo, o questionário
+foi replicado em três grupos:
+
+\begin{description}
+	\item[Grupo 01:] Profissionais de empresa pública e privada de
+			desenvolvimento e manutenção de software.
+	\item[Grupo 02:] Profissionais que contribuem em projetos de
+		código aberto
+   	\item[Grupo 03:] Profissionais que participam de grupos de
+		interesse em aplicativos de comunicação em celular ou em sites na
+		Internet.
+\end{description}
+
+%We chose these projects because (1)
+%they are active, real-world projects with a sizable code base, and
+%large numbers of users and developers,  and (2) bug reports from
+%these projects have been used previously in several studies involv-
+%ing bug report analyses [3, 13, 2, 4]. 
+Os participantes que compõe cada grupo foram escolhidos conforme critérios que
+são detalhados no Capítulo~\ref{ch:pesquisa-profissionais}. A reutilização desta
+base de desenvolvedores se deu por conta de ambos os estudos compartilharem a
+mesma população de interesse, podendo neste caso compartilhar a mesma amostra.
+Ademais, como o questionário descrito nesta seção foi realizada antes daquele
+contido no Capítulo~\ref{ch:pesquisa-profissionais}, as lições aprendidas no
+primeiro serviram para melhorar o processo de desenho e execução do segundo.
+
+Com base nos dados obtidos da pesquisa com os profissionais, as FGRM's foram
+classificadas como \textit{''ferramentas''} e \textit{''serviços da internet''}.
+O primeiro grupo representa os softwares que são capazes de serem implantados na
+infraestrutura do seu cliente e permite algum grau de personalização de pelo
+menos um dos componentes, como por exemplo, o banco de dados utilizado. No
+segundo grupo estão os software que ofertam a gerência das RM's mediante uma
+arquitetura do tipo Software como Serviço (Software as
+Service)~\cite{fox2013engineering}, onde certos tipos de alterações no
+comportamento do software são mais restritas. Acreditamos que ao escolher
+ferramentas dos dois tipos descritos anteriormente iremos cobrir uma
+grande parte do domínio de aplicação das FGRM's. Optamos por escolher 06
+ferramentas para o estudo, sendo três de cada um dos grupos. Neste sentido,
+foram escolhidas as três ferramentas mais relevantes para cada grupo com base
+nos dados da pesquisa com os profissionais.
+
+A documentação de algumas ferramentas, em especial aquelas que adotam uma
+arquitetura cliente/servidor e necessitam de um certo grau de administração,
+dividem as funcionalidades do software entre aquelas com foco no usuário final e
+administradores. Nestes casos optamos por coletar as funcionalidades cujo o foco
+seja o usuário da FGRM, tendo vista que eles, profissionais devotadas às
+atividade de manutenção de software, estarem entre o público-alvo desta
+dissertação.
+
+\subsection{Inspeção da Documentação}
+\label{subsec:inspecao_doumentacao}
+
+Nesta etapa do trabalho realizamos a leitura do material disponível na Internet
+para cada uma das seis ferramentas selecionadas na etapa anterior. Entre estes
+materiais utilizamos manuais do usuário e do desenvolvedor e notas de
+lançamento. Para cada uma das FGRM's optamos por estudar a última versão estável
+do software a fim de analisarmos o que há de mais novo disponível aos usuários.
+A Tabela apresenta a versão analisada e o elo de ligação para cada documentação
+utilizada neste estudo. Para aquelas ferramentas que apresentam documentação em
+mais de um idioma optamos sempre por utilizar aquela escrita em inglês por
+entendermos ser a que esteja mais atualizada.
+
+\todo[inline]{Incluir tabela com os link de acesso às ferramentas}
+
+Os dados obtidos da leitura do material disponíveis para cada ferramenta foram
+sistematizados por meio de técnica denominada \textit{Cartões de
+	Classificação~-~Sorting Cards}. Cartões de Classificação é um técnica de
+elicitação de conhecimento de baixo custo e com foco no usuário largamente
+utilizada em arquitetura informacional para criar modelos mentais e derivar
+taxonomias da entrada utilizada~\cite{just2008towards}. Ela envolve a
+categorização de um conjunto de cartões em grupos distintos de acordo com algum
+critério previamente definido~\cite{mcgee2009software}. O estudo de Maiden e
+outros~\cite{maiden1996acre} sugere que a técnica de Cartões de Classificação é
+uma das mais úteis para aquisição de conhecimento de dados, em contraste ao
+conhecimento de comportamento ou de processo.
+
+Existem três principais fases dentro do processo de classificação dos cartões:
+(1) preparação, no qual participantes e o conteúdo dos cartões são selecionados;
+(2) execução, onde o cartões são organizados em grupo significativos com um
+título que o descreve; e por fim, (3) análise, no qual os cartões são
+sistematizados para formar hierarquias mais abstratas que são usadas para
+deduzir temas. No processo tradicional de Cartões Ordenados cada declaração
+realizada por um participante resulta na criação de exatamente um único
+cartão~\cite{just2008towards}. Contudo, no nosso caso, foi realizada a divisão
+da documentação da ferramenta por cada funcionalidade encontrada. Neste sentido,
+cada funcionalidade obtida mediante a inspeção da documentação foi mapeada em
+único cartão.
+
+Os cartões foram organizados de modo que continham o nome e a versão da
+ferramenta analisada; a URL da documentação utilizada; o nome da funcionalidade
+coletada, que consiste de uma descrição breve conforme existente na
+documentação; descrição detalhada da funcionalidade, cujo objetivo é facilitar o
+processo de agrupamento que será descrito na próxima seção. O Anexo apresenta um
+formulário que representa os cartões utilizados neste estudo.
+\todo[inline]{Inserir anexo	com o formulário que representa os cartões}
+
+\subsection{Agrupamento das Funcionalidades}
+\label{subsec:agrupamento_fucionalidades}
+
+Esta etapa tem por objetivo agrupar as funcionalidades que aparecem com
+nomenclatura distintas em diferentes ferramentas, mas que apresentam o mesmo
+significado. Cabe ressaltar que o agrupamento de algumas funcionalidades pode
+depender de uma análise subjetiva de quem está realizando a atividade. Neste
+sentido, a fim de evitar algum tipo de viés o agrupamento foi realizado em duas
+etapas:
+
+\begin{description}
+	\item[Análise Individual] Neste etapa o autor e um outro especialista
+		realizam de forma separada os agrupamentos que acharem necessários
+	\item[Anaĺise Compartilhada] Em um segundo momento tanto o auto quanto o
+		especialista discutem as possíveis divergências até que um consenso seja
+		obtido.
+\end{description}
+
+Após as duas etapas descritas anteriormente chegamos ao conjunto de
+funcionalidades descritos na Tabela. A coluna agrupamento exibe o nome comum
+para representar as funções descritas na coluna ``nomenclatura original''.
+
+\section{Resultados}
+\label{sec:resultados}
+
+\subsection{Ferramentas Escolhidas}
+\label{subsec:resultados_ferramentas_escolhidas}
+
+
+\begin{table}[htb]
+\centering
+\caption{Ferramentas utilizados no estudo}
+\label{tab:ferramenta_utilizadas_estudo}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lccl|}
+\hline
+\multicolumn{1}{|c}{\textbf{Ferramenta}} & \textbf{Classificação} & \textbf{Versão} & \multicolumn{1}{c|}{\textbf{URL}}      \\ \hline
+Bugzilla                                 & Ferramenta             & 5.0.3           & https://www.bugzilla.org               \\
+Mantis Bug Tracker                       & Ferramenta             & 1.3.2           & https://www.mantisbt.org               \\
+Redmine                                  & Ferramenta             & 3.3.1           & http://www.redmine.org/                \\
+JIRA Software                            & Serviço                & 7.2.4           & https://br.atlassian.com/software/jira \\
+Github Issue Tracking System             & Serviço                & -               & https://github.com/                    \\
+Gitlab Issue Tracking System             & Serviço                & -               & https://gitlab.com/                    \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+
+\subsection{Categorização das Ferramentas}
+\label{subsec:categorizacao_ferramentas}
+
+Após a inspeção da documentação e validação dos dados obtivemos um total de
+N~\todo{Incluir o total de cartões obtidos ao final do processo} cartões. Nós
+sistematizamos os cartões manualmente tendo em vista que não existem ferramentas
+ou métodos capazes de automatizar o processo de construção de hierarquias. Tendo
+em vista que nosso objetivo é derivar tópicos a partir do conjunto inicial de
+cartões, optamos por realizar um \textit{ordenamento aberto} dos cartões.
+Naquele tipo de abordagem, os grupos são estabelecidos durante o processo de
+Classificação os cartões em oposição a outra forma de utilização da técnica onde
+a sistematização dos cartões ocorre com base em grupos pré-determinados.  Ao
+final do processo obtivemos os seguintes tópicos:
+
+\begin{itemize}
+	\item Primeiro tópico
+\end{itemize}
+
+\section{Discussão}
+\label{sec:discussao}
+
+\section{Ameças à Validade}
+\label{sec:ameacas_a_validade}
+
+
+\section{Resumo do Capítulo}
+\label{sec:resumo_do_capitulo}

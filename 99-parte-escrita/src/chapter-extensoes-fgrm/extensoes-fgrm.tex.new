@@ -1,0 +1,9 @@
+\chapter{Extensões para Ferramentas de Gerenciamento de Requisição de Mudança}
+\label{ch:extensoes}
+
+\section{Introdução}
+A partir dos resultados do Mapeamento Sistemática, do Estudo de Caracterização das ferramentas e da Pesquisa com o profissionais pretende-se desenvolver uma ou mais extensão (plugins) para determinada FGRM. Cabe ressaltar que esta parte do trabalho será realizada caso o esforço seja compatível com os prazos e recursos disponíveis. No caso da implementação de um plugin este será apresentado e avaliado mediante a realização de um \textit{Experimento Controlado} \cite{wohlin2012experimentation} utilizando a base de dados de demandas de manutenção de uma empresa de software real. Este experimento será conduzido com o objetivo de avaliar a utilização de uma extensão em um ambiente de desenvolvimento e manutenção de software real.
+
+\section{Ameaças à Validade}
+
+\section{Resumo do Capítulo}
