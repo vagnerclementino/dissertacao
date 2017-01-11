@@ -53,7 +53,6 @@ definidas as seguintes questões de pesquisa:
 
 \todo[inline]{Incluir motivação das questões de pesquisa}
 
-
 \begin{itemize}
 	\item \textbf{Questão 01}: \textit{Quais os problemas da atividade de
 			manutenção de software as extensões das FGRM pretendem resolver?}
@@ -88,7 +87,8 @@ estudos:
 		\begin{itemize}
 			\item Livros e literatura cinza (gray literature)
 			\item Artigos que não possuem relação com FGRM
-			\item Estudos duplicados, neste caso apenas foi considerada a versão mais completa do trabalho
+			\item Estudos duplicados, neste caso apenas foi considerada a versão
+				mais completa do trabalho
 		\end{itemize}
 \end{itemize}
 
@@ -618,7 +618,7 @@ O processo de atribuição de RM, também conhecido como \textit{triagem}, possu
 como principal objetivo encontrar o desenvolvedor mais capacitado para manipular
 uma dada RM~\cite{cavalcanti2014challenges}. Existe a premissa que a escolha do
 desenvolvedor apropriado é crucial para obter um menor tempo para resolução de
-deterinada RM~\cite{di2002approach}. Estudos também discutem que o processo de
+determinada RM~\cite{di2002approach}. Estudos também discutem que o processo de
 atribuição deve considerar fatores tais como a carga de trabalho do
 desenvolvedor a prioridade da RM~\cite{aljarah2011selecting}.
 
@@ -628,7 +628,7 @@ qual tipo manutençaõ deverá ser realizada tomando como base o relato de uma R
 Este processo consiste de forma resumida em classificar uma requisição com base
 em algum esquema de classificação previamente definido. Este esquema pode ser
 classificar em \textit{corretiva, perfectiva, preventiva ou
-	adaptaiva}~\cite{4425813} ou mesmo como \textit{resolver um problema de
+	adaptativa}~\cite{4425813} ou mesmo como \textit{resolver um problema de
 	software} ou \textit{implementar uma melhoria.}
 A diversa de categorias em determinado esquema de classificação  pode tornar
 complexo a tarefa, tendo em vista que em muitos casos não é fácil determinar os
@@ -638,33 +638,173 @@ mesmo fazendo que uma RM receba menos atençaõ do que ela
 mereça~\cite{cavalcanti2014challenges}.
 
 \paragraph{Estimativa de Esforço da RM}
-A gestão do custo e esforço de um  projeto de manutençaõ de software passa pelo
+A gestão do custo e esforço de um projeto de manutenção de software passa pelo
 controle do esforço necessário ao cumprimento de suas RM's. Os estudos que medem
 o esforço de uma RM utilizam em geral três forma para medir este
 esforço~\cite{cavalcanti2014challenges}: determinar o tempo para solucionar
 novas RM's; determinar os artefatos que são impactados por determinada RM;
 prever o número de novas RM's que poderão fazer parte do projeto.
 
-No primerio tipo de estudo
+No primeiro tipo de estudo a preocupação é estimar o tempo necessário para
+tratar a mudança solicitada em determinada requisição. Naturalmente, existe uma
+ complexidade produzir uma estimativa precisa por conta das
+diferentes atividades envolvidas em conjunto aos diferente níveis de capacitação
+que o responsável pela execução das tarefas pode ter~\cite{xia2015automatic}.
+Apesar da inerente imprecisão deste tipo de trabalho é importante salientar que
+estimar o tempo de solução de uma RM é importante para o gerenciamento do
+projeto porque ajudar alocar recurso de forma mais
+eficiente~\cite{Bhattacharya:2011:BTP:1985441.1985472} e melhorar a previsaõ do
+custo necessário para o lançamento de futuras versões do
+sistema~\cite{Vijayakumar2014}.
 
-O segundo grupo contêm os estuos
+No segundo grupo temos os artigos que tentam identificar previamente o conjunto
+de artefatos que serão impactados pela tarefa de manutenção~\cite{Nagwani2010}.
+\todo[inline]{Incluir citaçaõ para o artigo Impact analalysis by mining .. e
+	Identifing the start impact set of a }. A literatura sobre análise de
+impacto é bastante abrangente e pode envolver o estudos de artefatos tais como
+documentos de requisitos e arquiteturais dos software, código fonte, registros
+(logs ) de teste e assim por diante~\cite{cavalcanti2014challenges}. Neste
+sentido,estamos focados em estudos onde a RM são o ponto de partida para a
+análise de impacto.
 
+O último grupo de trabalho se dedica em prever o número de RM que possivelemente
+serão relatadas em futuras versões do sistema. De forma similar ao primeiro
+grupo este tipo de estudo visa contribuir com o planejamento das atividades de
+manutenção e evolução. A predição do que será relatado incluí tanto novas
+requisições de problemas que não existiam em versões anteriores, por exemplo,
+\todo[inline]{Inserir citação de Software defect association mining and
+	defects  e  Minig software code repositories and bug database...}, bem
+como aqueles que serão reabertos, ou seja, problemas que não foram solucionados
+anteriormente mesmo as suas RM's dizendo o contrário~\cite{xia2015automatic}
 
-O último tipo de trabalho se dedicar em prever
 \subsubsection{Melhorias Propostas na Dimensão Usuário}
 \label{ssub:melhorias_dim_usuario}
 
 \paragraph{Recomendação de RM}
+Os estudos contidos neste tópico possuem foco em dar suporte à novos
+desenvolvedores na redução da curva de apredizagem quando eles pretendem
+ingressar em um um novo projeto. Por exemplo, quando um novo desenvolvedor entra
+na equipe seria interessante que ele resolvesse as RM's que tivessem um menor
+nível de dificuldade. Posteriormente, quando o desenvolvedor ganhasse
+experiência, poderia aumentar o grau de dificuldade relacionado à RM que ele
+deve tratar. Este tipo de processo ocorre com certa frequência em projetos de
+código aberto, onde a contribuição de desenvolvedores fora do projeto é
+fundamental.No entanto, encontrar um bug apropriado e uma correção apropriada
+para esse bug requer uma boa compreensão do projecto, que não é
+trivial~\cite{Wang2011bug}.
+
+Em algum projetos, um membro experiente da equipe, geralmente ensina os
+recém-chegados o que eles precisam para fazer completar suas tarefas necesárias
+à conclusão de uma RM. Todavia, alocar um membro experiente de uma equipe para
+ensinar um recém-chegado durante um longo tempo nem sempre é possível ou
+desejável, porque o mentor poderia ser mais útil fazendo tarefas mais
+importantes~\cite{malheiros2012source}.
+
+Para facilitar a inclusão de novos desenvolvedores alguns estudos vêm se
+dedicando em desenvolver sistemas de recomentação de
+RM's~\cite{malheiros2012source, Wang2011bug}. Estes sistemas de recomendação
+podem ajudar o recém-chegado a solucionar uma RM mediante a apresentação de
+outras de código fonte potencialmente relevante que o ajudará na solução da RM
+do qual ficou responsável~\cite{malheiros2012source}.
+
+O segundo tipo de abordagem pode ser vista como ambiente de exploração do
+repositório de RM's.  Este tipo de funcionalidade permite que permitir que novos
+desenvolvedores pesquisem descrições das requisições que possam ser do seu
+interesso bem como dos artefatos relacionados àquela RM (por exemplo, arquivos
+relacionados, desenvolvedores contribuintes, registros de
+comunicação)~\cite{Wang2011bug}.
+
+Com base nos estudos que compõe esta categoria, verificamos que modelos de IR
+vêm sendo utilizados para possibilitar a recomendação de RM. Neste contexto,
+técnicas bem conhecidas na literatura tais como VSM~\cite{Wang2011bug} e o
+modelo estatístico PPM~\cite{malheiros2012source}.
 
 \subsection{Classificação por Melhorias com Suporte à Papéis da Manutenção de
 	Software}
 \label{sub:extensões_com_suporte_a_papeis}
+\todo[inline]{Verificar os artigos com N/A e não especificado}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{chapter-mapeamento-sistematico/img/grafico_papel_por_artigo.pdf}
+	\caption{Total de artigos por papel na manutenção de software}
+	\label{fig:graf_papel_por_artigo}
+\end{figure}
+
+\paragraph{Agendador}
+\paragraph{Desenvolvedor}
+\paragraph{Analista de Qualidade}
+\paragraph{Gerente de Requisição de Mudança}
+\paragraph{Reportador}
+\paragraph{Lider da Manutenção}
+\paragraph{Todos}
 
 \subsection{Ferramentais Estendidas}
 \label{sub:ferrramentas_extendidas}
 
 \section{Limitações e Ameaças à Validade}
+Questões de pesquisa: É possível que as perguntas de pesquisa definidas possam
+não abranger completamente o campo dos repositórios de RC. No entanto, algumas
+discussões com membros do projeto e especialistas em Manutenção de Software
+foram realizadas para validar as perguntas. Assim, mesmo que não tenhamos
+considerado o melhor conjunto de questões, tentamos abordar as questões mais
+frequentes e abertas no campo, tanto do ponto de vista do praticante como do
+investigador.
+
+Vieses de publicação: Não é possível garantir que todos os estudos primários
+relevantes foram selecionados e alguns estudos relevantes não podem ser
+escolhidos durante o processo de busca. Essa ameaça foi atenuada pelas
+referências a seguir nos estudos primários, em uma técnica chamada bola de neve
+[22]. No entanto, devido ao volume de artigos coletados, acreditamos que a
+pesquisa no campo está bem representada. Em outras palavras, os possíveis
+documentos em falta não teriam um impacto significativo nos resultados deste
+estudo de mapeamento.
+
+Pesquisa realizada: Como as bases de dados digitais não funcionam com regras de
+pesquisa compatíveis entre si, todas as seqüências de pesquisa foram adaptadas e
+calibradas para cada banco de dados digital. No entanto, não conhecemos todas as
+regras que as bases de dados digitais utilizam para procurar um documento. Isso
+foi atenuado pela
+
+Extração e classificação dos dados: Durante o processo de extração, os estudos
+foram classificados com base em nosso julgamento. No entanto, apesar da dupla
+verificação, alguns estudos poderiam ter sido classificados incorretamente. Além
+disso, às vezes era difícil classificar os estudos, de acordo com áreas de
+pesquisa e tópicos, devido à estreiteza entre desafios e oportunidades. Para
+mitigar isso, o processo de classificação foi repetido por cada autor deste
+estudo e os resultados foram discutidos em conjunto a fim de chegar a um
+consenso
+
 
 \section{Trabalhos Relacionados}
+Kagdi et ai. [159] realizou uma revisão da literatura sobre abordagens para
+repositórios de software de mineração sobre a evolução e manutenção de software.
+O resultado foi uma taxonomia baseada em quatro dimensões: o tipo de repositório
+extraído (o que), o propósito (por que), o método proposto (como) eo método de
+avaliação (qualidade). No entanto, sua taxonomia não fornece um entendimento
+extensivo sobre as investigações em repositórios de RC, principalmente por duas
+razões. Em primeiro lugar, embora pesquisassem muito trabalho e fizessem uma
+taxonomia consistente, isso foi feito já em 2006 e desde então muitos outros
+trabalhos foram publicados, considerando novos tópicos e abordagens. Em segundo
+lugar, de acordo com seus critérios de exclusão para estudos, eles estavam muito
+preocupados com estudos que abordavam mudanças evolutivas de artefatos de
+software investigando múltiplos repositórios de software. Como conseqüência,
+muitos estudos que usaram dados de um repositório único estavam além de seu
+escopo, como aqueles que se baseavam apenas em dados de repositórios de CR.
+
+Por outro lado, nosso estudo de mapeamento sistemático reduziu o foco para
+investigações sobre CR Repositórios, para que possamos fornecer uma visão
+abrangente do estado da arte sobre este tópico. As dimensões propostas por Kagdi
+et al. [159] Foram utilizados para orientar a análise dos estudos que
+consideramos neste artigo. Além disso, também analisamos algumas ferramentas e
+serviços para entender a transferência de tecnologia ao investigar repositórios
+de CR. Outra diferença de Kagdi et al. [159] é que sua taxonomia considera as
+técnicas e métodos para repositórios de software de mineração como entidades de
+primeira classe, enquanto a nossa análise se concentrou nos desafios e
+oportunidades relacionados aos repositórios de CR. Assim, passamos dos detalhes
+do Como para os detalhes da dimensão Por que resulta em uma taxonomia das áreas
+de pesquisa dos repositórios de CR. Além disso, vale a pena mencionar que,
+embora mudássemos o foco da taxonomia, não negligenciamos os aspectos técnicos
+das abordagens identificadas em cada tópico da taxonomia
 
 \section{Resumo do Capítulo}
