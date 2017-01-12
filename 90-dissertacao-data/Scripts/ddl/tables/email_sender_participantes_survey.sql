@@ -38,6 +38,12 @@ alter table email_sender.participantes_survey
 add constraint pk_participantes_survey
 primary key(id_participantes_survey);
 
+
+-- INDEX
+CREATE INDEX idx_partsurv_mailpart ON email_sender.participantes_survey (email_participante);
+CREATE INDEX idx_partsurv_nomemailprojc ON email_sender.participantes_survey (nome_participante,email_participante,projeto_participante);
+
+
 -- GRANTS
 grant select, insert, update , delete on email_sender.participantes_survey to email_sender;
 grant usage on email_sender.participantes_survey_id_participantes_survey_seq to email_sender;

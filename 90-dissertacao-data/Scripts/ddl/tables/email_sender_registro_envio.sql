@@ -29,6 +29,10 @@ alter table email_sender.registro_envio
 add constraint pk_registro_envio
 primary key(id_registro_envio);
 
+CREATE INDEX idx_regenvio_mailpart ON email_sender.registro_envio (email_participante);
+
+CREATE INDEX idx_regenvio_mailpartdtenvio ON email_sender.registro_envio (email_participante, data_envio_email);
+
 -- GRANTS
 grant select, insert, update , delete on email_sender.registro_envio to email_sender;
 grant usage on email_sender.registro_envio_id_registro_envio_seq to email_sender;
