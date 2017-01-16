@@ -38,6 +38,11 @@ alter table email_sender.participantes_survey
 add constraint pk_participantes_survey
 primary key(id_participantes_survey);
 
+alter table email_sender.participantes_survey
+add constraint fk_partsuvey_grupo_particiate
+foreign key(id_grupo_participante)
+references email_sender.grupo_participante(id_grupo_participante);
+
 
 -- INDEX
 CREATE INDEX idx_partsurv_mailpart ON email_sender.participantes_survey (email_participante);
