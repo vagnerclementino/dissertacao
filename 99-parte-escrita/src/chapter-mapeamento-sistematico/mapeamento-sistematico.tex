@@ -624,7 +624,7 @@ desenvolvedor a prioridade da RM~\cite{aljarah2011selecting}.
 
 \paragraph{Classificação da RM}
 Independentemente do tipo e tamanho de um projeto é sempre importante determinar
-qual tipo manutençaõ deverá ser realizada tomando como base o relato de uma RM.
+qual tipo manutenção deverá ser realizada tomando como base o relato de uma RM\@.
 Este processo consiste de forma resumida em classificar uma requisição com base
 em algum esquema de classificação previamente definido. Este esquema pode ser
 classificar em \textit{corretiva, perfectiva, preventiva ou
@@ -723,6 +723,23 @@ modelo estatístico PPM~\cite{malheiros2012source}.
 	Software}
 \label{sub:extensões_com_suporte_a_papeis}
 \todo[inline]{Verificar os artigos com N/A e não especificado}
+Nesta seçãõ apresentamos a classificações dos estudos pelo tipo de papel na
+manutenção de software ao qual a funcionalidade visa dar suporte. Conforme
+exposto anteriormente a definição dos compõem o processo de manter de software
+foi desenvolvido conforme os trabalhos realizados por Polo e
+outros~\cite{Polo1999} e Ihara e outros~\cite{Ihara:2009:AMI:1595808.1595833}\@.
+Com esta modificações é possível acoplar os papéis utilizados neste estudo tanto
+aos processo adotados na indústria e em projetos de código aberto. A
+Figura~\ref{fig:graf_papel_por_artigo} exibe o total de artigos em comparação
+com o papel ao qual funcionalidade proposta visa dar suporte. Como pode ser
+obserdado verificamos um maior número de estudos para os papéis de Agendador e
+Desenvolvedor. Na Figura~\cite{fig:grafico_topico_por_artigo} verificamos uma
+prevalência de estudos com foco na dimensão Processo, em especial nos tópicos
+"Localização de RM Duplicados" e "Atribuição [Triagem] de RM", o que  é natural
+tendo em vista que há um mapeamento o papel desempenhado na manutenação com as
+ativdades desempenhada por aquele papel. Neste sentido, não é de se estraanhar a
+prevalência de estudos para aqueles funções vinculada ao processo de manutençaõ
+de software.
 
 \begin{figure}[htpb]
 	\centering
@@ -732,15 +749,164 @@ modelo estatístico PPM~\cite{malheiros2012source}.
 \end{figure}
 
 \paragraph{Agendador}
+O estudos classificados neste tópico visam dar suporte as atividades de
+Agendador. Esta função têm como principal objetivo atribuição das RM’s
+para o desenvolver mais apto~\cite{banitaan2013decoba}. O processo de atribuição
+de RM's deve ser realizado em acordo com a carga de trabalho do desenvolvedor e
+com a prioridade que foi atribuída à RM~\cite{chawla2015automated}. 
+
+Neste contexto, os estudo têm focado em apresentar soluções de atribuição
+automática~\cite{banitaan2013decoba, shokripour2012automatic,
+	somasundaram2012automatici,Naguib2013, Zhang2014, Zanetti2013}; classifação
+automatizada~\cite{gegick2010identifying,liu2014faceted, behl2014bug,
+	chawla2015automated,tian2015automated}; visualização da
+fila de RM's~\cite{izquierdo2015gila}; clusterização das
+requisições~\cite{liu2014faceted}; determinação do tempo necessário à conclusão
+da RM (time do fix)~\cite{hosseini2012market,
+	Bhattacharya:2011:BTP:1985441.1985472}; sumarização das informações
+contidas na RM~\cite{mani2012ausum}; determinação de RM'S
+duplicadas~\cite{Sun2011, Wu2011a}.
+
+Apesar da lista de artigos apresentada em cada tópico não ser exaustiva, os
+resultados demonstram um foco maior no suporte à atribuição e categorização das
+RM's apresentado soluções automatizadas para estas atividades. Existe
+possivelmente uma crença melhorar a produtividade do processo de manutenção de
+software reduzindo o esforço de encontrar o desenvolvedor mais apto.
+
 \paragraph{Desenvolvedor}
+Ao Desenvelvedor cabe aplicar as ações que irão produzir o resultado
+solicitado/esperado na RM. Os estudos nesta categoria deveriam suportar
+atividades tais como codificação, depuração e testes. 
+
+No suporte ao desenvolvedor verificamos estudos que propõe à atribuição de RM's
+ao conjunto de desenvolvedor, em contrapartidade da tradicional atribuição ao
+único programador~\cite{banitaan2013decoba}, visando da minizar o problemas
+decorrentes à propriedade de código e propiciar um maior nivelamento de
+infomrações entre os membros da equipe. Não obstante, o maior grupo de estudos
+nesta categoria estão relacionados na ajuda ao desenvolvedor de vincular um
+determinado problema do software à sua efetiva origem, ou seja, ao código
+fonte~\cite{corley2011recovering,Wong:2014:BBF:2705615.2706096,
+	Thung:2014:BIT:2635868.2661678,Nguyen:2012:MAR:2393596.2393671,thung2013automatic,
+	Romo:2015:TAT:2745802.2745833}. Neste mesma categoria verificamos estudos
+que dão suporte ao desenvolvedor em classificar à RM que lhe foi atribuida, em
+especial aquelaas que estão realciaondo à questões de segurança do
+sistema~\cite{gegick2010identifying} ou aquelas RM's que possam impedir a
+resolução de outras
+(blocking-bugs)~\cite{ValdiviaGarcia:2014:CPB:2597073.2597099}
+
 \paragraph{Analista de Qualidade}
-\paragraph{Gerente de Requisição de Mudança}
+Cabe ao Analista de qualidade avaliar se uma RM foi solucionada por um
+Desenvolvedor afim de verificar se a RM foi corretamente resolvida. Neste
+sentido, melhorias em FGRM's que visam facilitar as atividades deste papel podem
+estar relacionadas ao processo de teste de software.
+
+De maneira similar ao que ocorre na categoria de Desenvolvedor verificamos uma
+prevalência dos estudos visam determinar uma ligação entre um problema de
+software o código
+fonte~\cite{corley2011recovering,Wong:2014:BBF:2705615.2706096,
+	Thung:2014:BIT:2635868.2661678,Nguyen:2012:MAR:2393596.2393671,thung2013automatic,
+	Romo:2015:TAT:2745802.2745833}. Verificamos ainda estudos que tentam
+predizer a probabilidade que determinada RM será
+reaberta~\cite{xia2015automatic}, o que pode ajudar ao
+Analista de Qualidade na priorização das requisições com alta possibilidade de
+reabertura
+
+\paragraph{Gerente de Requisição de	Mudança}
+O papel que representa esta categoria está vinculdado à gestão do processo de
+manutenção de software, em especial por decidir se uma Requisição de Mudança
+será aceita ou rejeitada. Neste contexto, melhorias relacionadas à classificaçaõ
+quanto ao nível de segurança~\cite{gegick2010identifying, zhang2011bug,
+	ValdiviaGarcia:2014:CPB:2597073.2597099}, identificaçaõ de
+duplicados~\cite{hindle2016contextual, sun2010discriminative,
+	alipour2013contextual, banerjee2012automated}. 
+
+O estudos que fazem parte desta categoria destacam que um considerável
+conhecimento sobre o projeto é necessário bem como  a capacidade de negociação
+com os desenvolvedores e demais partes interessadas são importantes para
+desempenho de papel. Todavia, tendo em vista o esforço e tempo gasto por esta
+tarefa, especialmente quando realizada manualmente, seria importante que as FGRM
+automatizasse algumas destas atividades.
+
 \paragraph{Reportador}
-\paragraph{Lider da Manutenção}
+Conforme discutido anteriormente os dados contidos nas RM'S são fundamentais em
+em diversas abordagens de melhorias da funcionalidades das FGRM. Esta relavância
+ainda é maior nos estudos que fazem uso de técnicas de Recuperação da
+Informação. Neste sentido é importante que as FGRM deêm suporte ao Reportador
+que, na maioria, é primeiro a registrar as informações que serão necessárias à
+solução da RM. 
+
+Muitos dos estudos que fazem parte desta categoria  partem da premissa que
+melhorar a qualidade dos dados na RM é o ponto de partida para tratar outros
+problemas relacionados ao processo de manutenção de
+software~\cite{moran2015auto, Moran:2015:EAA:2786805.2807557, Bettenburg2008a}.
+Neste sentido verificamos estudos para autocompletar as informações fornecidas
+pelo Reportador~\cite{moran2015auto}, suporte a reprodução do
+problema~\cite{Moran:2015:EAA:2786805.2807557}; análise da qualidade da
+informação fornecidade~\cite{Bettenburg2008a, Tu:2014:MQI:2677832.2677844}. Esta
+categoria támbem contempla um estudo que visa detectar que determinada RM já foi
+registrada durante o processo de escrita da mesma~\cite{Thung2014}.
+\paragraph{Líder da Manutenção}
+De forma similiar ao Gerente de Requisição de Mudança as melhorias de
+funcionalidades proposta nesta categoria estão vinculadas à gestão de manter
+software. Conforme o esquema de  classificação de papeis utilizado neste estudo,
+o Líder da Manutenção têm por responsabilidade definir os padrões e
+procedimentos que compõe o processo de manutenção que será utilizado. Para
+ajudar nesta tarefa alguns estudo  vêm propondo melhorar a alocação de Tarefas
+do processo de resolução das Requisições de Mudanças~\cite{netto2010automated}.
+Outros estudos visam mensusar o esforço necessário para solucionar determinada
+RM~\cite{Vijayakumar2014, Nagwani2010}, o que podem ajudar ao Líder no
+planejamento de liberações de novas versões do sistema que está sendo mantido. 
+
 \paragraph{Todos}
+Esta categoria abarca os estudos para o qual a melhoria proposta possui impacto
+positivo para todos os papéis envolvidos na manutenção de software. A definição
+que o foco da melhoria é geral decorre do que foi dito como objetivos dos
+autores dos estudos que fazem parte desta categoria ou ainda por não ser
+possível determinar uma atividade específica sendo beneficiada.
+
+Conforme pode ser observado, os estudos estão relacionados principalmente com a
+melhoria da  visualização das informações contidas nas RM's~\cite{hora2012bug,
+	takama2013application, dal2014bug}. As melhorias podem estar vinculadas a
+questões de usabilidade das ferramentas, como por exemplo a navegabilidade entre
+as RM's~\cite{dal2014bug}. 
 
 \subsection{Ferramentais Estendidas}
 \label{sub:ferrramentas_extendidas}
+
+Conforme verificamos nas seções anteriores diversos estudos vêm sendo propostos
+na literatura com o objetivo de melhorias atividades relacionadas à manutenção
+de software. Não obstante, os nosso resultados demostraram, tomando como base os
+estudos que fazem parte deste mapeamento, que grande parte das melhorias
+propostas não foram implementadas nas FGRM de modo a ser utilizadas ou avaliadas
+pelo profissionais envolvidas em manutenção de software. 
+
+A Figura~\ref{fig:grafico_virou_extensao} apresenta a quantidade de estudos que
+efetivamente foram transformaadas em extensões de funcionalidades de uma FGRM.
+Do total de 64 estudos que foram utilizados neste mapeamento apenas fazem parate
+das funcionalidade de uma FGRM. 
+\todo[inline] {reavaliar a quantidade de estudos}. 
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{chapter-mapeamento-sistematico/img/grafico_virou_extensao.pdf}
+	\caption{Total de estudos que são extensões para FGRM}
+	\label{fig:grafico_virou_extensao}
+\end{figure}
+
+Cabe ressaltar que no escopo de determinado estudo pode não esta prevista a
+efetiva transformação da melhoria proposta de modo a ser utilizada efetivamente
+pelo seu público-alvo, como por exemplo, a criação ou melhoria de uma
+funcionalidade de determinda FGRM. Ademais, naõ está no escopo deste estudo
+avaliar ou discutir a facilidade que as FGRM possuem para criar novas
+funcionalidades ou melhorias as já existentes. Contudo, o nosso entendimento é
+que como um maior número de melhorias proposta na literatura sendo utilizadas
+pelos profissionais envolividos em manutenação de software poderia melhorar a
+qualidade das soluções propostas mediante a reduação da diferença entre o
+estado-da-prática com o estado-da-arte. 
+
+\section{Discussão}
+\label{sec:discussao}
+
 
 \section{Limitações e Ameaças à Validade}
 Questões de pesquisa: É possível que as perguntas de pesquisa definidas possam

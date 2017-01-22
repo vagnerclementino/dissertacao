@@ -17,4 +17,4 @@ clean:
 aspell: $(find . -name \*.tex -print)
 	@for f in $$(find . -name \*.tex -print); do\
 		aspell --encoding="utf-8" -c -t=tex --lang="pt_BR" $$f; \
-	done;	
+	done;
