@@ -295,7 +295,7 @@ Gitlab Issue Tracking System             & Serviço                & -          
 \subsection{Categorização das Ferramentas}
 \label{subsec:categorizacao_ferramentas}
 
-Após a inspeção da documentação e validação dos dados obtivemos um total de 129
+Após a inspeção da documentação e validação dos dados obtivemos um total de 123
 cartões. Nós sistematizamos os cartões manualmente tendo em vista que não
 existem ferramentas ou métodos capazes de automatizar o processo de construção
 de hierarquias. Tendo em vista que nosso objetivo é derivar tópicos a partir do
@@ -303,46 +303,121 @@ conjunto inicial de cartões, optamos por realizar um \textit{ordenamento aberto
 dos cartões.  Naquele tipo de abordagem, os grupos são estabelecidos durante o
 processo de Classificação os cartões em oposição a outra forma de utilização da
 técnica onde a sistematização dos cartões ocorre com base em grupos
-pré-determinados.  Ao final do processo obtivemos os seguintes tópicos:
+pré-determinados.  Ao final do processo obtivemos os seguintes tópicos listados
+a seguir. Nas próximas seções apresentamos as funcionalidades que compõe cada um
+deles.
 
-\begin{itemize}
-	\item Primeiro tópico
-Autentificação de Usuários
-Busca de RM's
-Campos Customizáveis
-Classificação de RM's
-Consistência dos Dados
-Controle de Acesso à RM's
-Detecção de RM's Duplicados
-Estimativa de Esforço
-Fluxo de Trabalho Customizável
-Geração de Relatórios
-Gerenciamento de artefatos
-Gerenciamento de Tarefas
-Gerenciamento de Usuários
-Histórico de Mudanças da RM
-Integração à Sistema de Controle de Versão
-Integração com Documentação
-Integração com Sistemas de Controle de Versão
-Intercionalização
-Interfaces de Entrada
-Interfaces de Notificação
-Métodos de Autentificação
-Plugin API
-Suporte à Multiplos Projetos
-Suporte ao Registro da RM
-Suporte à Unicode
-Suporte Múltiplas Bases de Dados
-Visualização e Monitoramento de RM's
+\begin{enumerate}
+	\item{Busca e Duplicados}
+	\item{Extensão de Funcionalidades}
+	\item{Gerenciamento da Informação}
+	\item{Gerenciamento de Artefatos}
+	\item{Internacionalização da Ferramenta}
+	\item{Processo de Trabalho}
+	\item{Segurança da Informação}
+	\item{Suporte ao Trabalho do Desenvolvedor}
+	\item{Triagem de RM's}
+	\item{Visualização e Monitoramento de RM's}
+\end{enumerate}
 
-\end{itemize}
+\subsubsection{Busca e Duplicados}
+
+Este tópico foi criado para agrupar as funcionalidades relacionadas a busca de
+RM's e a localização de duplicados.
+\subsubsection{Extensão de Funcionalidades}
+
+As funcionalidades que compõem este grupo têm por objetivo extensor o conjunto
+de funcionalidades oferecidas através de uma arquitetura de plugins ou mediante
+o suporte de
+API's\footnote{\url{https://en.wikipedia.org/wiki/Application_programming_interface}}.
+\subsubsection{Gerenciamento da Informação}
+
+Este tópico contempla as funcionalidade que se dedicam ao armazenamento e
+consistência das informações contidas na FGRM.
+\subsubsection{Gerenciamento de Artefatos}
+
+O processo de manutenção de software pode consumir ou gerar diversos artefatos
+estudos de artefatos tais como documentos de requisitos e arquiteturais dos
+software, código fonte, registros (logs ) de teste e assim por
+diante~\cite{cavalcanti2013bug}. Em alguns contextos, devido ao volume de
+artefato gerados, é importante que a FGRM dê suporte para armazenamento e
+recuperação deste ativos do processo de software.
+
+\subsubsection{Internacionalização da Ferramenta}
+
+Neste tópicos estão as características das FGRM que ajudam no desenvolvimento
+e/ou adaptação de um produto, em geral softwares de computadores, para uma
+língua e cultura de um país.
+
+\subsubsection{Processo de Trabalho}
+ Este ramo do esquema de classificação proposto foi criada para
+ agrupar as funcionalidades que visão dar suporte ao processo de manter
+ software.
+
+\subsubsection{Segurança da Informação}
+
+Neste grupo estão as características de uma FGRM que diretamente relacionada com
+proteção de um conjunto de informações, no sentido de preservar o valor que
+possuem para um indivíduo ou uma organização.
+
+\subsubsection{Suporte ao Trabalho do Desenvolvedor}
+
+Este tópico contém ideias sobre como o trabalho para desenvolvedores pode ser
+reduzido, seja por melhor suporte de ferramentas (por exemplo, configuração
+automática de espaços de trabalho) ou relatórios de bugs melhores com mais
+dados.
+
+\subsubsection{Triagem de RM's}
+
+Este tópico descreve comentários sobre o processo de triagem de RM's. O processo
+de atribuição de RM, também conhecido como triagem, possui como principal
+objetivo encontrar o desenvolvedor mais capacitado para manipular uma dada RM. 
+
+\subsubsection{Visualização e Monitoramento de RM's}
+
+Em diversos contextos, devido ao volume das RM's, é importante que as partes
+interessadas na manutenção de software, possam visualizar e monitorar a situação
+das requisições que estão analisadas em determinado período.
 
 \section{Discussão}
 \label{sec:discussao}
 
+Classificar envolve categorização, e há uma literatura sofisticada sobre
+categorização, taxonomia e semântica, todas as quais são potencialmente
+relevantes~\cite{rugg2005sorting}
+
+As técnicas de triagem são uma parte inestimável Engenheiro de conhecimento ou
+kit de ferramentas do engenheiro de requisitos.  Eles são simples de usar e
+combinam a flexibilidade de uso com um formalismo de representação altamente
+formalizado, preenchendo a lacuna entre as técnicas qualitativas e
+quantitativas.
+
 \section{Ameças à Validade}
 \label{sec:ameacas_a_validade}
 
+A generalidade dos resultados é muitas vezes sacrificada pela riqueza e
+Complexidade, refletindo um conflito inerente entre E validade externa [19].
+Dada a disparidade entre Taxonomias de mudanças publicadas e o debate entre os
+Participantes deste estudo, pode-se argumentar que a mudança Classificação é,
+por natureza, uma avaliação subjetiva.
+
+Motivado, no entanto, pelo potencial de melhoria Exigências mudança visibilidade
+e gestão, modelagem fontes de mudança é uma iniciativa digna. A abordagem
+colaborativa adotada aqui levou a um modelo internamente utilizável e reflete a
+recomendação de Sjoberg [19] de "formular um escopo relativamente estreito para
+começar e, em seguida, estendê-lo gradualmente". Portanto, enquanto não há
+reivindicações de validade externa pode ser feita, Foram extraídas de um
+Variedade de estudos empiricamente baseados, é plausível Os resultados se
+aplicam a contextos além dos limites deste estudo. As construções iniciais são
+fornecidas aqui, juntamente com a descrição dos métodos de tal forma que deve
+ser possível replicar este estudo. Dada a natureza colaborativa desta pesquisa,
+e sua aplicabilidade imediata, ela tem um alto nível de relevância.
 
 \section{Resumo do Capítulo}
 \label{sec:resumo_do_capitulo}
+Neste artigo apresentamos os resultados de uma análise quantitativa sobre o
+feedback recebido por 175 colaboradores e usuários dos projetos APACHE, ECLIPSE,
+MOZILLA. O resultado desta discussão é uma lista de sete recomendações para o
+projeto de novos sistemas de rastreamento de bugs. Em nosso trabalho futuro,
+iremos construir protótipos de projeto para tais sistemas e testar sua
+usabilidade.

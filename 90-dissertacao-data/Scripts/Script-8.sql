@@ -1,0 +1,3 @@
+select distinct t.topico_funcionalidade
+from caracterizacao_its.temp_cartoes_ordenados t 
+order by t.topico_funcionalidade
