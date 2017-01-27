@@ -1,0 +1,32 @@
+Subject: Returned mail: Requested action not taken: mailbox unavailable
+From: Mail Delivery Subsystem <MAILER-DAEMON@bigfoot.com>
+Date: 22-11-2016 11:22
+To: <<vagnercs@dcc.ufmg.br>>
+
+The original message was received at Tue, 22 Nov 2016 05:22:39 -0800
+from LITEMAIL51.bigfoot.com [192.168.12.51]
+
+
+
+   ----- The following addresses had permanent fatal errors -----
+<shawnthomas00@yahoo.com>
+
+   ----- Transcript of session follows -----
+<<< 550 Too many retries.
+
+
+
+Reporting-MTA: dns; litemail51.bigfoot.com
+Arrival-Date: Tue, 22 Nov 2016 05:22:39 -0800
+
+Final-Recipient: RFC822; <shawnthomas00@yahoo.com>
+Action: failed
+Status: 5.1.1
+Remote-MTA: DNS; LITEMAIL51
+Diagnostic-Code: SMTP; 550 Too many retries.
+Last-Attempt-Date: Tue, 22 Nov 2016 05:22:39 -0800
+
+
+
+Attachments:
+Part 1.3	794 bytes

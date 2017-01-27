@@ -1,0 +1,55 @@
+Subject: Delayed Mail (still being retried)
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 16-11-2016 05:23
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host smtp.dcc.ufmg.br.
+
+####################################################################
+# THIS IS A WARNING ONLY.  YOU DO NOT NEED TO RESEND YOUR MESSAGE. #
+####################################################################
+
+Your message could not be delivered for more than 2 hour(s).
+It will be retried until it is 4 day(s) old.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<mclark@stash.nclarkdev.com>: host vmail.nclarkdev.com[158.69.201.234] said:
+    454 4.7.1 <mclark@stash.nclarkdev.com>: Relay access denied (in reply to
+    RCPT TO command)
+
+
+
+Reporting-MTA: dns; smtp.dcc.ufmg.br
+X-Postfix-Queue-ID: CB2D5BDBEE
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Wed, 16 Nov 2016 02:14:39 -0200 (BRST)
+
+Final-Recipient: rfc822; mclark@stash.nclarkdev.com
+Original-Recipient: rfc822;mclark@stash.nclarkdev.com
+Action: delayed
+Status: 4.7.1
+Remote-MTA: dns; vmail.nclarkdev.com
+Diagnostic-Code: smtp; 454 4.7.1 <mclark@stash.nclarkdev.com>: Relay access
+    denied
+Will-Retry-Until: Sun, 20 Nov 2016 02:14:39 -0200 (BRST)
+
+
+
+Return-Path: <vagnercs@dcc.ufmg.br>
+Received: from lelis (unknown [200.146.242.53])
+	by smtp.dcc.ufmg.br (Postfix) with ESMTPSA id CB2D5BDBEE;
+	Wed, 16 Nov 2016 02:14:39 -0200 (BRST)
+Content-Type: multipart/mixed; boundary="===============0129954024161424573=="
+MIME-Version: 1.0
+Date: Wed, 16 Nov 2016 02:14:39 -0200
+Subject: Survey about Issue Tracking System
+From: Vagner Clementino <vagnercs@dcc.ufmg.br>
+To: mclark@stash.nclarkdev.com
+Message-Id: <20161116041439.CB2D5BDBEE@smtp.dcc.ufmg.br>
+

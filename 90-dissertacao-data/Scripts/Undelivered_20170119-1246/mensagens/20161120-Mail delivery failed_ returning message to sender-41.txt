@@ -1,0 +1,54 @@
+Subject: Mail delivery failed: returning message to sender
+From: Mail Delivery System <Mailer-Daemon@ns3-999.999servers.com>
+Date: 20-11-2016 21:32
+To: vagnercs@dcc.ufmg.br
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  sa@sysaxiom.com
+    LMTP error after end of data: 452 4.2.2 <sa@sysaxiom.com> Mailbox is full / Blocks limit exceeded / Inode limit exceeded:
+    retry timeout exceeded
+  allaudeen.s@gmail.com
+    (ultimately generated from sa@sysaxiom.com)
+    Domain sysaxiom.com has outgoing email disabled.
+
+
+
+Reporting-MTA: dns; ns3-999.999servers.com
+
+Action: failed
+Final-Recipient: rfc822;allaudeen.s@gmail.com
+Status: 5.0.0
+
+Action: failed
+Final-Recipient: rfc822;sa@sysaxiom.com
+Status: 5.0.0
+
+
+ForwardedMessage.eml
+Subject:
+Survey about Issue Tracking System
+From:
+Vagner Clementino <vagnercs@dcc.ufmg.br>
+Date:
+20-11-2016 21:32
+To:
+sa@sysaxiom.com
+
+Dear Sulthan Allaudeen!
+
+I am a master candidate in Federal University of Minas Gerais in Brazil and I am conducting research about Issue Tracking System.
+
+It will be great for us to count with your participation. You was chosen because your relevant participation in Stackoverflow's discussion.
+
+This survey will be used in a research in Software Engineering. It take about 10 minutes. Link to form https://goo.gl/forms/eonOsVwc5p4BzSP52
+
+For questions please email to vagnercs@dcc.ufmg.br or access my homepage on homepages.dcc.ufmg.br/~vagnercs.
+
+Thanks in advanced.
+
+Attachments:
+ForwardedMessage.eml	2,7 KB

@@ -1,0 +1,53 @@
+Subject: Delayed Mail (still being retried)
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 21-11-2016 02:13
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host smtp.dcc.ufmg.br.
+
+####################################################################
+# THIS IS A WARNING ONLY.  YOU DO NOT NEED TO RESEND YOUR MESSAGE. #
+####################################################################
+
+Your message could not be delivered for more than 2 hour(s).
+It will be retried until it is 4 day(s) old.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<support@mdesdev.net>: connect to mdesdev.net[104.130.124.96]:25: Operation
+    timed out
+
+
+
+Reporting-MTA: dns; smtp.dcc.ufmg.br
+X-Postfix-Queue-ID: F397CBE6B0
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Sun, 20 Nov 2016 23:44:08 -0200 (BRST)
+
+Final-Recipient: rfc822; support@mdesdev.net
+Original-Recipient: rfc822;support@mdesdev.net
+Action: delayed
+Status: 4.4.1
+Diagnostic-Code: X-Postfix; connect to mdesdev.net[104.130.124.96]:25:
+    Operation timed out
+Will-Retry-Until: Thu, 24 Nov 2016 23:44:08 -0200 (BRST)
+
+
+
+Return-Path: <vagnercs@dcc.ufmg.br>
+Received: from aws-s01-prd (ec2-52-67-130-34.sa-east-1.compute.amazonaws.com [52.67.130.34])
+	by smtp.dcc.ufmg.br (Postfix) with ESMTPSA id F397CBE6B0;
+	Sun, 20 Nov 2016 23:44:08 -0200 (BRST)
+Content-Type: multipart/mixed; boundary="===============8081912442225778431=="
+MIME-Version: 1.0
+Date: Sun, 20 Nov 2016 23:44:08 -0200
+Subject: Survey about Issue Tracking System
+From: Vagner Clementino <vagnercs@dcc.ufmg.br>
+To: support@mdesdev.net
+Message-Id: <20161121014408.F397CBE6B0@smtp.dcc.ufmg.br>
+

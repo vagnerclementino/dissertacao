@@ -1,0 +1,61 @@
+Subject: Undelivered Mail Returned to Sender
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 21-11-2016 01:15
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host smtp.dcc.ufmg.br.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<join@spritekitalliance.com>: host spritekitalliance.com[173.236.171.178] said:
+    554 5.7.1 <join@spritekitalliance.com>: Recipient address rejected: Access
+    denied (in reply to RCPT TO command)
+
+
+
+Reporting-MTA: dns; smtp.dcc.ufmg.br
+X-Postfix-Queue-ID: 4E4AABE67E
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Mon, 21 Nov 2016 01:15:52 -0200 (BRST)
+
+Final-Recipient: rfc822; join@spritekitalliance.com
+Original-Recipient: rfc822;join@spritekitalliance.com
+Action: failed
+Status: 5.7.1
+Remote-MTA: dns; spritekitalliance.com
+Diagnostic-Code: smtp; 554 5.7.1 <join@spritekitalliance.com>: Recipient
+    address rejected: Access denied
+
+
+ForwardedMessage.eml
+Subject:
+Survey about Issue Tracking System
+From:
+Vagner Clementino <vagnercs@dcc.ufmg.br>
+Date:
+21-11-2016 01:15
+To:
+join@spritekitalliance.com
+
+Dear Skyler Lauren!
+
+I am a master candidate in Federal University of Minas Gerais in Brazil and I am conducting research about Issue Tracking System.
+
+It will be great for us to count with your participation. You was chosen because your relevant participation in Stackoverflow's discussion.
+
+This survey will be used in a research in Software Engineering. It take about 10 minutes. Link to form https://goo.gl/forms/eonOsVwc5p4BzSP52
+
+For questions please email to vagnercs@dcc.ufmg.br or access my homepage on homepages.dcc.ufmg.br/~vagnercs.
+
+Thanks in advanced.
+
+Attachments:
+ForwardedMessage.eml	2,5 KB

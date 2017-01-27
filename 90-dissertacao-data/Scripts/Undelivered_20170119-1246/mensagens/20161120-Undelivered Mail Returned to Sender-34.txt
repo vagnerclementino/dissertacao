@@ -1,0 +1,61 @@
+Subject: Undelivered Mail Returned to Sender
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 20-11-2016 21:24
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host diamante.dcc.ufmg.br.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<me@dcc.ufmg.br>: host citrino.dcc.ufmg.br[150.164.0.68] said: 550 5.1.1
+    <me@dcc.ufmg.br>: Recipient address rejected: User unknown in local
+    recipient table (in reply to RCPT TO command)
+
+
+
+Reporting-MTA: dns; diamante.dcc.ufmg.br
+X-Postfix-Queue-ID: ADB07FF2AD
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Sun, 20 Nov 2016 21:24:07 -0200 (BRST)
+
+Final-Recipient: rfc822; me@dcc.ufmg.br
+Original-Recipient: rfc822;me
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; citrino.dcc.ufmg.br
+Diagnostic-Code: smtp; 550 5.1.1 <me@dcc.ufmg.br>: Recipient address rejected:
+    User unknown in local recipient table
+
+
+ForwardedMessage.eml
+Subject:
+Survey about Issue Tracking System
+From:
+Vagner Clementino <vagnercs@dcc.ufmg.br>
+Date:
+20-11-2016 21:24
+To:
+me@dcc.ufmg.br
+
+Dear Egor Pavlikhin!
+
+I am a master candidate in Federal University of Minas Gerais in Brazil and I am conducting research about Issue Tracking System.
+
+It will be great for us to count with your participation. You was chosen because your relevant participation in Stackoverflow's discussion.
+
+This survey will be used in a research in Software Engineering. It take about 10 minutes. Link to form https://goo.gl/forms/eonOsVwc5p4BzSP52
+
+For questions please email to vagnercs@dcc.ufmg.br or access my homepage on homepages.dcc.ufmg.br/~vagnercs.
+
+Thanks in advanced.
+
+Attachments:
+ForwardedMessage.eml	3,3 KB

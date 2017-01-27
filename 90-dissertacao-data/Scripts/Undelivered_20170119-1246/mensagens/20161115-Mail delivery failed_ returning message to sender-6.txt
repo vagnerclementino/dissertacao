@@ -1,0 +1,47 @@
+Subject: Mail delivery failed: returning message to sender
+From: Mail Delivery System <Mailer-Daemon@iix87.rumahweb.com>
+Date: 15-11-2016 19:31
+To: vagnercs@dcc.ufmg.br
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  supriyantomaftuh@yahoo.com
+    (ultimately generated from supriyantomaftuh@companyontheworldsupriyantomaftuh.com)
+    Domain companyontheworldsupriyantomaftuh.com has outgoing email disabled.
+
+
+
+Reporting-MTA: dns; iix87.rumahweb.com
+
+Action: failed
+Final-Recipient: rfc822;supriyantomaftuh@yahoo.com
+Status: 5.0.0
+
+
+ForwardedMessage.eml
+Subject:
+Survey about Issue Tracking System
+From:
+Vagner Clementino <vagnercs@dcc.ufmg.br>
+Date:
+15-11-2016 19:30
+To:
+supriyantomaftuh@companyontheworldsupriyantomaftuh.com
+
+Dear supriyanto maftuh,st!
+
+I am a master candidate in Federal University of Minas Gerais in Brazil and I am conducting research about Issue Tracking System.
+
+It will be great for us to count with your participation. You was chosen because your relevant contribution in Python's Bug Tracking System - bugs.python.org.
+
+This survey will be used in a research in Software Engineering. It take about 10 minutes. Link to form https://goo.gl/forms/eonOsVwc5p4BzSP52
+
+For questions please email to vagnercs@dcc.ufmg.br or access my homepage on homepages.dcc.ufmg.br/~vagnercs.
+
+Thanks in advanced.
+
+Attachments:
+ForwardedMessage.eml	4,3 KB

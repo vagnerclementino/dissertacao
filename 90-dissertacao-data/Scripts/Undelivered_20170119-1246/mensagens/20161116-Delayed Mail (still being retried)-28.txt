@@ -1,0 +1,53 @@
+Subject: Delayed Mail (still being retried)
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 16-11-2016 04:23
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host smtp.dcc.ufmg.br.
+
+####################################################################
+# THIS IS A WARNING ONLY.  YOU DO NOT NEED TO RESEND YOUR MESSAGE. #
+####################################################################
+
+Your message could not be delivered for more than 2 hour(s).
+It will be retried until it is 4 day(s) old.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<drew@drewhunter.net>: Host or domain name not found. Name service error for
+    name=drewhunter.net type=MX: Host not found, try again
+
+
+
+Reporting-MTA: dns; smtp.dcc.ufmg.br
+X-Postfix-Queue-ID: 28A79B16D9
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Wed, 16 Nov 2016 01:57:25 -0200 (BRST)
+
+Final-Recipient: rfc822; drew@drewhunter.net
+Original-Recipient: rfc822;drew@drewhunter.net
+Action: delayed
+Status: 4.4.3
+Diagnostic-Code: X-Postfix; Host or domain name not found. Name service error
+    for name=drewhunter.net type=MX: Host not found, try again
+Will-Retry-Until: Sun, 20 Nov 2016 01:57:25 -0200 (BRST)
+
+
+
+Return-Path: <vagnercs@dcc.ufmg.br>
+Received: from lelis (unknown [200.146.242.53])
+	by smtp.dcc.ufmg.br (Postfix) with ESMTPSA id 28A79B16D9;
+	Wed, 16 Nov 2016 01:57:25 -0200 (BRST)
+Content-Type: multipart/mixed; boundary="===============2527481363121988207=="
+MIME-Version: 1.0
+Date: Wed, 16 Nov 2016 01:57:24 -0200
+Subject: Survey about Issue Tracking System
+From: Vagner Clementino <vagnercs@dcc.ufmg.br>
+To: drew@drewhunter.net
+Message-Id: <20161116035725.28A79B16D9@smtp.dcc.ufmg.br>
+

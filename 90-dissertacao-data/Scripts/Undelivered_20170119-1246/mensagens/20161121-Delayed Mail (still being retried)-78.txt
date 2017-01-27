@@ -1,0 +1,53 @@
+Subject: Delayed Mail (still being retried)
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 21-11-2016 02:28
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host smtp.dcc.ufmg.br.
+
+####################################################################
+# THIS IS A WARNING ONLY.  YOU DO NOT NEED TO RESEND YOUR MESSAGE. #
+####################################################################
+
+Your message could not be delivered for more than 2 hour(s).
+It will be retried until it is 4 day(s) old.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<se@gorelative.com>: connect to gorelative.com[54.72.9.51]:25: Operation timed
+    out
+
+
+
+Reporting-MTA: dns; smtp.dcc.ufmg.br
+X-Postfix-Queue-ID: 9CA7AB2024
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Mon, 21 Nov 2016 00:02:16 -0200 (BRST)
+
+Final-Recipient: rfc822; se@gorelative.com
+Original-Recipient: rfc822;se@gorelative.com
+Action: delayed
+Status: 4.4.1
+Diagnostic-Code: X-Postfix; connect to gorelative.com[54.72.9.51]:25: Operation
+    timed out
+Will-Retry-Until: Fri, 25 Nov 2016 00:02:16 -0200 (BRST)
+
+
+
+Return-Path: <vagnercs@dcc.ufmg.br>
+Received: from aws-s01-prd (ec2-52-67-130-34.sa-east-1.compute.amazonaws.com [52.67.130.34])
+	by smtp.dcc.ufmg.br (Postfix) with ESMTPSA id 9CA7AB2024;
+	Mon, 21 Nov 2016 00:02:16 -0200 (BRST)
+Content-Type: multipart/mixed; boundary="===============2804959519458963605=="
+MIME-Version: 1.0
+Date: Mon, 21 Nov 2016 00:02:16 -0200
+Subject: Survey about Issue Tracking System
+From: Vagner Clementino <vagnercs@dcc.ufmg.br>
+To: se@gorelative.com
+Message-Id: <20161121020216.9CA7AB2024@smtp.dcc.ufmg.br>
+

@@ -1,0 +1,49 @@
+Subject: Re: Survey about Issue Tracking System (Action Requested)
+From: boxbe-notifications@boxbe.com
+Date: 20-11-2016 21:46
+To: Vagner Clementino <vagnercs@dcc.ufmg.br>
+Reply-to: enamdanish@gmail.com
+
+Hello Vagner Clementino,
+
+Your message "Survey about Issue Tracking System" to me was waitlisted.
+
+Get your message to my inbox by clicking the following link.
+
+CLICK HERE
+
+Thank you,
+enamdanish@gmail.com
+
+P.S. ...you'll only have to do this once. Future emails will appear immediately in my inbox.
+
+
+Boxbe
+Supercharge your Email
+Boxbe, Inc. | 65 Broadway, Suite 601 | New York, NY 10006
+Privacy Policy | Unsubscribe
+
+
+Reporting-MTA: dns; boxbe.com
+Remote-MTA: dns; yahoo.com
+Action: delayed
+Arrival-Date: Sun, 20 Nov 2016 15:46:19 -0800 (PST)
+
+Final-Recipient: rfc822; enamdanish@gmail.com
+Diagnostic-Code: X-Boxbe-Notice; message given low priority. To fix, see accompanying notice.
+Status: 4.7.0
+
+
+ForwardedMessage.eml
+Subject:
+Survey about Issue Tracking System
+From:
+Vagner Clementino <vagnercs@dcc.ufmg.br>
+Date:
+20-11-2016 21:46
+To:
+enamdanish@gmail.com
+
+
+Attachments:
+ForwardedMessage.eml	1,3 KB
