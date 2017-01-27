@@ -1,0 +1,49 @@
+Subject: Delivery Status Notification (Failure)
+From: postmaster@hotmail.com
+Date: 16-11-2016 00:15
+To: vagnercs@dcc.ufmg.br
+
+This is an automatically generated Delivery Status Notification.
+
+Delivery to the following recipients failed.
+
+       'mihai.matei@outlook.com
+
+
+
+
+
+Reporting-MTA: dns;BAY004-MC1F32.hotmail.com
+Received-From-MTA: dns;smtp.dcc.ufmg.br
+Arrival-Date: Tue, 15 Nov 2016 18:15:44 -0800
+
+Final-Recipient: rfc822;'mihai.matei@outlook.com
+Action: failed
+Status: 5.5.0
+Diagnostic-Code: smtp;550 Requested action not taken: mailbox unavailable (1793817599:4278:-2147467259)
+
+
+ForwardedMessage.eml
+Subject:
+Survey about Issue Tracking System
+From:
+Vagner Clementino <vagnercs@dcc.ufmg.br>
+Date:
+16-11-2016 00:15
+To:
+'mihai.matei@outlook.com
+
+Dear Matei Mihai!
+
+I am a master candidate in Federal University of Minas Gerais in Brazil and I am conducting research about Issue Tracking System.
+
+It will be great for us to count with your participation. You was chosen because your relevant participation in Stackoverflow's discussion.
+
+This survey will be used in a research in Software Engineering. It take about 10 minutes. Link to form https://goo.gl/forms/eonOsVwc5p4BzSP52
+
+For questions please email to vagnercs@dcc.ufmg.br or access my homepage on homepages.dcc.ufmg.br/~vagnercs.
+
+Thanks in advanced.
+
+Attachments:
+ForwardedMessage.eml	2,6 KB

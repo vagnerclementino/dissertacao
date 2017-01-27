@@ -1,0 +1,67 @@
+Subject: Undelivered Mail Returned to Sender
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 18-01-2017 01:23
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host smtp.dcc.ufmg.br.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<vagner.clementino4@gmail.com>: host
+    gmail-smtp-in.l.google.com[2800:3f0:4003:c01::1a] said: 550-5.1.1 The email
+    account that you tried to reach does not exist. Please try 550-5.1.1
+    double-checking the recipient's email address for typos or 550-5.1.1
+    unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser q14si18080006qkl.316 - gsmtp
+    (in reply to RCPT TO command)
+
+
+
+Reporting-MTA: dns; smtp.dcc.ufmg.br
+X-Postfix-Queue-ID: 6F15BC5826
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Wed, 18 Jan 2017 01:23:03 -0200 (BRST)
+
+Final-Recipient: rfc822; vagner.clementino4@gmail.com
+Original-Recipient: rfc822;vagner.clementino4@gmail.com
+Action: failed
+Status: 5.1.1
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does
+    not exist. Please try 550-5.1.1 double-checking the recipient's email
+    address for typos or 550-5.1.1 unnecessary spaces. Learn more at 550 5.1.1
+    https://support.google.com/mail/?p=NoSuchUser q14si18080006qkl.316 - gsmtp
+
+
+ForwardedMessage.eml
+Subject:
+Survey about Issue Tracking System
+From:
+Vagner Clementino <vagnercs@dcc.ufmg.br>
+Date:
+18-01-2017 01:23
+To:
+vagner.clementino4@gmail.com
+
+Understanding and Improving the Features of the Change Request Management Systems
+
+Dear Vagner Clementino!
+
+I’m Vagner Clementino (homepages.dcc.ufmg.br/~vagnercs), Master Student at Federal University of Minas Gerais, Brazil. I’m conducting a research, supervised by Prof. Rodolfo Resende - homepages.dcc.ufmg.br/~rodolfo concerned with improvements in Issue Tracking System. As part of them, we planned and executed a survey aiming at to reach a large-scale population of researchers/practitioners interested on to improve the features of the Issue Tracking Systems. Based on your area of interest, we kindly invite you to take part in the following survey:
+https://goo.gl/AHlMJA
+
+You was chosen because your relevant/participation contribution in Teste Vagner - teste.com. Your opinion is essential to strength our findings. Please, help us accordingly your possibilities by answering this survey until January 22th. As soon as we conclude data analysis, we will share the results with all participants and the software engineering community. If you have already fulfilled this questionnaire, please ignore this email.
+
+Thanks in advance,
+Vagner Clementino
+
+Attachments:
+ForwardedMessage.eml	4,2 KB

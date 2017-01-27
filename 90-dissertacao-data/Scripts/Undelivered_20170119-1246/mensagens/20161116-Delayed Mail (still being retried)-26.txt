@@ -1,0 +1,53 @@
+Subject: Delayed Mail (still being retried)
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 16-11-2016 00:23
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host smtp.dcc.ufmg.br.
+
+####################################################################
+# THIS IS A WARNING ONLY.  YOU DO NOT NEED TO RESEND YOUR MESSAGE. #
+####################################################################
+
+Your message could not be delivered for more than 2 hour(s).
+It will be retried until it is 4 day(s) old.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<mark@isabelrobson.com>: connect to
+    beta.hostedsecurity.biz[213.254.204.146]:25: No route to host
+
+
+
+Reporting-MTA: dns; smtp.dcc.ufmg.br
+X-Postfix-Queue-ID: 82242BDC09
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Tue, 15 Nov 2016 21:57:49 -0200 (BRST)
+
+Final-Recipient: rfc822; mark@isabelrobson.com
+Original-Recipient: rfc822;mark@isabelrobson.com
+Action: delayed
+Status: 4.4.1
+Diagnostic-Code: X-Postfix; connect to
+    beta.hostedsecurity.biz[213.254.204.146]:25: No route to host
+Will-Retry-Until: Sat, 19 Nov 2016 21:57:49 -0200 (BRST)
+
+
+
+Return-Path: <vagnercs@dcc.ufmg.br>
+Received: from lelis (unknown [200.146.242.53])
+	by smtp.dcc.ufmg.br (Postfix) with ESMTPSA id 82242BDC09;
+	Tue, 15 Nov 2016 21:57:49 -0200 (BRST)
+Content-Type: multipart/mixed; boundary="===============7026689056198511624=="
+MIME-Version: 1.0
+Date: Tue, 15 Nov 2016 21:57:48 -0200
+Subject: Survey about Issue Tracking System
+From: Vagner Clementino <vagnercs@dcc.ufmg.br>
+To: mark@isabelrobson.com
+Message-Id: <20161115235749.82242BDC09@smtp.dcc.ufmg.br>
+

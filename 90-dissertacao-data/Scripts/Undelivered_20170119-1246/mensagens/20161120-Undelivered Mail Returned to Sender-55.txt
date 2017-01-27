@@ -1,0 +1,63 @@
+Subject: Undelivered Mail Returned to Sender
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 20-11-2016 23:34
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host smtp.dcc.ufmg.br.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<an.shreekrishna@yahoo.com>: host mta5.am0.yahoodns.net[98.136.217.203] said:
+    554 delivery error: dd This user doesn't have a yahoo.com account
+    (an.shreekrishna@yahoo.com) [0] - mta1416.mail.gq1.yahoo.com (in reply to
+    end of DATA command)
+
+
+
+Reporting-MTA: dns; smtp.dcc.ufmg.br
+X-Postfix-Queue-ID: 33FC6BE6A6
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Sun, 20 Nov 2016 23:34:04 -0200 (BRST)
+
+Final-Recipient: rfc822; an.shreekrishna@yahoo.com
+Original-Recipient: rfc822;an.shreekrishna@yahoo.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mta5.am0.yahoodns.net
+Diagnostic-Code: smtp; 554 delivery error: dd This user doesn't have a
+    yahoo.com account (an.shreekrishna@yahoo.com) [0] -
+    mta1416.mail.gq1.yahoo.com
+
+
+ForwardedMessage.eml
+Subject:
+Survey about Issue Tracking System
+From:
+Vagner Clementino <vagnercs@dcc.ufmg.br>
+Date:
+20-11-2016 23:34
+To:
+an.shreekrishna@yahoo.com
+
+Dear Shree Krishna!
+
+I am a master candidate in Federal University of Minas Gerais in Brazil and I am conducting research about Issue Tracking System.
+
+It will be great for us to count with your participation. You was chosen because your relevant participation in Stackoverflow's discussion.
+
+This survey will be used in a research in Software Engineering. It take about 10 minutes. Link to form https://goo.gl/forms/eonOsVwc5p4BzSP52
+
+For questions please email to vagnercs@dcc.ufmg.br or access my homepage on homepages.dcc.ufmg.br/~vagnercs.
+
+Thanks in advanced.
+
+Attachments:
+ForwardedMessage.eml	2,5 KB

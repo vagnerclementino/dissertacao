@@ -1,0 +1,89 @@
+Subject: Undelivered Mail Returned to Sender
+From: MAILER-DAEMON@dcc.ufmg.br (Mail Delivery System)
+Date: 20-11-2016 22:55
+To: vagnercs@dcc.ufmg.br
+
+This is the mail system at host smtp.dcc.ufmg.br.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<buffen@t-online.de>: host mx00.t-online.de[194.25.134.8] said: 550-5.7.0
+    Message considered as spam or virus, rejected 550-5.7.0 Your IP:
+    150.164.0.150 550-5.7.0 Mailhost: mailin57.aul.t-online.de 550-5.7.0
+    Timestamp: 2016-11-21T00:55:50Z 550-5.7.0 Expurgate-ID:
+    149288::1479689750-00001AE1-BB23D283/7/0 550-5.7.0 Authenticator:
+    5B423938E8F2E8CE37F5FB83F2B8EC78B6972700CD95E67A3CA4F4029330FD07CF59C863
+    550-5.7.0  550-5.7.0 Your message has been rejected due to spam or virus
+    classification. 550-5.7.0 If you feel this is inapplicable, please report
+    the above error codes 550-5.7.0 back to FPR@RX.T-ONLINE.DE to help us fix
+    possible misclassification. 550-5.7.0 We apologize for any inconvenience
+    and thank you for your assistance! 550-5.7.0  550-5.7.0 Die Annahme Ihrer
+    Nachricht wurde abgelehnt, da sie als Spam oder 550-5.7.0 Virus eingestuft
+    wurde. Sollten Sie dies als unzutreffend ansehen, 550-5.7.0 senden Sie
+    bitte obige Fehlercodes an FPR@RX.T-ONLINE.DE, damit wir 550-5.7.0 die
+    Klassifizierung untersuchen koennen. Wir entschuldigen uns fuer 550 5.7.0
+    etwaige Unannehmlichkeiten und bedanken uns f??r Ihre Unterstuetzung! (in
+    reply to end of DATA command)
+
+
+
+Reporting-MTA: dns; smtp.dcc.ufmg.br
+X-Postfix-Queue-ID: A89A7BE6B9
+X-Postfix-Sender: rfc822; vagnercs@dcc.ufmg.br
+Arrival-Date: Sun, 20 Nov 2016 22:55:47 -0200 (BRST)
+
+Final-Recipient: rfc822; buffen@t-online.de
+Original-Recipient: rfc822;buffen@t-online.de
+Action: failed
+Status: 5.7.0
+Remote-MTA: dns; mx00.t-online.de
+Diagnostic-Code: smtp; 550-5.7.0 Message considered as spam or virus, rejected
+    550-5.7.0 Your IP: 150.164.0.150 550-5.7.0 Mailhost:
+    mailin57.aul.t-online.de 550-5.7.0 Timestamp: 2016-11-21T00:55:50Z
+    550-5.7.0 Expurgate-ID: 149288::1479689750-00001AE1-BB23D283/7/0 550-5.7.0
+    Authenticator:
+    5B423938E8F2E8CE37F5FB83F2B8EC78B6972700CD95E67A3CA4F4029330FD07CF59C863
+    550-5.7.0  550-5.7.0 Your message has been rejected due to spam or virus
+    classification. 550-5.7.0 If you feel this is inapplicable, please report
+    the above error codes 550-5.7.0 back to FPR@RX.T-ONLINE.DE to help us fix
+    possible misclassification. 550-5.7.0 We apologize for any inconvenience
+    and thank you for your assistance! 550-5.7.0  550-5.7.0 Die Annahme Ihrer
+    Nachricht wurde abgelehnt, da sie als Spam oder 550-5.7.0 Virus eingestuft
+    wurde. Sollten Sie dies als unzutreffend ansehen, 550-5.7.0 senden Sie
+    bitte obige Fehlercodes an FPR@RX.T-ONLINE.DE, damit wir 550-5.7.0 die
+    Klassifizierung untersuchen koennen. Wir entschuldigen uns fuer 550 5.7.0
+    etwaige Unannehmlichkeiten und bedanken uns f??r Ihre Unterstuetzung!
+
+
+ForwardedMessage.eml
+Subject:
+Survey about Issue Tracking System
+From:
+Vagner Clementino <vagnercs@dcc.ufmg.br>
+Date:
+20-11-2016 22:55
+To:
+buffen@t-online.de
+
+Dear Bernd Buffen!
+
+I am a master candidate in Federal University of Minas Gerais in Brazil and I am conducting research about Issue Tracking System.
+
+It will be great for us to count with your participation. You was chosen because your relevant participation in Stackoverflow's discussion.
+
+This survey will be used in a research in Software Engineering. It take about 10 minutes. Link to form https://goo.gl/forms/eonOsVwc5p4BzSP52
+
+For questions please email to vagnercs@dcc.ufmg.br or access my homepage on homepages.dcc.ufmg.br/~vagnercs.
+
+Thanks in advanced.
+
+Attachments:
+ForwardedMessage.eml	2,4 KB
