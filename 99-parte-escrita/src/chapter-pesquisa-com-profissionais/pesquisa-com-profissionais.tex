@@ -17,7 +17,7 @@ participantes respondem a perguntas ou declarações que foram desenvolvidas
 antecipadamente~\cite{kasunic2005designing}. Este tipo de pesquisa
 dividem-se em duas grandes categorias: questionários auto-administrados e
 entrevistas~\cite{kasunic2005designing}. O primeiro tipo é aquele que a a
-maioria das pessoas pensa quando falamos em "pesquisa de opinão", no qual
+maioria das pessoas pensa quando falamos em "pesquisa de opinião", no qual
 geralmente recebemos por meio de correio eletrônico ou estão disponíveis através
 de páginas da Internet. As entrevistas apresentam as mesmas característica dos
 questionários auto-administrados, estando a principal diferença na profundidade
@@ -29,7 +29,7 @@ ou afirmações que foram que foram desenvolvidas com antecedência. Quando
 conduzida adequadamente, esse tipo de pesquisa permite que os pesquisadores
 generalizem as crenças e opiniões de uma população mediante os dados
 coletados de um subconjunto do público-alvo(amostra). No trabalho conduzido por
-Kasunic~\cite{kasunic2005designing} são apresentada um conjuento de etapas a
+Kasunic~\cite{kasunic2005designing} são apresentada um conjunto de etapas a
 serem seguidas no processo de condução de um survey:
 
 \begin{enumerate}
@@ -39,61 +39,81 @@ serem seguidas no processo de condução de um survey:
 \item{Elaborar e escrever um questionário}
 \item{Aplicar questionário de teste ou piloto}
 \item{Distribuir o questionário}
-\item{Analisar os resultados e escreve o relatório}
+\item{Analisar os resultados e escrever o relatório}
 \end{enumerate}
 
-Em uma série de artigos, Kitchenham e Pfleeger (2001) introduziram os princípios
-de Pesquisa de pesquisa para pesquisadores de SE, cobrindo principalmente as
-etapas 3, 4, 6 e 7 da pesquisa de Kasunic.  Proposta (2005). No contexto da
-caracterização da população e da concepção do Descrevem-se alguns conceitos
-básicos de estatística, com poucas discussões sobre as questões de população da
-SE que são fornecidas (Kitchenham e Pfleeger Kitchenham e Pfleeger 2002).
-Kitchenham e Pfleeger (2008) também investigaram o desenho de quatro pesquisas
-SE realizadas entre 1998 e 2000, das quais os autores concluem que apenas uma
-delas foi apoiada por uma amostra representativa de uma população claramente
-estabelecida
+Em uma série de artigos~\cite{pfleeger2001principles,pfleeger2002principles},
+Kitchenham e Pfleeger discutem os princípios da pesquisa com questionário no
+âmbito da Engenharia de Software(ES), tendo como foco principal as etapas 3, 4,
+6 e 7 descritas no estudos feito por Kasunic~\cite{kasunic2005designing}. Os
+autores apresentam conceitos básicos de estatística para discutir algumas
+questões relativas à população e amostra. Nestes mesmos estudos os autores
+investigaram o desenho de quatro surveys na área de ES e concluem que em
+apenas um deles foi composto por uma amostra significativa de uma população. Ao
+final eles salientam a necessidade que este tipo estudo científico utilize uma
+metodologia de modo a reduzir qualquer viés no tocante à amostra utilizada.
 
-Com o objetivo de coletar os aspectos mais importantes das FGRM's do ponto de
-vista dos profissionais ligados à manutenção de software será realizada uma
-pesquisa (survey). O planejamento e o desenho da pesquisa seguirá as diretrizes
-propostas em\cite{wohlin2012experimentation}.
+Com o objetivo de coletar os aspectos mais importantes das funcionalidades
+oferecidas pelas Ferramentas de Gerenciamento de Requisições de Mudança (FGRM)
+do ponto de vista dos profissionais ligados à manutenção de software foi
+realizada uma pesquisa com profissionais(survey). O planejamento e o desenho da
+pesquisa seguiu as diretrizes propostas nos trabalhos de
+Wohlin~\cite{wohlin2012experimentation} e Kasunic~\cite{kasunic2005designing}.
+Em especial, no tocante a definição da população e da amostra de interesse
+utilizamos o arcabouço (framework) proposto por De Mello e
+outros~\cite{de2015investigating, de2014towards}.
 
 A população da pesquisa proposta é a comunidade envolvida com o processo de
-manutenção de software e que faça uso de FGRM's. Neste contexto, seriam
-possíveis amostras, os desenvolvedores envolvidos com tarefas de manutenção nos
-projetos da Mozilla\footnote{\url{https://bugzilla.mozilla.org/}} ou da Eclipse
-Foundation\footnote{\url{https://bugs.eclipse.org/bugs/}}.
+manutenção de software e que faça uso de FGRM's. Desta utilizamos  como amostra
+os profissionais que estão envolvidos nos projetos
+Python\footnote{\url{http://bugs.python.org/}}, Eclipse
+Foundation\footnote{\url{https://bugs.eclipse.org/bugs/}}, Mantis Bug
+Tracker\footnote{\url{https://mantisbt.org/}} que contemplam os profissionais
+vinculados a algum projeto de código aberto. Por outro lado, visando alcançar os
+profissionais que trabalham em empresas privadas, utilizamos profissionais que
+fazem parte das rede sociais Stack Oveflow e LinkedIn e que façam parte de
+discussões na rede de assuntos relacionados à manutenção de software. A pesquisa
+foi replicada em uma empresa pública de software do qual o autor possui vínculo.
+Maiores detalhes sobre o processo de escolha das amostras serão discutidas
+posteriormente.
 
 A importância deste tipo de trabalho está na possibilidade de avaliar se as
-pesquisas relativas a evolução das FGRM estão em consonância com as necessidades
-dos profissionais envolvidos em manutenção de software, reduzindo, desta forma,
-a distância entre o estado da arte e o estado da prática.  \todo[inline]{usar a
-	expectativa de sermos aderentes às demandas do praticante}
+pesquisas relativas a evolução das funcionalidades das FGRM's estão em
+consonância com as necessidades dos profissionais envolvidos em manutenção de
+software, reduzindo, desta forma, a distância entre o estado da arte e o estado
+da prática.
 
 \section{Objetivo da Pesquisa com Profissionais}
 \label{sec:objetivo_da_pesquisa_com_profissionais}
 Em linhas gerais, o objetivo desta etapa do estudo é analisar, através da
 percepção e opinião dos profissionais envolvidos em manutenção de software, a
-situação das funcionalidades atualmente oferecidas pelas FGRM, bem como a
-relevância das extensões propostas na literatura. Estruturando melhor o
-objetivo, conforme propõe a metodologia GQM (Goal, Question e Metric)\cite{gqm},
-\textit{o propósito deste estudo avaliar as funcionalidade oferecidas e as
-	extensões propostas nas literatura para as FGRM do ponto de vista dos
-	profissionais envolvidos em manutenção de software no contexto de projetos
-	de software de código aberto e uma empresa pública informática de médio
-	porte.}  
+situação das funcionalidades atualmente oferecidas pelas FGRM's, bem como
+a adotação das metodologias propostos pelos agilistas no processo de manutenção
+de software.
+
+Para uma melhor apresentar a finalidade desta parte da dissertação estruturamos
+o objetivo conforme propõe a metodologia GQM (Goal, Question e
+Metric)\cite{gqm}, \textit{o propósito deste estudo avaliar as funcionalidade
+	oferecidas e as extensões propostas nas literatura ponto de
+	vista dos profissionais envolvidos em manutenção de software no contexto de
+	projetos de software de código aberto e uma empresas privadas e  uma empresa  pública informática de
+	médio porte.}
 
 Com intuito de atingir os objetivos propostos fora definidas as seguintes
 questões de pesquisa:
 \todo[inline]{Incluir uma descrição para cada questão de
 	pesquisas}
 \begin{description}
-	\item[Questão 01] Qual o perfil dos profissionais envolvidos em Manutenção
-		de Software?
-	\item[Questão 02] Qual a opinião dos profissionais envolvidos em Manutenção
-		de Software com relação as funcionalidades oferecidas pelas FGRM\@?
-	\item [Questão 03] Na visão  dos profissionais envolvidos em Manutenção de Software quais das
-		extensões propostas na literatura teriam maior relevância em suas atividades atuais?
+	\item[Questão 01] Qual a opinião dos profissionais envolvidos em Manutenção
+		de Software com relação as funcionalidades oferecidas atualmente pelas
+		FGRM\@?
+	\item[Questão 02] Na visão  dos profissionais envolvidos em Manutenção de
+		Software quais das extensões propostas na literatura teriam maior
+		relevância em suas atividades atuais?
+	\item[Questão 03] Como as práticas propostas pelos agilistas estão sendo
+	utilizadas especialmente no processo de manutenção de software?
+	\item[Questão 04] Como as FGRM's podem ajudar aos times devotados à manutenção
+	de software na prática adotada pelos agilistas?
 \end{description}
 
 As questões de pesquisas foram respondidas mediante a realização de uma pesquisa
@@ -104,149 +124,238 @@ e a sua respectiva amostra utilizada no estudo.
 \section{Desenho e Metodologia da Pesquisa com Profissionais}
 \label{sec:desenho_da_pesquisa_com_profissionais}
 
+\subsection{Conceitos Básicos}
 Esta Pesquisa com Profissionais (survey) consistiu de um estudo exploratório sem
 uma hipótese prévia a ser avaliada. Realizamos um survey com um desenho
 trans-seccional\cite{kitchenham2002principles} onde a nossa população de
 interesse são os profissionais envolvidos em manutenção de software e estamos
-especialmente interessado na experiência deles no uso das FGRM\@. 
+especialmente interessado na experiência deles no uso das FGRM\@.
 
-A pesquisa foi realizada através um questionário auto-administrável disponível
-pela Internet\footnote{\url{https://www.google.com/forms/about/}}. O formulário
-foi enviado aos participantes mediante o e-mail previamente coletado.
+Conforme discutido anteriormente, a população de interesse desta pesquisa é
+composta por profissionais envolvidos em desenvolvimento e manutenção de
+software. Para sistematizar o processo de escolha da amostragem utilizamos o
+arcabouço (framework) conceitual proposto por de Mello e
+outros~\cite{de2014towards} que está representado na
+Figura~\ref{fig:framework-amostragem}. O modelo proposto inclui além dos
+conceitos estatísticos tradicionalmente utilizados em pesquisas por questionário
+(surveys), tais como público-alvo, população, amostragem e unidade de
+observação~\cite{thompson2012sampling}, introduz um conjunto de novos conceitos
+que visam apoiar o processo de escolha da amostragem em questionários,
+especialmente em ES. Os conceitos que os autores propuserem incluem:
+\textit{Fonte de Amostragem, Unidade de Pesquisa, Plano de Pesquisa e Estratégia
+	de Amostragem}.
 
-Um Conceptual Framework proposto por de Mello et al. (2014d) que está
-representado na Fig. 1. Para além dos conceitos estatísticos de público-alvo,
-população, quadro de amostragem e unidade de observação (Thompson 2012), este
-quadro introduz o seguinte conjunto de novos conceitos para melhor apoio à
-amostragem nos inquéritos SE: fonte de amostragem, unidade de pesquisa, pesquisa
-	Plano e estratégia de amostragem
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/framework-amostragem.png}
+	\caption{Os conceitos que compõem o Arcabouço Conceitual proposto por de
+		Mello. Extraído de ~\cite{de2015investigating}}
+	\label{fig:framework-amostragem}
+\end{figure}
 
-Uma fonte de amostragem consiste em um banco de dados (automatizado ou não) no
-qual subpopulações válidas do público-alvo podem ser sistematicamente
-recuperadas e amostradas aleatoriamente. Assim, se uma fonte de amostragem pode
-ser considerada válida para um contexto de pesquisa específico, pode-se concluir
-que os quadros de amostragem podem ser estabelecidos a partir dele para o mesmo
-contexto de pesquisa. Para ser considerada válida, uma fonte de amostragem deve
-satisfazer, pelo menos, os seguintes requisitos essenciais (ER):
 
-ER1. Uma fonte de amostragem não deve representar intencionalmente um
-subconjunto segregado Do público-alvo, isto é, para um público-alvo "X", não é
-adequado pesquisar Para unidades de uma fonte intencionalmente concebido para
-compor um subconjunto específico de "X".
-ER2. Uma fonte de amostragem não deve apresentar qualquer viés em incluir na sua
-base de dados Preferencialmente apenas subconjuntos do público-alvo. Critérios
-desiguais para Unidades de pesquisa significam oportunidades de amostragem
-desiguais.
-ER3. Todas as unidades de pesquisa das amostras e suas unidades de observação
-devem ser Identificado por um id lógico ou numérico.
-ER4. Todas as unidades de pesquisa de fontes de amostragem devem ser acessíveis.
-Se houver Unidades de pesquisa, não é possível contextualizar a população.
+\todo[inline]{Incluir definição de Unidade de Observação}
+Uma \textit{Unidade de Observação}~\cite{wohlin2012experimentation}
 
-Há também nove requisitos desejáveis (DR), três relacionados com as amostras '
-(ADR), duas relacionadas com clareza (CDR) e quatro com relação à integridade da
-amostra (CoDR). Estes critérios adicionais e exemplos de avaliar tais fontes
-usando-os podem ser encontrados em (de Mello et al., 2014d)
+Uma \textit{Unidade de Pesquisa} caracteriza como uma ou mais \textit{Unidade de
+	Observação} podem ser recuperadas de uma \textit{Fonte de Amostragem}
+específica. O \textit{Plano de Pesquisa} descreve como \textit{Unidades de
+	Pesquisa} serão sistematicamente recuperadas de uma Fonte de Amostragem e
+avaliadas para compor a amostragem da pesquisa. Finalmente, a Estratégia de
+Amostragem descreve as etapas que devem ser seguidas para definição da
+amostragem e recrutamento de indivíduos que participarão do estudo.
 
-A unidade de pesquisa caracteriza como uma ou mais unidades de observação podem
-ser recuperadas de uma fonte específica de amostragem. Em um cenário ideal,
-espera-se que tanto unidade de observação e unidade de pesquisa são tanto quanto
-possível o mesmo. O plano de pesquisa descreve como as unidades de pesquisa
-serão sistematicamente recuperadas de uma fonte de amostragem e avaliadas para
-compor uma moldura de amostragem. Finalmente, a estratégia de amostragem
-descreve as etapas que devem ser seguidas para amostragem e recrutamento de
-indivíduos que participarão do estudo. Eventualmente, os dados usados para
-apoiar o projeto de amostragem podem ser recuperados após coletar respostas com
-um instrumento de medição, como um formulário de caracterização, antes de
-executar
-\subsection{Métodologia}
-No caso desta pesquisa, o público-alvo é composto por profissionais de SE em
-geral, uma vez que um conjunto de características e práticas identificadas como
-"ágeis" na SE podem ser avaliados independentemente do processo de software
-adotado. Assim, todos os profissionais que trabalham em projetos de software
-podem potencialmente contribuir com esta investigação. É importante destacar que
-o plano de levantamento pondera a relevância do participante e responde
-correspondentemente pelo seu nível de experiência. As subseções a seguir
-descrevem a estratégia de recrutamento projetada para este estudo de pesquisa
+Uma \textit{Fonte de Amostragem} consiste de um banco de dados, que não
+necessariamente é automatizado, em que um subconjunto válido do público-alvo
+pode ser sistematicamente recuperado, além de permitir a extração aleatória de
+amostra da população de interesse. Sendo assim, os autores afirmam que no caso
+de determinada Fonte de Amostragem ser considerada válida para um contexto de
+pesquisa específico, pode-se concluir que as amostras podem ser extraídas desta
+fonte a fim de serem utilizados no mesmo contexto de pesquisa. Para ser
+considerada válida, uma Fonte de Amostragem deve satisfazer, pelo menos, os
+seguintes Requisitos Essenciais(Essential Requirements - ER):
 
-Fonte de amostragem, unidade de pesquisa e população
+\begin{description}
+	\item[ER1] Uma Fonte de Amostragem não deve representar intencionalmente um
+		subconjunto segregado do público-alvo, ou seja, dado um público-alvo
+		\textit{"X"}, não seria adequado pesquisar por unidades da fonte
+		intencionalmente desenhada para compor um subconjunto específico de
+		\textit{"X"}.
+	\item[ER2] Uma Fonte de Amostragem não deve apresentar qualquer viés em
+		incluir na sua base de dados determinados subconjuntos do público-alvo.
+		Critérios desiguais para inclusão de Unidades de Pesquisa significam
+		oportunidades desiguais para oportunidades de amostragem.
+	\item[ER3] Todas as Unidades de Pesquisa das amostras e suas Unidades de
+		Observação devem identificados por de forma única.
+	\item[ER4] Todas as amostragem de determinada Unidade de Pesquisa devem ser
+		acessíveis. Se houver unidades de pesquisa ocultas, não é possível
+		contextualizar a população.
+\end{description}
 
-Uma rede social profissional (LinkedIn) foi estabelecida como fonte de
-amostragem devido à sua cobertura, composta por mais de 10 milhões de
-profissionais de TI espalhados pelo mundo (novembro de 2014). Para a realização
-do plano de recrutamento e da análise de dados apresentados neste estudo, foi
-necessária a utilização de uma conta "Premium". Esse tipo de conta permite que
-os usuários do LinkedIn realizem análises mais precisas sobre a distribuição de
-membros entre grupos de interesse. Desde LinkedIn permite realizar um grupo
-abrangente de interesses procurando, "grupo de interesse" será a unidade de
-pesquisa. De cada grupo identificado, serão extraídos os seguintes atributos:
-Nome do Grupo, Descrição do Grupo, Tamanho do Grupo (quantidade de membros) e
-Língua Oficial do Grupo. Esses atributos serão utilizados para verificar se cada
-grupo de interesse pode ser incluído na moldura de amostragem, que deverá ser
-composto por todos os grupos de interesse envolvidos com agilidade no processo
-de software. Assim, a população deste estudo de pesquisa será composta por todos
-os membros desses grupos selecionados.
+Os autores outros requisitos que são definidos como desejáveis que estão
+relacionados com amostragem, clareza e integridade da amostra. Os critérios
+adicionais e exemplos de avaliação de Fontes de Amostragem utilizados os
+requisitos discutidos podem ser encontrado no estudo proposto por de Mello e
+outros~\cite{de2014towards}.
 
-Unidade de observação e unidade de análise
+\subsection{Metodologia}
 
-Nesta pesquisa, a unidade de observação ea unidade de análise são a mesma
+No caso desta pesquisa, o público-alvo é composto por profissionais devotados em
+desenvolvimento e manutenção de software. O perfil do participante da população
+de interesse é bastante geral, uma vez que um conjunto de características e
+práticas deste tipo de profissional é bastante diversa e pode depender de
+questões como processo de software utilizado, linguagem de programação
+utilizada, tipo de projeto no qual está envolvido, dentre outras. Assim, todos
+os profissionais que trabalham em projetos de software, sejam estes projetos de
+código aberto ou de empresas privadas, podem potencialmente contribuir com esta
+investigação. É importante destacar que cabe ao Plano de Pesquisa avaliar quando
+a relevância do participante utilizando, por exemplo, o nível de experiência do
+respondente como critério de inclusão. As subseções a seguir descrevem a
+estratégia de recrutamento projetada para a pesquisa com profissionais
+realizada neste estudo.
+
+\subsubsection{Fonte de Amostragem, Unidade de Pesquisa e População}
+
+Para a realização deste estudo foi estabelecida 05 diferentes Fontes de
+Amostragem conforme exibido na Tabela . Estas fontes foram selecionadas de modo
+a incluir profissionais que estão se dedicam a projetos de código aberto
+(Python, Eclipse, MantisBT) e aqueles que possivelmente façam parte de empresas
+privadas de desenvolvimento e manutenção de software. Para o primeiro grupo,
+escolhemos projetos de código aberto que tivessem pelo menos 5 anos de
+existência, possuem uma comunidade bem estabelecida e permitam acesso aos dados
+de suas FGRM's. Além disso, escolhemos projetos que utilizem diferentes FGRM's
+como o objetivo de abarcar diferentes experiências de uso deste tipo de
+ferramenta. Para alcançarmos os profissionais que trabalham em empresas privadas
+de desenvolvimento de software utilizamos  as redes sociais LinkedIn e Stack
+Overflow. Tais redes foram selecionas especialmente por conta de sua cobertura,
+que contam com e um mais de 6 milhões de usuários para o caso do Stack
+Overflow~\footnote{\url{http://stackexchange.com/sites}} e mais de 10 milhões
+de profissionais de TI espalhados pelo mundo, quando falamos do
+LinkeIn~\cite{de2014towards}.
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|llc|}
+\hline
+\multicolumn{1}{|c}{\textbf{Fonte de Amostragem}} & \multicolumn{1}{c}{\textbf{URL}}                & \textbf{Membros} \\ \hline
+Python                                            & https://bugs.python.org/                        & $\sim$19 K       \\
+Eclipse Foundation                                & https://bugs.eclipse.org/bugs/                  & $\sim$2.6 K      \\
+MantisBT                                          & http://www.mantisbt.org/bugs/my\_view\_page.php & $\sim$40 K       \\
+LinkeIn                                           & https://www.linkedin.com/                       & $\sim$347 M      \\
+Stack Overflow                                    & http://stackoverflow.com/                       & $\sim$6.6 M      \\ \hline
+\end{tabular}%
+}
+\caption{Fontes de Amostragem utilizadas no estudo.}
+\label{tb:fonte-de-amostragens}
+\end{table}
+
+No escopo deste estudo a lista de Requisições de Mudanças no projetos de código
+aberto serão a Unidade de Pesquisa a ser considerada. Desde que o LinkedIn
+permite realizar pesquisa abrangente de "grupo de interesse", serão estes as
+Unidades de Pesquisa. No caso da rede social Stack Overflow foi considerada cada
+discussão proposta por um usuário (thread) foi considerada como a Unidade de
+Pesquisa. Em todas as Fontes de Amostragem foram coletados os seguintes
+atributos: Nome do Participante, E-mail do Participante, Data de Interação e
+Tipo de Interação. No caso do LinkedIn utilizamos um métrica
+adicional da própria rede social conhecida como
+reputação~\footnote{\url{http://stackoverflow.com/help/whats-reputation}} que é
+uma medida aproximada de quanto a comunidade poderia confiar em você. A medida é
+calculada quando o usuário com base nas ações do usuário e em como a comunidade
+avalia tais ações. Neste trabalho a métrica foi utilizada para verificar a
+frequência de participação de determinado usuário em discussões sobre manutenção
+ou desenvolvimento de software. Em resumo, podemos considerar que as pessoas que
+fazem parte dos projetos de código aberto, os participantes de grupo de
+interesse do LinkeIn e das discussões do Stack Overflow  que compõe a população
+a ser considerada neste estudo.
+
+\subsubsection{Unidade de Observação e Unidade de Análise}
+
+Nesta pesquisa, a Unidade de Observação e a Unidade de Análise são a mesma
 entidade (indivíduo) e cada membro distinto de cada grupo é potencialmente
 considerado uma unidade válida a ser amostrada. Os seguintes atributos devem ser
 coletados de cada um:
+\begin{itemize}
+	\item Nome do Participante
+	\item E-mail do Participante
+	\item Data de Interação
+	\item Tipo de Interação
+\end{itemize}
 
-Atributos coletados através da fonte de amostragem: ID do Membro, Nome, País e
-Status de Associação em cada grupo de interesse na moldura de amostragem.
-Pode-se ver que os perfis dos indivíduos no LinkedIn apresentam outros atributos
-que podem ser utilizados em nossa investigação, tais como grau acadêmico,
-experiência profissional e habilidades de topo. No entanto, esses dados
-geralmente não são acessíveis quando o perfil individual não está diretamente
-conectado com conta de usuário. Além disso, não há controle sobre se esses
-atributos são atualizados.
+O Tipo de Interação representa a ação que o participante realizou na Fonte de
+Amostragem, por exemplo relatar uma RM, finalizar uma RM, responder a uma
+pergunta e etc. Estes atributos foram utilizados para avaliar se determinada
+Unidade de Observação (indivíduo) será incluído na Fonte de Amostragem. Outros
+atributos foram coletados através do questionário de pesquisa (instrumento de
+medição): localização geográfica, tempo de experiência, nome da função
+desempenhada, principais atribuições, dentre outros.
 
-Atributos coletados através do questionário de pesquisa (instrumento de
-medição): País, Principais Habilidades em SE, SE Nível de Experiência, Nível de
-Experiência de Agilidade e Grau Acadêmico.
+\subsubsection{Plano de Pesquisa}
 
-Plano de pesquisa
+De modo a construir as Unidade de Pesquisa que foram utilizadas neste estudo,
+utilizamos três estratégias distintas cada uma relacionada as características da
+Fonte de Amostragem utilizada. Para as fontes que foram coletadas de projetos de
+código aberto (Python, Eclipse e MantisBT) utilizamos os registros históricos
+das RM's ocorridos nos últimos 05 anos. Além disso registro a frequência com o
+qual um participante teve contato com o projeto. Esta última métrica nos
+permitiu selecionar os participantes que tenham um mínimo de interação com
+projeto. 
+
+No caso do LinkedIn realizamos a busca por grupos de interesse utilizando as
+sentenças de busca descritas no Tabela~\ref{tab:setencas-grupos}. Um conjunto
+similar de sentenças de busca foi utilizado no mapeamento sistemático  descrito
+no Capítulo~\ref{ch:mapeamento-sistematico}.
+
+\begin{table}[htb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|l|}
+\hline
+\textit{("issue tracking" OR "bug tracking" OR "issue-tracking" OR
+	"bug-tracking" OR "bug repository" OR "issue repository") AND("issue report"
+	OR "bug report" OR "bug priorization" OR "bug fix" OR "bug assigment" OR
+	"bug reassigment" OR "bug triage"OR "duplicate bug" OR "reopened bug" OR
+	"bug impact" OR "bug localization" OR "bug prediction" OR "bug risk" OR
+	"bugseverity" OR "bug classification")} \\ \hline
+\end{tabular}%
+}
+\label{tab:setencas-grupos}
+\end{table}
 
 
-A pergunta de busca para estabelecer a moldura de amostragem é: "Quais são os
-grupos do LinkedIn relacionados à agilidade em processos de software?" Assim,
-com base na seqüência de pesquisa da SLR e seus resultados (Abrantes e Travassos
-2013), as seguintes expressões de busca foram Estabelecido:
+Para a rede social Stack Overflow utilizamo a busca oferecida pelo próprio
+site~\footnote{\url{http://data.stackexchange.com/}} de modo a encontrar
+discussões que se encaixam com as sentenças apresentas na
+Tabela~\ref{tab:setencas-grupos}. Neste contexto, visando restringir a seleção
+de grupos de participantes que estejam vinculados à desenvolvimento e manutenção
+de software realizamos a exclusão dos dados de participantes que:
+\begin{itemize}
+	\item Proíbem expressamente a utilizados dos seus dados, especialmente do seu endereço
+		eletrônico, para a realização de estudos;
+	\item A Fonte de Amostragem ao qual pertence não possui um mínimo de 05 anos
+		de registros
+	\item Para os grupos do LinkedIn e Stack Overflow, aqueles que restringem
+		explicitamente a mensagem individual entre seus membros;
+    \item Utilizam uma língua diferente do inglês, tendo em vista que o idioma
+		inglês é padrão em fóruns internacionais e apenas existiam uma versaõ em
+		inglês e português para o questionário utilizados.
+\end{itemize}
 
+\subsubsection{Estratégia de amostragem}
 
-Então, visando restringir a seleção de grupos de interesse para aqueles que
-discutem ágil Práticas e características no contexto global, será excluído
-qualquer grupo de Interesse que:
-Proíbe expressamente a realização de estudos;
-Restringe explicitamente a mensagem individual entre seus membros (um recurso padrão
-Fornecido pelo LinkedIn);
-Uma cidade, região ou país, uma vez que o nosso público-alvo não é
-Geograficamente restrito;
-Organizações específicas, ou fornecidas por eles, nem
-Divulgar eventos específicos;
-Tem a sua descrição fora do âmbito da Engenharia de Software;
-Tem uma descrição vaga;
-Tem um único membro;
-É conduzido à headhunting e oferta de trabalho;
-Representa os subgrupos do LinkedIn, uma vez que a moldura de amostragem deve
-ser composta por Grupos de interesse, e; Tem uma língua não-Inglês como padrão,
-uma vez que o idioma Inglês é padrão em fóruns internacionais
-
-Estratégia de amostragem
-
-Com base em semelhanças de grupos de interesses (sobreposição de grupos de membros), será analisada a viabilidade de realizar os seguintes desenhos de amostragem, por esta ordem:
+Com base em semelhanças de grupos de interesses (sobreposição de grupos de
+membros), será analisada a viabilidade de realizar os seguintes desenhos de
+amostragem, por esta ordem:
 
 Amostragem agrupada: este desenho de amostragem pode ser aplicado quando grupos
 homogéneos (clusters) compostos por unidades distintas podem ser identificados
-numa população. Como conseqüência, devido a essa similaridade (identificada como
+numa população. Como consequência, devido a essa similaridade (identificada como
 função de um conjunto de atributos de unidades), apenas um subconjunto desses
 conjuntos pode ser amostrado aleatoriamente sem perda significativa de
 confiança, reduzindo também os esforços de recrutamento e coleta de dados
 (Thompson, 2012) . Assim, a amostragem em cluster é comumente aplicada em
 pesquisas em larga escala nas quais os pesquisadores têm restrições operacionais
 para recrutar e coletar dados (Bennett et al., 1991, Roberts et al., 2004).
-
 
 Amostragem estratificada: é considerado o melhor projeto de amostragem
 probabilística, levando em consideração a heterogeneidade de cada população e
@@ -264,7 +373,8 @@ intervalo de confiança de 3,50 (margem de erro) para um nível de confiança de
 primeiro estudo (de Mello e Travassos 2013), espera-se que apoie os resultados
 proporcionando uma confiança significativamente mais baixa
 
-Instrumentalização
+\subsubsection{Instrumentalização}
+
 Para cada grupo de interesse selecionado e incluído da fonte de amostragem, será
 analisada a cobertura deste grupo sobre toda a população, a fim de estabelecer
 um quadro de amostragem. A cobertura de cada grupo G será calculada como a razão
@@ -278,15 +388,15 @@ amostragem. Em seguida, uma mensagem de recrutamento padrão será enviada
 individualmente usando exclusivamente o serviço de mensagens fornecido pelo
 LinkedIn, a fonte de amostragem
 
-Suporte Automatizado
+\subsubsection{Suporte Automatizado}
 
 A fim de viabilizar e mitigar os riscos operacionais na seleção manual e envio
 de uma grande quantidade de convites do LinkedIn, foi fornecido suporte
 automatizado para a extração de dados do perfil dos membros e mensagens de envio
 de atividades. A Figura 2 mostra os componentes que compõem essas atividades na
-mesma seqüência em que são utilizados
+mesma sequência em que são utilizados
 
-Extração de Dados
+\subsubsection{Extração de Dados}
 
 Para extrair os atributos necessários de cada membro (seção 4.2), foi usado o
 Firefox add-on chamado iMacros (addons.mozilla.org). Este plugin torna possível
@@ -310,17 +420,20 @@ coletando todos os atributos que devem ser selecionados da fonte de amostragem
 (Seção 4.2). Em seguida, um arquivo CSV (B) armazena todos os dados brutos
 recuperados, como os seguintes:
 
-
 Como pode ser visto, o arquivo CSV contém muitos dados indesejados e artefatos
 de texto que devem ser removidos. Assim, implementamos um script Ruby (C) para
 remover quaisquer dados desnecessários de cada membro, gerando um arquivo CSV
 final (D) composto por linhas como as seguintes:
 
-Enviando uma Mensagem
+\subsubsection{Envio da Mensagem}
 
-Depois de realizar a extracção de dados, o envio de mensagens pode ser
+A pesquisa foi realizada através um questionário auto-administrável disponível
+pela Internet\footnote{\url{https://www.google.com/forms/about/}}. O formulário
+foi enviado aos participantes mediante o e-mail previamente coletado.
+
+Depois de realizar a extração de dados, o envio de mensagens pode ser
 realizado, como mostrado na Fig. 2. Assim, a partir da base de dados (E), será
-possível seleccionar aleatoriamente os membros a recrutar. O resultado desse
+possível selecionar aleatoriamente os membros a recrutar. O resultado desse
 recrutamento será um novo arquivo CSV (F) contendo os seguintes atributos dos
 membros selecionados: id do usuário, id do grupo e nome do membro. Em seguida,
 um segundo iMacros Script assume ação usando as informações disponíveis em (F),
@@ -329,9 +442,7 @@ pesquisa para cada membro. Essas mensagens são preenchidas (uma a uma) no
 formulário de mensagem do LinkedIn e enviadas para cada membro (G) com base no
 seguinte modelo:
 
-
-
-\subsection{Questionário}
+\subsubsection{Questionário}
 \label{subsec:questionario}
 
 O formulário enviado aos participantes foi estruturado em três parte, cada uma
@@ -368,8 +479,6 @@ formulário.
 		formulário para a língua inglesa.  Esta etapa foi conduzida com  o
 		suporte de um pesquisador experiente na área de Engenharia de Software.	
 \end{enumerate}
-\todo[inline]{Acho que devemos tentar um grupo não PUBLICO PRODABEL e também um grupo PRODABEL (onde seja possível comentar sobre possíveis especificidades!!)}
-\todo[inline]{Avaliar o impacto de ter um questionário em inglês e outro em português}
 
 \subsection{População, Amostra e Respostas}
 \label{subsec:populacao_amostra_respostas}
@@ -397,17 +506,6 @@ representativa": Método de amostragem específico (amostragem probabilística),
 cobertura da heterogeneidade das populações e representativo como típico (com
 relação a certas características conhecidas de a população)
 
-
-
-
-
-
-
-
-
-
-
-
 \section{Resultados}
 \label{sec:analise_dados}
 
@@ -420,10 +518,13 @@ visualizar dados na escala de Likert tendo em vista que possibilita o
 entendimento da divergência entre as respostas dos
 participantes~\cite{robbins2011plotting}
 
+\subsection{Perfil dos Participantes}
+\label{sub:perfil_dos_participantes}
+
+
 \section{Discussão}
 
 \section{Ameças à Validade}
-
 
 \subsubsection{Ameaças Internas}
 \label{ssub:Ameacas_internas}

@@ -28,7 +28,8 @@ filecolor=black,
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{amsmath}
 \usepackage{multirow}
-\usepackage{todonotes}
+%\usepackage{todonotes}
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \usepackage{pdfpages}
 \usepackage{capt-of}
 \usepackage{svg}
@@ -61,7 +62,8 @@ ack={./agradecimentos/agradecimentos},
 indexkeys={1.~Computação --- Teses. 2.~Redes --- Teses. I.~Orientador.
     II.~Título.},
 }
-
+\newpage
+\listoftodos[Notes]
 %Incluindo o fonte do Capítulo 01
 \input{./chapter-intro/intro.tex}
 
@@ -81,7 +83,7 @@ indexkeys={1.~Computação --- Teses. 2.~Redes --- Teses. I.~Orientador.
 \input{./chapter-extensoes-fgrm/extensoes-fgrm.tex}
 
 %Incluindo o fonte do Capítulo 07
-\input{./chapter-avaliacao-extensoes-fgrm/avaliacao-extensoes-fgrm.tex}
+%\input{./chapter-avaliacao-extensoes-fgrm/avaliacao-extensoes-fgrm.tex}
 
 %Incluindo o fonte do Capítulo 08
 \input{./chapter-conclusao/conclusao.tex}
