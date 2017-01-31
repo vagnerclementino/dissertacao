@@ -5,7 +5,7 @@
 %Autor: Vagner Clementino e Rodolfo Resende
 %Criação: Ter Out 11 19:03:45 BRT 2016
 %Modificação: seg dez 19 21:41:29 BRST 2016
-%Revisão:
+%Revisão: ter jan 31 21:09:01 BRST 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Mapeamento Sistemático da Literatura}
@@ -13,11 +13,79 @@
 
 \section{Introdução}
 \label{sec:map-intro}
-\todo[inline]{OBJETIVO DA SEÇÃO\@: Esta seção visa apresenta uma visão geral do
-	Mapeamento Sistemático realizado. Apresenta, de maneira sucinta, o contexto,
-	o problema, a solução e os resultado deste estudo, de forma resumida, mas
-	abrangente. Idealmente deverá ser a última seção a ser escrita neste
-	Capítulo.}
+
+Os sistemas de software possuem a tendência de evoluir ao longo do tempo e se
+adaptar ao seu ambiente de trabalhos. Devido a isso, o aprimoramento de
+software, a codificação e a adaptação a novos requisitos se tornam mais
+complexos. A literatura tradicional em Engenharia de Software (ES) descreve que
+as atividades de manutenção começam assim que os primeiros artefatos de software
+são construídos e entregue~\cite{pigoski1996practical}. Além dessa dificuldade,
+a evolução do software é demorada, tediosa e muitas vezes compreende até 75\%
+dos custos do desenvolvimento do software~\cite{liu2012schedule}.  No entanto,
+as atividades relativas à manutenção de software não devem ser evitadas nem
+adiados caso a intenção é que um sistema de software permaneça útil por um longo
+tempo. Geralmente as modificações em software são solicitadas através de uma
+Requisição de Mudança (RM). Nos projetos de software as RM's são gerenciadas por
+um sistema de informação ao qual denominamos Ferramenta de Gerenciamento de
+Requisições de Mudança. Este tipo de ferramenta foram originalmente concebidos
+para acompanhar os pedidos de modificação, contudo, acabaram evoluindo para um
+ponto central onde as diversas partes interessadas, tais como  como gerentes,
+desenvolvedores e clientes coordenam atividades e se comunicam entre
+si~\cite{bertram2010communication} [8]. Neste contexto, este tipo de ferramente
+desempenha um papel fundamental no processo de Manutenção de Software.
+
+As FGRM's fornecem aos desenvolvedores o gerenciamento de correções de defeitos
+e aprimoramentos dos artefatos de software. Além disso, também permitem a
+implementação de novos recursos, seja no desenvolvimento ou aprimoramento do
+software. Um outro benefício importante do uso deste tipo de ferramenta é que as
+mudanças podem ser rapidamente identificados e relatados aos desenvolvedores.
+Além disso, eles também podem ajudar com a estimativa do custo de desenvolvimento
+de software, análise de impacto, rastreabilidade, planejamento, descoberta de
+conhecimento e compreensão de software~\cite{cavalcanti2013bug}.
+
+No entanto, todos este benefícios benefícios não vêm de graça tendo em vista que
+uma séries de questões surgem do gerenciamento das Requisições de Mudança: RM's
+duplicadas que são abertas inadvertidamente; o grande número de RM's que devem
+ser atribuídas aos desenvolvedores; RM's que não foram relatadas da forma mais
+correta; análise de impacto de determinada RM e
+etc~\cite{cavalcanti2014challenges}. Neste sentido, é importante analisar o
+estado da arte sobre as melhorias das funcionalidades das FGRM's para solucionar
+os problemas descritos anteriormente e diversos outros relacionados com a gestão
+das RM's.
+
+Neste capítulo realizamos um Mapeamento Sistemático para identificar as
+pesquisas existentes no campo de melhorias das funcionalidades fornecidas pelas
+FGRM's. A partir de um conjunto 64 artigos realizamo a classificação em quartos
+dimensões de melhoria conforme proposto por Zimmermann e
+outros~\cite{zimmermann2009improving}. Naquele estudo o foco foi melhorar as
+FGRM's visando aumentar a completude do que é relatado nas RM's.
+Especificamente, o trabalho consistiu em melhorar os sistemas de rastreamento de
+Bugs de quatro maneiras: foco na ferramenta; foco na informação; foco no
+processo; foco no usuário. Os estudos primários também foi classificado pelo
+papel desempenhado no processo de manutenção de software. A partir de um
+conjuntos de papéis existentes no processo de manter de
+software~\cite{Polo1999}.
+
+As contribuições deste estudo estão relacionadas com o fornecimento de uma visão
+abrangente sobre o estado da arte das melhorias das funcionalidades existentes
+ou a proposição de novas. Através deste estudo, os pesquisadores encontrarão
+lições aprendidas, questões abertas e compreender o caminho a seguir no que
+refere ao processo de investigar FGRM's. Por outra, os profissionais devotados
+com desenvolvimento e manutenção de software poderão encontrar técnicas para o
+seu trabalho diário, que podem ser utilizados para melhorar seus próprios
+processos e ferramentas.
+
+O restante deste trabalho está organizado da seguinte forma. Na Seção
+~\ref{sec:map-metodologia} descrevemos as questões de pesquisa, apresentamos a
+metodologia de pesquisa e como os estudos classificados são explicados.  Na
+Seção~\ref{sec:resultados} relatamos os resultados do estudo com relação as
+dimensões de melhoria e o papéis na manutenção de software. Em seguida, na
+Seção~\ref{sec:discussao}, discutimos os principais achados e as questões em aberto
+sobre melhorias nas funcionalidades das FGRM's, bem como os aspectos
+relacionados ao estado da arte. As ameaças à validade e ao trabalho
+relacionado são discutidas nas Seções~\ref{sec:ameacas_validade}
+e~\ref{sec:trabalhos_relacionados}, respectivamente. Um resumo do capítulo é
+realizado na Seção~\ref{sec:resumo_capitulo}.
 
 \section{Metodologia de Pesquisa}
 \label{sec:map-metodologia}
@@ -27,20 +95,29 @@ de Escopo (Scoping Studies), tem como seus objetivos fornecer uma visão geral d
 determinada área de pesquisa, estabelecer a existência de evidências de estudos
 sobre determinado tema e fornecer uma indicação da quantidade de trabalho da
 linha de pesquisa sob
-análise~\cite{keele2007guidelines,wohlin2012experimentation}. Nesta dissertação
-empregamos as diretrizes propostas por Petersen e outros~\cite{Petersen2008} de
-forma a produzirmos uma revisão de maneira sistemática afim de propiciar maior
-facilidade de replicação e extensão do mapeamento realizado. Em particular,
-definimos um conjunto de questões de pesquisa que foram utilizadas no processo
-de busca e seleção dos estudos primários. Em seguida, foram construídos esquemas
-de classificação com base nos dados extraídos dos artigos. Por fim, foi
-realizada a análise e sintetização dos dados com o objetivo de posicionar os
-estudos em suas respectivas classes na taxonomia. A estrutura desta seção está
-de acordo com o processo descrito por \textit{Petersen e outros}, de modo que
-cada subseção representa uma das etapas propostas pelos autores.
+análise~\cite{keele2007guidelines,wohlin2012experimentation}. A pesquisa e a
+prática baseadas em evidências foram desenvolvidas inicialmente na medicina
+porque a pesquisa indicou que a opinião de especialistas baseada em conselhos
+médicos não era tão confiável quanto o conselho baseado na acumulação de
+resultados de experimentos científicos. Na caso da Engenharia de Software
+objetivo deste tipo de trabalho é fornecer os meios pelos quais as melhores
+evidências atuais da pesquisa podem ser integradas com a experiência prática e
+os valores humanos no processo de tomada de decisão relativo ao desenvolvimento
+e manutenção de software.
 
-\subsection{Questões de Pesquisa}
-\label{subsec:map-questoes-de-pesquisa}
+Nesta dissertação empregamos as diretrizes propostas por Petersen e
+outros~\cite{Petersen2008} de forma a produzirmos uma revisão de maneira
+sistemática afim de propiciar maior facilidade de replicação e extensão do
+mapeamento realizado. Em particular, definimos um conjunto de questões de
+pesquisa que foram utilizadas no processo de busca e seleção dos estudos
+primários. Em seguida, foram construídos esquemas de classificação com base nos
+dados extraídos dos artigos. Por fim, foi realizada a análise e sintetização dos
+dados com o objetivo de posicionar os estudos em suas respectivas classes na
+taxonomia. A estrutura desta seção está de acordo com o processo descrito por
+\textit{Petersen e outros}, de modo que cada subseção representa uma das etapas
+propostas pelos autores.
+
+\subsection{Questões de Pesquisa} \label{subsec:map-questoes-de-pesquisa}
 
 O objetivo deste mapeamento sistemático é entender o estado da arte da pesquisa
 sobre FGRM\@. Em especial, o foco é identificar as extensões que estão sendo
@@ -291,10 +368,6 @@ contexto\cite{cerulo2004taxonomy}. Nesta dissertação utilizamos a classificaç
 vertical tendo em vista que estamos interessados na técnica utilizada na
 implementação da extensão.
 
-\todo[inline]{Verificar a necessidade de definir melhor alguns termos de IR\@.
-	Ex\@. documento, consulta do usuário, problema da representação de
-	similaridade}
-
 \todo[inline]{Verificar o total de artigos que utilizam algum técnica de IR\@.
 	Apesar de grande parte utilizar não serão todos os artigos}
 
@@ -387,7 +460,7 @@ naquele tipo de assunto. Contudo, não representa diretamente a importância do
 tópico no estudo sobre melhorias em FGRM's.
 
 % Inclusão da tabela
-\input{chapter-mapeamento-sistematico/tables/tb-taxonomia-problemas-manutencao.tex}
+\input{./chapter-mapeamento-sistematico/tables/tb-taxonomia-problemas-manutencao.tex}
 
 \begin{figure}[tb]
 \centering
@@ -908,13 +981,49 @@ estado-da-prática com o estado-da-arte.
 
 
 \section{Limitações e Ameaças à Validade}
-Questões de pesquisa: É possível que as perguntas de pesquisa definidas possam
-não abranger completamente o campo dos repositórios de RC\@. No entanto, algumas
-discussões com membros do projeto e especialistas em Manutenção de Software
-foram realizadas para validar as perguntas. Assim, mesmo que não tenhamos
-considerado o melhor conjunto de questões, tentamos abordar as questões mais
-frequentes e abertas no campo, tanto do ponto de vista do praticante como do
-investigador.
+\label{sec:limitacoes_ameacas}
+
+Os procedimentos utilizados neste estudo se desviaram do Vício apresentado nas
+diretrizes de 2004 de Kitchenham [22] em maneiras: A busca foi organizada como
+um processo manual de busca de uma Conjunto de revistas e actas da conferência
+não é uma Processo de pesquisa. Isto foi consistente com as práticas De outros
+pesquisadores que analisam tendências de pesquisa em Avaliação de tecnologia de
+software.  Um único investigador seleccionou os estudos candidatos, embora a Os
+estudos incluídos e excluídos foram verificados por outro investigador.  Um
+único pesquisador extraiu os dados e outro pesquisador Verificou a extração dos
+dados, como sugerido por Brereton et al. [2].
+
+O primeiro ponto acima implica que podemos ter perdido alguns Estudos relevantes
+e, portanto, subestimar a extensão de EBSE-re- Investigação. Em particular,
+teremos faltado artigos publicados Em revistas e conferências nacionais. Nós
+também teremos perdido Artigos em conferências voltadas para engenharia de
+software Que têm maior probabilidade de ter abordado questões de Ao invés de
+tendências de pesquisa. Assim, nossos resultados devem ser Aplicando-se apenas
+às revisões sistemáticas de literatura publicadas Principais revistas
+internacionais de engenharia de software e Geral e empírica conferências de
+engenharia de software.
+
+Com relação ao segundo ponto, dado o nosso interesse no sistema- Da literatura,
+é provável que tenhamos errado do lado da Incluindo estudos que não eram muito
+sistemáticos, e não omiten- Estudos relevantes. Por exemplo, a revisão da
+literatura Estudo primário, que recebeu o escore de menor qualidade [38], foi
+Apenas uma pequena parte do artigo.  O terceiro ponto significa que alguns dos
+dados coletados podem Ser errôneas. Uma revisão detalhada de um de nossos
+próprios liter- De revisão sugeriu que o modo extractor / verificador de
+Trabalho pode levar à extração de dados e problemas de agregação Quando há um
+grande número de estudos primários ou os dados são Complexo [39]. No entanto,
+neste estudo terciário, houve Poucos estudos primários e os dados extraídos dos
+artigos Eram relativamente objetivas, por isso não esperamos Erros de extração.
+Os critérios de avaliação da qualidade Dados difíceis de extrair porque os
+critérios DARE são Subjetivo. No entanto, os critérios de qualidade foram
+avaliados independentemente Por dois pesquisadores, esperançosamente reduzindo a
+probabilidade de resultados.  Questões de pesquisa: É possível que as perguntas
+de pesquisa definidas possam não abranger completamente o campo dos repositórios
+de RC\@. No entanto, algumas discussões com membros do projeto e especialistas
+em Manutenção de Software foram realizadas para validar as perguntas. Assim,
+mesmo que não tenhamos considerado o melhor conjunto de questões, tentamos
+abordar as questões mais frequentes e abertas no campo, tanto do ponto de vista
+do praticante como do investigador.
 
 Vieses de publicação: Não é possível garantir que todos os estudos primários
 relevantes foram selecionados e alguns estudos relevantes não podem ser
@@ -940,8 +1049,9 @@ mitigar isso, o processo de classificação foi repetido por cada autor deste
 estudo e os resultados foram discutidos em conjunto a fim de chegar a um
 consenso
 
-
 \section{Trabalhos Relacionados}
+\label{sec:trabalhos_relacionados}
+
 Kagdi et ai. [159] realizou uma revisão da literatura sobre abordagens para
 repositórios de software de mineração sobre a evolução e manutenção de software.
 O resultado foi uma taxonomia baseada em quatro dimensões: o tipo de repositório
@@ -973,3 +1083,4 @@ embora mudássemos o foco da taxonomia, não negligenciamos os aspectos técnico
 das abordagens identificadas em cada tópico da taxonomia
 
 \section{Resumo do Capítulo}
+\label{sec:resumo_capitulo}
