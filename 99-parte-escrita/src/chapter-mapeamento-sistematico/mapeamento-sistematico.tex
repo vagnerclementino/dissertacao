@@ -1,10 +1,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Objetivo: Mapeamento Sistemático da Literatura com o objetivo de avaliar
-%		   o que está sendo proposto de melhorias nas funcionalidades das
-% 		   FGRM
+%Objetivo: Mapeamento Sistemático da Literatura com o objetivo de avaliar o que
+%está sendo proposto de melhorias nas funcionalidades das FGRM
 %Autor: Vagner Clementino e Rodolfo Resende
-%Criação: Ter Out 11 19:03:45 BRT 2016
-%Modificação: seg dez 19 21:41:29 BRST 2016
+%Criação: Ter Out 11 19:03:45 BRT 2016 Modificação:
+%seg dez 19 21:41:29 BRST 2016 
 %Revisão: ter jan 31 21:09:01 BRST 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -15,11 +14,11 @@
 \label{sec:map-intro}
 
 Os sistemas de software possuem a tendência de evoluir ao longo do tempo e se
-adaptar ao seu ambiente de trabalhos. Devido a isso, o aprimoramento de
-software, a codificação e a adaptação a novos requisitos se tornam mais
-complexos. A literatura tradicional em Engenharia de Software (ES) descreve que
+adaptar ao seu ambiente de trabalho. Devido a isso, o aprimoramento do
+software, a codificação e a adaptação a novos requisitos se tornam cada mais
+complexos. A literatura em Engenharia de Software (ES) descreve que
 as atividades de manutenção começam assim que os primeiros artefatos de software
-são construídos e entregue~\cite{pigoski1996practical}. Além dessa dificuldade,
+sejam construídos e entregue~\cite{pigoski1996practical}. Além dessa dificuldade,
 a evolução do software é demorada, tediosa e muitas vezes compreende até 75\%
 dos custos do desenvolvimento do software~\cite{liu2012schedule}.  No entanto,
 as atividades relativas à manutenção de software não devem ser evitadas nem
@@ -39,9 +38,9 @@ e aprimoramentos dos artefatos de software. Além disso, também permitem a
 implementação de novos recursos, seja no desenvolvimento ou aprimoramento do
 software. Um outro benefício importante do uso deste tipo de ferramenta é que as
 mudanças podem ser rapidamente identificados e relatados aos desenvolvedores.
-Além disso, eles também podem ajudar com a estimativa do custo de desenvolvimento
-de software, análise de impacto, rastreabilidade, planejamento, descoberta de
-conhecimento e compreensão de software~\cite{cavalcanti2013bug}.
+Além disso, eles também podem ajudar com a estimativa do custo de
+desenvolvimento de software, análise de impacto, rastreabilidade, planejamento,
+descoberta de conhecimento e compreensão de software~\cite{cavalcanti2013bug}.
 
 No entanto, todos este benefícios benefícios não vêm de graça tendo em vista que
 uma séries de questões surgem do gerenciamento das Requisições de Mudança: RM's
@@ -75,17 +74,17 @@ com desenvolvimento e manutenção de software poderão encontrar técnicas para
 seu trabalho diário, que podem ser utilizados para melhorar seus próprios
 processos e ferramentas.
 
-O restante deste trabalho está organizado da seguinte forma. Na Seção
-~\ref{sec:map-metodologia} descrevemos as questões de pesquisa, apresentamos a
-metodologia de pesquisa e como os estudos classificados são explicados.  Na
-Seção~\ref{sec:resultados} relatamos os resultados do estudo com relação as
-dimensões de melhoria e o papéis na manutenção de software. Em seguida, na
-Seção~\ref{sec:discussao}, discutimos os principais achados e as questões em aberto
-sobre melhorias nas funcionalidades das FGRM's, bem como os aspectos
-relacionados ao estado da arte. As ameaças à validade e ao trabalho
+O restante deste trabalho está organizado da seguinte forma. Na
+Seção~\ref{sec:map-metodologia} descrevemos as questões de pesquisa,
+apresentamos a metodologia de pesquisa e como os estudos classificados são
+explicados.  Na Seção~\ref{sec:resultados} relatamos os resultados do estudo com
+relação as dimensões de melhoria e o papéis na manutenção de software. Em
+seguida, na Seção~\ref{sec:discussao}, discutimos os principais achados e as
+questões em aberto sobre melhorias nas funcionalidades das FGRM's, bem como os
+aspectos relacionados ao estado da arte. As ameaças à validade e ao trabalho
 relacionado são discutidas nas Seções~\ref{sec:ameacas_validade}
-e~\ref{sec:trabalhos_relacionados}, respectivamente. Um resumo do capítulo é
-realizado na Seção~\ref{sec:resumo_capitulo}.
+e~\ref{sec:trabalhos_relacionados}, respectivamente.
+%Um resumo do capítulo é realizado na Seção~\ref{sec:resumo_capitulo}.
 
 \section{Metodologia de Pesquisa}
 \label{sec:map-metodologia}
@@ -121,52 +120,65 @@ propostas pelos autores.
 \label{subsec:map-questoes-de-pesquisa}
 
 O objetivo deste mapeamento sistemático é entender o estado da arte da pesquisa
-sobre FGRM\@. Em especial, o foco é identificar as extensões que estão sendo
-propostas para este tipo de ferramenta.  No escopo deste trabalho, uma extensão
-é um componente de software que adiciona uma característica específica para um
-programa de
-computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in_(computing)}}.
-Assim, a fim de alcançar e guiar os objetivos desta parte do trabalho, foram
+sobre FGRM\@. Em especial, o foco é identificar as novas funcionalidades e
+melhorias nas existentes que estão sendo propostas para este tipo de ferramenta.
+No escopo deste trabalho, uma extensão é um componente de software que adiciona
+uma característica específica para um programa de
+computador~\footnote{\url{https://en.wikipedia.org/wiki/Plug-in_(computing)}}.
+Assim, a fim de alcançar e guiar os objetivos desta parte da dissertação foram
 definidas as seguintes questões de pesquisa:
 
-\todo[inline]{Incluir motivação das questões de pesquisa}
-
 \begin{itemize}
-	\item \textbf{Questão 01}: \textit{Quais os problemas da atividade de
-			manutenção de software as extensões das FGRM pretendem resolver?}
-	\item \textbf{Questão 02}: \textit{Quais papeis envolvidos no processo de
-			manutenção de software as extensões visam dar suporte?}
-	\item \textbf{Questão 03}: \textit{Qual o modelo de Recuperação da
-			Informação foi utilizada para desenvolver a extensão?}
-	\item \textbf{Questão 04}: \textit{Quais as FGRM disponíveis no mercados
-			estão sendo estendidas?}
-
+	\item \textbf{Questão 01}: \textit{Quais as melhorias e novas
+			funcionalidades estão sendo propostas para as FGRM?}
+   	\item \textbf{Questão 02}: \textit{Quais papeis
+			envolvidos no processo de manutenção de software as funcionalidades visam
+			dar suporte?}
+	\item \textbf{Questão 03}: \textit{As melhorias propostas foram
+			disponibilizadas para utilização dos profissionais devotadas à
+			manutenção de software?}
 \end{itemize}
+
+
+Na \textit{Questão de Pesquisa 01} estamos interessados em entender como a
+literatura sobre as FGRM's está propondo melhorias nas funcionalidades que este
+tipo de software oferece ou mesmo por propostas de novas funções. Para
+\textit{Questão de Pesquisa 02} estamos focados em descobrir como os diferentes
+tipos de papéis existentes no processo de manutenção de software estão
+recebendo suporte pelos estudos da área. Para a terceira questão de pesquisa
+gostaríamos de analisar se as propostas de melhorias foram disponibilizadas aos
+profissionais que realizam desenvolvimento e manutenção de software. O nosso
+interesse é verifica se o processo de melhoria das funcionalidades está chegando
+ao seu público-alvo.
 
 \subsection{Pesquisa da Literatura}
 \label{subsec:map-pesquisa-literatura}
 
 Com o objetivo de encontrar o conjunto de estudos mais relevantes, bem como
-eliminar aqueles que não são capazes de responder as questões de pesquisas
-propostas, adotamos os seguintes critérios para inclusão ou exclusão dos
-estudos:
+eliminar aqueles que por ventura não são capazes de responder as questões de
+pesquisas propostas, adotamos os seguintes critérios para inclusão ou exclusão
+dos estudos:
 
 \begin{itemize}
 	\item Critérios de Inclusão
 		\begin{itemize}
-			 \item Artigos publicados em conferências e periódicos (journals)
-			 \item Estudos publicados a partir de 2010\footnote{Foram
-					 considerados neste estudo artigos publicados até maio/2016,
-					 data de realização da pesquisa nas base de dados.}
-			 \item Artigos escritos em língua inglesa e portuguesa
-			 \item Artigos disponíveis com texto completo
+			\item Artigos
+				publicados em conferências e periódicos (journals)
+			\item Estudos
+				publicados a partir de 2010\footnote{Foram considerados neste
+					estudo artigos publicados até maio/2016, data de realização
+					da pesquisa nas base de dados.}
+			\item Artigos escritos em
+				língua inglesa
+			\item Artigos disponíveis com texto
+				completo
 		\end{itemize}
 	\item Critérios de Exclusão
 		\begin{itemize}
 			\item Livros e literatura cinza (gray literature)
 			\item Artigos que não possuem relação com FGRM
-			\item Estudos duplicados, neste caso apenas foi considerada a versão
-				mais completa do trabalho
+			\item Estudos duplicados, neste caso apenas foi considerada a versão mais
+				completa do trabalho
 		\end{itemize}
 \end{itemize}
 
@@ -181,8 +193,7 @@ Intervention, Comparison and Outcomes) que é sugerida por Kitchenham e
 Charters~\cite{keele2007guidelines} para ajudar pesquisadores na formulação de
 termos tomando como base as questões de pesquisa, que serão aplicados às bases
 de dados. As sentenças de busca aplicadas a cada base de dados são apresentadas
-na Tabela~\ref{tab:setenca-por-base-dados} do
-Apêndice~\ref{ch:app-instrumentos-mapeamento}.
+no Apêndice~\ref{ch:app-instrumentos-mapeamento}.
 
 Após a condução da busca automatizada nas base de dados chegamos a um total de
 286 artigos. A Tabela~\ref{tab:estudos-por-base-dados} exibe o conjunto inicial
@@ -194,55 +205,44 @@ artigos duplicados resultou na exclusão de 81 documentos de modo que obtivemos
 um total de 205 estudos ao final do processo. Finalmente os artigos foram
 analisados com base na leitura do título e resumo. Nos casos em que o título e
 resumo não eram capazes de caracterizar o estudo uma leitura completa do texto
-foi realizada. O processo descrito resultou em 94 estudos incluídos neste
-trabalho. A Figura~\ref{fig:diagrama-processo-selecao}
+foi realizada. O processo descrito resultou em \textbf{64} estudos incluídos neste
+trabalho. A Figura~\ref{fig:diagrama-processo-selecao} resumo o processo
+utilização para seleção dos estudos ao mesmo tempo que apresenta o número artigo
+em cada etapa.
 
-\todo[inline]{Verificar o processo com objetivo de validar o total de artigo em
-	cada etapa do processo.}
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.75\linewidth]
+\begin{figure} \centering \includegraphics[width=0.75\linewidth]
 	{./chapter-mapeamento-sistematico/img/diagrama-processo-selecao.pdf}
 	\caption{Número de artigos incluídos durante o processo de seleção dos
 		estudos. Baseado
 		em~\cite{Petersen2015}}\label{fig:diagrama-processo-selecao}
 \end{figure}
 
-\begin{table}[htb]
-	\centering
-	\caption{Número de Estudos Recuperados por Base de Dados}\label{tab:estudos-por-base-dados}
-	\begin{tabular}{cc}
-		\hline
-		\textbf{Base de Dados} & \textbf{Total} \\ \hline
-		ACM Digital Library    & 109            \\
-		IEEE Explore           & 100            \\
-		Inspec/Compendex       & 22             \\
-		Scopus                 & 55             \\ \hline
-	\end{tabular}
+\begin{table}[htb] \centering \caption{Número de Estudos Recuperados por Base de
+		Dados}\label{tab:estudos-por-base-dados} \begin{tabular}{cc} \hline
+		\textbf{Base de Dados} & \textbf{Total} \\ \hline ACM Digital Library
+		& 109            \\ IEEE Explore           & 100            \\
+		Inspec/Compendex       & 22             \\ Scopus                 & 55
+		\\ \hline \end{tabular}
 
 \end{table}
 
 \subsection{Esquemas de Classificação}
 \label{subsec:map-esquemas-classificacao}
 
-Com o objetivo de mapear os estudos sobre extensões das FGRM's foram propostos
-quatro esquemas de classificação. O primeiro esquema organiza os artigos pelo
-tipo de problema da atividade de manutenção de software a extensão se propõe
-solucionar. A segunda categorização distribuí os estudos pelo papel no processo
-de manutenção de software a extensão visa dar suporte. A terceira é uma
-classificação baseada na taxonomia para modelos de Recuperação da Informação
-(Information Retrieve~-~IR) proposta por Cerulo e
-Canfora~\cite{cerulo2004taxonomy}. Em particular, utilizamos este esquema tendo
-em vista que grande parte das extensões propostas na literatura utilizam algum
-tipo de suporte de modelos de IR\@. O último esquema apresenta quais das
-ferramentas existentes na indústria estão sendo estendidas na literatura. Esta
-taxonomia nos fornece uma visão se as extensões propostas são com um foco
-propositivo, ou seja, sem que exista uma implementação concreta da extensão, ou
-se há algum tipo de ferramenta no qual existe um maior número de extensões
-propostas. Em seguida discutiremos cada esquema de classificação em detalhe.
+Com o objetivo de mapear os estudos sobre pelo tipo de melhoria na
+funcionalidade das FGRM's utilizamos dois esquemas de classificação. O primeiro
+esquema organiza os artigos pela dimensão de melhoria o qual a funcionalidade
+sendo proposto pertence. As dimensão de melhorias foram propostas por Zimmermann
+e outros~\cite{zimmermann2009improving} e visam aperfeiçoar as funcionalidades
+das FGRM's de maneira integral. A segunda categorização distribuí os estudos
+pelo papel no processo de manutenção de software a extensão visa dar suporte.
+Entendemos que estas duas taxonomia nos fornecem uma visão de como as melhorias
+das funcionalidades vêm sendo propostas tanto do ponto de vista de quem
+desenvolve este tipo de ferramenta quanto das diferentes partes interessadas que as
+utilizam no projetos de software. Em seguida discutiremos cada esquema de
+classificação em detalhe.
 
-\subsubsection{Classificação por Tipo de Problema}
+\subsubsection{Classificação por Dimensão de Melhoria} 
 \label{subsubsec:map-esquema-suporte-problema}
 
 Existem diversos problemas relacionados ao processo de Manutenção de Software.
@@ -250,20 +250,70 @@ Já na década de 1980 pesquisas questionavam os profissionais envolvidos com
 manutenção de software quais os principais problemas da
 área\cite{Lientz:1981:PAS:358790.358796}. Naturalmente a percepção dos desafios
 envolvidos com a manutenção de software se altera com tempo, desta forma, é
-sempre válido revisar a literatura com o objetivo de entender quais os tipos de
-problemas estão sendo estudados.
+sempre válido revisar a literatura com o objetivo de entender como as
+funcionalidades oferecidas pelas FGRM estão dando suporte na resolução de tais
+problemas.
 
 Neste sentido foi proposto um esquema de classificação que relaciona os estudos
-pelo tipo de problema que a extensão pretende resolver. A construção da
-taxonomia se deu com base no processo definido por Petersen e
+com a dimensão de melhoria no qual a funcionalidade proposta visa solucionar. Em
+um estudo sobre o aperfeiçoamento das FGRM's Zimmermann e
+outros~\cite{zimmermann2009improving} argumentam que ter informações completas
+nos relatos de bugs (Requisição de Mudança) tão logo quanto possível ajuda os
+desenvolvedores a resolver rapidamente o problema. Neste contexto os autores
+propõe melhorar este tipo de sistemas com o objetivo de aumentar a integridade
+das RM's de quatro maneiras principais que estão listadas a seguir. A
+Figura~\ref{fig:dimensoes_melhorias_fgrm} exibe um esquema de como as dimensões
+de melhoria se relacionam.
+
+\begin{description}
+	\item[Foco na Informação] Estas melhorias focam diretamente na informação
+		fornecida pelo reportador da RM\@. Com ajuda da FGRM o responsável por
+		descreve um bug, por exemplo, poderia ser motivado a coletar mais
+		informações sobre o problema. O sistema poderia verificar a validade e
+		consistência daquilo que foi repassado pelo usuário.
+   \item[Foco no Processo] Melhorias com foco no processo visam dar suporte à
+	   administração de atividades relacionadas à solução de RM\@. Por exemplo,
+	   a triagem de RM, poderia ser automatizada visando acelerar o processo. Um
+	   outro exemplo de melhoria poderia ocorrer no aumento do entendimento do
+	   progresso realizado em cada RM ou mesmo fornecer ao usuário afetado uma
+	   estimativa de em quanto tempo a sua requisição será solucionada.
+   \item[Foco no Usuário] Nesta dimensão estão incluídos tanto os usuário que
+	   relatam as RM's quanto os desenvolvedores responsável por solucioná-la.
+	   Os reportadores podem ser educados de qual informação fornecer e como
+	   coletá-la. Os desenvolvedores também podem beneficiar de um treinamento
+	   similar em qual informação esperar e como esta informação pode ser
+	   utilizada para solucionar a RM\@.
+	\item[Foco na Ferramenta] As melhorias centradas na ferramenta são
+		realizadas nas funcionalidades fornecidas pelas FGRM\@. Elas podem
+		reduzir a complexidade da coleta e fornecimento das informações
+		necessárias para solucionar o RM\@. Por exemplo, as FGRM poderiam ser
+		configuradas para automática localizar a pilha de erro (stack trace) e
+		adicioná-la ao erro reportado.  A ferramenta poderia simplificar o
+		processo de reprodução do erro mediante a simplificação do processo de
+		capturas de telas. Estes exemplos visam ajudar com a coleta das
+		informações necessárias pelos desenvolvedores para corrigir o bug, por
+		exemplo.
+
+\end{description}
+\begin{figure}[htpb] \centering
+	\includegraphics[width=0.666666\linewidth]
+	{chapter-intro/img/dimensoes_melhorias_fgrm.pdf}
+	\caption{Dimensões de melhoria das FGRM's. Adaptado
+		de~\cite{zimmermann2005mining}}\label{fig:dimensoes_melhorias_fgrm}
+\end{figure}
+
+
+Para a classificação do estudos conforme as dimensões de melhorias realizamos um
+processo de construção da taxonomia com base no que foi proposto por Petersen e
 outros~\cite{Petersen2008}, o qual é composto de duas etapas:
 
 \begin{enumerate}[I]
-	\item analisar as palavras-chaves e conceitos que identificam as
-		contribuições do estudo por meio da analise do título e resumo
-	\item após o término da etapa I, todas as palavras chaves são combinadas a
-		fim de construir um conjunto de categorias para no qual os artigos devem
-		ser classificados.
+	\item analisar as palavras-chaves e conceitos que
+		identificam as contribuições do estudo por meio da analise do título e
+		resumo.
+	\item após o término da etapa I, todas as palavras chaves são
+		combinadas a fim de construir um conjunto de categorias para no qual os
+		artigos devem ser classificados.
 \end{enumerate}
 
 Os autores recomendam que nos casos em que o resumo e o título do estudo não
@@ -274,16 +324,13 @@ informadas pelos autores. Mediante a aplicação do processo foi construído o
 esquema de classificação apresentado na
 Figura~\ref{fig:diagrama-esquema-dimensao-melhorias}.
 
-\begin{figure}[tb]
-\centering
- \makebox[\textwidth]{\includegraphics[width=.9\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.pdf}}
-\caption{Esquema de classificação das melhorias propostas na literatura. Os
-	retângulos representam as dimensões de melhorias e os polígonos de cantos
-	arredondados representam as melhorias.}
-\label{fig:diagrama-esquema-dimensao-melhorias}
-\end{figure}
-\todo[inline]{Incluir no anexo uma tabela demonstrando como as palavras-chaves foram combinadas}
-
+%\begin{figure}[tb] \centering
+	%\makebox[\textwidth]{\includegraphics[width=.9\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.pdf}}
+	%\caption{Esquema de classificação das melhorias propostas na literatura. Os
+		%retângulos representam as dimensões de melhorias e os polígonos de
+		%cantos arredondados representam as melhorias.}
+%\label{fig:diagrama-esquema-dimensao-melhorias}
+ %\end{figure}
 
 \subsubsection{Classificação por Suporte ao Papel da Manutenção de Software}
 \label{subsubsec:map-esquema-suporte-papel-man}
@@ -309,26 +356,27 @@ team) em \textit{Desenvolvedor e Analista de Qualidade} por entendemos que são
 papéis comuns a muito dos processos de manutenção existentes. Os papéis que
 compõe a taxonomia proposta estão descritos a seguir:
 
-\begin{description}
-	\item[Usuário Afetado]: Indivíduo que utiliza o sistema do qual será
-		produzida uma Requisição de Mudança.
-	\item[Reportador]: Responsável por registrar a Requisição de Mudança na
-		FGRM\@.
+\begin{description} 
+	\item[Usuário Afetado]: Indivíduo que utiliza o sistema do
+		qual será produzida uma Requisição de Mudança. 
+   	\item[Reportador]:
+		Responsável por registrar a Requisição de Mudança na FGRM\@.
 	\item[Gerente de Requisição de Mudança (Maintenance-request manager)]:
 		Responsável por decidir se uma Requisição de Mudança será aceita ou
 		rejeitada e qual tipo de manutenção deverá ser aplicada. Posteriormente
-		cabe a ele/ela encaminhar a RM para o Agendador.
-	\item[Agendador (Scheduler)]: Deve planejar a fila de Requisições de Mudança
-		aceitas. Também estão no rol de responsabilidades deste papel a
-		atribuição das RM's para o desenvolver mais apto.
-	\item[Desenvolvedor]: Responsável realizar as ações que irão solucionar a
-		Requisição de Mudança.
+		cabe a ele/ela encaminhar a RM para o Agendador. 
+   	\item[Agendador
+		(Scheduler)]: Deve planejar a fila de Requisições de Mudança aceitas.
+		Também estão no rol de responsabilidades deste papel a atribuição das
+		RM's para o desenvolver mais apto.
+  	\item[Desenvolvedor]: Responsável
+		realizar as ações que irão solucionar a Requisição de Mudança.
 	\item[Analista de Qualidade]: Avaliam uma Requisição de Mudança que foi
 		solucionada por um Desenvolvedor afim de verificar se a RM foi
 		corretamente resolvida.
-	\item[Líder da Manutenção (Head of Maintenance)]: Tem por responsabilidade
-		definir os padrões e procedimentos que compõe o processo de manutenção
-		que será utilizado.
+  	\item[Líder da Manutenção (Head of
+		Maintenance)]: Tem por responsabilidade definir os padrões e
+		procedimentos que compõe o processo de manutenção que será utilizado.
 \end{description}
 
 Apesar da taxonomia de papéis utilizada derivar de um contexto de manutenção de
@@ -348,64 +396,61 @@ trabalham com a noção de quais papeis a extensão pretender dar suporte,  ou
 seja,  relatar se existem papeis e quais são eles,  sem com isso, envolver em
 uma consolidação definitiva.
 
-\subsubsection{Classificação por Técnicas de Recuperação da Informação}
-\label{subsubsec:map-esaquema-tecnicas-ir}
+%\subsubsection{Classificação por Técnicas de Recuperação da Informação}
+%\label{subsubsec:map-esaquema-tecnicas-ir}
 
-Um ponto em comum entre as diversas extensões para FGRM propostas na literatura
-é o fato delas utilizarem algum suporte de modelos de Recuperação de Informação
-(Information Retrieve~-~IR). Um modelo de IR visa solucionar um uma necessidade
-informacional de um usuário, representada como um conjunto de termos, no qual
-uma lista dos documentos mais relevantes devem ser recuperadas de uma
-coleção~\cite{baeza1999modern}.
+%Um ponto em comum entre as diversas extensões para FGRM propostas na literatura
+%é o fato delas utilizarem algum suporte de modelos de Recuperação de Informação
+%(Information Retrieve~-~IR). Um modelo de IR visa solucionar um uma necessidade
+%informacional de um usuário, representada como um conjunto de termos, no qual
+%uma lista dos documentos mais relevantes devem ser recuperadas de uma
+%coleção~\cite{baeza1999modern}.
 
-Com o objetivo de obter uma visão geral das técnicas que estão sendo utilizadas
-para implementar as extensões para as FGRM, realizamos a classificação dos
-estudos através da taxonomia proposta por Canfora e
-Cerulo\cite{cerulo2004taxonomy}. O esquema de classificação consiste em duas
-visões sobrepostas: uma taxonomia vertical que classifica os modelos de IR com
-relação ao seu conjunto de características básicas; e uma taxonomia horizontal
-que classifica os objetos de IR com respeito as suas tarefas, forma e
-contexto\cite{cerulo2004taxonomy}. Nesta dissertação utilizamos a classificação
-vertical tendo em vista que estamos interessados na técnica utilizada na
-implementação da extensão.
+%Com o objetivo de obter uma visão geral das técnicas que estão sendo utilizadas
+%para implementar as extensões para as FGRM, realizamos a classificação dos
+%estudos através da taxonomia proposta por Canfora e
+%Cerulo\cite{cerulo2004taxonomy}. O esquema de classificação consiste em duas
+%visões sobrepostas: uma taxonomia vertical que classifica os modelos de IR com
+%relação ao seu conjunto de características básicas; e uma taxonomia horizontal
+%que classifica os objetos de IR com respeito as suas tarefas, forma e
+%contexto\cite{cerulo2004taxonomy}. Nesta dissertação utilizamos a classificação
+%vertical tendo em vista que estamos interessados na técnica utilizada na
+%implementação da extensão.
 
-\todo[inline]{Verificar o total de artigos que utilizam algum técnica de IR\@.
-	Apesar de grande parte utilizar não serão todos os artigos}
 
-A taxonomia vertical é construída explorando duas características básicas de um
-Modelo de Recuperação da Informação: \textit{representação (representation)},
-que é a forma adotada para representar ao mesmo tempo o documento e consulta do
-usuário; \textit{raciocínio (reasoning)}, ao qual se refere ao framework adotado
-para resolver o problema da representação de similaridade, ou seja, trata-se do
-conjunto de métodos, modelos e tecnologias utilizadas para realizar o casamento
-entre um documento e a consulta do usuário. O esquema de classificação proposto
-pelos autores é apresentado na Figura~\ref{fig:information-retrieval-model}.
+%A taxonomia vertical é construída explorando duas características básicas de um
+%Modelo de Recuperação da Informação: \textit{representação (representation)},
+%que é a forma adotada para representar ao mesmo tempo o documento e consulta do
+%usuário; \textit{raciocínio (reasoning)}, ao qual se refere ao framework adotado
+%para resolver o problema da representação de similaridade, ou seja, trata-se do
+%conjunto de métodos, modelos e tecnologias utilizadas para realizar o casamento
+%entre um documento e a consulta do usuário. O esquema de classificação proposto
+%pelos autores é apresentado na Figura~\ref{fig:information-retrieval-model}.
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-mapeamento-sistematico/img/information-retrieval-model.png}
-	\caption{Taxonomia vertical para Modelos de Recuperação da Informação.
-		Adaptado
-		de~\cite{cerulo2004taxonomy}}\label{fig:information-retrieval-model}
-\end{figure}
+%\begin{figure}[htpb] \centering
+	%\includegraphics[width=0.8\linewidth]{./chapter-mapeamento-sistematico/img/information-retrieval-model.png}
+	%\caption{Taxonomia vertical para Modelos de Recuperação da Informação.
+		%Adaptado
+		%de~\cite{cerulo2004taxonomy}}\label{fig:information-retrieval-model}
+%\end{figure}
 
-\subsubsection{Classificação por Ferramenta Estendida}
-\label{subsubsec:map-esquema-ferramenta}
+%\subsubsection{Classificação por Ferramenta Estendida}
+%\label{subsubsec:map-esquema-ferramenta}
 
-Do ponto de vista dos profissionais envolvidos em Manutenção de Software é
-importante entender quais as FGRM estão sendo estendidas. Por outro lado, para
-os pesquisadores é importante descobrir aquelas ferramentas mais ``amigáveis
-para o desenvolvimento de novas extensões bem como a melhoria das existentes.
-Neste sentido, realizamos a classificação dos estudos pelas ferramentas que
-foram utilizados para o desenvolvimento das extensões. Uma ferramenta é
-entendida como utilizada por determinado estudo se ela foi utilizada no processo
-de validação ou se seus dados foram utilizados na avaliação da extensão.
+%Do ponto de vista dos profissionais envolvidos em Manutenção de Software é
+%importante entender quais as FGRM estão sendo estendidas. Por outro lado, para
+%os pesquisadores é importante descobrir aquelas ferramentas mais ``amigáveis
+%para o desenvolvimento de novas extensões bem como a melhoria das existentes.
+%Neste sentido, realizamos a classificação dos estudos pelas ferramentas que
+%foram utilizados para o desenvolvimento das extensões. Uma ferramenta é
+%entendida como utilizada por determinado estudo se ela foi utilizada no processo
+%de validação ou se seus dados foram utilizados na avaliação da extensão.
 
-Para produzirmos a taxonomia realizarmos a leitura do resumo e da introdução do
-artigo. Nos casos em que não foi possível determinar a ferramenta utilizada a
-partir da leitura das seções citadas, procedemos com a leitura com a parte
-avaliação do estudo. A Tabela exibe as ferramentas utilizadas para cada estudo
-analisado.
+%Para produzirmos a taxonomia realizarmos a leitura do resumo e da introdução do
+%artigo. Nos casos em que não foi possível determinar a ferramenta utilizada a
+%partir da leitura das seções citadas, procedemos com a leitura com a parte
+%avaliação do estudo. A Tabela exibe as ferramentas utilizadas para cada estudo
+%analisado.
 
 \section{Resultados}
 \label{sec:resultados}
@@ -422,8 +467,7 @@ implementar algumas das extensões propostas na literatura. Finalizamos esta
 análise com as ferramentas existentes no mercado que estão efetivamente sendo
 entendidas.
 
-\subsection{Frequência das Publicações}
-\label{sub:frequencia_publicacao}
+\subsection{Frequência das Publicações} \label{sub:frequencia_publicacao}
 
 A Figura~\ref{fig:publicacao_por_ano} exibe o número de estudos primários
 identificados entre os anos 2010@-@2016, período de referência utilizado no
@@ -436,12 +480,10 @@ crescente número de estudos publicados sobre melhorias nas FGRM pode indicar qu
 esta área vem sendo considerada altamente relevante pela comunidade acadêmica em
 Engenharia de Software.
 
-\begin{figure}[htpb]
-	\centering
+\begin{figure}[htpb] \centering
 	\includegraphics[width=0.9\linewidth]{chapter-mapeamento-sistematico/img/ano-publicao-estudos.pdf}
 	\caption{Número de estudos primários por ano de publicação.}
-\label{fig:publicacao_por_ano}
-\end{figure}
+	\label{fig:publicacao_por_ano} \end{figure}
 
 \subsection{Extensões para Problemas na Manutenção de Software}
 \label{sub:extensões_para_problemas_na_manutenção_de_software}
@@ -463,28 +505,22 @@ tópico no estudo sobre melhorias em FGRM's.
 % Inclusão da tabela
 \input{./chapter-mapeamento-sistematico/tables/tb-taxonomia-problemas-manutencao.tex}
 
-\begin{figure}[tb]
-\centering
- \makebox[\textwidth]{\includegraphics[width=.9\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.pdf}}
-\caption{Esquema de classificação das melhorias propostas na literatura. Os
-	retângulos representam as dimensões de melhorias e os polígonos de cantos
-	arredondados representam as melhorias.}
-\label{fig:diagrama-esquema-dimensao-melhorias}
-\end{figure}
+\begin{figure}[tb] \centering
+	\makebox[\textwidth]{\includegraphics[width=.9\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.pdf}}
+	\caption{Esquema de classificação das melhorias propostas na literatura. Os
+		retângulos representam as dimensões de melhorias e os polígonos de
+		cantos arredondados representam as melhorias.}
+	\label{fig:diagrama-esquema-dimensao-melhorias} \end{figure}
 
-\begin{figure}[htpb]
-	\centering
+\begin{figure}[htpb] \centering
 	\includegraphics[width=0.9\linewidth]{./chapter-mapeamento-sistematico/img/grafico_dim_melhoria_por_artigo.pdf}
 	\caption{Total de artigos por dimensão de melhoria}
-\label{fig:grafico_dim_melhoria_por_artigo}
-\end{figure}
+	\label{fig:grafico_dim_melhoria_por_artigo} \end{figure}
 
-\begin{figure}[htpb]
-	\centering
+\begin{figure}[htpb] \centering
 	\includegraphics[width=0.8\linewidth]{./chapter-mapeamento-sistematico/img/grafico_topico_por_artigo.pdf}
 	\caption{Total de artigos por tópico de melhoria}
-\label{fig:grafico_topico_por_artigo}
-\end{figure}
+	\label{fig:grafico_topico_por_artigo} \end{figure}
 
 \subsubsection{Melhorias Propostas na Dimensão Ferramenta}
 \label{ssub:melhorias_dim_ferramenta}
@@ -492,10 +528,9 @@ tópico no estudo sobre melhorias em FGRM's.
 Este ramo do esquema de classificação de classificação proposto foi criada para
 agrupar os estudos que discutem melhorias na dimensão Ferramenta. Conforme
 anteriormente exposto, esta classe acomoda estudos em tópicos como Localização
-	do Problema e Visualização de RM's.
-\paragraph{Localização do Problema}
-Os estudos incluídos neste tópico de classificação estão devotados ao problema
-de localizar a origem de um problema de software com base dos dados da RM\@.
+do Problema e Visualização de RM's.  \paragraph{Localização do Problema} Os
+estudos incluídos neste tópico de classificação estão devotados ao problema de
+localizar a origem de um problema de software com base dos dados da RM\@.
 Trata-se do processo de estatisticamente localizar um bug utilizando os dado das
 RM's em conjunto com o código fonte~\cite{Hovemeyer:2004:FBE:1052883.1052895}.
 
@@ -503,16 +538,15 @@ A tarefa de encontrar a origem de um falha de software é complexa de consome
 muito tempo. Em estudo Lúcia e outros relataram que entre 84 a 93\% dos
 problemas em software afetam apenas 1~-~2 arquivos de
 código-fonte~\cite{thung2012faults}. Contudo não é fácil identificar esses
-poucos arquivos dos milhares de arquivos de código-fonte. Esta situação
-realça que localizar a origem de um problema (buggy files) é uma tarefa
+poucos arquivos dos milhares de arquivos de código-fonte. Esta situação realça
+que localizar a origem de um problema (buggy files) é uma tarefa
 árdua~\cite{Thung:2014:BIT:2635868.2661678}.
 
-Neste contexto, pesquisadores vem propondo abordagens baseadas em
-Recuperação da Informação para localizar falhas com base no que está descritos
-nos relatos de bugs. Nessas abordagens existe a tentativa de encontrar entre
-o código fonte do sistema um subconjunto de arquivos de fonte que
-estão diretamente relacionados à solução do problema
-reportado~\cite{Wong:2014:BBF:2705615.2706096}.
+Neste contexto, pesquisadores vem propondo abordagens baseadas em Recuperação da
+Informação para localizar falhas com base no que está descritos nos relatos de
+bugs. Nessas abordagens existe a tentativa de encontrar entre o código fonte do
+sistema um subconjunto de arquivos de fonte que estão diretamente relacionados à
+solução do problema reportado~\cite{Wong:2014:BBF:2705615.2706096}.
 
 Com objetivo de melhorar a eficiência da Localização do Problema diversas
 informações contidas nas RM's estão sendo utilizadas. As diversas abordagens
@@ -524,25 +558,25 @@ versões~\cite{Bangcharoensap:2012:LSC:2419061.2419428,corley2011recovering,Romo
 Alguns dos estudos propostos foram incluídos em ferramentas largamente
 utilizadas no mercado utilizando as propriedades de extensão do
 software~\cite{Thung:2014:BIT:2635868.2661678,corley2011recovering}. Os autores
-argumentam que pelo fato de nenhuma das técnicas propostas na literatura
-estarem integradas às FGRM exite uma dificuldade de adoção da prática da
-localização automática de problemas pelos desenvolvedores. Neste sentido, eles
-argumentam sobre a necessidade da melhoria das funcionalidades das FGRM em
-especial com melhoria ou inclusão de funcionalidades nas FGRM's utilizando o que
-vem sendo proposto na literatura.
+argumentam que pelo fato de nenhuma das técnicas propostas na literatura estarem
+integradas às FGRM exite uma dificuldade de adoção da prática da localização
+automática de problemas pelos desenvolvedores. Neste sentido, eles argumentam
+sobre a necessidade da melhoria das funcionalidades das FGRM em especial com
+melhoria ou inclusão de funcionalidades nas FGRM's utilizando o que vem sendo
+proposto na literatura.
 
-\paragraph{Visualização de RM}
-Os estudos classificados neste tópicos propõe melhorar a visualização das
-informações contidas em uma RM\@. A tomada de decisão deve estar subsidiada por
-informações corretas. Este fato não é diferente na manutenção e desenvolvimento
-de software. Contudo, uma fonte de informação recebeu menos atenção do que o
-código fonte: os bugs no sistema. Pouco se sabe sobre o comportamento evolutivo,
-o tempo de vida, distribuição e estabilidade dos problemas reportados nas
-FGRM~\cite{hora2012bug}. Este problema é reforçado pela forma como as FGRM's
-armazenam os dados das RM's. Em geral, esses exibem informações sobre as RM's de
-forma textual, o que não é apenas complicado para para navegar, mas também
-dificulta a compreensão das intrincadas peças de informação que giram em torno
-dos problemas de software~\cite{dal2014bug}.
+\paragraph{Visualização de RM} Os estudos classificados neste tópicos propõe
+melhorar a visualização das informações contidas em uma RM\@. A tomada de
+decisão deve estar subsidiada por informações corretas. Este fato não é
+diferente na manutenção e desenvolvimento de software. Contudo, uma fonte de
+informação recebeu menos atenção do que o código fonte: os bugs no sistema.
+Pouco se sabe sobre o comportamento evolutivo, o tempo de vida, distribuição e
+estabilidade dos problemas reportados nas FGRM~\cite{hora2012bug}. Este problema
+é reforçado pela forma como as FGRM's armazenam os dados das RM's. Em geral,
+esses exibem informações sobre as RM's de forma textual, o que não é apenas
+complicado para para navegar, mas também dificulta a compreensão das intrincadas
+peças de informação que giram em torno dos problemas de
+software~\cite{dal2014bug}.
 
 Com o objetivos de apresentar novas forma de visualizar os dados de uma RM novos
 conceitos estão sendo propostos. No estudo de Hora e outros~\cite{hora2012bug} é
@@ -573,10 +607,10 @@ Neste ramo do esquema de classificação foram acomodados os estudos que se prop
 em melhorar a informação que as partes interessadas registram em uma RM\@. Ela é
 composta de dois principais tópicos: no primeiro temos o conjunto de
 funcionalidades que dão suporte ao registro de uma RM antes que ela seja
-armazenada na base de dados de uma FGRM\@; o segundo tópico se dedica aos artigos
-que visam organizar a informação já registrada em uma RM, de modo a facilitar o
-entendimento por parte dos desenvolvedores e demais profissionais envolvidos na
-manutenção de software.
+armazenada na base de dados de uma FGRM\@; o segundo tópico se dedica aos
+artigos que visam organizar a informação já registrada em uma RM, de modo a
+facilitar o entendimento por parte dos desenvolvedores e demais profissionais
+envolvidos na manutenção de software.
 
 \paragraph{Suporte ao Registro da RM}
 
@@ -586,12 +620,12 @@ rotineiramente tentam reproduzir problemas não confirmados usando as informaç�
 contidas nas RM's que muitas vezes estão
 incompletos~\cite{White:2015:GRR:2820282.2820291}. Para complementar os dados
 necessários à resolução do problema o desenvolvedor deve solicitar ao
-responsável pelo relato da RM as informações necessárias. Os relatos
-contidos nas RM's podem conter informações valiosas que podem ser
-utilizadas para melhorar a qualidade da informação contidas em novos relatórios
-de problemas de software. Esta melhoria da qualidade pode implicar na redução do
-custo do processo de garantia de qualidade bem como aumentar a
-confiabilidade a confiabilidade do software com a redução gradativa de
+responsável pelo relato da RM as informações necessárias. Os relatos contidos
+nas RM's podem conter informações valiosas que podem ser utilizadas para
+melhorar a qualidade da informação contidas em novos relatórios de problemas de
+software. Esta melhoria da qualidade pode implicar na redução do custo do
+processo de garantia de qualidade bem como aumentar a confiabilidade a
+confiabilidade do software com a redução gradativa de
 bugs~\cite{Tu:2014:MQI:2677832.2677844}.
 
 A pesquisa visando a melhoria da qualidade da informação fornecida nas RM's
@@ -624,10 +658,10 @@ fomentar a pesquisa sobre a melhorias das FGRM\@.
 
 \paragraph{Organização da Informação da RM}
 
-	Em alguns casos não é possível aumentar a qualidade da informação fornecida em
-um relato de uma RM antes que ela seja armazenada em seu respectivo repositório.
-Nestas situações uma abordagem adotada é organizar de uma maneira previamente
-definidas as informações contidas em uma RM\@.
+Em alguns casos não é possível aumentar a qualidade da informação fornecida
+em um relato de uma RM antes que ela seja armazenada em seu respectivo
+repositório.  Nestas situações uma abordagem adotada é organizar de uma
+maneira previamente definidas as informações contidas em uma RM\@.
 
 Durante o processo de análise de uma RM, em especial para aquelas de caráter
 corretiva, existe a tendência dos desenvolvedores em procuram por problemas
@@ -644,14 +678,13 @@ de problemas.
 \subsubsection{Melhorias Propostas na Dimensão Processo}
 \label{ssub:melhorias_dim_processo}
 
-\paragraph{Localização de RM Duplicadas}
-O processo de localização de RM's Duplicadas consiste em avaliar se determinado
-relato já foi realizado em algum outro momento. Quando uma RM duplicada é
-identificada ele deve ser vinculada a outra que na literatura da área é
-denominada como RM Mestre. Geralmente a Mestre é aquela que foi incluída no
-repositório de erros em data anterior. Alguns estudos revelam que entre 10\% e
-30\% das RM's podem ser classificadas com duplicadas, o que causa um substancial
-impacto nas atividades de manutenção de
+\paragraph{Localização de RM Duplicadas} O processo de localização de RM's
+Duplicadas consiste em avaliar se determinado relato já foi realizado em algum
+outro momento. Quando uma RM duplicada é identificada ele deve ser vinculada a
+outra que na literatura da área é denominada como RM Mestre. Geralmente a Mestre
+é aquela que foi incluída no repositório de erros em data anterior. Alguns
+estudos revelam que entre 10\% e 30\% das RM's podem ser classificadas com
+duplicadas, o que causa um substancial impacto nas atividades de manutenção de
 software~\cite{anvik2005coping,cavalcanti2013bug,Runeson:2007:DDD:1248820.1248882}.
 Por conta do grande número de RM's duplicadas se faz necessário designar pessoas
 para manualmente analisar as Requisições de Mudanças que chegam com objetivo de
@@ -682,89 +715,84 @@ baseia na premissa que registrar um mesmo problema por mais de uma vez nem
 sempre é problemático tendo em vista que pode fornecer informações adicionais
 que podem ser úteis~\cite{bettenburg2008duplicate}. No entanto, alguns estudos
 compensam o custo de sua recuperação e permanência na base de dados de
-RM's~\cite{davidson2011coping}. Neste sentido, é importante que novas
-abordagens tentem equilibrar este dois tipos de abordagem de movo a evitar o
-tempo extra para análise de uma RM bem como apoiar os desenvolvedores com
-informações adicionais~\cite{Lerch:2013:FDY:2495256.2495763,Thung2014}.
+RM's~\cite{davidson2011coping}. Neste sentido, é importante que novas abordagens
+tentem equilibrar este dois tipos de abordagem de movo a evitar o tempo extra
+para análise de uma RM bem como apoiar os desenvolvedores com informações
+adicionais~\cite{Lerch:2013:FDY:2495256.2495763,Thung2014}.
 
-\paragraph{Atribuição (Triagem) de RM}
-O processo de atribuição de RM, também conhecido como \textit{triagem}, possui
-como principal objetivo encontrar o desenvolvedor mais capacitado para manipular
-uma dada RM~\cite{cavalcanti2014challenges}. Existe a premissa que a escolha do
+\paragraph{Atribuição (Triagem) de RM} O processo de atribuição de RM, também
+conhecido como \textit{triagem}, possui como principal objetivo encontrar o
+desenvolvedor mais capacitado para manipular uma dada
+RM~\cite{cavalcanti2014challenges}. Existe a premissa que a escolha do
 desenvolvedor apropriado é crucial para obter um menor tempo para resolução de
 determinada RM~\cite{di2002approach}. Estudos também discutem que o processo de
 atribuição deve considerar fatores tais como a carga de trabalho do
 desenvolvedor a prioridade da RM~\cite{aljarah2011selecting}.
 
-\paragraph{Classificação da RM}
-Independentemente do tipo e tamanho de um projeto é sempre importante determinar
-qual tipo manutenção deverá ser realizada tomando como base o relato de uma RM\@.
-Este processo consiste de forma resumida em classificar uma requisição com base
-em algum esquema de classificação previamente definido. Este esquema pode ser
-classificar em \textit{corretiva, perfectiva, preventiva ou
-	adaptativa}~\cite{4425813} ou mesmo como \textit{resolver um problema de
-	software} ou \textit{implementar uma melhoria.}
-A diversa de categorias em determinado esquema de classificação  pode tornar
-complexo a tarefa, tendo em vista que em muitos casos não é fácil determinar os
-limites entre os tipos~\cite{antoniol2008bug}. Por exemplo, a uma classificação
-incorreta de um defeito como melhoria pode acarretar em atrasos no projeto ou
-mesmo fazendo que uma RM receba menos atenção do que ela
+\paragraph{Classificação da RM} Independentemente do tipo e tamanho de um
+projeto é sempre importante determinar qual tipo manutenção deverá ser realizada
+tomando como base o relato de uma RM\@.  Este processo consiste de forma
+resumida em classificar uma requisição com base em algum esquema de
+classificação previamente definido. Este esquema pode ser classificar em
+\textit{corretiva, perfectiva, preventiva ou adaptativa}~\cite{4425813} ou mesmo
+como \textit{resolver um problema de software} ou \textit{implementar uma
+	melhoria.} A diversa de categorias em determinado esquema de classificação
+pode tornar complexo a tarefa, tendo em vista que em muitos casos não é fácil
+determinar os limites entre os tipos~\cite{antoniol2008bug}. Por exemplo, a uma
+classificação incorreta de um defeito como melhoria pode acarretar em atrasos no
+projeto ou mesmo fazendo que uma RM receba menos atenção do que ela
 mereça~\cite{cavalcanti2014challenges}.
 
-\paragraph{Estimativa de Esforço da RM}
-A gestão do custo e esforço de um projeto de manutenção de software passa pelo
-controle do esforço necessário ao cumprimento de suas RM's. Os estudos que medem
-o esforço de uma RM utilizam em geral três forma para medir este
-esforço~\cite{cavalcanti2014challenges}: determinar o tempo para solucionar
-novas RM's; determinar os artefatos que são impactados por determinada RM\@;
-prever o número de novas RM's que poderão fazer parte do projeto.
+\paragraph{Estimativa de Esforço da RM} A gestão do custo e esforço de um
+projeto de manutenção de software passa pelo controle do esforço necessário ao
+cumprimento de suas RM's. Os estudos que medem o esforço de uma RM utilizam em
+geral três forma para medir este esforço~\cite{cavalcanti2014challenges}:
+determinar o tempo para solucionar novas RM's; determinar os artefatos que são
+impactados por determinada RM\@; prever o número de novas RM's que poderão fazer
+parte do projeto.
 
 No primeiro tipo de estudo a preocupação é estimar o tempo necessário para
 tratar a mudança solicitada em determinada requisição. Naturalmente, existe uma
- complexidade produzir uma estimativa precisa por conta das
-diferentes atividades envolvidas em conjunto aos diferente níveis de capacitação
-que o responsável pela execução das tarefas pode ter~\cite{xia2015automatic}.
-Apesar da inerente imprecisão deste tipo de trabalho é importante salientar que
-estimar o tempo de solução de uma RM é importante para o gerenciamento do
-projeto porque ajudar alocar recurso de forma mais
+complexidade produzir uma estimativa precisa por conta das diferentes atividades
+envolvidas em conjunto aos diferente níveis de capacitação que o responsável
+pela execução das tarefas pode ter~\cite{xia2015automatic}.  Apesar da inerente
+imprecisão deste tipo de trabalho é importante salientar que estimar o tempo de
+solução de uma RM é importante para o gerenciamento do projeto porque ajudar
+alocar recurso de forma mais
 eficiente~\cite{Bhattacharya:2011:BTP:1985441.1985472} e melhorar a previsão do
 custo necessário para o lançamento de futuras versões do
 sistema~\cite{Vijayakumar2014}.
 
 No segundo grupo temos os artigos que tentam identificar previamente o conjunto
-de artefatos que serão impactados pela tarefa de manutenção~\cite{Nagwani2010}.
-\todo[inline]{Incluir citação para o artigo Impact analalysis by mining e
-	Identifing the start impact set of a }. A literatura sobre análise de
-impacto é bastante abrangente e pode envolver o estudos de artefatos tais como
-documentos de requisitos e arquiteturais dos software, código fonte, registros
-(logs) de teste e assim por diante~\cite{cavalcanti2014challenges}. Neste
-sentido,estamos focados em estudos onde a RM são o ponto de partida para a
-análise de impacto.
+de artefatos que serão impactados pela tarefa de manutenção~\cite{Nagwani2010,
+	ahsan2010impact}. A literatura sobre análise de impacto é bastante
+abrangente e pode envolver o estudos de artefatos tais como documentos de
+requisitos e arquiteturais dos software, código fonte, registros (logs) de teste
+e assim por diante~\cite{cavalcanti2014challenges}. Neste sentido,estamos
+focados em estudos onde a RM são o ponto de partida para a análise de impacto.
 
 O último grupo de trabalho se dedica em prever o número de RM que possivelmente
 serão relatadas em futuras versões do sistema. De forma similar ao primeiro
 grupo este tipo de estudo visa contribuir com o planejamento das atividades de
 manutenção e evolução. A predição do que será relatado incluí tanto novas
-requisições de problemas que não existiam em versões anteriores, por exemplo,
-\todo[inline]{Inserir citação de Software defect association mining and
-	defects  e  Minig software code repositories and bug database}, bem
-como aqueles que serão reabertos, ou seja, problemas que não foram solucionados
-anteriormente mesmo as suas RM's dizendo o contrário~\cite{xia2015automatic}
+requisições de problemas que não existiam em versões
+anteriores~\cite{song2006software}, por exemplo, bem como aqueles que serão
+reabertos, ou seja, problemas que não foram solucionados anteriormente mesmo as
+suas RM's dizendo o contrário~\cite{xia2015automatic}.
 
 \subsubsection{Melhorias Propostas na Dimensão Usuário}
 \label{ssub:melhorias_dim_usuario}
 
-\paragraph{Recomendação de RM}
-Os estudos contidos neste tópico possuem foco em dar suporte à novos
-desenvolvedores na redução da curva de aprendizagem quando eles pretendem
-ingressar em um um novo projeto. Por exemplo, quando um novo desenvolvedor entra
-na equipe seria interessante que ele resolvesse as RM's que tivessem um menor
-nível de dificuldade. Posteriormente, quando o desenvolvedor ganhasse
-experiência, poderia aumentar o grau de dificuldade relacionado à RM que ele
-deve tratar. Este tipo de processo ocorre com certa frequência em projetos de
-código aberto, onde a contribuição de desenvolvedores fora do projeto é
-fundamental.No entanto, encontrar um bug apropriado e uma correção apropriada
-para esse bug requer uma boa compreensão do projeto, que não é
+\paragraph{Recomendação de RM} Os estudos contidos neste tópico possuem foco em
+dar suporte à novos desenvolvedores na redução da curva de aprendizagem quando
+eles pretendem ingressar em um um novo projeto. Por exemplo, quando um novo
+desenvolvedor entra na equipe seria interessante que ele resolvesse as RM's que
+tivessem um menor nível de dificuldade. Posteriormente, quando o desenvolvedor
+ganhasse experiência, poderia aumentar o grau de dificuldade relacionado à RM
+que ele deve tratar. Este tipo de processo ocorre com certa frequência em
+projetos de código aberto, onde a contribuição de desenvolvedores fora do
+projeto é fundamental.No entanto, encontrar um bug apropriado e uma correção
+apropriada para esse bug requer uma boa compreensão do projeto, que não é
 trivial~\cite{Wang2011bug}.
 
 Em algum projetos, um membro experiente da equipe, geralmente ensina os
@@ -796,49 +824,48 @@ modelo estatístico PPM~\cite{malheiros2012source}.
 \subsection{Classificação por Melhorias com Suporte à Papéis da Manutenção de
 	Software}
 \label{sub:extensões_com_suporte_a_papeis}
-\todo[inline]{Verificar os artigos com N/A e não especificado}
-Nesta seção apresentamos a classificações dos estudos pelo tipo de papel na
-manutenção de software ao qual a funcionalidade visa dar suporte. Conforme
-exposto anteriormente a definição dos compõem o processo de manter de software
-foi desenvolvido conforme os trabalhos realizados por Polo e
-outros~\cite{Polo1999} e Ihara e outros~\cite{Ihara:2009:AMI:1595808.1595833}\@.
-Com esta modificações é possível acoplar os papéis utilizados neste estudo tanto
-aos processo adotados na indústria e em projetos de código aberto. A
+Nesta seção apresentamos a
+classificações dos estudos pelo tipo de papel na manutenção de software ao qual
+a funcionalidade visa dar suporte. Conforme exposto anteriormente a definição
+dos compõem o processo de manter de software foi desenvolvido conforme os
+trabalhos realizados por Polo e outros~\cite{Polo1999} e Ihara e
+outros~\cite{Ihara:2009:AMI:1595808.1595833}\@.  Com esta modificações é
+possível acoplar os papéis utilizados neste estudo tanto aos processo adotados
+na indústria e em projetos de código aberto. A
 Figura~\ref{fig:graf_papel_por_artigo} exibe o total de artigos em comparação
 com o papel ao qual funcionalidade proposta visa dar suporte. Como pode ser
 observado verificamos um maior número de estudos para os papéis de Agendador e
 Desenvolvedor. Na Figura~\cite{fig:grafico_topico_por_artigo} verificamos uma
 prevalência de estudos com foco na dimensão Processo, em especial nos tópicos
-``Localização de RM Duplicados'' e ``Atribuição [Triagem] de RM'', o que  é natural
-tendo em vista que há um mapeamento o papel desempenhado na manutenção com as
-atividades desempenhada por aquele papel. Neste sentido, não é de se estranhar a
-prevalência de estudos para aqueles funções vinculada ao processo de manutenção
-de software.
+``Localização de RM Duplicados'' e ``Atribuição [Triagem] de RM'', o que  é
+natural tendo em vista que há um mapeamento o papel desempenhado na manutenção
+com as atividades desempenhada por aquele papel. Neste sentido, não é de se
+estranhar a prevalência de estudos para aqueles funções vinculada ao processo de
+manutenção de software.
 
-\begin{figure}[htpb]
-	\centering
+\begin{figure}[htpb] \centering
 	\includegraphics[width=0.8\linewidth]{chapter-mapeamento-sistematico/img/grafico_papel_por_artigo.pdf}
-	\caption{Total de artigos por papel na manutenção de software}\label{fig:graf_papel_por_artigo}
-\end{figure}
+	\caption{Total de artigos por papel na manutenção de
+		software}\label{fig:graf_papel_por_artigo} \end{figure}
 
-\paragraph{Agendador}
-O estudos classificados neste tópico visam dar suporte as atividades de
-Agendador. Esta função têm como principal objetivo atribuição das RM’s
-para o desenvolver mais apto~\cite{banitaan2013decoba}. O processo de atribuição
-de RM's deve ser realizado em acordo com a carga de trabalho do desenvolvedor e
-com a prioridade que foi atribuída à RM~\cite{chawla2015automated}. 
+\paragraph{Agendador} O estudos classificados neste tópico visam dar suporte as
+atividades de Agendador. Esta função têm como principal objetivo atribuição das
+RM’s para o desenvolver mais apto~\cite{banitaan2013decoba}. O processo de
+atribuição de RM's deve ser realizado em acordo com a carga de trabalho do
+desenvolvedor e com a prioridade que foi atribuída à
+RM~\cite{chawla2015automated}. 
 
 Neste contexto, os estudo têm focado em apresentar soluções de atribuição
 automática~\cite{banitaan2013decoba, shokripour2012automatic,
-	somasundaram2012automatici,Naguib2013, Zhang2014, Zanetti2013}; classificação
-automatizada~\cite{gegick2010identifying,liu2014faceted, behl2014bug,
-	chawla2015automated,tian2015automated}; visualização da
-fila de RM's~\cite{izquierdo2015gila}; agrupamento (clusters) das
+	somasundaram2012automatici,Naguib2013, Zhang2014, Zanetti2013};
+classificação automatizada~\cite{gegick2010identifying,liu2014faceted,
+	behl2014bug, chawla2015automated,tian2015automated}; visualização da fila de
+RM's~\cite{izquierdo2015gila}; agrupamento (clusters) das
 requisições~\cite{liu2014faceted}; determinação do tempo necessário à conclusão
 da RM (time do fix)~\cite{hosseini2012market,
-	Bhattacharya:2011:BTP:1985441.1985472}; sumarização das informações
-contidas na RM~\cite{mani2012ausum}; determinação de RM'S
-duplicadas~\cite{Sun2011, Wu2011a}.
+	Bhattacharya:2011:BTP:1985441.1985472}; sumarização das informações contidas
+na RM~\cite{mani2012ausum}; determinação de RM'S duplicadas~\cite{Sun2011,
+	Wu2011a}.
 
 Apesar da lista de artigos apresentada em cada tópico não ser exaustiva, os
 resultados demonstram um foco maior no suporte à atribuição e categorização das
@@ -846,10 +873,9 @@ RM's apresentado soluções automatizadas para estas atividades. Existe
 possivelmente uma crença melhorar a produtividade do processo de manutenção de
 software reduzindo o esforço de encontrar o desenvolvedor mais apto.
 
-\paragraph{Desenvolvedor}
-Ao Desenvolvedor cabe aplicar as ações que irão produzir o resultado
-solicitado/esperado na RM@. Os estudos nesta categoria deveriam suportar
-atividades tais como codificação, depuração e testes. 
+\paragraph{Desenvolvedor} Ao Desenvolvedor cabe aplicar as ações que irão
+produzir o resultado solicitado/esperado na RM@. Os estudos nesta categoria
+deveriam suportar atividades tais como codificação, depuração e testes. 
 
 No suporte ao desenvolvedor verificamos estudos que propõe à atribuição de RM's
 ao conjunto de desenvolvedor, em contrapartida da tradicional atribuição ao
@@ -867,11 +893,11 @@ sistema~\cite{gegick2010identifying} ou aquelas RM's que possam impedir a
 resolução de outras
 (blocking-bugs)~\cite{ValdiviaGarcia:2014:CPB:2597073.2597099}
 
-\paragraph{Analista de Qualidade}
-Cabe ao Analista de qualidade avaliar se uma RM foi solucionada por um
-Desenvolvedor afim de verificar se a RM foi corretamente resolvida. Neste
-sentido, melhorias em FGRM's que visam facilitar as atividades deste papel podem
-estar relacionadas ao processo de teste de software.
+\paragraph{Analista de Qualidade} Cabe ao Analista de qualidade avaliar se uma
+RM foi solucionada por um Desenvolvedor afim de verificar se a RM foi
+corretamente resolvida. Neste sentido, melhorias em FGRM's que visam facilitar
+as atividades deste papel podem estar relacionadas ao processo de teste de
+software.
 
 De maneira similar ao que ocorre na categoria de Desenvolvedor verificamos uma
 prevalência dos estudos visam determinar uma ligação entre um problema de
@@ -880,15 +906,14 @@ fonte~\cite{corley2011recovering,Wong:2014:BBF:2705615.2706096,
 	Thung:2014:BIT:2635868.2661678,Nguyen:2012:MAR:2393596.2393671,thung2013automatic,
 	Romo:2015:TAT:2745802.2745833}. Verificamos ainda estudos que tentam
 predizer a probabilidade que determinada RM será
-reaberta~\cite{xia2015automatic}, o que pode ajudar ao
-Analista de Qualidade na priorização das requisições com alta possibilidade de
-reabertura
+reaberta~\cite{xia2015automatic}, o que pode ajudar ao Analista de Qualidade na
+priorização das requisições com alta possibilidade de reabertura
 
-\paragraph{Gerente de Requisição de	Mudança}
-O papel que representa esta categoria está vinculado à gestão do processo de
-manutenção de software, em especial por decidir se uma Requisição de Mudança
-será aceita ou rejeitada. Neste contexto, melhorias relacionadas à classificação
-quanto ao nível de segurança~\cite{gegick2010identifying, zhang2011bug,
+\paragraph{Gerente de Requisição de	Mudança} O papel que representa esta
+categoria está vinculado à gestão do processo de manutenção de software, em
+especial por decidir se uma Requisição de Mudança será aceita ou rejeitada.
+Neste contexto, melhorias relacionadas à classificação quanto ao nível de
+segurança~\cite{gegick2010identifying, zhang2011bug,
 	ValdiviaGarcia:2014:CPB:2597073.2597099}, identificação de
 duplicados~\cite{hindle2016contextual, sun2010discriminative,
 	alipour2013contextual, banerjee2012automated}. 
@@ -900,13 +925,12 @@ desempenho de papel. Todavia, tendo em vista o esforço e tempo gasto por esta
 tarefa, especialmente quando realizada manualmente, seria importante que as FGRM
 automatizasse algumas destas atividades.
 
-\paragraph{Reportador}
-Conforme discutido anteriormente os dados contidos nas RM'S são fundamentais em
-em diversas abordagens de melhorias da funcionalidades das FGRM@. Esta relevância
-ainda é maior nos estudos que fazem uso de técnicas de Recuperação da
-Informação. Neste sentido é importante que as FGRM deem suporte ao Reportador
-que, na maioria, é primeiro a registrar as informações que serão necessárias à
-solução da RM@. 
+\paragraph{Reportador} Conforme discutido anteriormente os dados contidos nas
+RM'S são fundamentais em em diversas abordagens de melhorias da funcionalidades
+das FGRM@. Esta relevância ainda é maior nos estudos que fazem uso de técnicas
+de Recuperação da Informação. Neste sentido é importante que as FGRM deem
+suporte ao Reportador que, na maioria, é primeiro a registrar as informações que
+serão necessárias à solução da RM@. 
 
 Muitos dos estudos que fazem parte desta categoria  partem da premissa que
 melhorar a qualidade dos dados na RM é o ponto de partida para tratar outros
@@ -918,24 +942,23 @@ problema~\cite{Moran:2015:EAA:2786805.2807557}; análise da qualidade da
 informação fornecida~\cite{Bettenburg2008a, Tu:2014:MQI:2677832.2677844}. Esta
 categoria também contempla um estudo que visa detectar que determinada RM já foi
 registrada durante o processo de escrita da mesma~\cite{Thung2014}.
-\paragraph{Líder da Manutenção}
-De forma similar ao Gerente de Requisição de Mudança as melhorias de
-funcionalidades proposta nesta categoria estão vinculadas à gestão de manter
-software. Conforme o esquema de  classificação de papeis utilizado neste estudo,
-o Líder da Manutenção têm por responsabilidade definir os padrões e
-procedimentos que compõe o processo de manutenção que será utilizado. Para
-ajudar nesta tarefa alguns estudo  vêm propondo melhorar a alocação de Tarefas
-do processo de resolução das Requisições de Mudanças~\cite{netto2010automated}.
-Outros estudos visam mensurar o esforço necessário para solucionar determinada
-RM~\cite{Vijayakumar2014, Nagwani2010}, o que podem ajudar ao Líder no
-planejamento de liberações de novas versões do sistema que está sendo mantido. 
+\paragraph{Líder da Manutenção} De forma similar ao Gerente de Requisição de
+Mudança as melhorias de funcionalidades proposta nesta categoria estão
+vinculadas à gestão de manter software. Conforme o esquema de  classificação de
+papeis utilizado neste estudo, o Líder da Manutenção têm por responsabilidade
+definir os padrões e procedimentos que compõe o processo de manutenção que será
+utilizado. Para ajudar nesta tarefa alguns estudo  vêm propondo melhorar a
+alocação de Tarefas do processo de resolução das Requisições de
+Mudanças~\cite{netto2010automated}.  Outros estudos visam mensurar o esforço
+necessário para solucionar determinada RM~\cite{Vijayakumar2014, Nagwani2010}, o
+que podem ajudar ao Líder no planejamento de liberações de novas versões do
+sistema que está sendo mantido. 
 
-\paragraph{Todos}
-Esta categoria abarca os estudos para o qual a melhoria proposta possui impacto
-positivo para todos os papéis envolvidos na manutenção de software. A definição
-que o foco da melhoria é geral decorre do que foi dito como objetivos dos
-autores dos estudos que fazem parte desta categoria ou ainda por não ser
-possível determinar uma atividade específica sendo beneficiada.
+\paragraph{Todos} Esta categoria abarca os estudos para o qual a melhoria
+proposta possui impacto positivo para todos os papéis envolvidos na manutenção
+de software. A definição que o foco da melhoria é geral decorre do que foi dito
+como objetivos dos autores dos estudos que fazem parte desta categoria ou ainda
+por não ser possível determinar uma atividade específica sendo beneficiada.
 
 Conforme pode ser observado, os estudos estão relacionados principalmente com a
 melhoria da  visualização das informações contidas nas RM's~\cite{hora2012bug,
@@ -943,27 +966,24 @@ melhoria da  visualização das informações contidas nas RM's~\cite{hora2012bu
 questões de usabilidade das ferramentas, como por exemplo a navegabilidade entre
 as RM's~\cite{dal2014bug}. 
 
-\subsection{Ferramentais Estendidas}
-\label{sub:ferrramentas_extendidas}
+\subsection{Ferramentais Estendidas} \label{sub:ferrramentas_extendidas}
 
 Conforme verificamos nas seções anteriores diversos estudos vêm sendo propostos
 na literatura com o objetivo de melhorias atividades relacionadas à manutenção
 de software. Não obstante, os nosso resultados demostraram, tomando como base os
 estudos que fazem parte deste mapeamento, que grande parte das melhorias
 propostas não foram implementadas nas FGRM de modo a ser utilizadas ou avaliadas
-pelo profissionais envolvidas em manutenção de software. 
+pelo profissionais envolvidas em manutenção de software.
 
 A Figura~\ref{fig:grafico_virou_extensao} apresenta a quantidade de estudos que
 efetivamente foram transformadas em extensões de funcionalidades de uma FGRM@.
 Do total de 64 estudos que foram utilizados neste mapeamento apenas fazem parte
-das funcionalidade de uma FGRM@. 
-\todo[inline] {reavaliar a quantidade de estudos}. 
+das funcionalidade de uma FGRM@.
 
-\begin{figure}[htpb]
-	\centering
+\begin{figure}[htpb] \centering
 	\includegraphics[width=0.8\linewidth]{chapter-mapeamento-sistematico/img/grafico_virou_extensao.pdf}
 	\caption{Total de estudos que são extensões para FGRM}
-\label{fig:grafico_virou_extensao}
+	\label{fig:grafico_virou_extensao}
 \end{figure}
 
 Cabe ressaltar que no escopo de determinado estudo pode não esta prevista a
@@ -977,16 +997,14 @@ pelos profissionais envolvidos em manutenção de software poderia melhorar a
 qualidade das soluções propostas mediante a redução da diferença entre o
 estado-da-prática com o estado-da-arte. 
 
-%\section{Discussão}
-%\label{sec:discussao}
+%\section{Discussão} \label{sec:discussao}
 
 
-\section{Limitações e Ameaças à Validade}
-\label{sec:limitacoes_ameacas}
+\section{Limitações e Ameaças à Validade} \label{sec:limitacoes_ameacas}
 
 Alguns do procedimentos adotados neste trabalho não acompanharam exatamente as
-diretrizes existente na literatura para condução de uma Mapeamento Sistemático, em
-aqueles propostos por Kitchenham e outros~\cite{keele2007guidelines}.Um único
+diretrizes existente na literatura para condução de uma Mapeamento Sistemático,
+em aqueles propostos por Kitchenham e outros~\cite{keele2007guidelines}.Um único
 investigador selecionou os estudos candidatos e este mesmo revisor teve a
 responsabilidade de analisar o artigos que seriam incluídos ou excluídos.
 
@@ -1006,15 +1024,15 @@ Software.
 
 O fato de uma único pesquisador ter sido o responsável pela analise dos estudos
 pode significar ponto significa que alguns dos dados coletados podem ser
-errôneas. O processo de seleção e validação dos estudos primários pode levar
-a problemas de extração e agregação das informações quando há um grande número
-de artigos ou os dados são complexos~\cite{keele2007guidelines}. No entanto,
-neste estudo terciário, houve poucos estudos primários e os dados extraídos eram
+errôneas. O processo de seleção e validação dos estudos primários pode levar a
+problemas de extração e agregação das informações quando há um grande número de
+artigos ou os dados são complexos~\cite{keele2007guidelines}. No entanto, neste
+estudo terciário, houve poucos estudos primários e os dados extraídos eram
 relativamente objetivos. Desta forma, não esperamos erros de extração. Cabe
 ressaltar que apesar do processo de validação ter sido executado por um único
 pesquisador, os critérios de qualidade foram avaliados independentemente por
 dois pesquisadores, desta forma minimizando a inclusão de estudos cuja qualidade
-comprometa os resultados. 
+comprometa os resultados.
 
 No tocante as questões de pesquisa é  possível que as perguntas de pesquisa
 definidas possam não abranger completamente o campo de pesquisa sobre as
@@ -1024,20 +1042,20 @@ as perguntas. Assim, mesmo que não tenhamos considerado o melhor conjunto de
 questões, tentamos abordar as questões mais frequentes e abertas no campo, tanto
 do ponto de vista do praticante como do investigador.
 
-Como as bases de dados digitais não funcionam com regras de
-pesquisa compatíveis entre si, todas as sequências de pesquisa foram adaptadas e
-calibradas para cada banco de dados digital. No entanto, não conhecemos todas as
-regras que as bases de dados digitais utilizam para procurar um documento. Neste
-sentido, a forma que as sentenças de busca foram estruturadas podem não ser a
-mais otimizada para seleção do maior número de estudos relevantes para o estudo.
+Como as bases de dados digitais não funcionam com regras de pesquisa compatíveis
+entre si, todas as sequências de pesquisa foram adaptadas e calibradas para cada
+banco de dados digital. No entanto, não conhecemos todas as regras que as bases
+de dados digitais utilizam para procurar um documento. Neste sentido, a forma
+que as sentenças de busca foram estruturadas podem não ser a mais otimizada para
+seleção do maior número de estudos relevantes para o estudo.
 
 \section{Trabalhos Relacionados}
 \label{sec:trabalhos_relacionados}
 
-Os autores Kagdi e outros~\cite{kagdi2012assigning} realizaram uma revisão da
-literatura sobre abordagens para mineração de repositórios de relatos de
-problema de software. No contexto daquele trabalho este tipo de repositório pode
-ser comparada à uma FGRM\@. O resultado foi uma taxonomia baseada em quatro
+No estudo proposto por Kagdi e outros~\cite{kagdi2012assigning} realizaram uma
+revisão da literatura sobre abordagens para mineração de repositórios de relatos
+de problema de software. No contexto daquele trabalho este tipo de repositório
+pode ser comparada à uma FGRM\@. O resultado foi uma taxonomia baseada em quatro
 dimensões: o tipo de repositório extraído (o que), o propósito (por que), o
 método proposto (como) e o método de avaliação (qualidade). No entanto, sua
 taxonomia não fornece um entendimento extensivo sobre as investigações em
@@ -1052,12 +1070,28 @@ software. Como consequência, muitos estudos que usaram dados de um repositório
 
 Por outro lado, o estudo realizado neste trabalho aumentou o escopo para as
 funcionalidades oferecidas pelas FGRM possibilitando uma visão mais abrangente
-do estado da arte deste tipo de estudo.As dimensões propostas por Kagdi
-~\cite{kagdi2012assigning}. Uma outra diferença com o trabalho de Kagdi
-~\cite{kagdi2012assigning} é que sua taxonomia considera as técnicas e métodos
-para mineração de repositórios de software como o foco principal do seu estudo,
-por lado este trabalho considera as FGRM, sobre o prima de suas funcionalidades,
-como entidades de primeira classe.
+do estado da arte deste tipo de estudo. Uma outra diferença com o trabalho de
+Kagdi ~\cite{kagdi2012assigning} é que sua taxonomia considera as técnicas e
+métodos para mineração de repositórios de software como o foco principal do seu
+estudo, por lado este trabalho considera as FGRM, sobre o prima de suas
+funcionalidades, como entidades de primeira classe.
 
-%\section{Resumo do Capítulo}
-%\label{sec:resumo_capitulo}
+No estudo realizado por Cavalcanti e outros~\cite{cavalcanti2014challenges}
+houve a classificação de estudos sobre repositórios de requisições de mudanças
+(Change Request - CR) em desafios e oportunidades.  Desafios referem-se a
+problemas enfrentados na gestão das CR, enquanto oportunidades referem-se às
+vantagens proporcionadas pelos dados obtidos das  CR's para o desenvolvimento de
+software. Além disso os autores utilizam a taxonomia proposta por Canfora e
+Cerulo\cite{cerulo2004taxonomy}. O esquema de classificação consiste em duas
+visões sobrepostas: uma taxonomia vertical que classifica os modelos de
+Recuperação da Informação (Information Retrieve - IR) com relação ao seu
+conjunto de características básicas; e uma taxonomia horizontal que classifica
+os objetos de IR com respeito as suas tarefas, forma e contexto.
+
+Este trabalho estende a classificação realizada por Cavalcanti tendo em vista
+que avalia as funcionalidades das FGRM's  que encaixam no conceito de
+repositórios de CR's. Contudo, o nosso foco está em como as funcionalidades
+daquele tipo de ferramenta vêm sendo melhorado em contrapartida do outro estudo
+que visa mapear os desafios e oportunidades de pesquisa na área.
+
+%\section{Resumo do Capítulo} \label{sec:resumo_capitulo}
