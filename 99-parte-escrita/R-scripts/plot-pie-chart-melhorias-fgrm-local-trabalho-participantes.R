@@ -7,16 +7,16 @@
   
   #Declarando as variáveis do gráfico
   WORKSPACE <-"~/workspace/dissertacao/99-parte-escrita/R-scripts/" 
-  CSV_FILE <-'./data/201702040922_local_trabalho_participante.csv'
+  CSV_FILE <-'./data/201702051102_melhorias_fgrm_local_trabalho.csv'
   FILE_SEPARATOR <- ","
   WIDTH_BAR <- .3
   LEGEND_NAME <- "Virou Extensão"
   X_LABEL <- ""
-  Y_LABEL <- "Frequência" 
+  Y_LABEL <- "Total" 
   GRAPH_TITLE <-"Perfil dos Participantes: Local de Trabalho"
   X_AXIS_INCREMENT <- 10
   IMG_DIR <-'./img/'
-  FILE_NAME <- 'grafico_escolha_ferramentas_local_trabalho'
+  FILE_NAME <- 'grafico_melhorias_fgrm_local_trabalho'
   PS_FILE_NAME <-  paste(FILE_NAME,'.ps', sep='')
   PDF_FILE_NAME <- paste(FILE_NAME, '.pdf', sep='')
   PNG_FILE_NAME <- paste(FILE_NAME, '.png', sep='')
@@ -32,11 +32,11 @@
   show(df_data)
   
   #Maior valor do eixo y
-  ymax <- max(df_data$frequencia) * 1.5
+  ymax <- max(df_data$total) * 1.5
   
   #Plotando o gráfico
-  ggplot(data=df_data, aes(x=reorder(df_data$local_trabalho, df_data$frequencia),
-                                      y=df_data$frequencia, fill=df_data$local_trabalho
+  ggplot(data=df_data, aes(x=reorder(df_data$local_trabalho, df_data$total),
+                                      y=df_data$total, fill=df_data$local_trabalho
                           )
          ) +
     geom_bar(colour="black",
@@ -52,17 +52,17 @@
     ggtitle(GRAPH_TITLE) +     # Set title
     theme_bw( ) +
     coord_flip(ylim = c(0, ymax)) +
-    geom_text(aes(label=df_data$frequencia, hjust=-.5)) +
+    geom_text(aes(label=df_data$total, hjust=-.5)) +
     scale_y_discrete(limits = c(seq(0,ymax,by=X_AXIS_INCREMENT)))
   
-  full_name <- paste(IMG_DIR, PS_FILE_NAME, sep='')
-  dev.copy(device = postscript, full_name)
-  dev.off()
+  # full_name <- paste(IMG_DIR, PS_FILE_NAME, sep='')
+  # dev.copy(device = postscript, full_name)
+  # dev.off()
   
   full_name <- paste(IMG_DIR,PDF_FILE_NAME, sep='')
   dev.copy(device = pdf, full_name)
   dev.off()
-  
-  full_name <- paste(IMG_DIR,PNG_FILE_NAME, sep='')
-  dev.copy(device = png, full_name)
-  dev.off()
+
+  # full_name <- paste(IMG_DIR,PNG_FILE_NAME, sep='')
+  # dev.copy(device = png, full_name)
+  # dev.off()

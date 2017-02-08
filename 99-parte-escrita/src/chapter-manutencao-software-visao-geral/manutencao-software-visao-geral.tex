@@ -26,7 +26,7 @@ especialmente aquelas relacionadas a tamanho e complexidade do software. Em um
 trabalho sobre o tema Yu \& Mishra~\cite{{yu2013empirical}} examinaram de forma
 empírica as Leis de Lehman em relação a evolução da qualidade do software. O
 estudo demonstrou que com base na métrica proposta que a qualidade de um produto
-de software declinará ao menos que uma restruturação é realizada.
+de software declinará ao menos que uma restruturação seja realizada.
 
 Conforme exposto, a mudança em um produto de software é inevitável. Desta forma,
 é importante a existência de uma área de estudo preocupada com o gerenciamento e
@@ -108,7 +108,7 @@ Software uma disciplina distinta.
 \label{sec:conceitos_basicos}
 
 Esta seção introduz os conceitos e terminologias que ajudam no entendimento do
-papel e escopo da Manutenção de Software. De uma maneira geral, podemos definir
+papel e finalidade da Manutenção de Software. De uma maneira geral, podemos definir
 atividade de manter software como a totalidade das ações necessárias para
 fornecer suporte a um produto de software. Entretanto, encontramos na literatura
 outras definições mais elaboradas sobre a área.
@@ -141,7 +141,7 @@ software carece de uma definição padrão na literatura, contudo, pesquisadores
 profissionais utilizam o termo como substituto preferido para
 manutenção~\cite{Bennett:2000:SME:336512.336534}. Embora exista o entendimento
 que os processos de manutenção e evolução possuem características distintas, não
-está no escopo desta dissertação discutir e apresentar tais diferenças. Neste
+está nos objetivos desta dissertação discutir e apresentar tais diferenças. Neste
 sentido, utilizamos os termos \textit{manter} e \textit{evoluir} software de
 forma intercambiáveis. Caso em algum contexto haja a necessidade de
 diferenciação, ela será discutida.
@@ -173,9 +173,9 @@ discutido pela ISO\@.
 	\label{fig:modification-request} \end{figure}
 
 A ISO/IEC 14764 classifica as manutenções adaptativas e perfectivas como
-melhorias e agrupa as manutenções corretivas e preventivas em uma única
+me\-lho\-ri\-as e agrupa as manutenções corretivas e preventivas em uma única
 categoria de correção, conforme exibido na
-Tabela~\ref{tab:categorias_requisicao_mudanca}. A manutenção preventiva é mais
+Tabela~\ref{tab:categorias_requisicao_mudanca}. A manutenção preventiva é 
 frequentemente realizada em produtos de software onde atributos de segurança são
 mais críticos.
 %At Modification requests are logged and tracked, the impact of proposed changes
@@ -245,26 +245,31 @@ exibidas na Figura~\ref{fig:ieee-14764-processo-manutencao}
 As atividades de manutenção propostas na ISO/IEC 14764 são detalhadas em tarefas
 conforme apresentadas a seguir:
 
-\begin{itemize} \item Implementação do Processo \item Análise e Modificação do
-		Problema \item Aceitação e Revisão da Manutenção \item Migração \item
-		Aposentadoria do Software	\end{itemize}
+\begin{itemize}
+   	\item Implementação do Processo
+   	\item Análise e Modificação do
+		Problema 
+	\item Aceitação e Revisão da Manutenção
+   	\item Migração
+   	\item Aposentadoria do Software
+\end{itemize}
 
 É possível notar que algumas atividades realizadas durante a manutenção de
-software são similares a a outras presentes no desenvolvimento de software, como
+software são similares à outras presentes no desenvolvimento de software, como
 por exemplo, análise de desempenho, codificação, teste e documentação. Outra
 atividade comum à manter e desenvolver software é o gerenciamento dos
 requisitos. Nas duas situações os profissionais responsáveis por controlar os
-requisitos devem atualizar documentação  por conta de alterações ocorridas no
-código fonte. Por outro lado certas atividades estão vinculadas apenas ao
-contexto da manutenção de software. Dentre elas podemos destacar:
+requisitos devem atualizar do\-cu\-men\-ta\-ção  por conta de alterações
+ocorridas no código fonte. Por outro lado certas atividades estão vinculadas
+apenas ao contexto da manutenção de software. Dentre elas podemos destacar:
 
 \begin{description}
 	\item[Suporte ao Usuário] Função de ajuda ao usuário final
 		que podem disparar ações tais como avaliação e priorização das
 		Requisições de Mudanças
-   	\item [Análise de Impacto] \todo{Descreve melhor
-			análise de impacto}
-   	\item [Suporte ao Uso de Software] Ajuda aos
+   	\item [Análise de Impacto] O efeito que determinada mudança terá no software
+		e em seus respectivos artefatos.
+	\item [Suporte ao Uso de Software] Ajuda aos
 		usuários final com relação a determinada requisição de informação
 		(regras de negócio, validação e requisição de relatório)
 	\item [Acordo de Nível de Serviço] Definição de um nível mínimo de qualidade que a
@@ -349,11 +354,11 @@ produto de software~\cite{breu2010information}.
 
 Conforme exposto as FGRM desempenham um papel que vai além de gerenciar as
 Requisições de Mudança.  Neste sentido, é importante estudar este tipo de
-software em busca de como melhorá-las de modo a atender as diversas necessidades
+software em busca de como melhorá-los de modo a atender as diversas necessidades
 dos seus usuários. Contudo, é importante avaliar as novas funcionalidades
-propostas na literatura ou ainda mesmo a melhoria das já existentes. Uma
+propostas na li\-te\-ra\-tu\-ra ou ainda mesmo a melhoria das já existentes. Uma
 possível forma de melhoria é através do uso de extensões. Na próxima seção
-discutiremos esta propriedade de algumas FGRM's que permitem a inclusão e
+abordamos esta propriedade de algumas FGRM's que permitem a inclusão e
 modificação de funcionalidades e comportamentos da ferramenta segundo as
 necessidades do usuário.
 
@@ -361,14 +366,14 @@ necessidades do usuário.
 \label{subsec:extensoes_fgrm}
 
 Em determinados domínios de aplicação é interessante desenvolver produtos de
-software com uma arquitetura que permita o sistema se adaptar às mudanças nos
-requisitos. Existe naturalmente a possibilidade de incluir as novas
+software com uma arquitetura que permita o sistema se adaptar às mudanças em
+seus requisitos. Existe naturalmente a possibilidade de incluir as novas
 funcionalidades dentro das já existentes no software, todavia, verificamos que
 sistemas que permitem extensões apresentam os seguintes benefícios:
 
-\begin{itemize} \item Extensibilidade: o software pode se dinamicamente
-		estendido mediante a inclusão de novas características.  \item
-		Desenvolvimento em Paralelo: Desde de que as funcionalidades podem ser
+\begin{itemize} \item Extensibilidade: o software pode ser dinamicamente
+		estendido mediante a inclusão de novas características.
+  	\item Desenvolvimento em Paralelo: Desde de que as funcionalidades podem ser
 		implementadas como componentes separados, eles podem ser desenvolvidos
 		em paralelo por times diferentes \item Simplicidade: uma  extensão
 		tipicamente tem uma única funcionalidade, desta forma os desenvolvedores
@@ -377,7 +382,7 @@ sistemas que permitem extensões apresentam os seguintes benefícios:
 No escopo deste trabalho, uma extensão é um componente de software que adiciona
 uma característica ou comportamento específico para um programa de
 computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in_(computing)}}.
-Cabe-nos ressaltar que o nosso  escopo de extensão incluí aquelas que não estão
+Cabe-nos ressaltar que o nosso definição de extensão incluí aquelas que não estão
 acopladas ao código de determinada FGRM\@. Por exemplo, a funcionalidade de
 atribuição de uma requisição de mudança ao desenvolvedor é inerente às FGRM,
 segundo o nosso entendimento uma proposta de melhoria desta funcionalidade
@@ -386,13 +391,11 @@ mesmo que ela não esteja efetivamente funcionando em alguma FGRM\@. O nosso foc
 analisar as possível melhorias nas funcionalidades oferecidas pelas FGRM e não
 estamos especialmente interessados em analisar e discutir a facilidade que o
 conjunto destas ferramentas oferecem para a implementação de novas
-funcionalidades mediante uma extensão.  \todo[inline]{Incluir alguma referência
-	de trabalho que propõe atribuição automática de RM}
+funcionalidades mediante uma extensão.  
 
 Verificamos na literatura alguns estudo em que as soluções propostas já se
 tornaram extensões de determinadas FGRM. Como pode ser observado no Mapeamento
-Sistemático realizado~\todo{Resultado parcial, devemos posteriormente reavaliar
-	esta frase}, a implementação da proposta do estudo em extensão de ferramenta
+Sistemático realizado, a implementação da proposta do estudo em extensão de ferramenta
 não é o padrão observado.
 
 A extensão \textit{Buglocalizer}~\cite{Thung:2014:BIT:2635868.2661678} é uma
