@@ -5,7 +5,7 @@
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: Ter Set 13 19:22:37 BRT 2016
 %Modificação: Dom Set 25 15:53:04 BRT 2016
-%Revisão:  Ter Set 20 19:13:49 BRT 2016
+%Revisão: dom fev 12 18:37:18 BRST 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Manutenção de Software: Uma Visão Geral}
@@ -182,12 +182,9 @@ discutido pela ISO\@.
 A ISO/IEC 14764 classifica as manutenções adaptativas e perfectivas como
 me\-lho\-ri\-as e agrupa as manutenções corretivas e preventivas em uma única
 categoria de correção, conforme exibido na
-Tabela~\ref{tab:categorias_requisicao_mudanca}. A manutenção preventiva é 
+Tabela~\ref{tab:categorias_requisicao_mudanca}. A manutenção preventiva é
 frequentemente realizada em produtos de software onde atributos de segurança são
 mais críticos.
-%At Modification requests are logged and tracked, the impact of proposed changes
-%is determined, code and other software artifacts are modified, testing is
-%conducted, and a new version of the software product is released
 
 \begin{table}[htpb] \centering 	\begin{tabular}{l|l|l|} \cline{2-3} &
 		\textbf{Correção} & \textbf{Melhoria} \\ \hline
@@ -232,10 +229,10 @@ metodologia dos agilistas na manutenção de software.
 Em resumo, um processo de manutenção de software descreve as atividades e suas
 respectivas entradas e saídas. Alguns modelos são descritos nos padrões IEEE
 1219 e ISO/IEC 14764. O processo especificado no Padrão para Manutenção de
-Software (IEEE-~1219) indica que as atividade de manutenção de software iniciem
-após a entrega do produto de software. O padrão também discute itens para fins
-de planejamento da manutenção. As atividades que compõe o processo são
-apresentas na Figura~\ref{fig:ieee-1219-processo-man-software}.
+Software (IEEE~-~1219) indica que as atividades de manutenção de software iniciem
+após a entrega do produto de software. O padrão também discute aspectos de
+planejamento da manutenção. As atividades que compõe o processo são apresentas
+na Figura~\ref{fig:ieee-1219-processo-man-software}.
 
 \begin{figure}[htpb] \centering
 	\includegraphics[width=0.7\linewidth]
@@ -260,7 +257,7 @@ conforme apresentadas a seguir:
 \begin{itemize}
    	\item Implementação do Processo
    	\item Análise e Modificação do
-		Problema 
+		Problema
 	\item Aceitação e Revisão da Manutenção
    	\item Migração
    	\item Aposentadoria do Software
@@ -271,46 +268,57 @@ software são similares à outras presentes no desenvolvimento de software, como
 por exemplo, análise de desempenho, codificação, teste e documentação. Outra
 atividade comum à manter e desenvolver software é o gerenciamento dos
 requisitos. Nas duas situações os profissionais responsáveis por controlar os
-requisitos devem atualizar do\-cu\-men\-ta\-ção  por conta de alterações
+requisitos devem atualizar a do\-cu\-men\-ta\-ção  por conta de alterações
 ocorridas no código fonte. Por outro lado certas atividades estão vinculadas
-apenas ao contexto da manutenção de software. Dentre elas podemos destacar:
+apenas ao contexto da manutenção de software. O Corpo de Conhecimento em
+Engenharia de Software~\cite{4425813} destaca algumas delas:
 
+\todobegin{Faltava referência sobre as atividades que seriam únicas ao processo
+	de manutenção. Havida duvidas sobre se as atividades: Suporte ao Usuário,
+	Suporte ao Uso de Software e Acordo de Nível de Serviço}
 \begin{description}
-	\item[Suporte ao Usuário] Função de ajuda ao usuário final
-		que podem disparar ações tais como avaliação e priorização das
-		Requisições de Mudanças
-   	\item [Análise de Impacto] O efeito que determinada mudança terá no software
-		e em seus respectivos artefatos.
-	\item [Suporte ao Uso de Software] Ajuda aos
-		usuários final com relação a determinada requisição de informação
-		(regras de negócio, validação e requisição de relatório)
-	\item [Acordo de Nível de Serviço] Definição de um nível mínimo de qualidade que a
-		atividade de manutenção deve ser realizada.
+	\item[Compreensão do programa:] atividades necessárias para obter um
+		conhecimento geral do que um produto de software faz e como as partes
+		funcionam em conjunto;
+	\item[Transição:] uma sequência controlada e coordenada de atividades onde o
+		software é transferido progressivamente do desenvolvedor para o
+		mantenedor;
+	\item[Aceitação/rejeição de Requisições de Mudança:] as modificações
+		que ultrapassem determinado limiar de tamanho, esforço ou complexidade
+		podem ser rejeitadas pelos mantenedores e redirecionadas para um
+		desenvolvedor;
+	\item[Suporte ao usuário:] uma função de suporte para o usuário final que
+		aciona a avaliação, priorização ou avaliação de esforço das Requisições
+		de Mudança;
+	\item[Análise de impacto:] uma técnica para identificar áreas afetadas por
+		uma potencial mudança;
+	\item[Contratos de Acordo de Nível de Serviço (Service Level Agreements
+		\@-\@ SLA):] acordos contratuais que descrevem os serviços e objetivos
+		de qualidade.
 \end{description}
+\todoend
 
-\subsection{Manutenção de Software com Método dos Agilistas}
+\subsection{Manutenção de Software na Perspectiva dos Agilistas}
 \label{sub:manutenção_de_software_com_método_dos_agilistas}
 
-Grande parte da literatura de manutenção de software trata de técnicas e
-metodologias tradicionais da Engenharia de Software. Entretanto, é possível
-verificar um protagonismo das práticas propostas pelos agilistas em projetos de
-sucesso, mesmo em áreas não relativas à Tecnologia da
-Informação~\cite{Serrador2015}. Neste contexto, verifica-se uma tendência que os
-departamentos dedicados à manutenção de software se mostrem interessados nas
-metodologias dos agilistas e que tenham vontade de experimentá-las em suas
-atividades~\cite{Heeager2015}.
+Grande parte da literatura em Manutenção de Software trata de técnicas e
+metodologias tradicionais da Engenharia de Software. Todavia, verifica-se uma
+tendência que os departamentos dedicados à manutenção de software se mostrem
+interessados nas metodologias dos agilistas e que tenham vontade de
+experimentá-las em suas atividades~\cite{Heeager2015}.
 
-Apesar da maioria dos textos em Engenharia de Software tratarem desenvolvimento
-e manutenção como atividades com natureza distintas, esta última pode adaptar
-características da primeira visando a melhoria do seu desempenho. Dentre as
-práticas propostas pelos agilistas passíveis de serem utilizadas em tarefas de
-manutenção é possível citar o desenvolvimento iterativo, maior envolvimento do
-cliente, comunicação face a face, testes frequentes, dentre outras.
+No momento da elaboração desta dissertação boa parte dos textos em Engenharia de
+Software tratarem desenvolvimento e manutenção como atividades com natureza
+distintas, esta última pode adaptar características da primeira visando a
+melhoria do seu desempenho. Dentre as práticas propostas pelos agilistas
+passíveis de serem utilizadas em tarefas de manutenção é possível citar o
+desenvolvimento iterativo, maior envolvimento do cliente, comunicação face a
+face, testes frequentes, dentre outras.
 
 Alguns resultados demonstram certa dificuldade para implantação da metodologia
 dos agilista na manutenção de software~\cite{1402140}. Um dos possíveis
 problemas é a necessidade de adequação das práticas da organização de modo que a
-se adequar as necessidades do time de desenvolvimento.  Estudo apresentam
+se adequar as necessidades do time de desenvolvimento.  Estudos apresentam
 resultados relativos à melhorias no aprendizado e produtividade da equipe
 mediante o aumento da moral, encorajamento e confiança entre os desenvolvedores,
 o que propicia uma alta motivação durante o processo de manutenção de
@@ -322,11 +330,11 @@ software~\cite{Choudhari:2014:EIM:2557833.2557845}.
 Dentro da disciplina de Gerenciamento da Configuração do Software a atividade de
 controle de configuração é responsável por gerenciar mudanças ocorridas durante
 o ciclo de vida de um produto de software. Tais ações incluem determinar quais
-alterações serão feitas, definir a autoridade responsável por autorizar certos
-tipos de mudança e aprovar desvios relativos aos requisitos iniciais do
+alterações serão feitas, definir o papel responsável por autorizar certos tipos
+de mudança e aprovar desvios relativos aos requisitos iniciais do
 projeto~\cite{4425813}. De uma forma mais ou menos estruturada este tipo de
-processo ocorre em diferente tipos de projeto de software, seja ele dentro de um
-processo de manutenção tradicional ou mesmo naqueles que utilizam os métodos
+processo ocorre em diferentes tipos de projeto de software, seja ele dentro de
+um processo de manutenção tradicional ou mesmo naqueles que utilizam os métodos
 propostos pelos agilistas.
 
 Por conta do volume das Requisições de Mudança se faz necessária a utilização de
@@ -335,17 +343,17 @@ por Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems, que auxiliam
 os desenvolvedores na correção de forma individual ou colaborativa de defeitos
 (bugs), no desenvolvimento de novas funcionalidades, dentre outras tarefas
 relativas à manutenção de software. Não existe na literatura uma nomenclatura
-comum para este tipo de ferramenta. Em alguns estudos é possível verificar nomes
-tais como Sistema de Controle de Defeito\@-\@ Bug Tracking Systems, Sistema de
-Gerenciamento da Requisição\@-\@ Request Management System, Sistemas de Controle de
-Demandas (SCD)- Issue Tracking Systems e diversos nomes afins. Todavia, de modo
-geral, o termo se refere as ferramentas utilizadas pelas organizações para
-\textit{gerir as Requisições de Mudança}. Estas ferramentas podem ainda ser
-utilizadas por gestores, analistas de qualidade e usuários finais para
-atividades tais como gerenciamento de projetos, comunicação, discussão e
-revisões de código. Neste trabalho utilizaremos o termo \texttt{Ferramentas de
-	Gerenciamento de Requisições de Mudança} (FGRM) ao referimos a este tipo de
-ferramenta.
+padrão para este tipo de ferramenta. Em alguns estudos é possível verificar
+nomes tais como Sistema de Controle de Defeito\@-\@ Bug Tracking Systems,
+Sistema de Gerenciamento da Requisição\@-\@ Request Management System, Sistemas
+de Controle de Demandas (SCD)- Issue Tracking Systems e outros diversos nomes.
+Todavia, de modo geral, o termo se refere às ferramentas utilizadas pelas
+organizações para \textit{gerenciar as Requisições de Mudança}. Estas ferramentas
+podem ainda ser utilizadas por gestores, analistas de qualidade e usuários
+finais para atividades tais como gerenciamento de projetos, comunicação,
+discussão e revisões de código. Neste trabalho utilizaremos o termo
+\texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) ao
+referimos a este tipo de ferramenta.
 
 No últimos anos alguns estudos discutem o fato que as FGRM's não apenas ajudam
 as organizações gerenciar, atribuir, controlar, resolver e arquivar Requisições
@@ -354,17 +362,17 @@ para comunicação e coordenação para diversas partes interessadas, dentro e a
 da equipe de manutenção~\cite{Bertram:2010:CCB:1718918.1718972}.  As FGRM's
 também servem como um repositório central para monitorar o progresso da RM,
 solicitar informações adicionais da pessoa responsável por redigir a requisição
-e o ponto de discussão para potenciais soluções um
-bug~\cite{zimmermann2009improving}.
+e o ponto de discussão para potenciais soluções de um defeito
+(bug)~\cite{zimmermann2009improving}.
 
-Em projetos de código aberto, as FGRM são uma importante parte de como o time
+Em projetos de código aberto, as FGRM são uma importante parte de como a equipe
 interage com comunidade de usuários. Como consequência é possível observar o
 fenômeno da participação dos usuários no processo de solução da RM:\@ eles não
 apenas submetem a RM, mas também participam na discussão de como resolvê-la.
-Desta forma, o usuário final ajuda tomar as decisões sobre a direção futura do
+Desta forma, o usuário final ajuda nas decisões sobre a direção futura do
 produto de software~\cite{breu2010information}.
 
-Conforme exposto as FGRM desempenham um papel que vai além de gerenciar as
+Conforme exposto, as FGRM desempenham um papel que vai além de gerenciar as
 Requisições de Mudança.  Neste sentido, é importante estudar este tipo de
 software em busca de como melhorá-los de modo a atender as diversas necessidades
 dos seus usuários. Contudo, é importante avaliar as novas funcionalidades
@@ -383,32 +391,35 @@ seus requisitos. Existe naturalmente a possibilidade de incluir as novas
 funcionalidades dentro das já existentes no software, todavia, verificamos que
 sistemas que permitem extensões apresentam os seguintes benefícios:
 
-\begin{itemize} \item Extensibilidade: o software pode ser dinamicamente
-		estendido mediante a inclusão de novas características.
-  	\item Desenvolvimento em Paralelo: Desde de que as funcionalidades podem ser
-		implementadas como componentes separados, eles podem ser desenvolvidos
-		em paralelo por times diferentes \item Simplicidade: uma  extensão
-		tipicamente tem uma única funcionalidade, desta forma os desenvolvedores
-		possuem o único foco.  \end{itemize}
+\begin{itemize}
+	\item Extensibilidade: o software pode ser dinamicamente estendido mediante
+		a inclusão de novos módulos de código que correspondem à novas
+		características;
+	\item Desenvolvimento em Paralelo: Quando os componentes não possui certas
+		dependências eles podem ser desenvolvidos em paralelo por times
+		diferentes;
+	\item Simplicidade: uma  extensão; tipicamente tem uma única funcionalidade,
+		desta forma permite um melhor foco para os desenvolvedores.
+\end{itemize}
 
 No escopo deste trabalho, uma extensão é um componente de software que adiciona
 uma característica ou comportamento específico para um programa de
 computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in_(computing)}}.
-Cabe-nos ressaltar que o nosso definição de extensão incluí aquelas que não estão
-acopladas ao código de determinada FGRM\@. Por exemplo, a funcionalidade de
-atribuição de uma requisição de mudança ao desenvolvedor é inerente às FGRM,
-segundo o nosso entendimento uma proposta de melhoria desta funcionalidade
-mediante uma atribuição automatizada, por exemplo, será analisada como extensão
-mesmo que ela não esteja efetivamente funcionando em alguma FGRM\@. O nosso foco é
-analisar as possível melhorias nas funcionalidades oferecidas pelas FGRM e não
-estamos especialmente interessados em analisar e discutir a facilidade que o
-conjunto destas ferramentas oferecem para a implementação de novas
-funcionalidades mediante uma extensão.  
+Cabe-nos ressaltar que o nossa definição de extensão incluí aquelas que não
+estão acopladas ao código de determinada FGRM\@. Por exemplo, a funcionalidade
+de atribuição de uma Requisição de Mudança a um ou mais desenvolvedor é inerente
+às FGRM, segundo o nosso entendimento uma proposta de melhoria desta
+funcionalidade mediante uma atribuição automatizada, por exemplo, será analisada
+como extensão mesmo que ela não esteja efetivamente funcionando em alguma
+FGRM\@. Vamos a\-na\-li\-sar as extensões de funcionalidade de forma
+independente se ela é oferecida baseada nos mecanismos de extensão discutidos
+nesta seção.
 
-Verificamos na literatura alguns estudo em que as soluções propostas já se
+Verificamos na literatura alguns estudos em que as soluções propostas já se
 tornaram extensões de determinadas FGRM. Como pode ser observado no Mapeamento
-Sistemático realizado, a implementação da proposta do estudo em extensão de ferramenta
-não é o padrão observado.
+Sistemático realizado no Capítulo~\ref{ch:mapeamento-sistematico}, a
+implementação da proposta do estudo em extensão de ferramenta não é o padrão
+observado.
 
 A extensão \textit{Buglocalizer}~\cite{Thung:2014:BIT:2635868.2661678} é uma
 extensão para o Bugzilla que possibilita a localização dos arquivos do código
@@ -419,7 +430,7 @@ Bugzilla que recomenda novos bugs para um desenvolvedor baseado no defeito que
 ele esteja tratando atualmente. Em ambos os casos a extensão foi implementada
 utilizando técnicas de Recuperação da Informação.
 
-Os software que utilizam módulos de extensão têm aspectos de desenvolvimento e
+Os softwares que utilizam módulos de extensão têm aspectos de desenvolvimento e
 de manutenção potencialmente distintos daqueles sem esta característica. Este
 trabalho de mestrado faz uma contribuição na direção de uma melhor compreensão
 deste contexto a partir da análise de aspectos específicos das FGRM's.
