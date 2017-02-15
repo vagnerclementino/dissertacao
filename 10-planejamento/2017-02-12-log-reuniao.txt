@@ -1,0 +1,7 @@
+Estrutura da Dissertação:
+	 - cap 2 conceitos básicos
+	 - cap 3 estudo de estudos SLR
+	 - cap 4 questionários
+	 - cap 5 elogios/critica do vagner
+	 - cap 6 aspectos operacionais e técnicos de implementação
+	 - cap 7 conclusão
