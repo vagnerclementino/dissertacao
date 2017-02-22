@@ -4,7 +4,7 @@
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: Ter Set 13 19:22:37 BRT 2016
-%Modificação: qua fev 15 08:27:43 BRST 2017
+%Modificação: qua fev 22 14:15:23 BRT 2017
 %Revisão: dom fev 12 18:37:18 BRST 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -159,7 +159,7 @@ ser vista como um desenvolvimento contínuo, sobretudo, pelo fato que alguns
 sistemas nunca estão completos e continuam a evoluir.
 
 \section{Requisição de Mudança}
-\label{sec:requisição_de_mudanca}
+\label{sec:requisicao_de_mudanca}
 
 \subsection{Tipos de Requisições de Mudança}
 \label{subsec:tipos_de_requisicoes_mudanca}
@@ -178,7 +178,7 @@ Figura~\ref{fig:modification-request} exibe a classificação das RM's conforme
 discutido pela ISO\@.
 
 \begin{figure}[hbtp] \centering \includegraphics[width=.75\textwidth]
-	{chapter-intro/img/modification_request.eps} \caption{Tipos de manutenção
+	{./chapter-intro/img/modification_request.eps} \caption{Tipos de manutenção
 		segundo a norma ISO/IEC 14764. Extraído de~\cite{1703974}}
 \label{fig:modification-request} \end{figure}
 
@@ -197,6 +197,8 @@ mais críticos.
 		Adaptado de
 		SWEBOK~\cite{4425813}}\label{tab:categorias_requisicao_mudanca}
 \end{table}
+
+\todobegin{Incluída discussão sobre os atributos e classificação de uma RM.}
 
 Alguns pesquisadores e profissionais da manutenção entende que a manutenção
 preventiva como um subconjunto da perfectiva~\cite{thipathy2014software}.
@@ -230,10 +232,10 @@ que reflete um processo genérico de relatar uma RM.
 	\label{fig:diagrama-classe-atributos-requisicao-mudancas}
 \end{figure}
 
-Os principais conceitos envolvidos no modelo são listados  a seguir:.
+Os principais conceitos envolvidos no modelo estão descritos a seguir:
 
 \begin{description}
-	\item [Identificador] Sequência de caracteres,  geralmente númerica,  que
+	\item [Identificador] Sequência de caracteres,  geralmente numérica,  que
 		permite distinguir de maneira única uma RM.
 	\item [Sumário] Um título ou resumo da RM.
 	\item [Relato] Descrição detalhada da RM incluindo o que, onde, por que,
@@ -269,6 +271,7 @@ no modelo, tais como identificador, sumário, relato, dentre outros.
 	\caption{Um exemplo de uma RM do Projeto Eclipse}
 	\label{fig:rm-exemplo}
 \end{figure}
+\todoend
 
 Em síntese, apesar das diferentes nomenclaturas existentes na literatura
 (demanda, bug, defeito, bilhete, tíquete, requisição de modificação, relato de
@@ -276,7 +279,6 @@ problema) uma Requisição de Mudança representa o relato, independente de sua
 estrutura, que visa gerar a manutenção ou evolução do software. Nesta
 dissertação estas diferentes nomenclaturas serão utilizados de forma
 intercambiáveis.
-
 
 \subsection{Ciclo de Vida de uma Requisição de Mudança}
 \label{sub:fluxo_de_trabalho_requisicao_mudanca}
@@ -447,7 +449,7 @@ Figura~\ref{fig:diagrama-estado-rm-codigo-aberto}.
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-estado-rm-codigo-aberto.pdf}
-	\caption{Um processo de modificação de uma RM utilizando uma FGRM. Adaptado
+	\caption{Um processo de modificação de uma RM utilizando uma FGRM. Extraído
 	de~\cite{ihara2009analysis}}
 	\label{fig:diagrama-estado-rm-codigo-aberto}
 \end{figure}
@@ -753,8 +755,66 @@ apenas submetem a RM, mas também participam na discussão de como resolvê-la.
 Desta forma, o usuário final ajuda nas decisões sobre a direção futura do
 produto de software~\cite{breu2010information}.
 
+
+\subsection{Modelo Conceitual das FGRM's}
+\label{sub:espectro_funcionalidades_fgrm}
+\todobegin{Estudo sobre o conjunto de conceitos para este tipo de ferramenta}
+
+As FGRM's vêm sendo utilizadas por diversos projetos com características
+próprias. Neste sentido, este tipo de software possui propriedades bastante
+diversificadas a fim de atender à diferentes mudanças. Apesar da variedade de
+ferramentas
+disponíveis~\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}
+é possível encontrar atributos comuns que permitem a compilação de um modelo
+conceitual.
+
+Nós construímos um modelo conceitual com base na literatura da área em especial
+nos trabalhos de~\cite{cavalcanti2014challenges, singh2011bug,
+	kshirsagar2015issue}. Nós sintetizamos os dados através da identificação de
+temas recorrentes da definição de FGRM's encontradas nos artigos. Foram
+encontrados quatro principais conceitos que estão retratados na
+Figura~\ref{fig:diagrama-classe-conceitual-fgrm} como um diagrama baseado na
+UML. Esta figura foi derivada dos estudos primários e consiste em uma
+generalização dos elementos utilizados com frequência nos artigos. Os conceitos
+envolvidos no modelo estão descritos a seguir.
+
+\begin{description}
+	\item[Projeto:] O Projeto reflete o contexto no qual uma determinada FGRM
+		está inserida. Ele é composto pelos \textit{Componentes de Software} e
+		demais \textit{Artefatos}. Os \textit{Componentes de Software}
+		representam em conjunto o representa o sistema do qual as RM's estão
+		vinculadas. Os \textit{Artefatos} são os demais itens de configuração
+		que são utilizados ou produzidos no desenvolvimento do software tais
+		como o código fonte, documentação, casos de teste e etc.
+	\item[Repositório de RM:] Trata-se do banco de dados, manual ou automático,
+		em que as RM's são armazenadas e gerenciadas. Cada item nesta base é
+		representado por uma RM com as características discutidas na
+		Seção~\ref{sec:requisicao_de_mudanca}.
+	\item[Repositórios de Pessoas:] Representa a base de dados de usuários da
+		FGRM. Nele são gerenciados os dados das pessoas envolvidas no projeto
+		e de seus respectivos direitos de acesso às informações das RM's.
+	\item[Fluxo de Trabalho:] O \textit{Fluxo de Trabalho} representa o conjunto
+		de regras que gerenciam o processo de resolução de uma RM. É a partir
+		dele que é definido os diferente \textit{estados} que uma RM pode assumir desde
+		de quando ela é redigida até o momento em que se define que foi
+		solucionada. Este processo é realizado pelas \textit{Pessoas} envolvidas
+		no \textit{Projeto} através dos diferente \textit{Papéis} desempenhados
+		e suas respectivas \textit{Atividades}. Uma discussão mais aprofundada
+		sobre os papéis desempenhados na manutenção de software está disponível
+		na Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}.
+		De maneira relacionada, os diferentes estados de um ciclo de vida de uma
+		RM estão descritos na Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}.
+\end{description}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-fgrm.pdf}
+	\caption{Modelo conceitual de uma FGRM.}
+	\label{fig:diagrama-classe-conceitual-fgrm}
+\end{figure}
+
 Conforme exposto, as FGRM desempenham um papel que vai além de gerenciar as
-Requisições de Mudança.  Neste sentido, é importante estudar este tipo de
+Requisições de Mudança. Neste sentido, é importante estudar este tipo de
 software em busca de como melhorá-los de modo a atender as diversas necessidades
 dos seus usuários. Contudo, é importante avaliar as novas funcionalidades
 propostas na li\-te\-ra\-tu\-ra ou ainda mesmo a melhoria das já existentes. Uma
@@ -762,13 +822,7 @@ possível forma de melhoria é através do uso de extensões. Na próxima seçã
 abordamos esta propriedade de algumas FGRM's que permitem a inclusão e
 modificação de funcionalidades e comportamentos da ferramenta segundo as
 necessidades do usuário.
-
-\subsection{Espectro de Funcionalidades das FGRM's}
-\label{sub:espectro_funcionalidades_fgrm}
-\todobegin{Estudo sobre o conjunto mínimo de funcionalidades esperadas para
-	este tipo de ferramenta}
-
-
+\todoend
 
 \subsection{Extensões em FGRM}
 \label{subsec:manutencao_visao_geral_extensoes_fgrm}
