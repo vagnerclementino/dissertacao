@@ -4,7 +4,7 @@
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: Ter Set 13 19:22:37 BRT 2016
-%Modificação: qua fev 22 14:15:23 BRT 2017
+%Modificação: qui fev 23 08:53:38 BRT 2017
 %Revisão: dom fev 12 18:37:18 BRST 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -158,6 +158,218 @@ os requisitos dos usuários. Neste sentido, a atividade de manter software pode
 ser vista como um desenvolvimento contínuo, sobretudo, pelo fato que alguns
 sistemas nunca estão completos e continuam a evoluir.
 
+\section{O processo de Manutenção de Software}
+\label{sec:o_processo_de_manutecao_de_software}
+
+\todobegin{Incluída localização da definição do texto tendo em vista que a
+	referência possui mais de 400 páginas}
+Em um relatório técnico~\cite{paulk1993key}, que descreve as principais práticas
+que correspondem a cada nível de maturidade de um modelo de maturidade,
+verificamos em seu glossário a seguinte definição de Processo de Software: é o
+conjunto de atividades, métodos, práticas e transformações utilizadas para
+desenvolvê-lo ou mantê-lo bem como seus artefatos
+associados~\cite{paulk1993key}. Independente do contexto em que a manutenção
+ocorra é importante que o processo esteja bem definido. Existe na literatura a
+proposição de alguns modelos do processo de manutenção de software,
+especialmente baseados em uma visão tradicional no qual desenvolvimento e
+manutenção possuem uma clara separação. Recentemente os métodos propostos pelos
+agilistas vêm sendo utilizados para manter software.  Esta tendência surge da
+demanda crescente por serviços de manutenção com um retorno mais rápido para o
+usuário.
+\todoend
+
+Nas próximas seções apresentamos alguns modelos encontrados na literatura na
+perspectiva tradicional, ao mesmo tempo descrevemos propostas do uso da
+metodologia dos agilistas na manutenção de software.
+
+\subsection{Manutenção de Software Tradicional}
+\label{subsec:manutenção_de_software_tradicional}
+
+Em resumo, um processo de manutenção de software descreve as atividades e suas
+respectivas entradas e saídas. Alguns modelos são descritos nos padrões IEEE
+1219 e ISO/IEC 14764. O processo especificado no Padrão para Manutenção de
+Software (IEEE~-~1219) indica que as atividades de manutenção de software iniciem
+após a entrega do produto de software. O padrão também discute aspectos de
+planejamento da manutenção. As atividades que compõe o processo são apresentas
+na Figura~\ref{fig:ieee-1219-processo-man-software}.
+
+\begin{figure}[htpb] \centering
+	\includegraphics[width=0.7\linewidth]
+	{./chapter-manutencao-software-visao-geral/img/ieee-1219-98-processo-manutencao.png}
+	\caption{IEEE 1219 -~Processo de Manutenção de Software}\label{fig:ieee-1219-processo-man-software}
+\end{figure}
+
+De maneira relacionada, na ISO/IEC 14764 as atividades que compõe o processo são
+similares aquelas propostas na IEEE-~1219, exceto pelo fato que elas são
+agregadas de uma forma diferente. O processo descrito na ISO/IEC~14764 são
+exibidas na Figura~\ref{fig:ieee-14764-processo-manutencao}
+
+\begin{figure}[htpb] \centering
+	\includegraphics[width=0.7\linewidth]
+{chapter-manutencao-software-visao-geral/img/ieee-14764-processo-manutencao.pdf}
+	\caption{ISO/IEC~14764 Processo de Manutenção de Software}
+\label{fig:ieee-14764-processo-manutencao} \end{figure}
+
+As atividades de manutenção propostas na ISO/IEC 14764 são detalhadas em tarefas
+conforme apresentadas a seguir:
+
+\begin{itemize}
+   	\item Implementação do Processo
+   	\item Análise e Modificação do
+		Problema
+	\item Aceitação e Revisão da Manutenção
+   	\item Migração
+   	\item Aposentadoria do Software
+\end{itemize}
+
+É possível notar que algumas atividades realizadas durante a manutenção de
+software são similares à outras presentes no desenvolvimento de software, como
+por exemplo, análise de desempenho, codificação, teste e documentação. Outra
+atividade comum à manter e desenvolver software é o gerenciamento dos
+requisitos. Nas duas situações os profissionais responsáveis por controlar os
+requisitos devem atualizar a do\-cu\-men\-ta\-ção  por conta de alterações
+ocorridas no código fonte. Por outro lado certas atividades estão vinculadas
+apenas ao contexto da manutenção de software. O Corpo de Conhecimento em
+Engenharia de Software~\cite{4425813} destaca algumas delas:
+
+\todobegin{Faltava referência sobre as atividades que seriam únicas ao processo
+	de manutenção. Havida duvidas sobre se as atividades: Suporte ao Usuário,
+	Suporte ao Uso de Software e Acordo de Nível de Serviço}
+\begin{description}
+	\item[Compreensão do programa:] atividades necessárias para obter um
+		conhecimento geral do que um produto de software faz e como as partes
+		funcionam em conjunto;
+	\item[Transição:] uma sequência controlada e coordenada de atividades onde o
+		software é transferido progressivamente do desenvolvedor para o
+		mantenedor;
+	\item[Aceitação/rejeição de Requisições de Mudança:] as modificações
+		que ultrapassem determinado limiar de tamanho, esforço ou complexidade
+		podem ser rejeitadas pelos mantenedores e redirecionadas para um
+		desenvolvedor;
+	\item[Suporte ao usuário:] uma função de suporte para o usuário final que
+		aciona a avaliação, priorização ou avaliação de esforço das Requisições
+		de Mudança;
+	\item[Análise de impacto:] uma técnica para identificar áreas afetadas por
+		uma potencial mudança;
+	\item[Contratos de Acordo de Nível de Serviço (Service Level Agreements
+		\@-\@ SLA):] acordos contratuais que descrevem os serviços e objetivos
+		de qualidade.
+\end{description}
+\todoend
+
+\subsection{Manutenção de Software na Perspectiva dos Agilistas}
+\label{sub:manutenção_de_software_com_método_dos_agilistas}
+
+Grande parte da literatura em Manutenção de Software trata de técnicas e
+metodologias tradicionais da Engenharia de Software. Todavia, verifica-se uma
+tendência que os departamentos dedicados à manutenção de software se mostrem
+interessados nas metodologias dos agilistas e que tenham vontade de
+experimentá-las em suas atividades~\cite{Heeager2015}.
+
+No momento da elaboração desta dissertação boa parte dos textos em Engenharia de
+Software tratarem desenvolvimento e manutenção como atividades com natureza
+distintas, esta última pode adaptar características da primeira visando a
+melhoria do seu desempenho. Dentre as práticas propostas pelos agilistas
+passíveis de serem utilizadas em tarefas de manutenção é possível citar o
+desenvolvimento iterativo, maior envolvimento do cliente, comunicação face a
+face, testes frequentes, dentre outras.
+
+Alguns resultados demonstram certa dificuldade para implantação da metodologia
+dos agilista na manutenção de software~\cite{1402140}. Um dos possíveis
+problemas é a necessidade de adequação das práticas da organização de modo que a
+se adequar as necessidades do time de desenvolvimento.  Estudos apresentam
+resultados relativos à melhorias no aprendizado e produtividade da equipe
+mediante o aumento da moral, encorajamento e confiança entre os desenvolvedores,
+o que propicia uma alta motivação durante o processo de manutenção de
+software~\cite{Choudhari:2014:EIM:2557833.2557845}.
+
+\todobegin{Conforme sugerido vou ``deslocada'' a discussão sobre os papéis
+	dentro da manutenção de software. O testo foi revisado e para deixar mais
+	claro foi utilizada diagrama de caso de uso.}
+
+\subsection{Papéis na Manutenção de Software}
+\label{subsec:man_visao_geral_papeis_na_manutencao_de_software}
+
+As ações que alteram o estado de uma RM são realizadas por diversas pessoas
+envolvidas no processo de manutenção de software que desempenham diversos
+papéis. Os nomes e as atividades desenvolvidas por cada papel poderia variar de
+um projeto para outro, contudo, é possível determinar uma classificação que
+agrega um pouco comum deste diferentes papéis. Nesta dissertação, utilizamos a
+classificação proposta por Polo e outros~\cite{Polo1999} cujo objetivo é definir
+uma estrutura da equipe de manutenção de software mediante a clara identificação
+das tarefas que cada membro deve executar. Os papéis propostos no estudo é
+produto da aplicação da metodologia MANTEMA~\cite{756695} para manutenção em
+projetos de software bancários espanhóis, em especial aqueles em que a área de
+manutenção foi terceirizada (outsourcing). Os autores reforçam que apesar da
+taxonomia de papéis ter sido criada em um contexto específico, ela pode ser
+adequada para aplicação em outras situações.
+
+No escopo deste trabalho removemos os papéis que segundo o nosso entendimento
+estão mais vinculados a um contexto de manutenção terceirizada (outsourcing).
+Além disso, dividimos o papel ``time de manutenção' (maintenance team) em
+\textit{Desenvolvedor e Analista de Qualidade} por entendermos que são papéis
+comuns a muito dos processos de manutenção existentes. Os papéis que compõe a
+taxonomia proposta estão descritos a seguir:
+
+\paragraph{Usuário Afetado:}
+Indivíduo que utiliza o sistema ou sistemas que correspondente à RM que será
+relatada. O defeito, a melhoria ou evolução no software, representada pela RM,
+estão relacionadas com os desejos e necessidades deste papel.
+
+\paragraph{Reportador:}
+Responsável por registrar a Requisição de Mudança na FGRM\@. Geralmente,
+qualquer pessoa envolvida no processo de manutenção de software pode relatar uma
+RM. Neste sentido, as atividades relacionadas com o papel de Reportador podem
+estar vinculados aos demais contidas nesta classificação. A
+Figura~\ref{fig:diagrama-caso-uso-reportador} apresenta esta situação através de
+um diagrama de caso de uso.
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-caso-uso-reportador.pdf}
+	\caption{Diagrama de caso de uso do papel Reportador}
+	\label{fig:diagrama-caso-uso-reportador}
+\end{figure}
+
+\paragraph{Gerente de Requisição de Mudança (Maintenance-request manager):}
+Res\-pon\-sá\-vel por decidir se uma Requisição de Mudança será aceita ou
+rejeitada e qual tipo de manutenção deverá ser aplicada. Posteriormente cabe a
+ele/ela encaminhar a RM para o Agendador.
+
+\paragraph{Agendador (Scheduler)}:
+Deve planejar a fila de Requisições de Mudança aceitas. Também estão no rol de
+responsabilidades deste papel a atribuição das RM's para o desenvolver mais
+apto.
+
+\paragraph{Desenvolvedor:}
+Responsável por realizar as ações que irão solucionar a Requisição de Mudança.
+
+\paragraph{Analista de Qualidade:}
+Responsável por avaliar se uma Requisição de Mudança que foi solucionada por um
+Desenvolvedor afim de verificar se a RM foi resolvida de forma correta.
+
+\paragraph{Chefe da Manutenção (Head of	Maintenance):}
+Tem por responsabilidade definir os padrões e procedimentos que compõe o
+processo de manutenção que será utilizado.
+
+Apesar da classificação de papéis utilizada derivar de um contexto de manutenção
+de software específico (setor bancário e empresas com a área de manutenção
+terceirizada), ela é capaz de acoplar com outros tipos de processo de manutenção
+de software, como aquele proposto por Ihara e outros
+\cite{Ihara:2009:AMI:1595808.1595833}. Naquele estudo foi criada uma
+representação de um processo de modificação de bugs tomando como base as
+diversas situações que um bug possui em uma FGRM no contexto de projetos de
+código aberto. O processo resultante é facilmente acoplável com a classificação
+utilizada em nosso estudo.
+
+Cabe ressaltar que está fora do escopo deste estudo elaborar uma taxonomia de
+papeis envolvidos na Manutenção de Software em função de supormos que isto
+corresponde a um esforço bem extenso. Nossa ação é identificar quais artigos
+trabalham com a noção de quais papeis a extensão pretender dar suporte, ou seja,
+relatar se existem papeis e quais são eles, sem com isso, envolver em uma
+consolidação definitiva.
+\todoend
+
 \section{Requisição de Mudança}
 \label{sec:requisicao_de_mudanca}
 
@@ -200,18 +412,24 @@ mais críticos.
 
 \todobegin{Incluída discussão sobre os atributos e classificação de uma RM.}
 
-Alguns pesquisadores e profissionais da manutenção entende que a manutenção
-preventiva como um subconjunto da perfectiva~\cite{thipathy2014software}.
-Segundo Tripathy \& Naik~\cite{tripathy2014software} uma Requisição de Mudança
-(RM) é o veículo para registar as informações sobre o defeito, evolução ou
-melhoria de um sistema. Em outras palavras, relatos de defeito ou requisições de
-melhorias são documentadas como uma RM. A
-Figura~\ref{fig:diagrama-classe-requisicao-mudancas} exibe um modelo conceitual
-de uma RM no escopo desta dissertação.
+Alguns pesquisadores e profissionais entendem a manutenção preventiva como um
+subconjunto da perfectiva~\cite{thipathy2014software}.  Segundo Tripathy \&
+Naik~\cite{tripathy2014software} uma Requisição de Mudança (RM) é o veículo para
+registrar a informação sobre o defeito, evolução ou melhoria de um sistema.  Com
+base no é discutido pelos autores construímos o modelo conceitual exibido na
+Figura~\ref{fig:diagrama-classe-requisicao-mudancas}. No modelo uma Requisição
+de Mudança é especializada como um \textit{Pedido de Correção} de determinada
+falha ou como um \textit{Pedido de Melhoria} que pode estar relacionado com o
+aprimoramento de funcionalidades ou com a melhoria da qualidade do sistema.
+Alguns autores utilizam os termos \textit{relato de defeito ou relato de
+	melhoria} como sinônimos para a RM, contudo, conforme discutido
+posteriormente, o relato, que é o texto livre que descreve a RM, é um dos
+atributos que a compõe (vide
+Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}).
 
 \todobegin{Incluída uma imagem para representar que a Requisição de Mudanças
 	representam um elemento comum de relatos de defeitos, evolução ou melhoria
-	de um sistema} 
+	de um sistema}
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-requisicao-mudancas.pdf}
@@ -256,14 +474,21 @@ Os principais conceitos envolvidos no modelo estão descritos a seguir:
 		processo de resolução da RM\@.
 \end{description}
 
-Em alguns textos sobre manutenção de software o relato, apesar de ser um
-atributo de uma RM, é utilizado como sinônimo da mesma. Em outros contextos, as
-informações contidas em determinada RM pode mudar. Tais campos, denominados de
-pré-definidos, no relatório de bugs fornecem uma variedade de metadados
-descritivos tais como \textit{importância, prioridade, gravidade, componente, e
-	produto}~\cite{zhang2016literature}. A Figura~\ref{fig:rm-exemplo} exibe um
-exemplo representativo de uma RM contendo todos os elementos básicos descritos
-no modelo, tais como identificador, sumário, relato, dentre outros.
+Conforme pode ser observado na Figura
+~\ref{fig:diagrama-classe-atributos-requisicao-mudancas} os atributos
+\textit{Comentário} e \textit{Anexo} foram modelados como multivalorados,
+diferentemente dos demais. Esta foi intencional já que o objetivo era salientar
+que determinada instância de uma RM pode conter diversos anexos ou comentários.
+No caso dos comentários esta característica é ainda mais relevante tendo em
+vista que o conjunto de comentários realizados durante do processo de solução
+ser de grande valia para os desenvolvedores e pesquisadores em manutenção de
+software. Em outros contextos, as informações contidas em determinada RM pode
+mudar. Tais campos, denominados de pré-definidos, no relatório de bugs fornecem
+uma variedade de metadados descritivos tais como \textit{importância,
+	prioridade, gravidade, componente, e produto}~\cite{zhang2016literature}. A
+Figura~\ref{fig:rm-exemplo} exibe um exemplo representativo de uma RM contendo
+todos os elementos básicos descritos no modelo, tais como identificador,
+sumário, relato, dentre outros.
 
 \begin{figure}[htpb]
 	\centering
@@ -468,7 +693,7 @@ Nesta fase uma RM é aceita e posteriormente atribuída a algum desenvolvedor.  
 fase de \textit{verificação} é o subprocesso membros com a responsabilidade de
 garantia da qualidade verifica quais RM's modificadas foram corretamente
 resolvidas. Caso uma RM modificada por um desenvolver não seja verificada, ela
-poderia não ser reconhecida como finalizada (closed).
+poderia não ser reconhecida como fechada (closed).
 
 É possível acoplar o modelo proposto por Tripathy \&
 Naik~\cite{tripathy2014software} naquele descrito por Ihara e
@@ -477,218 +702,6 @@ genérico.  Neste dissertação utilizamos de forma geral o modelo contido no
 trabalho de Ihara e outros. Nos casos em que houver necessidade de um maior
 detalhamento do ciclo de vida de uma RM, a discussão tomara como base o modelo
 de Tripathy \& Naik.
-\todoend
-
-\section{O processo de Manutenção de Software}
-\label{sec:o_processo_de_manutecao_de_software}
-
-\todobegin{Incluída localização da definição do texto tendo em vista que a
-	referência possui mais de 400 páginas}
-Em um relatório técnico~\cite{paulk1993key}, que descreve as principais práticas
-que correspondem a cada nível de maturidade de um modelo de maturidade,
-verificamos em seu glossário a seguinte definição de Processo de Software: é o
-conjunto de atividades, métodos, práticas e transformações utilizadas para
-desenvolvê-lo ou mantê-lo bem como seus artefatos
-associados~\cite{paulk1993key}. Independente do contexto em que a manutenção
-ocorra é importante que o processo esteja bem definido. Existe na literatura a
-proposição de alguns modelos do processo de manutenção de software,
-especialmente baseados em uma visão tradicional no qual desenvolvimento e
-manutenção possuem uma clara separação. Recentemente os métodos propostos pelos
-agilistas vêm sendo utilizados para manter software.  Esta tendência surge da
-demanda crescente por serviços de manutenção com um retorno mais rápido para o
-usuário.
-\todoend
-
-Nas próximas seções apresentamos alguns modelos encontrados na literatura na
-perspectiva tradicional, ao mesmo tempo descrevemos propostas do uso da
-metodologia dos agilistas na manutenção de software.
-
-\subsection{Manutenção de Software Tradicional}
-\label{subsec:manutenção_de_software_tradicional}
-
-Em resumo, um processo de manutenção de software descreve as atividades e suas
-respectivas entradas e saídas. Alguns modelos são descritos nos padrões IEEE
-1219 e ISO/IEC 14764. O processo especificado no Padrão para Manutenção de
-Software (IEEE~-~1219) indica que as atividades de manutenção de software iniciem
-após a entrega do produto de software. O padrão também discute aspectos de
-planejamento da manutenção. As atividades que compõe o processo são apresentas
-na Figura~\ref{fig:ieee-1219-processo-man-software}.
-
-\begin{figure}[htpb] \centering
-	\includegraphics[width=0.7\linewidth]
-	{chapter-manutencao-software-visao-geral/img/ieee-1219-98-processo-manutencao.png}
-	\caption{IEEE 1219 -~Processo de Manutenção de Software}\label{fig:ieee-1219-processo-man-software}
-\end{figure}
-
-De maneira relacionada, na ISO/IEC 14764 as atividades que compõe o processo são
-similares aquelas propostas na IEEE-~1219, exceto pelo fato que elas são
-agregadas de uma forma diferente. O processo descrito na ISO/IEC~14764 são
-exibidas na Figura~\ref{fig:ieee-14764-processo-manutencao}
-
-\begin{figure}[htpb] \centering
-	\includegraphics[width=0.7\linewidth]
-{chapter-manutencao-software-visao-geral/img/ieee-14764-processo-manutencao.pdf}
-	\caption{ISO/IEC~14764 Processo de Manutenção de Software}
-\label{fig:ieee-14764-processo-manutencao} \end{figure}
-
-As atividades de manutenção propostas na ISO/IEC 14764 são detalhadas em tarefas
-conforme apresentadas a seguir:
-
-\begin{itemize}
-   	\item Implementação do Processo
-   	\item Análise e Modificação do
-		Problema
-	\item Aceitação e Revisão da Manutenção
-   	\item Migração
-   	\item Aposentadoria do Software
-\end{itemize}
-
-É possível notar que algumas atividades realizadas durante a manutenção de
-software são similares à outras presentes no desenvolvimento de software, como
-por exemplo, análise de desempenho, codificação, teste e documentação. Outra
-atividade comum à manter e desenvolver software é o gerenciamento dos
-requisitos. Nas duas situações os profissionais responsáveis por controlar os
-requisitos devem atualizar a do\-cu\-men\-ta\-ção  por conta de alterações
-ocorridas no código fonte. Por outro lado certas atividades estão vinculadas
-apenas ao contexto da manutenção de software. O Corpo de Conhecimento em
-Engenharia de Software~\cite{4425813} destaca algumas delas:
-
-\todobegin{Faltava referência sobre as atividades que seriam únicas ao processo
-	de manutenção. Havida duvidas sobre se as atividades: Suporte ao Usuário,
-	Suporte ao Uso de Software e Acordo de Nível de Serviço}
-\begin{description}
-	\item[Compreensão do programa:] atividades necessárias para obter um
-		conhecimento geral do que um produto de software faz e como as partes
-		funcionam em conjunto;
-	\item[Transição:] uma sequência controlada e coordenada de atividades onde o
-		software é transferido progressivamente do desenvolvedor para o
-		mantenedor;
-	\item[Aceitação/rejeição de Requisições de Mudança:] as modificações
-		que ultrapassem determinado limiar de tamanho, esforço ou complexidade
-		podem ser rejeitadas pelos mantenedores e redirecionadas para um
-		desenvolvedor;
-	\item[Suporte ao usuário:] uma função de suporte para o usuário final que
-		aciona a avaliação, priorização ou avaliação de esforço das Requisições
-		de Mudança;
-	\item[Análise de impacto:] uma técnica para identificar áreas afetadas por
-		uma potencial mudança;
-	\item[Contratos de Acordo de Nível de Serviço (Service Level Agreements
-		\@-\@ SLA):] acordos contratuais que descrevem os serviços e objetivos
-		de qualidade.
-\end{description}
-\todoend
-
-\subsection{Manutenção de Software na Perspectiva dos Agilistas}
-\label{sub:manutenção_de_software_com_método_dos_agilistas}
-
-Grande parte da literatura em Manutenção de Software trata de técnicas e
-metodologias tradicionais da Engenharia de Software. Todavia, verifica-se uma
-tendência que os departamentos dedicados à manutenção de software se mostrem
-interessados nas metodologias dos agilistas e que tenham vontade de
-experimentá-las em suas atividades~\cite{Heeager2015}.
-
-No momento da elaboração desta dissertação boa parte dos textos em Engenharia de
-Software tratarem desenvolvimento e manutenção como atividades com natureza
-distintas, esta última pode adaptar características da primeira visando a
-melhoria do seu desempenho. Dentre as práticas propostas pelos agilistas
-passíveis de serem utilizadas em tarefas de manutenção é possível citar o
-desenvolvimento iterativo, maior envolvimento do cliente, comunicação face a
-face, testes frequentes, dentre outras.
-
-Alguns resultados demonstram certa dificuldade para implantação da metodologia
-dos agilista na manutenção de software~\cite{1402140}. Um dos possíveis
-problemas é a necessidade de adequação das práticas da organização de modo que a
-se adequar as necessidades do time de desenvolvimento.  Estudos apresentam
-resultados relativos à melhorias no aprendizado e produtividade da equipe
-mediante o aumento da moral, encorajamento e confiança entre os desenvolvedores,
-o que propicia uma alta motivação durante o processo de manutenção de
-software~\cite{Choudhari:2014:EIM:2557833.2557845}.
-
-\todobegin{Conforme sugerido vou ``deslocada'' a discussão sobre os papéis
-	dentro da manutenção de software. O testo foi revisado e para deixar mais
-	claro foi utilizada diagrama de caso de uso.}
-
-\subsection{Papéis na Manutenção de Software}
-\label{subsec:man_visao_geral_papeis_na_manutencao_de_software}
-
-As ações que alteram o estado de uma RM são realizadas por diversas pessoas
-envolvidas no processo de manutenção de software que desempenham diversos
-papéis. Os nomes e as atividades desenvolvidas por cada papel poderia variar de
-um projeto para outro, contudo, é possível determinar uma classificação que
-agrega um pouco comum deste diferentes papéis. Nesta dissertação, utilizamos a
-classificação proposta por Polo e outros~\cite{Polo1999} cujo objetivo é definir
-uma estrutura da equipe de manutenção de software mediante a clara identificação
-das tarefas que cada membro deve executar. Os papéis propostos no estudo é
-produto da aplicação da metodologia MANTEMA~\cite{756695} para manutenção em
-projetos de software bancários espanhóis, em especial aqueles em que a área de
-manutenção foi terceirizada (outsourcing). Os autores reforçam que apesar da
-taxonomia de papéis ter sido criada em um contexto específico, ela pode ser
-adequada para aplicação em outras situações.
-
-No escopo deste trabalho removemos os papéis que segundo o nosso entendimento
-estão mais vinculados a um contexto de manutenção terceirizada (outsourcing).
-Além disso, dividimos o papel ``time de manutenção' (maintenance team) em
-\textit{Desenvolvedor e Analista de Qualidade} por entendermos que são papéis
-comuns a muito dos processos de manutenção existentes. Os papéis que compõe a
-taxonomia proposta estão descritos a seguir:
-
-\paragraph{Usuário Afetado:}
-Indivíduo que utiliza o sistema ou sistemas que correspondente à RM que será
-relatada. O defeito, a melhoria ou evolução no software, representada pela RM,
-estão relacionadas com os desejos e necessidades deste papel.
-
-\paragraph{Reportador:}
-Responsável por registrar a Requisição de Mudança na FGRM\@. Geralmente,
-qualquer pessoa envolvida no processo de manutenção de software pode relatar uma
-RM. Neste sentido, as atividades relacionadas com o papel de Reportador podem
-estar vinculados aos demais contidas nesta classificação. A
-Figura~\ref{fig:diagrama-caso-uso-reportador} apresenta esta situação através de
-um diagrama de caso de uso.
-
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-caso-uso-reportador.pdf}
-	\caption{Diagrama de caso de uso do papel Reportador}
-	\label{fig:diagrama-caso-uso-reportador}
-\end{figure}
-
-\paragraph{Gerente de Requisição de Mudança (Maintenance-request manager):}
-Res\-pon\-sá\-vel por decidir se uma Requisição de Mudança será aceita ou
-rejeitada e qual tipo de manutenção deverá ser aplicada. Posteriormente cabe a
-ele/ela encaminhar a RM para o Agendador.
-
-\paragraph{Agendador (Scheduler)}:
-Deve planejar a fila de Requisições de Mudança aceitas. Também estão no rol de
-responsabilidades deste papel a atribuição das RM's para o desenvolver mais
-apto.
-
-\paragraph{Desenvolvedor:}
-Responsável por realizar as ações que irão solucionar a Requisição de Mudança.
-
-\paragraph{Analista de Qualidade:}
-Responsável por avaliar se uma Requisição de Mudança que foi solucionada por um
-Desenvolvedor afim de verificar se a RM foi resolvida de forma correta.
-
-\paragraph{Chefe da Manutenção (Head of	Maintenance):}
-Tem por responsabilidade definir os padrões e procedimentos que compõe o
-processo de manutenção que será utilizado.
-
-Apesar da classificação de papéis utilizada derivar de um contexto de manutenção
-de software específico (setor bancário e empresas com a área de manutenção
-terceirizada), ela é capaz de acoplar com outros tipos de processo de manutenção
-de software, como aquele proposto por Ihara e outros
-\cite{Ihara:2009:AMI:1595808.1595833}. Naquele estudo foi criada uma
-representação de um processo de modificação de bugs tomando como base as
-diversas situações que um bug possui em uma FGRM no contexto de projetos de
-código aberto. O processo resultante é facilmente acoplável com a classificação
-utilizada em nosso estudo.
-
-Cabe ressaltar que está fora do escopo deste estudo elaborar uma taxonomia de
-papeis envolvidos na Manutenção de Software em função de supormos que isto
-corresponde a um esforço bem extenso. Nossa ação é identificar quais artigos
-trabalham com a noção de quais papeis a extensão pretender dar suporte, ou seja,
-relatar se existem papeis e quais são eles, sem com isso, envolver em uma
-consolidação definitiva.
 \todoend
 
 \section{Ferramentas de Gerenciamento de Requisições de Mudança (FGRM)}
@@ -713,12 +726,12 @@ relativas à manutenção de software. Não existe na literatura uma nomenclatur
 padrão para este tipo de ferramenta. Em alguns estudos é possível verificar
 nomes tais como Sistema de Controle de Defeito\@-\@ Bug Tracking Systems,
 Sistema de Gerenciamento da Requisição\@-\@ Request Management System, Sistemas
-de Controle de Demandas (SCD)- Issue Tracking Systems e outros diversos nomes.
-Todavia, de modo geral, o termo se refere às ferramentas utilizadas pelas
-organizações para \textit{gerenciar as Requisições de Mudança}. Estas ferramentas
-podem ainda ser utilizadas por gestores, analistas de qualidade e usuários
-finais para atividades tais como gerenciamento de projetos, comunicação,
-discussão e revisões de código. Neste trabalho utilizaremos o termo
+de Controle de Demandas (SCD)\@-\@ Issue Tracking Systems e outros diversos
+nomes.  Todavia, de modo geral, o termo se refere às ferramentas utilizadas
+pelas organizações para \textit{gerenciar as Requisições de Mudança}. Estas
+ferramentas podem ainda ser utilizadas por gestores, analistas de qualidade e
+usuários finais para atividades tais como gerenciamento de projetos,
+comunicação, discussão e revisões de código. Neste trabalho utilizaremos o termo
 \texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) ao
 referimos a este tipo de ferramenta.
 
@@ -755,8 +768,7 @@ apenas submetem a RM, mas também participam na discussão de como resolvê-la.
 Desta forma, o usuário final ajuda nas decisões sobre a direção futura do
 produto de software~\cite{breu2010information}.
 
-
-\subsection{Modelo Conceitual das FGRM's}
+\subsection{Modelo Conceitual do Contexto das FGRM's}
 \label{sub:espectro_funcionalidades_fgrm}
 \todobegin{Estudo sobre o conjunto de conceitos para este tipo de ferramenta}
 
@@ -768,48 +780,68 @@ disponíveis~\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tr
 é possível encontrar atributos comuns que permitem a compilação de um modelo
 conceitual.
 
-Nós construímos um modelo conceitual com base na literatura da área em especial
+Nós construímos um modelo conceitual com base na literatura da área, em especial
 nos trabalhos de~\cite{cavalcanti2014challenges, singh2011bug,
-	kshirsagar2015issue}. Nós sintetizamos os dados através da identificação de
-temas recorrentes da definição de FGRM's encontradas nos artigos. Foram
-encontrados quatro principais conceitos que estão retratados na
+	kshirsagar2015issue} visando entender o conceito no qual uma FGRM pode estar
+inserida. Nós sintetizamos os dados através da identificação de temas
+recorrentes da definição de FGRM's encontradas nos artigos. Foram encontrados
+quatro principais conceitos que estão retratados na
 Figura~\ref{fig:diagrama-classe-conceitual-fgrm} como um diagrama baseado na
 UML. Esta figura foi derivada dos estudos primários e consiste em uma
 generalização dos elementos utilizados com frequência nos artigos. Os conceitos
 envolvidos no modelo estão descritos a seguir.
 
 \begin{description}
-	\item[Projeto:] O Projeto reflete o contexto no qual uma determinada FGRM
-		está inserida. Ele é composto pelos \textit{Componentes de Software} e
-		demais \textit{Artefatos}. Os \textit{Componentes de Software}
-		representam em conjunto o representa o sistema do qual as RM's estão
-		vinculadas. Os \textit{Artefatos} são os demais itens de configuração
-		que são utilizados ou produzidos no desenvolvimento do software tais
-		como o código fonte, documentação, casos de teste e etc.
-	\item[Repositório de RM:] Trata-se do banco de dados, manual ou automático,
-		em que as RM's são armazenadas e gerenciadas. Cada item nesta base é
-		representado por uma RM com as características discutidas na
-		Seção~\ref{sec:requisicao_de_mudanca}.
-	\item[Repositórios de Pessoas:] Representa a base de dados de usuários da
-		FGRM. Nele são gerenciados os dados das pessoas envolvidas no projeto
-		e de seus respectivos direitos de acesso às informações das RM's.
+	\item[Projeto:] Um projeto de software para o qual a FGRM visa suportar.
+		Ele é composto pelos atributos \textit{Componentes de Software},
+		\textit{Artefatos} e \textit{Contexto de Desenvolvimento}.
+		\begin{itemize}
+			\item  \textit{Componente de Software} representa um ou mais módulo
+				do sistema que a FGRM suporta.
+			\item \textit{Artefatos} são os demais itens de configuração que são
+				utilizados ou produzidos no desenvolvimento do software tais
+				como o código fonte, documentação, casos de teste e etc.
+			\item \textit{Contexto de Desenvolvimento} representa os atributo
+				interferem no processo de desenvolvimento e manutenção de
+				software. Nele está contido o processo de desenvolvimento (por
+				exemplo métodos ágeis, cascata, iterativo e etc), as ferramentas
+				utilizadas (compiladores, ferramentas debug e build).
+		\end{itemize}
+	\item[Repositório de RM:] Trata-se da base de dados onde as RM's são
+		armazenadas e gerenciadas. Cada item nesta base é uma RM com as
+		características discutidas na Seção~\ref{sec:requisicao_de_mudanca}.
+	\item[Repositório de Usuários] Representa a base de dados de usuários da
+		FGRM. Nele são gerenciados os dados das pessoas envolvidas no projeto e
+		de seus respectivos direitos de acesso às informações das RM's. Neste
+		caso, esta base inclui tanto a equipe de manutenção quanto as demais
+		partes interessadas.
 	\item[Fluxo de Trabalho:] O \textit{Fluxo de Trabalho} representa o conjunto
 		de regras que gerenciam o processo de resolução de uma RM. É a partir
-		dele que é definido os diferente \textit{estados} que uma RM pode assumir desde
-		de quando ela é redigida até o momento em que se define que foi
-		solucionada. Este processo é realizado pelas \textit{Pessoas} envolvidas
-		no \textit{Projeto} através dos diferente \textit{Papéis} desempenhados
-		e suas respectivas \textit{Atividades}. Uma discussão mais aprofundada
-		sobre os papéis desempenhados na manutenção de software está disponível
-		na Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}.
-		De maneira relacionada, os diferentes estados de um ciclo de vida de uma
-		RM estão descritos na Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}.
+		dele que são definidos os diferente \textit{estados} que uma RM pode
+		assumir desde de quando ela é redigida até o momento em que se define
+		que foi solucionada. Este processo é realizado pelas \textit{Pessoas}
+		envolvidas no \textit{Projeto} através dos diferente \textit{Papéis}
+		desempenhados e suas respectivas \textit{Atividades}. Uma discussão mais
+		aprofundada sobre os papéis desempenhados na manutenção de software está
+		disponível na
+		Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}.  De
+		maneira relacionada, os diferentes estados de um ciclo de vida de uma RM
+		estão descritos na Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}.
 \end{description}
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-fgrm.pdf}
-	\caption{Modelo conceitual de uma FGRM.}
+A partir da Figura~\ref{fig:diagrama-classe-conceitual-fgrm} é possível
+verificar que um \textit{projeto} pode \textit{definir} o seu \textit{fluxo de
+	trabalho}, como por exemplo resolvendo que uma RM só pode ser considerada
+Fechada (Closed) - vide Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca} -
+caso ela tenha sido avaliada por um Analista de Qualidade (vide
+Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software} ). A partir
+daquele fluxo as RM's podem ser \textit{atendidas} visando a sua resolução o que
+é feito por uma \textit{pessoa} devidamente registrada no \textit{repositório de
+	pessoas} e com direto para realizar a ação necessária.
+
+\begin{figure}[htpb] \centering
+	\includegraphics[width=1.15\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-fgrm.pdf}
+	\caption{Modelo conceitual do contexto de uma FGRM}
 	\label{fig:diagrama-classe-conceitual-fgrm}
 \end{figure}
 
