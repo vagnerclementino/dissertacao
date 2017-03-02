@@ -74,6 +74,12 @@ indexkeys={1.~Computação --- Teses. 2.~Engenharia de Software --- Teses. I.~Or
 \newcommand{\todobegin}[1]{\todo[inline]{\#BEGIN: #1}}
 \newcommand{\todoend}{\todo[inline]{\#END}}
 
+\newcommand{\sugestao}[2]{\fbox{
+		\begin{minipage}{.9\textwidth}
+			\textbf{Sugestão \##1:} #2
+		\end{minipage}
+	}
+}
 
 %Incluindo o fonte do Capítulo 01
 \input{./chapter-intro/intro.tex}
@@ -85,18 +91,15 @@ indexkeys={1.~Computação --- Teses. 2.~Engenharia de Software --- Teses. I.~Or
 \input{./chapter-mapeamento-sistematico/mapeamento-sistematico.tex}
 
 %Incluindo o fonte do Capítulo 04
-\input{./chapter-caracterizacao-ferramentas/caracterizacao-ferramentas.tex}
-
-%Incluindo o fonte do Capítulo 05
 \input{./chapter-pesquisa-com-profissionais/pesquisa-com-profissionais.tex}
 
-%Incluindo o fonte do Capítulo 06
+%Incluindo o fonte do Capítulo 05
 \input{./chapter-sugestoes-melhorias-fgrm/sugestoes-melhorias-fgrm.tex}
 
-%Incluindo o fonte do Capítulo 07
-\input{99-parte-escrita/src/chapter-implementacao-extensoes-fgrm/implementacao-extensoes-fgrm.tex}
+%Incluindo o fonte do Capítulo 06
+\input{./chapter-implementacao-extensoes-fgrm/implementacao-extensoes-fgrm.tex}
 
-%Incluindo o fonte do Capítulo 08
+%Incluindo o fonte do Capítulo 07
 \input{./chapter-conclusao/conclusao.tex}
 
 % Incluindo bibliografia:

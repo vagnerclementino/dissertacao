@@ -6,7 +6,7 @@
 %Modificação:
 %Revisão:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Melhorando as Ferramentas de Gerenciamento de Requisição de Mudança}
+\chapter{Sugestões de Melhorias para as FGRM's}
 \label{ch:sug_melhoria}
 
 \section{Introdução}
@@ -62,11 +62,49 @@ processo de avaliação; na Seção~\ref{sec:sug_melhoria_ameacas} apresentamos 
 ameaças à validade do trabalho realizado neste capítulo; encerramos esta parte
 do estudo com um breve resumo na Seção~\ref{sec:sug_melhoria_resumo}.
 
-\section{Melhorando as FGRM's}
+\section{Sugestões de Melhorias para as FGRM's}
 \label{sec:sug_melhoria_melhorando_as_ferraementas}
 
-Nesta seção apresentamos o estudo realizado que levam as recomendações sobre
-como as FGRM's poderiam ser melhorados.
+Nesta seção apresentamos um conjunto de recomendação de melhorias das
+funcionalidades das FGRM's. As sugestões propostas não estão vinculadas
+exclusivamente à funcionalidades já existentes neste tipo de ferramenta. O que
+está sendo proposto pode representar o desenvolvimento de um novo tipo de
+comportamento para as FGRM's. Cabe-nos ressaltar que o conjunto proposto não é
+exaustivo e é baseado nos resultados desta dissertação. Além disso não houve
+compromisso com as dificuldades operacionais que implementação das
+funcionalidades pode estar relacionada, mesmo porquê avaliar esta complexidade
+está fora do escopo deste estudo.
+
+
+Conforme discutido na Subseção~\ref{} o responsável por reportar uma RM pode ser
+tanto um usuário do sistema quando um membro da equipe de desenvolvimento e
+manutenção. Este diferente nível de conhecimento do software acarretar em
+diferente níveis de qualidade do que é relato. Esta situação pode causar atraso
+na análise da RM por falta da informação necessária a sua resolução. Alguns
+estudos se dedicam a minimizar este problema através da análise da qualidade do
+que é relatado em uma RM. A premissa é que o responsável pelo relato tenha
+ciência das informações que são necessárias à resolução do que foi solicitado.
+Para este fim apresentamos a sugestão descrita a seguir.
+
+\sugestao{1}{As FGRM's devem fornecer um retorno(\textit{feedback}) da qualidade
+do relato realizado em uma RM.}
+
+As RM permitem a inclusão de código fonte em diversas etapas do seu ciclo de
+vida. O código pode ser incluído durante a sua criação, nas discussões
+realizadas para a sua resolução ou mesmo quando é concluída, onde recebe o nome
+de \textit{patch.} Esta informação é bastante relevante para o projeto do qual a
+RM faz parte, contudo, as FGRM's não permitem a sua recuperação. Neste sentido,
+sugerimos uma funcionalidade para atender a recomendação à seguir.
+
+\sugestao{2}{As FGRM's devem possibilitar a busca por código fonte contido em
+	seu relato, comentários ou anexos.}
+
+Caso seja possível identificar que um \textit{Reportador} tem por hábito relatar
+uma RM com qualidade e de forma relevante.
+
+\sugestao{3}{As FGRM's devem diferenciar os reportadores que relatam
+	RM's com maior qualidade e relevância.}
+
 
 \section{Avaliação das Melhorias}
 \label{sec:sug_melhoria_avaliacao_das_melhorias}
