@@ -73,20 +73,26 @@ comportamento para as FGRM's. Cabe-nos ressaltar que o conjunto proposto não é
 exaustivo e é baseado nos resultados desta dissertação. Além disso não houve
 compromisso com as dificuldades operacionais que implementação das
 funcionalidades pode estar relacionada, mesmo porquê avaliar esta complexidade
-está fora do escopo deste estudo.
-
+está fora do escopo deste estudo. É possível que algumas das sugestões propostas
+já estejam implementadas de maneira parcial ou integral em alguma FGRM\@.
+Contudo, não é possível validar esta premissa por conta de volume de ferramentas
+disponíveis quando esta dissertação foi escrita.
 
 Conforme discutido na Subseção~\ref{} o responsável por reportar uma RM pode ser
 tanto um usuário do sistema quando um membro da equipe de desenvolvimento e
 manutenção. Este diferente nível de conhecimento do software acarretar em
 diferente níveis de qualidade do que é relato. Esta situação pode causar atraso
 na análise da RM por falta da informação necessária a sua resolução. Alguns
-estudos se dedicam a minimizar este problema através da análise da qualidade do
-que é relatado em uma RM. A premissa é que o responsável pelo relato tenha
-ciência das informações que são necessárias à resolução do que foi solicitado.
-Para este fim apresentamos a sugestão descrita a seguir.
+estudos demonstram que, do ponto de vista dos desenvolvedores, a inexistência de
+etapas para reproduzir e registro de pilha de ativação (stack tracke) dificultam
+mais o trabalho do que bugs duplicados~\cite{bettenburg2008makes,
+	bettenburg2007quality}. Neste linha, estes estudos se dedicam a minimizar
+este problema através da análise da qualidade do que é relatado em uma RM\@. A
+premissa é que o responsável pelo relato tenha ciência das informações que são
+necessárias à resolução do que foi solicitado.  Para este fim apresentamos a
+sugestão descrita a seguir.
 
-\sugestao{1}{As FGRM's devem fornecer um retorno(\textit{feedback}) da qualidade
+\sugestao{01}{As FGRM's devem fornecer um retorno (\textit{feedback}) da qualidade
 do relato realizado em uma RM.}
 
 As RM permitem a inclusão de código fonte em diversas etapas do seu ciclo de
@@ -94,20 +100,153 @@ vida. O código pode ser incluído durante a sua criação, nas discussões
 realizadas para a sua resolução ou mesmo quando é concluída, onde recebe o nome
 de \textit{patch.} Esta informação é bastante relevante para o projeto do qual a
 RM faz parte, contudo, as FGRM's não permitem a sua recuperação. Neste sentido,
-sugerimos uma funcionalidade para atender a recomendação à seguir.
+é descrito a \textit{Sugestão 02} que representa uma funcionalidade com este
+objetivos.
 
-\sugestao{2}{As FGRM's devem possibilitar a busca por código fonte contido em
+\sugestao{02}{As FGRM's devem possibilitar a busca por código fonte contido em
 	seu relato, comentários ou anexos.}
 
 Caso seja possível identificar que um \textit{Reportador} tem por hábito relatar
-uma RM com qualidade e de forma relevante.
+RM's e que sejam relevantes ao projeto de software, tais requisições deveriam
+receber algum tipo de etiqueta de modo a diferenciá-las dentro da FGRM\@.
+Segundo o nosso entendimento uma RM pode ser classificada como relevante se
+descreve um problema que afeta um grande número de usuários do sistema ou
+represente uma falha de segurança do software. O grau de relevância de
+determinada RM pode variar em diferentes projetos e pode depender de critérios
+subjetivos de quem analisa. Com objetivo de diferenciar os reportadores
+apresentamos a \textit{Sugestão 03}.
 
-\sugestao{3}{As FGRM's devem diferenciar os reportadores que relatam
+\sugestao{03}{As FGRM's devem diferenciar os reportadores que relatam
 	RM's com maior qualidade e relevância.}
 
+No ciclo de vida de uma RM, conforme discutido na Subseção~\ref{}, após a
+verificação de que a RM foi incorporada com sucesso ao software, ela é movida
+para o estado \textit{Fechado (Closed)} e deixar de estar atribuída a
+determinado desenvolvedor ou analista de qualidade. Caso um desenvolvedor queria
+acessá-la novamente deverá utilizar o identificador da RM a fim de recuperá-la
+na FGRM\@. Este histórico de trabalho do desenvolvedor pode ser útil na resolução
+de eventuais RM que surjam no projeto. No levantamento mediante questionário
+apresentado no Capítulo~\ref{ch:pesquisa-profissionais} alguns participantes
+relataram o desejo de uma funcionalidade  que gerencie este histórico conforme
+apresentado a seguir. Por esta razão apresentamos a \textit{Sugestão 04}.
 
-\section{Avaliação das Melhorias}
+\begin{itemize}
+	\item Eu gostaria de:
+	\begin{itemize}
+		\item \textit{``The ability to clearly visualize how many tickets are at
+				the to do, in progress, to validate or done steps.''}.
+		\item \textit{``History tracking, commenting, attachments, priority
+				setting, task assignment, tie in with deployment systems.''}
+	\end{itemize}
+\end{itemize}
+
+\sugestao{04}{As FGRM's devem permitir acesso facilitado para as $n$ últimas
+	RM's que foram analisadas por um desenvolvedor.}
+
+\section{Avaliação das Melhorias Propostas}
 \label{sec:sug_melhoria_avaliacao_das_melhorias}
+
+Este Capítulo se propôs em apresentar um conjunto de sugestões que foram
+construídas tomando como base a literatura da área e os resultados e
+contribuições desta dissertação. Com o objetivo de avaliar a relevância e o grau
+de facilidade de implementação das recomendações produzidas neste estudo
+conduzimos um levantamento mediante questionário com profissionais que
+contribuem em projeto de código aberto hospedados no Github. A metodologia
+utilização na condução do levantamento é descrita na próxima subseção.
+
+\subsection{Metodologia Levantamento com Questionário}
+\label{sub:sug_melhoria_metodologia_levantamento}
+
+Conforme discutido com maior detalhes no Capítulo~\ref{ch:} um levantamento com
+questionário, conhecido na literatura como \textit{Survey}, é uma abordagem de
+coleta e análise de dados na qual os participantes respondem a perguntas ou
+declarações que foram desenvolvidas antecipadamente~\cite{kasunic2005designing}.
+Para realizarmos a coleta dos dados foi utilizado um questionário eletrônico
+produzido previamente através da ferramenta \textit{Survey
+	Gizmo}~\footnote{\url{https://surveygizmo.com}}. O processo de seleção dos
+participantes, o desenho do questionário e como foi realização a sua aplicação
+estão descritos na próximas subseções.
+
+\subsubsection{Seleção dos Participantes}
+\label{ssub:sug_melhoria_selecao_participantes}
+
+Ficou definido que o público-alvo deste questionário seria profissionais que
+estejam ligados ao processo de desenvolvimento e manutenção de FGRM's. Este
+perfil foi selecionado porque permite que seja avaliado a relevância das
+sugestões propostas ao mesmo tempo que possibilita verificar a viabilidade de
+implementação do que foi recomendado em funcionalidades para as FGRM's. Por esta
+razão, selecionamos profissionais que atuam como \textit{contribuidores} em três
+projetos de código aberto hospedados no Github.
+
+
+Com cerca de 38 milhões de
+repositórios\footnote{\url{https://github.com/features}. Acesso em junho/2016.},
+GitHub é atualmente o maior repositório de código na Internet. Sua popularidade
+e a disponibilidade de metadados, acessíveis através de uma API, tem tornando
+GitHub bastante atrativo para a realização de pesquisas na área de Engenharia de
+Software.
+
+Para escolha dos projetos foi definido inicialmente um conjunto de critérios
+baseados em boas práticas recomendadas na literatura~\cite{Bird2009}. Em
+síntese, um projeto para ser escolhido deve atender aos simultaneamente
+seguintes requisitos:
+
+\begin{itemize}
+	\item Os projetos devem representar o desenvolvimento de uma FGRM\@.
+	\item Os projetos devem ter no mínimo seis meses de desenvolvimento, para
+		evitar projetos que não tenham passado por um tempo de manutenção
+		relevante.
+	\item Os  projetos devem  ter  no  mínimo  200  revisões  pelos  mesmos
+		motivos  da restrição anterior.
+	\item Os projetos escolhidos não devem ser ramificações (\textsl{forks}) um
+		do outro projeto, para evitar dados duplicados.
+	\item Os projetos obtidos devem ser os 10 mais populares que atendem aos
+		demais critérios, utilizando como métrica o campo \texttt{most stars}
+\end{itemize}
+
+Após aplicação dos critérios descritos obtivemos os projetos descritos na
+Tabela~\ref{tab:projetos_utilizados_para_avaliacao}. Conforme pode ser observado
+os projetos selecionados referem-se a ferramentas bem estabelecidas e largamente
+utilizadas por organizações e projetos de código aberto.
+
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Projeto} & \textbf{Commits} & \textbf{Branches} & \textbf{Releases} &
+\textbf{Contribuidores} & \textbf{Contrib.\ com E-mail} \\ \hline
+bugzilla & 9784 & 30 & 460 & 100 & - \\
+mantisbt & 10181 & 8 & 65 & 80 & - \\
+redmine & 13115 & 27 & 131 & 6 & - \\ \hline
+\end{tabular}%
+}
+\caption{Projetos Analisados. Os dados apresentados tem como referência
+	07/03/2017.}
+\label{tab:projetos_utilizados_para_avaliacao}
+\end{table}
+
+
+Com base nos projetos selecionados ficou definido que a amostra a ser utilizada
+no levantamento seria os respectivos contribuidores. Um contribuidor é alguém
+que participa efetivamente do desenvolvimento de um projeto, tendo o privilégio
+de acesso para alterar o código fonte. O contato com os contribuidores foi
+realizado por correio eletrônico, todavia, conforme pode ser verificado na
+coluna \textit{Contrib.\ com E-mail} nem todos permitem acesso público ao seu
+endereço de e-mail.
+
+\subsubsection{Desenho do Questionário}
+\label{ssub:sug_melhoria_desenho_questionario}
+
+
+\subsubsection{Processo de Aplicação}
+\label{ssub:processo_de_aplicação}
+
+
+
+
+
+
 
 Avaliar as sugestões enviando \textit{pull request} no \textit{Github} para os
 desenvolvedores de FGRM's de código aberto. Eles poderiam dizer ``concordo' ou
