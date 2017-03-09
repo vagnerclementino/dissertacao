@@ -3,7 +3,7 @@
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: dom fev 26 12:49:27 BRT 2017
-%Modificação:
+%Modificação: qui mar  9 05:19:57 BRT 2017
 %Revisão:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Sugestões de Melhorias para as FGRM's}
@@ -12,42 +12,42 @@
 \section{Introdução}
 \label{sec:sug_melhoria_intro}
 
-Conforme foi discutido neste estudo é inegável a importância das Ferramentas de
-Gerenciamento de Requisições de Mudança \@-\@ FGRM no contexto manutenção de
-Software. Conforme foi discutido no
-Capítulo~\ref{ch:caracterizacao_ferramentas} este tipo de sistema oferece
-suporte ao relato das Requisições de Mudança \@-\@ RM, ao processo de
-atribuição de determinada RM ao desenvolvedor mais apto, integração com
-Sistemas de Controle de Versão \@-\@ SCV, dentre outras. Os usuários deste tipo
-de software, em especial os ligados à manutenção de software, se mostraram, em
-geral, satisfeitos com as funcionalidades oferecidas para o desempenho do seu
-trabalho. O percentual de quase 90\% dos participantes da pesquisa descrita no
+Conforme já foi discutido nesta dissertação é inegável a importância das
+Ferramentas de Gerenciamento de Requisições de Mudança \@-\@ FGRM no contexto da
+manutenção de software. Conforme apresentado na
+Seção~\ref{sec:caracterizacao_ferramentas} este tipo de sistema oferece suporte
+ao relato das Requisições de Mudança \@-\@ RM, ao processo de atribuição das
+RM's ao desenvolvedor mais apto, integração com Sistemas de Controle de Versão
+\@-\@ SCV, dentre outras funcionalidades. Os usuários deste tipo de software, em
+especial os ligados à manutenção de software, se mostraram, em geral,
+satisfeitos com as funcionalidades oferecidas para o desempenho do seu trabalho.
+O percentual de cerca de 90\% dos par\-ti\-ci\-pan\-tes da pesquisa descrita no
 Capítulo~\ref{ch:pesquisa-profissionais} fizeram uma avaliação positiva, ao
-mesmo tempo que a mesma quantidade de respondentes afirmam que recomendariam a
-utilização da FGRM utilizada em um novo projeto.
+mesmo tempo que a mesma quantidade de respondentes afirmam que recomendariam a a
+FGRM que utilizam para um novo projeto.
 
 Não obstante, naquele mesmo levantamento, ao questionarmos se o profissional
 sentiria falta de determinada funcionalidade, do qual listamos algumas, cerca de
 15\% afirmaram não necessitar dos itens apontados em sua rotina de trabalho. A
-partir desta última informação podem inferir que os desenvolvedores estão
-satisfeitos com a ferramenta utilizada, contudo, não conhecem ou têm acesso ao
-potencial de funções que este tipo software pode oferecer.
+partir desta última informação podemos inferir que os desenvolvedores estão
+satisfeitos com a ferramenta utilizada, contudo, \textit{não conhecem ou não têm
+	acesso ao potencial de funções que este tipo software pode oferecer}.
 
-Diante do exposto, entendemos que podemos contribuir com o estado atual das
+Diante do exposto, entendemos que podemos contribuir com o estado a\-tu\-al das
 funcionalidades das FGRM's apresentando um conjunto de sugestões de melhorias.
-As sugestões foram compiladas utilizando os resultados obtido nesta dissertação,
-especialmente com base nos
-Capítulo~\ref{ch:mapeamento-sistematico},~\ref{ch:caracterizacao_ferramentas}
-e~\ref{ch:pesquisa-profissionais}, nos estudo que propõe melhorias para as
-FGRM~\cite{zimmermann2009improving, bettenburg2008makes, singh2011bug} e na
-experiência dos autores. Estas diretrizes podem ser utilizadas por pesquisadores
-interessados no tema com o objetivo de modo a conduzir estudos estudos sobre
-melhoria da produtividade dos desenvolvedores mediante o uso das FGRM's. Além
-disso, os responsáveis pelo desenvolvimento deste tipo de software podem
-utilizar este conjunto a fim de implementar futuras versões do software. Na
-mesma linha, os profissionais envolvidos em manutenção de software podem propor
-extensões (plugins) para as FGRM de modo a utilizar as melhorias propostas neste
-estudo em sua rotina de trabalho.
+As sugestões foram compiladas utilizando os resultados obtidos nesta
+dissertação, especialmente com base nos
+Capítulos~\ref{ch:mapeamento-sistematico} e~\ref{ch:pesquisa-profissionais}, na
+Seção~\ref{sec:caracterizacao_ferramentas} e nos estudos que propõem melhorias
+para as FGRM~\cite{zimmermann2009improving, bettenburg2008makes, singh2011bug}.
+Estas recomendações podem ser utilizadas por pesquisadores interessados em
+conduzir estudos sobre melhoria da produtividade dos desenvolvedores mediante o
+uso das FGRM's. Além disso, os responsáveis pelo desenvolvimento deste tipo de
+software podem utilizar este conjunto a fim de implementar futuras versões do
+projeto. Na mesma linha, os profissionais envolvidos em manutenção de software
+podem desenvolver extensões (plugins) para as FGRM com base no que foi proposto
+de modo a utilizar as melhorias propostas neste estudo em sua rotina de
+trabalho.
 
 Este capítulo está organizado da seguinte forma: a
 Seção~\ref{sec:sug_melhoria_melhorando_as_ferraementas} apresenta as sugestões
@@ -56,41 +56,44 @@ sugestão apresenta foi seguida de uma breve justificativa de como foi obtida e
 dos motivos de sua implementação; na
 Seção~\ref{sec:sug_melhoria_avaliacao_das_melhorias} realizamos a avaliação das
 sugestões que foram propostas, onde solicitamos a opinião de profissionais que
-participam de projetos de código aberto que desenvolvem FGRM's; a
-Seção~\ref{sec:sug_melhoria_discussao} discutimos o resultado obtidos do
+participam de projetos de código aberto que desenvolvem FGRM's; na
+Seção~\ref{sec:sug_melhoria_discussao} discutimos os resultados obtidos do
 processo de avaliação; na Seção~\ref{sec:sug_melhoria_ameacas} apresentamos as
-ameaças à validade do trabalho realizado neste capítulo; encerramos esta parte
-do estudo com um breve resumo na Seção~\ref{sec:sug_melhoria_resumo}.
+ameaças à validade deste capítulo; encerramos esta parte do estudo com um breve
+resumo na Seção~\ref{sec:sug_melhoria_resumo}.
 
 \section{Sugestões de Melhorias para as FGRM's}
 \label{sec:sug_melhoria_melhorando_as_ferraementas}
 
-Nesta seção apresentamos um conjunto de recomendação de melhorias das
+Nesta seção apresentamos um conjunto de recomendações de melhorias das
 funcionalidades das FGRM's. As sugestões propostas não estão vinculadas
-exclusivamente à funcionalidades já existentes neste tipo de ferramenta. O que
-está sendo proposto pode representar o desenvolvimento de um novo tipo de
-comportamento para as FGRM's. Cabe-nos ressaltar que o conjunto proposto não é
-exaustivo e é baseado nos resultados desta dissertação. Além disso não houve
-compromisso com as dificuldades operacionais que implementação das
-funcionalidades pode estar relacionada, mesmo porquê avaliar esta complexidade
-está fora do escopo deste estudo. É possível que algumas das sugestões propostas
-já estejam implementadas de maneira parcial ou integral em alguma FGRM\@.
-Contudo, não é possível validar esta premissa por conta de volume de ferramentas
-disponíveis quando esta dissertação foi escrita.
+exclusivamente à melhorias de funcionalidades já existentes neste tipo de
+ferramenta. O que está sendo proposto pode representar o desenvolvimento de um
+novo tipo de comportamento para as FGRM's. Cabe-nos ressaltar que o conjunto
+proposto não é exaustivo e é baseado nos resultados desta dissertação. Além
+disso não houve compromisso com as dificuldades operacionais que implementação
+das funcionalidades podem estar relacionadas, mesmo porquê avaliar esta
+complexidade está fora do escopo deste estudo. É possível que algumas das
+su\-ges\-tões propostas já estejam implementadas de maneira parcial ou integral
+em alguma FGRM\@.  Contudo, não é possível validar esta premissa por conta de
+volume de ferramentas disponíveis quando esta dissertação foi escrita.
 
-Conforme discutido na Subseção~\ref{} o responsável por reportar uma RM pode ser
-tanto um usuário do sistema quando um membro da equipe de desenvolvimento e
-manutenção. Este diferente nível de conhecimento do software acarretar em
-diferente níveis de qualidade do que é relato. Esta situação pode causar atraso
-na análise da RM por falta da informação necessária a sua resolução. Alguns
-estudos demonstram que, do ponto de vista dos desenvolvedores, a inexistência de
-etapas para reproduzir e registro de pilha de ativação (stack tracke) dificultam
-mais o trabalho do que bugs duplicados~\cite{bettenburg2008makes,
-	bettenburg2007quality}. Neste linha, estes estudos se dedicam a minimizar
-este problema através da análise da qualidade do que é relatado em uma RM\@. A
-premissa é que o responsável pelo relato tenha ciência das informações que são
-necessárias à resolução do que foi solicitado.  Para este fim apresentamos a
-sugestão descrita a seguir.
+Conforme discutido na
+Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software} o
+responsável por reportar uma RM pode ser tanto um usuário do sistema quando um
+membro da equipe de desenvolvimento/manutenção. Neste caso existem diferentes
+níveis de conhecimento sobre o sistema. Este diferente nivelamento pode
+acarretar em diferentes níveis de qualidade do que é relato. Esta situação pode
+causar atraso na análise da RM por falta da informação necessária a sua
+resolução. Alguns estudos demonstram que, do ponto de vista dos desenvolvedores,
+a falta de informação tais como etapas para reproduzir e registro de pilha de
+ativação (stack tracke) dificultam mais o trabalho do que bugs
+duplicados~\cite{bettenburg2008makes, bettenburg2007quality}. Neste linha, estes
+estudos se dedicam a minimizar o problema através da análise da qualidade do que
+é relatado em uma RM\@. A premissa é que o responsável pelo relato tenha ciência
+das informações que são necessárias à resolução do que foi solicitado. Com este
+objetivo apresentamos a sugestão de desenvolvimento de funcionalidade conforme
+descrito a seguir.
 
 \sugestao{01}{As FGRM's devem fornecer um retorno (\textit{feedback}) da qualidade
 do relato realizado em uma RM.}
@@ -101,7 +104,7 @@ realizadas para a sua resolução ou mesmo quando é concluída, onde recebe o n
 de \textit{patch.} Esta informação é bastante relevante para o projeto do qual a
 RM faz parte, contudo, as FGRM's não permitem a sua recuperação. Neste sentido,
 é descrito a \textit{Sugestão 02} que representa uma funcionalidade com este
-objetivos.
+objetivo.
 
 \sugestao{02}{As FGRM's devem possibilitar a busca por código fonte contido em
 	seu relato, comentários ou anexos.}
@@ -216,13 +219,13 @@ utilizadas por organizações e projetos de código aberto.
 \hline
 \textbf{Projeto} & \textbf{Commits} & \textbf{Branches} & \textbf{Releases} &
 \textbf{Contribuidores} & \textbf{Contrib.\ com E-mail} \\ \hline
-bugzilla & 9784 & 30 & 460 & 100 & - \\
-mantisbt & 10181 & 8 & 65 & 80 & - \\
-redmine & 13115 & 27 & 131 & 6 & - \\ \hline
+bugzilla & 9784 & 30 & 460 & 100 & 30\\
+mantisbt & 10181 & 8 & 65 & 80 & 32 \\
+redmine & 13115 & 27 & 131 & 6 & 2 \\ \hline
 \end{tabular}%
 }
-\caption{Projetos Analisados. Os dados apresentados tem como referência
-	07/03/2017.}
+\caption{Projetos utilizados no levantamento com profissionais. Os dados
+	apresentados tem como referência 07/03/2017.}
 \label{tab:projetos_utilizados_para_avaliacao}
 \end{table}
 
