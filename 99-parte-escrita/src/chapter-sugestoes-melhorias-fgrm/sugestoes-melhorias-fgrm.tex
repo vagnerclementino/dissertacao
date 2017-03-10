@@ -3,7 +3,7 @@
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: dom fev 26 12:49:27 BRT 2017
-%Modificação: qui mar  9 05:19:57 BRT 2017
+%Modificação: qui mar  9 20:54:30 BRT 2017
 %Revisão:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Sugestões de Melhorias para as FGRM's}
@@ -166,12 +166,10 @@ Conforme discutido com maior detalhes no
 Capítulo~\ref{ch:pesquisa-profissionais} um levantamento com questionário,
 conhecido na literatura como \textit{Survey}, é uma abordagem de coleta e
 análise de dados na qual os participantes respondem a perguntas ou declarações
-que foram desenvolvidas antecipadamente~\cite{kasunic2005designing}.  Para
-realizarmos a coleta dos dados foi utilizado um questionário eletrônico
-produzido através da ferramenta \textit{Survey
-	Gizmo}\footnote{\url{https://surveygizmo.com}}. O processo de seleção dos
-participantes, o desenho do questionário e como foi realização a sua aplicação
-estão descritos na próximas subseções.
+que foram desenvolvidas antecipadamente~\cite{kasunic2005designing}. Para
+realizarmos a coleta dos dados foi utilizado um questionário eletrônico. O
+processo de seleção dos participantes, o desenho do questionário e como foi
+realização a sua aplicação estão descritos na próximas subseções.
 
 \subsubsection{Seleção dos Participantes}
 \label{ssub:sug_melhoria_selecao_participantes}
@@ -187,7 +185,7 @@ projetos de código aberto hospedados no Github.
 Com cerca de 38 milhões de
 repositórios\footnote{\url{https://github.com/features}. Acesso em junho/2016.},
 Github é atualmente o maior repositório de código na Internet. Sua popularidade
-e a disponibilidade de metadados, acessíveis através de uma API, tem tornando
+e a disponibilidade de metadados, acessíveis através de uma API, tem tornado
 Github bastante atrativo para a realização de pesquisas na área de Engenharia de
 Software.
 
@@ -217,14 +215,14 @@ utilizadas por organizações e projetos de código aberto.
 \begin{table}[htpb]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
+\begin{tabular}{@{}cccccc@{}}
+\toprule
 \textbf{Projeto} & \textbf{Revisões} & \textbf{Ramificações} &
-\textbf{Lançamentos} &
-\textbf{Contribuidores} & \textbf{Contrib.\ com E-mail} \\ \hline
-bugzilla & 9784 & 30 & 460 & 100 & 30\\
+\textbf{Lançamentos} & \textbf{Contribuidores} & \textbf{Contrib.\ com E-mail} \\
+\midrule
+bugzilla & 9784 & 30 & 460 & 100 & 30 \\
 mantisbt & 10181 & 8 & 65 & 80 & 32 \\
-redmine & 13115 & 27 & 131 & 6 & 2 \\ \hline
+redmine & 13115 & 27 & 131 & 6 & 2 \\ \bottomrule
 \end{tabular}%
 }
 \caption{Projetos utilizados no levantamento com profissionais. Os dados
@@ -232,22 +230,60 @@ redmine & 13115 & 27 & 131 & 6 & 2 \\ \hline
 \label{tab:projetos_utilizados_para_avaliacao}
 \end{table}
 
-
 Com base nos projetos selecionados ficou definido que a amostra a ser utilizada
 no levantamento seria os respectivos contribuidores. Um contribuidor é alguém
 que participa efetivamente do desenvolvimento de um projeto, tendo o privilégio
 de acesso para alterar o código fonte. O contato com os contribuidores foi
 realizado por correio eletrônico, todavia, conforme pode ser verificado na
 coluna \textit{Contrib.\ com E-mail} nem todos permitem acesso público ao seu
-endereço de e-mail.
+endereço. A Figura~\ref{fig:redmine_contribuidores} exibe uma página do projeto
+com seus respectivos colaboradores.
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{./chapter-sugestoes-melhorias-fgrm/img/redmine_contribuidores.png}
+	\caption{Lista de contribuidores do projeto Redmine}
+\label{fig:redmine_contribuidores}
+\end{figure}
 
 \subsubsection{Desenho do Questionário}
 \label{ssub:sug_melhoria_desenho_questionario}
 
+A fim de coletar a opinião dos participantes foi utilizado um questionário
+eletrônico produzido através da ferramenta \textit{Survey
+	Gizmo}\footnote{\url{https://surveygizmo.com}}. O questionário foi desenhado
+com a premissa de ser respondido em um prazo curto, de preferência entre 5 e 10
+minutos. Neste sentido as perguntas foram organizadas em dois grupos principais.
+As questões do primeiro grupo têm por objetivo coletar a opinião dos
+profissionais sobre a relevância da recomendação proposta e o grau de
+dificuldade de implementá-la. As perguntas foram estruturadas como uma escala
+Likert em que o respondente deveria fornecer o seu nível de concordância para as
+declarações que lhe são apresentadas. No segundo grupo as perguntas visam
+estamos interessados na formação de base (background) dos profissionais. Optamos
+por definir cada uma das questões como não obrigatórios por entendermos que a
+impossibilidade ou o não interesse em responder uma determinada pergunta impeça
+ao participante de enviar os dados de outras que foram respondidas. A
+Figura~\ref{} exibe uma parte do formulário utilizado neste estudo.
+
+\todobegin{Incluir figura com o formulário}
 
 \subsubsection{Processo de Aplicação}
 \label{ssub:processo_de_aplicação}
 
+O questionário foi encaminhado à amostra de interesse através de correio
+eletrônico. O endereço foi coletado diretamente do projeto hospedado no Github.
+Foi desenvolvido um \textit{script} na linguagem Python que permitia coletar o
+endereço de e-mail e automatizar o processo de envio. As mensagem foram
+personalizadas de modo a identificar o nome do usuário e o projeto do Github
+com base no template exibido a seguir.
+
+\todobegin{Incluir o quadro com o template de envio das mensagens.}
+
+O processo de envio consistia ainda de uma segunda mensagem de ``lembrete'' após
+dois dias. Esta estratégia foi adotada com base em estudos que discutem
+resultados em que o reenvio pode ser um dos fatores que aumentem a taxa de
+participação em levantamentos por questionários realizados através da
+web~\cite{fan2010factors}.
 
 \section{Discussão}
 \label{sec:sug_melhoria_discussao}
