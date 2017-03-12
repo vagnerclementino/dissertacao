@@ -5,7 +5,7 @@
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: dom fev 26 12:49:27 BRT 2017
 %Modificação: qui mar  9 20:55:46 BRT 2017
-%Revisão:
+%Revisão: dom mar 12 09:35:34 BRT 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Um Estudo sobre a Implementação de uma Extensão para uma FGRM}
 \label{ch:implemtacao_extensao}
@@ -13,21 +13,21 @@
 \section{Introdução}
 \label{sec:implemtacao_extensao_intro}
 
-Durante esta dissertação estamos discutido que as funcionalidades oferecidas
+Durante esta dissertação estamos discutindo que as funcionalidades oferecidas
 pelas Ferramentas de Gerenciamento de Requisições de Mudança \@-\@ FGRM's
 conseguem atender aos objetivos deste tipo de software. Todavia, verificamos que
 exite espaço para melhorias das funções já existentes ou mesmo a proposição de
 novas. O desenvolvimento de novas funcionalidades em FGRM's, mediante a
-capacidade de extensão propiciada por algumas delas vêm sendo explorada na
+capacidade de extensão propiciada por algumas delas, vem sendo explorada na
 literatura. A extensão
 \textit{Buglocalizer}~\cite{Thung:2014:BIT:2635868.2661678}, criada para a
 ferramenta Bugzilla, possibilita a localização dos arquivos do código fonte que
 estão relacionados ao defeito relatado. A ferramenta extrai texto dos campos de
-sumário e descrição de um determinado erro reportado no Bugzilla. Este texto é
-comparado com o código fonte por meio de técnicas de Recuperação da Informação.
+sumário e descrição da RM\@. Este texto é comparado com o código fonte por meio
+de técnicas de Recuperação da Informação.
 
 Na mesma linha, o \textit{NextBug}~\cite{101186} é uma extensão para o Bugzilla
-que recomenda novos bugs para um desenvolvedor baseado no defeito que ele esteja
+que recomenda novas RM's para o desenvolvedor baseado naquela em que ele esteja
 tratando atualmente. O objetivo da extensão é sugerir defeitos com base em
 técnicas de Recuperação de Informação. Na ferramenta proposta por Thung e
 outros~\cite{Thung:2014:DIT:2642937.2648627} o foco é na determinação de
@@ -38,40 +38,43 @@ proposto por Runeson e outros.
 Esta dissertação também se propôs em contribuir com a melhoria das
 funcionalidades das FGRM's mediante a apresentação e discussão de um conjunto de
 recomendações conforme descrito no Capitulo~\ref{ch:sug_melhoria}. Apesar de ter
-sido conduzido um processo de avaliação das sugestões, que em geral teve uma boa
-aceitação dos participantes, nós gostaríamos de analisar o impacto da
-implementação do que foi proposto em determinada FGRM\@.
+sido conduzido um processo de avaliação daquilo que foi proposto, cujo resultado
+demonstrou uma boa aceitação dos participantes, optamos por analisar o impacto
+da implementação do que foi proposto em determinada FGRM\@.
 
-Conforme discuto, a Seção~\ref{sec:sug_melhoria_melhorando_as_ferraementas}
+Conforme discutido, a Seção~\ref{sec:sug_melhoria_melhorando_as_ferraementas}
 apresenta um conjunto de $N$ sugestões de melhorias das funcionalidades.
 Idealmente gostaríamos de transformar todas as sugestões em extensões de
 funcionalidades para as FGRM's. Não há razões que justifiquem a priorização de
-implementação de uma recomendação sobre outra. Mas combinando de maneira mais
-intuitiva do que seguindo um fluxo de critérios e após alguns ensaios foi
-investido mais esforço na funcionalidade suporte a qualidade de relato.
+implementação de uma recomendação sobre outra. Entretanto, após alguns ensaios e
+combinando de maneira mais intuitiva do que seguindo um fluxo de critérios,  foi
+investido mais esforço no desenvolvimento de uma extensão para o suporte à
+qualidade de relato.
 
 \section{Qualidade do Relato de uma RM}
 \label{sec:avaliando_a_qualidade_do_relato_de_uma_rm}
 
-No estudo realizado por Bettenburg et al.~\cite{bettenburg2008makes} foi
-desenvolvida uma pesquisa (\textit{survey}) entre desenvolvedores e usuários dos
-projetos Apache\footnote{\url{http://www.apache.org/}},
+No estudo realizado por Bettenburg e outros~\cite{bettenburg2008makes} foi
+desenvolvida um levantamento com questionário (\textit{survey}) entre
+desenvolvedores e usuários dos projetos
+Apache\footnote{\url{http://www.apache.org/}},
 Eclipse\footnote{\url{https://www.eclipse.org}} e
 Mozilla\footnote{\url{https://www.mozilla.org}} a fim de verificar o que
-produziria uma boa FGRM\@. Os resultados demonstraram que do ponto de vista dos
-desenvolvedores eram consideradas úteis funcionalidades tais como reprodução do
-erro, rastros de pilhas (stack traces) e casos de testes. A partir deste
-resultado foi construído um protótipo capaz de conduzir os usuários na coleta e
-fornecimento de um maior número de informações úteis para a resolução do defeito
-reportado.
+produziria um bom relato de um RM\@. Os resultados demonstraram que do ponto de
+vista dos desenvolvedores eram consideradas informações úteis, que idealmente
+deveriam estar no relato de uma RM\@: \textit{(i)} a sequência de erros
+executadas até o aparecimento do erro (se for o caso), também conhecida como
+\textit{etapas para reproduzir}; \textit{(ii)} o registro de pilhas de ativação
+(stack traces) que são arquivos com os histórico de chamada de métodos (logs)
+que ocorreram antes da ocorrência do erro.
 
-Em Zimmermann et al.~\cite{5070993} é discutido a importância de que a
-informação descrita em uma Requisição de Mudança seja relevante e completa a fim
-de que o defeito reportado seja resolvido rapidamente. Contudo, na prática, a
+No estudo proposto por Zimmermann e outros~\cite{5070993} é discutido a
+importância de que a informação descrita em uma RM seja relevante e completa a
+fim de que esteja relatado seja resolvido rapidamente. Contudo, na prática, a
 informação apenas chega ao desenvolvedor com a qualidade requerida após diversas
 interações com o usuário afetado. Com o objetivo de minimizar este problema os
-autores propõe um conjunto de diretrizes para a construção de um ferramenta
-capaz de reunir informações relevantes a partir do usuário e identificar
+autores propõe um conjunto de diretrizes para a construção de uma extensão capaz
+de reunir informações relevantes a partir do usuário além de identificar
 arquivos que precisam ser corrigidos para resolver o defeito.
 
 \section{Uma Extensão para Suporte da Qualidade do Relato}
@@ -89,7 +92,7 @@ arquivos que precisam ser corrigidos para resolver o defeito.
 		suporte à qualidade do relato no processo de manutenção de software?
 \end{description}
 
-Na \textit{Questão 01} estamos interessando em verificar a inclusão de uma
+Na \textit{Questão 01} estamos interessados em verificar se a inclusão de uma
 extensão deste tipo pode atrasar o processo de resolução de uma RM por conta da
 eventual sobrecarga que a análise da qualidade do relato pode causar. A
 \textit{Questão 02} possui o foco em avaliar se aquelas pessoas que criam RM com
