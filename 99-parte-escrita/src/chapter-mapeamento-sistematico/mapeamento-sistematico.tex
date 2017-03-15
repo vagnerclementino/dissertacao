@@ -129,22 +129,19 @@ definidas as seguintes questões de pesquisa:
    	\item \textbf{Questão 02}: \textit{Quais papéis
 			envolvidos no processo de manutenção de software as funcionalidades visam
 			dar suporte?}
-	\item \textbf{Questão 03}: \textit{As melhorias propostas foram
-			disponibilizadas para utilização dos profissionais de
-			desenvolvimento e manutenção de software?}
 \end{itemize}
-
 
 Na \textit{Questão de Pesquisa 01} estamos interessados em entender como a
 literatura sobre as FGRM's está propondo melhorias nas funcionalidades que este
-tipo de software oferece ou mesmo por propostas de novas funções. Para
-a \textit{Questão de Pesquisa 02} estamos focados em descobrir como os diferentes
-tipos de papéis existentes no processo de manutenção de software estão
-recebendo suporte pelos estudos da área. Para a terceira questão de pesquisa
-gostaríamos de analisar se as propostas de melhorias foram disponibilizadas a
-profissionais de desenvolvimento e manutenção de software. O nosso
-interesse é verifica se o processo de melhoria das funcionalidades está chegando
-ao seu público-alvo.
+tipo de software oferece ou mesmo por propostas de novas funções. Esta melhorias
+tomam por base os diverso problemas relacionados com a gestão das RM's conforme
+discutido na Seção~\ref{ssub:problemas_relacionadas_rm}. Na \textit{Questão de
+	Pesquisa 02} estamos focados em descobrir como os diferentes tipos de papéis
+existentes no processo de manutenção de software estão recebendo suporte pelos
+estudos da área. Para a terceira questão de pesquisa gostaríamos de analisar se
+as propostas de melhorias foram disponibilizadas a profissionais de
+desenvolvimento e manutenção de software. O nosso interesse é verifica se o
+processo de melhoria das funcionalidades está chegando ao seu público-alvo.
 
 \subsection{Pesquisa da Literatura}
 \label{subsec:map-pesquisa-literatura}
@@ -235,7 +232,7 @@ vista de quem desenvolve este tipo de ferramenta quanto das diferentes partes
 interessadas que as utilizam no projetos de software. Em seguida discutiremos
 cada esquema em detalhe.
 
-\subsubsection{Classificação por Dimensão de Melhoria} 
+\subsubsection{Classificação por Dimensão de Melhoria}
 \label{subsubsec:map-esquema-suporte-problema}
 
 Existem diversos problemas relacionados ao processo de Manutenção de Software.
@@ -457,16 +454,15 @@ existentes no mercado que estão efetivamente sendo entendidas.
 A Figura~\ref{fig:publicacao_por_ano} exibe o número de estudos primários
 identificados entre os anos 2010\@-\@2016, período de referência utilizado no
 mapeamento. Dentre os estudos escolhidos no período em questão verificamos que
-em 2010 foram publicados cinco estudos sobre o assunto
-\cite{sun2010discriminative,gegick2010identifying,song2010jdf,nagwani2010predictive,zimmermann2010makes}.
+em 2010 foram publicados cinco estudos sobre o
+assunto~\cite{sun2010discriminative,gegick2010identifying,song2010jdf,nagwani2010predictive,zimmermann2010makes}.
 Posteriormente verificamos um acréscimo no número de estudos no qual um
-significante aumento pode ser observado entre os anos de 2012\@-\@2014. O
- número de estudos publicados sobre melhorias nas FGRM evidência sua relevância.
+significante aumento pode ser observado entre os anos de 2012\@-\@2014.
 
 \begin{figure}[htpb] \centering
 	\includegraphics[width=0.9\linewidth]{chapter-mapeamento-sistematico/img/ano-publicao-estudos.pdf}
 	\caption{Número de estudos primários por ano de publicação.}
-	\label{fig:publicacao_por_ano} \end{figure}
+\label{fig:publicacao_por_ano} \end{figure}
 
 \subsection{Extensões para Problemas na Manutenção de Software}
 \label{sub:extensões_para_problemas_na_manutenção_de_software}
@@ -620,14 +616,12 @@ foram desenvolvido para o ambiente de desenvolvimento móvel, especial para o
 sistema Android~\footnote{\url{https://www.android.com/}}. Uma possível
 justificativa para este foco em aplicações móveis pode estar relacionado à
 inerente dificuldade em registrar um problema de software naquele ambiente de
-software. 
+software.
 
 Muitos dos estudos realizados resultaram em ferramentas com a finalidade de
 realizar uma prova de conceito no tocante a dar suporte ao usuário em fornecer
 um relato de boa qualidade~\cite{Tu:2014:MQI:2677832.2677844, Bettenburg2008a,
 	Wu2011a,White:2015:GRR:2820282.2820291,moran2015auto}. 
-%Conforme anteriormente exposto, o desenvolvimento desses protótipos é importante
-%para fomentar a pesquisa sobre a melhorias das FGRM\@.
 
 \paragraph{Organização da Informação da RM}
 
@@ -651,47 +645,47 @@ um conjunto de relatos de problemas.
 \subsubsection{Melhorias Propostas na Dimensão Processo}
 \label{ssub:melhorias_dim_processo}
 
+\todobegin{Foi realizada a alteração do foco da classificação, em que os estudos
+são apresentados pela \textbf{forma} como ele trata o problema.}
+
 \paragraph{Identificação de RM Duplicadas} O processo de identificação de RM's
-Duplicadas consiste em avaliar se determinado relato já foi realizado em algum
-outro momento. Quando uma RM duplicada é identificada ela deve ser vinculada a
-outra que na literatura da área é denominada como RM Mestre. Geralmente a Mestre
-é aquela que foi incluída no repositório de erros em data anterior. Alguns
-estudos revelam que entre 10\% e 30\% das RM's podem ser classificadas como
-duplicadas, o que causa um substancial impacto nas atividades de manutenção de
-software~\cite{anvik2005coping,cavalcanti2013bug,Runeson:2007:DDD:1248820.1248882}.
-Por conta do grande número de RM's duplicadas uma das soluções é designar pessoas
-para manualmente analisar as Requisições de Mudanças com objetivo de
-evitar que as duplicatas cheguem as desenvolvedores~\cite{anvik2005coping}.
+duplicadas consiste em avaliar se determinado relato já foi realizado em algum
+outro momento. A abordagem adotada da literatura para tratar o problema pode ser
+dividida em dois tipos\cite{kaushik2012comparative, tian2012improved}:
 
-O processo de identificação de RM's duplicadas requer: \textit{(i)} um prévio
-conhecimento do conjunto de relatos existentes anteriormente no projeto;
-\textit{(ii)} a busca manual em toda base de dados da
-FGRM~\cite{banerjee2012automated,
-	Lerch:2013:FDY:2495256.2495763,hindle2016contextual}. Ambas as estratégias
-consomem tempo e não garantem que falsos positivos possam
-ocorrer~\cite{kaushik2012comparative}. Os falsos positivos podem ainda acarretar
-na desconsideração de problemas relevantes.
+\begin{enumerate}[(i)]
+	\item remoção de duplicatas
+	\item identificação de duplicatas
+\end{enumerate}
 
-A abordagem adotada da literatura para tratar o problema das RM's duplicadas
-podem ser divididas em dois tipos\cite{kaushik2012comparative,
-	tian2012improved}: \textit{(i)} remoção de duplicatas; \textit{(ii)}
-identificação de duplicatas~\cite{cavalcanti2014challenges}. No primeiro tipo, o
-objetivo é evitar que RM duplicadas entrem na base de dados de uma FGRM e desta
-forma evitar o esforço e o tempo extra necessário para identificá-la
-posteriormente.
-
-Por outro lado, o segundo tipo não se importa se duplicados entram na base de
-dado de RM's. Não obstante, o objetivo é sugerir uma lista de possíveis
-duplicatas durante o processo de registro de uma nova RM e possivelmente
-agrupá-los. Um ponto importante para se ressaltar é que este segundo tipo se
-baseia na premissa que registrar um mesmo problema por mais de uma vez nem
-sempre é problemático tendo em vista que pode fornecer informações adicionais
-que podem ser úteis~\cite{bettenburg2008duplicate}. No entanto, alguns estudos
-compensam o custo de sua recuperação e permanência na base de dados de
-RM's~\cite{davidson2011coping}. Neste sentido, é importante que novas abordagens
-tentem equilibrar este dois tipos de tratamento de modo a evitar o tempo extra
-para análise de uma RM bem como apoiar os desenvolvedores com informações
+No primeiro tipo, o objetivo é evitar que RM's duplicadas entrem na base de
+dados de uma FGRM e desta forma evitar o esforço e o tempo extra necessário para
+identificá-la posteriormente. Por outro lado, no segundo tipo o objetivo é
+sugerir uma lista de possíveis duplicatas durante o processo de registro de uma
+nova RM e possivelmente agrupá-los. Um ponto importante para se ressaltar é que
+este segundo tipo se baseia na premissa que registrar um mesmo problema por mais
+de uma vez nem sempre é problemático tendo em vista que pode fornecer
+informações adicionais que podem ser úteis~\cite{bettenburg2008duplicate}. É
+importante que novas abordagens tentem equilibrar este dois tipos de tratamento
+de modo a evitar o tempo extra para análise de uma RM bem como apoiar os
+desenvolvedores com informações
 adicionais~\cite{Lerch:2013:FDY:2495256.2495763,Thung2014}.
+
+A fim de minimizar os problemas relacionados à RM's duplicadas são tratadas na
+literatura utilizando modelos de espaços vetoriais para medir a similaridade
+entre as RM~\cite{liu2014faceted, sun2010discriminative,
+	Thung2014,tomavsev2013exploiting}. Outros
+trabalhos tentam utilizar outras técnicas que partem da premissa que os termos
+específicos de domínio contidos no relato das RM's são essenciais na
+determinação da probabilidade de duas requisições serem
+duplicadas~\cite{hindle2016contextual, alipour2013contextual}. Em resumo
+verificamos que o relato contido na RM é utilizado com fonte primária de
+informação para técnicas de Recuperação da Informação visando determinar a
+similaridade entre duas RM's. A partir de medida encontrada é possível
+determinar se as requisições referem-se ao mesmo pedido.
+
+\todoend
+
 
 \paragraph{Atribuição (Triagem) de RM} A atividade de atribuição de RM, que é a
 principal atividade do processo conhecido como \textit{triagem}, possui como

@@ -23,3 +23,15 @@ group by t.categoria
 order by count(1) desc;
 
 
+select *
+from mapeamento_its.vw_ir_tecnica_artigos vw 
+where vw.titulo_artigo in (
+
+
+select t.titulo_artigo
+from  mapeamento_its.temp_esquema_classificao_melhoria t 
+where t.topico_classificacao = 'Localização de RM Duplicados'
+
+)
+
+

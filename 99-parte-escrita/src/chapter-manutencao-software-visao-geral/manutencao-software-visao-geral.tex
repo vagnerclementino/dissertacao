@@ -271,9 +271,9 @@ sistema ou mesmo um membro da equipe de manutenção.
 \paragraph{Gerente de Requisição de Mudança (Maintenance-request manager):}
 Res\-pon\-sá\-vel por decidir se uma Requisição de Mudança será aceita ou
 rejeitada e qual tipo de manutenção deverá ser aplicada. Posteriormente cabe a
-ele/ela encaminhar a RM para o Agendador.
+ele/ela encaminhar a RM para o Agente de Triagem.
 
-\paragraph{Agendador (Scheduler)}:
+\paragraph{Agente de Triagem (Scheduler)}:
 Deve planejar a fila de Requisições de Mudança aceitas. Também estão no rol de
 responsabilidades deste papel a atribuição das RM's para o desenvolver mais
 apto.
@@ -405,7 +405,7 @@ Os principais conceitos envolvidos no modelo estão descritos a seguir:
 		ela seja capaz de resolvê-la, caso contrário, a RM será atribuída para
 		alguém que possui o papel de definir o desenvolvedor mais apto para
 		solucionar aquela RM. Neste estudo, o membro de uma equipe de manutnçaõ
-		com festa função é denominado \textit{Agendador}.
+		com festa função é denominado \textit{Agente de Triagem}.
 	\item [Anexo] Refere-se a informação que não estejam em formato de texto e
 		que podem ser incluídas na RM como casos de teste, capturas de tela,
 		cadeia de registros de ativação (stack trace), dentre outros.
@@ -554,7 +554,7 @@ tempo necessário para implementá-la. Após esta análise, caso se decida que n
 possível ou desejável atender a RM, então \textit{Rejeitada} se torna o próximo
 estágio da RM. Caso contrário a RM é movida para estado \textit{Comprometida
 	(Commit)}. No  \textit{Em Análise} o ``dono'' da RM é denominado
-\textit{Agendador}.
+\textit{Agente de Triagem}.
 
 \paragraph{Comprometida (Commit).}
 \label{par:commit}
@@ -656,6 +656,36 @@ trabalho de Ihara e outros. Nos casos em que houver necessidade de um maior
 detalhamento do ciclo de vida de uma RM, a discussão tomará como base o modelo
 de Tripathy \& Naik.
 \todoend
+
+\todobegin{Incluída seção sobre conceituamos os problemas relacionados à gestão
+da RM's.}
+
+\subsubsection{Problemas Relacionadas à Gestão da RM}
+\label{ssub:problemas_relacionadas_rm}
+
+A literatura discute e apresenta diversos problemas relacionadas à gestão das
+RM's:
+
+\paragraph{Identificação de RM Duplicadas} O processo de identificação de RM's
+Duplicadas consiste em avaliar se determinado relato já foi realizado em algum
+outro momento. Quando uma RM duplicada é identificada ela deve ser vinculada a
+outra que na literatura da área é denominada como RM Mestre. Geralmente a Mestre
+é aquela que foi incluída no repositório de erros em data anterior. Alguns
+estudos revelam que entre 10\% e 30\% das RM's podem ser classificadas como
+duplicadas~\cite{anvik2005coping,cavalcanti2013bug,Runeson:2007:DDD:1248820.1248882}.
+Por conta do grande número de RM's duplicadas uma das soluções é designar ao
+\textit{Agente de Triagem} para manualmente analisar as Requisições de Mudanças
+com objetivo de evitar que as duplicatas cheguem as
+desenvolvedores~\cite{anvik2005coping}.
+
+O processo de identificação de RM's duplicadas requer: \textit{(i)} um prévio
+conhecimento do conjunto de relatos existentes anteriormente no projeto;
+\textit{(ii)} a busca manual em toda base de dados da
+FGRM~\cite{banerjee2012automated,
+	Lerch:2013:FDY:2495256.2495763,hindle2016contextual}. Ambas as estratégias
+consomem tempo e não garantem que falsos positivos possam
+ocorrer~\cite{kaushik2012comparative}. Os falsos positivos podem ainda acarretar
+na desconsideração de problemas relevantes.
 
 \section{As Ferramentas de Gerenciamento de Requisições de Mudança (FGRM)}
 \label{sec:ferramentas_de_gerenciamento_requisicoes_de_mudanca}
@@ -1534,9 +1564,10 @@ do esforço fica a cargo do usuário da ferramenta, o que pode resultar em atras
 em situações em que se tem muitas RM para gerenciar. Um exemplo deste problema
 ocorre no processo de atribuição do Desenvolvedor responsável por solucionar
 determinada RM. Conforme discutido no Capítulo~\ref{ch:visao-geral-manutencao}
-esta atividade fica sob a responsabilidade do \textit{Agendador}. Ele deve
-realizar a escolha de forma manual tendo em vistas que as FGRM não apresentam
-funcionalidades que sejam capaz de ` `recomendar'' o desenvolvedor mais apto.
+esta atividade fica sob a responsabilidade do \textit{Agente de Triagem}. Ele
+deve realizar a escolha de forma manual tendo em vistas que as FGRM não
+apresentam funcionalidades que sejam capaz de ` `recomendar'' o desenvolvedor
+mais apto.
 
 As FGRM's possuem funcionalidades que permitem a realização do papel ao qual
 este tipo de software se propõe. Não obstante, devido à sua crescente
