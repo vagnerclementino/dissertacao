@@ -3,7 +3,7 @@
 %está sendo proposto de melhorias nas funcionalidades das FGRM
 %Autor: Vagner Clementino e Rodolfo Resende
 %Criação: Ter Out 11 19:03:45 BRT 2016
-%Modificação: qua mar 15 19:34:48 BRT 2017
+%Modificação: seg mar 20 13:51:32 BRT 2017
 %Revisão: dom mar 19 11:04:23 BRT 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -235,7 +235,7 @@ integrado. As dimensões de melhorias são as seguintes:
 \end{description}
 
 \begin{figure}[htpb] \centering
-	\includegraphics[width=0.666666\linewidth]
+	\includegraphics[width=0.5\linewidth]
 	{chapter-intro/img/dimensoes_melhorias_fgrm.pdf}
 	\caption{Dimensões de melhoria das FGRM's. Adaptado
 		de~\cite{zimmermann2005mining}}\label{fig:dimensoes_melhorias_fgrm}
@@ -261,11 +261,12 @@ esquema de classificação apresentado na
 Figura~\ref{fig:diagrama-esquema-dimensao-melhorias}.
 
 \begin{figure}[tb] \centering
-	\makebox[\textwidth]{\includegraphics[width=.9\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.pdf}}
+	\makebox[\textwidth]{\includegraphics[width=.7\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.pdf}}
 	\caption{Esquema de classificação das melhorias propostas na literatura. Os
 		retângulos representam as dimensões de melhorias e os polígonos de
-		cantos arredondados representam as melhorias.}
-	\label{fig:diagrama-esquema-dimensao-melhorias}
+		cantos arredondados representam tópicos de problemas da gestão das
+		RM's.}
+\label{fig:diagrama-esquema-dimensao-melhorias}
 \end{figure}
 
 \subsubsection{Classificação por Suporte ao Papel da Manutenção de Software}
@@ -290,7 +291,7 @@ proposta visa dar suporte.
 \subsection{Frequência das Publicações}
 \label{sub:frequencia_publicacao}
 
-A Figura~\ref{fig:publicacao_por_ano} exibe o número de estudos primários
+A Tabela~\ref{tab:publicacao_por_ano} exibe o número de estudos primários
 identificados entre os anos de 2010 e 2016, período de referência utilizado no
 mapeamento. Dentre os estudos escolhidos no período em questão verificamos que
 em 2010 foram publicados cinco estudos sobre o
@@ -298,16 +299,28 @@ assunto~\cite{sun2010discriminative,gegick2010identifying,song2010jdf,nagwani201
 Posteriormente verificamos um acréscimo no número de estudos no qual o maior
 aumento pode ser observado entre os anos de 2012\@-\@2014.
 
-\begin{figure}[htpb] \centering
-	\includegraphics[width=0.7\linewidth]{chapter-mapeamento-sistematico/img/ano-publicao-estudos.pdf}
-	\caption{Número de estudos primários por ano de publicação.}
-	\label{fig:publicacao_por_ano} \end{figure}
+\begin{table}[htpb]
+\centering
+\begin{tabular}{@{}cc@{}}
+\toprule
+\multicolumn{1}{l}{\textbf{Ano}} & \textbf{Frequência} \\ \midrule
+2010 & 5 \\
+2011 & 8 \\
+2012 & 14 \\
+2013 & 12 \\
+2014 & 13 \\
+2015 & 9 \\
+2016 & 3 \\ \bottomrule
+\end{tabular}
+\caption{Número de estudos primários por ano de publicação.}
+\label{tab:publicacao_por_ano}
+\end{table}
 
 \subsection{Classificação por Dimensões de Melhoria}
 \label{sub:extensões_para_problemas_na_manutenção_de_software}
 
 Nesta seção apresentamos os estudos classificados pela dimensão de melhoria das
-funcionalidades de uma FGRM. A classificação está estruturada de modo que no
+funcionalidades de uma FGRM\@. A classificação está estruturada de modo que no
 primeiro nível temos uma das quatro dimensões de melhorias discutidas na
 Subseção~\ref{subsubsec:map-esquema-suporte-problema}. O segundo nível é
 composto por tópicos que são os problemas da gestão das RM's o qual a melhoria
@@ -319,18 +332,6 @@ pela dimensão de melhoria e o seu respectivo tópico.
 % Inclusão da tabela
 \input{./chapter-mapeamento-sistematico/tables/tb-taxonomia-problemas-manutencao.tex}
 
-\begin{figure}[tb] \centering
-	\makebox[\textwidth]{\includegraphics[width=.7\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.pdf}}
-	\caption{Esquema de classificação das melhorias propostas na literatura. Os
-		retângulos representam as dimensões de melhorias e os polígonos de
-		cantos arredondados representam tópicos de problemas da gestão das
-		RM's.}
-	\label{fig:diagrama-esquema-dimensao-melhorias} \end{figure}
-
-\begin{figure}[htpb] \centering
-	\includegraphics[width=0.7\linewidth]{./chapter-mapeamento-sistematico/img/grafico_topico_por_artigo.pdf}
-	\caption{Total de artigos por tópico de melhoria}
-	\label{fig:grafico_topico_por_artigo} \end{figure}
 
 \subsubsection{Melhorias Propostas na Dimensão Ferramenta}
 \label{ssub:melhorias_dim_ferramenta}
@@ -381,7 +382,7 @@ bugMaps~\cite{hora2012bug} e In* Bug~\cite{dal2014bug}.
 \label{ssub:melhorias_dim_informacao}
 
 Apresentamos os trabalhos relacionados à melhoria da qualidade da informação de
-uma RM. A melhoria pode envolver suporte ao registro de uma RM antes que ela
+uma RM\@. A melhoria pode envolver suporte ao registro de uma RM antes que ela
 seja armazenada na base de dados de uma FGRM\@; a melhoria também pode envolver
 a organização da informação contida no relato de uma RM para facilitar o
 entendimento pelos desenvolvedores e demais profissionais envolvidos na
@@ -390,9 +391,9 @@ manutenção de software.
 \paragraph{Suporte ao Registro da RM:}
 
 A pesquisa visando a melhoria da qualidade da informação fornecida nas RM's tem
-como premissa determinar uma métrica com base no texto contido no relato da RM.
-A determinação do que seria um boa descrição de um problema de software foi
-obtido mediante uma pesquisa (survey) com profissionais de manutenção de
+como premissa determinar uma métrica com base no texto contido no relato da
+RM\@. A determinação do que seria um boa descrição de um problema de software
+foi obtido mediante uma pesquisa (survey) com profissionais de manutenção de
 software no estudo de Bettenburg e outros~\cite{Bettenburg2008a}. Em outro
 estudo os próprios autores definiram as métricas que posteriormente foram
 utilizadas para avaliar o relato da RM~\cite{Tu:2014:MQI:2677832.2677844}.
@@ -458,7 +459,7 @@ a similaridade entre duas RM's.
 
 \paragraph{Atribuição (Triagem) de RM:}
 Os estudos classificados neste tópico, em geral, visam automatizar o processo de
-encontrar o desenvolvedor mais apto para analisar determinada RM. A principal
+encontrar o desenvolvedor mais apto para analisar determinada RM\@. A principal
 fonte de informação utilizada na abordagens propostas é o relato contido na RM,
 todavia, outros dados são utilizados tais como nível de
 prioridade~\cite{tian2015automated}, registros (log) do sistema de controle de
@@ -479,7 +480,7 @@ classificação do tipo K-Nearest-Neighbor.
 \paragraph{Classificação da RM:}
 
 Os estudos neste tópico visam automatizar o processo de clas\-si\-fi\-ca\-ção de
-uma RM.  Este tipo de abordagem faz uso da funcionalidade de atribuição de
+uma RM\@.  Este tipo de abordagem faz uso da funcionalidade de atribuição de
 etiquetas (labels) que é comum  a grande parte das FGRM's (vide
 Subseção~\ref{subsec:categorizacao_ferramentas}).  Em muitos projetos esta
 atividade é realizada manualmente pelo Agente de Triagem, Desenvolvedor ou
@@ -549,10 +550,24 @@ estudos nos tópicos ``Localização de RM Duplicados'' e ``Atribuição [Triage
 RM'', o que é natural tendo em vista que há um mapeamento entre o papel
 desempenhado na manutenção com as atividades executadas por aquele papel.
 
-\begin{figure}[htpb] \centering
-	\includegraphics[width=0.7\linewidth]{chapter-mapeamento-sistematico/img/grafico_papel_por_artigo.pdf}
-	\caption{Total de artigos por papel na manutenção de
-		software}\label{fig:graf_papel_por_artigo} \end{figure}
+\begin{table}[htpb]
+\centering
+\resizebox{.7\textwidth}{!}{%
+\begin{tabular}{lc}
+\hline
+\multicolumn{1}{c}{\textbf{Papel}} & \textbf{Total de Artigos} \\ \hline
+Agente de Triagem & 37 \\
+Desenvolvedor & 26 \\
+Analista de Qualidade & 13 \\
+Gerente de Requisição de Mudança & 11 \\
+Reportador & 6 \\
+Líder da Manutenção & 4 \\
+Todos & 3 \\ \hline
+\end{tabular}%
+}
+\caption{Total de artigos por papel na manutenção de software}
+\label{tab:graf_papel_por_artigo}
+\end{table}
 
 \paragraph{Agente de Triagem:} Esta função tem como principal objetivo
 atribuição das RM’s para o desenvolvedor mais apto~\cite{banitaan2013decoba}.
@@ -697,7 +712,7 @@ a responsabilidade de analisar o artigos que seriam incluídos ou excluídos.
 O mapeamento realizado neste estudo utilizou o método de aplicação de sentenças
 de busca nas bases de dados selecionadas para coletar os estudos primários.
 Outros estudos utilizam além da estratégia descrita fazem de uma técnica
-conhecida  como ``bola de neve" (snowballing)~\cite{wohlin2014guidelines} onde
+conhecida  como ``bola de neve'' (snowballing)~\cite{wohlin2014guidelines} onde
 as referências dos estudos primários podem ser usadas para o compor o conjunto
 de artigos do mapeamento. Neste sentido, ao usarmos uma única estratégia podemos
 ter perdido estudos relevantes e, portanto, subestimar a extensão dos resultados
@@ -744,7 +759,7 @@ repositório pode ser comparado à uma FGRM\@. O resultado foi uma taxonomia
 baseada em quatro classes: o tipo de repositório extraído (o que), o propósito
 (por que), o método proposto (como) e o método de avaliação (qualidade). No
 entanto, sua taxonomia não fornece um entendimento extensivo sobre as
-investigações em repositórios de RM. De acordo com seus critérios de exclusão
+investigações em repositórios de RM\@. De acordo com seus critérios de exclusão
 para estudos, eles estavam muito preocupados com estudos que abordavam mudanças
 evolutivas de artefatos de software investigando múltiplos repositórios de
 software. Como consequência, muitos estudos que usaram dados de um repositório
@@ -753,7 +768,7 @@ software. Como consequência, muitos estudos que usaram dados de um repositório
 Por outro lado, o estudo realizado neste trabalho aumentou o escopo das
 funcionalidades oferecidas pelas FGRM possibilitando uma visão mais abrangente
 do estado da arte deste tipo de estudo. Uma outra diferença com o trabalho de
-Kagdi ~\cite{kagdi2012assigning} é que sua taxonomia considera as técnicas e
+Kagdi~\cite{kagdi2012assigning} é que sua taxonomia considera as técnicas e
 métodos para mineração de repositórios de software como o foco principal do seu
 estudo, por lado este trabalho considera as FGRM, sobre o prisma de suas
 funcionalidades, como entidades de primeira classe.
@@ -766,7 +781,7 @@ obtidos das  RM's para o desenvolvimento de software. Além disso os autores
 utilizam a taxonomia proposta por Canfora e Cerulo\cite{cerulo2004taxonomy}. O
 esquema de classificação consiste em duas visões sobrepostas: uma taxonomia
 vertical que classifica os modelos de Recuperação da Informação (Information
-Retrieve - IR) com relação ao seu conjunto de características básicas; e uma
+Retrieve \@-\@ IR) com relação ao seu conjunto de características básicas; e uma
 taxonomia horizontal que classifica os objetos de IR com respeito as suas
 tarefas, forma e contexto.
 
