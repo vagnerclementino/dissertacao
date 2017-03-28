@@ -41,7 +41,7 @@ Os conceitos estão aderente com a literatura da área em especial com a ISO
 \textit{14764:2006}~\cite{1703974}, o \textit{Corpo de Conhecimento em
 	Engenharia de Software}~\cite{4425813}, e o livro escrito por Tripathy \&
 Naik~\cite{tripathy2014software}.
-\todoend
+\todoend{}
 
 \section{Manutenção de Software e Requisição de Mudanças}
 \label{sec:conceitos_basicos}
@@ -110,7 +110,7 @@ desenvolvimento e manutenção possuem uma clara separação. Recentemente os
 métodos propostos pelos agilistas vêm sendo utilizados para manter software.
 Esta tendência surge da demanda crescente por serviços de manutenção com um
 retorno mais rápido para o usuário.
-\todoend
+\todoend{}
 
 Nas próximas seções apresentamos alguns modelos encontrados na literatura na
 perspectiva tradicional, ao mesmo tempo descrevemos propostas do uso da
@@ -124,17 +124,16 @@ respectivas entradas e saídas. Alguns modelos são descritos nos padrões IEEE
 1219 e ISO/IEC 14764. O processo especificado no Padrão para Manutenção de
 Software (IEEE\@-\@1219) indica que as atividades de manutenção de software
 iniciem após a entrega do produto de software. O padrão também discute aspectos
-de planejamento da manutenção. As atividades que compõe o processo são
+de planejamento da manutenção. As atividades que compõem o processo são
 apresentas na Figura~\ref{fig:ieee-1219-processo-man-software}.
 
 \begin{figure}[htpb] \centering
-	\includegraphics[width=0.7\linewidth]
-	{./chapter-manutencao-software-visao-geral/img/ieee-1219-98-processo-manutencao.png}
+	\includegraphics[width=0.7\linewidth]{./chapter-manutencao-software-visao-geral/img/ieee-1219-98-processo-manutencao.png}
 	\caption{IEEE 1219 -~Processo de Manutenção de Software}\label{fig:ieee-1219-processo-man-software}
 \end{figure}
 
-De maneira relacionada, na ISO/IEC 14764 as atividades que compõe o processo são
-similares aquelas propostas na IEEE-~1219, exceto pelo fato que elas são
+De maneira relacionada, na ISO/IEC 14764 as atividades que compõem o processo
+são similares aquelas propostas na IEEE-~1219, exceto pelo fato que elas são
 agregadas de uma forma diferente. O processo descrito na ISO/IEC~14764 são
 exibidas na Figura~\ref{fig:ieee-14764-processo-manutencao}
 
@@ -190,7 +189,7 @@ Engenharia de Software~\cite{4425813} destaca algumas delas:
 		realizados pela equipe de manutenção e os objetivos de qualidade do
 		produto de software.
 \end{description}
-\todoend
+\todoend{}
 
 \subsubsection{Manutenção de Software na Perspectiva dos Agilistas}
 \label{sub:manutenção_de_software_com_método_dos_agilistas}
@@ -244,7 +243,7 @@ No escopo deste trabalho removemos os papéis que segundo o nosso entendimento
 estão mais vinculados a um contexto de manutenção terceirizada (outsourcing).
 Além disso, dividimos o papel ``time de manutenção' (maintenance team) em
 \textit{Desenvolvedor e Analista de Qualidade} por entendermos que são papéis
-comuns a muito dos processos de manutenção existentes. Os papéis que compõe a
+comuns a muito dos processos de manutenção existentes. Os papéis que compõem a
 taxonomia proposta estão descritos a seguir:
 
 \paragraph{Usuário Afetado:}
@@ -255,7 +254,7 @@ estão relacionadas com os desejos e necessidades deste papel.
 \paragraph{Reportador:}
 Responsável por registrar a Requisição de Mudança na FGRM\@. Geralmente,
 qualquer pessoa envolvida no processo de manutenção de software pode relatar uma
-RM. Neste sentido, as atividades relacionadas com o papel de Reportador podem
+RM\@. Neste sentido, as atividades relacionadas com o papel de Reportador podem
 estar vinculados com outras contidas nesta classificação. A
 Figura~\ref{fig:diagrama-caso-uso-reportador} apresenta esta situação através de
 um diagrama de caso de uso, onde o \textit{Reportador} pode ser um usuário do
@@ -265,7 +264,7 @@ sistema ou mesmo um membro da equipe de manutenção.
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-caso-uso-reportador.pdf}
 	\caption{Diagrama de caso de uso do papel Reportador}
-	\label{fig:diagrama-caso-uso-reportador}
+\label{fig:diagrama-caso-uso-reportador}
 \end{figure}
 
 \paragraph{Gerente de Requisição de Mudança (Maintenance-request manager):}
@@ -286,7 +285,7 @@ Responsável por avaliar se uma Requisição de Mudança que foi solucionada por
 Desenvolvedor afim de verificar se a RM foi resolvida de forma correta.
 
 \paragraph{Chefe da Manutenção (Head of	Maintenance):}
-Tem por responsabilidade definir os padrões e procedimentos que compõe o
+Tem por responsabilidade definir os padrões e procedimentos que compõem o
 processo de manutenção que será utilizado.
 
 Apesar da classificação de papéis utilizada derivar de um contexto de manutenção
@@ -303,7 +302,7 @@ Cabe ressaltar que está fora do escopo deste estudo elaborar uma taxonomia dos
 papeis envolvidos na Manutenção de Software em função de supormos que isto
 corresponde a um esforço bem extenso. Nossa ação é identificar se existem papeis
 e quais são eles, sem com isso, envolver em uma consolidação definitiva.
-\todoend
+\todoend{}
 
 \subsection{Requisição de Mudança}
 \label{sec:requisicao_de_mudanca}
@@ -365,9 +364,9 @@ Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}).
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-requisicao-mudancas.pdf}
 	\caption{Modelo conceitual de uma Requisição de Mudanças}
-	\label{fig:diagrama-classe-requisicao-mudancas}
+\label{fig:diagrama-classe-requisicao-mudancas}
 \end{figure}
-\todoend
+\todoend{}
 
 As principais informações contidas em uma RM podem ser visualizadas no modelo
 exibido na Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}. O
@@ -379,29 +378,29 @@ RM é relatada.
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-atributos-requisicao-mudancas.pdf}
 	\caption{Informações que compõem uma RM}
-	\label{fig:diagrama-classe-atributos-requisicao-mudancas}
+\label{fig:diagrama-classe-atributos-requisicao-mudancas}
 \end{figure}
 
 Os principais conceitos envolvidos no modelo estão descritos a seguir:
 
 \begin{description}
 	\item [Identificador] Sequência de caracteres,  geralmente numérica,  que
-		permite distinguir de maneira única uma RM.
-	\item [Sumário] Um título ou resumo da RM.
+		permite distinguir de maneira única uma RM\@.
+	\item [Sumário] Um título ou resumo da RM\@.
 	\item [Relato] Descrição detalhada da RM incluindo o que, onde, por que,
 		como e quando a situação relatada na RM ocorreu. A mensagem que aparece
 		durante a operação do sistema pode ser incluída, bem como a entrada
 		inserida e/ou a saída esperada.
 	\item [Situação] A situação atual de uma RM\@. Representa os diversos
 		estados que uma RM possui em seu ciclo de vida. Nesta dissertação
-		discutimos brevemente o ciclo de vida de uma RM na Subseção
-		~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}.
+		discutimos brevemente o ciclo de vida de uma RM na
+		Subseção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}.
 	\item [Criado Por] Nome da pessoa ou um identificador já registrado no
 		sistema de quem criou a RM\@.
 	\item [Atribuido Para] A RM pode ser atribuída a uma pessoa específica caso
 		ela seja capaz de resolvê-la, caso contrário, a RM será atribuída para
 		alguém que possui o papel de definir o desenvolvedor mais apto para
-		solucionar aquela RM. Neste estudo, o membro de uma equipe de manutenção
+		solucionar aquela RM\@. Neste estudo, o membro de uma equipe de manutenção
 		com festa função é denominado \textit{Agente de Triagem}.
 	\item [Anexo] Refere-se a informação que não esteja em formato de texto e
 		que podem ser incluída na RM como casos de teste, capturas de tela,
@@ -413,8 +412,8 @@ Os principais conceitos envolvidos no modelo estão descritos a seguir:
 \todobegin{Incluída uma breve discussão sobre os motivos que determinados
 	atributos foram modelados como agregação e outros não.}
 
-Conforme pode ser observado na Figura
-~\ref{fig:diagrama-classe-atributos-requisicao-mudancas} os atributos
+Conforme pode ser observado na
+Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas} os atributos
 \textit{Comentário} e \textit{Anexo} foram modelados com agregação, dando aos
 mesmos um caráter multivalorados. Esta escolha foi intencional de modo a
 salientar que determinada instância de uma RM pode conter diversos anexos ou
@@ -440,9 +439,9 @@ identificador, sumário, relato e outros.
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/rm-exemplo.pdf}
 	\caption{Um exemplo de uma RM do Projeto Eclipse}
-	\label{fig:rm-exemplo}
+\label{fig:rm-exemplo}
 \end{figure}
-\todoend
+\todoend{}
 
 \todobegin{Rodolfo, você acha que faz sentido o parágrafo a seguir?} Em síntese,
 apesar das diferentes nomenclaturas existentes na literatura (demanda, bug,
@@ -505,7 +504,8 @@ O modelo mostra a evolução de uma RM mediante os seguintes estados:
 \textit{Submetida (Submit), Em Revisão (Review), Em análise (Analysis), Commit
 	(Compromissada), Em Implementação (Implement), Em Verificação (Verification)
 	e Fechada (Closed)}~\cite{tripathy2014software}. Uma determinada RM também
-pode ser rejeitada o que a leva para o estado de mesmo nome (\textit{Rejeitada -
+pode ser rejeitada o que a leva para o estado de mesmo nome
+(\textit{Rejeitada\@-\@
 	Decline}).  Por diversas razões a situação de uma RM pode ser alterada para
 \textit{Recusada} a partir dos outros estados. Um exemplo desta situação ocorre
 quando um  usuário conclui que modificações descritas na RM não fazem mais
@@ -530,7 +530,7 @@ usuários do sistema a fonte primária das RM nesta situação. Com base no nív
 prioridade de uma RM, ela é movida de \textit{Submetida} para \textit{Em
 	Revisão}. Normalmente cabe ao \textit{Gerente de Requisição de Mudança} a
 responsabilidade desta manipulação inicial das RM's. Neste instante ele se torna
-o ``dono'' da RM.
+o ``dono'' da RM\@.
 
 \paragraph{Em Revisão (Review).}
 \label{par:em_revisao}
@@ -542,9 +542,9 @@ RM's no estado \textit{Em Revisão} através das seguintes atividades:
 		existente. Se a RM é identificada como duplicada o estado da mesma é
 		alterado para \textit{Rejeitada}. Neste casos, uma breve explicação e
 		algum tipo de ligação para a original são inseridos nos comentários da
-		RM.
+		RM\@.
 	\item Aceitar o nível de prioridade atribuído para a RM ou alterá-lo.
-	\item Determinar o nível de severidade da RM: normal ou crítico.
+	\item Determinar o nível de severidade da RM\@: normal ou crítico.
 	\item Caso por alguma razão as análises descritas anteriormente não possam
 		ser re\-a\-li\-za\-das, a RM é movida para o estado em \textit{Em análise}.
 \end{itemize}
@@ -554,7 +554,7 @@ RM's no estado \textit{Em Revisão} através das seguintes atividades:
 Neste estágio uma análise de impacto é conduzida para entender a RM e estimar o
 tempo necessário para implementá-la. Após esta análise, caso se decida que não é
 possível ou desejável atender a RM, então \textit{Rejeitada} se torna o próximo
-estágio da RM. Caso contrário a RM é movida para estado \textit{Compromissada
+estágio da RM\@. Caso contrário a RM é movida para estado \textit{Compromissada
 	(Commit)}. No  \textit{Em Análise} o ``dono'' da RM é denominado
 \textit{Agente de Triagem}.
 
@@ -602,10 +602,10 @@ Após a verificação de que a RM foi atendida, a RM é movida de \textit{Em
 
 Conforme discutido uma RM pode ser rejeitada. Dentre os diversos motivos para a
 rejeição de uma RM podemos destacar: ela deixar de produzir relevante impacto no
-sistema; não é possível tecnicamente realizar o que foi solicitado na RM; a
+sistema; não é possível tecnicamente realizar o que foi solicitado na RM\@; a
 equipe de qualidade conclui que as mudanças no software para atender à RM não
 podem ser satisfatoriamente verificadas.
-\todoend
+\todoend{}
 
 \todobegin{Incluída a visão do processo de ciclo de vida de uma RM em projetos
 	de código aberto.}
@@ -619,22 +619,22 @@ estados de uma RM é diferente.
 No trabalho de Ihara e outros~\cite{ihara2009analysis}, foi conduzido um estudo
 de caso nos projetos de código aberto Firefox e Apache em que um dos resultados
 foi um digrama de estados que representa o processo de modificação de uma RM
-utilizando uma FGRM. Este diagrama é representado na
+utilizando uma FGRM\@. Este diagrama é representado na
 Figura~\ref{fig:diagrama-estado-rm-codigo-aberto}.
 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-estado-rm-codigo-aberto.pdf}
-	\caption{Um processo de modificação de uma RM utilizando uma FGRM. Extraído
+	\caption{Um processo de modificação de uma RM utilizando uma FGRM\@. Extraído
 	de~\cite{ihara2009analysis}}
-	\label{fig:diagrama-estado-rm-codigo-aberto}
+\label{fig:diagrama-estado-rm-codigo-aberto}
 \end{figure}
 
 Os autores ponderam que apesar do processo de modificação de uma RM pode alterar
 levemente de uma FGRM para outra, o diagrama apresentado na
 Figura~\ref{fig:diagrama-estado-rm-codigo-aberto} é capaz de representar de
-forma substancial o processo de transição de uma RM. O processo é composto de
-três diferentes fases: \textit{não tratada (untreated) , modificação
+forma substancial o processo de transição de uma RM\@. O processo é composto de
+três diferentes fases: \textit{não tratada (untreated), modificação
 	(modification) e verificação (verification)}.
 
 A fase \textit{não tratada} foca em um subprocesso onde as RM's são relatadas em
@@ -654,7 +654,7 @@ genérico.  Nesta dissertação utilizamos de forma geral o modelo contido no
 trabalho de Ihara e outros. Nos casos em que houver necessidade de um maior
 detalhamento do ciclo de vida de uma RM, a discussão tomará como base o modelo
 de Tripathy \& Naik.
-\todoend
+\todoend{}
 
 \todobegin{Incluída seção sobre conceituamos os problemas relacionados à gestão
 da RM's.}
@@ -799,7 +799,7 @@ pesquisem descrições das requisições que possam ser do seu interesse bem com
 dos artefatos relativos àquela RM (por exemplo, arquivos relacionados,
 desenvolvedores contribuintes, registros de comunicação)~\cite{Wang2011bug}.
 
-Com base nos estudos que compõe esta categoria, verificamos que modelos de IR
+Com base nos estudos que compõem esta categoria, verificamos que modelos de IR
 vêm sendo utilizados para possibilitar a recomendação de RM\@. Neste contexto,
 técnicas bem conhecidas na literatura tais como VSM~\cite{Wang2011bug} e o
 modelo estatístico PPM~\cite{malheiros2012source}.
@@ -835,14 +835,14 @@ comunicação, discussão e revisões de código. Neste trabalho utilizaremos o 
 referimos a este tipo de ferramenta.
 
 As RM's são controladas por uma FGRM na forma de um fluxo de trabalho de modo a
-identificar, descreve e controlar a situação de cada RM. Em geral, os objetivos
+identificar, descreve e controlar a situação de cada RM\@. Em geral, os objetivos
 de um projeto adotar uma FGRM para gerenciar uma RM são os
 seguintes~\cite{tripathy2014software}:
 
 \begin{itemize}
 	\item Fornecer um método comum para a comunicação entre as partes
 		interessadas.
-	\item Identificar de forma única e controlar a situação de cada RM. Esta
+	\item Identificar de forma única e controlar a situação de cada RM\@. Esta
 		característica simplifica o processo de relatar uma RM e fornece um
 		melhor controle sobre as mudanças.
 	\item Manter uma base de dados sobre todas as mudanças sobre determinado
@@ -886,7 +886,7 @@ inserida. Nós sintetizamos os dados através da identificação de temas
 recorrentes da definição de FGRM's encontradas nos artigos. Foram encontrados
 quatro principais conceitos que estão retratados na
 Figura~\ref{fig:diagrama-classe-conceitual-fgrm} como um diagrama baseado na
-UML. Esta figura foi derivada dos estudos primários e consiste em uma
+UML\@. Esta figura foi derivada dos estudos primários e consiste em uma
 generalização dos elementos utilizados com frequência nos artigos. Os conceitos
 envolvidos no modelo estão descritos a seguir.
 
@@ -910,12 +910,12 @@ envolvidos no modelo estão descritos a seguir.
 		armazenadas e gerenciadas. Cada item nesta base é uma RM com as
 		características discutidas na Seção~\ref{sec:requisicao_de_mudanca}.
 	\item[Repositório de Usuários] Representa a base de dados de usuários da
-		FGRM. Nele são gerenciados os dados das pessoas envolvidas no projeto e
+		FGRM\@. Nele são gerenciados os dados das pessoas envolvidas no projeto e
 		de seus respectivos direitos de acesso às informações das RM's. Neste
 		caso, esta base inclui tanto a equipe de manutenção quanto as demais
 		partes interessadas.
 	\item[Fluxo de Trabalho:] O \textit{Fluxo de Trabalho} representa o conjunto
-		de regras que gerenciam o processo de resolução de uma RM. É a partir
+		de regras que gerenciam o processo de resolução de uma RM\@. É a partir
 		dele que são definidos os diferente \textit{estados} que uma RM pode
 		assumir desde de quando ela é redigida até o momento em que se define
 		que foi solucionada. Este processo é realizado pelas \textit{Pessoas}
@@ -932,9 +932,9 @@ envolvidos no modelo estão descritos a seguir.
 A partir da Figura~\ref{fig:diagrama-classe-conceitual-fgrm} é possível
 verificar que um \textit{projeto} pode \textit{definir} o seu \textit{fluxo de
 	trabalho}, como por exemplo resolvendo que uma RM só pode ser considerada
-Fechada (Closed) - vide Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca} -
-caso ela tenha sido avaliada por um Analista de Qualidade (vide
-Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software} ). A partir
+Fechada (Closed) \@-\@ vide Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}
+\@-\@ caso ela tenha sido avaliada por um Analista de Qualidade (vide
+Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}). A partir
 daquele fluxo as RM's podem ser \textit{atendidas} visando à sua resolução o que
 é feito por uma \textit{pessoa} devidamente registrada no \textit{repositório de
 	pessoas} e com direto para realizar a ação necessária.
@@ -942,7 +942,7 @@ daquele fluxo as RM's podem ser \textit{atendidas} visando à sua resolução o 
 \begin{figure}[htpb] \centering
 	\includegraphics[width=1.15\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-fgrm.pdf}
 	\caption{Modelo conceitual do contexto de uma FGRM}
-	\label{fig:diagrama-classe-conceitual-fgrm}
+\label{fig:diagrama-classe-conceitual-fgrm}
 \end{figure}
 
 Conforme exposto, as FGRM desempenham um papel que vai além de gerenciar as
@@ -954,7 +954,7 @@ possível forma de melhoria é através do uso de extensões. Na próxima seçã
 abordamos esta propriedade de algumas FGRM's que permitem a inclusão e
 modificação de funcionalidades e comportamentos da ferramenta segundo as
 necessidades do usuário.
-\todoend
+\todoend{}
 
 \subsection{Extensões em FGRM}
 \label{subsec:manutencao_visao_geral_extensoes_fgrm}
@@ -978,7 +978,7 @@ sistemas que permitem extensões apresentam os seguintes benefícios:
 
 No escopo deste trabalho, uma extensão é um componente de software que adiciona
 uma característica ou comportamento específico para um programa de
-computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in_(computing)}}.
+computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in\_(computing)}}.
 Cabe-nos ressaltar que o nossa definição de extensão incluí aquelas que não
 estão acopladas ao código de determinada FGRM\@. Por exemplo, a funcionalidade
 de atribuição de uma Requisição de Mudança a um ou mais desenvolvedor é inerente
@@ -990,7 +990,7 @@ independente se ela é oferecida baseada nos mecanismos de extensão discutidos
 nesta seção.
 
 Verificamos na literatura alguns estudos em que as soluções propostas já se
-tornaram extensões de determinadas FGRM. Como pode ser observado no Mapeamento
+tornaram extensões de determinadas FGRM\@. Como pode ser observado no Mapeamento
 Sistemático realizado no Capítulo~\ref{ch:mapeamento-sistematico}, a
 implementação da proposta do estudo em extensão de ferramenta não é o padrão
 observado.
@@ -1048,7 +1048,7 @@ coletadas e organizadas utilizando a técnica de Cartões de Classificação
 ferramentas disponíveis e ao esforço necessário para analisar a documentação de
 todas elas, optamos por realizar este estudo com um conjunto de 6 ferramentas
 que foram escolhidas com a ajuda de profissionais envolvidos em manutenção de
-software. Através de um levantamento por meio de questionário(survey) onde os
+software. Através de um levantamento por meio de questionário (survey) onde os
 profissionais definiram quais FGRM eram as mais representativas dentre uma lista
 previamente definida. A representatividade neste contexto não está no número de
 projetos que utiliza determinada ferramenta, mas pelas caraterísticas que o
@@ -1060,7 +1060,7 @@ Seção~\ref{sec:objetivo_do_capítulo} discutimos os objetos deste capítulo; n
 Seção~\ref{sec:metodologia} apresentamos o método utilizado na condução do
 estudo, em especial a técnica de Cartões de Ordenação e o levantamento realizado
 com os profissionais para escolher as ferramenta do estudo.
-\todoend
+\todoend{}
 
 \subsection{Objetivo do Capítulo}
 \label{subsec:caracterizacao_objetivo_do_capitulo}
@@ -1068,7 +1068,7 @@ com os profissionais para escolher as ferramenta do estudo.
 O objetivo inicial deste capítulo é apresentar e discutir as principais
 funcionalidades das FGRM's que dão suporte ao desenvolvimento e manutenção de
 software. Tomando como ponto de partida um conjunto de sistemas definidos como
-os mais relevantes escolhidos por meio de um levantamento(survey) com o uso de
+os mais relevantes escolhidos por meio de um levantamento (survey) com o uso de
 questionário. Em um segundo momento, o foco foi caracterizar este tipo de
 ferramenta tomando como base as funcionalidades oferecidas pelos softwares.
 Conforme já exposto, a literatura em Manutenção de Software apresenta diferentes
@@ -1497,8 +1497,8 @@ Auditoria & 1 \\ \hline
 \end{table}
 
 
-O gerenciamento da RM's formam as funcionalidades centrais de uma FGRM. De uma
-maneira geral, uma das primeira responsabilidades de uma FGRM é gerir a
+O gerenciamento das RMs formam as funcionalidades centrais de uma FGRM. De uma
+maneira geral, uma das primeiras responsabilidades de uma FGRM é gerir a
 \textit{criação, consulta, atualização e destruição} de uma RM. Estas funções
 podem ser agrupadas em um termo único denominado \textit{Operações de CRUD}
 (acrônimo de Create, Read, Update e Delete na língua Inglesa). As principais
@@ -1510,7 +1510,7 @@ categorias de funcionalidades que foram encontradas para a dimensão de
 
 Nesta categoria estão as funcionalidades que dão suporte à criação,	consulta,
 atualização e destruição das RM's. Com relação à criação verificamos que algumas
-FGRM possibilitam a definição de \textit{campos customizáveis} para o
+FGRM permitem a definição \textit{campos personalizáveis} para o
 preenchimento da RM. A ferramenta Bugzilla suporta a adição de campos
 personalizados ao seu banco de dados de RM's de modo à capturar e pesquisar
 dados que são exclusivo do projeto ao qual dará suporte. Estes campos podem
@@ -1728,4 +1728,4 @@ funcionalidades não há uma fronteira clara para qual grupo ela pertence.
 \section{Resumo do Capítulo}
 \label{sec:resumo_do_capitulo}
 \todobegin{Aguardando a revisão final do capítulo para realizar a escrita desta
-seção.}
+	seção.}
