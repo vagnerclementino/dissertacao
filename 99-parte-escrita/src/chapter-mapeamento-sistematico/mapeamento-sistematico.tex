@@ -164,7 +164,7 @@ número de artigos em cada etapa.
 \end{figure}
 
 \todobegin{a Tabela 3.1 pode ter, além da coluna com total 286, uma coluna com
-	total 64 (mostrando de cada base quantos foram excluidos...)}
+	total 64 (mostrando de cada base quantos foram excluídos)}
 
 \begin{table}[htb] \centering \caption{Número de Estudos Recuperados por Base de
 		Dados}\label{tab:estudos-por-base-dados} \begin{tabular}{cc} \hline
@@ -193,21 +193,22 @@ um dos esquemas utilizados.
 \subsubsection{Classificação por Dimensão de Melhoria}
 \label{subsubsec:map-esquema-suporte-problema}
 
-Em um estudo sobre o aperfeiçoamento das FGRMs Zimmermann e outros argumentam
-que ter informações completas nos relatos de bugs (Requisição de Mudança) tão
+Em um estudo sobre o aperfeiçoamento das FGRMs, Zimmermann e outros argumentam
+que ter informações completas nos relatos de falhas (Requisição de Mudança) tão
 logo quanto possível ajuda os desenvolvedores a resolver rapidamente o
-problema~\cite{zimmermann2009improving}. Naquele estudo, eles discutem dimensões
-de melhorias que podem melhorar as funcionalidades oferecidas pelas FGRMs de
-forma integral, ou seja, que atenda aos diversos contextos que este tipo
-software está integrado. As dimensões de melhorias são as seguintes:
+problema~\cite{zimmermann2009improving}. Naquele estudo, eles discutem como
+melhorar as funcionalidades oferecidas pelas FGRMs de forma integral, ou seja,
+que atenda aos diversos contextos que este tipo software está integrado. As
+dimensões de melhorias são as seguintes:
 
 \begin{description}
 	\item[Foco na Informação] Estas melhorias focam diretamente na informação
 		fornecida pelo reportador da RM\@. Com ajuda da FGRM, o responsável por
-		descrever um defeito (bug), por exemplo, poderia ser motivado a coletar
-		mais informações sobre o problema. O sistema poderia verificar a
-		validade e consistência do que foi repassado pelo Reportador (vide
-		Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}}).
+		descrever uma falha, por exemplo, poderia ser motivado a coletar mais
+		informações sobre o problema. O sistema poderia verificar a validade e
+		consistência do que foi repassado pelo Reportador (detalhes sobre este
+		papel pode ser encontrado na
+		Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}).
 	\item[Foco no Processo] Melhorias com foco no processo visam dar suporte às
 		atividades de administração focadas na solução das RMs. Por exemplo, a
 		triagem de RM, poderia ser automatizada visando acelerar o processo. Um
@@ -273,16 +274,16 @@ Neste esquema de classificação estamos interessado em avaliar como os estudos
 dão suporte aos papéis apresentados na
 Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}. A
 construção da classificação utiliza a metodologia descrita por Petersen e
-outros~\cite{Petersen2008} e que foi apresentada na Seção anterior.
+outros~\cite{Petersen2008} e que foi apresentada na seção anterior.
 
 \section{Resultados}
 \label{sec:mapeamento_resultados}
 
-Nesta seção apresentamos para cada item de classificação os estudos
-relacionados. Iniciamos com uma análise da frequência de publicação sobre o item
-e posteriormente apresentamos os resultados para cada uma das dimensões de
-melhoria. Seguimos com a análise dos estudos pelo papel ao qual a funcionalidade
-proposta visa dar suporte.
+Nesta Seção apresentamos para cada item de classificação os estudos
+relacionados. Iniciamos com uma análise da frequência de publicação sobre o tema
+do mapeamento e posteriormente apresentamos os resultados para cada uma das
+dimensões de melhoria. Seguimos com a análise dos estudos pelo papel ao qual a
+funcionalidade proposta visa dar suporte.
 
 \subsection{Frequência das Publicações}
 \label{sub:frequencia_publicacao}
@@ -291,9 +292,10 @@ A Tabela~\ref{tab:publicacao_por_ano} exibe o número de estudos primários
 identificados entre os anos de 2010 e 2016, período de referência utilizado no
 mapeamento. Dentre os estudos escolhidos no período em questão verificamos que
 em 2010 foram publicados cinco estudos sobre o
-assunto~\cite{sun2010discriminative,gegick2010identifying,song2010jdf,nagwani2010predictive,zimmermann2010makes}.
-Posteriormente verificamos um acréscimo no número de estudos no qual o maior
-aumento pode ser observado entre os anos de 2012\@-\@2014.
+assunto~\cite{sun2010discriminative, gegick2010identifying, song2010jdf,
+	nagwani2010predictive, zimmermann2010makes}. Posteriormente verificamos um
+acréscimo no número de estudos no qual o maior aumento pode ser observado entre
+os anos de 2012\@-\@2014.
 
 \begin{table}[htpb]
 \centering
@@ -332,8 +334,8 @@ estudos pela dimensão de melhoria e o seu respectivo tópico.
 \subsubsection{Melhorias Propostas na Dimensão Ferramenta}
 \label{ssub:melhorias_dim_ferramenta}
 
-Este ramo do esquema de classificação acomoda estudos em tópicos como
-Localização do Problema e Visualização de RMs.
+Este ramo do esquema de classificação inclui os estudo que possuem relação com
+tópicos como Localização do Problema e Visualização de RMs.
 
 \paragraph{Localização do Problema:} Os estudos incluídos neste tópico focam no
 problema de localizar a origem de um problema de software com base nos dados da
@@ -344,28 +346,28 @@ de registros de ativação (stack-trace)~\cite{Wong:2014:BBF:2705615.2706096},
 des\-cri\-ção e campos estruturados das
 RMs~\cite{Thung:2014:BIT:2635868.2661678} e os históricos de
 versões~\cite{Bangcharoensap:2012:LSC:2419061.2419428, corley2011recovering,
-	Romo:2015:TAT:2745802.2745833}.  Algumas das melhorias propostas foram
+	Romo:2015:TAT:2745802.2745833}. Algumas das melhorias propostas foram
 incluídas em ferramentas largamente empregadas no mercado utilizando as
 propriedades de extensão do
 software~\cite{Thung:2014:BIT:2635868.2661678,corley2011recovering}.
 
-\paragraph{Visualização de RM:} Os estudos classificados pelo tópico propõem
+\paragraph{Visualização de RM:} Os estudos classificados neste tópico propõem
 melhorar a visualização da informação contida na RM\@. Com o objetivo de
 apresentar novas formas de visualizar os dados de uma RM novos conceitos estão
 sendo propostos. No estudo de Hora e outros~\cite{hora2012bug} é apresentado o
-conceito de Mapas de Defeitos (Bugs Maps) que é a ligação de uma RM com outros
-artefatos de software como por exemplo o histórico de versões.  No estudo de
-Lanza e  Dal Sasso~\cite{dal2014bug} o conceito de hiperligação entre documentos
-é utilizado para permitir a navegação entre os artefatos que estão relacionados
-a uma RM\@.
+conceito de Mapas de Defeitos (Bugs Maps) que mostra as RM e uma ligação dela
+com outros artefatos de software, como por exemplo o histórico de versões.  No
+estudo de Lanza e  Dal Sasso~\cite{dal2014bug} o conceito de hiperligação entre
+documentos é utilizado para permitir a navegação entre os artefatos que estão
+relacionados a uma RM\@.
 
 Verificamos ainda no artigo proposto por Takama e
 Kurosawa~\cite{takama2013application} a aplicação de tecnologias de visualização
 de informação empregada para o monitoramento das informações contidas nas RMs.
 Uma FGRM atualiza quase toda informação de uma RM como texto, sem maiores
-estruturaçõeA solução proposta pelo autores visa suportar o monitoramento das RM
-apresentando ao usuário, mediante animações realizadas com base nas atualizações
-ocorridas em determinada RM\@.
+estruturações. A solução proposta pelo autores visa suportar o monitoramento das
+RM apresentando ao usuário, mediante animações realizadas com base nas
+atualizações ocorridas em determinada RM\@.
 
 Por conta da natureza das melhorias propostas neste tópico de pesquisa,
 verificamos que diversos estudos foram prototipados em ferramentas. Desta forma,
@@ -397,12 +399,12 @@ Estes estudos incluem tanto registrar o conjunto de ações que resultaram na
 falha~\cite{White:2015:GRR:2820282.2820291}, quanto em autocompletar o texto que
 compõe o relato de uma falha~\cite{moran2015auto}. Um ponto em comum deste dois
 estudos é que eles foram desenvolvido para o ambiente de desenvolvimento de
-aplicações para dispositivos móveis, especialmente para o sistema
-Android~\footnote{\url{https://www.android.com/}}. Uma possível justificativa
-para o foco em aplicações móveis pode ser pela dificuldade em registrar um
-problema de software naquele ambiente de software.
+aplicações para dispositivos móveis, mais especificamente para dispositivos
+baseados no sistema Android~\footnote{\url{https://www.android.com/}}. Uma
+possível justificativa para o foco em aplicações móveis pode ser pela
+dificuldade em registrar um problema de software naquele ambiente de software.
 
-\todobegin{Discutir melhor os problemas em registrar errros em dispositivos
+\todobegin{Discutir melhor os problemas em registrar erros em dispositivos
 	móveis}
 
 Muitos dos estudos resultaram em ferramentas com a finalidade de realizar uma
@@ -441,7 +443,7 @@ nova RM e possivelmente agrupá-las. Um ponto importante é que o segundo tipo s
 baseia na premissa que registrar um mesmo problema por mais de uma vez nem
 sempre é problemático tendo em vista que pode fornecer informações adicionais
 que podem ser úteis~\cite{bettenburg2008duplicate}. É importante que novas
-abordagens tentem equilibrar este dois tipos de tratamento de modo a evitar o
+abordagens tentem equilibrar estes dois tipos de tratamento de modo a evitar o
 tempo extra para análise de uma RM bem como apoiar os desenvolvedores com
 informações adicionais~\cite{Lerch:2013:FDY:2495256.2495763,Thung2014}.
 
@@ -456,10 +458,11 @@ informação para técnicas de Re\-cu\-pe\-ra\-ção da Informação visando det
 a similaridade entre duas RMs.
 
 \paragraph{Atribuição (Triagem) de RM:}
+
 Os estudos classificados neste tópico, em geral, visam automatizar o processo de
-encontrar o desenvolvedor mais apto para analisar determinada RM\@. A principal
-fonte de informação utilizada na abordagens propostas é o relato contido na RM,
-todavia, outros dados são utilizados tais como nível de
+encontrar o desenvolvedor mais apto para solucionar determinada RM\@. A
+principal fonte de informação utilizada na abordagens propostas é o relato
+contido na RM, todavia, outros dados são utilizados tais como nível de
 prioridade~\cite{tian2015automated}, registros (log) do sistema de controle de
 versão~\cite{shokripour2012automatic, Hu:2014:EBT:2707683.2708297} e itens do
 contexto do projeto como por exemplo: o perfil e preferências do desenvolvedor,
@@ -479,7 +482,7 @@ classificação do tipo K-Nearest-Neighbor.
 
 Os estudos neste tópico visam automatizar o processo de clas\-si\-fi\-ca\-ção de
 uma RM\@.  Este tipo de abordagem faz uso da funcionalidade de atribuição de
-etiquetas (labels) que é comum  a grande parte das FGRMs (vide
+rótulo (labels) que é comum  a grande parte das FGRMs (vide
 Subseção~\ref{subsec:categorizacao_ferramentas}).  Em muitos projetos esta
 atividade é realizada manualmente pelo Agente de Triagem, Desenvolvedor ou
 Analista de Qualidade, o que pode resultar em classificações equivocadas.
@@ -491,36 +494,38 @@ prioridade que a RM deve ser analisada~\cite{behl2014bug}.
 
 \paragraph{Estimativa de Esforço da RM:}
 
-Nos estudos recuperados no mapeamento a estimativa de esforço é realizado de
-três formas para estimá-lo~\cite{cavalcanti2014challenges}: determinar o tempo
-para solucionar novas RMs; definir os artefatos que são impactados por uma
-RM\@; prever o número de novas RMs que poderão fazer parte do projeto.
+Identificamos três tipos de estimativas de esforço relacionadas a uma RM\@:
+determinar o tempo para solucionar novas RMs; definir os artefatos que são
+impactados por uma RM\@; prever o número de novas RMs que poderão fazer parte do
+projeto.
 
-No primeiro tipo de estudo a preocupação é estimar o tempo necessário para
-tratar a mudança solicitada em determinada requisição. A principal complexidade
-esta em produzir uma estimativa precisa em função das diferentes atividades
-envolvidas e dos diferentes níveis de capacitação que o responsável pela
-execução das tarefas pode ter~\cite{xia2015automatic}. No segundo grupo temos os
-artigos que tentam identificar previamente o conjunto de artefatos que serão
-impactados pela tarefa de manutenção~\cite{Nagwani2010}.  Neste mapeamento o
-foco foi em estudos onde as RMs são o ponto de partida para a análise de
+Nos estudos que tratam da primeira forma de estimativa a preocupação é estimar o
+tempo necessário para tratar a mudança solicitada em determinada requisição. A
+principal complexidade está em produzir uma estimativa precisa em função das
+diferentes atividades envolvidas e dos diferentes níveis de capacitação do
+responsável pela execução das tarefas~\cite{xia2015automatic}. No segundo grupo
+temos os artigos que tentam identificar previamente o conjunto de artefatos que
+serão impactados pela tarefa de manutenção~\cite{Nagwani2010}. Neste mapeamento
+o foco foi em estudos onde as RMs são o ponto de partida para a análise de
 impacto. O último grupo de estudos discute técnicas sobre como prever o número
 de RMs que possivelmente serão relatadas em futuras versões do sistema. A
-predição do que será relatado incluí RMs que não existiam em versões
-anteriores, por exemplo, bem como aquelas que serão reabertas, ou seja,
-problemas que não foram solucionados anteriormente mesmo as suas RMs dizendo o
+predição do que será relatado incluí RMs que não existiam em versões anteriores,
+por exemplo, bem como aquelas que serão reabertas, ou seja, problemas que não
+foram solucionados anteriormente mesmo as suas RMs dizendo o
 contrário~\cite{xia2015automatic}.
 
 \subsubsection{Melhorias Propostas na Dimensão Usuário}
 \label{ssub:melhorias_dim_usuario}
 
-\paragraph{Recomendação de RM:} Os estudos contidos neste tópico dão suporte aos
-programadores que ingressam a pouco tempo no projeto mediante a redução da curva
-de aprendizagem. Para facilitar a inclusão de novos desenvolvedores alguns
-estudos vêm se dedicando em desenvolver sistemas de recomendação de
+\paragraph{Recomendação de RM:}
+
+Os estudos contidos neste tópico dão suporte aos desenvolvedores com pouca
+experiência no projeto correspondente mediante a redução da curva de
+aprendizagem. Para facilitar a inclusão de novos desenvolvedores alguns estudos
+tratam do desenvolvimento de sistemas de recomendação de
 RMs~\cite{malheiros2012source, Wang2011bug}. Estes sistemas podem ajudar o
 recém-chegado a solucionar uma RM mediante a apresentação do código fonte
-potencialmente relevante que o ajudará na solução da RM do qual ficou
+potencialmente relevante que o ajudará na solução da RM que ele ficou
 responsável~\cite{malheiros2012source}.
 
 O segundo tipo de abordagem pode ser vista como ambiente de exploração do
@@ -537,15 +542,15 @@ modelo estatístico PPM~\cite{malheiros2012source}.
 \subsection{Suporte à Papéis da Manutenção de Software}
 \label{sub:extensões_com_suporte_a_papeis}
 
-Neste esquema os estudos foram classificados pelo papel desempenhado na
-manutenção, conforme discutido na
+Nesta subseção são discutidos os estudos considerados relacionados com papéis
+discutidos na
 Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}, o qual é
 dado suporte. A Figura~\ref{fig:graf_papel_por_artigo} exibe o total de artigos
 em comparação com o papel ao qual a funcionalidade proposta visa dar suporte.
 Como pode ser observado verificamos um maior número de estudos para os papéis de
 Agente de Triagem e Desenvolvedor. Ainda é possível observar a prevalência de
-estudos nos tópicos ``Localização de RM Duplicados'' e ``Atribuição [Triagem] de
-RM'', o que é natural tendo em vista que há um mapeamento entre o papel
+estudos nos tópicos ``Localização de RMs Duplicadas'' e ``Atribuição [Triagem]
+de RM'', o que é natural tendo em vista que há um mapeamento entre o papel
 desempenhado na manutenção com as atividades executadas por aquele papel.
 
 \begin{table}[htpb]
@@ -567,31 +572,31 @@ Todos & 3 \\ \hline
 \label{tab:graf_papel_por_artigo}
 \end{table}
 
-\paragraph{Agente de Triagem:} Esta função tem como principal objetivo
+\paragraph{Agente de Triagem:} Esta função tem como principal objetivo a
 atribuição das RM’s para o desenvolvedor mais apto~\cite{banitaan2013decoba}.
 Neste mapeamento, os estudos recuperados têm focado em apresentar soluções de
 atribuição automática~\cite{banitaan2013decoba, shokripour2012automatic,
 	somasundaram2012automatic, Naguib2013, Zhang2014, Zanetti2013};
 classificação automatizada~\cite{gegick2010identifying,liu2014faceted,
 	behl2014bug, chawla2015automated,tian2015automated}; visualização da fila de
-RMs~\cite{izquierdo2015gila}; agrupamento (clusters) das
-requisições~\cite{liu2014faceted}; identificação do tempo necessário à conclusão
-da RM (time to fix)~\cite{hosseini2012market,
+RMs~\cite{izquierdo2015gila}; agrupamento (clustering) das
+requisições~\cite{liu2014faceted}; identificação do tempo necessário para
+solucionar a RM (time to fix)~\cite{hosseini2012market,
 	Bhattacharya:2011:BTP:1985441.1985472}; sumarização das informações contidas
 na RM~\cite{mani2012ausum}; determinação de RM'S duplicadas~\cite{Sun2011,
 	Wu2011a}.
 
+\paragraph{Desenvolvedor:}
 
-\paragraph{Desenvolvedor:} Os estudos nesta categoria suportam atividades tais
-como co\-di\-fi\-ca\-ção, depuração e testes. No suporte ao desenvolvedor
-identificamos estudos que propõem à atribuição de RMs a um conjunto de
-desenvolvedores, em contraposição da tradicional atribuição ao único
-programador~\cite{banitaan2013decoba}, visando  minimizar os pro\-ble\-mas
-decorrentes da propriedade de código e propiciar um maior nivelamento de
-informações entre os membros da equipe. Não obstante, o maior grupo de estudos
-nesta categoria está relacionada à ajuda ao desenvolvedor de vincular um
-determinado problema do software à sua efetiva origem, que nesta dissertação foi
-denominado como Localização do
+Apresentamos aqui os trabalhos com foco em aspectos de codificação, depuração e
+testes. No suporte ao desenvolvedor identificamos estudos que propõem à
+atribuição de RMs a um conjunto de desenvolvedores, em contraposição da
+tradicional atribuição a um único programador~\cite{banitaan2013decoba}, visando
+minimizar os pro\-ble\-mas decorrentes da propriedade de código e propiciar um
+maior nivelamento de informações entre os membros da equipe. Não obstante, o
+maior grupo de estudos nesta categoria está relacionada à ajuda ao desenvolvedor
+na vinculação de determinado problema do software à sua efetiva origem, que
+nesta dissertação foi denominado como Localização do
 Problema~\cite{corley2011recovering,Wong:2014:BBF:2705615.2706096,
 	Thung:2014:BIT:2635868.2661678,Nguyen:2012:MAR:2393596.2393671,thung2013automatic,
 	Romo:2015:TAT:2745802.2745833}. Nesta mesma categoria verificamos estudos
@@ -628,21 +633,23 @@ premissa que melhorar a qualidade dos dados na RM é o ponto de partida para
 tratar outros problemas relacionados ao processo de manutenção de
 software~\cite{moran2015auto, Moran:2015:EAA:2786805.2807557, Bettenburg2008a}.
 Neste sentido verificamos trabalhos para autocompletar as informações fornecidas
-pelo Reportador~\cite{moran2015auto}, suporte a reprodução do
+pelo Reportador~\cite{moran2015auto}, suporte à reprodução do
 problema~\cite{Moran:2015:EAA:2786805.2807557}; análise da qualidade da
 informação fornecida~\cite{Bettenburg2008a, Tu:2014:MQI:2677832.2677844}. Esta
 categoria também contempla um estudo que visa detectar se o problema relatado
 por uma RM corresponde ao problema relatado por outra que já foi
 registrada~\cite{Thung2014}.
 
-\paragraph{Chefe da Manutenção} O Chefe da Manutenção têm por responsabilidade
-definir os padrões e procedimentos que compõe o processo de manutenção que será
-utilizado. Para ajudar nesta tarefa alguns estudos  vêm propondo melhorar a
-alocação de Tarefas do processo de resolução das Requisições de
-Mudanças~\cite{netto2010automated}. Outros estudos visam mensurar o esforço
-necessário para solucionar determinada RM~\cite{Vijayakumar2014, Nagwani2010}, o
-que podem ajudar ao Chefe no planejamento de liberações de novas versões do
-sistema que está sendo mantido.
+\paragraph{Chefe da Manutenção:}
+
+O Chefe da Manutenção tem por responsabilidade definir os padrões e
+procedimentos que compõem o processo de manutenção que será utilizado. Para
+ajudar nesta tarefa alguns estudos propõem melhorar a alocação de Tarefas do
+processo de resolução das Requisições de Mudanças~\cite{netto2010automated}.
+Outros estudos visam estimar o esforço necessário para solucionar determinada
+RM~\cite{Vijayakumar2014, Nagwani2010}, estes aspectos têm o potencial de ajudar
+o Chefe de Manutenção no planejamento de liberações de novas versões do sistema
+que está sendo mantido.
 
 \paragraph{Todos} Esta categoria abarca os estudos para o qual a melhoria
 proposta possui impacto positivo para todos os papéis envolvidos na manutenção
@@ -661,20 +668,17 @@ navegabilidade entre as RMs~\cite{dal2014bug}.
 
 Ao realizarmos este mapeamento verificamos uma prevalência de estudos na
 dimensão \textit{Processo} especialmente para os tópicos de \textit{Localização
-	de RM Duplicados, Atribuição (Triagem) de RM e Classificação de RM.},
-respectivamente. A prevalência destes tópicos pode estar relacionado ao fato de
+	de RMs Duplicadas, Atribuição (Triagem) de RMs e Classificação de RMs},
+respectivamente. A prevalência destes tópicos pode estar relacionados ao fato de
 que eles afetam projetos de diferentes tipos e tamanhos. No caso da
 \textit{Localização de RM Duplicados} apesar de ser o de maior frequência não é
 um problema identificado como o maior impacto por alguns
 desenvolvedores~\cite{Bettenburg2008a}.
 
-
-
-
 Dos estudos que fizeram parte do mapeamento um total de 10 estudos foram
 implementados como extensões ou protótipos de uma FGRMs. Ao nosso entendimento
 poderia ser maior a fim de permitir avaliações pelos profissionais envolvidos em
-manutenção de software. Cabe ressaltar que no escopo de um estudo pode não esta
+manutenção de software. Cabe ressaltar que no escopo de um estudo pode não estar
 prevista a efetiva transformação da melhoria proposta de modo a ser utilizada
 efetivamente pelo seu público-alvo, como por exemplo, a criação ou melhoria de
 uma funcionalidade de determinada FGRM\@. Ademais, não está no objetivo deste
@@ -687,17 +691,17 @@ software poderia melhorar a qualidade das soluções sugeridas mediante a reduç
 da diferença entre o estado-da-prática com o estado-da-arte.
 
 Quando analisamos o esquema de Classificação por Papéis, verificamos uma
-prevalência de estudo com foco no papel de \textit{Agente de Triagem}. Existe
+prevalência de estudos com foco no papel de \textit{Agente de Triagem}. Existe
 possivelmente uma crença que é possível melhorar a produtividade do processo de
 manutenção de software reduzindo o esforço de encontrar o desenvolvedor mais
 apto. O estudos que fazem parte desta classe destacam que um considerável
 conhecimento sobre o projeto é necessário bem como a capacidade de negociação
-com os desenvolvedores e demais partes interessadas são importantes para
-desempenho de papel. Todavia, tendo em vista o esforço e tempo gasto por esta
+com os desenvolvedores e demais partes interessadas são importantes para o
+desempenho do papel. Todavia, tendo em vista o esforço e tempo gasto por esta
 tarefa, especialmente quando realizada manualmente, seria importante que as
 FGRMs automatizassem algumas destas atividades. Um outro ponto a destacar é que
-as FGRMs deveriam dar suporte ao Reportador que, na maioria, é o primeiro a
-registrar as informações que serão necessárias à solução da RM\@.
+as FGRMs deveriam dar suporte ao Reportador que, na maioria da vezes, é o
+primeiro a registrar as informações que serão necessárias à solução da RM\@.
 
 \section{Limitações e Ameaças à Validade}
 \label{sec:map_limitacoes_ameacas}
@@ -709,7 +713,7 @@ a responsabilidade de analisar o artigos que seriam incluídos ou excluídos.
 
 O mapeamento realizado neste estudo utilizou o método de aplicação de sentenças
 de busca nas bases de dados selecionadas para coletar os estudos primários.
-Outros estudos utilizam além da estratégia descrita fazem de uma técnica
+Outros estudos utilizam além da estratégia descrita fazem uso de uma técnica
 conhecida  como ``bola de neve'' (snowballing)~\cite{wohlin2014guidelines} onde
 as referências dos estudos primários podem ser usadas para o compor o conjunto
 de artigos do mapeamento. Neste sentido, ao usarmos uma única estratégia podemos
@@ -726,7 +730,7 @@ pode significar que alguns dos dados coletados podem ser errôneas. O processo d
 seleção e validação dos estudos primários pode levar a problemas de extração e
 agregação das informações quando há um grande número de artigos ou os dados são
 complexos~\cite{keele2007guidelines}. No entanto, neste estudo secundário, houve
-poucos estudos primários e os dados extraídos eram relativamente objetivos.
+poucos estudos primários e os dados extraídos eram razoavelmente objetivos.
 Desta forma, não esperamos erros de extração. Cabe ressaltar que apesar do
 processo de validação ter sido executado por um único pesquisador, os critérios
 de qualidade foram avaliados independentemente por dois pesquisadores, desta
@@ -740,12 +744,12 @@ as perguntas. Assim, mesmo que não tenhamos considerado o melhor conjunto de
 questões, tentamos abordar as indagações mais frequentes e abertas no campo,
 tanto do ponto de vista do praticante como do investigador.
 
-Como as bases de dados digitais não funcionam com regras de pesquisa compatíveis
+Como as bibliotecas digitais não funcionam com regras de pesquisa compatíveis
 entre si, todas as sequências de pesquisa foram adaptadas e calibradas para cada
-banco de dados digital. No entanto, não conhecemos todas as regras que as bases
-de dados digitais utilizam para procurar um documento. Neste sentido, a forma
-que as sentenças de busca foram estruturadas podem não ser a mais otimizada para
-seleção do maior número de estudos relevantes para o estudo.
+uma delas. No entanto, não conhecemos todas as regras que as bibliotecas
+digitais utilizam para procurar um documento. Neste sentido, a forma que as
+sentenças de busca foram estruturadas pode não ser a mais otimizada para seleção
+do maior número de documentos relevantes para o estudo.
 
 O nosso estudo considerou publicações até maio de 2016; Fizemos uma verificação
 menos formal das publicações de junho de 2016 até março de 2017 e encontramos os
@@ -782,7 +786,7 @@ funcionalidades, como entidades de primeira classe.
 
 No estudo realizado por Cavalcanti e outros~\cite{cavalcanti2014challenges}
 houve a classificação de estudos sobre repositórios de RM em desafios e
-oportunidades.  Desafios referem-se a problemas enfrentados na gestão das RMs,
+oportunidades. Desafios referem-se a problemas enfrentados na gestão das RMs,
 enquanto oportunidades referem-se às vantagens proporcionadas pelos dados
 obtidos das  RMs para o desenvolvimento de software. Além disso os autores
 utilizam a taxonomia proposta por Canfora e Cerulo\cite{cerulo2004taxonomy}. O
@@ -794,10 +798,11 @@ tarefas, forma e contexto.
 
 Nosso trabalho estende a classificação realizada por
 Cavalcanti~\cite{cavalcanti2014challenges} tendo em vista que avalia as
-funcionalidades das FGRMs  que encaixam no conceito de repositórios de RMs.
-Contudo, o nosso foco está em como as funcionalidades daquele tipo de ferramenta
-vêm sendo melhoradas em contrapartida do outro estudo que visa mapear os
-desafios e oportunidades de pesquisa na área.
+funcionalidades das FGRMs que encaixam no conceito de repositórios de RMs. Ou
+seja, o foco é no banco de dados de RMs, seja ele automatizado ou não. Contudo,
+o nosso foco está em como as funcionalidades das FGRMs vêm sendo melhoradas em
+contrapartida do outro estudo que visa mapear os desafios e oportunidades de
+pesquisa na área.
 
 \section{Resumo do Capítulo}
 \label{sec:resumo_capitulo}
