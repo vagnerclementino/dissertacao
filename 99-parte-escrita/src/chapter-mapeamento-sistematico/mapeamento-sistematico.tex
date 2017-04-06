@@ -332,7 +332,7 @@ A Tabela~\ref{tab:taxonomia-problemas-manutencao} exibe a distribuição dos
 estudos pela dimensão de melhoria e o seu respectivo tópico.
 
 % Inclusão da tabela
-\input{./chapter-mapeamento-sistematico/tables/tb-taxonomia-problemas-manutencao.tex}
+\input{chapter-mapeamento-sistematico/tables/tb-taxonomia-problemas-manutencao.tex}
 
 \subsubsection{Melhorias Propostas na Dimensão Ferramenta}
 \label{ssub:melhorias_dim_ferramenta}
@@ -441,7 +441,7 @@ No primeiro tipo, o objetivo é evitar que RMs duplicadas entrem na base de dado
 de uma FGRM e, desta forma, evitar o esforço e o tempo extra necessário para
 identificá-la posteriormente. Por outro lado, no segundo tipo o objetivo é
 sugerir uma lista de possíveis duplicatas durante o processo de registro de uma
-nova RM. Um ponto importante é que o segundo tipo se baseia na premissa que
+nova RM\@. Um ponto importante é que o segundo tipo se baseia na premissa que
 registrar um mesmo problema por mais de uma vez nem sempre é problemático tendo
 em vista que pode fornecer informações úteis~\cite{bettenburg2008duplicate}. É
 importante que novas abordagens tentem equilibrar estes dois tipos de tratamento
@@ -558,15 +558,17 @@ manutenção com as atividades executadas por aquele papel.
 \centering
 \resizebox{.7\textwidth}{!}{%
 \begin{tabular}{lc}
-\hline
-\multicolumn{1}{c}{\textbf{Papel}} & \textbf{Total de Artigos} \\ \hline
+\toprule
+\multicolumn{1}{c}{\textbf{Papel}} & \textbf{Total de Artigos} \\
+\midrule
 Agente de Triagem & 37 \\
 Desenvolvedor & 26 \\
 Analista de Qualidade & 13 \\
 Gerente de Requisição de Mudança & 11 \\
 Reportador & 6 \\
 Líder da Manutenção & 4 \\
-Todos & 3 \\ \hline
+Todos & 3 \\
+\bottomrule
 \end{tabular}%
 }
 \caption{Total de artigos por papel na manutenção de software}
