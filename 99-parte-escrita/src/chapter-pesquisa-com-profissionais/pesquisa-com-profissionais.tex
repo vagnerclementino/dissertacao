@@ -5,8 +5,8 @@
 %Autor: Vagner Clementino<vagnercs@dcc.ufmg.br> e
 %		Rodolfo Resende<rodolfo@dcc.ufmg.br>
 %Data Criação: sex fev  3 19:57:56 BRST 2017
-%Data Modificação: sex fev  3 19:58:14 BRST 2017
-%Data Revisão: sex fev  3 19:58:24 BRST 2017
+%Data Modificação: qui abr  6 20:33:42 -03 2017
+%Data Revisão: qui abr  6 21:01:54 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Levantamento por Questionário com Profissionais}
 \label{ch:pesquisa-profissionais}
@@ -14,26 +14,14 @@
 \section{Introdução}
 \label{sec:pesquisa-profissionais-intro}
 
-Uma pesquisa baseada em questionários, conhecido na literatura como
-\textit{Survey}, é uma abordagem de coleta e análise de dados na qual os
+Um levantamento por questionários, conhecido na literatura como
+\textit{Survey}, é uma abordagem de coleta e análise de dados em que os
 participantes respondem a perguntas ou declarações que foram desenvolvidas
-antecipadamente~\cite{kasunic2005designing}. Este tipo de pesquisa se divide em
-duas grandes principais: questionários autoadministrados e
-entrevistas~\cite{kasunic2005designing}. O primeiro tipo é aquele que  a maioria
-das pessoas pensa quando falamos em  ``pesquisa de opinião'', no qual geralmente
-recebemos por meio de correio eletrônico ou estão disponíveis através de páginas
-da Internet. As entrevistas apresentam as mesmas características dos
-questionários autoadministrados, sendo que a principal diferença consiste na
-profundidade que as perguntas são apresentadas aos participantes.  Neste estudo
-utilizamos um questionário autoadministrado como instrumento de coleta dos
-dados.
-
-Em uma pesquisa baseada em questionário, quando conduzida adequadamente, permite
-que os pesquisadores generalizem as crenças e opiniões de uma população mediante
-os dados coletados de um subconjunto do público-alvo (amostra). No trabalho
-conduzido por Kasunic~\cite{kasunic2005designing} são apresentadas um conjunto
-de etapas a serem seguidas no processo de condução deste tipo de trabalho
-acadêmico:
+Este tipo de estudo permite que os pesquisadores generalizem as crenças e
+opiniões de uma população mediante os dados coletados de um subconjunto do
+público-alvo (amostra). No trabalho conduzido por
+Kasunic~\cite{kasunic2005designing} são apresentadas uma sequência de etapas a
+serem seguidas no processo de condução deste tipo de trabalho:
 
 \begin{enumerate}
 \item{Identificar os objetivos da pesquisa}
@@ -45,64 +33,49 @@ acadêmico:
 \item{Analisar os resultados e escrever o relatório}
 \end{enumerate}
 
-Em uma série de artigos~\cite{pfleeger2001principles,pfleeger2002principles},
-Kitchenham e Pfleeger discutem os princípios da pesquisa com questionário no
-âmbito da Engenharia de Software (ES). O foco daquele estudo esteve
-principalmente nas etapas 3, 4, 6 e 7 do estudo feito por
-Kasunic~\cite{kasunic2005designing}. Os autores apresentam conceitos básicos de
-estatística para discutir algumas questões relativas à população e amostra.
-Nestes mesmos estudos os autores investigaram o desenho de quatro levantamentos
-na área de ES e concluem que em apenas um deles foi composto por uma amostra
-significativa da população. Ao final eles salientam a necessidade que este tipo
-de estudo científico utilize uma metodologia concisa de modo a reduzir qualquer
-viés no tocante à amostra utilizada.
-
 Com o objetivo de coletar os aspectos mais importantes das funcionalidades
-oferecidas pelas Ferramentas de Gerenciamento de Requisições de Mudança (FGRM),
-do ponto de vista dos profissionais ligados à manutenção de software, foi
-realizada um levantamento com profissionais (survey). O planejamento e o desenho
-da pesquisa seguiu as diretrizes propostas nos trabalhos de
+oferecidas pelas Ferramentas de Gerenciamento de Requisições de Mudança (FGRMs),
+do ponto de vista dos profissionais ligados à manutenção de software, realizamos
+um levantamento mediante questionário. O planejamento e o desenho do estudo
+seguiu as diretrizes propostas nos trabalhos de
 Wohlin~\cite{wohlin2012experimentation} e Kasunic~\cite{kasunic2005designing}.
 Em especial, no tocante a definição da população e da amostra de interesse
 utilizamos o arcabouço (framework) proposto por De Mello e
 outros~\cite{de2015investigating, de2014towards}.
 
 A população da pesquisa é a comunidade envolvida com o processo de manutenção de
-software e que faça uso de FGRM's. Neste sentido, utilizamos  como amostra os
+software e que faça uso de FGRMs. Neste sentido, utilizamos como amostra os
 profissionais que estão envolvidos no projeto de código aberto
 Python\footnote{\url{http://bugs.python.org/}}. Por outro lado, visando alcançar
-os profissionais que trabalham em empresas privadas, utilizamos profissionais
-que fazem parte da rede social de desenvolvedores Stack
-Overflow\footnote{\url{http://stackoverflow.com}}. Neste caso estamos
-interessados no usuários da rede que tenham participado de discussões na rede de
+profissionais que trabalham em empresas privadas, utilizamos os usuários da
+rede social de desenvolvedores Stack
+Overflow\footnote{\url{http://stackoverflow.com}}. Neste último caso, estamos
+interessados nos usuários da rede que tenham participado de discussões sobre
 assuntos relacionados à manutenção de software. A pesquisa foi replicada em uma
-empresa pública de software do qual o autor possui vínculo.  Maiores detalhes
+empresa pública de software do qual o autor possui vínculo. Maiores detalhes
 sobre o processo de escolha das amostras serão discutidos posteriormente.
 
 A importância deste tipo de trabalho está na possibilidade de avaliar se as
-pesquisas relativas a evolução das funcionalidades das FGRM's estão em
-consonância com as necessidades dos profissionais envolvidos em manutenção de
-software, reduzindo, desta forma, a distância entre o estado da arte e o estado
-da prática.
+pesquisas relativas a evolução das funcionalidades das FGRMs estão em
+consonância com as necessidades dos profissionais. Neste sentido é possível
+discutir a distância entre o estado da arte e o estado da prática.
 
-\section{Objetivo da Pesquisa com Profissionais}
+\section{Objetivo do Levantamento com Profissionais}
 \label{sec:objetivo_da_pesquisa_com_profissionais}
 
-Em linhas gerais, o objetivo desta etapa do estudo é analisar, através da
+Em linhas gerais, o objetivo desta etapa da dissertação é analisar, através da
 percepção e opinião dos profissionais envolvidos em manutenção de software, a
-situação das funcionalidades atualmente oferecidas pelas FGRM's, bem como
-a adotação das metodologias propostos pelos agilistas no processo de manutenção
-de software.
+situação das funcionalidades atualmente oferecidas pelas FGRMs, bem como a
+adotação das metodologias propostos pelos agilistas no processo de manutenção de
+software. Colocando a finalidade do levantamento conforme propõe a metodologia
+GQM (Goal, Question e Metric)\cite{gqm}, \textit{o propósito deste estudo é
+	avaliar as funcionalidades oferecidas pelas FGRMs e as melhorias propostas
+	nas literatura, do ponto de vista dos
+	profissionais envolvidos em manutenção de software no contexto de projetos
+	de software de código aberto e uma empresas publicas e privadas de
+	informática.}
 
-Para uma melhor apresentar a finalidade desta parte da dissertação estruturamos
-o objetivo conforme propõe a metodologia GQM (Goal, Question e
-Metric)\cite{gqm}, \textit{o propósito deste estudo avaliar as funcionalidades
-	oferecidas pelas FGRM's e as melhorias propostas nas literatura para este
-	tipo de ferramenta, do ponto de vista dos profissionais envolvidos em
-	manutenção de software no contexto de projetos de software de código aberto
-	e uma empresas publicas e privadas de informática.}
-
-Com intuito de atingir os objetivos propostos fora definidas as seguintes
+Com intuito de atingir os objetivos propostos foram definidas as seguintes
 questões de pesquisa:
 
 \begin{description}
@@ -114,64 +87,52 @@ questões de pesquisa:
 		relevância em suas atividades atuais?
 	\item[Questão 03] Como as práticas propostas pelos agilistas estão sendo
 	utilizadas especialmente no processo de manutenção de software?
-	\item[Questão 04] Como as FGRM's podem ajudar aos times devotados à manutenção
+	\item[Questão 04] Como as FGRMs podem ajudar aos times devotados à manutenção
 	de software na prática adotada pelos agilistas?
 \end{description}
 
-As questões de pesquisas foram respondidas mediante a realização de uma pesquisa
-baseada em questionário (survey). O desenho da pesquisa é detalhada na próxima
-seção onde discutimos a estrutura do questionário bem como a amostra a população
-que foi utilizada.
+O desenho da pesquisa é detalhado na próxima seção onde discutimos a estrutura
+do questionário bem como a amostra da população que foi utilizada.
 
 \section{Desenho e Metodologia da Pesquisa com Profissionais}
 \label{sec:desenho_da_pesquisa_com_profissionais}
 
 \subsection{Conceitos Básicos}
 
-Estudos primários em Engenharia de Software (SE), como os levantamentos
-(surveys), são muitas vezes conduzidos em amostras estabelecidas por
-conveniência~\cite{sjoberg2005survey, dybaa2006systematic}. Vale ressaltar que
-neste tipo de abordagem são necessários esforços consideráveis, contudo, a
-generalização dos resultados é limitada, mesmo quando as características de
-outros estudos são claramente descrito e repetidos~\cite{de2015investigating}.
-Em resumo, o fato do pesquisador utilizar uma metodologia já consagrada para
-realização de pesquisas com questionários é importante que se priorize a escolha
-da população de interesse e de suas respectivas amostras.
+Estudos primários em Engenharia de Software (SE), como os levantamentos por
+questionários, são muitas vezes conduzidos em amostras estabelecidas por
+conveniência~\cite{sjoberg2005survey, dybaa2006systematic}. Um desafio no
+estabelecimento de amostras representativas nos levantamentos, especialmente em
+Engenharia de Software, é a identificação de fontes relevantes e disponíveis que
+permitam criar as amostragem~\cite{de2014towards}. Uma alternativa é a
+utilização de fontes disponíveis na Internet, como as rede sociais, para
+aumentar o tamanho da amostra~\cite{de2013would}. Outra fonte que pode aumentar
+a significância das amostras são os projetos de código e seus respectivos
+artefatos.
 
-Um desafio no estabelecimento de amostras representativas nos levantamentos com
-questionários em Engenharia de Software inclui a identificação de fontes
-relevantes e disponíveis a partir das quais podem ser estabelecidas estruturas
-de amostragem~\cite{de2014towards}. Neste contexto, uma alternativa aos
-pesquisadores é a utilização de fontes alternativas tipicamente disponíveis na
-Internet para aumentar o tamanho da amostra, como as redes
-sociais~\cite{de2013would}. Uma outra fonte de dados que pode aumentar a
-significância das amostras são os projetos de código aberto e os seus diversos
-artefatos disponíveis na rede.
-
-Esta Pesquisa com Profissionais (survey) consistiu de um estudo exploratório sem
-uma hipótese prévia a ser avaliada. Conforme discutido anteriormente, a
-população de interesse desta pesquisa é composta por profissionais envolvidos em
-desenvolvimento e manutenção de software. Para sistematizar o processo de
-escolha da amostragem utilizamos o arcabouço (framework) conceitual proposto por
-de Mello e outros~\cite{de2014towards} que está representado na
+O nosso levantamento com profissionais consistiu de um estudo exploratório sem
+uma hipótese prévia. Conforme discutido anteriormente, a população de interesse
+desta pesquisa é composta por profissionais envolvidos em desenvolvimento e
+manutenção de software. Para sistematizar o processo de escolha da amostragem
+utilizamos o arcabouço (framework) conceitual proposto por de Mello e
+outros~\cite{de2014towards} que está representado na
 Figura~\ref{fig:framework-amostragem}. O modelo proposto inclui além dos
-conceitos estatísticos tradicionalmente utilizados em pesquisas por questionário
-, tais como público-alvo, população, amostragem e unidade de
+conceitos estatísticos tradicionalmente utilizados em levantamentos com
+questionário, tais como público-alvo, população, amostragem e unidade de
 observação~\cite{thompson2012sampling}, introduz um conjunto de novos conceitos
-que visam apoiar o processo de escolha da amostragem em questionários,
-especialmente em ES\@. Os conceitos que os autores propuserem incluem:
-\textit{Fonte de Amostragem, Unidade de Pesquisa, Plano de Pesquisa e Estratégia
-	de Amostragem}.
+que visam apoiar o processo de escolha da amostragem. Os conceitos que os
+autores propuserem incluem: \textit{Fonte de Amostragem, Unidade de Pesquisa,
+	Plano de Pesquisa e Estratégia de Amostragem}.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/framework-amostragem.png}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/framework-amostragem.png}
 	\caption{Os conceitos que compõem o Arcabouço Conceitual proposto por de
 		Mello. Extraído de~\cite{de2015investigating}}
 \label{fig:framework-amostragem}
 \end{figure}
 
-Uma \textit{Unidade de Observação} é a entidade que é estudada em determinado
+A \textit{Unidade de Observação} é a entidade que é estudada em determinado
 experimento~\cite{wohlin2012experimentation}. Uma Unidade pode ser produtos,
 processos, recursos, modelos, métricas, teorias ou pessoas. Uma \textit{Unidade
 	de Pesquisa} caracteriza como uma ou mais \textit{Unidade de Observação}
@@ -185,12 +146,12 @@ indivíduos que participarão do estudo.
 Uma \textit{Fonte de Amostragem} consiste de um banco de dados, que não
 necessariamente é automatizado, em que um subconjunto válido do público-alvo
 pode ser sistematicamente recuperado, além de permitir a extração aleatória de
-amostra da população de interesse. Sendo assim, os autores~\cite{de2014towards}
+amostras da população de interesse. Sendo assim, os autores~\cite{de2014towards}
 afirmam que no caso de determinada Fonte de Amostragem ser considerada válida
 para um contexto de pesquisa específico, pode-se concluir que as amostras podem
 ser extraídas desta fonte a fim de serem utilizados no mesmo contexto de
 pesquisa. Para ser considerada válida, uma Fonte de Amostragem deve satisfazer,
-pelo menos, os seguintes Requisitos Essenciais (Essential Requirements\@-\@ ER):
+pelo menos, aos seguintes Requisitos Essenciais (Essential Requirements\@-\@ ER):
 
 \begin{description}
 	\item[ER1] Uma Fonte de Amostragem não deve representar intencionalmente um
@@ -211,85 +172,86 @@ pelo menos, os seguintes Requisitos Essenciais (Essential Requirements\@-\@ ER):
 
 O estudo realizado por de Mello~\cite{de2014towards} cita outros requisitos que
 são definidos como desejáveis que estão relacionados com amostragem, clareza e
-integridade da amostra. 
+integridade da amostra. Contudo, neste trabalho, a Fonte de Amostragem foi
+valiada apenas pelos ERs.
 
 \subsection{Metodologia}
 \label{subsec:pesq_metodologias}
-No caso desta pesquisa, o público-alvo é composto por profissionais devotados em
-desenvolvimento e manutenção de software. O perfil do participante da população
-de interesse é bastante geral, uma vez que um conjunto de características e
-práticas deste tipo de profissional é bastante diversa e pode depender de
-questões como processo de software utilizado, linguagem de programação
-utilizada, tipo de projeto no qual está envolvido, dentre outras. Assim, todos
-os profissionais que trabalham em projetos de software, sejam estes projetos de
-código aberto ou de empresas privadas, podem potencialmente contribuir com esta
-investigação. É importante destacar que cabe ao Plano de Pesquisa avaliar quando
-a relevância do participante utilizando, por exemplo, o nível de experiência do
-respondente como critério de inclusão. As subseções a seguir descrevem a
-estratégia de recrutamento projetada para a pesquisa com profissionais
-realizada neste estudo.
+
+No caso deste levantamento por questionário, o público-alvo é o conjunto de
+profissionais que trabalham com manutenção de software. Naturalmente o perfil da
+população de interesse é bastante geral, uma vez que as características e
+práticas do profissional é bastante diverso e pode depender de questões como
+processo de software e linguagem de programação utilizada, tipo de projeto no
+qual está envolvido, dentre outras. Assim, todos os profissionais que trabalham
+em projetos de software, sejam estes projetos de código aberto ou de empresas
+privadas, podem potencialmente contribuir com esta investigação. É importante
+destacar que coube ao Plano de Pesquisa avaliar sobre a inclusão de determinado
+participante utilizando, por exemplo, o nível de experiência do respondente.
 
 \subsubsection{Fonte de Amostragem, Unidade de Pesquisa e População}
 \label{subsubsec:fontes_amostragem}
 
-Para a realização deste estudo foi estabelecida 02 diferentes Fontes de
-Amostragem conforme exibido na Tabela~\ref{tab:fontes-amostragens}. Estas fontes
-foram selecionadas de modo a incluir profissionais que estão se dedicam a
-projetos de código aberto (Python) e aqueles que possivelmente façam parte de
-empresas privadas de desenvolvimento e manutenção de software (Stack Overflow).
-Para o primeiro grupo, escolhemos um projetos de código aberto que tivessem pelo
-menos 5 anos de existência, possuem uma comunidade bem estabelecida e permitam
-acesso aos dados históricos das Requisições de Mudanças (RM). Para alcançarmos
-os profissionais que trabalham em empresas privadas de desenvolvimento de
-software utilizamos uma rede social composto em sua maioria por desenvolvedores
-(Stack Overflow). Este rede social foi  selecionada especialmente por conta de
-sua cobertura, que conta com mais de 6 milhões de
-usuários~\footnote{\url{http://stackexchange.com/sites}}.
+Utilizamos neste estudo as duas Fontes de Amostragem exibidas na
+Tabela~\ref{tab:fontes-amostragens}. Estas fontes foram selecionadas de modo a
+incluir profissionais de projetos de código aberto (Python) e aqueles que
+possivelmente façam parte de empresas privadas de desenvolvimento\footnote{O
+	nosso foco é com profissionais envolvidos com manutenção de software,
+	contudo, não seria possível separar os que trabalham com desenvolvimento
+	daqueles que se dedicam a manutenção de software.} e manutenção de software
+(Stack Overflow). Para o primeiro grupo, escolhemos um projeto de código aberto
+com as seguintes características: \textit{(i)} pelo menos 5 anos de existência;
+\textit{(ii)} uma comunidade bem estabelecida, no sentido de um número relevante
+e participativo de contribuidores e usuários; \textit{(iii)} que permita acesso
+aos dados históricos de suas Requisições de Mudanças (RMs).  Para alcançarmos os
+profissionais que trabalham em empresas privadas de desenvolvimento e manutenção
+de software de software utilizamos uma rede social composto em sua maioria por
+desenvolvedores (Stack Overflow). Este rede social foi selecionada por devido à
+sua cobertura, que conta com mais de 6 milhões de usuários\footnote{Disponível
+	em \url{http://stackexchange.com/sites}. Acessado em novembro de 2016.}.
 
-\begin{table}[htb]
+\begin{table}[htpb]
 \centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|llc|}
-\hline
-\multicolumn{1}{|c}{\textbf{Fonte de Amostragem}} & \multicolumn{1}{c}{\textbf{URL}}                & \textbf{Membros} \\ \hline
-Python                                            & https://bugs.python.org/                        & $\sim$19 K       \\
-LinkedIn                                           & https://www.linkedin.com/                       & $\sim$347 M      \\
+\begin{tabular}{@{}llc@{}}
+\toprule
+\multicolumn{1}{c}{Fonte de Amostragem} & \multicolumn{1}{c}{URL} & \textbf\{Membros\} \\ 
+\midrule
+Python & https://bugs.python.org/ & $\sim$19 K \\
+LinkedIn & https://www.linkedin.com/ & $\sim$347 M \\
+\bottomrule
 \end{tabular}%
-}
-\caption{Fontes de Amostragem utilizadas no estudo.}
-\label{tb:fonte-de-amostragens}
+\caption{Fontes de Amostragem utilizadas no levantamento com questionário.}
+\label{tb:fonte-amostragens}
 \end{table}
 
 No escopo deste estudo, para o projeto de código aberto utilizado, a lista de
-Requisições de Mudanças serão a Unidade de Pesquisa a ser considerada. No caso
-da rede social Stack Overflow foi considerada cada discussão proposta por um
-usuário (thread) como a Unidade de Pesquisa. Em todas as Fontes de Amostragem
-foram coletados os seguintes atributos: \textit{Nome do Participante, E-mail do
-	Participante, Data de Interação e Tipo de Interação}. No caso do Stack
-Overflow utilizamos um métrica adicional da própria rede social conhecida como
-reputação~\footnote{\url{http://stackoverflow.com/help/whats-reputation}} que é
+RMs disponível em sua respectiva FGRM\footnote{\url{http:bugs.python.com}} foi a
+Unidade de Pesquisa considerada. No caso da rede social Stack Overflow
+utilizamos as discussões propostas pelos usuários como a Unidade de Pesquisa. Em
+todas as Fontes de Amostragem foram coletados os seguintes atributos:
+\textit{Nome do Participante, E-mail do Participante, Data de Interação e Tipo
+	de Interação}. No caso do Stack Overflow utilizamos um métrica adicional da
+própria rede social conhecida como
+reputação\footnote{\url{http://stackoverflow.com/help/whats-reputation}} que é
 uma medida aproximada de quanto a comunidade poderia confiar em determinado
-participante. A medida é calculada  com base nas ações do usuário e em como a
-comunidade avalia tais ações. Neste trabalho a métrica foi utilizada para
-verificar a frequência de participação de determinado usuário em discussões
-sobre manutenção ou desenvolvimento de software. Em resumo, podemos considerar
-que as pessoas que fazem parte do projetos de código aberto, os participantes de
-discussões do Stack Overflow  que compõe a população a ser considerada neste
-estudo.
+participante. A métrica é calculada com base nas ações do usuário e em como a
+comunidade avalia tais ações. Neste trabalho a ela foi utilizada para verificar
+a frequência de participação de determinado usuário em discussões sobre
+manutenção de software. Em resumo, podemos considerar que as pessoas que fazem
+parte do projeto Python e os participantes de discussões no Stack Overflow sobre
+manutenção de software compõem a população a ser considerada.
 
-Cabe ressaltar que Fontes de Amostragem utilizadas neste estudo atendem aos
-Requisitos Essenciais propostas por de Mello~\cite{de2015investigating}. Neste
-sentido, é possível construir uma quadro de amostragem com base nos dados
-coletados daqueles fontes.
+Cabe ressaltar que as Fontes de Amostragem utilizadas atendem aos Requisitos
+Essenciais propostos por de Mello~\cite{de2015investigating}. Neste sentido, é
+possível construir um quadro de amostragem com base nos dados coletados.
 
 \subsubsection{Unidade de Observação e Unidade de Análise}
 \label{subsubsec:unidade_observacao}
 
 Nesta pesquisa, a Unidade de Observação e a Unidade de Análise são a mesma
-entidade (indivíduo). Neste sentido cada membro do projeto de código aberto ou
-da rede social foram considerados potencialmente uma unidade válida a ser
-amostrada. A fim de facilitar o processo de amostragem da população coletados os
-seguintes atributos:
+entidade, que são os membros do projeto de código aberto ou da rede social
+utilizada. A fim de facilitar o processo de amostragem da população coletamos os
+seguintes atributos de cada indivíduo da Unidade de Observação:
 
 \begin{itemize}
 	\item Nome do Participante
@@ -302,31 +264,31 @@ O Tipo de Ação representa a aquilo que o participante realizou na Fonte de
 Amostragem, por exemplo relatar uma RM, finalizar uma RM, responder a uma
 pergunta e etc. Estes atributos foram utilizados para avaliar se determinada
 Unidade de Observação (indivíduo) seria incluído no quadro de amostragem, que é
-o conjunto final de participantes do estudo. Além destes atributos foram
-coletadas outras informações através do questionário de pesquisa (instrumento de
-medição) de modo a conhecer cada Unidade de Observação que participaram do
-estudo tais como localização geográfica, tempo de experiência, nome da função
-desempenhada, principais atribuições, dentre outros.
+o conjunto final de potenciais participantes do estudo. Além destes atributos
+foram coletadas outras informações através do questionário de pesquisa
+(instrumento de medição) de modo a conhecer cada Unidade de Observação que
+participou do estudo tais como localização geográfica, tempo de experiência,
+nome da função desempenhada, principais atribuições, dentre outros.
 
 \subsubsection{Plano de Pesquisa}
+\label{subsubsec:pesquisa_profissionais_plano_pesquisa}
 
-De modo a construir as Unidade de Pesquisa que foram utilizadas neste estudo,
-aplicamos estratégias distintas cada uma relacionada as características da Fonte
-de Amostragem utilizada. Para a fonte que foi coletado do projeto de código
-aberto utilizamos os registros históricos das RM's ocorridos nos últimos 05
-anos. Além disso registro a frequência com o qual um participante teve contato
-com o projeto. Esta última métrica nos permitiu selecionar os participantes que
-tenham um mínimo de interação.
+De modo a construir as Unidades de Pesquisa que foram utilizadas neste estudo,
+aplicamos estratégias para cada uma das Fontes de Amostragem. Para o projeto de
+código aberto utilizamos os registros históricos das RMs ocorridos nos últimos
+05 anos. Além disso, foi coletada a frequência que um participante teve algum
+tipo de interação com projeto, como por exemplo abertura, solução ou comentários
+em RMs.
 
 No caso do Stack Overflow realizamos a busca de discussões que tinham relação
-com  as sentenças de busca descritas na Figura~\ref{fig:setencas-grupos}. Um
+com as sentenças de busca descritas na Figura~\ref{fig:setencas-grupos}. Um
 conjunto similar de sentenças de busca foi utilizado no mapeamento sistemático
-descrito no Capítulo~\ref{ch:mapeamento-sistematico}. Para obtermos este dados
+descrito no Capítulo~\ref{ch:mapeamento-sistematico}. Para obtermos os dados
 utilizamos a busca oferecida pelo próprio
-site~\footnote{\url{http://data.stackexchange.com/}}. Neste contexto, visando
+site\footnote{\url{http://data.stackexchange.com/}}. Neste contexto, visando
 restringir a seleção de grupos de participantes que estejam vinculados à
-desenvolvimento e manutenção de software realizamos a exclusão dos dados de
-participantes que:
+desenvolvimento e manutenção de software aplicamos as seguintes regras de
+exclusão de participantes:
 
 \begin{itemize}
 	\item Proíbem expressamente a utilização dos seus dados, especialmente do
@@ -348,34 +310,34 @@ participantes que:
 \label{fig:setencas-grupos}
 \end{figure}
 
-\subsubsection{Estratégia de amostragem}
+\subsubsection{Estratégia de Amostragem}
+\label{subsubsec:pesquisa_profissionais_estrategia_amostragem}
 
-Apesar das Fontes de Amostragens terem sido extraídos de diferente locais, pode
-ocorrer que uma sobreposição de participantes, ou seja, um mesmo participante
-estar em duas ou mais fontes. Para minimizar a possibilidade da duplicação de
-participação de uma mesma unidade de observação realizamos uma  desenho de
-amostragem conhecido como Agrupada. Uma Amostragem agrupada pode ser aplicada
-quando grupos homogêneos (clusters) compostos por unidades distintas podem ser
-identificados numa população. Como consequência, devido a essa similaridade,
-apenas um subconjunto desta população pode ser utilizada como amostra de forma
-aleatória aleatoriamente sem perda significativa de
-confiança~\cite{thompson2012sampling}. Assim, a amostragem em  agrupamentos é
+Apesar das Fontes de Amostragens terem sido extraídas de diferente locais, pode
+ocorrer uma sobreposição de participantes, ou seja, alguém do projeto Python
+pode ter participado determinada discussão no Stack Overflow. Para minimizar a
+possibilidade da duplicação de participação de uma mesma unidade de observação
+realizamos uma  desenho de amostragem conhecido como Agrupada. Uma Amostragem
+agrupada pode ser aplicada quando grupos homogêneos (clusters) compostos por
+unidades distintas podem ser identificados numa população. Como consequência,
+devido a essa similaridade, apenas um subconjunto desta população pode ser
+utilizado como amostra de forma aleatória, sem perda significativa de
+confiança~\cite{thompson2012sampling}. Assim, a amostragem em agrupamentos é
 comumente aplicada em pesquisas em larga escala nas quais os pesquisadores têm
 restrições operacionais para recrutar e coletar
 dados~\cite{roberts2004mortality}.
 
 \subsubsection{Extração de Dados}
+\label{subsubsec:pesquisa_profissionais_extracao_dados}
 
-Para extrair os atributos necessários de cada participante desta pesquisa
-utilizamos distintas. No caso da rede social Stack Overflow utilizamos uma
-ferramenta da web oficial que permite compartilhar, consultar e analisar os
-dados de todos os sites da rede Stack
-Exchange~\footnote{\url{http://data.stackexchange.com/stackoverflow}}. A
-ferramenta possibilita a utilização da linguagem SQL para acesso aos dados e
-apresenta o respectivo modelo de dados para facilitar a consulta. A
-Figura~\cite{fig:stack-exchange}. A ferramenta permite a extração no formato CSV
-(Comma Separated Values) o qual foi inserido em um banco de dados para posterior
-aplicação das regras de inclusão e exclusão.
+Para a extrairmos os dados da rede social Stack Overflow utilizamos sua
+ferramenta web oficial que permite compartilhar, consultar e analisar os dados
+de todos os sites da rede Stack
+Exchange\footnote{\url{http://data.stackexchange.com/stackoverflow}}. A
+ferramenta possibilita a utilização da linguagem SQL para acesso aos dados. A
+Figura~\cite{fig:stack-exchange}. É possível ainda extrair os dados formato CSV
+(Comma Separated Values) o qual foi posteriormente inserido em um banco de dados
+para aplicação das regras de inclusão e exclusão.
 
 \begin{figure}[htpb]
 	\centering
@@ -384,40 +346,24 @@ aplicação das regras de inclusão e exclusão.
 \label{fig:stack-exchange}
 \end{figure}
 
-Para o projeto de código aberto desenvolvido um Web Crawler para coletar as
+Para o projeto de código aberto foi desenvolvido um Web Crawler para coletar as
 informações dos participantes. Um Web Crawler (rastreador web) é um programa de
 computador que navega pela World Wide Web de uma forma metódica e automatizada.
-A partir de uma lista de Requisições de Mudança previamente coletadas a
-ferramenta coleta os dados dos participantes a partir do histórico de
-modificações de determinada RM\@. A Figura~\cite{fig:historico-rm-python}
-apresenta o histórico de registros de uma RM do projeto Python onde os dados dos
-participantes podem ser visualizados nos quadros inseridos. A ferramenta utiliza
-uma marca HTML <a> e seu valor de classe (título, ou seja, nome de membro) para
-coletar os dados. De modo similar ao que foi realizados com os dados do Stack
-Overflow as informações extraídas foram armazenadas em um banco de dados para
-posterior aplicação de critérios de inclusão.
+A partir de uma lista de RMs previamente coletadas a ferramenta coletou os dados
+dos participantes a partir do histórico de modificações da mesma. A
+Figura~\cite{fig:historico-rm-python} apresenta o histórico de registros de uma
+RM do projeto Python onde os dados dos participantes podem ser visualizados nos
+quadros inseridos. A ferramenta utiliza uma marcação HTML e os seu valor de
+classe (título, ou seja, nome de membro) para coletar os dados. Os dados
+coletados também foram armazenadas em um banco de dados para posterior aplicação
+de critérios de inclusão e exclusão.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/historico-rm-python.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/historico-rm-python.pdf}
 	\caption{Histórico de relatos de uma RM do projeto Python}
 \label{fig:historico-rm-python}
 \end{figure}
-
-%No caso da Fonte de Amostragem do LinkedIn utilizamos a busca já existente na
-%ferramenta utilizando as sentenças de busca exibidas na
-%Figura~\ref{fig:setencas-grupos}. Para extrair os atributos necessários de cada
-%foi utilizada uma extensão do Firefox chamada
-%iMacros~\footnote{\url{http://imacros.net/}}.  Este plugin torna possível
-%selecionar valores de tags HTML e salvá-los como arquivo CSV (Comma Separated
-%Values). Além disso ele permite o envio de mensagem aos membros de forma
-%automatizada.
-
-%Os dados coletados nas diferentes Fontes de Amostragem foi inicialmente
-%extraídos e salvos no formato CSV\@. Todavia, o arquivo CSV contém muitos dados
-%indesejados e artefatos de texto que devem ser removidos. Neste caso, foi
-%necessário a realização de um processo de limpeza e transformação das informação
-%antes do envio propriamente dito aos participantes.
 
 \subsubsection{Questionário}
 \label{subsec:questionario}
@@ -551,7 +497,7 @@ Figura~\cite{fig:grafico_melhorias_fgrm_local_trabalho}. É importante considera
 que grande parte dos respondentes pertencem à empresas privadas, onde os
 processos e ferramentas não podem ser modificados pelo desenvolvedor. Esta
 característica dos participantes pode afetar os resultados, especialmente quando
-	avaliarmos o nível de satisfação com as FGRM's. 
+	avaliarmos o nível de satisfação com as FGRMs. 
 
 \begin{figure}[htpb]
 	\centering
@@ -603,7 +549,7 @@ mostrarem diferentes se a pesquisa fosse realizada com outra versão dos sistema
 A Figura~\ref{fig:grafico_melhorias_fgrm_ferramentas_utilizadas} exibe as
 ferramentas utilizadas pelos profissionais que responderam ao questionário. A
 maior frequência na ferramenta \textit{Jira} que é uma FGRM que integra em seu
-processo de gestão das RM's métodos propostos pelos agilistas. Na segunda
+processo de gestão das RMs métodos propostos pelos agilistas. Na segunda
 posição visualizamos o Github que é um serviço de web para armazenamento para
 projetos que usam o controle de versionamento \textit{Git} e possui uma FGRM
 integrada.
@@ -652,71 +598,71 @@ funcionalidades da ferramenta que utiliza ao ponto de recomendá-la.
 \subsection{Avaliação das Funcionalidades Existentes}
 \label{sub:avaliação_das_funcionalidades_existentes}
 
-Nesta seção apresentamos a opinião dos profissionais envolvidos em Manutenção de Software com relação as
-funcionalidades oferecidas atualmente pelas FGRM\@. Este ponto de vista pode ser
-visualizado na Tabela~\ref{tab:avaliacao_funcionalidades}. É possível verificar
-que os profissionais avaliaram como importantes funções como \textit{Suporte ao
-Unicode, Múltiplos Projetos, Integração com Sistemas de Controle de Versão (VCS
-Integration)} como  funções importantes em sua atividades diárias. 
+Nesta seção apresentamos a opinião dos profissionais envolvidos em Manutenção de
+Software com relação as funcionalidades oferecidas atualmente pelas FGRM\@. Este
+ponto de vista pode ser visualizado na
+Tabela~\ref{tab:avaliacao_funcionalidades}. É possível verificar que os
+profissionais avaliaram como importantes funções como \textit{Suporte ao
+	Unicode, Múltiplos Projetos, Integração com Sistemas de Controle de Versão
+	(VCS Integration)} como  funções importantes em sua atividades diárias. 
 
 \begin{table}[htpb]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|l|c|c|c|c|c|}
-\hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Funcionalidade}}} & \multicolumn{5}{c|}{\textbf{Classificação}} \\ \cline{2-6} 
-\multicolumn{1}{|c|}{} & \textbf{Not at all important} & \textbf{Slightly Important} & \textbf{Important} & \textbf{Fairly Important} & \textbf{Very Important} \\ \hline
-Documentation integration/generation, business reporting & 11 & 12 & 15 & 12 & 14 \\ \hline
-Test planning integration & 11 & 13 & 13 & 13 & 9 \\ \hline
-Customizable workflow & 9 & 14 & 21 & 14 & 15 \\ \hline
-Unicode support & 9 & 9 & 21 & 16 & 24 \\ \hline
-Custom fields & 5 & 17 & 25 & 22 & 8 \\ \hline
-Support to Service Level Agreement & 14 & 22 & 15 & 13 & 10 \\ \hline
-Plugin API to integration with other products & 8 & 14 & 21 & 19 & 16 \\ \hline
-Multiple projects & 3 & 8 & 17 & 21 & 28 \\ \hline
-Full-text search & 1 & 5 & 17 & 15 & 40 \\ \hline
-File search & 4 & 15 & 18 & 17 & 24 \\ \hline
-VCS integration & 7 & 16 & 16 & 13 & 21 \\ \hline
-Multiples interfaces of notifications (E-mail, RSS, XMPP, etc) & 7 & 11 & 23 & 16 & 19 \\ \hline
-Code Review Support & 2 & 2 & 0 & 0 & 5 \\ \hline
-Ease of use & 0 & 2 & 2 & 0 & 1 \\ \hline
-Integration with database \& app & 4 & 6 & 4 & 1 & 2 \\ \hline
-Reviewing & 0 & 4 & 10 & 6 & 1 \\ \hline
-User Experience and Ease of Use & 2 & 4 & 0 & 6 & 3 \\ \hline
-Git branch style & 10 & 2 & 2 & 3 & 2 \\ \hline
+\begin{tabular}{@{}|l|ccccc|@{}}
+\toprule
+\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Funcionalidade}}} & \multicolumn{5}{c|}{\textbf{Classificação}} \\ \cmidrule(l){2-6}
+\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{\textbf{Not at all important}} & \multicolumn{1}{c|}{\textbf{Slightly Important}} & \multicolumn{1}{c|}{\textbf{Important}} & \multicolumn{1}{c|}{\textbf{Fairly Important}} & \textbf{Very Important} \\ \midrule
+Documentation integration/generation, business reporting & 11 & 12 & 15 & 12 & 14 \\
+Test planning integration & 11 & 13 & 13 & 13 & 9 \\
+Customizable workflow & 9 & 14 & 21 & 14 & 15 \\
+Unicode support & 9 & 9 & 21 & 16 & 24 \\
+Custom fields & 5 & 17 & 25 & 22 & 8 \\
+Support to Service Level Agreement & 14 & 22 & 15 & 13 & 10 \\
+Plugin API to integration with other products & 8 & 14 & 21 & 19 & 16 \\
+Multiple projects & 3 & 8 & 17 & 21 & 28 \\
+Full-text search & 1 & 5 & 17 & 15 & 40 \\
+File search & 4 & 15 & 18 & 17 & 24 \\
+VCS integration & 7 & 16 & 16 & 13 & 21 \\
+Multiples interfaces of notifications (E-mail, RSS, XMPP, etc) & 7 & 11 & 23 & 16 & 19 \\
+Code Review Support & 2 & 2 & 0 & 0 & 5 \\
+Ease of use & 0 & 2 & 2 & 0 & 1 \\
+Integration with database \& app & 4 & 6 & 4 & 1 & 2 \\
+Reviewing & 0 & 4 & 10 & 6 & 1 \\
+User Experience and Ease of Use & 2 & 4 & 0 & 6 & 3 \\
+Git branch style & 10 & 2 & 2 & 3 & 2 \\ \bottomrule
 \end{tabular}%
 }
-\caption{Avaliação das funcionalidades das FGRM's do ponto de vista dos
-	profissionais.}
-\label{tab:avaliacao_funcionalidades}
+\caption{My caption}
+\label{my-label}
 \end{table}
 
 Por outro apresentamos aos profissionais funcionalidades que poderiam ser
 integradas à FGRM que ele utiliza. A opinião dos participantes pode ser
 visualizada na Figura~\ref{fig:ggrafico_melhorias_fgrm_melhorias}. Conforme pode
-ser observado que melhorias na busca de busca de RM's, coleta de informações
-para solucionar na resolução da RM e dar suporte ao registro de RM's como
+ser observado que melhorias na busca de busca de RMs, coleta de informações
+para solucionar na resolução da RM e dar suporte ao registro de RMs como
 funcionalidades que podem melhorar as atividades do desenvolvedor.
 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_funcionalidades_faltantes.pdf}
 	\caption{Funcionalidades que o participantes sentem falta.}
-	\label{fig:grafico_melhorias_fgrm_funcionalidades_falantes}
+\label{fig:grafico_melhorias_fgrm_funcionalidades_falantes}
 \end{figure}
 
 Por outro lado algumas das melhorias propostas na literatura se mostram de
 interesse pelos profissionais. A
 Figura~\ref{fig:grafico_melhorias_fgrm_funcionalidades_falantes} apresenta as
 funcionalidades que os participantes sentem falta. Funções tais como
-identificação automática de RM's duplicadas, atribuição automática de RM e
+identificação automática de RMs duplicadas, atribuição automática de RM e
 Análise de Impacto foram as mais frequentes. 
 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_melhorias.pdf}
-	\caption{Novas funcionalidades para as FGRM's.}
-	\label{fig:ggrafico_melhorias_fgrm_melhorias}
+	\caption{Novas funcionalidades para as FGRMs.}
+\label{fig:ggrafico_melhorias_fgrm_melhorias}
 \end{figure}
 
 
@@ -736,45 +682,42 @@ desta pesquisa.
 	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_praticas_ageis_adotadas.pdf}
 	\caption{Metodologias propostas pelos agilistas que são adotadas pelos
 		participantes.}
-	\label{fig:grafico_melhorias_fgrm_praticas_ageis_adotadas}
+\label{fig:grafico_melhorias_fgrm_praticas_ageis_adotadas}
 \end{figure}
 
-A fim de avaliar como as FGRM's podem ajudar aos times devotados à manutenção de
+A fim de avaliar como as FGRMs podem ajudar aos times devotados à manutenção de
 software na prática adotada pelos agilistas apresentamos uma lista de possíveis
 funcionalidades que este tipo de ferramenta poderia fornecer. A
 Figura~\ref{fig:grafico_melhorias_fgrm_suporte_particas_ageis} apresenta a
 opinião dos profissionais quais as funcionalidades seriam mais relevantes.
-Segundo a opinião dos participantes a priorização automática de RM's urgente e
+Segundo a opinião dos participantes a priorização automática de RMs urgente e
 não esperadas, ajuda do desenvolvedor em sua reunião diária (daily) e o suporte
-a tarefas compartilhadas foram as mais frequentes. 
+a tarefas compartilhadas foram as mais frequentes.
 
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_suporte_particas_ageis.pdf}
 	\caption{Classificação das funcionalidades que possam dar suporte ao uso das
 	metodologias dos agilistas.}
-	\label{fig:grafico_melhorias_fgrm_suporte_particas_ageis}
+\label{fig:grafico_melhorias_fgrm_suporte_particas_ageis}
 \end{figure}
 
-%\section{Discussão}
+\section{Discussão}
 
-%\paragraph{Nível de Satisfação com a Ferramenta Utilizada.}
-%\label{par:pesq_profissionais_nivel_de_satisfação}
+\paragraph{Nível de Satisfação com a Ferramenta Utilizada.}
+\label{par:pesq_profissionais_nivel_de_satisfação}
 
-%Em geral, o nível de satisfação com as funcionalidades oferecidas pelas FGRM's é
-%alto. Esta medida foi observada no
-%Figura~\ref{fig:grafico_melhorias_fgrm_nivel_satisfacao} no qual verificamos que
-%cerca de 90\% dos participantes estão de alguma forma satisfeito com a
-%ferramenta utilizada diariamente. Este mesmo sentimento pode ser observado pela
-%probabilidade de recomendação do sistema que utilizada para um novo projeto.
-%Naquela medida verificamos que o mesmo percentual de participantes pretendem
-%recomendar o software que utiliza.
+Em geral, o nível de satisfação com as funcionalidades oferecidas pelas FGRMs é
+alto. Esta medida foi observada no
+Figura~\ref{fig:grafico_melhorias_fgrm_nivel_satisfacao} no qual verificamos que
+cerca de 90\% dos participantes estão de alguma forma satisfeito com a
+ferramenta utilizada diariamente. Este mesmo sentimento pode ser observado pela
+probabilidade de recomendação do sistema que utilizada para um novo projeto.
+Naquela medida verificamos que o mesmo percentual de participantes pretendem
+recomendar o software que utiliza.
 
-%\paragraph{Funcionalidades Faltantes.}
-%\label{par:pesq_profissionais_funcionalidades_faltantes}
-
-
-
+\paragraph{Funcionalidades Faltantes.}
+\label{par:pesq_profissionais_funcionalidades_faltantes}
 
 \section{Ameças à Validade}
 As ameaças à validade deste trabalho está principalmente no numero de
@@ -786,6 +729,5 @@ aplicação do questionário. Caso este mesmo estudo fosse realizado com outras
 versões do mesmos sistemas os resultados poderiam ser diferentes. Neste sentido,
 a generalização dos resultados também passa por esta característica do estudo.
 
-
-%\section{Resumo do Capítulo}
+\section{Resumo do Capítulo}
 \label{sec:resumo_do_capitulo}
