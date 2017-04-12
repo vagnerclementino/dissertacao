@@ -100,48 +100,45 @@ do questionário bem como a amostra da população que foi utilizada.
 \subsection{Conceitos Básicos}
 
 Estudos primários em Engenharia de Software (SE), como os levantamentos por
-questionários, são muitas vezes conduzidos em amostras estabelecidas por
+questionário, são muitas vezes conduzidos em amostras estabelecidas por
 conveniência~\cite{sjoberg2005survey, dybaa2006systematic}. Um desafio no
-estabelecimento de amostras representativas nos levantamentos, especialmente em
-Engenharia de Software, é a identificação de fontes relevantes e disponíveis que
-permitam criar as amostragem~\cite{de2014towards}. Uma alternativa é a
-utilização de fontes disponíveis na Internet, como as rede sociais, para
-aumentar o tamanho da amostra~\cite{de2013would}. Outra fonte que pode aumentar
-a significância das amostras são os projetos de código e seus respectivos
-artefatos.
+estabelecimento de amostras representativas, especialmente em Engenharia de
+Software, é a identificação de fontes relevantes e disponíveis que permitam
+criar as amostragem~\cite{de2014towards}. Uma alternativa é a utilização de
+fontes disponíveis na Internet, como as rede sociais, para aumentar o tamanho da
+amostra~\cite{de2013would}. Outra fonte que pode aumentar a significância das
+amostras são os projetos de código e seus respectivos artefatos.
 
 O nosso levantamento com profissionais consistiu de um estudo exploratório sem
-uma hipótese prévia. Conforme discutido anteriormente, a população de interesse
-desta pesquisa é composta por profissionais envolvidos em desenvolvimento e
-manutenção de software. Para sistematizar o processo de escolha da amostragem
-utilizamos o arcabouço (framework) conceitual proposto por de Mello e
-outros~\cite{de2014towards} que está representado na
-Figura~\ref{fig:framework-amostragem}. O modelo proposto inclui além dos
-conceitos estatísticos tradicionalmente utilizados em levantamentos com
-questionário, tais como público-alvo, população, amostragem e unidade de
-observação~\cite{thompson2012sampling}, introduz um conjunto de novos conceitos
-que visam apoiar o processo de escolha da amostragem. Os conceitos que os
-autores propuserem incluem: \textit{Fonte de Amostragem, Unidade de Pesquisa,
-	Plano de Pesquisa e Estratégia de Amostragem}.
+uma hipótese prévia. Idealmente, este levantamento deveria ser aplicado em todos
+os profissionais envolvidos em desenvolvimento e manutenção de software e que
+tenham feito o uso razoável de alguma FGRM. Naturalmente não é possível alcançar
+aquela população. Desta forma, foi utilizada uma estratégia de amostragem de
+\textit{conveniência} onde o questionário foi aplicado em dois grupos distintos.
+Uma amostragem de conivência é técnica não probabilística de amostragem onde os
+sujeitos são selecionados por conta de sua facilidade de acesso ou
+proximidade~\cite{etikan2016comparison}. Maiores detalhes sobre o processo de
+amostragem serão discutidos na Seção~\ref{subsubsec:fontes_amostragem}.
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/framework-amostragem.png}
-	\caption{Os conceitos que compõem o Arcabouço Conceitual proposto por de
-		Mello. Extraído de~\cite{de2015investigating}}
-\label{fig:framework-amostragem}
-\end{figure}
+De modo a dar validade as amostras selecionadas para este estudo utilizamos o
+arcabouço (framework) conceitual proposto por de Mello e
+outros~\cite{de2014towards}. O modelo proposto inclui além dos conceitos
+estatísticos tradicionalmente utilizados em levantamentos com questionário, tais
+como público-alvo, população, amostragem e unidade de
+observação~\cite{thompson2012sampling}, discute conceitos relacionados com
+\textit{Fonte de Amostragem, Unidade de Pesquisa, Plano de Pesquisa e Estratégia
+	de Amostragem}.
 
-A \textit{Unidade de Observação} é a entidade que é estudada em determinado
-experimento~\cite{wohlin2012experimentation}. Uma Unidade pode ser produtos,
-processos, recursos, modelos, métricas, teorias ou pessoas. Uma \textit{Unidade
-	de Pesquisa} caracteriza como uma ou mais \textit{Unidade de Observação}
-podem ser recuperadas de uma \textit{Fonte de Amostragem} específica. O
-\textit{Plano de Pesquisa} descreve como \textit{Unidades de Pesquisa} serão
-sistematicamente recuperadas de uma Fonte de Amostragem e avaliadas para compor
-a amostragem da pesquisa. Finalmente, a Estratégia de Amostragem descreve as
-etapas que devem ser seguidas para definição da amostragem e recrutamento de
-indivíduos que participarão do estudo.
+%A \textit{Unidade de Observação} é a entidade que é estudada em determinado
+%experimento~\cite{wohlin2012experimentation}. Uma Unidade pode ser produtos,
+%processos, recursos, modelos, métricas, teorias ou pessoas. Uma \textit{Unidade
+	%de Pesquisa} caracteriza como uma ou mais \textit{Unidade de Observação}
+%podem ser recuperadas de uma \textit{Fonte de Amostragem} específica. O
+%\textit{Plano de Pesquisa} descreve como \textit{Unidades de Pesquisa} serão
+%sistematicamente recuperadas de uma Fonte de Amostragem e avaliadas para compor
+%a amostragem da pesquisa. Finalmente, a Estratégia de Amostragem descreve as
+%etapas que devem ser seguidas para definição da amostragem e recrutamento de
+%indivíduos que participarão do estudo.
 
 Uma \textit{Fonte de Amostragem} consiste de um banco de dados, que não
 necessariamente é automatizado, em que um subconjunto válido do público-alvo
@@ -153,105 +150,110 @@ ser extraídas desta fonte a fim de serem utilizados no mesmo contexto de
 pesquisa. Para ser considerada válida, uma Fonte de Amostragem deve satisfazer,
 pelo menos, aos seguintes Requisitos Essenciais (Essential Requirements\@-\@ ER):
 
-\begin{description}
-	\item[ER1] Uma Fonte de Amostragem não deve representar intencionalmente um
-		subconjunto segregado do público-alvo, ou seja, dado um público-alvo
-		\textit{``X''}, não seria adequado pesquisar por unidades na Fonte
-		intencionalmente desenhada para compor um subconjunto específico de
-		\textit{``X''}.
-	\item[ER2] Uma Fonte de Amostragem não deve apresentar qualquer viés em
-		incluir na sua base de dados determinados subconjuntos do público-alvo.
-		Critérios desiguais para inclusão de Unidades de Pesquisa significam
-		oportunidades desiguais para oportunidades de amostragem.
-	\item[ER3] Todas as Unidades de Pesquisa das amostras e suas Unidades de
-		Observação devem identificados por de forma única.
-	\item[ER4] Todas as amostragem de determinada Unidade de Pesquisa devem ser
-		acessíveis. Se houver unidades de pesquisa ocultas, não é possível
-		contextualizar a população.
-\end{description}
+%\begin{description}
+	%\item[ER1] Uma Fonte de Amostragem não deve representar intencionalmente um
+		%subconjunto segregado do público-alvo, ou seja, dado um público-alvo
+		%\textit{``X''}, não seria adequado pesquisar por unidades na Fonte
+		%intencionalmente desenhada para compor um subconjunto específico de
+		%\textit{``X''}.
+	%\item[ER2] Uma Fonte de Amostragem não deve apresentar qualquer viés em
+		%incluir na sua base de dados determinados subconjuntos do público-alvo.
+		%Critérios desiguais para inclusão de Unidades de Pesquisa significam
+		%oportunidades desiguais para oportunidades de amostragem.
+	%\item[ER3] Todas as Unidades de Pesquisa das amostras e suas Unidades de
+		%Observação devem identificados por de forma única.
+	%\item[ER4] Todas as amostragem de determinada Unidade de Pesquisa devem ser
+		%acessíveis. Se houver unidades de pesquisa ocultas, não é possível
+		%contextualizar a população.
+%\end{description}
 
-O estudo realizado por de Mello~\cite{de2014towards} cita outros requisitos que
-são definidos como desejáveis que estão relacionados com amostragem, clareza e
-integridade da amostra. Contudo, neste trabalho, a Fonte de Amostragem foi
-valiada apenas pelos ERs.
+%O estudo realizado por de Mello~\cite{de2014towards} cita outros requisitos que
+%são definidos como desejáveis que estão relacionados com amostragem, clareza e
+%integridade da amostra. Contudo, neste trabalho, a Fonte de Amostragem foi
+%valiada apenas pelos ERs.
 
 \subsection{Metodologia}
 \label{subsec:pesq_metodologias}
 
 No caso deste levantamento por questionário, o público-alvo é o conjunto de
-profissionais que trabalham com manutenção de software. Naturalmente o perfil da
-população de interesse é bastante geral, uma vez que as características e
-práticas do profissional é bastante diverso e pode depender de questões como
-processo de software e linguagem de programação utilizada, tipo de projeto no
-qual está envolvido, dentre outras. Assim, todos os profissionais que trabalham
-em projetos de software, sejam estes projetos de código aberto ou de empresas
-privadas, podem potencialmente contribuir com esta investigação. É importante
-destacar que coube ao Plano de Pesquisa avaliar sobre a inclusão de determinado
-participante utilizando, por exemplo, o nível de experiência do respondente.
+profissionais que trabalham com manutenção de software e que tenham uma razoável
+experiência de uso das FGRMs. Naturalmente o perfil da população de interesse é
+bastante geral, uma vez que as características e práticas do profissional é
+bastante diverso e pode depender de questões como processo de software e
+linguagem de programação utilizada, tipo de projeto no qual está envolvido,
+dentre outras. Assim, todos os desenvolvedores de código aberto e código
+proprietário, que de alguma forma tenham utilizado determinada FGRM, podem
+potencialmente contribuir com esta investigação. É importante destacar que coube
+ao Plano de Pesquisa avaliar sobre a inclusão de determinado participante
+utilizando, por exemplo, o nível de experiência do respondente.
 
-\subsubsection{Fonte de Amostragem, Unidade de Pesquisa e População}
+\subsubsection{Fontes de Amostragem}
 \label{subsubsec:fontes_amostragem}
 
-Utilizamos neste estudo as duas Fontes de Amostragem exibidas na
-Tabela~\ref{tab:fontes-amostragens}. Estas fontes foram selecionadas de modo a
-incluir profissionais de projetos de código aberto (Python) e aqueles que
-possivelmente façam parte de empresas privadas de desenvolvimento\footnote{O
-	nosso foco é com profissionais envolvidos com manutenção de software,
-	contudo, não seria possível separar os que trabalham com desenvolvimento
-	daqueles que se dedicam a manutenção de software.} e manutenção de software
-(Stack Overflow). Para o primeiro grupo, escolhemos um projeto de código aberto
-com as seguintes características: \textit{(i)} pelo menos 5 anos de existência;
-\textit{(ii)} uma comunidade bem estabelecida, no sentido de um número relevante
-e participativo de contribuidores e usuários; \textit{(iii)} que permita acesso
-aos dados históricos de suas Requisições de Mudanças (RMs).  Para alcançarmos os
-profissionais que trabalham em empresas privadas de desenvolvimento e manutenção
-de software de software utilizamos uma rede social composto em sua maioria por
-desenvolvedores (Stack Overflow). Este rede social foi selecionada por devido à
-sua cobertura, que conta com mais de 6 milhões de usuários\footnote{Disponível
-	em \url{http://stackexchange.com/sites}. Acessado em novembro de 2016.}.
+
+Uma \textit{Fonte de Amostragem} consiste de um banco de dados, que não
+necessariamente é automatizado, em que um subconjunto válido da população pode
+ser sistematicamente recuperado, além de permitir a extração aleatória de
+amostras da população de interesse~\cite{de2014towards}. Utilizamos neste estudo
+as duas Fontes de Amostragem exibidas na Tabela~\ref{tab:fontes-amostragens}.
+Na primeira fonte temos, indivíduos relacionados a grupos que contribuem para
+projetos de código aberto. Na segunda, esperamos encontrar profissionais que
+façam parte de empresas privadas de desenvolvimento\footnote{O nosso foco é com
+	profissionais envolvidos com manutenção de software, contudo, não seria
+	possível separar os que trabalham com desenvolvimento daqueles que se
+	dedicam a manutenção de software.} e manutenção de software (Stack
+Overflow).
 
 \begin{table}[htpb]
 \centering
-\begin{tabular}{@{}llc@{}}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllc@{}}
 \toprule
-\multicolumn{1}{c}{Fonte de Amostragem} & \multicolumn{1}{c}{URL} & \textbf\{Membros\} \\ 
-\midrule
-Python & https://bugs.python.org/ & $\sim$19 K \\
-LinkedIn & https://www.linkedin.com/ & $\sim$347 M \\
-\bottomrule
+\textbf{Identificador} & \multicolumn{1}{c}{\textbf{Fonte de Amostragem}} & \multicolumn{1}{c}{\textbf{URL}} & \textbf{Membros} \\ \midrule
+FA01 & Python & https://bugs.python.org/ & $\sim$19 K \\
+FA02 & Stack Overflow & https://stackoverflow.com & $\sim$6 M \\ \bottomrule
 \end{tabular}%
+}
 \caption{Fontes de Amostragem utilizadas no levantamento com questionário.}
-\label{tb:fonte-amostragens}
+\label{tab:fonte-amostragens}
 \end{table}
 
-No escopo deste estudo, para o projeto de código aberto utilizado, a lista de
-RMs disponível em sua respectiva FGRM\footnote{\url{http:bugs.python.com}} foi a
-Unidade de Pesquisa considerada. No caso da rede social Stack Overflow
-utilizamos as discussões propostas pelos usuários como a Unidade de Pesquisa. Em
-todas as Fontes de Amostragem foram coletados os seguintes atributos:
-\textit{Nome do Participante, E-mail do Participante, Data de Interação e Tipo
-	de Interação}. No caso do Stack Overflow utilizamos um métrica adicional da
-própria rede social conhecida como
-reputação\footnote{\url{http://stackoverflow.com/help/whats-reputation}} que é
-uma medida aproximada de quanto a comunidade poderia confiar em determinado
-participante. A métrica é calculada com base nas ações do usuário e em como a
-comunidade avalia tais ações. Neste trabalho a ela foi utilizada para verificar
-a frequência de participação de determinado usuário em discussões sobre
-manutenção de software. Em resumo, podemos considerar que as pessoas que fazem
-parte do projeto Python e os participantes de discussões no Stack Overflow sobre
-manutenção de software compõem a população a ser considerada.
+A fonte FA01 foi utilizada por apresentar as seguintes características:
+\textit{(i)} pelo menos 5 anos de existência; \textit{(ii)} comunidade bem
+estabelecida, no sentido de um número relevante e participativo de
+contribuidores e usuários; \textit{(iii)} permite acesso aos dados históricos de
+suas RMs. Por outro, a fonte FA02 foi selecionada por devido à sua cobertura,
+que conta com mais de 6 milhões de usuários\footnote{Disponível em
+	\url{http://stackexchange.com/sites}. Acessado em novembro de 2016.}.
 
-Cabe ressaltar que as Fontes de Amostragem utilizadas atendem aos Requisitos
-Essenciais propostos por de Mello~\cite{de2015investigating}. Neste sentido, é
-possível construir um quadro de amostragem com base nos dados coletados.
+Conforme anteriormente discutido, este levantamento fez uso de uma amostragem de
+conveniência. Embora este tipo de estratégia de amostragem apresentar limitações
+devido a natureza subjetiva na escolha da amostra, ela é útil especialmente
+quando randomização não é possível, como no caso de uma população muito
+grande~\cite{etikan2016comparison}. No estudo conduzido por de Melo e
+outros~\cite{de2014towards} é apresentam quatro itens denominados ``Requisitos
+Essenciais'' identificados como \textit{ER1, ER2, ER3 e ER4}. Estes itens dão
+validade a uma fonte de amostragem. Nossa avaliação é que nossa fonte satisfaz
+bem todos requisitos.
 
-\subsubsection{Unidade de Observação e Unidade de Análise}
-\label{subsubsec:unidade_observacao}
+%However, a researcher may not be able to obtain a random or stratified sample,
+%or it may be too expensive. A researcher may not care about generalizing to a
+%larger population. The validity of non-probability samples can be increased by
+%trying to approximate random selection, and by eliminating as many sources of
+%bias as possible.
 
-Nesta pesquisa, a Unidade de Observação e a Unidade de Análise são a mesma
-entidade, que são os membros do projeto de código aberto ou da rede social
-utilizada. A fim de facilitar o processo de amostragem da população coletamos os
-seguintes atributos de cada indivíduo da Unidade de Observação:
+%A convenience sample is a matter of taking what you can get. It is an accidental
+%sample. Although selection may be unguided, it probably is not random, using the
+%correct definition of everyone in the population having an equal chance of being
+%selected. Volunteers would constitute a convenience sample.
+
+\subsubsection{Construção das Fontes de Amostragem}
+\label{subsubsec:construcao_fonte_amostragem}
+
+A unidade básica de informação para construirmos as Fontes de Amostragem foram a
+lista de RMs disponível em sua respectiva
+FGRM\footnote{\url{http:bugs.python.com}} (FA01) e as discussões propostas pelos
+usuários (FA02). Em ambos os casos foram coletados os atributos:
 
 \begin{itemize}
 	\item Nome do Participante
@@ -270,15 +272,61 @@ foram coletadas outras informações através do questionário de pesquisa
 participou do estudo tais como localização geográfica, tempo de experiência,
 nome da função desempenhada, principais atribuições, dentre outros.
 
-\subsubsection{Plano de Pesquisa}
+No caso do Stack Overflow utilizamos um métrica adicional da própria rede social
+conhecida como
+reputação\footnote{\url{http://stackoverflow.com/help/whats-reputation}} que é
+uma medida aproximada de quanto a comunidade poderia confiar em determinado
+participante. A métrica é calculada com base nas ações do usuário e em como a
+comunidade avalia tais ações. Neste trabalho a ela foi utilizada para verificar
+a frequência de participação de determinado usuário em discussões sobre
+manutenção de software.
+
+Para a extrairmos os dados da rede social Stack Overflow utilizamos sua
+ferramenta web oficial que permite compartilhar, consultar e analisar os dados
+de todos os sites da rede Stack
+Exchange\footnote{\url{http://data.stackexchange.com/stackoverflow}}. A
+ferramenta possibilita a utilização da linguagem SQL para acesso aos dados. A
+Figura~\ref{fig:stack-exchange} exibe a interface da ferramenta utilizada para
+coletados dos dados. É possível ainda extrair os dados formato CSV (Comma
+Separated Values) o qual foi posteriormente inserido em um banco de dados para
+aplicação das regras de inclusão e exclusão.
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/stack-exchange.png}
+	\caption{Ferramenta de coleta de dados da rede Stack Overflow}
+\label{fig:stack-exchange}
+\end{figure}
+
+Para a fonte FA01 foi desenvolvido um Web Crawler para coletar as informações
+dos participantes. Um Web Crawler (rastreador web) é um programa de computador
+que navega pela World Wide Web de uma forma metódica e automatizada.  A partir
+de uma lista de RMs previamente coletadas a ferramenta coletou os dados dos
+participantes a partir do histórico de modificações da mesma. A
+Figura~\ref{fig:historico-rm-python} apresenta o histórico de registros de uma
+RM do projeto Python onde os dados dos participantes podem ser visualizados nos
+quadros inseridos. A ferramenta utiliza uma marcação HTML e os seu valor de
+classe (título, ou seja, nome de membro) para coletar os dados. Os dados
+coletados também foram armazenadas em um banco de dados para posterior aplicação
+de critérios de inclusão e exclusão.
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/historico-rm-python.pdf}
+	\caption{Histórico de relatos de uma RM do projeto Python}
+\label{fig:historico-rm-python}
+\end{figure}
+
+\subsubsection{Seleção dos Participantes}
 \label{subsubsec:pesquisa_profissionais_plano_pesquisa}
 
-De modo a construir as Unidades de Pesquisa que foram utilizadas neste estudo,
-aplicamos estratégias para cada uma das Fontes de Amostragem. Para o projeto de
-código aberto utilizamos os registros históricos das RMs ocorridos nos últimos
-05 anos. Além disso, foi coletada a frequência que um participante teve algum
-tipo de interação com projeto, como por exemplo abertura, solução ou comentários
-em RMs.
+Utilizamos estratégias distintas em cada fonte de amostragem para escolher os
+potenciais participantes do levantamento. Para a fonte FA01 utilizamos os
+registros históricos das RMs ocorridos nos últimos 05 anos. Além disso, foi
+coletada a frequência que um participante teve algum tipo de interação com
+projeto, como por exemplo abertura, solução ou comentários em RMs. Um
+participante seria incluído caso tivesse pelo menos uma interação no período
+avaliado.
 
 No caso do Stack Overflow realizamos a busca de discussões que tinham relação
 com as sentenças de busca descritas na Figura~\ref{fig:setencas-grupos}. Um
@@ -308,61 +356,6 @@ exclusão de participantes:
 	\caption{Sentenças utilizadas para escolhas dos grupos do LinkedIn e de
 		discussões no Stack Overflow}
 \label{fig:setencas-grupos}
-\end{figure}
-
-\subsubsection{Estratégia de Amostragem}
-\label{subsubsec:pesquisa_profissionais_estrategia_amostragem}
-
-Apesar das Fontes de Amostragens terem sido extraídas de diferente locais, pode
-ocorrer uma sobreposição de participantes, ou seja, alguém do projeto Python
-pode ter participado determinada discussão no Stack Overflow. Para minimizar a
-possibilidade da duplicação de participação de uma mesma unidade de observação
-realizamos uma  desenho de amostragem conhecido como Agrupada. Uma Amostragem
-agrupada pode ser aplicada quando grupos homogêneos (clusters) compostos por
-unidades distintas podem ser identificados numa população. Como consequência,
-devido a essa similaridade, apenas um subconjunto desta população pode ser
-utilizado como amostra de forma aleatória, sem perda significativa de
-confiança~\cite{thompson2012sampling}. Assim, a amostragem em agrupamentos é
-comumente aplicada em pesquisas em larga escala nas quais os pesquisadores têm
-restrições operacionais para recrutar e coletar
-dados~\cite{roberts2004mortality}.
-
-\subsubsection{Extração de Dados}
-\label{subsubsec:pesquisa_profissionais_extracao_dados}
-
-Para a extrairmos os dados da rede social Stack Overflow utilizamos sua
-ferramenta web oficial que permite compartilhar, consultar e analisar os dados
-de todos os sites da rede Stack
-Exchange\footnote{\url{http://data.stackexchange.com/stackoverflow}}. A
-ferramenta possibilita a utilização da linguagem SQL para acesso aos dados. A
-Figura~\cite{fig:stack-exchange}. É possível ainda extrair os dados formato CSV
-(Comma Separated Values) o qual foi posteriormente inserido em um banco de dados
-para aplicação das regras de inclusão e exclusão.
-
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/stack-exchange.png}
-	\caption{Ferramenta de coleta de dados da rede Stack Overflow}
-\label{fig:stack-exchange}
-\end{figure}
-
-Para o projeto de código aberto foi desenvolvido um Web Crawler para coletar as
-informações dos participantes. Um Web Crawler (rastreador web) é um programa de
-computador que navega pela World Wide Web de uma forma metódica e automatizada.
-A partir de uma lista de RMs previamente coletadas a ferramenta coletou os dados
-dos participantes a partir do histórico de modificações da mesma. A
-Figura~\cite{fig:historico-rm-python} apresenta o histórico de registros de uma
-RM do projeto Python onde os dados dos participantes podem ser visualizados nos
-quadros inseridos. A ferramenta utiliza uma marcação HTML e os seu valor de
-classe (título, ou seja, nome de membro) para coletar os dados. Os dados
-coletados também foram armazenadas em um banco de dados para posterior aplicação
-de critérios de inclusão e exclusão.
-
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/historico-rm-python.pdf}
-	\caption{Histórico de relatos de uma RM do projeto Python}
-\label{fig:historico-rm-python}
 \end{figure}
 
 \subsubsection{Questionário}
@@ -726,6 +719,42 @@ A principal ameaça à validade deste trabalho está no numero de respondentes d
 pesquisa. Apesar de ter sido realizada uma seleção metodológica de uma amostra
 representativa da população o número de participantes limita a extrapolação do
 resultados obtidos.
+
+
+Non-probability samples are limited with regard to generalization. Because they
+do not truly represent a population, we cannot make valid inferences about the
+larger group from which they are drawn. Validity can be increased by
+approximating random selection as much as possible, and making every attempt to
+avoid introducing bias into sample selection.
+
+The most obvious criticism about convenience sampling is sampling bias and that
+the sample is not representative of the entire population. This may be the
+biggest disadvantage when using a convenience sample because it leads to more
+problems and criticisms.
+
+Systematic bias stems from sampling bias. This refers to a constant difference
+between the results from the sample and the theoretical results from the entire
+population. It is not rare that the results from a study that uses a convenience
+sample differ significantly with the results from the entire population. A
+consequence of having systematic bias is obtaining skewed results.
+
+Another significant criticism about using a convenience sample is the limitation
+in generalization and inference making about the entire population. Since the
+sample is not representative of the population, the results of the study cannot
+speak for the entire population. This results to a low external validity of the
+study.
+
+
+When using convenience sampling, it is necessary to describe how your sample
+would differ from an ideal sample that was randomly selected. It is also
+necessary to describe the individuals who might be left out during the selection
+process or the individuals who are overrepresented in the sample.
+
+In connection to this, it is better if you can describe the possible effects of
+the people who were left out or the subjects that are overrepresented to your
+results. This will allow the readers of your research to get a good grasp of the
+sample that you were testing. It will also enable them to estimate the possible
+difference between your results and the results from the entire population.
 
 Vale ressaltar que todas as opiniões coletadas devem sempre ser levadas em conta
 a ferramenta que o profissional utilizava quando da aplicação do questionário.
