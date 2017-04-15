@@ -5,7 +5,7 @@
 %Autor: Vagner Clementino<vagnercs@dcc.ufmg.br> e
 %		Rodolfo Resende<rodolfo@dcc.ufmg.br>
 %Data Criação: sex fev  3 19:57:56 BRST 2017
-%Data Modificação: qui abr  6 20:33:42 -03 2017
+%Data Modificação: sáb abr 15 12:31:33 -03 2017
 %Data Revisão: qui abr  6 21:01:54 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Levantamento por Questionário com Profissionais}
@@ -112,7 +112,7 @@ amostras são os projetos de código e seus respectivos artefatos.
 O nosso levantamento com profissionais consistiu de um estudo exploratório sem
 uma hipótese prévia. Idealmente, este levantamento deveria ser aplicado em todos
 os profissionais envolvidos em desenvolvimento e manutenção de software e que
-tenham feito o uso razoável de alguma FGRM. Naturalmente não é possível alcançar
+tenham feito o uso razoável de alguma FGRM\@. Naturalmente não é possível alcançar
 aquela população. Desta forma, foi utilizada uma estratégia de amostragem de
 \textit{conveniência} onde o questionário foi aplicado em dois grupos distintos.
 Neste tipo de amostragem a seleção de indivíduos é realizada por conta de sua
@@ -176,15 +176,16 @@ válidas.
 \label{subsec:pesq_metodologias}
 
 No caso deste levantamento por questionário, o público-alvo é o conjunto de
-profissionais que trabalham com manutenção de software e que tenham uma razoável
-experiência de uso das FGRMs. A caracterização e estratificação da população que
-temos interesse não é simples. Neste sentido, é difícil dizer que um extrato com
-uma certa experiência com FGRMs é mais relevante do que outro com maior tempo de
-uso deste tipo de ferramenta ou ainda questões como processo de software ou
-linguagem de programação. Salvo melhor juízo, todos os desenvolvedores de código
-aberto e código proprietário, que de alguma forma tenham utilizado alguma FGRM,
-podem podem ser relevantes nesta investigação. Elaboramos um Plano de Pesquisa
-onde excluímos participantes conforme critérios que serão detalhados a seguir.
+profissionais que trabalham com desenvolvimento e manutenção de software e que
+tenham uma razoável experiência de uso com as FGRMs. A caracterização e
+estratificação da população que temos interesse não é simples. Neste sentido, é
+difícil dizer que um extrato com uma certa experiência com FGRMs é mais
+relevante do que outro com maior tempo de uso deste tipo de ferramenta ou ainda
+questões como processo de software ou linguagem de programação. Salvo melhor
+juízo, todos os desenvolvedores de código aberto e código proprietário, que de
+alguma forma tenham utilizado determinada FGRM, podem podem ser relevantes nesta
+investigação. Elaboramos um Plano de Pesquisa onde excluímos participantes
+conforme critérios que serão detalhados a seguir.
 
 \subsubsection{Fontes de Amostragem}
 \label{subsubsec:fontes_amostragem}
@@ -393,45 +394,48 @@ foram as seguintes:
 		Engenharia de Software.
 \end{enumerate}
 
-\subsubsection{Envio da Mensagem}
-\label{subsubsub:envio_mensagem}
+Após o processo avaliação do questionário, enviamos uma mensagem de correio
+eletrônico solicitando colaboração com nosso trabalho de mestrado.
 
-A fim de viabilizar e mitigar os riscos operacionais do envio manual de
-mensagens ao participantes foi desenvolvido um processo automatizado de remessa
-de mensagens aos participantes. O processo seguiu uma política que consiste em
-enviar uma mensagem ao participante com base em um modelo. Após um um prazo de
-dois dias uma nova mensagem era enviada. Foi construída uma lista para incluir o
-endereço eletrônico daqueles que não gostariam de receber lembretes ou de
-participar da pesquisa de modo a respeitar a privacidade do participante. As
-mensagens foram preenchidas (uma a uma) e enviadas por meio de correio
-eletrônico com base no seguinte modelo:
+%\subsubsection{Envio da Mensagem}
+%\label{subsubsub:envio_mensagem}
 
-\fbox{\begin{minipage}{\textwidth}
-Dear \{\{ nome do participante\}\}\!
+%A fim de viabilizar e mitigar os riscos operacionais do envio manual de
+%mensagens ao participantes foi desenvolvido um processo automatizado de remessa
+%de mensagens aos participantes. O processo seguiu uma política que consiste em
+%enviar uma mensagem ao participante com base em um modelo. Após um um prazo de
+%dois dias uma nova mensagem era enviada. Foi construída uma lista para incluir o
+%endereço eletrônico daqueles que não gostariam de receber lembretes ou de
+%participar da pesquisa de modo a respeitar a privacidade do participante. As
+%mensagens foram preenchidas (uma a uma) e enviadas por meio de correio
+%eletrônico com base no seguinte modelo:
 
-I’m Vagner Clementino (\url{homepages.dcc.ufmg.br/~vagnercs}), Master Student at
-Federal University of Minas Gerais, Brazil. I’m conducting a research,
-supervised by Prof\. Rodolfo Resende \@-\@ \url{homepages.dcc.ufmg.br/~rodolfo}
-concerned with improvements in Issue Tracking System. As part of them, we
-planned and executed a survey aiming at to reaching a large-scale population of
-researchers/practitioners interested on the improve the features of the Issue
-Tracking Systems. Based on your area of interest, we kindly invite you to take
-part in the following survey:
+%\fbox{\begin{minipage}{\textwidth}
+%Dear \{\{ nome do participante\}\}\!
 
-\{\{url do formulario\}\}
+%I’m Vagner Clementino (\url{homepages.dcc.ufmg.br/~vagnercs}), Master Student at
+%Federal University of Minas Gerais, Brazil. I’m conducting a research,
+%supervised by Prof\. Rodolfo Resende \@-\@ \url{homepages.dcc.ufmg.br/~rodolfo}
+%concerned with improvements in Issue Tracking System. As part of them, we
+%planned and executed a survey aiming at to reaching a large-scale population of
+%researchers/practitioners interested on the improve the features of the Issue
+%Tracking Systems. Based on your area of interest, we kindly invite you to take
+%part in the following survey:
 
-You were chosen because your relevant participation/contribution in \{\{nome da
-fonte de amostragem\}\}\@-\@ \{\{url da fonte de amostragem\}\}. Your opinion is
-essential to strength our findings. Please, help us accordingly to your
-possibilities by answering this survey until \{\{data limite\}\}. As soon as we
-conclude the data analysis, we will share the results with all participants and
-the software engineering community. If you have already fulfilled this
-questionnaire, please ignore this email.
+%\{\{url do formulario\}\}
 
-Thanks in advance,\\
-Vagner Clementino\\
+%You were chosen because your relevant participation/contribution in \{\{nome da
+%fonte de amostragem\}\}\@-\@ \{\{url da fonte de amostragem\}\}. Your opinion is
+%essential to strength our findings. Please, help us accordingly to your
+%possibilities by answering this survey until \{\{data limite\}\}. As soon as we
+%conclude the data analysis, we will share the results with all participants and
+%the software engineering community. If you have already fulfilled this
+%questionnaire, please ignore this email.
 
-\end{minipage}}
+%Thanks in advance,\\
+%Vagner Clementino\\
+
+%\end{minipage}}
 
 \section{Resultados}
 \label{sec:analise_dados}
@@ -550,7 +554,7 @@ integrada.
 \end{figure}
 
 Inicialmente gostaríamos de saber qual o nível de satisfação dos participantes
-com as funcionalidades oferecida(s) pela(s) FGRM(s) que ele utiliza atualmente.
+com as funcionalidades oferecidas pelas FGRMs que ele utiliza atualmente.
 Esta medida pode ser visualizada na
 Figura~\ref{grafico_melhorias_fgrm_nivel_satisfacao}. Em grande parte os
 respondentes estão satisfeitos com as funcionalidades. A resposta com maior
@@ -573,7 +577,7 @@ No mesmo questionário verificamos se o respondente recomendaria a ferramenta qu
 utiliza para outro projeto. A probabilidade de recomendação é exibida na
 Figura~\ref{fig:grafico_melhorias_fgrm_probabilidade_recomentacao}. De maneira
 similar ao nível de satisfação grande parte dos participantes tendem a
-recomendar a FGRM. Com base neste resultado, podemos deduzir que os
+recomendar a FGRM\@. Com base neste resultado, podemos deduzir que os
 profissionais estão realmente satisfeitos com as funcionalidades da ferramenta
 que utiliza ao ponto de recomendá-la.
 
@@ -761,3 +765,18 @@ sentido, a generalização dos resultados passa por esta característica do estu
 
 \section{Resumo do Capítulo}
 \label{sec:resumo_do_capitulo}
+
+Neste capítulo realizamos um levantamento mediante questionário com o objetivo
+de entender e analisar a opinião de profissionais de desenvolvimento e
+manutenção de software sobre as funcionalidades oferecidas pelas FGRMs. O
+questionário foi preenchido por 85 participantes o que nos permitiu observar a
+existia um bom nível de aceitação das funcionalidades no momento da realização
+do estudo. Em contrapartida, quando novos comportamentos foram apresentados, na
+forma de melhorias das funcionalidades da ferramenta, muito dos desenvolvedores
+se mostraram interessados. As propostas de melhorias foram baseadas nos
+resultados obtidos do Mapeamento Sistemático descrito no
+Capítulo~\ref{ch:mapeamento-sistematico}. Este fato pode ilustrar a necessidade
+de que os estudos propostos na literatura se integrem nas ferramentas, como por
+exemplo por meio de protótipos, de modo a atender as necessidades dos
+profissionais e minimizar a distância entre o estado da arte e o estado da
+prática.

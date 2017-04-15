@@ -1,0 +1,30 @@
+
+[13:16:19] Rodolfo S. F. Resende: grupo 2 -> profissionais que contribuem em projetos de código aberto
+[13:17:21] Rodolfo S. F. Resende: Não pode
+[13:17:48] Rodolfo S. F. Resende: Grupo 2 profissionais relacionados a grupos que contribuem
+[13:18:53] Rodolfo S. F. Resende: grupo 2 é um subgrupo Vagner de grupo de código aberto
+[13:28:32] Rodolfo S. F. Resende: Vc mostra que 1)sabe que caracterizar a população é difícil de estratificar
+[13:28:47] Rodolfo S. F. Resende: estratificar é dificil
+[13:29:29] Rodolfo S. F. Resende: o estudo de fulano[reef] tem interesse em pessoas com 10 ou mais anos de exp
+
+
+
+
+A população de interesse deste levantamento é o conjunto de profissionais
+envolvidos
+em manutenção de software. Naturalmente é difícil definir o tamanho e
+características
+desta população de modo a **mensurar** uma amostra significativa. Neste
+sentido, visando minimizar enviesamento deste estudo, o questionário foi
+replicado em
+três grupos: evitar generalizar de maneira "indevida"  por exemplo
+grupo 2 -> profissionais que contribuem em projetos de código aberto.
+mais cautela...
+
+Cuidado com a população 
+
+um segmento que fosse representativo de pessoas que trabalham de código aberto. formou alguma expectativa qeu eles pudesse do segemto de profissionais que contribuiem com projetos 
+
+Eu sei qual a amostragem não é apenas um ruído
+
+

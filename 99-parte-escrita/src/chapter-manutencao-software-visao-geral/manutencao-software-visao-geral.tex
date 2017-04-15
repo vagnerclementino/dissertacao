@@ -1019,6 +1019,7 @@ deste contexto a partir da análise de aspectos específicos das FGRMs.
 
 \subsection{Introdução}
 \label{subsec:caracterizacao_intro}
+
 Quando uma empresa ou um projeto de software de código aberto decide adotar uma
 Ferramenta de Gerenciamento de Requisições de Mudança~-~FGRM um possível desafio
 é encontrar aquela que melhor atenda suas necessidades. Um possível fundamento
@@ -1060,11 +1061,13 @@ projetos que utiliza determinada ferramenta, mas pelas caraterísticas que o
 software possui e que o torna diferenciável dentro do seu domínio.
 
 \todobegin{Revisar este parágrafo para adequar a nova estrutura do capítulo}
+
 Este capítulo está organizado da seguinte forma: na
 Seção~\ref{sec:objetivo_do_capítulo} discutimos os objetos deste capítulo; na
 Seção~\ref{sec:metodologia} apresentamos o método utilizado na condução do
 estudo, em especial a técnica de Cartões de Ordenação e o levantamento realizado
 com os profissionais para escolher as ferramenta do estudo.
+
 \todoend{}
 
 \subsection{Objetivo do Capítulo}
@@ -1111,95 +1114,88 @@ A primeira etapa consistiu da definição das ferramentas que seriam utilizadas 
 estudo. A partir de uma pesquisa na Internet obtivemos um conjunto inicial de 50
 ferramentas\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}
 que podem ser visualizadas no Anexo~\ref{ch:app-lista-fgrm}. Devido ao esforço
-necessário e a dificuldade de realizar a análise em cada uma daquelas
-ferramentas, optamos por escolher um subconjunto de sistemas que fossem mais
-representativos, tomando como base a opinião de profissionais envolvidos em
-manutenção e desenvolvimento de software. A representatividade neste caso
-corresponde a opinião do profissional sobre notoriedade que a ferramenta possui
-dentro do seu domínio de aplicação em comparação com as demais que lhe foram
-apresentadas ou outras do qual o profissional tenha prévio conhecimento.
+necessário e a dificuldade de realizar a análise em cada uma optamos por
+escolher um subconjunto de sistemas que fossem mais representativos, tomando
+como base a opinião de desenvolvedores de código aberto e código proprietário,
+que tenham utilizado alguma FGRM. A representatividade neste caso corresponde a
+opinião do profissional sobre notoriedade que a ferramenta possui dentro do seu
+domínio de aplicação em comparação com as demais que lhe foram apresentadas ou
+outras do qual o profissional tenha prévio conhecimento.
 
-\subsubsection{Desenho da Pesquisa com Profissionais}
+\subsubsection{Desenho do Levantamento por Questionário}
 \label{ssub:metodologia_desenho_da_pesquisa_com_profissionais}
 
-A opinião dos profissionais foi obtida mediante a realização de uma pesquisa de
-opinião (survey~\cite{wohlin2012experimentation}) realizada com o uso de um
-formulário eletrônico. O formulário foi estruturado em duas partes principais: a
-formação de base do participante (background) e a avaliação das ferramentas. Na
-primeira parte estávamos interessados em conhecer as características do
-respondente. Esta informação é relevante tendo em vista que, como descreveremos
-a seguir, o questionário foi replicado em três grupos distintos de
-profissionais. Na segunda parte apresentamos as ferramentas e foi solicitado aos
-participantes que avaliassem a relevância de cada uma delas através de questões
-de múltipla escolha. As opções de respostas foram estruturadas em escala do tipo
-Likert~\cite{robbins2011plotting}. Também foi disponibilizado aos participantes
-um campo de texto livro no qual era possível informar FGRMs que ele entenda por
-relevante, mas que não estava na lista que lhe foi apresentada. Para estas
-ferramentas que foram citadas de forma espontânea foi atribuído um grau de
-importância igual ``Muito relevante'' conforme Tabela~\ref{tab:graus_relevancia}
-no cálculo da métrica de relevância conforme
-equação~\ref{eq:escolha_ferramenta}.
+A opinião dos profissionais foi obtida mediante a realização de um levantamento
+mediante questionário (survey)~\cite{wohlin2012experimentation}.O formulário foi
+estruturado em duas partes: a formação de base do participante (background) e a
+avaliação das ferramentas. Na primeira, estávamos interessados em conhecer as
+características do respondente. Esta informação é relevante tendo em vista que,
+como descreveremos a seguir, o questionário foi replicado em dois grupos
+de profissionais. Na segunda, apresentamos as ferramentas e foi
+solicitado aos participantes que avaliassem a relevância de cada uma delas
+através de questões de múltipla escolha. As opções de respostas foram
+estruturadas em escala do tipo Likert~\cite{robbins2011plotting}. Também foi
+disponibilizado aos participantes um campo de texto livro no qual era possível
+informar FGRMs que ele entenda por relevante, mas que não estava na lista que
+lhe foi apresentada. Para estas ferramentas que foram citadas de forma
+espontânea foi atribuído um grau de importância igual ``Muito relevante''
+conforme Tabela~\ref{tab:graus_relevancia} no cálculo da métrica de relevância
+conforme equação~\ref{eq:escolha_ferramenta}.
 
-Antes da efetiva aplicação do questionário em alguma amostra da população do
-estudo, o documento foi validado em um processo de três etapas. Na primeira
-parte foi solicitado a dois pesquisadores experientes da área de Engenharia de
-Software que avaliassem o formulário. A partir das sugestões obtidas dos
-pesquisadores foram realizadas adequações no documento. Após as alterações uma
-nova versão do formulário foi enviada para dois profissionais envolvidos
-diretamente em manutenção de software. O critério utilizado para seleção dos
-profissionais foi o tempo de experiência com desenvolvimento e manutenção de
-software, que era em média de 10 anos. O formulário foi modificado com as
-sugestões dos profissionais e isso finaliza a segunda etapa de validação. A
-última etapa consistiu na realização de um piloto com dez profissionais que
-trabalham em um setor de uma empresa pública de informática. Os profissionais
-tiveram que preencher o questionário, contudo, foram adicionadas questões
-adicionais onde era possível inserir sugestões de melhoria. O resultado deste
-processo de validação é o questionário presente no
+Antes do aplicação o questionário foi validado em um processo de três etapas. Na
+primeira parte foi solicitado a avaliação por dois pesquisadores experientes da
+área de Engenharia de Software. Após as alterações uma nova versão do formulário
+foi enviada para dois profissionais que trabalham com manutenção de software. O
+critério utilizado para seleção dos profissionais foi o tempo de experiência com
+desenvolvimento e manutenção de software, que era em média de 10 anos. O
+formulário foi modificado com as sugestões dos profissionais e isso finaliza a
+segunda etapa de validação. A última etapa consistiu na realização de um piloto
+com dez profissionais que trabalham em um setor manutenção de software de uma
+empresa pública de informática. Trata-se de uma amostra de conveniência devida a
+nossa facilidade de acesso a estes desenvolvedores. Os profissionais tiveram que
+preencher o questionário, contudo, foram adicionadas questões adicionais onde
+era possível inserir sugestões de melhoria. O resultado deste processo de
+validação é o questionário presente no
 Anexo~\ref{ch:app-form-selecao-ferramentas}. Como o público-alvo do questionário
-poderia incluir desenvolvedores de diferentes nacionalidades foi construído uma
+poderia incluir desenvolvedores de diferentes nacionalidades foi criada uma
 versão em língua inglesa do formulário.
 
-A população de interesse deste levantamento é o conjunto de profissionais
-envolvidos em manutenção de software. Naturalmente é difícil definir o tamanho e
-características desta população de modo a mensurar uma amostra significativa.
-Neste sentido, visando minimizar enviesamento deste estudo, o questionário
-foi replicado em três grupos:
+No caso deste levantamento por questionário, a população é o conjunto de
+profissionais que trabalham com desenvolvimento e manutenção de software e que
+tenham uma razoável experiência de uso com as FGRMs. A caracterização e
+estratificação desta população não é simples. Neste sentido, visando minimizar
+possíveis enviesamentos replicamos o questionário em dois grupos:
 
 \begin{description}
-	\item[Grupo 01:] Profissionais de empresa pública e privada de
-			desenvolvimento e manutenção de software.
-	\item[Grupo 02:] Profissionais que contribuem em projetos de
-		código aberto
-	\item[Grupo 03:] Profissionais que participam de grupos de
-		interesse sobre desenvolvimento e manutenção de software em uma rede
-		social profissional (LinkedIn) ou aqueles que participam de discussão
-		sobre este assunto em uma rede social (Stack Overflow).
+	\item[Grupo 01:] Profissionais que participam de fóruns e discussões sobre
+		desenvolvimento e manutenção de software na rede social Stack Overflow.
+	\item[Grupo 02:] Profissionais relacionados a grupos que contribuem em
+		projetos de código aberto.
 \end{description}
 
-Os participantes que compõem cada grupo foram escolhidos conforme critérios que
-são detalhados no Capítulo~\ref{ch:pesquisa-profissionais}. A reutilização desta
-base de desenvolvedores se deu por conta de ambos os estudos compartilharem a
-mesma população de interesse, podendo neste caso compartilhar a mesma amostra.
+A seleção dos potenciais participantes do levantamento foi utilizando os mesmo
+critérios que foram aplicados no estudo descrito na
+Seção~\ref{subsubsec:pesquisa_profissionais_plano_pesquisa}.
 
 \subsubsection{Critérios de Seleção}
 \label{ssub:metodologia_criterios_selecao}
 
 Com base nos dados obtidos da pesquisa com os profissionais, as FGRMs foram
-classificadas como \textit{''ferramentas''} e \textit{''serviços da internet''}
-utilizando a documentação do software. O primeiro grupo representa os softwares
-que são capazes de serem implantados na infraestrutura do seu cliente e permite
-algum grau de personalização de pelo menos um dos componentes, como por exemplo,
-o banco de dados utilizado. No segundo grupo estão os software que ofertam a
-gerência das RMs mediante uma arquitetura do tipo Software como Serviço
-(Software as Service)~\cite{fox2013engineering}, onde certos tipos de alterações
-no comportamento do software são mais restritas. Acreditamos que ao escolher
-ferramentas dos dois tipos iremos cobrir uma grande parte do domínio de
-aplicação das FGRMs. Optamos por escolher~\textit{06 ferramentas} para o
-estudo, sendo três de cada um dos grupos.
+categorizados como \textit{''ferramentas''} e \textit{''serviços da internet''}
+utilizando a documentação do software. A primeira categoria representa os
+softwares que são capazes de serem implantados na infraestrutura do seu cliente
+e permite algum grau de personalização de pelo menos um dos componentes, como
+por exemplo, o banco de dados utilizado. No segunda estão os software que
+ofertam a gerência das RMs mediante uma arquitetura do tipo Software como
+Serviço (Software as Service)~\cite{fox2013engineering}, onde certos tipos de
+alterações no comportamento do software são mais restritas. Acreditamos que ao
+escolher ferramentas dos dois tipos iremos cobrir uma grande parte do domínio de
+aplicação das FGRMs. Optamos por escolher~\textit{03 ferramentas} de cada
+categoria.
 
 Para seleção das ferramentas utilizados a formula apresentada na
-Equação~\ref{eq:escolha_ferramenta}.  Atribuímos a métrica $r_i$ que representa
-a relevância de determinada ferramenta $f_i$. A métrica é calculada somando a
+Equação~\ref{eq:escolha_ferramenta}. Atribuímos a métrica $r_i$ que representa a
+relevância de determinada ferramenta $f_i$. A métrica é calculada somando a
 frequência de cada um dos graus de relevância apresentado na
 Tabela~\ref{tab:graus_relevancia} multiplicado pela pelo grau de relevância
 descrito na mesma tabela.
