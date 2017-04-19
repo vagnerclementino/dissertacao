@@ -252,14 +252,15 @@ tais como $n = {5, 10, 30}$.
 \subsection{Suporte à Integração Contínua}
 \label{sub:suporte_integracao_continua}
 
-\sugestao{05}{Integração Contínua}
+\sugestao{05}{As FGRMs deveriam fornecer suporte à processo de Integração
+    Contínua.}
 
 \paragraph{Justificativa:}
 \label{par:justificativa_s05}
 
-Dentro da disciplina de Gerência de Configuração, a \textit{Integração Contínua}
-(IC) é a prática de construir (build) e implantar (deploy) imediatamente após um
-desenvolvedor consolidar (commit) o código fonte para o
+Dentro da disciplina de Gerência de Configuração, a \textit{Integração
+    Contínua} (IC) é a prática de construir (build) e implantar (deploy)
+imediatamente após um desenvolvedor consolidar (commit) o código fonte para o
 repositório~\cite{aiello2010configuration}. A IC tornou-se dentro das práticas
 propostas pelos agilistas e vêm ganhando popularidade em ambientes de
 desenvolvimento mais tradicionais. Um possível gatilho para o processo de IC
@@ -290,14 +291,21 @@ falha que, por exemplo, pode ter sido causada pela solução de uma RM\@.
 \label{par:limitacoes_s05}
 
 Algumas vezes a mudança de situação de uma RM para \textit{Fechada} pode não
-representar a sua solução.
-
+representar a sua solução. Por exemplo, a falha descrita pode ser definida como
+de baixo impacto e desta maneira não tratada, ou ainda o conjunto de fatores que
+geraram o problema descrito na RM deixa de existir. Nestas situação não faz
+sentido que responsável por fechar a RM engatilhe um processo de integração
+contínua.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s05}
 
-The results of the build are posted on a dashboard, including the most recent
-changes responsible for any system outages, including a failed build
+Após um desenvolvedor solucionar determinada RM, mudança a sua situação para
+\textit{Fechada} por exemplo, a FGRM dispara o processo de compilação do
+sistema. O resultado da compilação poderia ser exibido em um painel de controle
+incluindo o responsável pela mudança mais recente no sistema, incluindo
+compiações que resultaram em falhas. O panel poderia incluir ainda dados da RM
+que engatilhou o processo de compilação como por exemplo o seu número e título.
 
 \subsection{Suporte à Linguagem de Marcação}
 \label{sub:suporte_linguagem_marcacao}
@@ -306,6 +314,15 @@ changes responsible for any system outages, including a failed build
 
 \paragraph{Justificativa:}
 \label{par:justificativa_s06}
+
+Considerando o modelo de uma RM apresentado na
+Seção~\ref{sec:requisicao_de_mudanca}, é possível que as informações mais
+relevantes estão no atributo \textit{relato}, que contêm a descrição da melhoria
+ou falha em formato de texto. Com base no resultado do estudo realizado na
+Seção~\ref{sec:caracterizacao_ferramentas} verificou-se que a maior parte das
+ferramentas analisadas utilizam texto simples, ou seja, não permitem o uso de
+linguagens com semântica de apresentação, o que significa que sua especificação
+prescreve como o dado estruturado será mostrado, tal como o HTML\@  ou CSS\@.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s06}
