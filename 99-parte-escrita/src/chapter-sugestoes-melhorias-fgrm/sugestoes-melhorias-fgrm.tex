@@ -323,15 +323,42 @@ Seção~\ref{sec:caracterizacao_ferramentas} verificou-se que a maior parte das
 ferramentas analisadas utilizam texto simples, ou seja, não permitem o uso de
 linguagens com semântica de apresentação, o que significa que sua especificação
 prescreve como o dado estruturado será mostrado, tal como o HTML\@  ou CSS\@.
+Algumas linguagens tal como
+Markdown\footnote{\url{https://daringfireball.net/projects/markdown/}} e
+reStructuredText\footnote{\url{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html}}
+vêm ganhando popularidade para publicação de documentação técnica por
+apresentarem características tais como realce da sintaxe de palavras-chaves de
+código fonte. As FGRMs poderiam adotar este tipo de linguagem como um dos
+formatos aceitos para redigir uma RM\@.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s06}
 
+Em um estudo sobre a transcrição de materiais de estudo, Voegler e
+outros~\cite{voegler2014markdown} mostraram que o uso da linguagem Markdown pode
+melhorar a qualidade técnica e a acessibilidade do documento resultante. As
+FGRMs poderiam se apropriar destas facilidades com o objetivo de melhorar a
+legibilidade do texto contido na RM\@. Diante do uso deste tipo de formato, os
+Reportadores poderiam por exemplo incluir no próprio relato uma parte do código
+fonte do qual ele supõem que está localizado a falha.
+
 \paragraph{Limitações:}
 \label{par:limitacoes_s06}
 
+Considerando que os responsáveis por reportar uma RM possuem diferentes níveis
+de conhecimento sobre o sistema. Neste sentido, é possível que nem todos os
+Reportadores consigam fazer uso de todas as facilidades oferecidas por este
+formato. Além disso, a utilização de uma linguagem que exija conhecimento
+prévio pode inibir o desejo de relatar uma RM\@.
+
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s06}
+
+Conforme discutido na Seção~\ref{sec:caracterizacao_ferramentas}, algumas FGRMs
+permitem a utilização de linguagens de marcação para relatar uma RM\@. O módulo
+para uma criação de uma RM, que no contexto da plataforma Github corresponde ao
+elemento \textit{issue}, permite o uso da linguagem Markdown como um dos
+formatos disponíveis para o relato da RM\@.
 
 \subsection{Priorização automática de RMs}
 \label{sub:priorizacao_automatica_rms}
@@ -341,19 +368,56 @@ prescreve como o dado estruturado será mostrado, tal como o HTML\@  ou CSS\@.
 \paragraph{Justificativa:}
 \label{par:justificativa_s07}
 
+Algumas equipes de manutenção de software estão adotando práticas propostas
+pelos agilistas~\cite{svensson2005introducing}. Naquele contexto, um problema
+recorrente, é que iteração (sprint) estão sujeitas à interrupções por demandas
+urgentes de clientes~\cite{bennett2000software}. Uma possível solução é a
+utilização de uma reserva de tempo (buffer) que não é alocada no planejamento da
+iteração de modo a atender eventuais demandas não
+esperadas~\cite{schwaber2002agile}. Apresentar da solução apresentada ainda é
+necessário definir quais RM devem ser priorizadas durante a iteração, o que
+geralmente é realizado manualmente. As FGRM poderiam ajudar por meio do suporte
+à priorização automática de RMs urgente e não esperadas. No levantamento com
+profissionais esta sugestão ficou entre as três mais frequentemente selecionadas
+pelos participantes quando foi questionado sobre novas funcionalidades para as
+FGRMs.
+
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s07}
+
+Ao realizarmos a priorização automática estamos reduzindo o esforço desempenhado
+por alguns membros da equipe de manutenção, em especial pelo Agente de Triagem,
+cujas atribuições estão descritas na
+Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}. No caso em
+que as RMs forem corretamente classificadas como urgentes, elas poderão ser
+solucionadas em um prazo mais curto. Para as equipes que organizam as suas
+atividades em iterações (sprints) pode ocorrer a redução de iterações
+interrompidas que pode ocasionar frustração e desmotivação com relação ao
+planejamento e objetivos da iteração.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s07}
 
+A priorização automática pode ser vista como um problema de
+\textit{Classificação de RM}, conforme discutido na
+Seção~\ref{ssub:melhorias_dim_processo}. Em geral, são utilizadas técnicas de
+Mineração de Dados com o objetivo de classificar uma RM, o que possui diversas
+limitações. Neste sentido, o uso de técnicas supervisionadas, ou seja, com
+suporte de membros da equipe de manutenção, podem apresentar melhores
+resultados.
+
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s07}
 
-\subsection{Suporte à Reuniões Diárias (Daily)}
-\label{sub:suporte_reunicao_diarias}
+Após uma nova RM ser criada, a FGRM dispara um processo para determinar se ela
+deve ser classificada com urgente conforme critérios previamente definidos. Em
+positivo, a ferramenta realiza a priorização da RM através, por exemplo, da
+atribuição automatizada para o desenvolvedor mais apto.
 
-\sugestao{08}{Ajuda do desenvolvedor em sua reunião diária (daily)}
+\subsection{Suporte à tarefas compartilhadas}
+\label{sub:suporte_tarefas_compartilhadas}
+
+\sugestao{08}{Suporte a tarefas compartilhadas foram as mais frequentes}
 
 \paragraph{Justificativa:}
 \label{par:justificativa_s08}
@@ -367,25 +431,35 @@ prescreve como o dado estruturado será mostrado, tal como o HTML\@  ou CSS\@.
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s08}
 
-\subsection{Suporte à tarefas compartilhadas}
-\label{sub:suporte_tarefas_compartilhadas}
+%\subsection{Suporte à Reuniões Diárias (Daily)}
+%\label{sub:suporte_reunicao_diarias}
 
-\sugestao{09}{Suporte a tarefas compartilhadas foram as mais frequentes}
+%\sugestao{08}{Ajuda do desenvolvedor em sua reunião diária (daily)}
 
-\paragraph{Justificativa:}
-\label{par:justificativa_s09}
+%\paragraph{Justificativa:}
+%\label{par:justificativa_s08}
 
-\paragraph{Benefício Gerado:}
-\label{par:papéis_afetados_s09}
+%Seguindo na mesma linha de adotação por práticas dos agilistas sendo adotadas
+%pelas equipes de manutenção de software, verificamos o emprego da Reunião Diária
+%(Daily)~\cite{meyer2014agile}. No estudo de Heeager~\cite{Heeager2015},que
+%avalia adotação das práticas propostas pelos agilistas em uma empresa de
+%manutenção de software, afirmou que as reuniões diárias serviram como um lugar
+%para identificação do conhecimento e aprendizagem da equipe. Diante das
+%vantagens deste tipo de prática, as FGRMs poderiam ajudar ao desenvolvedor em
+%responder as questões que são propostas neste tipo de reunião: ``O que eu fiz no
+%dia anterior?'', ``O que eu planejo fazer hoje?'', e ``Que impedimentos estou
+%enfrentando?''~\cite{meyer2014agile}. No levantamento descrito no
+%Capítulo~\ref{ch:pesquisa-profissionais} este comportamento foi marcado com uma
+%funcionalidade desejável nas FGRMs por X\% dos participantes.
 
-\paragraph{Limitações:}
-\label{par:limitacoes_s09}
+%\paragraph{Benefício Gerado:}
+%\label{par:papéis_afetados_s08}
 
-\paragraph{Exemplo de Utilização:}
-\label{par:exemplo_de_utilização_s09}
+%\paragraph{Limitações:}
+%\label{par:limitacoes_s08}
 
-
-
+%\paragraph{Exemplo de Utilização:}
+%\label{par:exemplo_de_utilização_s08}
 \section{Avaliação das Melhorias Propostas}
 \label{sec:sug_melhoria_avaliacao_das_melhorias}
 
