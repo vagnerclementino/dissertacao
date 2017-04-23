@@ -304,7 +304,7 @@ Após um desenvolvedor solucionar determinada RM, mudança a sua situação para
 \textit{Fechada} por exemplo, a FGRM dispara o processo de compilação do
 sistema. O resultado da compilação poderia ser exibido em um painel de controle
 incluindo o responsável pela mudança mais recente no sistema, incluindo
-compiações que resultaram em falhas. O panel poderia incluir ainda dados da RM
+compilações que resultaram em falhas. O painel poderia incluir ainda dados da RM
 que engatilhou o processo de compilação como por exemplo o seu número e título.
 
 \subsection{Suporte à Linguagem de Marcação}
@@ -417,19 +417,53 @@ atribuição automatizada para o desenvolvedor mais apto.
 \subsection{Suporte à tarefas compartilhadas}
 \label{sub:suporte_tarefas_compartilhadas}
 
-\sugestao{08}{Suporte a tarefas compartilhadas foram as mais frequentes}
+\sugestao{08}{Suporte a tarefas compartilhadas}
 
 \paragraph{Justificativa:}
 \label{par:justificativa_s08}
 
+Dentro do que é proposto pelos agilistas, uma boa prática é propriedade
+compartilhada de código~\cite{meyer2014agile}. Por outro lado, mantenedores
+tendem a ser tornarem especialistas nos sistemas do qual são
+responsáveis~\cite{singer1998practices}. A propriedade compartilhada de tarefas
+permite que a carga de trabalho seja distribuída de forma mais igual, permitindo
+que os mantenedores sejam capaz de ajudar uns aos outros em períodos de muita
+atividade. No contexto das FGRMs, a propriedade compartilhada de atividades
+poderia ser representada como o compartilhamento RM, ou seja, a ``propriedade''
+de uma RM não seria de um único desenvolvedor mas de dois ou mais responsáveis.
+Uma abordagem semelhante a este sugestão foi realizada no estudo proposto por
+Banitaan \& Alenezi~\cite{banitaan2013decoba} no qual os autores construíram uma
+comunidades de desenvolvedores baseados nos comentários realizados nas RMs. Cada
+nova RM criada era atribuída para uma comunidade. Os resultados mostraram que a
+abordagem atingiu uma precisão razoável de atribuição de RMs, além de construir
+um conjunto de desenvolvedores com experiência em solucionar determinas RMs.
+
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s08}
+
+A atribuição de uma RM a mais de um desenvolvedor ajuda a otimizar a carga de
+trabalho em toda a equipe e pode aumentar o moral do time. Neste contexto, os
+mantenedores deixam de ser especialistas em determinados sistemas para se
+tornarem generalistas, trabalhando com outros projetos. Esses benefícios já são
+discutidos na literatura sobre o desenvolvimento e a manutenção que adotam as
+práticas propostas pelos agilistas~\cite{dybaa2008empirical,rudzki2009agile}.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s08}
 
+Uma funcionalidade com suporte ao compartilhamento de tarefas dos mesmo desafios
+e problemas do processo de atribuição automatizada de RMs, conforme discutido na
+Seção~\ref{ssub:melhorias_dim_processo}. Além disso a RM deve permitir a divisão
+atômica de tarefas de modo que cada atividade fique com um único desenvolvedor,
+o que nem sempre é possível.
+
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s08}
+
+Quando uma nova RM é criada um processo automatizado define dois ou mais
+desenvolvedores como responsáveis. Posteriormente, a RM é dividida em tarefas
+que serão compartilhada entre o conjunto de desenvolvedores para o qual ela foi
+atribuída.
 
 %\subsection{Suporte à Reuniões Diárias (Daily)}
 %\label{sub:suporte_reunicao_diarias}
@@ -460,18 +494,19 @@ atribuição automatizada para o desenvolvedor mais apto.
 
 %\paragraph{Exemplo de Utilização:}
 %\label{par:exemplo_de_utilização_s08}
+
 \section{Avaliação das Melhorias Propostas}
 \label{sec:sug_melhoria_avaliacao_das_melhorias}
 
-Este Capítulo se propôs apresentar um conjunto de sugestões que foram
-construídas tomando como base a literatura da área e os resultados e
-contribuições desta dissertação. Com o objetivo de avaliar a relevância e o grau
-de facilidade de implementação das recomendações propostas, conduzimos um
-levantamento mediante questionário com profissionais que contribuem em projeto
-de código aberto hospedados no Github. A metodologia utilizada na condução do
-levantamento é descrita na próxima subseção.
+Este Capítulo apresentou um conjunto de sugestões que foram construídas tomando
+como base a literatura da área e os resultados e contribuições desta
+dissertação. Com o objetivo de avaliar a relevância e o grau de facilidade de
+implementação das recomendações propostas, conduzimos um levantamento mediante
+questionário com profissionais que contribuem em projeto de código aberto
+hospedados no Github. A metodologia utilizada na condução do levantamento é
+descrita na próxima subseção.
 
-\subsection{Metodologia Levantamento com Questionário}
+\subsection{Metodologia do Levantamento com Questionário}
 \label{sub:sug_melhoria_metodologia_levantamento}
 
 Para realizarmos a coleta dos dados foi utilizado um levantamento (survey)
