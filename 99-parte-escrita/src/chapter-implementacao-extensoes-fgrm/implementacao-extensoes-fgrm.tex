@@ -369,26 +369,26 @@ definidos para a escolha de um projeto:
 \end{itemize}
 
 Após aplicação dos critérios descritos obtivemos os projetos descritos na
-Tabela~\ref{tab:projetos_utilizados_para_avaliacao}. Conforme pode ser observado
-os projetos selecionados referem-se a ferramentas bem estabelecidas e largamente
-utilizadas por organizações e projetos de código aberto.
+Tabela~\ref{tab:projetos_utilizados}. Conforme pode ser observado os projetos
+selecionados referem-se a ferramentas bem estabelecidas e largamente utilizadas
+por organizações e projetos de código aberto.
 
 \begin{table}[htpb]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}cccccc@{}}
+\begin{tabular}{@{}lccccc@{}}
 \toprule
-\textbf{Projeto} & \textbf{Revisões} & \textbf{Ramificações} &
-\textbf{Lançamentos} & \textbf{Contribuidores} & \textbf{Contrib.\ com E-mail} \\
-\midrule
-bugzilla & 9784 & 30 & 460 & 100 & 30 \\
-mantisbt & 10181 & 8 & 65 & 80 & 32 \\
-redmine & 13115 & 27 & 131 & 6 & 2 \\ \bottomrule
+\multicolumn{1}{c}{\textbf{Projeto}} & \textbf{Revisões} & \textbf{Ramificações}
+& \textbf{Lançamentos} & \textbf{Contribuidores} &
+\textbf{Contrib\. com E-mail} \\ \midrule
+elasticsearch & 27.118 & 94 & 174 & 812 &  \\
+guava & 4.081 & 84 & 175 & 103 &  \\
+spring-framework & 14575 & 12 & 106 & 211 &  \\ \bottomrule
 \end{tabular}%
 }
 \caption{Projetos utilizados no levantamento com profissionais. Os dados
 	apresentados tem como referência 23/04/2017.}
-\label{tab:projetos_utilizados_para_avaliacao}
+\label{tab:projetos_utilizados}
 \end{table}
 
 Com base nos projetos selecionados ficou definido que a amostra a ser utilizada
@@ -402,21 +402,32 @@ endereço.
 \subsubsection{Desenho do Questionário}
 \label{ssub:sug_melhoria_desenho_questionario}
 
-A fim de coletar a opinião dos participantes foi utilizado um questionário
-eletrônico produzido através da ferramenta \textit{Survey
-	Gizmo}\footnote{\url{https://surveygizmo.com}}. O questionário foi desenhado
-com a premissa de ser respondido em um prazo curto, de preferência entre 5 e 10
-minutos. Neste sentido as perguntas foram organizadas em dois grupos principais.
-As questões do primeiro grupo têm por objetivo coletar a opinião dos
-profissionais sobre a relevância da recomendação proposta e o grau de
-dificuldade de implementá-la. As perguntas foram estruturadas como uma escala
-Likert em que o respondente deveria fornecer o seu nível de concordância para as
-declarações que lhe são apresentadas. No segundo grupo as perguntas visam
-estamos interessados na formação de base (background) dos profissionais. Optamos
-por definir cada uma das questões como não obrigatórios por entendermos que a
-impossibilidade ou o não interesse em responder uma determinada pergunta impeça
-ao participante de enviar os dados de outras que foram respondidas. A
-Figura~\ref{} exibe uma parte do formulário utilizado neste estudo.
+Para avaliarmos a extensão desenvolvemos um questionário composto de duas
+partes. Na primeira o objetivo é que participante emita opinião sobre a
+qualidade do relato de uma issue do projeto que contribui bem como do grau de
+relevância do comentado gerado pela extensão. Com este objetivo no desenhamos um
+processo de avaliação conforme descrito a seguir. A descrição toma com base um
+único projeto, contudo, a mesma metodologia foi replicada para os demais.
+
+Nós selecionamento uma amostra aleatória de 50 \textit{issues} do projeto que
+foram apresentados uma por uma aos participantes em uma ordem aleatória. Eles
+eram obrigados a visualizar o relato da \textit{issue} e classificá-lo em uma
+escala Likert de cinco pontos variando de muito ruim (1) a muito bom (5). Logo
+em seguida era apresentado o comentário gerado pela extensão que precisa ser
+classificado através de uma escala de cinco ponto que variava de Nada Relevante
+até Muito Relevante. Também foi disponibilizado um campo de texto de
+preenchimento facultativo do qual o participante poderia incluir informações
+adicionais.
+
+Uma vez que o participante classificou o relato da \textit{issue} e o comentário
+gerado o formulário exibe uma nova \textit{issue} de forma aleatória. Os
+desenvolvedores poderiam interromper a avaliação a qualquer momento ou optar por
+continuar até que todos as 50 \textit{issues} do seu projeto tenham sido
+classificadas.
+
+A segunda parte é composta por questões sobre a formação de base (background) do
+participante. Este conjunto de perguntas não eram de preenchimento obrigatório.
+A Figura~\ref{} exibe uma parte do formulário utilizado neste estudo.
 
 \todobegin{Incluir figura com o formulário}
 
@@ -427,16 +438,10 @@ O questionário foi encaminhado à amostra de interesse através de correio
 eletrônico. O endereço foi coletado diretamente do projeto hospedado no Github.
 Foi desenvolvido um \textit{script} na linguagem Python que permitia coletar o
 endereço de e-mail e automatizar o processo de envio. As mensagem foram
-personalizadas de modo a identificar o nome do usuário e o projeto do Github
-com base no template exibido a seguir.
+personalizadas de modo a identificar o nome do usuário e o projeto do Github com
+base no template exibido a seguir.
 
 \todobegin{Incluir o quadro com o template de envio das mensagens.}
-
-O processo de envio consistia ainda de uma segunda mensagem de ``lembrete'' após
-dois dias. Esta estratégia foi adotada com base em estudos que discutem
-resultados em que o reenvio pode ser um dos fatores que aumentem a taxa de
-participação em levantamentos por questionários realizados através da
-web~\cite{fan2010factors}.
 
 \subsection{Resultados}
 \label{sub:implementacao_extensao_avaliacao_resultados}
