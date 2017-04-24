@@ -4,43 +4,43 @@
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: dom fev 26 12:49:27 BRT 2017
-%Modificação: sáb abr 15 12:54:15 -03 2017
-%Revisão:
+%Modificação: dom abr 23 23:16:41 -03 2017
+%Revisão: dom abr 23 23:16:51 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Sugestões de Melhorias para as FGRMs}
+\chapter{Sugestões de Melhorias para FGRMs}
 \label{ch:sug_melhoria}
 
 \section{Introdução}
 \label{sec:sug_melhoria_intro}
 
 Os usuários das Ferramentas de Gerenciamento de Requisições de Mudança (FGRM),
-se mostraram, em geral, satisfeitos com as funcionalidades oferecidas pela
-ferramenta. Cerca de 90\% dos par\-ti\-ci\-pan\-tes do levantamento por
-questionário descrito no Capítulo~\ref{ch:pesquisa-profissionais} fizeram uma
-avaliação positiva e também afirmam que recomendariam a FGRM que utilizam para
-um novo projeto.
+se mostraram, em geral, satisfeitos com as funcionalidades oferecidas. Cerca de
+90\% dos par\-ti\-ci\-pan\-tes do levantamento descrito no
+Capítulo~\ref{ch:pesquisa-profissionais} fizeram uma avaliação positiva da
+ferramenta que utilizava além de recomendarem a sua utilização em um novo
+projeto.
 
-Não obstante, naquele mesmo levantamento, ao questionarmos se o profissional
-sentiria falta de alguma das funcionalidades que lhe foi apresentada, cerca de
-85\% responderam positivamente, ou seja, afirmaram que as funções apresentadas
-poderiam contribuir em sua rotina de trabalho. A partir desta última informação
-podemos inferir que os desenvolvedores estão satisfeitos com a ferramenta
-utilizada, contudo, \textit{não conhecem ou não têm acesso ao potencial de
-	funções que este tipo software poderia oferecer}.
+Não obstante, naquela mesma pesquisa, ao perguntarmos se o profissional sentiria
+falta de alguma das funcionalidades que lhe foi apresentada, cerca de 85\%
+responderam positivamente, ou seja, os participantes afirmaram que as funções
+evidenciadas poderiam contribuir em sua rotina de trabalho. A partir desta
+última informação podemos inferir que os desenvolvedores estão satisfeitos com a
+ferramenta utilizada, contudo, \textit{não conhecem ou não têm acesso ao
+    potencial de funções que este tipo software pode oferecer}.
 
 Diante do exposto, entendemos que podemos contribuir com o estado a\-tu\-al das
-funcionalidades das FGRMs através da proposição de conjunto de melhorias.  As
+funcionalidades das FGRMs através da proposição de um conjunto de melhorias. As
 sugestões foram compiladas utilizando os resultados obtidos nesta dissertação,
 especialmente com base nos Capítulos~\ref{ch:mapeamento-sistematico}
 e~\ref{ch:pesquisa-profissionais}, na Seção~\ref{sec:caracterizacao_ferramentas}
 e nos estudos que propõem melhorias para as FGRM~\cite{zimmermann2009improving,
-	bettenburg2008makes, singh2011bug}.  Estas recomendações podem ser
-utilizadas por pesquisadores interessados em conduzir estudos sobre o avanço da
+    bettenburg2008makes, singh2011bug}. Estas recomendações podem ser utilizadas
+por pesquisadores interessados em conduzir estudos sobre o avanço da
 produtividade dos desenvolvedores mediante o uso das FGRMs. Além disso, os
-responsáveis pela implementação deste tipo de software podem utilizar este
+responsáveis pela implementação deste tipo de software podem empregar este
 conjunto a fim de desenvolver futuras versões do sistema. Na mesma linha, os
 profissionais envolvidos em manutenção de software podem criar extensões
-(plugins) para as FGRM com base no que foi proposto de modo a utilizar as
+(plugins) para as FGRM com base no que foi proposto de modo a aplicar as
 melhorias propostas neste estudo em sua rotina de trabalho.
 
 Este capítulo está organizado da seguinte forma: a
@@ -56,7 +56,7 @@ Seção~\ref{sec:sug_melhoria_ameacas} apresentamos as ameaças à validade dest
 capítulo; encerramos o capítulo com um resumo na
 Seção~\ref{sec:sug_melhoria_resumo}.
 
-\section{Sugestões de Melhorias para as FGRMs}
+\section{Sugestões de Melhorias para FGRMs}
 \label{sec:sug_melhoria_melhorando_as_ferraementas}
 
 As sugestões propostas neste capítulo não estão vinculadas exclusivamente à
@@ -69,16 +69,16 @@ funcionalidades.
 
 Ao longo da elaboração das sugestões verificamos que não conseguiríamos
 implementar todas elas. Além de decidirmos não desenvolver todas as sugestões
-por entendemos que a análise desta complexidade está fora do escopo deste
-estudo. Exceção foi a recomendação descrita na
-Seção~\ref{sub:supote_a_qualidade_do_relato} foi implementada como extensão de
-uma FGRM, conforme pode ser visto no Capítulo~\ref{ch:implemtacao_extensao}.  É
-possível que algumas das su\-ges\-tões propostas já estejam implementadas de
+por entendemos que a análise desta complexidade está fora do escopo desta
+dissertação. A única exceção é a recomendação descrita na
+Seção~\ref{sub:supote_a_qualidade_do_relato} que foi implementada como extensão
+de uma FGRM, conforme pode ser visto no Capítulo~\ref{ch:implemtacao_extensao}.
+É possível que algumas das recomendações propostas já estejam implementadas de
 maneira parcial ou integral em alguma FGRM\@. Contudo, não é possível validar
 esta premissa por conta de volume de ferramentas disponíveis quando esta
-dissertação foi escrita.Cada sugestão proposta foi estruturada como uma seção
+dissertação foi escrita. Cada sugestão proposta foi estruturada como uma seção
 deste capítulo onde apresentamos a \textit{justificativa, o benefício gerado, as
-	limitações e alguns exemplos de utilização.}
+    limitações e alguns exemplos de utilização.}
 
 \subsection{Suporte à Qualidade do Relato}
 \label{sub:supote_a_qualidade_do_relato}
@@ -104,7 +104,7 @@ Nesta linha, alguns trabalhos se propõem a minimizar este problema através da
 análise da qualidade do que é relatado em uma RM\@. A premissa é que o
 responsável por criar uma RM deva ter ciência das informações para a sua
 solução\footnote{A descrição do que entendemos por solução de uma RM pode ser
-	encontrado no Capítulo~\ref{ch:visao-geral-manutencao}}.
+    encontrado no Capítulo~\ref{ch:visao-geral-manutencao}}.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficio_s01}
