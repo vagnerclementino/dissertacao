@@ -159,7 +159,7 @@ Conforme descrito, o resultado da análise feita pela extensão é um comentári
 \textit{issue}. Em geral, ele é composto de três partes: \textit{cabeçalho,
     corpo e dicas}. O cabeçalho apresenta um texto padrão que é personalizado
 com o nome do usuário (login) no Github do reportador. Ao utilizarmos a sintaxe
-\textit{\@[Github loing]} o próprio Github se encarrega de enviar um e-mail
+\textit{\@[Github login]} o próprio Github se encarrega de enviar um e-mail
 notificando o usuário sobre o comentário. A Figura~\ref{fig:issue_original}
 exibe o cabeçalho padrão incluídos nos comentários.
 
@@ -195,7 +195,7 @@ Tabela~\ref{tab:criterios_analise_qualidade_relato}.
 \toprule
 \textbf{Atributo}             & \multicolumn{1}{c}{\textbf{Critério de Aceitação}}\\
 \midrule
-Completude de Palavras-Chaves & Existência de uma lista representando as etapa
+Completude de Palavras-chaves & Existência de uma lista representando as etapa
 executadas até ocorrência do erro.         \\
 Arquivos Anexados             & Pelo menos um arquivo anexado a issue
 \\
@@ -237,7 +237,7 @@ estarem no relato de uma RM~\cite{bettenburg2008makes}.
 
 Nesta dimensão avaliamos a existência de arquivos anexados à \textit{issue},
 tais como capturas de telas (screenshots) e cadeia de registros de ativação de
-funções (stact trace). A detecção é realizada utilização expressões regulares
+funções (stack trace). A detecção é realizada utilização expressões regulares
 utilizando da sintaxe padrão que é utilizada no relato da
 RM\footnote{\url{https://guides.github.com/features/mastering-markdown/}}. Não
 houve avaliação sobre o conteúdo do anexo, contudo, conforme descrito na
@@ -272,8 +272,8 @@ distribuição da frequência de ocorrências de palavras no relato de uma RM\@.
 uma primeira etapa, removemos as palavras de parada (stopwords), reduzimos as
 palavras\footnote{Do inglês \textit{stemming} é o processo de reduzir palavras
     flexionadas (ou às vezes derivadas) ao seu tronco (stem), base ou raiz,
-    geralmente uma forma da palavra escrita. Por exemplo um algortimo de
-    stemming reduz as palavras ``fishing'', ``fished'' e ``fisher'' para a raíz
+    geralmente uma forma da palavra escrita. Por exemplo um algoritmo de
+    stemming reduz as palavras ``fishing'', ``fished'' e ``fisher'' para a raiz
     ``fish''.} e selecionamos as \textit{100} palavras com maior frequência. Em
 seguida, categorizamos as palavras nos seguintes grupos:
 
