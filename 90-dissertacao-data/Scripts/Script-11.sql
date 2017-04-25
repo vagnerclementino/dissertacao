@@ -35,3 +35,6 @@ where t.topico_classificacao = 'Localização de RM Duplicados'
 )
 
 
+select *
+from public.contribuidores_projetos
+
