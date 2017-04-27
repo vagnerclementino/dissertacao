@@ -532,10 +532,16 @@ e a disponibilidade de metadados, acessíveis através de uma API, tem tornado
 Github bastante atrativo para a realização de pesquisas na área de Engenharia de
 Software.
 
-Para escolha dos projetos foi definido inicialmente um conjunto de critérios
-baseados em boas práticas recomendadas na literatura~\cite{Bird2009}. Em
-síntese, um projeto para ser escolhido deve atender simultaneamente
-aos seguintes requisitos:
+A seleção dos possíveis projetos utilizou a ferramenta de busca avançada
+oferecido pela plataforma Github. Ele permite pesquisar por critérios tais como
+data de criação, linguagem utilizada no desenvolvimento e proprietário do
+repositório, dentre outros. Para escolha dos projetos foi definido inicialmente
+um conjunto de critérios baseados em boas práticas recomendadas na
+literatura~\cite{Bird2009}. Fizemos uma investigação utilizando apenas o Github
+e contendo várias restrições, neste sentido as vulnerabilidades de nossas
+verificações são discutidas na Seção~\ref{sec:sug_melhoria_ameaca}. Em síntese,
+um projeto para ser escolhido deve atender simultaneamente aos seguintes
+requisitos:
 
 \begin{itemize}
 	\item Os projetos devem representar o desenvolvimento de uma FGRM\@.
@@ -544,10 +550,10 @@ aos seguintes requisitos:
 		relevante.
 	\item Os projetos devem  ter  no  mínimo  200  revisões (commits)  pelos
 		mesmos motivos  da restrição anterior.
-	\item Os projetos escolhidos não devem ser ramificações (\textsl{branches}) um
-		do outro projeto, para evitar dados duplicados.
-	\item Os projetos obtidos devem ser os 10 mais populares que atendem aos
-		demais critérios, utilizando como métrica o campo \texttt{most stars}
+    \item Os projetos obtidos devem estar os 10 mais populares que atendem aos
+        demais critérios e os melhores classificados pela ordenação via a opção
+        ``most stars'', representa o número de usuário do Github que mostraram
+        apreciação aos mantenedores do repositório pelo trabalho realizado.
 \end{itemize}
 
 Após aplicação dos critérios descritos obtivemos os projetos descritos na
@@ -589,6 +595,9 @@ com seus respectivos colaboradores.
 \label{fig:redmine_contribuidores}
 \end{figure}
 
+Fizemos uma investigação utilizando apenas o Github e contendo várias
+restrições, as vulnerabilidades?/ameaças a validade? de nossas verificações são
+discutidas na seção X
 \subsubsection{Desenho do Questionário}
 \label{ssub:sug_melhoria_desenho_questionario}
 
@@ -600,8 +609,8 @@ minutos. Neste sentido as perguntas foram organizadas em dois grupos principais.
 As questões do primeiro grupo têm por objetivo coletar a opinião dos
 profissionais sobre a relevância da recomendação proposta e o grau de
 dificuldade de implementá-la. As perguntas foram estruturadas como uma escala
-Likert em que o respondente deveria fornecer o seu nível de concordância para as
-declarações que lhe são apresentadas. No segundo grupo as perguntas visam
+de Likert em que o respondente deveria fornecer o seu nível de concordância para
+as declarações que lhe são apresentadas. No segundo grupo as perguntas visam
 estamos interessados na formação de base (background) dos profissionais. Optamos
 por definir cada uma das questões como não obrigatórios por entendermos que a
 impossibilidade ou o não interesse em responder uma determinada pergunta impeça
@@ -637,6 +646,13 @@ web~\cite{fan2010factors}.
 Foco em gente[contribuidores] que trabalha com ferramentas que são
 ``mainstream'' e portanto têm o viés de visão mais ``tradicional'' (ou outras
 caracterizações que podem ser defendidas)
+
+Ao utilizarmos apenas projetos públicos hospedados no Github pode ter causado
+algum tipo de direcionamento, como por exemplo foco em projetos de código
+aberto.  Além disso, não há garantidas que os critérios utilizados para seleção,
+como por exemplo seis meses de desenvolvimento ou ter no mínimo 200 revisões
+(commits), não nos permite afirmar que escolher os projetos mais representativos
+para o nosso público-alvo.
 
 \section{Resumo do Capítulo}
 \label{sec:sug_melhoria_resumo}
