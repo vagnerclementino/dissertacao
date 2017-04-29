@@ -1,0 +1,18 @@
+As FGRMs devem diferenciar as RMs criadas por reportadores que historicamente
+relatam com qualidade e relevância. dimensões de reputação
+
+The CRMSs should rank the Change Requests according to the reputation
+of the reporters.
+
+ordernar as RMs pela pessoa qeu a relatou, ou seja, pela reputação do
+reportador, que pode ter diferente dimensões. Existem por 
+
+participação dele dentro da ferramenta, 
+tenham livros,
+documentação tenham votos,
+como stack overflow 
+importar de redes sociais ou 
+a ferramenta ajudar na escolha das RMs que serão trabalhadas pelo
+desenvolvedor/analista de qualidade. 
+
+Dar o exemplo do stack overflow 
