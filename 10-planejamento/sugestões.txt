@@ -1,0 +1,22 @@
+#1 - The CRMSs should support some type of automatic feedback related on the
+quality of reported text.
+
+#2 - The CRMSs should enable source code search contained in your report,
+comments or attachments.
+
+#3 - The CRMSs should allow Change Requests ranking according to the reporters
+reputation.
+
+#4 - The CRMSs should provide shortcuts for filtering and ranking, for example
+the latest CRs accessed by a developer.
+
+#5 - The CRMSs should support Continuous Integration processes.
+
+#6- The CRMSs should give support beyond plain text specifications, for example
+Markdown.
+
+#7 - The CRMSs should provide automatic classification of CRs in terms of
+urgency and unexpecteness.
+
+#8 - The CRMSs should support shared task, allowing collaborative work.
+
