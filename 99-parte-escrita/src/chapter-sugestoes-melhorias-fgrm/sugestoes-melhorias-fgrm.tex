@@ -94,47 +94,49 @@ Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software} o
 responsável por reportar uma RM pode ser tanto um usuário do sistema quando um
 membro da equipe de desenvolvimento ou manutenção. Por esta razão, podemos
 encontrar Reportadores com diferentes níveis de conhecimento sobre o sistema.
-Este fato pode acarretar em níveis desiguais de qualidade do que será relatado,
-o que causar atraso na análise da RM por falta da informação necessária a sua
-resolução. Alguns estudos demonstram que, do ponto de vista dos desenvolvedores,
-a falta de informação, tais como etapas para reproduzir a falha e registro de
-pilha de ativação (stack track), dificultam mais o trabalho do que relato de
-problemas (bugs) duplicados~\cite{bettenburg2008makes, bettenburg2007quality}.
-Nesta linha, alguns trabalhos se propõem a minimizar este problema através da
-análise da qualidade do que é relatado em uma RM\@. A premissa é que o
-responsável por criar uma RM deva ter ciência das informações para a sua
-solução\footnote{A descrição do que entendemos por solução de uma RM pode ser
-    encontrado no Capítulo~\ref{ch:visao-geral-manutencao}}.
+Do ponto de vista dos desenvolvedores, um problema recorrente é baixa qualidade
+do texto no relatado de uma RM, como por exemplo a falta da informação
+necessária para sua solução. Alguns estudos demonstram que a falta de
+informação, tais como as etapas para reproduzir a falha e o registro de pilha de
+ativação (stack track), dificultam mais andamento do projeto do que RMs
+duplicadas~\cite{bettenburg2008makes, bettenburg2007quality}. Neste sentido, as
+FGRM poderia fornecer uma funcionalidade capaz de reduzir o número de relatos de
+baixa qualidade através, por exemplo, de um retorno ao Reportador da qualidade
+do que foi informado no relato da RM\@.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficio_s01}
 
 Com este tipo de funcionalidade uma FGRM poderia reduzir o tempo de análise de
 determinada RM pelo fato que o responsável por criá-la estaria ciente das
-informações necessárias à sua resolução. Neste caso, o benefício direto seria ao
-desenvolvedor que teria a sua disposição um relato mais completo. Não obstante,
-um trabalho adicional seria dado ao reportador que algumas situações devem rever
-as informações incluídas na RM\@.
+informações necessárias à sua solução. Neste caso, o desenvolver seria
+diretamente beneficiado já que teria a sua disposição um relato mais completo.
+Não obstante, um trabalho adicional seria dado ao reportador que algumas
+situações devem rever as informações incluídas na RM\@.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s01}
 
 Alguns estudos sobre melhoria do qualidade do relato da RM focam
-prioritariamente naquelas que se referem a defeitos do software. Conforme
-discutimos na Seção~\ref{sec:requisicao_de_mudanca}, além do relato de um
-problema uma RM também incluí pedidos de melhoria. Dada estas duas dimensões,
-nem sempre é possível avaliar a qualidade do relato por conta de suas diferentes
-e necessidades.
+prioritariamente nas que descrevem defeitos do software. Conforme discutimos na
+Seção~\ref{sec:requisicao_de_mudanca}, uma RM pode também estar relacionada com
+um pedido de melhoria. Uma dificuldade inicial é separar de forma automatizada
+as duas dimensões das RMs. Da mesma forma é necessário definir padrões distintos
+para analisar a qualidade do relato por conta de suas diferentes características
+e necessidades de uma RM\@.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_s01}
 
 Após o usuário relatar um problema em determinada FGRM, a ferramenta de imediato
-avalia a RM gerada e apresenta ao responsável pelo relato algumas dicas de como
-a informação fornecida poderia ser melhorada, como por exemplo através da
-inclusão de um arquivo com o histórico de execução do software (log).
+avalia o texto corresponde ao atributo relato da RM gerada e apresenta ao
+responsável algumas dicas de como a informação fornecida poderia ser melhorada,
+como por exemplo através da inclusão de um arquivo com o histórico de execução
+do software (log). Como prova de conceito foi implementada uma extensão para uma
+FGRM com estas características. Os detalhes estão descritos no
+    Capítulo~\ref{ch:implemtacao_extensao}.
 
-\subsection{Busca por Código Fonte}
+\subsection{Acesso Facilitado ao Código Fonte Incluído nas RMs}
 \label{sub:busca_por_código_fonte}
 
 \sugestao{02}{As FGRMs deveriam fornecer busca pelo código fonte contida no
@@ -143,29 +145,38 @@ inclusão de um arquivo com o histórico de execução do software (log).
 \paragraph{Justificativa:}
 \label{par:justificativa_s02}
 
-As RMs permitem a inserção de código fonte em diversas etapas do seu ciclo de
-vida. O código pode ser incluído durante a sua criação, nas discussões
-realizadas para a sua resolução ou mesmo quando ela é concluída, onde recebe o
-nome de \textit{patch.} Esta informação é bastante relevante para o projeto do
-qual a RM faz parte, contudo, as FGRMs não permitem a sua recuperação.
+As RMs permitem a inclusão de fragmentos de código fonte em seu relato ou
+comentários em diversas etapas do seu ciclo de vida. O código pode ser incluído
+durante a criação da RMs, nas discussões realizadas para a sua solução ou mesmo
+quando ela é concluída, onde recebe o nome de \textit{patch}. Os fragmentos de
+código podem ser utilizados para descrever uma falha ou apresentar uma solução
+candidata. Apesar de sua importância este tipo de informação não é facilmente
+recuperada no contexto de uso de uma FGRM\@. O estudo de Damevski e
+outros~\cite{damevski2016field}, que analisa o problema da localização de
+funcionalidades no código fonte (feature location), ressalta importância da
+facilidade de acesso ao código fonte que pode propiciar a redução do tempo que a
+tarefa de manutenção é concluída bem como aumento na qualidade das alterações
+realizadas.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficios_s02}
 
-Caso o desenvolvedor ou analista de qualidade possa facilmente acessar o código
-fonte utilizado para exemplificar ou corrigir determinada RM, eles podem
-utilizar esta informação para solucionar outras RMs que possam ter relação com
-a primeira. Este tipo de funcionalidade pode ser vantajosa em comparação a uma
-busca estruturada, presente em grande parte deste tipo de software, por permitir
-a busca de elementos específicos da linguagem que é utilizada pelo software que
-a FGRM suporta, como por exemplo classes, funções, constantes e outros.
+O código fonte incluído em uma RM tem a comunicação como um dos seus objetivos.
+Com um fácil acesso a esta informação um desenvolvedor pode obter exemplos de
+solução para RMs similares. Este tipo de funcionalidade pode ser vantajosa em
+comparação a uma busca estruturada, presente em grande parte das FGRMs, por
+permitir a recuperação com basem em elementos específicos da linguagem de
+programação utilizada pelo software que a FGRM suporta, como por exemplo
+classes, funções, constantes e outros.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_s02}
 
-Um desenvolvedor ao verificar que a RM que ele esteja tratando é similar a outra
-anteriormente relatada, ele pode buscar pelo código fonte que foi utilizado para
-resolver a primeira.
+Em certas ocasiões, uma RM em análise pode ter similaridades com outras
+solucionadas anteriormente. A similaridade pode ser devida por afetarem o mesmo
+módulo do sistema, por exemplo. Neste contexto, um desenvolvedor poderia
+realizar uma busca por código fonte na RM solucionada com o objetivo de
+encontrar fragmentos de código que ajudem no entendimento e solução da RM atual.
 
 \subsection{Ranqueamento pela Reputação do Reportador}
 \label{sub:diferenciacao_do_reportdor}
@@ -176,33 +187,52 @@ reputação do Reportador.}
 \paragraph{Justificativa:}
 \label{par:justificativa_s03}
 
-Caso seja possível identificar que um \textit{Reportador} tem por hábito relatar
-RMs que sejam relevantes ao projeto de software, tais requisições deveriam
-receber algum tipo de etiqueta de modo a diferenciá-las dentro da FGRM\@.
-Segundo o nosso entendimento uma RM pode ser classificada como relevante se
-descreve um problema que afeta um grande número de usuários do sistema ou
-representa uma falha de segurança do software. Além disso deve ser redigida de
-forma clara e fornecer as informações necessárias para sua solução. O grau de
-relevância de determinada RM pode variar em diferentes projetos e pode depender
-de critérios subjetivos de quem analisa.
+Um problema recorrente em diversos projeto de software é a definição da ordem
+que um conjunto de RMs deve ser analisado. Conforme discutido na
+Seção~\ref{ssub:melhorias_dim_processo} alguns estudos vêm se dedicando em
+classificar as RM sob determinados critérios. Por outro lado, é possível
+observar que determinados \textit{Reportadores} tem por hábito relatar RMs que
+possuem um maior grau de relevância ao projeto. Por exemplo, existem certos
+usuários do sistema que geralmente relatam RMs relativas à questões de segurança
+do sistema. Neste contexto, seria interessante se as FGRM aplicassem algum tipo
+de métrica de relevância aos seus usuários. Em um segundo momento, esta mesma
+métrica poderia ser utilizada com a finalidade de ranquear as RMs. Neste
+sentido, conforme a conveniência, um desenvolvedor poderia analisar primeiro as
+RMs de Reportadores com um maior grau de reputação.
+
+%Sejam relevantes ao projeto de software, tais requisições deveriam receber algum
+%tipo de etiqueta de modo a diferenciá-las dentro da FGRM\@. Segundo o nosso
+%entendimento uma RM pode ser classificada como relevante se descreve um problema
+%que afeta um grande número de usuários do sistema ou representa uma falha de
+%segurança do software. Além disso deve ser redigida de forma clara e fornecer as
+%informações necessárias para sua solução. O grau de relevância de determinada RM
+%pode variar em diferentes projetos e pode depender de critérios subjetivos de
+%quem analisa.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s03}
 
-O papel de agendador é responsável por definir o desenvolvedor mais apto
-para determinada RM utilizando diversos critérios como por exemplo a prioridade
-do que foi relatado. Esta atividade pode receber uma ajuda caso uma RM possua
-alguma diferenciação que demostre que foi criada por um reportador que
-frequentemente o faz com relevância. Essas RMs podem receber uma maior atenção
-de modo a ser priorizada.
+Um dos possíveis atividades desempenhadas pelo \textit{Agente de Triagem} é
+definir o desenvolvedor mais apto para determinada RM\@. Ele pode utilizar
+diversos critérios como por exemplo a prioridade do que foi relatado. Segundo a
+nossa proposta, o \textit{Agente de Triagem} pode previamente ordenar a lista de
+RMs sob sua responsabilidade pelo grau de reputação de quem as redigiu. A partir
+daquele ordenamento ele poderia atribuir primeiro aquelas de Reportadores com um
+maior grau de reputação. Com base nesta estratégica, é possível que RMs com
+maior relevância sejam analisadas primeiro. O conceito de relevância pode variar
+em diferentes projetos. Contudo, uma RM poderia ser classificada como relevante
+caso descreva um problema que afeta um grande número de usuários ou represente
+uma falha de segurança do software.  Além disso deve ser redigida de forma clara
+e fornecer as informações necessárias para sua solução.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s03}
 
-Um agendador ao verificar uma RM que é capaz de ser diferenciada tomando por
-base que a relatou poderia priorar aquela RM ou mesmo realizar pesquisas prévias
-com este tipo de classificador. Com objetivo de diferenciar as RMs deste perfil
-de reportadores apresentamos a \textit{Sugestão 03}.
+Conforme descrito anteriormente, um \textit{Agente de Triagem} poderia ordenar a
+lista de RMs do qual é responsável pelo grau de reputação do
+\textit{Reportador}. Em seguida daria início ao processo de atribuição
+analisando primeiro as RMs mais bem ranqueadas. Caso as RMs sejam relevantes o
+profissional poderia realizar a atribuição.
 
 \subsection{Atalhos para filtros e classificação (rankings) das RMs}
 \label{sub:histórico_das_ùltimas_rm_s}
@@ -213,17 +243,16 @@ e classificações (rankings).}
 \paragraph{Justificativa:}
 \label{par:justificativa_s04}
 
-No ciclo de vida de uma RM, conforme discutido na
-Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}, após a
-verificação de que a RM foi incorporada com sucesso ao software, ela é movida
-para o estado \textit{Fechado (Closed)} e deixa de estar atribuída a determinado
-desenvolvedor ou analista de qualidade. Caso um desenvolvedor queira acessá-la
-novamente deverá utilizar o identificador da RM a fim de recuperá-la na FGRM\@.
-Este histórico de trabalho do desenvolvedor pode ser útil na resolução de
-eventuais RM que surjam posteriormente no projeto. No levantamento mediante
-questionário, apresentado no Capítulo~\ref{ch:pesquisa-profissionais}, alguns
-participantes relataram o desejo de uma funcionalidade  que gerencie este
-histórico conforme apresentado a seguir.
+As RMs atribuídas a determinado desenvolvedor podem estar em diferentes estados.
+Existem aquelas que ainda não foram analisadas, que estão aguardando informações
+adicionais ou que estejam aguardando o Analista de Qualidade, por exemplo.  Em
+geral, conforme discutido na Seção~\ref{sec:caracterizacao_ferramentas}, as
+FGRMs permitem visualizar a situação geral das RMs de um desenvolvedor mediante
+relatórios pré-definidos. Contudo, no levantamento mediante questionário,
+apresentado no Capítulo~\ref{ch:pesquisa-profissionais}, identificamos por parte
+de alguns profissionais a necessidade de um acesso mais facilitado a este tipo
+de informação. Desta forma, sugerimos uma alteração nas interfaces das FGRMs de
+modo a fornecer acesso facilitado a filtros personalizáveis e classificações.
 
 \begin{itemize}
 	\item Conforme relato dos participantes eles gostariam:
@@ -238,16 +267,16 @@ histórico conforme apresentado a seguir.
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s04}
 
-Com o acesso às últimas RMs analisadas o desenvolver tem uma noção do trabalho
-desenvolvido e a um conjunto de informações que podem ser utilizadas para
-resolver as RMs que estão sob sua responsabilidade.
+Com um acesso mais rápido às últimas RMs analisadas o desenvolver poderia ter
+uma noção geral do trabalho desenvolvido. Este panorama poderia ajudá-lo no
+planejamento de suas atividade diárias.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s04}
 
 Ao acessar a FGRM o desenvolvedor tem acesso as últimas $n$ RMs que ele
-analisou. Para facilitar a visualização este numero pode ser fixado em valores
-tais como $n = {5, 10, 30}$.
+analisou. Além disso ele poderia criar os filtros para acessar outras
+informações que julgar importante no desenvolvimento de suas atividades.
 
 \subsection{Suporte à Processos de Integração Contínua}
 \label{sub:suporte_integracao_continua}
@@ -258,13 +287,11 @@ tais como $n = {5, 10, 30}$.
 \paragraph{Justificativa:}
 \label{par:justificativa_s05}
 
-Dentro da disciplina de Gerência de Configuração, a \textit{Integração
-    Contínua} (IC) é a prática de construir (build) e implantar (deploy)
-imediatamente após um desenvolvedor consolidar (commit) o código fonte para o
-repositório~\cite{aiello2010configuration}. A IC tornou-se dentro das práticas
-propostas pelos agilistas e vêm ganhando popularidade em ambientes de
-desenvolvimento mais tradicionais. Um possível gatilho para o processo de IC
-poderia ser a solução de uma RM, que em determinados contexto é feito pela
+Dentro da disciplina de Gerência de Configuração, a \textit{Integração Contínua}
+(IC) é a prática de construir (build) e implantar (deploy) imediatamente após um
+desenvolvedor consolidar (commit) o código fonte para o
+repositório~\cite{aiello2010configuration}. Um possível gatilho para o processo
+de IC poderia ser a solução de uma RM, que em determinados contexto é feito pela
 alteração da situação da RM para \textit{Fechada} \@-\@ uma discussão sobre o
 ciclo de vida das RMs pode ser encontrada na
 Seção~\ref{sub:sub:fluxo_de_trabalho_requisicao_mudanca}. Desta forma, seria
@@ -318,14 +345,14 @@ que engatilhou o processo de compilação como por exemplo o seu número e títu
 
 Considerando o modelo de uma RM apresentado na
 Seção~\ref{sec:requisicao_de_mudanca}, é possível que as informações mais
-relevantes estão no atributo \textit{relato}, que contêm a descrição da melhoria
-ou falha em formato de texto. Com base no resultado do estudo realizado na
-Seção~\ref{sec:caracterizacao_ferramentas} verificou-se que a maior parte das
-ferramentas analisadas utilizam texto simples, ou seja, não permitem o uso de
-linguagens com semântica de apresentação, o que significa que sua especificação
-prescreve como o dado estruturado será mostrado, tal como o HTML\@  ou CSS\@.
-Algumas linguagens tal como
-Markdown\footnote{\url{https://daringfireball.net/projects/markdown/}} e
+relevantes estejam no texto correspondente ao atributo \textit{relato}, que
+contêm a descrição da melhoria ou falha em formato de texto. Com base no
+resultado do estudo realizado na Seção~\ref{sec:caracterizacao_ferramentas}
+verificou-se que a maior parte das ferramentas analisadas utilizam texto
+simples, ou seja, não permitem o uso de linguagens com semântica de
+apresentação, o que significa que sua especificação prescreve como o dado
+estruturado será mostrado, tal como o HTML\@  ou CSS\@.  Algumas linguagens tal
+como Markdown\footnote{\url{https://daringfireball.net/projects/markdown/}} e
 reStructuredText\footnote{\url{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html}}
 vêm ganhando popularidade para publicação de documentação técnica por
 apresentarem características tais como realce da sintaxe de palavras-chaves de
