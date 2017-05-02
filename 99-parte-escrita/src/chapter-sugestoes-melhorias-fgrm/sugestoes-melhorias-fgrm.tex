@@ -94,47 +94,49 @@ Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software} o
 responsável por reportar uma RM pode ser tanto um usuário do sistema quando um
 membro da equipe de desenvolvimento ou manutenção. Por esta razão, podemos
 encontrar Reportadores com diferentes níveis de conhecimento sobre o sistema.
-Este fato pode acarretar em níveis desiguais de qualidade do que será relatado,
-o que causar atraso na análise da RM por falta da informação necessária a sua
-resolução. Alguns estudos demonstram que, do ponto de vista dos desenvolvedores,
-a falta de informação, tais como etapas para reproduzir a falha e registro de
-pilha de ativação (stack track), dificultam mais o trabalho do que relato de
-problemas (bugs) duplicados~\cite{bettenburg2008makes, bettenburg2007quality}.
-Nesta linha, alguns trabalhos se propõem a minimizar este problema através da
-análise da qualidade do que é relatado em uma RM\@. A premissa é que o
-responsável por criar uma RM deva ter ciência das informações para a sua
-solução\footnote{A descrição do que entendemos por solução de uma RM pode ser
-    encontrado no Capítulo~\ref{ch:visao-geral-manutencao}}.
+Do ponto de vista dos desenvolvedores, um problema recorrente é baixa qualidade
+do texto no relatado de uma RM, como por exemplo a falta da informação
+necessária para sua solução. Alguns estudos demonstram que a falta de
+informação, tais como as etapas para reproduzir a falha e o registro de pilha de
+ativação (stack track), dificultam mais andamento do projeto do que RMs
+duplicadas~\cite{bettenburg2008makes, bettenburg2007quality}. Neste sentido, as
+FGRM poderia fornecer uma funcionalidade capaz de reduzir o número de relatos de
+baixa qualidade através, por exemplo, de um retorno ao Reportador da qualidade
+do que foi informado no relato da RM\@.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficio_s01}
 
 Com este tipo de funcionalidade uma FGRM poderia reduzir o tempo de análise de
 determinada RM pelo fato que o responsável por criá-la estaria ciente das
-informações necessárias à sua resolução. Neste caso, o benefício direto seria ao
-desenvolvedor que teria a sua disposição um relato mais completo. Não obstante,
-um trabalho adicional seria dado ao reportador que algumas situações devem rever
-as informações incluídas na RM\@.
+informações necessárias à sua solução. Neste caso, o desenvolver seria
+diretamente beneficiado já que teria a sua disposição um relato mais completo.
+Não obstante, um trabalho adicional seria dado ao reportador que algumas
+situações devem rever as informações incluídas na RM\@.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s01}
 
 Alguns estudos sobre melhoria do qualidade do relato da RM focam
-prioritariamente naquelas que se referem a defeitos do software. Conforme
-discutimos na Seção~\ref{sec:requisicao_de_mudanca}, além do relato de um
-problema uma RM também incluí pedidos de melhoria. Dada estas duas dimensões,
-nem sempre é possível avaliar a qualidade do relato por conta de suas diferentes
-e necessidades.
+prioritariamente nas que descrevem defeitos do software. Conforme discutimos na
+Seção~\ref{sec:requisicao_de_mudanca}, uma RM pode também estar relacionada com
+um pedido de melhoria. Uma dificuldade inicial é separar de forma automatizada
+as duas dimensões das RMs. Da mesma forma é necessário definir padrões distintos
+para analisar a qualidade do relato por conta de suas diferentes características
+e necessidades de uma RM\@.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_s01}
 
 Após o usuário relatar um problema em determinada FGRM, a ferramenta de imediato
-avalia a RM gerada e apresenta ao responsável pelo relato algumas dicas de como
-a informação fornecida poderia ser melhorada, como por exemplo através da
-inclusão de um arquivo com o histórico de execução do software (log).
+avalia o texto corresponde ao atributo relato da RM gerada e apresenta ao
+responsável algumas dicas de como a informação fornecida poderia ser melhorada,
+como por exemplo através da inclusão de um arquivo com o histórico de execução
+do software (log). Como prova de conceito foi implementada uma extensão para uma
+FGRM com estas características. Os detalhes estão descritos no
+    Capítulo~\ref{ch:implemtacao_extensao}.
 
-\subsection{Busca por Código Fonte}
+\subsection{Acesso Facilitado ao Código Fonte Incluído nas RMs}
 \label{sub:busca_por_código_fonte}
 
 \sugestao{02}{As FGRMs deveriam fornecer busca pelo código fonte contida no
@@ -143,11 +145,18 @@ inclusão de um arquivo com o histórico de execução do software (log).
 \paragraph{Justificativa:}
 \label{par:justificativa_s02}
 
-As RMs permitem a inserção de código fonte em diversas etapas do seu ciclo de
-vida. O código pode ser incluído durante a sua criação, nas discussões
-realizadas para a sua resolução ou mesmo quando ela é concluída, onde recebe o
-nome de \textit{patch.} Esta informação é bastante relevante para o projeto do
-qual a RM faz parte, contudo, as FGRMs não permitem a sua recuperação.
+As RMs permitem a inclusão de fragmentos de código fonte em seu relato ou
+comentários em diversas etapas do seu ciclo de vida. O código pode ser incluído
+durante a criação da RMs, nas discussões realizadas para a sua solução ou mesmo
+quando ela é concluída, onde recebe o nome de \textit{patch}. Os fragmentos de
+código podem ser utilizados para descrever uma falha ou apresentar uma solução
+candidata. Apesar de sua importância este tipo de informação não é facilmente
+recuperada no contexto de uso de uma FGRM\@. O estudo de Damevski e
+outros~\cite{damevski2016field}, que analisa o problema da localização de
+funcionalidades no código fonte (feature location), ressalta importância da
+facilidade de acesso ao código fonte que pode propiciar a redução do tempo que a
+tarefa de manutenção é concluída bem como aumento na qualidade das alterações
+realizadas.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficios_s02}
@@ -318,14 +327,14 @@ que engatilhou o processo de compilação como por exemplo o seu número e títu
 
 Considerando o modelo de uma RM apresentado na
 Seção~\ref{sec:requisicao_de_mudanca}, é possível que as informações mais
-relevantes estão no atributo \textit{relato}, que contêm a descrição da melhoria
-ou falha em formato de texto. Com base no resultado do estudo realizado na
-Seção~\ref{sec:caracterizacao_ferramentas} verificou-se que a maior parte das
-ferramentas analisadas utilizam texto simples, ou seja, não permitem o uso de
-linguagens com semântica de apresentação, o que significa que sua especificação
-prescreve como o dado estruturado será mostrado, tal como o HTML\@  ou CSS\@.
-Algumas linguagens tal como
-Markdown\footnote{\url{https://daringfireball.net/projects/markdown/}} e
+relevantes estejam no texto correspondente ao atributo \textit{relato}, que
+contêm a descrição da melhoria ou falha em formato de texto. Com base no
+resultado do estudo realizado na Seção~\ref{sec:caracterizacao_ferramentas}
+verificou-se que a maior parte das ferramentas analisadas utilizam texto
+simples, ou seja, não permitem o uso de linguagens com semântica de
+apresentação, o que significa que sua especificação prescreve como o dado
+estruturado será mostrado, tal como o HTML\@  ou CSS\@.  Algumas linguagens tal
+como Markdown\footnote{\url{https://daringfireball.net/projects/markdown/}} e
 reStructuredText\footnote{\url{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html}}
 vêm ganhando popularidade para publicação de documentação técnica por
 apresentarem características tais como realce da sintaxe de palavras-chaves de
