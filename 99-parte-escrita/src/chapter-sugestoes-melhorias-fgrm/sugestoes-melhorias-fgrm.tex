@@ -287,42 +287,50 @@ informações que julgar importante no desenvolvimento de suas atividades.
 \paragraph{Justificativa:}
 \label{par:justificativa_s05}
 
-Dentro da disciplina de Gerência de Configuração, a \textit{Integração Contínua}
-(IC) é a prática de construir (build) e implantar (deploy) imediatamente após um
-desenvolvedor consolidar (commit) o código fonte para o
-repositório~\cite{aiello2010configuration}. Um possível gatilho para o processo
-de IC poderia ser a solução de uma RM, que em determinados contexto é feito pela
-alteração da situação da RM para \textit{Fechada} \@-\@ uma discussão sobre o
-ciclo de vida das RMs pode ser encontrada na
+A solução de determinada RM pode levar a resultados não esperados em outros
+módulos do sistema mantido. Para minimizar os possíveis problemas recomenda-se a
+avaliação do impacto da RM\@. A Análise de Impacto estima o que será afetado no
+software e na documentação relacionada caso uma mudança proposta seja
+feita~\cite{arnold1996software}. A literatura sobre RMs discute algumas soluções
+com o objetivo de realizar a Análise de Impacto. Alguns exemplos de trabalhos
+nesta linha são apresentados na Seção~\ref{ssub:melhorias_dim_processo}. Dentro
+das propostas feitas pelos agilistas uma das possibilidades de reduzir os
+efeitos colaterais de uma mudança é periodicamente realizar a construção (build)
+do sistema. A \textit{Integração Contínua} (IC) é a prática de construir (build)
+e implantar (deploy) imediatamente após um desenvolvedor consolidar (commit) o
+código fonte para o repositório~\cite{aiello2010configuration}. Neste sentido,
+as FGRMs poderiam vincular a solução de uma RM com a execução de processo de
+IC\@. Uma discussão sobre o ciclo de vida das RMs pode ser encontrada na
 Seção~\ref{sub:sub:fluxo_de_trabalho_requisicao_mudanca}. Desta forma, seria
 possível mapear uma versão do sistema com o conjunto de RMs solucionadas até a
-sua geração. Este tipo de integração foi descrita como uma possível
-funcionalidade ausente nas FGRMs por alguns participantes do levantamento por
-questionário descrito no Capítulo~\ref{ch:pesquisa-profissionais}.
+sua geração. Este tipo de integração foi descrita como uma funcionalidade
+ausente nas FGRMs por alguns participantes do levantamento por questionário
+descrito no Capítulo~\ref{ch:pesquisa-profissionais}.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s05}
 
-A integração de uma FGRM com outras ferramentas de IC traria ao processo de
-manutenção os benefícios desta prática, tais como redução de riscos e facilidade
-de encontrar e remover falhas~\cite{fowler2006continuous}.  Além disso, segundo
-o nosso entendimento, o fato de vincular a solução de uma RM com determinada
+A integração de uma FGRM com processos de IC traria ao processo de manutenção os
+benefícios desta prática, tais como a redução de riscos e a facilidade de
+encontrar e remover falhas~\cite{fowler2006continuous}.  Além disso, segundo o
+nosso entendimento, o fato de vincular a solução de uma RM com determinada
 versão de um sistema, pode minimizar problemas levantados no Mapeamento
-Sistemático descrito no Capítulo~\ref{ch:mapeamento-sistematico} tais como
-Localização do Problema (Seção~\ref{ssub:melhorias_dim_ferramenta}) e Estimativa
-de Esforço da RM (Seção~\ref{ssub:melhorias_dim_processo}). Em ambos os casos é
-possível aproveitar da facilidade que a IC fornecer em a localização de uma
-falha que, por exemplo, pode ter sido causada pela solução de uma RM\@.
+Sistemático descrito no Capítulo~\ref{ch:mapeamento-sistematico}, com por
+exemplo a Localização do Problema (Seção~\ref{ssub:melhorias_dim_ferramenta}) e
+a Estimativa de Esforço da RM (Seção~\ref{ssub:melhorias_dim_processo}). Em
+ambos os casos é possível aproveitar da facilidade que a IC fornecer em a
+localização de uma falha que, por exemplo, pode ter sido causada pela solução de
+uma RM\@.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s05}
 
 Algumas vezes a mudança de situação de uma RM para \textit{Fechada} pode não
-representar a sua solução. Por exemplo, a falha descrita pode ser definida como
-de baixo impacto e desta maneira não tratada, ou ainda o conjunto de fatores que
-geraram o problema descrito na RM deixa de existir. Nestas situação não faz
-sentido que responsável por fechar a RM engatilhe um processo de integração
-contínua.
+representar a sua efetiva solução. Por exemplo, a falha descrita pode ser
+definida como de baixo impacto e desta maneira não tratada, ou ainda o conjunto
+de fatores que geraram o problema descrito na RM deixa de existir. Nestas
+situação não faz sentido que responsável por fechar a RM engatilhe um processo
+de integração contínua.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s05}
