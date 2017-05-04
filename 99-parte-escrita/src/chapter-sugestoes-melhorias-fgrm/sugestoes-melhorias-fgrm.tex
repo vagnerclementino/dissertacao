@@ -351,21 +351,18 @@ que engatilhou o processo de compilação como por exemplo o seu número e títu
 \paragraph{Justificativa:}
 \label{par:justificativa_s06}
 
-Considerando o modelo de uma RM apresentado na
-Seção~\ref{sec:requisicao_de_mudanca}, é possível que as informações mais
-relevantes estejam no texto correspondente ao atributo \textit{relato}, que
-contêm a descrição da melhoria ou falha em formato de texto. Com base no
-resultado do estudo realizado na Seção~\ref{sec:caracterizacao_ferramentas}
-verificou-se que a maior parte das ferramentas analisadas utilizam texto
-simples, ou seja, não permitem o uso de linguagens com semântica de
-apresentação, o que significa que sua especificação prescreve como o dado
-estruturado será mostrado, tal como o HTML\@  ou CSS\@.  Algumas linguagens tal
-como Markdown\footnote{\url{https://daringfireball.net/projects/markdown/}} e
-reStructuredText\footnote{\url{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html}}
-vêm ganhando popularidade para publicação de documentação técnica por
-apresentarem características tais como realce da sintaxe de palavras-chaves de
-código fonte. As FGRMs poderiam adotar este tipo de linguagem como um dos
-formatos aceitos para redigir uma RM\@.
+Quando uma nova RM é registrada as informações mais relevantes estejam no texto
+correspondente ao atributo \textit{relato}. Além do problema da falta de
+informação no relato da RM, discutido na
+Seção~\ref{sub:supote_a_qualidade_do_relato}, o Reportador enfrenta a
+dificuldade de expressar a falha ou pedido de melhoria do software. A baixa
+expressividade do texto do relato pode estar relacionado pelo fato que algumas
+ferramentas analisadas utilizam texto simples (vide
+Seção~\ref{sec:caracterizacao_ferramentas}). A possibilidade de usar linguagens
+com semântica de apresentação, como por exemplo Rich Text Format \@-\@
+RTF\footnote{\url{https://msdn.microsoft.com/en-us/library/aa140280(office.10).aspx}},
+ou que permitam realce da sintaxe do código poderiam ajudar ao Reportador em
+expressar com maior qualidade a falha ou pedido de melhoria.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s06}
@@ -375,17 +372,17 @@ outros~\cite{voegler2014markdown} mostraram que o uso da linguagem Markdown pode
 melhorar a qualidade técnica e a acessibilidade do documento resultante. As
 FGRMs poderiam se apropriar destas facilidades com o objetivo de melhorar a
 legibilidade do texto contido na RM\@. Diante do uso deste tipo de formato, os
-Reportadores poderiam por exemplo incluir no próprio relato uma parte do código
-fonte do qual ele supõem que está localizado a falha.
+Reportadores poderiam, por exemplo, incluir no próprio relato uma parte do
+código fonte do qual ele supõem que está localizado a falha.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s06}
 
 Considerando que os responsáveis por reportar uma RM possuem diferentes níveis
 de conhecimento sobre o sistema. Neste sentido, é possível que nem todos os
-Reportadores consigam fazer uso de todas as facilidades oferecidas por este
-formato. Além disso, a utilização de uma linguagem que exija conhecimento
-prévio pode inibir o desejo de relatar uma RM\@.
+Reportadores consigam fazer uso de todas as facilidades oferecidas por um novo
+formato para relatar uma RM\@. Além disso, a utilização de uma linguagem que
+exija conhecimento prévio pode inibir o desejo de relatá-la.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s06}
@@ -405,19 +402,18 @@ formatos disponíveis para o relato da RM\@.
 \paragraph{Justificativa:}
 \label{par:justificativa_s07}
 
-Algumas equipes de manutenção de software estão adotando práticas propostas
-pelos agilistas~\cite{svensson2005introducing}. Naquele contexto, um problema
-recorrente, é que iteração (sprint) estão sujeitas à interrupções por demandas
+Conforme discutido na Seção~\ref{sub:diferenciacao_do_reportdor} a escolha das
+RMs a ser analisada é um problema recorrente nas equipes de manutenção. Algumas
+equipes de manutenção de software estão adotando práticas propostas pelos
+agilistas~\cite{svensson2005introducing}. Naquele contexto, um problema
+comum, é que as iterações (sprint) estão sujeitas à interrupções por demandas
 urgentes de clientes~\cite{bennett2000software}. Uma possível solução é a
 utilização de uma reserva de tempo (buffer) que não é alocada no planejamento da
 iteração de modo a atender eventuais demandas não
 esperadas~\cite{schwaber2002agile}. Apresentar da solução apresentada ainda é
 necessário definir quais RM devem ser priorizadas durante a iteração, o que
-geralmente é realizado manualmente. As FGRM poderiam ajudar por meio do suporte
-à priorização automática de RMs urgente e não esperadas. No levantamento com
-profissionais esta sugestão ficou entre as três mais frequentemente selecionadas
-pelos participantes quando foi questionado sobre novas funcionalidades para as
-FGRMs.
+geralmente é realizado manualmente. As FGRM poderiam suportar à priorização
+automática de RMs urgentes.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s07}
@@ -460,21 +456,20 @@ atribuição automatizada para o desenvolvedor mais apto.
 \paragraph{Justificativa:}
 \label{par:justificativa_s08}
 
-Dentro do que é proposto pelos agilistas, uma boa prática é propriedade
-compartilhada de código~\cite{meyer2014agile}. Por outro lado, mantenedores
-tendem a ser tornarem especialistas nos sistemas do qual são
+Dentro do que é proposto pelos agilistas, o compartilhamento de código é visto
+como uma boa prática~\cite{meyer2014agile}. Por outro lado, mantenedores tendem
+a ser tornarem especialistas nos sistemas do qual são
 responsáveis~\cite{singer1998practices}. A propriedade compartilhada de tarefas
 permite que a carga de trabalho seja distribuída de forma mais igual, permitindo
 que os mantenedores sejam capaz de ajudar uns aos outros em períodos de muita
-atividade. No contexto das FGRMs, a propriedade compartilhada de atividades
-poderia ser representada como o compartilhamento RM, ou seja, a ``propriedade''
-de uma RM não seria de um único desenvolvedor mas de dois ou mais responsáveis.
+atividade. No contexto das FGRMs, as tarefas compartilhadas poderiam ser
+representada com a ``propriedade'' de uma RM por dois ou mais desenvolvedores.
 Uma abordagem semelhante a este sugestão foi realizada no estudo proposto por
 Banitaan \& Alenezi~\cite{banitaan2013decoba} no qual os autores construíram uma
 comunidades de desenvolvedores baseados nos comentários realizados nas RMs. Cada
 nova RM criada era atribuída para uma comunidade. Os resultados mostraram que a
 abordagem atingiu uma precisão razoável de atribuição de RMs, além de construir
-um conjunto de desenvolvedores com experiência em solucionar determinas RMs.
+um conjunto de desenvolvedores com experiência em solucionar determinadas RMs.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s08}
@@ -482,7 +477,7 @@ um conjunto de desenvolvedores com experiência em solucionar determinas RMs.
 A atribuição de uma RM a mais de um desenvolvedor ajuda a otimizar a carga de
 trabalho em toda a equipe e pode aumentar o moral do time. Neste contexto, os
 mantenedores deixam de ser especialistas em determinados sistemas para se
-tornarem generalistas, trabalhando com outros projetos. Esses benefícios já são
+tornarem generalistas, trabalhando com outros projetos. Esses benefícios são
 discutidos na literatura sobre o desenvolvimento e a manutenção que adotam as
 práticas propostas pelos agilistas~\cite{dybaa2008empirical,rudzki2009agile}.
 
@@ -502,36 +497,6 @@ Quando uma nova RM é criada um processo automatizado define dois ou mais
 desenvolvedores como responsáveis. Posteriormente, a RM é dividida em tarefas
 que serão compartilhada entre o conjunto de desenvolvedores para o qual ela foi
 atribuída.
-
-%\subsection{Suporte à Reuniões Diárias (Daily)}
-%\label{sub:suporte_reunicao_diarias}
-
-%\sugestao{08}{Ajuda do desenvolvedor em sua reunião diária (daily)}
-
-%\paragraph{Justificativa:}
-%\label{par:justificativa_s08}
-
-%Seguindo na mesma linha de adotação por práticas dos agilistas sendo adotadas
-%pelas equipes de manutenção de software, verificamos o emprego da Reunião Diária
-%(Daily)~\cite{meyer2014agile}. No estudo de Heeager~\cite{Heeager2015},que
-%avalia adotação das práticas propostas pelos agilistas em uma empresa de
-%manutenção de software, afirmou que as reuniões diárias serviram como um lugar
-%para identificação do conhecimento e aprendizagem da equipe. Diante das
-%vantagens deste tipo de prática, as FGRMs poderiam ajudar ao desenvolvedor em
-%responder as questões que são propostas neste tipo de reunião: ``O que eu fiz no
-%dia anterior?'', ``O que eu planejo fazer hoje?'', e ``Que impedimentos estou
-%enfrentando?''~\cite{meyer2014agile}. No levantamento descrito no
-%Capítulo~\ref{ch:pesquisa-profissionais} este comportamento foi marcado com uma
-%funcionalidade desejável nas FGRMs por X\% dos participantes.
-
-%\paragraph{Benefício Gerado:}
-%\label{par:papéis_afetados_s08}
-
-%\paragraph{Limitações:}
-%\label{par:limitacoes_s08}
-
-%\paragraph{Exemplo de Utilização:}
-%\label{par:exemplo_de_utilização_s08}
 
 \section{Avaliação das Melhorias Propostas}
 \label{sec:sug_melhoria_avaliacao_das_melhorias}
