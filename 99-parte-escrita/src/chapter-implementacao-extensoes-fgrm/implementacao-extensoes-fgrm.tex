@@ -55,20 +55,20 @@ qualidade de relato.
 \label{sec:avaliando_a_qualidade_do_relato_de_uma_rm}
 
 No estudo realizado por Bettenburg e outros~\cite{bettenburg2008makes} foi
-desenvolvida um levantamento com questionário (\textit{survey}) entre
+desenvolvido um levantamento com questionário (\textit{survey}) entre
 desenvolvedores e usuários dos projetos
 Apache\footnote{\url{http://www.apache.org/}},
 Eclipse\footnote{\url{https://www.eclipse.org}} e
 Mozilla\footnote{\url{https://www.mozilla.org}} a fim de verificar o que
 produziria um bom relato de um RM\@. Os resultados demonstraram que do ponto de
 vista dos desenvolvedores eram consideradas informações úteis, que idealmente
-deveriam estar no relato de uma RM\@: \textit{(i)} a sequência de erros
+deveriam estar no relato de uma RM\@: \textit{(i)} a sequência de ações
 executadas até o aparecimento do erro (se for o caso), também conhecida como
 \textit{etapas para reproduzir}; \textit{(ii)} o registro de pilhas de ativação
-(stack traces) que são arquivos com os histórico de chamada de métodos (logs)
-que ocorreram antes da ocorrência do erro.
+(stack traces) que são arquivos com os históricos de chamada de métodos (logs)
+que ocorreram antes do aparecimento do erro.
 
-No estudo proposto por Zimmermann e outros~\cite{5070993} é discutido a
+No estudo proposto por Zimmermann e outros~\cite{5070993} é discutida a
 importância de que a informação descrita em uma RM seja relevante e completa a
 fim de que esteja relatado seja resolvido rapidamente. Contudo, na prática, a
 informação apenas chega ao desenvolvedor com a qualidade requerida após diversas
@@ -98,7 +98,7 @@ eventual sobrecarga que a análise da qualidade do relato pode causar. A
 maior frequência em determinado projeto possuem uma qualidade do relato superior
 daqueles que fazem isso eventualmente. Por fim, na \textit{Questão 03} queremos
 entender os prós e contras que a implantação deste tipo de extensão pode
-produzir no processo de manutenção de software tomando com base a opinião de
+produzir no processo de manutenção de software tomando como base a opinião de
 profissionais da área.
 
 \subsection{Desenho da Extensão}
@@ -141,7 +141,7 @@ solicitada mediante a criação de um novo comentário.
 
 Para gerar o comentário descrito anteriormente, a extensão avalia alguns
 atributos do texto que compõe o relato da RM\@. Os detalhes de como estes
-atributos são analisados e o comentário é construídos estão descritos na próxima
+atributos são analisados e o comentário construído estão descritos na próxima
 seção.
 
 \subsubsection{Análise da Qualidade do Relato}
@@ -216,7 +216,7 @@ O corpo do comentário é produzido com análise dos seguintes atributos do rela
 da RM\@: \textit{Etapas para Reproduzir, Arquivos Anexados, Fragmentos de
     Código, Completude do Texto e Legibilidade do Texto}. Estes atributos foram
 baseados no estudo realizado por Bettenburg e outros~\cite{bettenburg2008makes}.
-A seguir apresentamos os detalhes como cada atributo é avaliado.
+A seguir apresentamos os detalhes de como cada atributo é avaliado.
 
 \paragraph{Etapas para Reproduzir:}
 \label{par:etapas_para_reproduzir_}
@@ -227,7 +227,7 @@ extensão aproveita da linguagem Markdown, que é o padrão utilizado para redig
 o relato da \textit{issue}, e que possui uma sintaxe pré-definida para listas. O
 padrão é detectado através da utilização de expressões regulares. Pode ocorrer
 que o Reportador utilize outro formato para relatar as etapas executadas até a
-ocorrência da falha, contudo, o fato a extensão exigir a informação através de
+ocorrência da falha, contudo, o fato da extensão exigir a informação através de
 uma lista, pode criar no Reportador uma boa prática. Cabe ressaltar que uma
 lista com etapas para reproduzir foi uma das informações mais relevantes a
 estarem no relato de uma RM~\cite{bettenburg2008makes}.
@@ -237,8 +237,8 @@ estarem no relato de uma RM~\cite{bettenburg2008makes}.
 
 Nesta dimensão avaliamos a existência de arquivos anexados à \textit{issue},
 tais como capturas de telas (screenshots) e cadeia de registros de ativação de
-funções (stack trace). A detecção é realizada utilização expressões regulares
-utilizando da sintaxe padrão que é utilizada no relato da
+funções (stack trace). A detecção é realizada utilizando expressões regulares
+que é a sintaxe padrão para o relato da
 RM\footnote{\url{https://guides.github.com/features/mastering-markdown/}}. Não
 houve avaliação sobre o conteúdo do anexo, contudo, conforme descrito na
 Tabela~\ref{tab:criterios_analise_qualidade_relato}, uma mensagem é incluída no
@@ -250,8 +250,8 @@ vistas dos desenvolvedores~\cite{bettenburg2008makes}.
 \label{par:fragmentos_de_código}
 
 Este atributo de avaliação verifica se fragmentos de código foi adicionado no
-relato da \textit{issue}. O processo de detecção utilização de expressão
-regulares e da sintaxe oferecida pela versão do Markdown utilizado pelo
+relato da \textit{issue}. O processo de detecção faz uso de expressão regulares
+e da sintaxe oferecida pela versão do Markdown utilizado pelo
 Github\footnote{\url{https://guides.github.com/features/mastering-markdown/\#GitHub-flavored-markdown}}.
 De forma similar aos atributos descritos anteriormente, a verificação de
 fragmentos de código fonte é binária, ou seja, foi avaliada a existência ou não
@@ -261,16 +261,16 @@ de trecho de código.
 \label{par:completude_de_palavras_chaves}
 
 Nesta dimensão da avaliação há uma premissa que possa existir um vocabulário
-comum no relato de diferentes RMs. Em outras palavras, algumas palavras aparecem
+comum no relato de diferentes RMs. Sendo assim, algumas palavras aparecem
 com determinada frequência no relato de uma RM, independente do projeto. Com o
 objetivo de compreender como as pessoas descrevem problemas de software Ko e
-outros~\cite{ko2006linguistic} analisar o título de 200.000 RMs de cinco
-projetos de código aberto desenvolvidos na linguagem Java. Nos reutilizamos esta
+outros~\cite{ko2006linguistic} analisaram o título de 200.000 RMs de cinco
+projetos de código aberto desenvolvidos na linguagem Java. Nós reutilizamos esta
 base de dados\footnote{Disponível para download em
     \url{http://www.cs.cmu.edu/~marmalade/reports.html.}} para construir uma
 distribuição da frequência de ocorrências de palavras no relato de uma RM\@.  Em
 uma primeira etapa, removemos as palavras de parada (stopwords), reduzimos as
-palavras\footnote{Do inglês \textit{stemming} é o processo de reduzir palavras
+vocábulos\footnote{Do inglês \textit{stemming} é o processo de reduzir palavras
     flexionadas (ou às vezes derivadas) ao seu tronco (stem), base ou raiz,
     geralmente uma forma da palavra escrita. Por exemplo um algoritmo de
     stemming reduz as palavras ``fishing'', ``fished'' e ``fisher'' para a raiz
@@ -294,7 +294,7 @@ seguida, categorizamos as palavras nos seguintes grupos:
 
 Por fim a extensão avalia o nível legibilidade do texto com base em testes
 largamente utilizados na literatura~\cite{Si:2001:SMS:502585.502695}. Os testes
-de legibilidade são fórmulas para avaliar a legibilidade do texto, geralmente
+de legibilidade são fórmulados para avaliar a legibilidade do texto, geralmente
 contando sílabas, palavras e frases.  Neste estudo utilizamos os testes de
 legibilidade \textit{Flesch–Kincaid, Automated Readability Index \@-\@ ARI e
     Dale–Chall Readability Formula}. Os testes foram selecionados por
@@ -320,17 +320,18 @@ de leitura de 17 anos de idade.
 Por outro lado, o teste Dale-Chall é baseado em um conjunto mínimo de palavras.
 A fórmula usa uma lista de 3000 palavras que grupos de estudantes americanos de
 quarta série poderiam entender de forma confiável, partindo-se da premissa que
-qualquer palavra nessa lista não seja de difícil~\cite{dale1948formula}. No caso
-dos testes ARI e Dale-Chall a legibilidade será considerada ruim se o número de
-anos de estudos necessário para o entendimento \textit{for maior ou igual a 13}
-que representa de maneira geral e foi utilizado no trabalho de Bettenburg e
+qualquer palavra nessa lista não seja de difícil
+compreensão~\cite{dale1948formula}. No caso dos testes ARI e Dale-Chall a
+legibilidade será considerada ruim se o número de anos de estudos necessário
+para o entendimento \textit{for maior ou igual a 13} que representa de maneira
+geral o número de anos de estudo e foi utilizado no trabalho de Bettenburg e
 outros~\cite{bettenburg2008makes}.
 
 \section{Avaliação da Extensão}
 \label{sec:avaliando_a_extensao_proposta}
 
 Com o objetivo de avaliar a extensão proposta conduzimos um levantamento
-(survey) através questionário com profissionais que contribuem em projeto de
+(survey) através questionário com profissionais que contribuem em projetos de
 código aberto hospedados no Github. A metodologia utilizada na condução do
 levantamento é descrita na próxima subseção.
 
@@ -339,16 +340,16 @@ levantamento é descrita na próxima subseção.
 
 Para realizarmos a coleta dos dados foi utilizado um levantamento (survey)
 através de um questionário eletrônico. O processo de seleção dos participantes,
-o desenho do questionário e como foi realização a sua aplicação estão descritos
-na próximas subseções.
+o desenho do questionário e como foi realizada a sua aplicação estão descritos
+nas próximas subseções.
 
 \subsubsection{Seleção dos Participantes}
 \label{ssub:sug_melhoria_selecao_participantes}
 
 Ficou definido que o público-alvo deste questionário seria profissionais que
 façam uso de FGRMs e que desta forma possam obter as vantagens da extensão
-propostas. Como este perfil é bastante genérico, optamos por utilizar uma
-amostra de conveniência através de que atuam como \textit{contribuidores} em
+proposta. Como este perfil é bastante genérico, optamos por utilizar uma
+amostra de conveniência através dos que atuam como \textit{contribuidores} em
 três projetos de código aberto hospedados no Github. Dentre os contribuidores de
 um projeto não houve nenhum critério de seleção, neste sentido todos poderiam
 eventualmente participar da pesquisa. Os critérios utilizados foram os mesmos
@@ -389,11 +390,11 @@ endereço.
 \label{ssub:sug_melhoria_desenho_questionario}
 
 Para avaliarmos a extensão desenvolvemos um questionário composto de duas
-partes. Na primeira o objetivo é que participante emita opinião sobre a
+partes. Na primeira o objetivo é que o participante emita opinião sobre a
 qualidade do relato de uma issue do projeto que contribui bem como do grau de
-relevância do comentado gerado pela extensão. Com este objetivo no desenhamos um
-processo de avaliação conforme descrito a seguir. A descrição toma com base um
-único projeto, contudo, a mesma metodologia foi replicada para os demais.
+relevância do comentários gerado pela extensão. Com este objetivo nós desenhamos
+um processo de avaliação conforme descrito a seguir. A descrição toma como base
+um único projeto, contudo, a mesma metodologia foi replicada para os demais.
 
 Nós selecionamento uma amostra aleatória de 50 \textit{issues} do projeto que
 foram apresentados uma por uma aos participantes em uma ordem aleatória. Eles

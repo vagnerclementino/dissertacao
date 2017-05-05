@@ -109,7 +109,7 @@ do que foi informado no relato da RM\@.
 \label{par:beneficio_s01}
 
 Com este tipo de funcionalidade uma FGRM poderia reduzir o tempo de análise de
-determinada RM pelo fato que o responsável por criá-la estaria ciente das
+determinada RM porque o responsável por criá-la estaria ciente das
 informações necessárias à sua solução. Neste caso, o desenvolver seria
 diretamente beneficiado já que teria a sua disposição um relato mais completo.
 Não obstante, um trabalho adicional seria dado ao reportador que algumas
@@ -118,7 +118,7 @@ situações devem rever as informações incluídas na RM\@.
 \paragraph{Limitações:}
 \label{par:limitacoes_s01}
 
-Alguns estudos sobre melhoria do qualidade do relato da RM focam
+Alguns estudos sobre melhoria da qualidade do relato da RM focam
 prioritariamente nas que descrevem defeitos do software. Conforme discutimos na
 Seção~\ref{sec:requisicao_de_mudanca}, uma RM pode também estar relacionada com
 um pedido de melhoria. Uma dificuldade inicial é separar de forma automatizada
@@ -292,16 +292,17 @@ A solução de determinada RM pode levar a resultados não esperados em outros
 módulos do sistema mantido. Para minimizar os possíveis problemas recomenda-se a
 avaliação do impacto da RM\@. A Análise de Impacto estima o que será afetado no
 software e na documentação relacionada caso uma mudança proposta seja
-feita~\cite{arnold1996software}. A literatura sobre RMs discute algumas soluções
-com o objetivo de realizar a Análise de Impacto. Alguns exemplos de trabalhos
-nesta linha são apresentados na Seção~\ref{ssub:melhorias_dim_processo}. Dentro
-das propostas feitas pelos agilistas uma das possibilidades de reduzir os
-efeitos colaterais de uma mudança é periodicamente realizar a construção (build)
-do sistema. A \textit{Integração Contínua} (IC) é a prática de construir (build)
-e implantar (deploy) imediatamente após um desenvolvedor consolidar (commit) o
-código fonte para o repositório~\cite{aiello2010configuration}. Neste sentido,
-as FGRMs poderiam vincular a solução de uma RM com a execução de processo de
-IC\@. Uma discussão sobre o ciclo de vida das RMs pode ser encontrada na
+feita~\cite{arnold1996software}. A literatura sobre RMs discute que em algumas
+soluções com o objetivo de realizar a Análise de Impacto. Alguns exemplos de
+trabalhos nesta linha são apresentados na
+Seção~\ref{ssub:melhorias_dim_processo}. Dentro das propostas feitas pelos
+agilistas uma das possibilidades de reduzir os efeitos colaterais de uma mudança
+é periodicamente realizar a construção (build) do sistema. A \textit{Integração
+    Contínua} (IC) é a prática de construir (build) e implantar (deploy)
+imediatamente após um desenvolvedor consolidar (commit) o código fonte para o
+repositório~\cite{aiello2010configuration}. Neste sentido, as FGRMs poderiam
+vincular a solução de uma RM com a execução de processo de IC\@. Uma discussão
+sobre o ciclo de vida das RMs pode ser encontrada na
 Seção~\ref{sub:sub:fluxo_de_trabalho_requisicao_mudanca}. Desta forma, seria
 possível mapear uma versão do sistema com o conjunto de RMs solucionadas até a
 sua geração. Este tipo de integração foi descrita como uma funcionalidade
@@ -319,7 +320,7 @@ versão de um sistema, pode minimizar problemas levantados no Mapeamento
 Sistemático descrito no Capítulo~\ref{ch:mapeamento-sistematico}, com por
 exemplo a Localização do Problema (Seção~\ref{ssub:melhorias_dim_ferramenta}) e
 a Estimativa de Esforço da RM (Seção~\ref{ssub:melhorias_dim_processo}). Em
-ambos os casos é possível aproveitar da facilidade que a IC fornecer em a
+ambos os casos é possível aproveitar da facilidade que a IC fornecer a
 localização de uma falha que, por exemplo, pode ter sido causada pela solução de
 uma RM\@.
 
@@ -336,7 +337,7 @@ de integração contínua.
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s05}
 
-Após um desenvolvedor solucionar determinada RM, mudança a sua situação para
+Após um desenvolvedor solucionar determinada RM, mudando a sua situação para
 \textit{Fechada} por exemplo, a FGRM dispara o processo de compilação do
 sistema. O resultado da compilação poderia ser exibido em um painel de controle
 incluindo o responsável pela mudança mais recente no sistema, incluindo
@@ -374,7 +375,7 @@ melhorar a qualidade técnica e a acessibilidade do documento resultante. As
 FGRMs poderiam se apropriar destas facilidades com o objetivo de melhorar a
 legibilidade do texto contido na RM\@. Diante do uso deste tipo de formato, os
 Reportadores poderiam, por exemplo, incluir no próprio relato uma parte do
-código fonte do qual ele supõem que está localizado a falha.
+código fonte do qual ele supõem que está localizada a falha.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s06}
@@ -411,9 +412,9 @@ comum, é que as iterações (sprint) estão sujeitas à interrupções por dema
 urgentes de clientes~\cite{bennett2000software}. Uma possível solução é a
 utilização de uma reserva de tempo (buffer) que não é alocada no planejamento da
 iteração de modo a atender eventuais demandas não
-esperadas~\cite{schwaber2002agile}. Apresentar da solução apresentada ainda é
-necessário definir quais RM devem ser priorizadas durante a iteração, o que
-geralmente é realizado manualmente. As FGRM poderiam suportar à priorização
+esperadas~\cite{schwaber2002agile}. Para apresentação da solução apresentada
+ainda é necessário definir quais RM devem ser priorizadas durante a iteração, o
+que geralmente é realizado manualmente. As FGRM poderiam suportar à priorização
 automática de RMs urgentes.
 
 \paragraph{Benefício Gerado:}
@@ -444,7 +445,7 @@ resultados.
 \label{par:exemplo_de_utilização_s07}
 
 Após uma nova RM ser criada, a FGRM dispara um processo para determinar se ela
-deve ser classificada com urgente conforme critérios previamente definidos. Em
+deve ser classificada como urgente conforme critérios previamente definidos. Em
 positivo, a ferramenta realiza a priorização da RM através, por exemplo, da
 atribuição automatizada para o desenvolvedor mais apto.
 
@@ -462,10 +463,10 @@ como uma boa prática~\cite{meyer2014agile}. Por outro lado, mantenedores tendem
 a ser tornarem especialistas nos sistemas do qual são
 responsáveis~\cite{singer1998practices}. A propriedade compartilhada de tarefas
 permite que a carga de trabalho seja distribuída de forma mais igual, permitindo
-que os mantenedores sejam capaz de ajudar uns aos outros em períodos de muita
+que os mantenedores sejam capazes de ajudar uns aos outros em períodos de muita
 atividade. No contexto das FGRMs, as tarefas compartilhadas poderiam ser
 representada com a ``propriedade'' de uma RM por dois ou mais desenvolvedores.
-Uma abordagem semelhante a este sugestão foi realizada no estudo proposto por
+Uma abordagem semelhante a esta sugestão foi realizada no estudo proposto por
 Banitaan \& Alenezi~\cite{banitaan2013decoba} no qual os autores construíram uma
 comunidades de desenvolvedores baseados nos comentários realizados nas RMs. Cada
 nova RM criada era atribuída para uma comunidade. Os resultados mostraram que a
@@ -487,16 +488,16 @@ práticas propostas pelos agilistas~\cite{dybaa2008empirical,rudzki2009agile}.
 
 Uma funcionalidade com suporte ao compartilhamento de tarefas dos mesmo desafios
 e problemas do processo de atribuição automatizada de RMs, conforme discutido na
-Seção~\ref{ssub:melhorias_dim_processo}. Além disso a RM deve permitir a divisão
-atômica de tarefas de modo que cada atividade fique com um único desenvolvedor,
-o que nem sempre é possível.
+Seção~\ref{ssub:melhorias_dim_processo}. Além disso, a RM deve permitir a
+divisão atômica de tarefas de modo que cada atividade fique com um único
+desenvolvedor, o que nem sempre é possível.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s08}
 
 Quando uma nova RM é criada um processo automatizado define dois ou mais
 desenvolvedores como responsáveis. Posteriormente, a RM é dividida em tarefas
-que serão compartilhada entre o conjunto de desenvolvedores para o qual ela foi
+que serão compartilhadas entre o conjunto de desenvolvedores para o qual ela foi
 atribuída.
 
 \section{Avaliação das Melhorias Propostas}
@@ -506,7 +507,7 @@ Este Capítulo apresentou um conjunto de sugestões que foram construídas toman
 como base a literatura da área e os resultados e contribuições desta
 dissertação. Com o objetivo de avaliar a relevância e o grau de facilidade de
 implementação das recomendações propostas, conduzimos um levantamento mediante
-questionário com profissionais que contribuem em projeto de código aberto
+questionário com profissionais que contribuem em projetos de código aberto
 hospedados no Github. A metodologia utilizada na condução do levantamento é
 descrita na próxima subseção.
 
@@ -515,7 +516,7 @@ descrita na próxima subseção.
 
 Para realizarmos a coleta dos dados foi utilizado um levantamento (survey)
 através de um questionário eletrônico. O processo de seleção dos participantes,
-o desenho do questionário e como foi realização a sua aplicação estão descritos
+o desenho do questionário e como foi realizada a sua aplicação estão descritos
 na próximas subseções.
 
 \subsubsection{Seleção dos Participantes}
@@ -611,12 +612,12 @@ por objetivo coletar a opinião dos profissionais sobre a relevância da
 recomendação proposta e o grau de dificuldade de implementá-la. As perguntas
 foram estruturadas como uma escala de Likert em que o respondente deveria
 fornecer o seu nível de concordância para as declarações que lhe são
-apresentadas. No segundo grupo as perguntas visam estamos interessados na
-formação de base (background) dos profissionais. Optamos por definir cada uma
-das questões como não obrigatórios por entendermos que a impossibilidade ou o
-não interesse em responder uma determinada pergunta impeça ao participante de
-enviar os dados de outras que foram respondidas. A Figura~\ref{} exibe uma parte
-do formulário utilizado neste estudo.
+apresentadas. No segundo grupo estamos interessados na formação de base
+(background) dos profissionais. Optamos por definir cada uma das questões como
+não obrigatórias por entendermos que a impossibilidade ou o não interesse em
+responder uma determinada pergunta impeça ao participante de enviar os dados de
+outras que foram respondidas. A Figura~\ref{} exibe uma parte do formulário
+utilizado neste estudo.
 
 \todobegin{Incluir figura com o formulário}
 
