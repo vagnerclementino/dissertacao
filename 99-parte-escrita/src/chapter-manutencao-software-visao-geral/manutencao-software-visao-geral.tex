@@ -64,12 +64,12 @@ ser corrigido, melhorado ou adaptado~\cite{{159342}}. A
 ISO/IEC~9126~-~01~\cite{ISOIEC9126} define a Manutenibilidade como um atributo
 de qualidade do processo de Manutenção.
 
-É possível identificar manter e evoluir como aspectos comuns entre as diferentes
-definições para Manutenção de Software. Embora exista o entendimento que os
-processos de manutenção e evolução possuem características
+É possível verificar que  \textit{manter e evoluir} são aspectos comuns das
+diferentes definições para Manutenção de Software. Embora exista o entendimento
+que os processos de manutenção e evolução possuem características
 distintas~\cite{tripathy2014software}, não está nos objetivos desta dissertação
-discutir ou apresentar estas diferenças. Neste sentido, utilizamos os termos
-\textit{manter} e \textit{evoluir} de forma intercambiáveis.
+discutir e apresentar as diferenças. Neste sentido, utilizamos ambos os termos
+de forma intercambiáveis.
 
 %A Manutenção é necessária para garantir que o software seja capaz de satisfazer
 %os requisitos dos usuários. Neste sentido, a atividade de manter software pode
@@ -80,14 +80,14 @@ discutir ou apresentar estas diferenças. Neste sentido, utilizamos os termos
 \label{sec:o_processo_de_manutecao_de_software}
 
 O Processo de Manutenção de Software é o conjunto de atividades, métodos,
-práticas e transformações utilizadas para desenvolvê-lo ou mantê-lo bem como
+práticas e transformações utilizadas para desenvolver ou manter um software e
 seus artefatos associados~\cite{paulk1993key}. Existe na literatura alguns
-modelos do processo de manutenção de software, especialmente baseados em uma
+modelos para o processo de manutenção de software, especialmente baseados em uma
 visão ``tradicional''. Nesta perspectiva o desenvolvimento e a manutenção de
-software possuem uma separação clara. Contudo, quando esta dissertação estava
-sendo escrita, existia uma tendência de adoção na manutenção de software de
-algumas das práticas propostas pelos agilistas. Esta inclinação surge da demanda
-por serviços de manutenção de rápido retorno para o usuário.
+software possuem uma separação clara. Contudo, no momento do desenvolvimento
+desta dissertação, existia uma tendência de adoção das práticas propostas pelos
+agilistas na manutenção de software. Esta inclinação surge da demanda por
+serviços de manutenção de rápido retorno para o usuário.
 
 %Nas próximas seções apresentamos alguns modelos encontrados na literatura na
 %perspectiva tradicional, ao mesmo tempo descrevemos propostas do uso da
@@ -96,12 +96,14 @@ por serviços de manutenção de rápido retorno para o usuário.
 \subsubsection{Manutenção de Software Tradicional}
 \label{subsec:manutenção_de_software_tradicional}
 
-Em resumo, um processo de manutenção de software descreve as atividades e suas
-respectivas entradas e saídas. Alguns modelos são descritos nos padrões IEEE
-1219 e ISO/IEC 14764. O processo especificado no Padrão para Manutenção de
-Software (IEEE\@-\@1219) indica que as atividades de manutenção de software
-iniciem após a entrega do produto de software. O padrão também discute aspectos
-de planejamento da manutenção. As atividades que compõem o processo são
+Nesta seção apresentamos e discutimos alguns principais modelos para processo de
+manutenção existentes na literatura. No contexto desta dissertação estes modelos
+são descritos como tradicionais. Em resumo, um processo de manutenção de
+software descreve as atividades e suas respectivas entradas e saídas. Alguns
+modelos são descritos nos padrões IEEE 1219 e ISO/IEC 14764. O processo
+especificado no padrão IEEE\@-\@1219 indica que as atividades de manutenção de
+software iniciem após a entrega do produto de software. O padrão também discute
+aspectos de planejamento da manutenção. As atividades que compõem o processo são
 apresentadas na Figura~\ref{fig:ieee-1219-processo-man-software}.
 
 \begin{figure}[htpb] \centering
@@ -121,8 +123,8 @@ exibidas na Figura~\ref{fig:ieee-14764-processo-manutencao}.
 	\caption{ISO/IEC~14764 Processo de Manutenção de Software}
 \label{fig:ieee-14764-processo-manutencao} \end{figure}
 
-As atividades de manutenção propostas na ISO/IEC 14764 são detalhadas em tarefas
-conforme apresentadas a seguir:
+As atividades de manutenção propostas na ISO/IEC 14764 são detalhadas nas
+tarefas descritas a seguir:
 
 \begin{itemize}
    	\item Implementação do Processo
@@ -134,18 +136,15 @@ conforme apresentadas a seguir:
 \end{itemize}
 
 É possível notar que algumas atividades realizadas durante a manutenção de
-software são similares à outras presentes no desenvolvimento de software, como
+software são similares a outras presentes no desenvolvimento de software, como
 por exemplo, análise de desempenho, codificação, teste e documentação. Outra
 atividade comum à manter e desenvolver software é o gerenciamento dos
 requisitos. Nas duas situações os profissionais responsáveis por controlar os
 requisitos devem atualizar a do\-cu\-men\-ta\-ção  por conta de alterações
-ocorridas no código fonte. Por outro lado certas atividades estão vinculadas
+ocorridas no código fonte. Por outro lado, certas atividades estão vinculadas
 apenas ao contexto da manutenção de software. O Corpo de Conhecimento em
 Engenharia de Software~\cite{4425813} destaca algumas delas:
 
-\todobegin{Faltava referência sobre as atividades que seriam únicas ao processo
-	de manutenção. Havida duvidas sobre se as atividades: Suporte ao Usuário,
-	Suporte ao Uso de Software e Acordo de Nível de Serviço}
 \begin{description}
 	\item[Compreensão do programa:] atividades necessárias para obter um
 		conhecimento geral do que um produto de software faz e como as partes
@@ -153,90 +152,81 @@ Engenharia de Software~\cite{4425813} destaca algumas delas:
 	\item[Transição:] uma sequência controlada e coordenada de atividades onde o
 		software é transferido progressivamente do desenvolvedor para o
 		mantenedor;
-	\item[Aceitação/rejeição de Requisições de Mudança:] as modificações
-		que ultrapassem determinado limiar de tamanho, esforço ou complexidade
-		podem ser rejeitadas pelos mantenedores e redirecionadas para um
-		desenvolvedor;
+    \item[Aceitação/rejeição de Requisições de Mudança\footnote{O conceito de
+            Requisição de Mudança é discutido na
+            Seção~\ref{sec:requisicao_de_mudanca}}:] as modificações que
+        ultrapassem determinado limiar de tamanho, esforço ou complexidade podem
+        ser rejeitadas pelos mantenedores e redirecionadas para outro
+        desenvolvedor;
 	\item[Suporte ao usuário:] uma função de suporte para o usuário final que
-		aciona a priorização ou avaliação de esforço das Requisições
+		pode resultar na priorização ou avaliação de esforço das Requisições
 		de Mudança;
 	\item[Análise de impacto:] uma técnica para identificar os módulos que
-		possivelmente pode ser afetado por determinada mudança solicitada;
+		possivelmente são afetados por determinada mudança solicitada;
 	\item[Contratos de Acordo de Nível de Serviço (Service Level Agreements
 		\@-\@ SLA):] acordos contratuais que descrevem os serviços a serem
 		realizados pela equipe de manutenção e os objetivos de qualidade do
 		produto de software.
 \end{description}
-\todoend{}
 
 \subsubsection{Manutenção de Software na Perspectiva dos Agilistas}
 \label{sub:manutenção_de_software_com_método_dos_agilistas}
 
 Grande parte da literatura em Manutenção de Software trata de técnicas e
-metodologias tradicionais da Engenharia de Software. Todavia, verifica-se uma
-tendência que os departamentos dedicados à manutenção de software se mostrem
-interessados nas metodologias dos agilistas e que tenham vontade de
-experimentá-las em suas atividades~\cite{Heeager2015}.
+metodologias tradicionais da Engenharia de Software. Todavia, verifica-se a
+tendência que os departamentos dedicados à Manutenção de Software se mostrem
+interessados nas metodologias propostas pelos agilistas~\cite{Heeager2015}.  No
+momento da elaboração desta dissertação boa parte dos textos em Engenharia de
+Software tratam desenvolvimento e manutenção como atividades com natureza
+distintas. Todavia, algumas ``práticas ágeis'' podem ser utilizadas em tarefas
+de manutenção tais como processo de trabalho iterativo, um maior envolvimento do
+cliente, a comunicação face a face e os testes frequentes.
 
-No momento da elaboração desta dissertação boa parte dos textos em Engenharia de
-Software tratarem desenvolvimento e manutenção como atividades com natureza
-distintas, esta última pode adaptar características da primeira visando a
-melhoria do seu desempenho. Dentre as práticas propostas pelos agilistas
-passíveis de serem utilizadas em tarefas de manutenção é possível citar o
-desenvolvimento iterativo, maior envolvimento do cliente, comunicação face a
-face, testes frequentes, dentre outras.
-
-Alguns resultados demonstram certa dificuldade para implantação da metodologia
-dos agilistas na manutenção de software~\cite{1402140}. Um dos possíveis
-problemas é a necessidade de adequação das práticas da organização de modo que a
-se adequar as necessidades do time de desenvolvimento.  Estudos apresentam
-resultados relativos à melhorias no aprendizado e produtividade da equipe
-mediante o aumento da moral, encorajamento e confiança entre os desenvolvedores,
-o que propicia uma alta motivação durante o processo de manutenção de
-software~\cite{Choudhari:2014:EIM:2557833.2557845}.
-
-\todobegin{Conforme sugerido vou ``deslocada'' a discussão sobre os papéis
-	dentro da manutenção de software. O testo foi revisado e para deixar mais
-	claro foi utilizada diagrama de caso de uso.}
+A adoção das práticas dos agilistas na manutenção de software pode apresentar
+algumas dificuldades~\cite{1402140}. Entre elas está a adequação das práticas da
+organização com as necessidades do time de desenvolvimento. Por outro lado, no
+trabalho de Choudhari \& Suman~\cite{Choudhari:2014:EIM:2557833.2557845} que
+propõe um modelo de processo para manutenção de software usando práticas da
+Programação Extrama (Extreme Programming \@-\@ XP), apresenta como resultados da
+aplicação do modelo melhorias no aprendizado e produtividade da equipe por meio
+do aumento da moral, encorajamento e confiança entre os desenvolvedores.
 
 \subsection{Papéis na Manutenção de Software}
 \label{subsec:man_visao_geral_papeis_na_manutencao_de_software}
 
-As ações que alteram o estado de uma RM são realizadas por diversas pessoas
-envolvidas no processo de manutenção de software. Neste processo cada integrante
-da equipe de manutenção pode desempenhar um ou mais papéis. Os nomes e as
-atividades desenvolvidas por cada papel pode variar de um projeto para outro,
-contudo, é possível determinar uma classificação que agregue um ponto comum
-destes diferentes papéis. Nesta dissertação, utilizamos a classificação proposta
-por Polo e outros~\cite{Polo1999} cujo objetivo é definir uma estrutura da
-equipe de manutenção de software mediante a clara identificação das tarefas que
-cada membro deve executar. Os papéis propostos no estudo é produto da aplicação
-da metodologia MANTEMA~\cite{756695} em projetos de software bancários
-espanhóis, em especial aqueles em que a área de manutenção foi terceirizada
-(outsourcing). Os autores reforçam que apesar da taxonomia de papéis ter sido
-criada em um contexto específico, ela pode ser adequada para aplicação em outras
-situações.
+As ações realizadas durante a manutenção de um software são desempenhadas por
+diferentes pessoas. Neste processo cada integrante da equipe de manutenção pode
+desempenhar um ou mais papéis. Os nomes e as atividades desenvolvidas por cada
+um pode variar de um projeto para outro, contudo, é possível determinar uma
+classificação que agregue um ponto comum entre os diferentes papéis. Nesta
+dissertação, utilizamos a classificação proposta por Polo e
+outros~\cite{Polo1999} cujo objetivo é definir a estrutura da equipe de
+manutenção através da identificação das tarefas que cada membro deve executar.
+O conjunto de papéis é o resultado da aplicação da metodologia
+MANTEMA~\cite{756695} em projetos de software bancários espanhóis em que o setor
+de manutenção foi terceirizada (outsourcing). Os autores reforçam que apesar da
+taxonomia ter sido criada em um contexto específico, ela pode ser utilizada para
+aplicação em outras situações.
 
-No escopo deste trabalho removemos os papéis que segundo o nosso entendimento
-estão mais vinculados a um contexto de manutenção terceirizada (outsourcing).
-Além disso, dividimos o papel ``time de manutenção' (maintenance team) em
+Para esta dissertação removemos os papéis que segundo o nosso entendimento estão
+mais vinculados a um contexto de manutenção terceirizada (outsourcing).  Além
+disso, dividimos o papel ``time de manutenção' (maintenance team) em
 \textit{Desenvolvedor e Analista de Qualidade} por entendermos que são papéis
 comuns a muito dos processos de manutenção existentes. Os papéis que compõem a
-taxonomia proposta estão descritos a seguir:
+taxonomia utilizadas durante o texto da dissertação estão descritos a seguir:
 
 \paragraph{Usuário Afetado:}
-Indivíduo que utiliza o sistema ou sistemas que correspondente à RM que será
-relatada. O defeito, a melhoria ou evolução no software, representada pela RM,
-estão relacionadas com os desejos e necessidades deste papel.
+Indivíduo que utiliza o sistema que correspondente à Requisição de Mudanças (RM)
+que será relatada. O defeito, a melhoria ou evolução no software, representada
+pela RM, estão relacionadas com os desejos e necessidades deste papel.
 
 \paragraph{Reportador:}
-Responsável por registrar a Requisição de Mudança na FGRM\@. Geralmente,
-qualquer pessoa envolvida no processo de manutenção de software pode relatar uma
-RM\@. Neste sentido, as atividades relacionadas com o papel de Reportador podem
-estar vinculados com outras contidas nesta classificação. A
-Figura~\ref{fig:diagrama-caso-uso-reportador} apresenta esta situação através de
-um diagrama de caso de uso, onde o \textit{Reportador} pode ser um usuário do
-sistema ou mesmo um membro da equipe de manutenção.
+Responsável por registrar a RM que pode ser qualquer pessoa envolvida no
+processo de Manutenção de Software. Neste sentido, as atividades relacionadas
+com o papel de Reportador podem estar vinculados com outras contidas nesta
+classificação. A Figura~\ref{fig:diagrama-caso-uso-reportador} apresenta esta
+situação através de um Diagrama de Caso de Uso, onde o \textit{Reportador} pode
+ser um usuário do sistema ou um membro da equipe de manutenção.
 
 \begin{figure}[htpb]
 	\centering
@@ -246,33 +236,32 @@ sistema ou mesmo um membro da equipe de manutenção.
 \end{figure}
 
 \paragraph{Gerente de Requisição de Mudança (Maintenance-request manager):}
-Res\-pon\-sá\-vel por decidir se uma Requisição de Mudança será aceita ou
-rejeitada e qual tipo de manutenção deverá ser aplicada. Posteriormente cabe a
-ele/ela encaminhar a RM para o Agente de Triagem.
+Res\-pon\-sá\-vel por decidir se uma RM será aceita ou rejeitada. Além disso ele
+define qual tipo de manutenção deverá ser aplicada. Posteriormente cabe a este
+profissional encaminhar a RM para o Agente de Triagem.
 
 \paragraph{Agente de Triagem (Scheduler)}:
-Deve planejar a fila de Requisições de Mudança aceitas. Também estão no rol de
-responsabilidades deste papel a atribuição das RMs para o desenvolver mais
-apto.
+Deve planejar a fila de RMs e atribuí-las para o desenvolver mais apto. A decisão
+podem também considerar a carga de trabalho existente para cada desenvolvedor.
 
 \paragraph{Desenvolvedor:}
-Responsável por realizar as ações que irão solucionar a Requisição de Mudança.
+Responsável por realizar as ações que irão solucionar a RM\@.
 
 \paragraph{Analista de Qualidade:}
-Responsável por avaliar se uma Requisição de Mudança que foi solucionada por um
-Desenvolvedor afim de verificar se a RM foi resolvida de forma correta.
+Tem por responsável por avaliar se uma RM solucionada por um Desenvolvedor afim
+de verificar se ela foi resolvida de forma correta e dentro dos padrões de
+qualidade do projeto.
 
 \paragraph{Chefe da Manutenção (Head of	Maintenance):}
-Tem por responsabilidade definir os padrões e procedimentos que compõem o
+Este papel é responsável por definir os padrões e procedimentos que compõem o
 processo de manutenção que será utilizado.
 
-Apesar da classificação de papéis utilizada derivar de um contexto de manutenção
-de software específico (setor bancário e empresas com a área de manutenção
-terceirizada), ela é capaz de acoplar com outros tipos de processo de manutenção
-de software, como aquele proposto por Ihara e outros
-\cite{Ihara:2009:AMI:1595808.1595833}. Naquele estudo foi criada uma
-representação de um processo de modificação de bugs tomando como base as
-diversas situações que um bug possui em uma FGRM no contexto de projetos de
+Apesar da classificação de papéis derivar de um contexto específico (setor
+bancário e empresas com a área de manutenção terceirizada), ela é capaz de
+acoplar com outros tipos modelos de processo como aquele proposto por Ihara e
+outros~\cite{Ihara:2009:AMI:1595808.1595833}. Naquele estudo foi criada uma
+representação de um processo de modificação de falhas (bugs) tomando como base
+as diversas situações que ela possui em uma FGRM no contexto de projetos de
 código aberto. O processo resultante é facilmente acoplável com a classificação
 utilizada em nosso estudo.
 
@@ -280,7 +269,6 @@ Cabe ressaltar que está fora do escopo deste estudo elaborar uma taxonomia dos
 papeis envolvidos na Manutenção de Software em função de supormos que isto
 corresponde a um esforço bem extenso. Nossa ação é identificar se existem papeis
 e quais são eles, sem com isso, envolver em uma consolidação definitiva.
-\todoend{}
 
 \subsection{Requisição de Mudança}
 \label{sec:requisicao_de_mudanca}
@@ -318,39 +306,32 @@ e quais são eles, sem com isso, envolver em uma consolidação definitiva.
 		%SWEBOK~\cite{4425813}}\label{tab:categorias_requisicao_mudanca}
 %\end{table}
 
-\todobegin{Incluída discussão sobre os atributos e classificação de uma RM.}
-
 %Alguns pesquisadores e profissionais entendem a manutenção preventiva como um
 %subconjunto da perfectiva~\cite{tripathy2014software}.
 
-Uma Requisição de Mudança (RM) pode ser vista como é o veículo para registrar a
-informação sobre o defeito, evolução ou melhoria de um
-sistema~\cite{tripathy2014software}. De maneira geral, uma RM pode ser
-especializada como um \textit{Pedido de Correção} de determinada falha ou como
-um \textit{Pedido de Melhoria} que pode estar relacionado com o aprimoramento de
-funcionalidades ou com a melhoria da qualidade do sistema. Esta visão é
-apresentada na Figura~\ref{fig:diagrama-classe-requisicao-mudancas}. Alguns
-autores utilizam os termos \textit{relato de defeito ou relato de melhoria} como
-sinônimos para a RM, contudo, conforme discutido posteriormente, o relato, que é
-o texto livre que descreve a RM, é um dos atributos que a compõe (vide
+Uma Requisição de Mudança (RM) é o veículo para registrar a informação sobre o
+defeito, evolução ou melhoria de um sistema~\cite{tripathy2014software}. De
+maneira geral, uma RM pode ser especializada como o \textit{Pedido de Correção}
+de uma falha ou o \textit{Pedido de Melhoria} que pode estar relacionado com o
+aprimoramento de funcionalidades ou com a melhoria da qualidade do sistema. Esta
+visão é apresentada na Figura~\ref{fig:diagrama-classe-requisicao-mudancas}.
+Alguns autores utilizam os termos \textit{relato de defeito ou relato de
+    melhoria} como sinônimos para a RM\@. Todavia, no escopo desta dissertação, o
+relato é um atributo da RM que o texto livre que a descreve (vide
 Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}).
 
-\todobegin{Incluída uma imagem para representar que a Requisição de Mudanças
-	representam um elemento comum de relatos de defeitos, evolução ou melhoria
-	de um sistema}
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-requisicao-mudancas.pdf}
 	\caption{Modelo conceitual de uma Requisição de Mudanças}
 \label{fig:diagrama-classe-requisicao-mudancas}
 \end{figure}
-\todoend{}
 
-As principais informações contidas em uma RM podem ser visualizadas no modelo
-exibido na Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}. O
-modelo é uma adaptação daquele proposto no trabalho de Singh \&
-Chaturvedi~\cite{singh2011bug} onde é descrito um processo genérico de como uma
-RM é relatada.
+As principais que compõem uma RM podem ser visualizadas no modelo exibido na
+Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}. Trata-se de uma
+adaptação do que foi proposto no trabalho de Singh \&
+Chaturvedi~\cite{singh2011bug} que descreve um processo genérico de como uma RM
+é relatada.
 
 \begin{figure}[htpb]
 	\centering
@@ -359,11 +340,11 @@ RM é relatada.
 \label{fig:diagrama-classe-atributos-requisicao-mudancas}
 \end{figure}
 
-Os principais conceitos envolvidos no modelo estão descritos a seguir:
+Os principais conceitos envolvidos no modelo estão detalhados a seguir:
 
 \begin{description}
-	\item [Identificador] Sequência de caracteres,  geralmente numérica,  que
-		permite distinguir de maneira única uma RM\@.
+    \item [Identificador] Sequência de caracteres, geralmente numérica,  que
+        permite distinguir de maneira única uma RM\@.
 	\item [Sumário] Um título ou resumo da RM\@.
 	\item [Relato] Descrição detalhada da RM incluindo o que, onde, por que,
 		como e quando a situação relatada na RM ocorreu. A mensagem que aparece
@@ -373,45 +354,44 @@ Os principais conceitos envolvidos no modelo estão descritos a seguir:
 		estados que uma RM possui em seu ciclo de vida. Nesta dissertação
 		discutimos brevemente o ciclo de vida de uma RM na
 		Subseção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}.
-	\item [Criado Por] Nome da pessoa ou um identificador já registrado no
-		sistema de quem criou a RM\@.
-	\item [Atribuído Para] A RM pode ser atribuída a uma pessoa específica caso
-		ela seja capaz de resolvê-la, caso contrário, a RM será atribuída para
-		alguém que possui o papel de definir o desenvolvedor mais apto para
-		solucionar aquela RM\@. Neste estudo, o membro de uma equipe de manutenção
-		com festa função é denominado \textit{Agente de Triagem}.
-	\item [Anexo] Refere-se a informação que não esteja em formato de texto e
-		que podem ser incluída na RM como casos de teste, capturas de tela,
-		cadeia de registros de ativação (stack trace), dentre outros.
-	\item [Comentário] Registra o histórico de discussões realizadas durante o
-		processo de resolução da RM\@.
+    \item [Criado Por] Nome da pessoa ou um identificador previamente registrado
+        no sistema de quem criou a RM\@.
+    \item [Atribuído Para] A RM pode ser atribuída a uma pessoa específica caso
+        ela seja capaz de resolvê-la, caso contrário, a RM será atribuída para
+        alguém que possui o papel de definir o desenvolvedor mais apto para
+        solucioná-la. Neste estudo, o membro de uma equipe de manutenção com
+        festa função é denominado \textit{Agente de Triagem}.
+    \item [Anexo] Refere-se a informação em formato diferente de texto e que
+        podem ser incluída na RM\@. Por exemplo casos de teste, capturas de tela,
+        e cadeia de registros de ativação (stack trace).
+    \item [Comentário] Registra o histórico de discussões realizadas durante o
+        processo de solução da RM\@\footnote{O conceito de solução bem como de
+            outros relacionados ao ciclo de vida de uma RM estão descritos com
+        maiores detalhes na Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}}.
 \end{description}
-
-\todobegin{Incluída uma breve discussão sobre os motivos que determinados
-	atributos foram modelados como agregação e outros não.}
 
 Conforme pode ser observado na
 Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas} os atributos
-\textit{Comentário} e \textit{Anexo} foram modelados com agregação, dando aos
-mesmos um caráter multi-valorado. Esta escolha foi intencional de modo a
-salientar que determinada instância de uma RM pode conter diversos anexos ou
-comentários. No caso dos comentários esta característica é ainda mais relevante
-tendo em vista que o conjunto de comentários realizados durante do processo de
-solução de uma RM possui informações relevantes para o software sendo mantido,
-já que, por exemplo, pode ser utilizada para solucionar futuras RMs.
+\textit{Comentário} e \textit{Anexo} foram modelados como uma agregação, dando
+aos mesmos um caráter multi-valorado. Esta escolha foi intencional para
+salientar que uma RM pode conter diversos anexos ou comentários. No caso dos
+comentários esta característica é ainda mais relevante tendo em vista que eles
+são realizados durante do processo de solução de uma RM\@. A partir do conjunto de
+comentários é possível coletar informações relevantes para a manutenção do
+software e que podem ser utilizadas para solucionar futuras RMs.
 
-Os atributos que compõem uma RM pode variar dependendo da ferramenta que a
-gerencia, o projeto ao qual esteja vinculada, dentre outros fatores. Tais
-campos, denominados de pré-definidos, fornecem uma variedade de metadados
-descritivos tais como \textit{importância, prioridade, gravidade, componente, e
-	produto}~\cite{zhang2016literature}. Em alguns casos a estrutura de
-informação de uma RM pode conter um campo de modo à relacioná-la com outra já
-existente na base de dados. Este tipo de vínculo é importante em situações como
-RMs duplicadas (vide Subseção~\ref{ssub:problemas_relacionadas_rm}. A
+Os atributos que compõem uma RM pode variar dependendo de fatores como a
+ferramenta utilizada para o gerenciamento, o projeto e a equipe de manutenção.
+Esses campos fornecem uma variedade de metadados descritivos tais como
+\textit{importância, prioridade, gravidade, componente, e
+    produto}~\cite{zhang2016literature}. Em alguns casos a RM pode conter um
+campo de modo à relacioná-la com outra já existente na base de dados. Este tipo
+de vínculo é importante para minimizar problemas da gestão das RM como por
+exemplo as duplicadas. Alguns dos problemas relacionados com a gestão das RMs
+estão descritos na Seção~\ref{ssub:problemas_relacionadas_rm}. A
 Figura~\ref{fig:rm-exemplo} exibe um exemplo representativo de uma RM contendo
-todos os elementos básicos descritos no modelo proposto na
-Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas} tais como
-identificador, sumário, relato e outros.
+os elementos básicos descritos no modelo proposto na
+Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}.
 
 \begin{figure}[htpb]
 	\centering
@@ -419,23 +399,20 @@ identificador, sumário, relato e outros.
 	\caption{Um exemplo de uma RM do Projeto Eclipse}
 \label{fig:rm-exemplo}
 \end{figure}
-\todoend{}
 
-\todobegin{Rodolfo, você acha que faz sentido o parágrafo a seguir?} Em síntese,
-apesar das diferentes nomenclaturas existentes na literatura (demanda, bug,
-defeito, bilhete, tíquete, requisição de modificação, relato de problema) uma
-Requisição de Mudança representa o relato, independente de sua estrutura, que
-visa gerar a manutenção ou evolução do software. Nesta dissertação procuramos
-ficar aderentes ao termo ``Requisição de Mudança'' e sua sigla \textit{RM}.
+Em síntese, apesar das diferentes nomenclaturas existentes na literatura
+(demanda, bug, defeito, bilhete, tíquete, requisição de modificação, relato de
+problema) uma Requisição de Mudança representa uma descrição, independente da
+estrutura, que visa gerar a manutenção ou evolução do software. A manutenção ou
+evolução estão relacionados com o reparo de uma falha ou com um desejo ou
+necessário do usuário do software. Nesta dissertação procuramos ficar aderentes
+ao termo ``Requisição de Mudança'' e sua sigla \textit{RM}.
 
 \subsubsection{Ciclo de Vida de uma Requisição de Mudança}
 \label{sub:fluxo_de_trabalho_requisicao_mudanca}
-\todobegin{Incluída uma discussão sobre os diversos ``estados'' que um
-	determinada RM pode ter. Os conceitos foram apoiados no livro Software
-	Evolution and Maintenance de Priyadarshi e Kshirasagar}
 
 Uma RM descreve os desejos e necessidades dos usuários de como um sistema deve
-operar. Durante o processo de relatar uma RM, dois fatores devem ser levados em
+operar. Quanto uma RM é relatada dois fatores devem ser levados em
 conta~\cite{tripathy2014software}:
 
 \begin{itemize}
@@ -446,29 +423,33 @@ conta~\cite{tripathy2014software}:
 		software e os seus usuários. O formulário, neste sentido, documenta
 		informações essenciais sobre mudanças no software, hardware e
 		documentação.
-   \item \textit{Comunicação clara das RMs com as partes
-		   interessadas:\footnote{Na
-			   Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}
-			   discutiremos em maior detalhe as diferentes partes interessadas
-			   no contexto da manutenção de software.}} as RMs necessitam ser
-	   claramente comunicadas para que todas as parte as interessadas, incluindo
-	   os mantenedores, interpretem de maneira similar o que foi solicitado. O
-	   resultado de avaliar de maneira distinta uma RM pode ser
-	   contra-produtivo: \textit{(i)} a equipe que realiza mudanças no sistema e
-	   a equipe que executa testes podem ter  visões contraditórias sobre a
-	   qualidade do software; \textit{(ii)} O sistema alterado pode não atender
-	   às necessidades e desejos dos usuários finais.
+   \item \textit{Comunicação clara das RMs entre as partes
+           interessadas\footnote{Na
+               Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}
+               discutiremos em maior detalhe as diferentes partes interessadas
+               no contexto da manutenção de software.}}: as RMs necessitam ser
+       claramente comunicadas entre as parte as interessadas, inclusive entre a
+       equipe de manutenção. O resultado de avaliar de maneira distinta uma RM
+       pode ser contra-produtivo: \textit{(i)} a equipe que realiza mudanças no
+       sistema e a equipe que executa testes podem ter visões contraditórias
+       sobre a qualidade do software; \textit{(ii)} O sistema alterado pode não
+       atender às necessidades e desejos dos usuários finais.
 \end{itemize}
 
-No caminho entre o usuário que a relata e os desenvolvedores que a soluciona,
-uma RM pode estar em diferentes estágios. O ciclo de vida de uma RM pode ser
-ilustrado como um diagrama de estados conforme ilustrado na
-Figura~\ref{fig:diagrama-estado-rm}. Naquele modelo uma RM inicia com o estado
+No caminho entre sua criação e solução uma RM possui diferentes estágios. O
+ciclo de vida de uma RM pode ser ilustrado através do diagrama de estados da
+Figura~\ref{fig:diagrama-estado-rm}. No diagrama uma RM inicia como
 \textit{Submetida (Submit)} e vai sendo modificada até alcançar o estado
-\textit{Fechada (Closed)} onde ela foi finalmente solucionada. Neste caminho,
-entre os diversos estágios intermediários, o conjunto de fatores que resultou na
-necessidade de relatar uma RM pode não mais existir. Neste caso, ela é alterada
-para o estado \textit{Rejeitada (Decline)}.
+\textit{Fechada (Closed)} onde é considera como solucionada. Neste caminho o
+conjunto de fatores que resultou na necessidade de relatar uma RM pode não mais
+existir. Neste caso, ela é alterada para o estado \textit{Rejeitada (Decline)}.
+
+Existe uma aspecto importante do ciclo de vida de uma RM que não consta na
+discussão apresentada por Tripathy \& Naik. Em teoria uma RM poderia ter novos
+estados como ``Reaberta'', quando um usuário ou outro membro da equipe de
+manutenção entende que ela não foi solucionada, ou ``Relacionada'' quando uma
+nova RM é na realidade uma sucessora ou possui algum tipo de relação com outra
+RM anteriormente registrada.
 
 \begin{figure}[htpb]
 	\centering
@@ -478,37 +459,22 @@ para o estado \textit{Rejeitada (Decline)}.
 \label{fig:diagrama-estado-rm}
 \end{figure}
 
-O modelo mostra a evolução de uma RM mediante os seguintes estados:
-\textit{Submetida (Submit), Em Revisão (Review), Em análise (Analysis), Commit
-	(Compromissada), Em Implementação (Implement), Em Verificação (Verification)
-	e Fechada (Closed)}~\cite{tripathy2014software}. Uma determinada RM também
-pode ser rejeitada o que a leva para o estado de mesmo nome
-(\textit{Rejeitada\@-\@
-	Decline}).  Por diversas razões a situação de uma RM pode ser alterada para
-\textit{Recusada} a partir dos outros estados. Um exemplo desta situação ocorre
-quando um  usuário conclui que modificações descritas na RM não fazem mais
-sentido. Existe uma aspecto importante do ciclo de vida de uma RM que não consta
-na discussão apresentada por Tripathy \& Naik. Em teoria uma RM poderia ter
-novos estados do tipo ``Reaberta'', quando o reportador ou outro membro da
-equipe de manutenção entenda que ela não foi solucionada, ou uma ``nova'' RM que
-na realidade pode ser vista como sucessora ou ligada com outra.
-
-A seguir apresentamos as características de cada um dos estados que compõem o
-ciclo de vida de uma RM\@. Para cada estado pode haver mais de um papel
-responsável pelas ações que são executadas. Também pode ocorre que uma mesma
-pessoa desempenhe diferentes papéis neste processo. Uma discussão sobre este
-papeis pode ser encontrada na
-Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}.
+A seguir apresentamos as características dos estados do ciclo de vida de uma
+RM\@ como base na discussão realizada por Tripathy \&
+Naik~\cite{tripathy2014software}. Para cada estado pode haver mais de um papel
+responsável pelas ações executadas. Também pode ocorre que uma mesma pessoa
+desempenhe diferentes papéis neste processo. Uma discussão sobre os papéis
+utilizados no escopo desta dissertação pode ser encontrada na
+Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}.
 
 \paragraph{Submetida (Submit).}
 \label{par:submetida)}
 
-Este é o estado inicial de uma RM recentemente envida. Geralmente, são os
+Este é o estado inicial de uma RM recentemente criada. Geralmente são os
 usuários do sistema a fonte primária das RM nesta situação. Com base no nível de
-prioridade de uma RM, ela é movida de \textit{Submetida} para \textit{Em
-	Revisão}. Normalmente cabe ao \textit{Gerente de Requisição de Mudança} a
-responsabilidade desta manipulação inicial das RMs. Neste instante ele se torna
-o ``dono'' da RM\@.
+prioridade da RM, ela é movida de \textit{Submetida} para \textit{Em Revisão}.
+Normalmente cabe ao \textit{Gerente de Requisição de Mudança} a responsabilidade
+da manipulação inicial das RMs. Neste instante ele se torna o ``dono'' da RM\@.
 
 \paragraph{Em Revisão (Review).}
 \label{par:em_revisao}
@@ -523,27 +489,29 @@ RMs no estado \textit{Em Revisão} através das seguintes atividades:
 		RM\@.
 	\item Aceitar o nível de prioridade atribuído para a RM ou alterá-lo.
 	\item Determinar o nível de severidade da RM\@: normal ou crítico.
-	\item Caso por alguma razão as análises descritas anteriormente não possam
-		ser re\-a\-li\-za\-das, a RM é movida para o estado em \textit{Em análise}.
 \end{itemize}
+
+No caso das atividades descritas anteriormente não possam ser
+re\-a\-li\-za\-das, a RM é movida para o estado em \textit{Em análise}.
 
 \paragraph{Em Análise (Analysis).}
 \label{par:em_analise}
-Neste estágio uma análise de impacto é conduzida para entender a RM e estimar o
-tempo necessário para implementá-la. Após esta análise, caso se decida que não é
-possível ou desejável atender a RM, então \textit{Rejeitada} se torna o próximo
-estágio da RM\@. Caso contrário a RM é movida para estado \textit{Compromissada
-	(Commit)}. No  \textit{Em Análise} o ``dono'' da RM é denominado
-\textit{Agente de Triagem}.
+Neste estágio uma análise de impacto é conduzida para entender o que foi
+solicitado na RM e estimar o tempo necessário para implementá-la. Caso não seja
+possível ou desejável atender a RM ela é alterada para a situação
+\textit{Rejeitada}. Caso contrário a RM é movida para estado
+\textit{Compromissada (Commit)}. No estado \textit{Em Análise} o ``dono'' da RM
+é denominado \textit{Agente de Triagem}.
 
 \paragraph{Compromissada (Commit).}
 \label{par:commit}
 
-A RM no estado \textit{Compromissada} antes que as modificações solicitadas
-possam ser implementadas e estejam disponíveis em uma próxima versão do produto.
-Neste estado a RM está a cargo do \textit{Gerente de Requisição de Mudança}.
-Algumas RMs podem ser incluídas em futuras versões do sistema após acordo com
-as demais partes interessadas.
+A RM no estado \textit{Compromissada} não foi atendida mas se encontra no
+planejamento do projeto de modo a estarem disponíveis em uma próxima versão do
+produto. Por se um estado relacionado ao gerenciamento da manutenção, as RMs
+nesta situação estão à cargo do \textit{Gerente de Requisição de Mudança}.
+Algumas RMs podem ser incluídas em futuras versões do sistema após acordo com as
+demais partes interessadas.
 
 \paragraph{Em Implementação (Implement).}
 \label{par:em_implementacao}
@@ -552,55 +520,47 @@ No estágio de \textit{Em Implementação} diferentes cenários podem ocorrer:
 
 \begin{itemize}
 	\item A RM pode ser rejeitada caso sua implementação não seja factível.
-	\item Caso a RM seja possível de implementar os desenvolvedores realizam a
-		codificação e os testes. Após finalizada a codificação a RM é movida de
-		\textit{Em Implementação} para \textit{Em verificação}.
+    \item Caso a RM seja possível de implementar, os desenvolvedores realizam a
+        codificação e os testes. Após o desenvolvimento é finalizado a RM é
+        movida de \textit{Em Implementação} para \textit{Em verificação}.
 \end{itemize}
 
 \paragraph{Em Verificação (Verification).}
 \label{par:em_verificacao}
 
-No estado de verificação as atividades são controladas pela equipe de testes.
-Para atribuir um veredito, a verificação pode ser realizada por um ou mais
-métodos: demonstração, análise, inspeção ou teste. No primeiro caso, o software
-é executado com um conjunto de testes. A inspeção significa revisar o código em
-busca de defeitos. No caso da análise, o processo consiste em demonstrar que o
-sistema está em operação.
+No estado de verificação as atividades são controladas pela equipe de testes.  A
+verificação de uma RM pode ser realizada pelo seguintes métodos: demonstração,
+análise, inspeção ou teste. No primeiro caso, o software é executado com um
+conjunto de testes. A inspeção significa revisar o código em busca de defeitos.
+No caso da análise, o processo consiste em demonstrar que o sistema está em
+operação.
 
 \paragraph{Fechada (Closed).}
 \label{par:fechada}
 
-Após a verificação de que a RM foi atendida, a RM é movida de \textit{Em
-	verificação} para o estado \textit{Fechada}. Esta ação é realizada pelo
-\textit{Analista de Qualidade} que o proprietário da RM durante o estado de
-\textit{Em Verificação}. Nesta dissertação, quando referenciamos ao último
+Após a verificação que a RM foi atendida, ela é movida de \textit{Em
+    verificação} para \textit{Fechada}. Esta ação é realizada pelo
+\textit{Analista de Qualidade} que é o ``proprietário'' da RM durante o estado
+de \textit{Em Verificação}. Nesta dissertação, quando referenciamos ao último
 estágio do ciclo de vida da RM utilizaremos o termo ``Solução da RM'' para
-representar a situação onde a falha relatada ou a melhoria solicitada foi de
-alguma forma atendida.
+representar a situação onde a falha relatada ou a melhoria solicitada é
+entendida, por algum membro das partes interessadas, como atendida.
 
 \paragraph{Rejeitada (Decline).}
 \label{par:rejeitada}
 
-Conforme discutido uma RM pode ser rejeitada. Dentre os diversos motivos para a
-rejeição de uma RM podemos destacar: ela deixar de produzir relevante impacto no
-sistema; não é possível tecnicamente realizar o que foi solicitado na RM\@; a
-equipe de qualidade conclui que as mudanças no software para atender à RM não
+Uma RM pode ser rejeitada caso ela deixar de produzir relevante impacto no
+sistema, não seja possível tecnicamente realizar o que foi solicitado na RM\@ e
+a equipe de qualidade conclui que as mudanças no software para atender à RM não
 podem ser satisfatoriamente verificadas.
-\todoend{}
 
-\todobegin{Incluída a visão do processo de ciclo de vida de uma RM em projetos
-	de código aberto.}
-
-O modelo de ciclo de vida discutido por Tripathy \& Naik possui um foco na
-industria de software, especialmente em organizações que possuem uma área
-exclusivamente dedicada à manutenção de software. Em outros contextos, como por
-exemplo em projetos de software de código aberto, o processo de modificação dos
-estados de uma RM é diferente.
-
-No trabalho de Ihara e outros~\cite{ihara2009analysis}, foi conduzido um estudo
-de caso nos projetos de código aberto Firefox e Apache em que um dos resultados
-foi um digrama de estados que representa o processo de modificação de uma RM
-utilizando uma FGRM\@. Este diagrama é representado na
+O modelo de ciclo de vida discutido por Tripathy \& Naik possui foco em
+organizações que possuem uma área exclusivamente dedicada à manutenção de
+software. Em outros contextos, como por exemplo em projetos de código aberto, o
+processo de modificação dos estados de uma RM pode ser diferente. No trabalho de
+Ihara e outros~\cite{ihara2009analysis} foi conduzido um estudo de caso nos
+projetos Firefox e Apache e um dos resultados foi um digrama de estados que
+representa o processo de modificação de uma RM\@. Este diagrama é apresentado na
 Figura~\ref{fig:diagrama-estado-rm-codigo-aberto}.
 
 \begin{figure}[htpb]
@@ -611,48 +571,46 @@ Figura~\ref{fig:diagrama-estado-rm-codigo-aberto}.
 \label{fig:diagrama-estado-rm-codigo-aberto}
 \end{figure}
 
-Os autores ponderam que apesar do processo de modificação de uma RM pode alterar
-levemente de uma FGRM para outra, o diagrama apresentado na
-Figura~\ref{fig:diagrama-estado-rm-codigo-aberto} é capaz de representar de
-forma substancial o processo de transição de uma RM\@. O processo é composto de
-três diferentes fases: \textit{não tratada (untreated), modificação
-	(modification) e verificação (verification)}.
+Os autores ponderam que apesar da maneira que uma RM é modificada pode alterar
+em diferentes projetos, o diagrama é capaz de representar de maneira geral o
+processo de transição de uma RM\@. O processo é composto de três diferentes
+fases: \textit{não tratada (untreated), modificação (modification) e verificação
+    (verification)}.
 
-A fase \textit{não tratada} foca em um subprocesso onde as RMs são relatadas em
-uma FGRM, todavia não foi aceita ou atribuída a ninguém. A fase de
+A fase \textit{não tratada} foca em um subprocesso onde as RMs são relatadas,
+todavia, não foram aceitas ou atribuídas à algum membro da equipe. A fase de
 \textit{modificação} é um subprocesso onde as RMs são efetivamente modificadas.
 Nesta fase uma RM é aceita e posteriormente atribuída a algum desenvolvedor.
-Caso por algum problema uma RM não possa ser atendida ela é \textit{rejeitada}.
-A fase de \textit{verificação} é o subprocesso onde membros com a
-responsabilidade de garantia da qualidade verificam quais RMs modificadas foram
-corretamente resolvidas. Caso uma RM modificada por um desenvolver não seja
-verificada, ela poderia não ser reconhecida como fechada (closed).
+Caso o pedido da RM não possa ser atendido ela é \textit{rejeitada}.  A fase de
+\textit{verificação} é o subprocesso onde membros com a responsabilidade de
+garantia da qualidade verificam se as RMs modificadas foram efetivamente
+solucionadas. Caso uma RM modificada por um desenvolver não seja verificada, ela
+poderia não ser reconhecida como fechada (closed).
 
-É possível acoplar o modelo proposto por Tripathy \&
-Naik~\cite{tripathy2014software} naquele descrito por Ihara e
-outros~\cite{ihara2009analysis}, especialmente por conta do segundo ser mais
-genérico.  Nesta dissertação utilizamos de forma geral o modelo contido no
-trabalho de Ihara e outros. Nos casos em que houver necessidade de um maior
-detalhamento do ciclo de vida de uma RM, a discussão tomará como base o modelo
-de Tripathy \& Naik.
-\todoend{}
-
-\todobegin{Incluída seção sobre conceituamos os problemas relacionados à gestão
-da RMs.}
+É possível relacionar o modelo descrito por Tripathy \&
+Naik~\cite{tripathy2014software} e aquele proposto por Ihara e
+outros~\cite{ihara2009analysis}. Em ambos é possível identificar fases onde uma
+RM é relatada, analisada e verificada. Além disso os modelos discriminam
+situações onde o pedido feito na RM não é capaz de ser realizado. Nesta
+dissertação utilizamos de forma geral o modelo proposto por Ihara e outros. Nos
+casos em que houver necessidade de um maior detalhamento a discussão tomará como
+base o modelo de Tripathy \& Naik.
 
 \subsubsection{Problemas e Desafios do Gerenciamento das RMs}
 \label{ssub:problemas_relacionadas_rm}
 
-A literatura discute e apresenta diversos problemas relacionadas à gestão das
-RMs:
+A gestão das RMs é um desafio em diferentes projetos de software. A literatura
+discute e apresenta alguns deste problemas:
 
-\paragraph{Localização do Problema:} A tarefa de encontrar a origem de uma falha
-de software é complexa e consome muito tempo. Em um estudo Lúcia e outros
-relataram que entre 84 a 93\% de problemas em software afetam 1~-~2 arquivos de
-código-fonte~\cite{thung2012faults}. Mesmo em menor número não é fácil identificar esses
-arquivos entre os milhares que podem fazer parte do código fonte de um sistema. Esta situação
-realça que localizar a origem de um problema (buggy files) é uma tarefa
-árdua~\cite{Thung:2014:BIT:2635868.2661678}.
+\paragraph{Localização do Problema:}
+
+A tarefa de encontrar a origem de uma falha de software é complexa e consome
+muito tempo. Em um estudo Lúcia e outros relataram que entre 84 a 93\% de
+problemas em software afetam 1~-~2 arquivos de
+código-fonte~\cite{thung2012faults}. Mesmo em menor número não é fácil
+identificar esses arquivos entre os milhares que podem fazer parte do código
+fonte de um sistema. Esta situação realça que localizar a origem de um problema
+(buggy files) é uma tarefa árdua~\cite{Thung:2014:BIT:2635868.2661678}.
 
 Neste contexto, pesquisadores vêm propondo abordagens baseadas em Recuperação da
 Informação para localizar falhas com base no que está descritos nos relatos de
@@ -661,20 +619,23 @@ relato descrito em uma RM e o subconjunto de arquivos do código fonte que estã
 diretamente relacionados à solução do problema
 reportado~\cite{Wong:2014:BBF:2705615.2706096}.
 
-\paragraph{Visualização de RM} A tomada de decisão deve estar subsidiada por
-informações corretas. Este fato não é diferente na manutenção e desenvolvimento
-de software. Pouco se sabe sobre o comportamento evolutivo, o tempo de vida,
-distribuição e estabilidade dos problemas reportados nas
-FGRM~\cite{hora2012bug}. Este problema é reforçado pela forma como as FGRMs
-armazenam os dados das RMs. Em geral, esses exibem informações sobre as RMs de
-forma textual, o que não é apenas complicado para navegar, mas também dificulta
-a compreensão das complexas peças de informação que giram em torno dos problemas
-de software~\cite{dal2014bug}.
+\paragraph{Visualização de RM:}
 
-\paragraph{Suporte ao Registro da RM:} Durante o processo de correção de um
-problema de software verifica-se que a reprodução manual dos bugs é demorada e
-tediosa. Os mantenedores de software rotineiramente tentam reproduzir problemas
-não confirmados usando as informações contidas nas RMs que muitas vezes estão
+A tomada de decisão deve estar subsidiada por informações corretas. Este fato
+não é diferente na manutenção e desenvolvimento de software. Pouco se sabe sobre
+o comportamento evolutivo, o tempo de vida, distribuição e estabilidade dos
+problemas reportados nas FGRM~\cite{hora2012bug}. Este problema é reforçado pela
+forma como as FGRMs armazenam os dados das RMs. Em geral, esses exibem
+informações sobre as RMs de forma textual, o que não é apenas complicado para
+navegar, mas também dificulta a compreensão das complexas peças de informação
+que giram em torno dos problemas de software~\cite{dal2014bug}.
+
+\paragraph{Suporte ao Registro da RM:}
+
+Durante o processo de correção de um problema de software verifica-se que a
+reprodução manual dos bugs é demorada e tediosa. Os mantenedores de software
+rotineiramente tentam reproduzir problemas não confirmados usando as informações
+contidas nas RMs que muitas vezes estão
 incompletas~\cite{White:2015:GRR:2820282.2820291}. Para complementar os dados
 necessários à resolução do problema o desenvolvedor deve solicitar ao
 responsável pelo relato da RM as informações necessárias~\cite{5070993}. Os
@@ -684,88 +645,99 @@ de problemas de software. Esta melhoria da qualidade pode implicar na redução 
 custo do processo de garantia de qualidade bem como aumentar a confiabilidade do
 software com a redução gradativa de bugs~\cite{Tu:2014:MQI:2677832.2677844}.
 
-\paragraph{Organização da Informação da RM:} Em alguns casos não é possível
-aumentar a qualidade da informação fornecida em um relato de uma RM antes que
-ela seja armazenada em seu respectivo repositório.  Nestas situações uma
-abordagem adotada é organizar de uma maneira previamente definida as informações
-contidas em uma RM\@. Durante o processo de análise de uma RM, em especial para
-aquelas de caráter corretiva, existe a tendência dos desenvolvedores procurar
-por problemas semelhantes que foram resolvidos no passado.
+\paragraph{Organização da Informação da RM:}
 
-\paragraph{Identificação de RM Duplicadas} O processo de identificação de RMs
-Duplicadas consiste em avaliar se determinado relato já foi realizado em algum
-outro momento. Quando uma RM duplicada é identificada ela deve ser vinculada a
-outra que na literatura da área é denominada como RM Mestre. Geralmente a Mestre
-é aquela que foi primeiramente incluída no repositório de erros. Alguns estudos
-revelam que entre 10\% e 30\% das RMs podem ser classificadas como
+Em alguns casos não é possível aumentar a qualidade da informação fornecida em
+um relato de uma RM antes que ela seja armazenada em seu respectivo repositório.
+Nestas situações uma abordagem adotada é organizar de uma maneira previamente
+definida as informações contidas em uma RM\@. Durante o processo de análise de
+uma RM, em especial para aquelas de caráter corretiva, existe a tendência dos
+desenvolvedores procurar por problemas semelhantes que foram resolvidos no
+passado.
+
+\paragraph{Identificação de RM Duplicadas:}
+
+O processo de identificação de RMs Duplicadas consiste em avaliar se determinado
+relato já foi realizado em algum outro momento. Quando uma RM duplicada é
+identificada ela deve ser vinculada a outra que na literatura da área é
+denominada como RM Mestre. Geralmente a Mestre é aquela que foi primeiramente
+incluída no repositório de erros. Alguns estudos revelam que entre 10\% e 30\%
+das RMs podem ser classificadas como
 duplicadas~\cite{anvik2005coping,cavalcanti2013bug,Runeson:2007:DDD:1248820.1248882}.
-Por conta do grande número de RMs duplicadas uma das soluções é o
-\textit{Agente de Triagem} para analisar manualmente as Requisições de Mudanças
-com objetivo de evitar que as duplicatas cheguem as
+Por conta do grande número de RMs duplicadas uma das soluções é o \textit{Agente
+    de Triagem} para analisar manualmente as Requisições de Mudanças com
+objetivo de evitar que as duplicatas cheguem as
 desenvolvedores~\cite{anvik2005coping}.
 
 O processo de identificação de RMs duplicadas requer: \textit{(i)} um prévio
 conhecimento do conjunto de relatos existentes anteriormente no projeto;
 \textit{(ii)} a busca manual em toda base de dados da
 FGRM~\cite{banerjee2012automated,
-	Lerch:2013:FDY:2495256.2495763,hindle2016contextual}. Ambas as estratégias
+    Lerch:2013:FDY:2495256.2495763,hindle2016contextual}. Ambas as estratégias
 consomem tempo e não garantem que falsos positivos possam
 ocorrer~\cite{kaushik2012comparative}. Os falsos positivos podem ainda acarretar
 na desconsideração de problemas relevantes.
 
-\paragraph{Atribuição (Triagem) de RM} A atividade de atribuição de RM, que é a
-principal atividade do processo conhecido como \textit{triagem}, possui como
-principal objetivo encontrar o desenvolvedor mais capacitado para manipular uma
-dada RM~\cite{cavalcanti2014challenges}. Existe a premissa de que a escolha do
+\paragraph{Atribuição (Triagem) de RM:}
+
+A atividade de atribuição de RM, que é a principal atividade do processo
+conhecido como \textit{triagem}, possui como principal objetivo encontrar o
+desenvolvedor mais capacitado para manipular uma dada
+RM~\cite{cavalcanti2014challenges}. Existe a premissa de que a escolha do
 desenvolvedor apropriado é crucial para obter em menor tempo a re\-so\-lu\-ção
 de determinada RM~\cite{di2002approach}. Estudos também discutem que o processo
 de atribuição deve considerar fatores tais como a carga de trabalho do
 desenvolvedor a prioridade da RM~\cite{aljarah2011selecting}.
 
-\paragraph{Classificação da RM:} Independentemente do tipo e tamanho de um
-projeto é sempre importante determinar qual tipo manutenção deverá ser realizada
-tomando como base o relato de uma RM\@.  Este processo consiste de forma
-resumida em classificar uma requisição com base em algum esquema de
-classificação previamente definido. A diversidade de categorias em determinado
-esquema de classificação pode tornar complexa a tarefa, tendo em vista que em
-muitos casos não é fácil determinar os limites entre os
-tipos~\cite{antoniol2008bug}. Por exemplo, a uma classificação incorreta de um
-defeito como melhoria pode acarretar em atrasos no projeto ou mesmo que uma RM
-receba pouca atenção~\cite{cavalcanti2014challenges}.
+\paragraph{Classificação da RM:}
 
-\paragraph{Estimativa de Esforço da RM:} A gestão de custo e esforço de um
-projeto de manutenção de software passa pelo controle do esforço necessário ao
-cumprimento de suas RMs. Os estudos que tratam das questões de estimativa de
-esforço requerido para a solução do problema descrito em uma RM utilizam em
-geral três formas para estimá-lo~\cite{cavalcanti2014challenges}: determinar o
-tempo para solucionar novas RMs; definir os artefatos que são impactados por
-determinada RM\@; prever o número de novas RMs que poderão fazer parte do
-projeto. A literatura sobre análise de impacto é bastante abrangente e pode
-envolver o estudos de artefatos tais como documentos de requisitos e
-arquiteturas de softwares, código fonte, registros (logs) de teste e assim por
-diante~\cite{cavalcanti2014challenges}. Apesar da inerente imprecisão deste tipo
-de trabalho é importante salientar que estimar o esforço de uma RM é importante
-para o gerenciamento do projeto porque ajuda alocar recurso de forma mais
+Independentemente do tipo e tamanho de um projeto é sempre importante determinar
+qual tipo manutenção deverá ser realizada tomando como base o relato de uma
+RM\@. Este processo consiste de forma resumida em classificar uma requisição com
+base em algum esquema de classificação previamente definido. A diversidade de
+categorias em determinado esquema de classificação pode tornar complexa a
+tarefa, tendo em vista que em muitos casos não é fácil determinar os limites
+entre os tipos~\cite{antoniol2008bug}. Por exemplo, a uma classificação
+incorreta de um defeito como melhoria pode acarretar em atrasos no projeto ou
+mesmo que uma RM receba pouca atenção~\cite{cavalcanti2014challenges}.
+
+\paragraph{Estimativa de Esforço da RM:}
+
+A gestão de custo e esforço de um projeto de manutenção de software passa pelo
+controle do esforço necessário ao cumprimento de suas RMs. Os estudos que tratam
+das questões de estimativa de esforço requerido para a solução do problema
+descrito em uma RM utilizam em geral três formas para
+estimá-lo~\cite{cavalcanti2014challenges}: determinar o tempo para solucionar
+novas RMs; definir os artefatos que são impactados por determinada RM\@; prever
+o número de novas RMs que poderão fazer parte do projeto. A literatura sobre
+análise de impacto é bastante abrangente e pode envolver o estudos de artefatos
+tais como documentos de requisitos e arquiteturas de softwares, código fonte,
+registros (logs) de teste e assim por diante~\cite{cavalcanti2014challenges}.
+Apesar da inerente imprecisão deste tipo de trabalho é importante salientar que
+estimar o esforço de uma RM é importante para o gerenciamento do projeto porque
+ajuda alocar recurso de forma mais
 eficiente~\cite{Bhattacharya:2011:BTP:1985441.1985472} e melhorar a previsão do
 custo necessário para o lançamento de futuras versões do
 sistema~\cite{Vijayakumar2014}.
 
-\paragraph{Recomendação de RM:} Em alguns projetos, um membro experiente da equipe, geralmente ensina os
+\paragraph{Recomendação de RM:}
+
+Em alguns projetos, um membro experiente da equipe, geralmente ensina os
 recém-chegados o que eles precisam fazer para completar tarefas necessárias à
 conclusão de uma RM\@. Todavia, alocar um membro experiente de uma equipe para
 ensinar um recém-chegado durante um longo tempo nem sempre é possível ou
 desejável, porque o mentor poderia ser mais útil fazendo tarefas mais
 importantes~\cite{malheiros2012source}.
 
-Por exemplo, quando um novo desenvolvedor entra na equipe seria
-interessante que ele resolvesse as RMs que tivessem um menor nível de
-dificuldade. Posteriormente, quando o desenvolvedor ganhasse experiência,
-poderia aumentar o grau de dificuldade relacionado à RM que ele deve tratar.
-Este tipo de processo ocorre com certa frequência em projetos de código aberto,
-onde a contribuição de desenvolvedores fora do projeto é fundamental. No
-entanto, encontrar um defeito apropriado ao nível de conhecimento do
-desenvolvedor, bem como uma correção apropriada para o mesmo requer uma boa
-compreensão do projeto~\cite{Wang2011bug}.
+Por exemplo, quando um novo desenvolvedor entra na equipe seria interessante que
+ele resolvesse as RMs que tivessem um menor nível de dificuldade.
+Posteriormente, quando o desenvolvedor ganhasse experiência, poderia aumentar o
+grau de dificuldade relacionado à RM que ele deve tratar.  Este tipo de processo
+ocorre com certa frequência em projetos de código aberto, onde a contribuição de
+desenvolvedores fora do projeto é fundamental. No entanto, encontrar um defeito
+apropriado ao nível de conhecimento do desenvolvedor, bem como uma correção
+apropriada para o mesmo requer uma boa compreensão do
+projeto~\cite{Wang2011bug}.
 
 Para facilitar a inclusão de novos desenvolvedores alguns estudos vêm se
 dedicando em desenvolver sistemas de recomendação de
