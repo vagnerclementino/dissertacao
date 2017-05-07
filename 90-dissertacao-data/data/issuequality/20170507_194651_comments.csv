@@ -1,0 +1,3964 @@
+repo_name;issue_number;sequence;keyword completude - expected and observed behavior;keyword completude - action items;keyword completude - build-related;keyword completude - user interface elements;keyword completude - documentation-related;keyword completude - source code-related;keyword completude - project-related;attach_file;readability - ari;readability - dale-chall;readability - flesch;code_fragment;step_to_reproduce;start_time;finish_time;comment
+vagnerclementino/elasticsearch;100;1;0;1;0;0;0;1;0;0;5.9;9.76;85.69;0;0;2017-05-07 17:31:17.532073;2017-05-07 17:31:18.975846;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;99;1;1;3;0;1;1;4;0;0;17.9;8.91;49.49;0;1;2017-05-07 17:31:28.987806;2017-05-07 17:31:30.027342;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;98;1;2;3;3;0;0;2;1;0;106.2;11.18;-363.03;0;1;2017-05-07 17:31:40.038806;2017-05-07 17:31:56.940285;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;97;1;2;5;0;0;1;1;3;0;15.4;9.38;50.16;0;1;2017-05-07 17:32:06.952283;2017-05-07 17:32:09.011206;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;96;1;0;1;0;0;0;0;0;0;7.8;11.63;128.67;0;0;2017-05-07 17:32:19.022544;2017-05-07 17:32:19.961860;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;95;1;0;1;0;1;0;1;0;0;38.7;12.44;-44.59;0;0;2017-05-07 17:32:29.967263;2017-05-07 17:32:30.968453;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;94;1;1;5;0;0;1;0;0;0;28.7;9.52;34.26;0;1;2017-05-07 17:32:40.980497;2017-05-07 17:32:42.084037;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;93;1;0;4;0;0;0;1;0;0;9.9;7.6;70.13;0;0;2017-05-07 17:32:52.095681;2017-05-07 17:32:53.281932;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;92;1;6;8;0;1;0;5;0;0;43.0;12.7;13.62;0;1;2017-05-07 17:33:03.286089;2017-05-07 17:33:05.437879;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;91;1;1;12;1;0;0;5;4;0;25.1;10.03;24.45;0;1;2017-05-07 17:33:15.449538;2017-05-07 17:33:16.590680;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;90;1;1;1;0;2;0;1;0;0;20.0;10.41;33.58;0;1;2017-05-07 17:33:26.601629;2017-05-07 17:33:27.871197;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;89;1;3;13;0;1;0;4;0;0;21.0;9.45;45.43;0;1;2017-05-07 17:33:37.882765;2017-05-07 17:33:38.990610;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;88;1;0;5;0;0;0;0;0;0;14.6;9.82;50.16;0;1;2017-05-07 17:33:49.001236;2017-05-07 17:33:49.966806;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;87;1;6;8;0;5;4;9;0;0;18.7;9.1;55.24;0;1;2017-05-07 17:33:59.971079;2017-05-07 17:34:02.234194;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;86;1;0;2;0;0;0;0;0;0;14.2;11.17;49.82;0;0;2017-05-07 17:34:12.876316;2017-05-07 17:34:13.872544;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;85;1;2;5;0;5;5;3;0;0;21.2;8.9;48.13;0;1;2017-05-07 17:34:23.883078;2017-05-07 17:34:25.099685;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;84;1;1;3;0;0;2;1;0;0;8.8;7.89;66.74;0;1;2017-05-07 17:34:35.106763;2017-05-07 17:34:36.168581;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;83;1;1;4;1;0;0;0;0;0;12.4;7.34;58.28;0;1;2017-05-07 17:34:46.299496;2017-05-07 17:34:52.297049;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;82;1;8;9;0;1;4;7;0;0;16.9;9.06;48.81;0;1;2017-05-07 17:35:02.307462;2017-05-07 17:35:03.475845;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;81;1;0;0;0;0;0;0;0;0;10.3;7.78;60.65;0;1;2017-05-07 17:35:13.483573;2017-05-07 17:35:14.466028;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;80;1;0;6;0;0;0;2;1;0;12.8;7.85;63.02;0;1;2017-05-07 17:35:24.476488;2017-05-07 17:35:25.664650;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;79;1;1;1;2;1;0;0;0;0;7.8;7.5;81.63;0;1;2017-05-07 17:35:35.676395;2017-05-07 17:35:36.706351;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;78;1;3;2;2;1;0;0;0;0;64.6;8.4;-162.02;0;1;2017-05-07 17:35:46.717876;2017-05-07 17:35:47.891343;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;77;1;22;21;1;0;4;15;0;0;77.4;7.0;-228.68;0;1;2017-05-07 17:35:57.900494;2017-05-07 17:35:59.828634;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;76;1;1;1;3;1;0;0;0;0;24.8;9.76;1.09;0;1;2017-05-07 17:36:09.840322;2017-05-07 17:36:10.853681;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;75;1;1;2;0;1;2;3;0;0;10.6;9.12;62.68;0;1;2017-05-07 17:36:20.865353;2017-05-07 17:36:21.823449;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;74;1;1;0;2;1;0;9;0;0;128.3;8.35;-446.61;0;1;2017-05-07 17:36:31.829245;2017-05-07 17:36:33.371912;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;73;1;0;2;1;0;0;1;0;0;12.0;7.94;53.21;0;1;2017-05-07 17:36:43.383594;2017-05-07 17:36:44.349514;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;72;1;5;8;0;1;4;10;0;0;15.8;9.1;65.73;0;1;2017-05-07 17:36:54.360461;2017-05-07 17:36:55.497548;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;71;1;11;1;0;0;0;0;0;0;25.2;10.1;34.26;0;1;2017-05-07 17:37:05.509187;2017-05-07 17:37:06.569008;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;70;1;1;1;2;1;1;6;0;1;13.3;10.0;70.8;0;1;2017-05-07 17:37:16.579496;2017-05-07 17:37:17.605508;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;69;1;1;2;1;0;1;3;0;0;9.9;9.15;78.25;0;1;2017-05-07 17:37:27.610728;2017-05-07 17:37:28.757833;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;68;1;0;0;0;0;0;0;0;0;4.0;8.52;73.85;0;1;2017-05-07 17:37:38.769535;2017-05-07 17:37:39.686129;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;67;1;2;2;0;0;0;2;0;0;69.4;9.94;-221.24;0;1;2017-05-07 17:37:49.697838;2017-05-07 17:37:50.810266;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;66;1;1;5;0;0;1;0;0;0;18.9;8.99;40.01;0;0;2017-05-07 17:38:00.821589;2017-05-07 17:38:02.873224;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;65;1;6;8;0;0;5;11;0;0;23.6;8.44;47.79;0;1;2017-05-07 17:38:12.884805;2017-05-07 17:38:14.199785;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;64;1;4;2;0;4;1;3;0;0;12.5;8.51;58.62;0;1;2017-05-07 17:38:24.211457;2017-05-07 17:38:25.297812;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;63;1;0;0;1;0;0;0;0;0;105.2;12.48;-328.17;0;0;2017-05-07 17:38:35.307918;2017-05-07 17:38:36.992442;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;62;1;3;0;2;0;0;0;0;0;48.6;9.26;-85.88;0;1;2017-05-07 17:38:47.003918;2017-05-07 17:38:48.075279;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;61;1;1;5;0;0;0;1;0;0;14.9;8.56;50.5;0;1;2017-05-07 17:38:58.086947;2017-05-07 17:38:59.082422;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;60;1;5;24;2;0;1;13;1;0;79.2;8.08;-162.02;0;1;2017-05-07 17:39:09.092363;2017-05-07 17:39:10.855551;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;59;1;1;6;0;0;4;1;1;0;16.7;8.89;46.1;0;1;2017-05-07 17:39:20.859239;2017-05-07 17:39:21.956752;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;58;1;4;5;0;0;0;20;1;0;20.6;8.45;48.81;0;1;2017-05-07 17:39:31.959714;2017-05-07 17:39:33.248939;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;57;1;1;8;0;6;1;2;0;0;16.1;8.63;59.64;0;1;2017-05-07 17:39:43.260696;2017-05-07 17:39:44.304658;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;56;1;2;3;0;0;0;4;0;0;29.8;10.67;24.11;0;1;2017-05-07 17:39:54.316366;2017-05-07 17:39:55.238431;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;55;1;3;0;0;0;0;1;1;0;9.1;8.74;61.67;0;1;2017-05-07 17:40:05.250119;2017-05-07 17:40:06.255028;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;54;1;0;1;0;0;0;0;0;0;94.6;6.05;-269.97;0;0;2017-05-07 17:40:16.265572;2017-05-07 17:40:17.519079;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;53;1;0;0;0;0;0;0;0;0;62.5;0.84;-126.15;0;0;2017-05-07 17:40:27.530722;2017-05-07 17:40:28.787876;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;52;1;4;7;0;2;4;7;0;0;17.0;8.9;46.78;0;1;2017-05-07 17:40:38.798514;2017-05-07 17:40:39.875687;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;51;1;1;3;0;0;0;1;0;0;18.9;10.41;53.21;0;1;2017-05-07 17:40:49.887352;2017-05-07 17:40:50.925691;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;50;1;4;2;0;2;0;4;0;0;49.1;11.12;-15.82;0;0;2017-05-07 17:41:00.933616;2017-05-07 17:41:01.918508;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;49;1;0;5;0;0;0;1;0;0;11.7;6.29;60.31;0;0;2017-05-07 17:41:11.925895;2017-05-07 17:41:14.018224;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;48;1;2;7;0;3;1;6;0;0;16.4;10.23;42.72;0;1;2017-05-07 17:41:24.029787;2017-05-07 17:41:25.003387;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;47;1;4;18;0;0;0;2;0;0;13.0;7.1;51.18;0;1;2017-05-07 17:41:35.014438;2017-05-07 17:41:37.102112;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;46;1;2;19;0;4;1;8;0;0;13.0;7.84;84.68;0;1;2017-05-07 17:41:47.112088;2017-05-07 17:41:48.172681;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;45;1;0;2;1;0;0;1;1;0;8.3;7.46;74.19;0;1;2017-05-07 17:41:58.446738;2017-05-07 17:41:59.475669;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;44;1;2;5;1;0;0;1;0;0;22.1;7.17;71.14;0;1;2017-05-07 17:42:09.486804;2017-05-07 17:42:10.506335;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;43;1;7;24;6;0;1;12;0;0;55.3;8.7;-60.5;0;1;2017-05-07 17:42:20.517865;2017-05-07 17:42:22.129935;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;42;1;0;4;0;0;0;1;0;0;6.7;8.81;54.9;0;1;2017-05-07 17:42:32.136070;2017-05-07 17:42:34.164869;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;41;1;0;3;0;0;0;0;0;0;5.1;7.88;82.31;0;1;2017-05-07 17:42:44.170309;2017-05-07 17:42:45.176547;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;40;1;0;2;0;0;1;0;0;0;11.7;9.91;46.78;0;1;2017-05-07 17:42:55.187476;2017-05-07 17:42:56.147607;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;39;1;1;1;1;1;0;1;0;0;45.7;12.45;-96.03;0;1;2017-05-07 17:43:06.155089;2017-05-07 17:43:07.172891;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;38;1;2;6;0;1;0;1;0;0;26.9;9.71;7.52;0;1;2017-05-07 17:43:17.184500;2017-05-07 17:43:18.533460;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;37;1;3;5;0;2;2;5;0;0;25.0;9.32;41.36;0;1;2017-05-07 17:43:28.538436;2017-05-07 17:43:29.603488;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;36;1;3;1;1;1;0;1;0;0;126.8;11.91;-439.17;0;1;2017-05-07 17:43:39.605487;2017-05-07 17:43:40.722757;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;35;1;4;7;0;2;1;0;0;0;13.9;8.59;49.15;0;1;2017-05-07 17:43:50.734210;2017-05-07 17:43:52.273135;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;34;1;1;0;2;1;0;1;0;0;51.6;10.7;-104.83;0;1;2017-05-07 17:44:02.618537;2017-05-07 17:44:03.595943;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;33;1;1;2;0;0;0;8;0;0;17.3;9.65;31.21;0;1;2017-05-07 17:44:13.607595;2017-05-07 17:44:14.709388;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;32;1;4;8;1;2;0;11;0;0;17.2;9.46;45.09;0;1;2017-05-07 17:44:24.720930;2017-05-07 17:44:27.248959;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;31;1;4;7;1;1;1;3;0;0;31.4;9.25;48.47;0;1;2017-05-07 17:44:37.260259;2017-05-07 17:44:38.436136;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;30;1;0;5;0;1;0;2;0;0;20.4;8.42;42.38;0;1;2017-05-07 17:44:48.447616;2017-05-07 17:44:49.432742;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;29;1;1;5;0;2;2;1;0;0;16.3;8.6;42.72;0;1;2017-05-07 17:44:59.443495;2017-05-07 17:45:00.574081;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;28;1;2;2;1;0;0;1;0;0;83.4;8.25;-204.32;0;1;2017-05-07 17:45:11.024465;2017-05-07 17:45:27.426190;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;27;1;75;28;1;3;0;49;0;0;61.1;7.27;-81.48;0;1;2017-05-07 17:45:37.436485;2017-05-07 17:45:40.306326;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;26;1;2;20;0;0;0;0;0;0;13.6;8.08;55.58;0;0;2017-05-07 17:45:50.317864;2017-05-07 17:45:56.425560;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;25;1;2;10;3;3;1;2;0;0;12.6;8.4;51.85;0;1;2017-05-07 17:46:06.437869;2017-05-07 17:46:07.587224;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;24;1;8;7;1;1;0;0;0;0;11.7;7.66;62.68;0;1;2017-05-07 17:46:17.591146;2017-05-07 17:46:18.662035;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;23;1;2;8;3;1;1;3;0;0;15.7;9.16;44.07;0;1;2017-05-07 17:46:28.673831;2017-05-07 17:46:29.774259;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;22;1;2;1;0;0;0;0;0;0;6.6;8.18;59.3;0;0;2017-05-07 17:46:39.785817;2017-05-07 17:46:40.842189;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;21;1;4;8;0;0;0;1;3;0;13.6;8.01;70.8;0;1;2017-05-07 17:46:50.850770;2017-05-07 17:46:52.144002;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;20;1;0;0;0;0;1;0;1;0;14.8;11.1;23.43;0;0;2017-05-07 17:47:02.155084;2017-05-07 17:47:03.186649;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;19;1;1;3;0;0;1;0;0;0;11.7;8.4;52.19;0;1;2017-05-07 17:47:13.203474;2017-05-07 17:47:14.337790;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;18;1;1;5;0;1;1;0;0;0;11.7;7.35;73.51;0;1;2017-05-07 17:47:24.349400;2017-05-07 17:47:26.053089;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;17;1;1;0;0;0;0;0;0;0;11.1;8.8;56.25;0;1;2017-05-07 17:47:36.064636;2017-05-07 17:47:38.106198;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;16;1;0;3;0;0;1;0;0;0;13.4;10.79;51.18;0;1;2017-05-07 17:47:48.109936;2017-05-07 17:47:49.101325;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;15;1;0;1;0;0;1;2;0;0;9.3;11.35;55.91;0;0;2017-05-07 17:47:59.114486;2017-05-07 17:48:00.111704;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;14;1;0;9;0;3;0;0;0;0;18.5;11.34;29.86;0;1;2017-05-07 17:48:10.485408;2017-05-07 17:48:11.582936;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;13;1;18;5;0;0;1;3;0;0;32.5;8.03;29.86;0;1;2017-05-07 17:48:21.598513;2017-05-07 17:48:22.860069;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;12;1;0;1;0;0;0;1;0;0;17.0;12.03;52.87;0;0;2017-05-07 17:48:32.868895;2017-05-07 17:48:33.918832;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;11;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 17:48:43.930541;2017-05-07 17:48:45.473849;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;10;1;0;1;0;0;0;0;0;0;22.6;10.54;29.52;0;1;2017-05-07 17:48:55.485714;2017-05-07 17:48:56.998973;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;9;1;0;0;1;0;0;2;0;0;8.5;8.07;77.23;0;1;2017-05-07 17:49:07.006728;2017-05-07 17:49:08.096557;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;8;1;10;14;0;2;3;2;1;0;20.4;9.32;48.13;0;1;2017-05-07 17:49:18.106405;2017-05-07 17:49:19.554096;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;7;1;2;2;0;0;0;1;0;0;13.4;9.4;52.19;0;1;2017-05-07 17:49:29.565745;2017-05-07 17:49:30.585314;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;6;1;1;9;0;0;0;1;0;0;12.7;10.15;50.84;0;1;2017-05-07 17:49:40.596735;2017-05-07 17:49:41.682907;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;5;1;1;10;1;0;0;12;0;0;7.9;7.54;80.62;0;1;2017-05-07 17:49:51.694615;2017-05-07 17:49:53.288825;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;4;1;1;3;0;0;0;2;0;0;12.4;9.25;62.68;0;1;2017-05-07 17:50:03.299448;2017-05-07 17:50:04.370968;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;3;1;0;8;0;0;0;0;0;0;10.2;9.12;62.68;0;1;2017-05-07 17:50:14.382670;2017-05-07 17:50:15.510040;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;2;1;2;1;0;4;0;0;0;0;15.9;8.35;41.7;0;1;2017-05-07 17:50:25.518784;2017-05-07 17:50:26.587759;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/elasticsearch;1;1;0;11;1;1;1;1;0;0;12.7;8.56;58.28;0;1;2017-05-07 17:50:36.599431;2017-05-07 17:50:37.754133;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;100;1;0;1;0;0;0;1;0;0;14.5;13.35;23.43;0;0;2017-05-07 17:50:57.303206;2017-05-07 17:50:58.280646;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;99;1;2;1;1;0;0;2;0;0;12.2;9.31;49.82;0;1;2017-05-07 17:51:08.292343;2017-05-07 17:51:09.453949;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;98;1;1;2;1;0;0;2;0;0;23.2;9.67;-8.38;0;1;2017-05-07 17:51:19.464474;2017-05-07 17:51:20.603921;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;97;1;0;0;0;0;1;3;0;0;15.3;10.1;38.31;0;1;2017-05-07 17:51:30.613857;2017-05-07 17:51:31.644348;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;96;1;1;3;0;2;1;2;0;0;15.2;10.15;36.28;0;1;2017-05-07 17:51:41.655896;2017-05-07 17:51:42.677104;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;95;1;0;1;0;0;0;1;0;0;9.6;10.17;73.17;0;1;2017-05-07 17:51:52.688697;2017-05-07 17:51:53.760335;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;94;1;0;0;0;0;1;0;0;0;10.6;9.92;60.31;0;1;2017-05-07 17:52:03.771741;2017-05-07 17:52:05.264573;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;93;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 17:52:15.275453;2017-05-07 17:52:26.213717;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;92;1;2;2;0;1;1;4;0;0;12.2;9.64;51.85;0;1;2017-05-07 17:52:36.220513;2017-05-07 17:52:37.318968;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;91;1;0;1;0;0;0;0;0;0;11.2;8.71;50.84;0;1;2017-05-07 17:52:47.332464;2017-05-07 17:52:49.029379;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;90;1;0;0;0;0;0;0;0;0;31.2;13.01;47.45;0;0;2017-05-07 17:52:59.037603;2017-05-07 17:53:00.104645;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;89;1;0;0;0;0;0;0;0;0;10.8;11.1;53.88;0;0;2017-05-07 17:53:10.116883;2017-05-07 17:53:11.219076;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;88;1;0;0;0;0;1;0;0;0;7.6;10.45;78.25;0;0;2017-05-07 17:53:21.230737;2017-05-07 17:53:22.203359;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;87;1;0;3;0;0;0;1;0;0;11.1;6.86;67.76;0;1;2017-05-07 17:53:32.213946;2017-05-07 17:53:33.390344;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;86;1;0;3;1;0;0;0;0;0;16.1;11.18;17.0;0;0;2017-05-07 17:53:43.400488;2017-05-07 17:54:04.486437;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;85;1;0;0;0;0;0;0;0;0;16.2;10.64;43.39;0;1;2017-05-07 17:54:14.498126;2017-05-07 17:54:15.500359;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;84;1;1;1;0;0;0;1;0;0;15.6;12.8;56.25;0;0;2017-05-07 17:54:26.170805;2017-05-07 17:54:27.281911;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;83;1;3;3;0;2;0;6;1;0;17.1;9.51;22.41;0;0;2017-05-07 17:54:37.286912;2017-05-07 17:54:38.511395;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;82;1;0;1;0;0;0;3;0;0;18.9;10.15;59.3;1;0;2017-05-07 17:54:48.521442;2017-05-07 17:54:49.567466;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;81;1;0;6;0;1;0;4;0;0;15.4;9.39;54.56;0;1;2017-05-07 17:54:59.587500;2017-05-07 17:55:00.695837;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;80;1;0;2;0;0;1;0;0;0;22.8;12.78;-26.32;0;0;2017-05-07 17:55:10.706468;2017-05-07 17:55:12.318849;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;79;1;1;3;0;0;0;2;0;0;26.3;11.34;-63.2;0;0;2017-05-07 17:55:22.330713;2017-05-07 17:55:28.299417;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;78;1;0;1;0;0;1;0;0;0;11.8;10.97;44.41;0;1;2017-05-07 17:55:38.310928;2017-05-07 17:55:39.418667;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;77;1;3;1;0;0;1;1;0;0;22.2;11.69;2.11;0;1;2017-05-07 17:55:49.430145;2017-05-07 17:55:50.443345;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;76;1;0;2;0;0;0;0;0;0;15.2;11.66;31.89;0;1;2017-05-07 17:56:00.447325;2017-05-07 17:56:01.595540;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;75;1;0;3;0;0;0;1;0;0;36.9;11.06;-90.95;1;1;2017-05-07 17:56:11.610430;2017-05-07 17:56:12.756326;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;74;1;0;0;0;0;0;10;0;0;21.2;9.4;18.69;1;0;2017-05-07 17:56:22.766445;2017-05-07 17:56:23.852947;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;73;1;0;0;0;0;0;0;1;0;13.2;9.5;50.84;0;0;2017-05-07 17:56:33.864456;2017-05-07 17:56:35.093771;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;72;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 17:56:45.104709;2017-05-07 17:56:46.149056;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;71;1;0;0;0;0;0;0;0;0;11.4;9.67;68.77;0;1;2017-05-07 17:56:56.160733;2017-05-07 17:56:57.128466;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;70;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 17:57:07.139919;2017-05-07 17:57:13.591505;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;69;1;0;1;0;1;0;0;0;0;17.1;7.64;37.98;0;0;2017-05-07 18:31:00.526439;2017-05-07 18:31:01.714363;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;68;1;0;2;0;0;0;1;0;0;11.2;9.19;47.79;0;0;2017-05-07 18:31:12.668235;2017-05-07 18:31:13.790548;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;67;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:31:29.732623;2017-05-07 18:31:30.743691;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;66;1;0;0;0;1;0;1;0;0;11.1;10.53;48.81;0;1;2017-05-07 18:31:41.688359;2017-05-07 18:31:43.191660;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;65;1;0;0;0;0;0;0;0;0;13.4;9.12;54.22;0;0;2017-05-07 18:31:54.156339;2017-05-07 18:31:55.170588;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;64;1;2;4;0;1;0;3;0;0;9.7;9.31;60.31;0;1;2017-05-07 18:32:06.104205;2017-05-07 18:32:07.183590;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;63;1;6;7;0;1;2;9;0;0;19.3;10.29;19.37;0;1;2017-05-07 18:32:18.092414;2017-05-07 18:32:19.193231;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;62;1;0;1;0;1;1;1;0;0;12.9;9.59;55.24;0;1;2017-05-07 18:32:30.142513;2017-05-07 18:32:31.126541;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;61;1;0;1;0;0;0;0;0;0;17.2;10.35;24.44;0;0;2017-05-07 18:32:42.101569;2017-05-07 18:32:43.162531;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;60;1;0;3;0;0;0;3;0;0;17.1;10.44;24.44;0;1;2017-05-07 18:32:54.515599;2017-05-07 18:33:10.911403;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;59;1;0;0;0;0;0;0;0;0;12.5;0.1;128.67;0;0;2017-05-07 18:33:21.807781;2017-05-07 18:33:22.819674;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;58;1;3;0;0;1;0;1;0;0;15.3;9.13;48.13;0;1;2017-05-07 18:33:33.847080;2017-05-07 18:33:34.903801;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;57;1;0;0;0;0;0;0;0;0;15.9;5.46;57.94;0;0;2017-05-07 18:33:46.021194;2017-05-07 18:33:47.790701;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;56;1;0;1;0;0;0;2;0;0;16.3;9.07;35.95;0;1;2017-05-07 18:33:58.741195;2017-05-07 18:33:59.910233;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;55;1;0;1;0;0;1;1;0;0;14.3;10.84;46.78;0;0;2017-05-07 18:34:11.334210;2017-05-07 18:34:12.509369;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;54;1;0;1;0;0;0;2;0;0;10.3;8.91;44.41;0;1;2017-05-07 18:34:23.434882;2017-05-07 18:34:29.500116;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;53;1;0;2;0;0;1;0;0;0;17.5;12.33;29.86;0;0;2017-05-07 18:34:40.438866;2017-05-07 18:34:47.356153;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;52;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:35:03.170195;2017-05-07 18:35:10.686220;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;51;1;0;3;0;2;3;2;0;0;31.9;9.86;40.34;1;1;2017-05-07 18:35:21.767407;2017-05-07 18:35:23.005721;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;50;1;0;1;0;0;1;1;0;0;7.0;10.75;81.29;0;0;2017-05-07 18:35:35.150177;2017-05-07 18:35:36.293554;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;49;1;0;0;0;0;0;0;0;0;38.7;14.0;-60.16;0;0;2017-05-07 18:35:47.332819;2017-05-07 18:35:48.352375;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;48;1;0;0;0;0;0;0;0;0;11.1;7.71;57.27;0;0;2017-05-07 18:36:00.414412;2017-05-07 18:36:01.635057;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;47;1;1;1;0;0;0;1;0;0;10.9;10.15;61.33;0;1;2017-05-07 18:36:13.076830;2017-05-07 18:36:14.242787;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;46;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:36:30.164269;2017-05-07 18:36:31.130024;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;45;1;1;2;0;0;0;0;0;0;13.5;7.73;45.42;0;1;2017-05-07 18:36:42.076764;2017-05-07 18:36:43.084103;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;44;1;0;1;0;0;0;1;0;0;6.1;8.18;76.22;0;0;2017-05-07 18:36:54.007380;2017-05-07 18:36:55.031119;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;43;1;1;1;0;3;0;0;0;0;9.8;8.08;64.71;0;1;2017-05-07 18:37:06.057912;2017-05-07 18:37:07.090972;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;42;1;2;0;0;4;2;12;0;0;28.4;11.67;-20.91;1;1;2017-05-07 18:37:17.967647;2017-05-07 18:37:19.164818;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;41;1;2;24;1;12;5;5;0;0;13.2;8.85;51.18;1;1;2017-05-07 18:37:30.159293;2017-05-07 18:37:31.470317;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;40;1;0;1;0;0;0;2;0;0;18.8;9.02;27.49;0;1;2017-05-07 18:37:53.283850;2017-05-07 18:37:54.394875;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;39;1;0;0;0;0;0;0;0;0;10.9;9.64;47.79;0;0;2017-05-07 18:38:05.604020;2017-05-07 18:38:06.631835;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;38;1;0;0;0;0;0;0;0;0;14.9;8.87;44.41;0;0;2017-05-07 18:38:17.578721;2017-05-07 18:38:18.640165;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;37;1;4;15;1;0;1;1;0;0;14.1;8.67;48.81;0;1;2017-05-07 18:38:29.605692;2017-05-07 18:38:30.755550;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;36;1;0;0;0;0;0;0;0;0;10.9;9.64;47.79;0;0;2017-05-07 18:38:42.142333;2017-05-07 18:38:43.197656;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;35;1;0;2;0;0;2;1;0;0;13.3;9.44;45.76;0;0;2017-05-07 18:38:55.893531;2017-05-07 18:38:57.044414;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;34;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:39:08.438104;2017-05-07 18:39:09.524636;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;33;1;0;0;0;0;0;2;0;0;22.8;12.42;-7.37;0;1;2017-05-07 18:39:30.459405;2017-05-07 18:40:01.517447;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;32;1;0;1;0;0;0;1;0;0;18.9;9.92;10.56;0;1;2017-05-07 18:40:12.532962;2017-05-07 18:40:13.663724;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;31;1;0;1;0;0;0;0;0;0;16.3;8.87;44.41;0;1;2017-05-07 18:40:24.619717;2017-05-07 18:40:25.669177;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;30;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:40:36.622339;2017-05-07 18:40:37.842208;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;29;1;0;6;0;3;0;1;0;0;23.9;10.19;-0.6;0;1;2017-05-07 18:40:49.323855;2017-05-07 18:40:50.374107;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;28;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:41:07.172828;2017-05-07 18:41:08.219609;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;27;1;1;3;0;0;2;0;0;0;14.7;10.57;48.81;0;1;2017-05-07 18:41:19.212148;2017-05-07 18:41:21.260395;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;26;1;0;0;0;0;0;0;0;0;9.1;6.42;93.81;0;0;2017-05-07 18:41:33.340486;2017-05-07 18:41:34.382350;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;25;1;0;0;0;0;0;0;0;0;9.1;6.42;93.81;0;0;2017-05-07 18:41:46.765573;2017-05-07 18:41:48.995963;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;24;1;3;3;0;0;0;0;0;0;14.8;10.5;31.89;0;1;2017-05-07 18:42:00.480901;2017-05-07 18:42:01.752391;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;23;1;0;2;0;0;0;3;0;0;16.2;9.69;38.31;0;1;2017-05-07 18:42:13.353434;2017-05-07 18:42:14.644736;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;22;1;0;0;0;0;0;0;0;0;14.8;8.53;24.44;0;1;2017-05-07 18:42:25.839168;2017-05-07 18:42:28.559802;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;21;1;2;2;0;0;0;2;0;0;5.7;7.44;83.66;0;1;2017-05-07 18:42:39.621079;2017-05-07 18:42:40.722737;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;20;1;0;0;0;0;1;1;0;0;19.9;10.88;17.0;0;0;2017-05-07 18:42:51.706487;2017-05-07 18:42:52.789173;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;19;1;3;12;0;0;0;2;0;0;80.9;9.79;-179.95;0;1;2017-05-07 18:43:04.842596;2017-05-07 18:43:06.634445;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;18;1;2;9;0;0;0;1;0;0;18.3;9.29;32.22;0;1;2017-05-07 18:43:22.420089;2017-05-07 18:43:28.724310;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;17;1;0;3;0;0;0;4;0;0;10.5;8.72;67.08;0;1;2017-05-07 18:43:39.690336;2017-05-07 18:43:40.804456;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;16;1;0;2;0;0;0;0;0;0;43.3;11.88;-119.38;0;1;2017-05-07 18:43:53.049389;2017-05-07 18:43:56.348523;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;15;1;0;3;0;0;0;0;0;0;17.5;11.27;37.98;0;0;2017-05-07 18:44:07.337222;2017-05-07 18:44:09.481125;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;14;1;0;1;0;0;0;1;0;0;34.1;9.95;-29.7;0;1;2017-05-07 18:44:20.459554;2017-05-07 18:44:26.419109;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;13;1;0;0;0;0;0;1;0;0;14.4;7.98;37.98;0;0;2017-05-07 18:44:37.368804;2017-05-07 18:44:38.466092;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;12;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:44:49.392919;2017-05-07 18:44:52.890652;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;11;1;0;6;0;3;1;7;0;0;13.3;7.56;55.24;0;1;2017-05-07 18:45:04.393730;2017-05-07 18:45:05.550729;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;10;1;3;5;0;0;1;5;0;0;14.5;10.31;44.75;0;1;2017-05-07 18:45:16.554515;2017-05-07 18:45:17.817873;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;9;1;1;0;1;1;0;0;0;0;12.1;9.97;48.81;0;0;2017-05-07 18:45:28.855884;2017-05-07 18:45:29.887433;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;8;1;0;1;0;0;1;2;0;0;29.7;9.65;-18.88;0;1;2017-05-07 18:45:42.397146;2017-05-07 18:45:48.467354;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;7;1;28;5;0;3;2;15;4;0;25.4;8.03;68.77;0;1;2017-05-07 18:45:59.457069;2017-05-07 18:46:00.859312;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;6;1;0;1;0;0;0;0;0;0;32.8;8.3;-66.93;0;0;2017-05-07 18:46:11.794115;2017-05-07 18:46:12.766735;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;5;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:46:23.672814;2017-05-07 18:46:24.638468;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;4;1;0;1;0;0;0;0;0;0;15.6;9.34;49.49;0;1;2017-05-07 18:46:40.927779;2017-05-07 18:46:42.053022;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;3;1;0;1;0;0;1;2;0;0;5.3;6.34;96.52;0;0;2017-05-07 18:46:53.063799;2017-05-07 18:46:54.096805;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;2;1;2;4;0;0;0;3;0;0;9.7;9.77;58.28;0;1;2017-05-07 18:47:05.050711;2017-05-07 18:47:06.160906;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/spring-framework;1;1;0;1;0;0;0;2;0;0;23.5;11.64;14.29;0;1;2017-05-07 18:47:18.202615;2017-05-07 18:47:19.302760;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;100;1;0;1;0;1;0;5;0;0;11.9;8.65;41.36;0;1;2017-05-07 18:47:41.311459;2017-05-07 18:47:42.428674;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;99;1;0;2;0;0;0;2;0;0;19.1;9.82;8.53;0;1;2017-05-07 18:47:53.386191;2017-05-07 18:47:54.512583;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;98;1;1;6;0;1;1;5;0;0;19.3;7.91;33.92;0;1;2017-05-07 18:48:05.545340;2017-05-07 18:48:06.949782;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;97;1;0;1;0;0;0;5;0;0;19.5;10.45;13.28;0;1;2017-05-07 18:48:18.040780;2017-05-07 18:48:19.126550;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;96;1;0;0;0;0;0;0;0;0;10.8;9.95;46.44;0;0;2017-05-07 18:48:30.068582;2017-05-07 18:48:31.125234;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;95;1;0;0;0;0;0;2;0;0;9.7;9.92;60.31;0;1;2017-05-07 18:48:42.082012;2017-05-07 18:48:43.720040;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;94;1;0;0;0;0;2;1;0;0;17.3;9.92;52.87;0;1;2017-05-07 18:48:55.508343;2017-05-07 18:48:57.166564;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;93;1;4;3;0;0;0;1;0;0;15.6;9.71;26.47;0;1;2017-05-07 18:49:13.109006;2017-05-07 18:49:14.312812;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;92;1;1;2;0;0;0;1;0;0;6.8;8.49;68.77;0;1;2017-05-07 18:49:25.317196;2017-05-07 18:49:26.366531;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;91;1;1;0;0;0;0;0;0;0;7.2;11.36;43.39;0;1;2017-05-07 18:49:37.481497;2017-05-07 18:49:53.552514;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;90;1;1;5;0;0;0;4;1;0;13.2;8.48;52.19;0;1;2017-05-07 18:50:04.765649;2017-05-07 18:50:05.841935;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;89;1;0;3;1;1;0;2;0;0;22.4;9.91;20.04;0;1;2017-05-07 18:50:16.991462;2017-05-07 18:50:18.412755;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;88;1;0;2;1;0;0;0;1;0;11.5;8.92;48.81;0;1;2017-05-07 18:50:29.559268;2017-05-07 18:50:30.744690;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;87;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:50:42.172495;2017-05-07 18:50:43.241843;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;86;1;3;8;0;4;1;4;0;0;16.0;8.9;43.06;0;1;2017-05-07 18:50:54.179374;2017-05-07 18:50:55.296056;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;85;1;1;5;0;0;0;4;1;0;14.9;9.47;47.79;0;1;2017-05-07 18:51:06.252493;2017-05-07 18:51:07.511813;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;84;1;0;4;0;0;1;0;0;0;16.0;9.38;47.79;0;0;2017-05-07 18:51:24.169733;2017-05-07 18:51:25.488888;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;83;1;1;0;0;0;2;2;0;0;11.9;9.14;49.82;0;0;2017-05-07 18:51:46.482486;2017-05-07 18:51:47.782132;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;82;1;4;3;1;0;0;0;0;0;32.1;10.06;-39.18;0;1;2017-05-07 18:51:58.916470;2017-05-07 18:52:00.154597;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;81;1;0;3;3;0;0;2;0;0;15.5;9.3;37.64;0;1;2017-05-07 18:52:11.093541;2017-05-07 18:52:12.189749;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;80;1;3;15;0;0;1;4;0;0;18.9;8.68;31.89;0;1;2017-05-07 18:52:23.192844;2017-05-07 18:52:24.285829;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;79;1;3;7;0;0;2;6;0;0;15.4;9.22;46.78;0;1;2017-05-07 18:52:35.238389;2017-05-07 18:52:37.365852;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;78;1;1;2;0;0;2;1;0;0;7.8;7.39;72.16;0;1;2017-05-07 18:52:48.756326;2017-05-07 18:52:49.882972;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;77;1;1;6;0;5;0;0;1;0;8.6;7.52;64.71;0;1;2017-05-07 18:53:00.803613;2017-05-07 18:53:01.932428;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;76;1;0;1;0;0;0;3;0;0;44.5;11.39;-135.62;0;0;2017-05-07 18:53:12.967464;2017-05-07 18:53:14.023653;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;75;1;0;1;0;0;0;1;0;0;9.5;9.28;50.84;0;0;2017-05-07 18:53:25.175775;2017-05-07 18:53:26.623556;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;74;1;0;0;0;0;0;1;0;0;27.2;9.05;-7.71;0;1;2017-05-07 18:53:37.818206;2017-05-07 18:53:38.863343;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;73;1;4;3;0;0;0;3;0;0;9.5;8.27;59.3;0;1;2017-05-07 18:53:49.866703;2017-05-07 18:53:51.400853;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;72;1;0;3;0;0;0;1;0;0;24.2;12.4;-23.27;0;1;2017-05-07 18:54:02.452858;2017-05-07 18:54:03.577520;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;71;1;0;1;0;0;0;1;0;0;1.4;6.01;105.66;0;0;2017-05-07 18:54:14.516628;2017-05-07 18:54:25.773482;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;70;1;1;1;0;0;0;1;0;0;2.9;8.5;89.75;0;0;2017-05-07 18:54:36.681276;2017-05-07 18:54:37.934127;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;69;1;1;0;0;0;0;1;6;0;16.3;7.9;77.57;0;1;2017-05-07 18:54:48.923113;2017-05-07 18:54:50.163970;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;68;1;7;9;0;0;1;10;1;0;12.9;8.28;50.84;0;1;2017-05-07 18:55:01.074268;2017-05-07 18:55:03.367489;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;67;1;0;1;0;0;2;0;0;0;19.1;8.68;40.69;0;1;2017-05-07 18:55:14.323405;2017-05-07 18:55:15.375900;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;66;1;0;5;0;1;1;2;0;0;7.3;7.33;79.6;0;1;2017-05-07 18:55:26.329960;2017-05-07 18:55:27.710883;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;65;1;1;6;2;3;1;0;0;0;11.9;9.02;58.28;0;1;2017-05-07 18:55:39.110048;2017-05-07 18:55:40.245867;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;64;1;1;0;0;0;2;1;0;0;8.8;9.35;60.31;0;1;2017-05-07 18:55:51.388190;2017-05-07 18:55:55.513691;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;63;1;0;0;0;0;0;0;0;0;100;100;-1;0;0;2017-05-07 18:56:06.697247;2017-05-07 18:56:07.751708;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;62;1;1;1;1;0;0;2;0;0;22.4;8.66;29.52;0;1;2017-05-07 18:56:18.788461;2017-05-07 18:56:19.974485;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;61;1;3;11;0;0;0;1;0;0;30.8;11.0;-1.28;0;1;2017-05-07 18:56:31.705515;2017-05-07 18:56:32.789775;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;60;1;2;4;0;7;0;1;0;0;24.4;10.85;9.89;0;0;2017-05-07 18:56:43.967227;2017-05-07 18:56:45.555375;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;59;1;1;3;3;1;1;2;0;0;15.6;8.73;46.1;0;1;2017-05-07 18:56:56.621144;2017-05-07 18:56:57.752747;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;58;1;0;1;0;0;0;2;0;0;10.2;9.54;49.82;0;1;2017-05-07 18:57:08.859908;2017-05-07 18:57:09.943765;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;57;1;0;6;0;0;0;1;0;0;12.3;9.77;44.41;0;1;2017-05-07 18:57:20.862390;2017-05-07 18:57:22.385889;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;56;1;3;4;0;0;1;2;0;0;13.3;8.61;53.21;0;1;2017-05-07 18:57:33.306138;2017-05-07 18:57:34.454099;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;55;1;0;3;0;0;0;1;0;0;33.2;9.46;-54.07;0;1;2017-05-07 18:57:45.387263;2017-05-07 18:57:46.469569;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;54;1;2;6;0;1;1;8;0;0;12.3;8.46;63.7;0;1;2017-05-07 18:57:57.467106;2017-05-07 18:57:58.591385;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;53;1;0;3;0;0;1;3;0;0;11.8;7.46;65.05;0;1;2017-05-07 18:58:09.759661;2017-05-07 18:58:10.829643;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;52;1;0;4;0;1;3;9;0;0;14.6;9.4;52.19;0;1;2017-05-07 18:58:21.973590;2017-05-07 18:58:23.044387;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;51;1;2;1;0;0;2;7;0;0;15.1;9.71;40.34;0;1;2017-05-07 18:58:33.964343;2017-05-07 18:58:35.105117;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;50;1;2;0;1;0;0;0;0;0;68.5;12.13;-194.5;0;0;2017-05-07 18:58:46.217108;2017-05-07 18:58:47.240279;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;49;1;0;0;0;0;0;0;0;0;155.0;11.83;-459.13;0;0;2017-05-07 18:58:58.163575;2017-05-07 18:58:59.234556;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;48;1;0;1;0;0;0;0;2;0;16.2;8.59;56.25;0;1;2017-05-07 18:59:10.620328;2017-05-07 18:59:11.833909;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;47;1;1;4;0;0;0;1;2;0;23.3;9.54;-6.35;0;0;2017-05-07 18:59:22.763206;2017-05-07 18:59:24.023432;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;46;1;0;2;0;0;0;0;0;0;11.6;7.92;65.73;0;1;2017-05-07 18:59:34.963550;2017-05-07 18:59:36.055598;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;45;1;1;1;0;0;0;1;0;0;9.1;9.21;72.16;0;0;2017-05-07 18:59:53.334498;2017-05-07 18:59:56.426781;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;44;1;3;15;1;0;1;4;0;0;31.4;8.75;-12.78;0;1;2017-05-07 19:00:07.716101;2017-05-07 19:00:09.034841;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;43;1;4;6;0;0;0;4;0;0;13.7;9.22;40.34;0;1;2017-05-07 19:00:20.178170;2017-05-07 19:00:23.378645;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;42;1;1;8;0;2;0;4;5;0;23.8;9.89;14.29;0;1;2017-05-07 19:00:34.309869;2017-05-07 19:00:35.434804;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;41;1;2;2;0;2;0;5;0;0;33.0;11.57;-12.78;0;1;2017-05-07 19:00:51.225845;2017-05-07 19:00:52.551702;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;40;1;0;10;0;3;0;4;0;0;12.9;9.06;48.81;0;1;2017-05-07 19:01:03.522474;2017-05-07 19:01:05.005808;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;39;1;1;6;0;0;1;1;0;0;19.1;9.52;30.53;0;1;2017-05-07 19:01:16.693359;2017-05-07 19:01:17.770891;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;38;1;0;4;0;0;3;5;0;0;11.3;9.12;55.24;0;1;2017-05-07 19:01:29.011069;2017-05-07 19:01:30.354498;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;37;1;1;2;0;1;1;0;0;0;11.7;8.25;52.19;0;1;2017-05-07 19:01:41.269683;2017-05-07 19:01:42.678290;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;36;1;2;6;1;0;0;4;1;0;19.2;9.44;43.4;0;1;2017-05-07 19:01:53.610272;2017-05-07 19:01:55.755560;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;35;1;4;12;2;1;1;14;0;0;26.3;9.57;-11.43;0;1;2017-05-07 19:02:07.116056;2017-05-07 19:02:10.450232;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;34;1;0;8;0;0;0;4;0;0;13.0;8.42;65.05;0;1;2017-05-07 19:02:22.380179;2017-05-07 19:02:24.475777;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;33;1;0;0;0;0;0;0;0;0;23.4;12.8;-19.89;0;1;2017-05-07 19:02:35.512326;2017-05-07 19:02:36.621591;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;32;1;0;1;0;0;0;1;0;0;14.5;11.16;38.99;0;0;2017-05-07 19:02:47.768423;2017-05-07 19:02:48.844064;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;31;1;1;1;0;2;1;3;1;0;8.9;10.57;53.88;0;1;2017-05-07 19:02:59.753496;2017-05-07 19:03:01.058814;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;30;1;0;2;0;0;0;4;0;0;10.0;8.01;66.74;0;1;2017-05-07 19:03:11.989190;2017-05-07 19:03:13.210427;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;29;1;0;3;0;0;0;4;0;0;13.3;8.9;55.24;0;1;2017-05-07 19:03:24.166014;2017-05-07 19:03:30.141907;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;28;1;0;5;0;18;0;8;0;0;21.8;8.76;28.5;0;1;2017-05-07 19:03:41.096557;2017-05-07 19:03:43.539611;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;27;1;0;10;0;0;2;1;0;0;13.5;7.92;57.61;0;1;2017-05-07 19:04:00.261790;2017-05-07 19:04:02.693695;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;26;1;0;0;0;0;0;0;0;0;7.3;0.05;129.68;0;0;2017-05-07 19:04:13.847965;2017-05-07 19:04:14.945223;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;25;1;2;2;0;1;0;3;0;0;9.7;9.48;63.7;0;1;2017-05-07 19:04:25.899328;2017-05-07 19:04:27.120948;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;24;1;1;6;1;0;1;1;0;0;41.2;9.53;-76.74;0;1;2017-05-07 19:04:38.073654;2017-05-07 19:04:39.680688;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;23;1;0;0;0;0;0;0;0;0;-1.8;0.2;126.64;0;0;2017-05-07 19:04:50.596920;2017-05-07 19:04:51.585761;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;22;1;2;4;0;0;0;4;0;0;22.8;10.11;12.59;0;0;2017-05-07 19:05:02.494446;2017-05-07 19:05:03.569121;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;21;1;0;6;0;5;0;0;0;0;13.2;9.32;43.73;0;1;2017-05-07 19:05:14.483234;2017-05-07 19:05:15.543131;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;20;1;0;0;0;0;0;1;0;0;12.1;10.13;45.42;0;0;2017-05-07 19:05:26.534814;2017-05-07 19:05:27.700221;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;19;1;0;5;0;0;0;2;0;0;15.3;8.1;28.5;0;1;2017-05-07 19:05:38.610666;2017-05-07 19:05:39.697655;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;18;1;2;1;1;0;0;6;0;0;8.0;9.33;55.91;0;1;2017-05-07 19:05:51.832140;2017-05-07 19:05:52.886881;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;17;1;3;12;0;1;1;19;0;0;19.4;8.93;28.84;0;1;2017-05-07 19:06:03.812519;2017-05-07 19:06:05.019615;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;16;1;2;4;1;0;2;1;2;0;13.8;9.44;53.21;0;1;2017-05-07 19:06:15.924671;2017-05-07 19:06:17.268810;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;15;1;0;4;0;0;0;3;0;0;10.0;9.02;55.91;0;0;2017-05-07 19:06:28.222167;2017-05-07 19:06:29.455854;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;14;1;1;3;0;0;0;0;0;0;23.5;8.34;-6.35;0;0;2017-05-07 19:06:41.445497;2017-05-07 19:06:42.486275;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;13;1;1;9;0;1;2;1;0;0;13.0;9.44;42.38;0;1;2017-05-07 19:06:54.893559;2017-05-07 19:06:57.277946;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;12;1;4;2;0;0;0;1;0;0;23.8;10.03;17.0;0;1;2017-05-07 19:07:09.616197;2017-05-07 19:07:11.572241;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;11;1;3;2;0;0;0;1;0;0;20.7;8.02;17.0;0;0;2017-05-07 19:07:22.487415;2017-05-07 19:07:23.735362;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;10;1;0;0;0;0;0;0;0;0;1.4;7.59;96.18;0;0;2017-05-07 19:07:34.747472;2017-05-07 19:07:35.979358;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;9;1;0;7;0;0;0;1;0;0;13.5;8.56;53.21;0;1;2017-05-07 19:07:46.892629;2017-05-07 19:07:48.139242;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;8;1;12;5;4;3;2;6;1;0;77.5;10.51;-270.98;0;1;2017-05-07 19:07:59.276808;2017-05-07 19:08:01.263934;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;7;1;0;4;0;0;1;0;0;0;17.9;8.39;25.46;0;1;2017-05-07 19:08:12.694549;2017-05-07 19:08:13.700882;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;6;1;3;7;0;0;0;4;0;0;19.8;10.09;33.24;0;1;2017-05-07 19:08:24.904612;2017-05-07 19:08:26.237385;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;5;1;0;0;0;0;0;0;0;0;2.7;7.14;81.29;0;0;2017-05-07 19:08:42.023963;2017-05-07 19:08:42.993176;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] Add step to reproduce.
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;4;1;0;3;0;2;0;0;1;0;9.3;9.92;60.31;0;1;2017-05-07 19:08:54.408061;2017-05-07 19:08:56.378726;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;3;1;6;4;0;0;0;5;0;0;22.3;8.87;19.03;0;1;2017-05-07 19:09:07.304971;2017-05-07 19:09:09.517429;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;2;1;0;3;2;1;0;0;0;0;7.6;7.07;73.17;0;1;2017-05-07 19:09:20.665346;2017-05-07 19:09:21.730743;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
+vagnerclementino/guava;1;1;0;1;0;0;0;0;0;0;45.2;13.21;-76.4;0;1;2017-05-07 19:09:32.652517;2017-05-07 19:09:33.740099;"Dear @vagnerclementino,
+These issue do not looks great :-1:
+ Would you like us to help you improve it? :smile:
+You could take the following action:
+ - [ ] To Attach files with a screenshots or stacktraces.
+ - [ ] To include a code block.
+ - [ ] To improve the text in issue body.
+ - [ ] To improve the readability of the text.
+
+**Did you know:**
+* Issues containing *stack traces* get fixed sooner.
+* Issues that are *easier to read*  have lower lifetimes.
+* Including *code samples* in your issue increases the chances of it getting fixed.
+"
