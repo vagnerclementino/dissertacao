@@ -31,7 +31,10 @@ importante uma disciplina com foco no gerenciamento e controle das alterações.
 Em geral, dentro do escopo da Engenharia de Software a tarefa fica a cargo da
 \textit{Manutenção de Software}. Nas próximas seções discutimos os conceitos
 básicos  da Manutenção de Software que foram utilizados nesta dissertação e sua
-relação com as FGRMs.
+relação com as FGRMs, que é a sigla para Ferramentas de Gerenciamento de
+Requisições de Mudança que é ferramenta utilizada para gerenciar uma Requisição
+de Mudança, o veículo de comunicação de uma falha ou melhoria entre as
+diferentes partes interessadas de um projeto de software.
 
 \section{A Manutenção de Software e a Requisição de Mudança}
 \label{sec:conceitos_basicos}
@@ -608,68 +611,64 @@ seguir discutimos os que do nosso ponto de vista são os mais relevantes.
 A tarefa de encontrar a origem de uma falha de software é complexa e consome
 muito tempo. O estudo de Lúcia e outros afirma que na faixa de 84 a 93\% de
 problemas em software afetam entre 1 e 2 arquivos de
-código-fonte~\cite{thung2012faults}. Apesar desta quantidade não é fácil
-identificar os arquivos onde o problema reside no repositório de código fonte do
-sistema. Esta situação realça que localizar a origem de um problema (buggy
-files) é uma tarefa árdua~\cite{Thung:2014:BIT:2635868.2661678}.
+código-fonte~\cite{thung2012faults}. Apesar da pequena quantidade de arquivos
+afetados, identificar em quais deles o problema reside (buggy files) é uma
+tarefa árdua~\cite{Thung:2014:BIT:2635868.2661678}.
 
 Neste contexto, pesquisadores vêm propondo abordagens baseadas em Recuperação da
-Informação para localizar falhas com base no que está descritos nos relatos de
-defeitos. Nesse tipo de abordagem existe a tentativa de encontrar um elo entre o
-relato descrito em uma RM e o subconjunto de arquivos do código fonte que estão
-diretamente relacionados à solução do problema
-reportado~\cite{Wong:2014:BBF:2705615.2706096}.
+Informação para localizar o arquivo que contêm uma falha com base no texto do
+relato de uma RM\@. Nesse tipo de abordagem existe a tentativa de encontrar um
+elo entre o texto do relato e um conjunto de arquivos que podem estar
+relacionados com a solução do problema~\cite{Wong:2014:BBF:2705615.2706096}.
 
-\paragraph{Visualização de RM:}
+\paragraph{Dificuldade na Visualização das Informações das RMs:}
 
-A tomada de decisão deve estar subsidiada por informações corretas. Este fato
+Uma tomada de decisão deve ser subsidiada por informações corretas. Este fato
 não é diferente na manutenção e desenvolvimento de software. Pouco se sabe sobre
 o comportamento evolutivo, o tempo de vida, distribuição e estabilidade dos
 problemas reportados nas FGRM~\cite{hora2012bug}. Este problema é reforçado pela
 forma como as FGRMs armazenam os dados das RMs. Em geral, esses exibem
 informações sobre as RMs de forma textual, o que não é apenas complicado para
 navegar, mas também dificulta a compreensão das complexas peças de informação
-que giram em torno dos problemas de software~\cite{dal2014bug}.
+que giram em torno dos problemas de software~\cite{dal2014bug}. Por esta razão
+estudos estão sendo realizados de modo a propor novas formas de visualização da
+informação contida em uma RM~\cite{takama2013application,hora2012bug}.
 
-\paragraph{Suporte ao Registro da RM:}
+\paragraph{Baixa Qualidade do Relato:}
 
-Durante o processo de correção de um problema de software verifica-se que a
-reprodução manual dos bugs é demorada e tediosa. Os mantenedores de software
-rotineiramente tentam reproduzir problemas não confirmados usando as informações
-contidas nas RMs que muitas vezes estão
-incompletas~\cite{White:2015:GRR:2820282.2820291}. Para complementar os dados
-necessários à resolução do problema o desenvolvedor deve solicitar ao
-responsável pelo relato da RM as informações necessárias~\cite{5070993}. Os
-relatos contidos nas RMs podem conter informações valiosas que podem ser
-utilizadas para melhorar a qualidade da informação contidas em novos relatórios
-de problemas de software. Esta melhoria da qualidade pode implicar na redução do
-custo do processo de garantia de qualidade bem como aumentar a confiabilidade do
-software com a redução gradativa de bugs~\cite{Tu:2014:MQI:2677832.2677844}.
+Durante o processo de solução de uma RM a reprodução manual das falhas
+reportadas é demorada e tediosa. Os mantenedores tentam reproduzir problemas
+usando a informação contida nas RMs que muitas das vezes está
+incompleta~\cite{White:2015:GRR:2820282.2820291}. Em algumas situações, para
+obter os dados que necessita, o desenvolvedor deve registrar um comentário para
+que o responsável do relato inclua as informações necessárias~\cite{5070993}.
+A melhoria da qualidade do relato pode implicar na redução do custo do processo
+de garantia de qualidade bem como aumentar a confiabilidade do software com a
+redução gradativa de bugs~\cite{Tu:2014:MQI:2677832.2677844}.
 
-\paragraph{Organização da Informação da RM:}
+% \paragraph{Organização da Informação da RM:}
 
-Em alguns casos não é possível aumentar a qualidade da informação fornecida em
-um relato de uma RM antes que ela seja armazenada em seu respectivo repositório.
-Nestas situações uma abordagem adotada é organizar de uma maneira previamente
-definida as informações contidas em uma RM\@. Durante o processo de análise de
-uma RM, em especial para aquelas de caráter corretiva, existe a tendência dos
-desenvolvedores procurar por problemas semelhantes que foram resolvidos no
-passado.
+% Em alguns casos não é possível aumentar a qualidade da informação fornecida em
+% um relato de uma RM antes que ela seja armazenada em seu respectivo repositório.
+% Nestas situações uma abordagem adotada é organizar de uma maneira previamente
+% definida as informações contidas em uma RM\@. Durante o processo de análise de
+% uma RM, em especial para aquelas de caráter corretiva, existe a tendência dos
+% desenvolvedores procurar por problemas semelhantes que foram resolvidos no
+% passado.
 
 \paragraph{Identificação de RM Duplicadas:}
 
 O processo de identificação de RMs Duplicadas consiste em avaliar se determinado
-relato já foi realizado em algum outro momento. Quando uma RM duplicada é
-identificada ela deve ser vinculada a outra que na literatura da área é
-denominada como RM Mestre. Geralmente a Mestre é aquela que foi primeiramente
-incluída no repositório de erros. Alguns estudos revelam que entre 10\% e 30\%
-das RMs podem ser classificadas como
+relato já foi realizado em outro momento. Quando uma RM é identificada como
+duplicada ela deveria ser relacionada com a sua ``cópia''. Uma delas é definida
+como RM Mestre e as demais RMs Filhas. Geralmente a Mestre é aquela que foi
+primeiramente incluída no repositório de erros. Alguns estudos revelam que entre
+10\% e 30\% das RMs podem ser classificadas como
 duplicadas~\cite{anvik2005coping,cavalcanti2013bug,Runeson:2007:DDD:1248820.1248882}.
 Por conta do grande número de RMs duplicadas uma das soluções é o \textit{Agente
-    de Triagem} para analisar manualmente as Requisições de Mudanças com
-objetivo de evitar que as duplicatas cheguem as
-desenvolvedores~\cite{anvik2005coping}.
-
+    de Triagem} analisá-las manualmente com objetivo de evitar que as duplicatas
+cheguem as desenvolvedores~\cite{anvik2005coping}. Em alguns casos esta solução
+não é viável.
 O processo de identificação de RMs duplicadas requer: \textit{(i)} um prévio
 conhecimento do conjunto de relatos existentes anteriormente no projeto;
 \textit{(ii)} a busca manual em toda base de dados da
@@ -681,150 +680,139 @@ na desconsideração de problemas relevantes.
 
 \paragraph{Atribuição (Triagem) de RM:}
 
-A atividade de atribuição de RM, que é a principal atividade do processo
-conhecido como \textit{triagem}, possui como principal objetivo encontrar o
-desenvolvedor mais capacitado para manipular uma dada
-RM~\cite{cavalcanti2014challenges}. Existe a premissa de que a escolha do
-desenvolvedor apropriado é crucial para obter em menor tempo a re\-so\-lu\-ção
-de determinada RM~\cite{di2002approach}. Estudos também discutem que o processo
+A atividade de atribuição de RM, cuja principal atividade é conhecida como
+\textit{triagem}, tem como objetivo encontrar o desenvolvedor mais capacitado
+para manipular uma dada RM~\cite{cavalcanti2014challenges}. Existe a premissa de
+que a escolha do desenvolvedor apropriado é crucial para obter em menor tempo a
+so\-lu\-ção da RM~\cite{di2002approach}. Estudos também discutem que o processo
 de atribuição deve considerar fatores tais como a carga de trabalho do
-desenvolvedor a prioridade da RM~\cite{aljarah2011selecting}.
+desenvolvedor, a prioridade da RM, dentre outros~\cite{aljarah2011selecting}.
 
 \paragraph{Classificação da RM:}
 
-Independentemente do tipo e tamanho de um projeto é sempre importante determinar
-qual tipo manutenção deverá ser realizada tomando como base o relato de uma
-RM\@. Este processo consiste de forma resumida em classificar uma requisição com
-base em algum esquema de classificação previamente definido. A diversidade de
-categorias em determinado esquema de classificação pode tornar complexa a
-tarefa, tendo em vista que em muitos casos não é fácil determinar os limites
-entre os tipos~\cite{antoniol2008bug}. Por exemplo, a uma classificação
-incorreta de um defeito como melhoria pode acarretar em atrasos no projeto ou
-mesmo que uma RM receba pouca atenção~\cite{cavalcanti2014challenges}.
+Independentemente do tipo e tamanho de um projeto é importante determinar qual
+tipo manutenção deverá ser realizada. Geralmente este tipo de classificação é
+feito com base no texto que corresponde ao relato da RM\@. A diversidade de
+categorias pode tornar complexa a tarefa pelo fato de que em muitos casos não é
+fácil determinar os limites entre os tipos~\cite{antoniol2008bug}. Por exemplo,
+a uma classificação incorreta de um defeito que na verdade trata-se de uma
+melhoria pode acarretar em atrasos no projeto~\cite{cavalcanti2014challenges}.
 
 \paragraph{Estimativa de Esforço da RM:}
 
 A gestão de custo e esforço de um projeto de manutenção de software passa pelo
-controle do esforço necessário ao cumprimento de suas RMs. Os estudos que tratam
-das questões de estimativa de esforço requerido para a solução do problema
-descrito em uma RM utilizam em geral três formas para
-estimá-lo~\cite{cavalcanti2014challenges}: determinar o tempo para solucionar
-novas RMs; definir os artefatos que são impactados por determinada RM\@; prever
-o número de novas RMs que poderão fazer parte do projeto. A literatura sobre
-análise de impacto é bastante abrangente e pode envolver o estudos de artefatos
-tais como documentos de requisitos e arquiteturas de softwares, código fonte,
-registros (logs) de teste e assim por diante~\cite{cavalcanti2014challenges}.
-Apesar da inerente imprecisão deste tipo de trabalho é importante salientar que
-estimar o esforço de uma RM é importante para o gerenciamento do projeto porque
-ajuda alocar recurso de forma mais
-eficiente~\cite{Bhattacharya:2011:BTP:1985441.1985472} e melhorar a previsão do
-custo necessário para o lançamento de futuras versões do
+controle do esforço necessário para solucionar suas RMs. Os estudos que discutem
+o esforço para solução de uma RM  utilizam três formas de
+estimativa~\cite{cavalcanti2014challenges}: determinar o tempo para solucionar
+novas RMs; definir os artefatos que são impactados por determinada RM (Análise
+de Impacto); prever o número de novas RMs que poderão fazer parte do projeto. A
+literatura sobre análise de impacto é bastante abrangente e pode envolver o
+estudos de artefatos tais como documentos de requisitos e arquiteturas de
+softwares, código fonte, registros (logs) de teste e assim por
+diante~\cite{cavalcanti2014challenges}.  Apesar da inerente imprecisão deste
+tipo de trabalho é importante salientar que estimar o esforço de uma RM é
+importante para o gerenciamento do projeto porque ajuda alocar recurso de forma
+mais eficiente~\cite{Bhattacharya:2011:BTP:1985441.1985472} e melhorar a
+previsão do custo necessário para o lançamento de futuras versões do
 sistema~\cite{Vijayakumar2014}.
 
-\paragraph{Recomendação de RM:}
+\paragraph{Recomendação de RMs:}
 
 Em alguns projetos, um membro experiente da equipe, geralmente ensina os
-recém-chegados o que eles precisam fazer para completar tarefas necessárias à
-conclusão de uma RM\@. Todavia, alocar um membro experiente de uma equipe para
-ensinar um recém-chegado durante um longo tempo nem sempre é possível ou
-desejável, porque o mentor poderia ser mais útil fazendo tarefas mais
-importantes~\cite{malheiros2012source}.
-
-Por exemplo, quando um novo desenvolvedor entra na equipe seria interessante que
-ele resolvesse as RMs que tivessem um menor nível de dificuldade.
-Posteriormente, quando o desenvolvedor ganhasse experiência, poderia aumentar o
-grau de dificuldade relacionado à RM que ele deve tratar.  Este tipo de processo
-ocorre com certa frequência em projetos de código aberto, onde a contribuição de
+recém-chegados o que eles precisam fazer solucionar uma RM\@. Todavia, alocar um
+membro experiente de uma equipe por um longo tempo para ensinar um novo membro
+da equipe nem sempre é possível ou desejável. A premissa é que o mentor poderia
+ser mais útil fazendo tarefas mais importantes~\cite{malheiros2012source}.  Por
+exemplo, quando um novo desenvolvedor entra na equipe seria interessante que ele
+resolvesse as RMs que tivessem um menor nível de dificuldade.  Posteriormente,
+quando o desenvolvedor ganhasse experiência, poderia aumentar o grau de
+dificuldade relacionado à RM que ele deve tratar. Este tipo de processo ocorre
+com certa frequência em projetos de código aberto, onde a contribuição de
 desenvolvedores fora do projeto é fundamental. No entanto, encontrar um defeito
-apropriado ao nível de conhecimento do desenvolvedor, bem como uma correção
+apropriado ao nível de conhecimento do desenvolvedor, bem como a correção
 apropriada para o mesmo requer uma boa compreensão do
 projeto~\cite{Wang2011bug}.
 
 Para facilitar a inclusão de novos desenvolvedores alguns estudos vêm se
 dedicando em desenvolver sistemas de recomendação de
-RMs~\cite{malheiros2012source, Wang2011bug}. Estes sistemas de recomendação
-podem ajudar o recém-chegado a solucionar uma RM mediante a apresentação de
-outras de código fonte potencialmente relevante que o ajudará na solução da RM
-do qual ficou responsável~\cite{malheiros2012source}.
+RMs~\cite{malheiros2012source, Wang2011bug}. Estes sistemas podem ajudar o
+recém-chegado a solucionar uma RM mediante a apresentação de outras de código
+fonte potencialmente relevante que o ajudará na solução da RM do qual ficou
+responsável~\cite{malheiros2012source}.
 
-O segundo tipo de abordagem pode ser vista como ambiente de exploração do
-repositório de RMs.  Esta funcionalidade permite que novos desenvolvedores
-pesquisem descrições das requisições que possam ser do seu interesse bem como
-dos artefatos relativos àquela RM (por exemplo, arquivos relacionados,
-desenvolvedores contribuintes, registros de comunicação)~\cite{Wang2011bug}.
-
-Com base nos estudos que compõem esta categoria, verificamos que modelos de IR
-vêm sendo utilizados para possibilitar a recomendação de RM\@. Neste contexto,
-técnicas bem conhecidas na literatura tais como VSM~\cite{Wang2011bug} e o
-modelo estatístico PPM~\cite{malheiros2012source}.
+% O segundo tipo de abordagem pode ser vista como ambiente de exploração do
+% repositório de RMs.  Esta funcionalidade permite que novos desenvolvedores
+% pesquisem descrições das requisições que possam ser do seu interesse bem como
+% dos artefatos relativos àquela RM (por exemplo, arquivos relacionados,
+% desenvolvedores contribuintes, registros de comunicação)~\cite{Wang2011bug}.
 
 \section{As Ferramentas de Gerenciamento de Requisições de Mudança (FGRM)}
 \label{sec:ferramentas_de_gerenciamento_requisicoes_de_mudanca}
 
 Dentro da disciplina de Gerenciamento da Configuração do Software a atividade de
 controle de configuração é responsável por gerenciar mudanças ocorridas durante
-o ciclo de vida de um produto de software. Tais ações incluem determinar quais
-alterações serão feitas, definir o papel responsável por autorizar certos tipos
-de mudança e aprovar desvios relativos aos requisitos iniciais do
-projeto~\cite{4425813}. De uma forma mais ou menos estruturada este tipo de
-processo ocorre em diferentes tipos de projeto de software, seja ele dentro de
-um processo de manutenção tradicional ou mesmo naqueles que utilizam os métodos
-propostos pelos agilistas.
+o ciclo de vida de um produto de software~\cite{tripathy2014software}. Entre as
+atividades deste processo estão determinar quais alterações serão feitas,
+definir o papel responsável por autorizar certos tipos de mudança e aprovar
+desvios relativos aos requisitos iniciais do projeto~\cite{4425813}. De uma
+forma mais ou menos estruturada tais ações ocorrem em diferentes tipos de
+projeto de software, seja manutenção com características tradicionais (vide
+Seção~\ref{subsec:manutenção_de_software_tradicional}) ou ainda naqueles que
+utilizam os métodos propostos pelos agilistas.
 
-Por conta do volume das Requisições de Mudança se faz necessária a utilização de
-ferramentas com o objetivo de gerenciá-las. Esse controle é geralmente realizado
-por Sistemas de Controle de Demandas (SCD)- Issue Tracking Systems, que auxiliam
-os desenvolvedores na correção de forma individual ou colaborativa de defeitos
-(bugs), no desenvolvimento de novas funcionalidades, dentre outras tarefas
-relativas à manutenção de software. Não existe na literatura uma nomenclatura
-padrão para este tipo de ferramenta. Em alguns estudos é possível verificar
-nomes tais como Sistema de Controle de Defeito\@-\@ Bug Tracking Systems,
-Sistema de Gerenciamento da Requisição\@-\@ Request Management System, Sistemas
-de Controle de Demandas (SCD)\@-\@ Issue Tracking Systems e outros diversos
-nomes.  Todavia, de modo geral, o termo se refere às ferramentas utilizadas
-pelas organizações para \textit{gerenciar as Requisições de Mudança}. Estas
-ferramentas podem ainda ser utilizadas por gestores, analistas de qualidade e
-usuários finais para atividades tais como gerenciamento de projetos,
-comunicação, discussão e revisões de código. Neste trabalho utilizaremos o termo
-\texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) ao
-referimos a este tipo de ferramenta.
+Por conta do volume das RMs e os diversos desafios relacionado com sua gestão é
+necessária a utilização de ferramentas com o objetivo de gerenciá-las. Esse
+controle é geralmente realizado por Sistemas de Controle de Demandas (SCD)-
+Issue Tracking Systems, que auxiliam os desenvolvedores na correção de forma
+individual ou colaborativa de defeitos (bugs), no desenvolvimento de novas
+funcionalidades, dentre outras tarefas relativas à manutenção de software. Não
+existe na literatura uma nomenclatura padrão para este tipo de ferramenta. Em
+alguns estudos é possível verificar nomes tais como Sistema de Controle de
+Defeito\@-\@ Bug Tracking Systems, Sistema de Gerenciamento da Requisição\@-\@
+Request Management System, Sistemas de Controle de Demandas (SCD)\@-\@ Issue
+Tracking Systems e outros diversos nomes.  Todavia, de modo geral, o termo se
+refere às ferramentas utilizadas pelas organizações para \textit{gerenciar as
+    Requisições de Mudança}. Estas ferramentas podem ainda ser utilizadas por
+gestores, analistas de qualidade e usuários finais para atividades tais como
+gerenciamento de projetos, comunicação, discussão e revisões de código. Neste
+trabalho utilizaremos o termo \texttt{Ferramentas de Gerenciamento de
+    Requisições de Mudança} (FGRM) ao referimos a este tipo de ferramenta.
 
 As RMs são controladas por uma FGRM na forma de um fluxo de trabalho de modo a
-identificar, descreve e controlar a situação de cada RM\@. Em geral, os objetivos
-de um projeto adotar uma FGRM para gerenciar uma RM são os
+identificar, descreve e controlar a situação de cada RM\@. Em geral, os
+objetivos de um projeto adotar uma FGRM para gerenciar suas RMs são os
 seguintes~\cite{tripathy2014software}:
 
 \begin{itemize}
-	\item Fornecer um método comum para a comunicação entre as partes
-		interessadas.
+    \item Disponibilizar um espaço comum para a comunicação entre as partes
+        interessadas.
 	\item Identificar de forma única e controlar a situação de cada RM\@. Esta
 		característica simplifica o processo de relatar uma RM e fornece um
 		melhor controle sobre as mudanças.
-	\item Manter uma base de dados sobre todas as mudanças sobre determinado
-		sistema. Esta informação pode ser utilizada para monitoramento e
-		métricas de medição.
+    \item Manter uma base de dados sobre todas as mudanças sobre o sistema
+        desenvolvido ou mantido pelo projeto. Esta informação pode ser utilizada
+        para monitoramento e métricas de medição.
 \end{itemize}
 
-No últimos anos alguns estudos discutem o fato que as FGRMs não apenas ajudam
-as organizações gerenciar, atribuir, controlar, resolver e arquivar Requisições
-de Mudança. Em alguns casos, este tipo de ferramenta se tornou o ponto focal
-para comunicação e coordenação para diversas partes interessadas, dentro e além
-da equipe de manutenção~\cite{Bertram:2010:CCB:1718918.1718972}.  As FGRMs
-também servem como um repositório central para monitorar o progresso da RM,
-solicitar informações adicionais da pessoa responsável por redigir a requisição
-e o ponto de discussão para potenciais soluções de um defeito
-(bug)~\cite{zimmermann2009improving}.
+No momento em que este trabalho estava sendo desenvolvido, estudos discutem o
+fato que as FGRMs não apenas ajudam as organizações gerenciar, atribuir,
+controlar, resolver e arquivar as RMs~\cite{Bertram:2010:CCB:1718918.1718972}.
+Em alguns casos, este tipo de ferramenta se tornou o ponto focal para
+comunicação e coordenação para diversas partes interessadas, dentro e além da
+equipe de manutenção. As FGRMs servem como um repositório central para monitorar
+o progresso da RM, solicitar informações adicionais da pessoa responsável por
+redigir a requisição e o ponto de discussão para potenciais soluções de um
+defeito (bug)~\cite{zimmermann2009improving}.
 
-Em projetos de código aberto, as FGRM são uma importante parte de como a equipe
-interage com comunidade de usuários. Como consequência é possível observar o
-fenômeno da participação dos usuários no processo de solução da RM:\@ eles não
+Em projetos de código aberto, as FGRMs são um importante espaço onde a equipe de
+desenvolvimento interage com a comunidade. Como consequência é possível observar
+o fenômeno da participação dos usuários no processo de solução da RM:\@ eles não
 apenas submetem a RM, mas também participam na discussão de como resolvê-la.
 Desta forma, o usuário final ajuda nas decisões sobre a direção futura do
 produto de software~\cite{breu2010information}.
 
 \subsection{Modelo Conceitual do Contexto das FGRMs}
 \label{sub:espectro_funcionalidades_fgrm}
-\todobegin{Estudo sobre o conjunto de conceitos para este tipo de ferramenta}
 
 As FGRMs vêm sendo utilizadas por diversos projetos com características
 próprias. Neste sentido, este tipo de software necessidade oferecer diferentes
@@ -836,10 +824,9 @@ conceitual.
 
 Nós construímos um modelo conceitual com base na literatura da área, em especial
 nos trabalhos de~\cite{cavalcanti2014challenges, singh2011bug,
-	kshirsagar2015issue} visando entender o conceito no qual uma FGRM pode estar
-inserida. Nós sintetizamos os dados através da identificação de temas
-recorrentes da definição de FGRMs encontradas nos artigos. Foram encontrados
-quatro principais conceitos que estão retratados na
+    kshirsagar2015issue}. Nós sintetizamos os dados através da identificação de
+temas recorrentes da definição de FGRMs encontradas nos artigos. Foram
+encontrados quatro principais conceitos que estão retratados na
 Figura~\ref{fig:diagrama-classe-conceitual-fgrm} como um diagrama baseado na
 UML\@. Esta figura foi derivada dos estudos primários e consiste em uma
 generalização dos elementos utilizados com frequência nos artigos. Os conceitos
@@ -886,13 +873,13 @@ envolvidos no modelo estão descritos a seguir.
 
 A partir da Figura~\ref{fig:diagrama-classe-conceitual-fgrm} é possível
 verificar que um \textit{projeto} pode \textit{definir} o seu \textit{fluxo de
-	trabalho}, como por exemplo resolvendo que uma RM só pode ser considerada
+    trabalho}, como por exemplo resolvendo que uma RM só pode ser considerada
 Fechada (Closed) \@-\@ vide Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}
 \@-\@ caso ela tenha sido avaliada por um Analista de Qualidade (vide
 Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}). A partir
-daquele fluxo as RMs podem ser \textit{atendidas} visando à sua resolução o que
-é feito por uma \textit{pessoa} devidamente registrada no \textit{repositório de
-	pessoas} e com direto para realizar a ação necessária.
+deste fluxo as RMs podem ser \textit{atendidas} visando à sua resolução o que é
+feito por uma \textit{pessoa} devidamente registrada no \textit{repositório de
+    pessoas} e com direto para realizar a ação necessária.
 
 \begin{figure}[htpb] \centering
 	\includegraphics[width=1.15\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-fgrm.pdf}
@@ -909,26 +896,25 @@ possível forma de melhoria é através do uso de extensões. Na próxima seçã
 abordamos esta propriedade de algumas FGRMs que permitem a inclusão e
 modificação de funcionalidades e comportamentos da ferramenta segundo as
 necessidades do usuário.
-\todoend{}
 
-\subsection{Extensões em FGRM}
+\subsection{Extensões de Funcionalidades em FGRM}
 \label{subsec:manutencao_visao_geral_extensoes_fgrm}
 
 Em determinados domínios de aplicação é interessante desenvolver produtos de
 software com uma arquitetura que permita o sistema se adaptar às mudanças em
-seus requisitos. Existe naturalmente a possibilidade de incluir as novas
-funcionalidades dentro das já existentes no software, todavia, verificamos que
-sistemas que permitem extensões apresentam os seguintes benefícios:
+seus requisitos. Existe a possibilidade de incluir novas funcionalidades dentro
+das já existentes no software, todavia, verificamos que sistemas que permitem
+extensões apresentam os seguintes benefícios:
 
 \begin{itemize}
-	\item Extensibilidade: o software pode ser dinamicamente estendido mediante
-		a inclusão de novos módulos de código que correspondem à novas
-		características;
-	\item Desenvolvimento em Paralelo: Quando os componentes não possui certas
-		dependências eles podem ser desenvolvidos em paralelo por times
-		diferentes;
-	\item Simplicidade: uma  extensão; tipicamente tem uma única funcionalidade,
-		desta forma permite um melhor foco para os desenvolvedores.
+    \item Extensibilidade: o software pode ser dinamicamente estendido mediante
+        a inclusão de novos módulos de código que correspondem à novas
+        características;
+    \item Desenvolvimento em Paralelo: Quando os componentes não possui certas
+        dependências eles podem ser desenvolvidos em paralelo por times
+        diferentes;
+    \item Simplicidade: uma extensão tipicamente tem uma única funcionalidade,
+        desta forma permite um melhor foco para os desenvolvedores.
 \end{itemize}
 
 No escopo deste trabalho, uma extensão é um componente de software que adiciona
@@ -936,38 +922,37 @@ uma característica ou comportamento específico para um programa de
 computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in\_(computing)}}.
 Cabe-nos ressaltar que o nossa definição de extensão incluí aquelas que não
 estão acopladas ao código de determinada FGRM\@. Por exemplo, a funcionalidade
-de atribuição de uma Requisição de Mudança a um ou mais desenvolvedor é inerente
-às FGRM, segundo o nosso entendimento uma proposta de melhoria desta
-funcionalidade mediante uma atribuição automatizada, por exemplo, será analisada
-como extensão mesmo que ela não esteja efetivamente funcionando em alguma
-FGRM\@. Vamos a\-na\-li\-sar as extensões de funcionalidade de forma
-independente se ela é oferecida baseada nos mecanismos de extensão discutidos
-nesta seção.
+de atribuição de uma RM faz parte da maior parte das FGRM, todavia, segunda a
+nossa definição, uma proposta de melhoria desta funcionalidade mediante uma
+atribuição automatizada, por exemplo, será analisada como extensão mesmo que ela
+não esteja efetivamente funcionando em alguma FGRM\@. Vamos a\-na\-li\-sar as
+extensões de funcionalidade de forma independente se ela é oferecida baseada nos
+mecanismos de extensão discutidos nesta seção.
 
 Verificamos na literatura alguns estudos em que as soluções propostas já se
 tornaram extensões de determinadas FGRM\@. Como pode ser observado no Mapeamento
 Sistemático realizado no Capítulo~\ref{ch:mapeamento-sistematico}, a
 implementação da proposta do estudo em extensão de ferramenta não é o padrão
-observado.
+observado. Os softwares que utilizam módulos de extensão têm aspectos de
+desenvolvimento e de manutenção potencialmente distintos daqueles sem esta
+característica. Este trabalho de mestrado faz uma contribuição na direção de uma
+melhor compreensão deste contexto a partir da análise de aspectos específicos
+das FGRMs.
 
-A extensão \textit{Buglocalizer}~\cite{Thung:2014:BIT:2635868.2661678} é uma
-extensão para o Bugzilla que possibilita a localização dos arquivos do código
-fonte que estão relacionados ao defeito relatado. A ferramenta extrai texto dos
-campos de sumário e descrição de um determinado erro reportado no Bugzilla. De
-maneira similar \textit{NextBug}~\cite{101186} também é uma extensão para o
-Bugzilla que recomenda novos bugs para um desenvolvedor baseado no defeito que
-ele esteja tratando atualmente. Em ambos os casos a extensão foi implementada
-utilizando técnicas de Recuperação da Informação.
+% A extensão \textit{Buglocalizer}~\cite{Thung:2014:BIT:2635868.2661678} é uma
+% extensão para o Bugzilla que possibilita a localização dos arquivos do código
+% fonte que estão relacionados ao defeito relatado. A ferramenta extrai texto dos
+% campos de sumário e descrição de um determinado erro reportado no Bugzilla. De
+% maneira similar \textit{NextBug}~\cite{101186} também é uma extensão para o
+% Bugzilla que recomenda novos bugs para um desenvolvedor baseado no defeito que
+% ele esteja tratando atualmente. Em ambos os casos a extensão foi implementada
+% utilizando técnicas de Recuperação da Informação.
 
-Os softwares que utilizam módulos de extensão têm aspectos de desenvolvimento e
-de manutenção potencialmente distintos daqueles sem esta característica. Este
-trabalho de mestrado faz uma contribuição na direção de uma melhor compreensão
-deste contexto a partir da análise de aspectos específicos das FGRMs.
 
 \section{Um Estudo sobre as Funcionalidades das FGRMs}
 \label{sec:caracterizacao_ferramentas}
 
-\subsection{Introdução}
+\subsection{Visão Geral}
 \label{subsec:caracterizacao_intro}
 
 Quando uma empresa ou um projeto de software de código aberto decide adotar uma
