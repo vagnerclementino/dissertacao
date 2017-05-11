@@ -5,25 +5,23 @@
 %Autor: Vagner Clementino<vagnercs@dcc.ufmg.br> e
 %		Rodolfo Resende<rodolfo@dcc.ufmg.br>
 %Criação: Dom Set 18 22:55:43 BRT 2016
-%Modificação: qua fev 15 08:27:13 BRST 2017
+%Modificação: qui mai 11 09:48:42 -03 2017
 %Revisão: sáb fev 11 21:18:12 BRST 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introdução}
 \label{ch:intro}
 
 Dentro do ciclo de vida de um produto de software o processo de manutenção tem
-papel fundamental. Devido ao seu alto custo, em alguns casos chegando a 60\% do
-preço final~\cite{kaur2015review}, as atividades relacionadas a manter e evoluir
-software têm sua importância considerada tanto pela comunidade científica quanto
-pela indústria.
-
-Desde o final da década de 1970~\cite{Zelkowitz:1979:PSE:578504} percebe-se o
-aumento do custo referente as atividades de  manutenção de software. Nas décadas
-de 1980 e 1990 alguns trabalhos tiveram seu foco no desenvolvimento de modelos
-de mensuração do valor necessário para manter o
+papel fundamental. Devido ao seu alto custo, que segundo alguns estudos varia de
+60\% a 90\% do preço final do software~\cite{kaur2015review}, as atividades
+relacionadas a manter e evoluir têm sua importância considerada tanto pela
+comunidade científica quanto pela indústria. Desde o final da década de
+1970~\cite{Zelkowitz:1979:PSE:578504} uma atenção tem sido dada para os custos
+da Manutenção de Software. Nas décadas de 1980 e 1990 alguns estudos propuseram
+modelos de mensuração do valor necessário para manter o
 software~\cite{Herrin:1985:SMC:323287.323383,hirota1994approach}. Apesar da
-evolução das metologias de manutenção a estimativa é que nas últimas duas
-décadas o custo de manutenção tenha aumentado em
+evolução das metologias para se manter um software a estimativa é que nas
+últimas duas décadas o custo de manutenção tenha aumentado em
 50\%~\cite{koskinen2010software}. Esta tendência pode ser observada na
 Figura~\ref{fig:software-maintence-costs} onde é possível verificar a evolução
 dos gastos com manutenção de software como fração do preço final do produto.
@@ -38,11 +36,11 @@ dos gastos com manutenção de software como fração do preço final do produto
 \end{figure}
 
 Uma vez que o software entra em operação, anomalias são descobertas, mudanças
-ocorrem do ambiente de operação e novos requisitos são solicitados pelo usuário.
-Todas estas demandas devem ser solucionadas na fase de Manutenção que inicia com
-entrega do sistema, entretanto, alguns autores defendem que certas atividades,
-como aquelas relativas à analise da qualidade, começam bem antes da entrega do
-produto.
+ocorrem no ambiente de operação e novos requisitos são solicitados pelo usuário.
+Todas estas demandas devem ser solucionadas pela Manutenção de Software que se
+inicia com entrega do sistema. Contudo, alguns autores defendem que certas
+atividades, como aquelas relativas à analise da qualidade, começam bem antes da
+entrega do produto.
 
 A \textit{Manutenção}, dentre outros aspectos, corresponde ao processo de
 modificar um componente ou sistema de software após a sua entrega com o objetivo
@@ -52,61 +50,61 @@ de \textit{corrigir falhas, melhorar o desempenho ou adaptá-lo devido à mudan�
 software em relação ao grau de \textit{facilidade} que ele pode ser corrigido,
 melhorado ou adaptado~\cite{{159342}}.
 
-Verificamos na literatura uma discussão sobre a diferença entre manutenção e
-evolução de software. Percebe-se ainda que pesquisadores e profissionais
-utilizam evolução como o substituto preferido para
-manutenção~\cite{Bennett:2000:SME:336512.336534}. Todavia, não está no escopo
-desta dissertação discutir e apresentar as diferenças entre os conceitos. Neste
-sentido, utilizamos os termos \textit{manter} e \textit{evoluir} software de
-forma intercambiáveis.
+% Verificamos na literatura uma discussão sobre a diferença entre manutenção e
+% evolução de software. Percebe-se ainda que pesquisadores e profissionais
+% utilizam evolução como o substituto preferido para
+% manutenção~\cite{Bennett:2000:SME:336512.336534}. Todavia, não está no escopo
+% desta dissertação discutir e apresentar as diferenças entre os conceitos. Neste
+% sentido, utilizamos os termos \textit{manter} e \textit{evoluir} software de
+% forma intercambiáveis.
 
 As manutenções em software podem ser divididas em \textit{Corretiva, Adaptativa,
-	Perfectiva e Preventiva}~\cite{Lientz:1980:SMM:601062,159342}. A ISO 14764
-discute os quatro tipos de manutenções e propõe que exista um elemento comum
-denominado \textit{Requisição de Mudança} que representa as características
-comuns a todas aqueles tipos de manutenção.
+    Perfectiva e Preventiva}~\cite{Lientz:1980:SMM:601062,159342}. A ISO 14764
+discute os quatro tipos e propõe que exista um elemento comum denominado
+\textit{Requisição de Mudança (RM)} que representa as características
+compartilhadas pelos demais tipos.
 
 \begin{figure}[hbtp] \centering \includegraphics[width=.75\textwidth]
 	{./chapter-intro/img/modification_request.eps} \caption{Tipos de manutenção
 		segundo a norma ISO/IEC 14764. Extraído de~\cite{1703974}}
 \label{fig:modification-request} \end{figure}
 
-Por conta do volume das Requisições de Mudança se faz necessária a utilização de
-ferramentas com o objetivo de gerenciá-las. Esse controle é geralmente realizado
-por \textit{Ferramentas de Gerenciamento de Requisição de Mudança -~FGRM}, que
+Por conta do volume das RM é importante a utilização de um software com o
+objetivo de gerenciá-las. Esse controle é geralmente realizado por
+\textit{Ferramentas de Gerenciamento de Requisição de Mudança -~FGRM}, que
 auxiliam os desenvolvedores na correção de forma individual ou colaborativa de
-defeitos (bugs), no desenvolvimento de novas funcionalidades, dentre outras
-tarefas relativas à manutenção de software.  A literatura não define uma
-nomenclatura comum para este tipo de ferramenta. Em alguns estudos é possível
-verificar nomes tais como Sistema de Controle de Defeito -~Bug Tracking Systems,
+falhas (bugs) e no desenvolvimento de novas funcionalidades, por exemplo. Estas
+ferramentas podem ainda ser utilizadas por gestores, analistas de qualidade e
+usuários finais para atividades como gerenciamento de projetos, comunicação,
+discussão e revisões de código. A literatura em Manutenção de Software não
+define uma nomenclatura comum para este tipo de ferramenta. Em alguns estudos é
+utilizado nomes como Sistema de Controle de Defeito -~Bug Tracking Systems,
 Sistema de Gerenciamento da Requisição -~Request Management System, Sistemas de
 Controle de Demandas (SCD)- Issue Tracking Systems. Todavia, de modo geral, o
 termo se refere as ferramentas utilizadas pelas organizações para \textit{gerir
-	as Requisições de Mudança}. Estas ferramentas podem ainda ser utilizadas por
-gestores, analistas de qualidade e usuários finais para atividades como
-gerenciamento de projetos, comunicação, discussão e revisões de código. Neste
-trabalho utilizaremos o termo \texttt{Ferramentas de Gerenciamento de
-	Requisições de Mudança} (FGRM) ao referimos a este tipo de ferramenta.  A
-Tabela~\ref{tab:exemplo} apresenta alguns exemplos de software que podem ser
-classificados como FGRM's. Também são listados serviços da Internet que oferecem
-funcionalidades presentes nas FGRMs na forma de Software como
-Serviço~\cite{fox2013engineering}.
+    as Requisições de Mudança}. Neste trabalho utilizaremos o termo
+\texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) ao
+referimos a este tipo de software. A Tabela~\ref{tab:exemplo} apresenta alguns
+exemplos de software que podem ser classificados como FGRMs. Também são listados
+serviços da Internet que oferecem funcionalidades presentes neste tipo de
+software mas na forma de Software como Serviço~\cite{fox2013engineering}.
 
-\begin{table}[ht]
-	\centering
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{llll}
-			\hline
-			\multicolumn{2}{c}{\textbf{Ferramentas}}           & \multicolumn{2}{c}{\textbf{Serviços da Internet}} \\ \hline
-			Bugzilla & https://www.bugzilla.org/               & SourceForge    & https://sourceforge.net/    \\ \hline
-			MantisBT & https://www.mantisbt.org/               & Lauchpad       & https://launchpad.net/      \\ \hline
-			Trac     & https://trac.edgewall.org/              & Code Plex      & https://www.codeplex.com/   \\ \hline
-			Redmine  & www.redmine.org/                        & Google Code    & https://code.google.com/    \\ \hline
-			Jira     & https://www.atlassian.com/software/jira & GitHub         & https://github.com/         \\ \hline
-		\end{tabular}%
-	}
-	\caption{Exemplos de ferramentas e serviços da Internet. Adaptado
-		de~\cite{cavalcanti2014challenges}}\label{tab:exemplo}
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}clll@{}}
+\toprule
+\multicolumn{2}{c|}{Ferramentas}                   & \multicolumn{2}{c}{Serviços da Internet} \\ \midrule
+Bugzilla & https://www.bugzilla.org/               & SourceForge  & https://sourceforge.net/  \\ \midrule
+MantisBT & https://www.mantisbt.org/               & Lauchpad     & https://launchpad.net/    \\ \midrule
+Trac     & https://trac.edgewall.org/              & Code Plex    & https://www.codeplex.com/ \\ \midrule
+Redmine  & www.redmine.org/                        & Google Code  & https://code.google.com/  \\
+Jira     & https://www.atlassian.com/software/jira & GitHub       & https://github.com/       \\ \bottomrule
+\end{tabular}%
+}
+\caption{Exemplos de ferramentas e serviços da Internet. Adaptado
+		de~\cite{cavalcanti2014challenges}}
+\label{tab:exemplo}
 \end{table}
 
 \section{Motivação}
@@ -114,59 +112,61 @@ Serviço~\cite{fox2013engineering}.
 
 Diante da maior presença de software em todos os setores da sociedade existe um
 interesse por parte da academia e da industria no desenvolvimento de processos,
-técnicas e \textit{ferramentas} que reduzam o esforço e o custo das tarefas de
-desenvolvimento e manutenção de software. Nesta linha, o trabalho de Yong \&
-Mookerjee~\cite{1423995}  propõe um modelo que reduz os custos de manutenção e
+técnicas e \textit{ferramentas} que reduzam o esforço e o custo do
+desenvolvimento e manutenção de software. Um exemplo é o trabalho de Yong \&
+Mookerjee~\cite{1423995} propõe um modelo que reduz os custos de manutenção e
 reposição durante a vida útil de um sistema de software. O modelo demonstrou que
 em algumas situações é \textit{melhor substituir um sistema do que mantê-lo}.
 Este pro\-ble\-ma é agravado tendo em vista que em alguns casos são necessários
 que 60\% dos desenvolvedores fique dedicados à tarefas de manutenção de
 sistemas~\cite{Zhang_2003}.
 
-Em certos projetos de software, especialmente durante as etapas de
-desenvolvimento e teste, se faz necessário uma ferramenta para gerenciar
-as Requisições~de~Mudança por conta do volume e da grande quantidade de pessoas
-que necessitam de um local para inserir os erros encontrados~\cite{1407819}.
-Este tipo de ferramenta vem sendo utilizada em projetos de código
-aberto (Apache, Linux, Open Office) bem como em organizações públicas e privadas
-(NASA,IBM).
+Dependendo do tamanho de um projeto de software é necessário a utilização de uma
+FGRM para gerenciar as Requisições~de~Mudança por conta do volume e das
+diferentes partes interessadas que necessitam de um local centralizado onde
+possa registrar as falhas encontradas e as melhorias que
+necessitam~\cite{1407819}. Neste sentido, podemos afirmar que as RMs suportam
+projetos de diferentes tipos e tamanhos, sejam eles de código aberto (Apache,
+Linux, Open Office) ou em organizações públicas e privadas (NASA e IBM). Dando
+suporte à software de diferentes plataformas, seja aplicativos de área de
+trabalho (desktop), web ou móvel (mobile).
 
-Não obstante, alguns estudos demonstram que as FGRMs desempenham um papel além
-de gerenciar os pedidos de manutenção software. Avaliando o controle de demandas
-como um processo social, Bertram e
+A literatura da área nos mostra que as FGRMs desempenham um papel além do
+gerenciamento dos pedidos de manutenção software. Avaliando o controle de
+demandas como um processo social, Bertram e
 outros~\cite{Bertram:2010:CCB:1718918.1718972} realizaram um estudo qualitativo
-em FGRMs quando utilizados por pequenas equipes de desenvolvimento de software.
-Os resultados mostraram que este tipo ferramenta não é apenas um banco de dados
-de rastreamento de defeitos, de recursos ou pedidos de informação, mas também
-atua como um ponto focal para a comunicação e coordenação de diversas partes
-interessadas (stakeholders) dentro e fora da equipe de software. Os clientes,
-gerentes de projeto, a equipe envolvida com a garantia da qualidade e
-programadores, contribuem em conjunto para o conhecimento compartilhado dentro
-do contexto das FGRMs.
+sobre FGRMs que são utilizadas por equipes pequenas de desenvolvimento de
+software. Os resultados demonstraram que a ferramenta não é apenas um banco de
+dados de rastreamento de falhas, mas atua como um ponto central para a
+comunicação e coordenação de diversas partes interessadas (stakeholders) dentro
+e fora da equipe de manutenção. Os clientes, gerentes de projeto, analistas de
+qualidade e programadores contribuem em conjunto para o compartilhamento de
+conhecimento do projeto por meio da utilização das FGRMs.
 
 No trabalho de Breu e outros~\cite{Breu:2010:INB:1718918.1718973} o foco é
 analisar o papel dos FGRMs no suporte à colaboração entre desenvolvedores e
-usuários de um software. A partir da análise quantitativa e qualitativa de
-defeitos registrados em uma FGRM de dois projetos de software livre foi possível
-verificar que o uso da ferramenta propiciou que os usuários desempenhassem um
-papel além de simplesmente reportar uma falha: a participação ativa e permanente
-dos usuários finais foi importante no progresso da resolução das falhas que eles
-descreveram.
+usuários de um software. Com base nos resultados foi possível verificar que o
+uso da ferramenta possibilitou que os usuários desempenhassem um papel além de
+simplesmente reportar uma falha: a participação ativa e permanente foi
+importante no progresso da resolução das falhas que eles descreveram.
 
-Um outro importante benefício da utilização das FGRM é que as mudanças no
+Um outro benefício da utilização das FGRM é que as mudanças no
 software podem ser rapidamente identificadas e reportadas para os
 desenvolvedores~\cite{anvik2005coping}. Além disso, eles podem ajudar a estimar
 o custo do software, na análise de impacto, planejamento, rastreabilidade,
 descoberta do conhecimento~\cite{cavalcanti2013bug}.
 
-Contudo, no escopo de utilização das FGRMs diversos desafios se apresentam:
-duplicação RMs, pedidos de modificação abertos inadvertidamente, grande
-volume de RMs que devem ser atribuídas aos desenvolvedores, erros descrito
-de forma incompleta, análise de impacto das RMs e     atribuídas de maneira
-incorreta~\cite{cavalcanti2014challenges}.  Diante de tantos problemas e
-desafios é importante entender como estas ferramentas vêm sendo
-utilizadas bem como analisar o que está sendo proposta na literatura com objetivo
-de melhorar as funcionalidades oferecidas por elas\@.
+Conforme exposto as FGRMs desempenham um papel fundamental no contexto do
+desenvolvimento e manutenção de software. Contudo, no escopo de utilização das
+FGRMs diversos desafios se apresentam: duplicação RMs, pedidos de modificação
+abertos inadvertidamente, grande volume de RMs que devem ser atribuídas aos
+desenvolvedores mais aptos, erros descrito de forma incompleta, análise de
+impacto das RMs e atribuídas de maneira
+incorreta~\cite{cavalcanti2014challenges}. Diante destes problemas e desafios é
+importante entender como estas ferramentas vêm sendo utilizadas de modo a
+analisar o que está sendo proposto na literatura e as necessidades dos
+profissionais envolvidos com Manutenção de Software com objetivo de melhorar as
+funcionalidades oferecidas.
 
 %No trabalho de Junio et al.~\cite{5741246} é proposto um processo denominado
 %PASM (Process for Arranging Software Maintenance Requests) que propõe lidar com
@@ -229,7 +229,6 @@ de melhorar as funcionalidades oferecidas por elas\@.
 %as ferramentas envolvidas no suporte à manutenção de software se adéquem à este
 %nova forma de manter software.
 %
-
 
 \section{Problema}
 \label{sec:intro-problema}
@@ -399,7 +398,7 @@ seguir:
 		Mudança (FGRM)
 	\item Pesquisa (Survey) com os
 		desenvolvedores~\cite{wohlin2012experimentation}
-%	\item Desenvolvimento de extensões para as FGRM's
+%	\item Desenvolvimento de extensões para as FGRMs
 \end{itemize}
 
 \section{Contribuições do Estudo}
@@ -415,4 +414,4 @@ de modo melhorá-lo.
 \label{sec:intro-organizacao-dissertacao}
 \todobegin{Vamos aguardar o desenvolvimento deste trabalho para definirmos a
 estrutura do texto.}
-\todoend
+\todoend{}
