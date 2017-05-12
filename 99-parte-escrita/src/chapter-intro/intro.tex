@@ -163,10 +163,11 @@ abertos inadvertidamente, grande volume de RMs que devem ser atribuídas aos
 desenvolvedores mais aptos, erros descrito de forma incompleta, análise de
 impacto das RMs e atribuídas de maneira
 incorreta~\cite{cavalcanti2014challenges}. Diante destes problemas e desafios é
-importante entender como estas ferramentas vêm sendo utilizadas de modo a
-analisar o que está sendo proposto na literatura e as necessidades dos
-profissionais envolvidos com Manutenção de Software com objetivo de melhorar as
-funcionalidades oferecidas.
+importante entender como estas ferramentas estão sendo utilizadas. Com base
+neste conhecimento, e com  o que está sendo proposto na literatura, é possível
+avaliar e entende necessidades dos profissionais envolvidos com Manutenção de
+Software com o objetivo de melhorar as funcionalidades oferecidas por este tipo
+de software.
 
 %No trabalho de Junio et al.~\cite{5741246} é proposto um processo denominado
 %PASM (Process for Arranging Software Maintenance Requests) que propõe lidar com
@@ -234,53 +235,50 @@ funcionalidades oferecidas.
 \label{sec:intro-problema}
 
 O desenvolvimento e a manutenção de software envolvem diversos tipos de métodos,
-técnicas e ferramentas. Em especial no processo de manutenção, um importante
-aspecto são as diversas Requisições de Mudanças que devem ser gerenciadas. Este
-controle é realizado pelas FGRMs cujo o uso vem crescendo em importância,
-sobretudo, por sua utilização por gestores, analistas da qualidade e usuários
-finais para atividades como tomada de decisão e comunicação. Contudo, muitas
-daquelas ferramentas são meramente melhores interfaces para um banco de dados
-que armazena todos os bugs reportados~\cite{zimmermann2009improving}.
-
-Apesar da inegável importância das FGRMs, percebe-se um aparente desacoplamento
-deste tipo de ferramenta com as necessidades das diversas partes interessadas
-(stakeholders) na manutenção e evolução de software. A utilização de
-\textit{``demanda''} como conceito central para Ferramentas de Gerenciamento de
-Requisição de Mudanças (FGRM) parece ser distante das necessidades práticas dos
-projetos de software, especialmente no ponto de vista dos desenvolvedores
+técnicas e ferramentas. Em especial no processo de Manutenção, um importante
+aspecto são as diversas RMs que devem ser gerenciadas. Este controle é realizado
+pelas FGRMs cujo o uso vem crescendo em importância, sobretudo, por sua
+utilização por gestores, analistas da qualidade e usuários finais para
+atividades como tomada de decisão e comunicação. Contudo, em alguns casos, as
+ferramentas são meramente interfaces melhores para o banco de dados que
+armazena as RMs~\cite{zimmermann2009improving}. Apesar da inegável importância
+das FGRMs, percebe-se um aparente desacoplamento deste tipo de ferramenta com as
+necessidades das diversas partes interessadas (stakeholders) na manutenção e
+evolução de software. A utilização de \textit{``demanda''} como conceito central
+para as FGRMs parece ser distante das necessidades práticas dos projetos de
+software, especialmente no ponto de vista dos desenvolvedores
 \cite{Baysal:2013:SAP:2486788.2486957}.
 
 Um exemplo deste desacoplamento pode ser visto no trabalho proposto por Baysal
 \& Holme~\cite{baysal2012qualitative} no qual desenvolvedores que utilizam o
-Bugzilla\footnote{\url{https://www.bugzilla.org}} relatam a dificuldade em
-manter uma compreensão global das RMs em que eles estão envolvidos. Segundo os
-participantes seria interessante que a ferramenta tivesse um suporte melhorado
-para a Consciência Situacional -~Situational Awareness. Em síntese, eles
-gostariam de estar cientes da situação global do projeto bem como das atividades
-que outras pessoas estão realizando.
+Bugzilla\footnote{\url{https://www.bugzilla.org}} relataram dificuldade em
+manter uma compreensão do escopo que as RMs atribuídas a eles possuem. Segundo
+os participantes do estudo seria importante que a ferramenta tivesse um suporte
+melhorado para o conceito de Consciência Situacional~-~Situational Awareness. Em
+síntese, eles gostariam de estar cientes da situação global do projeto bem como
+das atividades que outras pessoas estão realizando.
 
-Um outro problema que é potencializado pela ausência de certas funcionalidades
-nas FGRM são as RMs que acabam sendo relatadas de forma insatisfatória. Nesta
-situação os usuários acabam sendo questionados a inserir maiores detalhes que
-muitas vezes eles não tem conhecimento. Por outro lado, verifica-se uma
-frustração por parte dos desenvolvedores que acabam desapontados sobre a
-qualidade do que foi reportado~\cite{just2008towards}.
+Existem outros prolemas que são potencializados pela ausência de certas
+funcionalidades nas FGRMs. Um exemplo são as RMs que acabam sendo
+relatadas com baixa qualidade. Nesta situação os usuários acabam sendo
+questionados a inserir maiores detalhes que muitas vezes eles não tem
+conhecimento. Por outro lado, verifica-se uma frustração por parte dos
+desenvolvedores que acabam desapontados sobre a qualidade do que foi
+reportado~\cite{just2008towards}.
 
-Com o objetivo de melhorar as FGRMs, que no contexto do trabalho recebem o nome
-de issue tracking system, Zimmermann e outros
-discute~\cite{zimmermann2009improving} quatro dimensões de melhorias deste tipo
-de ferramenta, conforme listado a seguir e esquematizado na
-Figura~\ref{fig:dimensoes_melhorias_fgrm}. Estas dimensões de melhorias são
-descritas com maior detalhe no Capítulo~\ref{ch:mapeamento-sistematico} onde foi
-utilizado para a classificação de estudos através do Mapeamento Sistemático
-realizado.
+Corroborando com a necessidade de evolução das FGRMs, o estudo realizado por
+Zimmermann e outros~\cite{zimmermann2009improving} propõem quatro
+dimensões de melhorias para este tipo de software. Estas dimensões de estão
+apresentadas na Figura~\ref{fig:dimensoes_melhorias_fgrm} e serão o descritas
+com maior detalhe no Capítulo~\ref{ch:mapeamento-sistematico} onde foi utilizado
+para a classificação de estudos através do Mapeamento Sistemático realizado.
 
-\begin{enumerate} [(i)]
-	\item{Informação}
-	\item{Processo}
-	\item{Usuário}
-	\item{Ferramenta}
-\end{enumerate}
+% \begin{enumerate} [(i)]
+% 	\item{Informação}
+% 	\item{Processo}
+% 	\item{Usuário}
+% 	\item{Ferramenta}
+% \end{enumerate}
 
 \begin{figure}[htpb] \centering
 	\includegraphics[width=0.666666\linewidth]
@@ -292,41 +290,37 @@ realizado.
 Neste estudo estamos especialmente interessados em analisar e propor melhorias
 relativas ao domínio da \textit{Ferramenta}. Ao bem do nosso conhecimento é
 reduzido o número de trabalhos que avaliem de forma sistemática as
-funcionalidades oferecidas pelas FGRM ao mesmo tempo que faça relação com que
-vem sendo proposto na li\-te\-ra\-tu\-ra sobre o assunto. De maneira similar o
-número de estudos que avaliam a opinião dos profissionais envolvidos em
-manutenção de software sobre o que é ofertado pelas FGRM\@.
+funcionalidades oferecidas pelas FGRMs ao mesmo tempo que faça relação com que
+vem sendo proposto na li\-te\-ra\-tu\-ra sobre o assunto.
 
-Além disso, os estudos anteriormente propostos não discutem o fato que da mesma
-forma que ocorre no desenvolvimento de software, é possível verificar uma
-crescente adoção de técnicas da metodologia ágil na manutenção de
-software~\cite{Soltan2016,Devulapally2015, Heeager2015}. Neste contexto, seria
+É importante ressaltar que os estudos sobre melhorias das FGRMs a crescente
+adoção de técnicas propostas pelos agilistas na Manutenção de
+Software~\cite{Soltan2016,Devulapally2015, Heeager2015}. Neste contexto, seria
 importante que ferramentas que dão suporte à manutenção, tal como as FGRMs,
-evoluíssem para se adaptar a esta nova forma de trabalhar. Mesmo em um
-ambiente tradicional de  desenvolvimento e manutenção de software, verifica-se a
-necessidade de adequação das FGRMs, o que pode ser observado considerando as
-diversas extensões (plugins) propostas na literatura
+evoluíssem para se adaptar a esta nova forma de trabalhar. Um outro fator que
+agrega sobre a necessidade de adequação das FGRMs são as diversas extensões
+(plugins) propostas na literatura
 \cite{101186,Thung:2014:BIT:2635868.2661678,Kononenko:2014:DED:2591062.2591075}.
 
 \section{Objetivos}
 \label{sec:intro-objetivos}
 
-Conforme exposto o distanciamento entre as necessidades dos profissionais
-envolvidos em manutenção de software e as funcionalidades oferecidas pelas FGRM
-resulta em diversos problemas. Neste contexto, este trabalho de dissertação
-investiga e contribui no entendimento de como as Ferramentas de Gerenciamento de
-Requisição de Mudança estão sendo melhoradas ou estendidas no contexto da
-transformação do processo de desenvolvimento e manutenção de software de um
-modelo tradicional para outro que incorpora cada vez mais as práticas propostas
-pelos agilistas. O intuito é analisar como as FGRM estão sendo modificadas com
-base na literatura da área em contraste com o ponto de vista dos profissionais
-envolvidos em manutenção de software.
+Segundo o nosso entendimento existe um distanciamento entre as necessidades dos
+profissionais envolvidos em Manutenção de Software e as funcionalidades
+oferecidas pelas FGRM\@. Por esta razão este trabalho de dissertação investiga e
+contribui no entendimento de como as Ferramentas de Gerenciamento de Requisição
+de Mudança estão sendo melhoradas ou estendidas no contexto da transformação do
+processo de desenvolvimento e manutenção de software de um modelo tradicional
+para outro que incorpora cada vez mais as práticas propostas pelos agilistas. O
+intuito é analisar como as FGRM estão sendo modificadas com base na literatura
+da área em contraste com o ponto de vista dos profissionais envolvidos em
+manutenção de software.
 
 Neste contexto, elaboramos um estudo sobre as Ferramentas de Gerenciamento de
 Requisição de Mudança (FGRM) com os seguintes objetivos:
 \begin{enumerate}[(i)]
 	\item entender os requisitos comuns deste tipo de ferramenta;
-	\item mapear as extensões para as FGRM que estão sendo propostas na
+	\item mapear as melhorias para as FGRM que estão sendo propostas na
 		literatura;
 	\item avaliar sobre o ponto de vista dos profissionais a
 		situação atual dos FGRM\@;
@@ -340,54 +334,51 @@ Requisição de Mudança (FGRM) com os seguintes objetivos:
 %exemplos de personalização para alguma possível extensão a ser identificada ao
 %longo do trabalho.
 
-\section{Visão Geral do Estudo}
+\section{Visão Geral da Dissertação}
 \label{sec:intro-visao-geral}
 
-
-A fim de alcançarmos os objetivos descritos na seção anterior, um conjunto de
-melhorias nas funcionalidades das FGRMs foi proposto. As melhorias resultaram
-de três estudos empíricos: um mapeamento sistemático da literatura, apresentado
-no Capítulo~\ref{ch:mapeamento-sistematico}, uma caracterização das
+A fim de alcançarmos os objetivos descritos foi proposto um conjunto de
+melhorias para as funcionalidades das FGRMs. As melhorias foram realizadas com
+base em três estudos empíricos: um mapeamento sistemático da literatura,
+apresentado no Capítulo~\ref{ch:mapeamento-sistematico}; uma caracterização das
 funcionalidades das FGRM, discutida no
 Capítulo~\ref{ch:caracterizacao_ferramenta}; e uma pesquisa com profissionais,
 apresentada no Capítulo~\ref{ch:pesquisa-profissionais}.
 
 Mediante o mapeamento sistemático obtivemos e avaliamos o estado da arte sobre
-novas funcionalidades bem como melhorias no escopo das FGRM\@. A partir do
-estudo foi possível propor quatro esquemas de classificação: por tipo de
-problema, por suporte ao papel desempenhado na manutenção de software, por
-técnicas de Recuperação da Informação utilizada e por ferramenta
-estendida.
-
-De maneira similar, através da caracterização das funcionalidade de algumas
-FGRMs código aberto ou disponíveis comercialmente e escolhidas mediante uma
-pesquisa com profissionais identificamos o estado da prática deste tipo de
-ferramenta.
+novas funcionalidades que estão propostas na literatura. A partir do estudo foi
+possível propor dois esquemas de classificação: por dimensão de melhoria e
+suporte ao papel desempenhado na manutenção de software. De maneira similar,
+através da caracterização das funcionalidade de algumas FGRMs código aberto ou
+disponíveis comercialmente e escolhidas mediante uma pesquisa com profissionais
+identificamos o estado da prática deste tipo de ferramenta.
 
 Com base dois estudos anteriores conduzimos uma pesquisa com profissionais
 envolvidos em manutenção de software onde pedimos que avaliassem os requisitos
 funcionais e não funcionais que poderiam melhorar as FGRM já existentes. O
 questionário também quis saber a opinião dos profissionais sobre a relevância
 das propostas de me\-lho\-ri\-as existente na literatura em sua rotina de
-trabalho.
+trabalho. Com base nos estudos descritos foi proposto um conjunto de melhorias.
+Como prova de conceito, uma destas melhorias foi implementada como uma extensão
+de uma FGRM\@.
 
 \section{Metodologia de Pesquisa}
 \label{sec:intro-metodologia}
 
 A metodologia de pesquisa utilizada neste estudo é baseada em uma abordagem
-multi-método~\cite{hesse2010mixed}. Este tipo de desenho  combina dois ou mais
+multi-método~\cite{hesse2010mixed}. Este tipo de desenho combina dois ou mais
 métodos quantitativo (ou qualitativo) em um único estudo. Um estudo que faça uso
 de um survey e um experimento é um exemplo deste tipo de
 enfoque~\cite{hesse2010mixed}.
 
-Alguns estudos descrevem quatro tipos de desenho em abordagens multi-método:
-embutido (embedded), exploratória, triangulada e
-explanatória~\cite{creswell2007designing}. Neste estudo, utilizamos uma
-abordagem de triangulação no qual consolidamos os resultados de diferentes
-métodos, considerando, contudo, que a mesma questão de pesquisa foi investigada
-em cada um deles. A utilização de um desenho triangular no trabalho melhora as
-conclusões e completude do estudo, trazendo maior credibilidade para os achados
-da pesquisa~\cite{hesse2010mixed}.
+% Alguns estudos descrevem quatro tipos de desenho em abordagens multi-método:
+% embutido (embedded), exploratória, triangulada e
+% explanatória~\cite{creswell2007designing}. Neste estudo, utilizamos uma
+% abordagem de triangulação no qual consolidamos os resultados de diferentes
+% métodos, considerando, contudo, que a mesma questão de pesquisa foi investigada
+% em cada um deles. A utilização de um desenho triangular no trabalho melhora as
+% conclusões e completude do estudo, trazendo maior credibilidade para os achados
+% da pesquisa~\cite{hesse2010mixed}.
 
 As etapas do trabalho, que compõem a abordagem multi-método estão listadas a
 seguir:
@@ -403,15 +394,17 @@ seguir:
 
 \section{Contribuições do Estudo}
 \label{sec:intro-contribuicao}
+
 Este estudo sistematiza a literatura sobre melhorias das funcionalidades das
 FGRMs ao mesmo tempo que avalia junto aos profissionais as relevâncias de tais
 alterações. Este estudo ainda se propões este tipo de software por meio de uma
 caracterização de suas funcionalidades. Ao final deste trabalho teremos um
 conjunto de funcionalidades que podem ser implementadas neste tipo de software
-de modo melhorá-lo.
+visando a sua melhoria.
 
 \section{Organização do Trabalho}
 \label{sec:intro-organizacao-dissertacao}
+
 \todobegin{Vamos aguardar o desenvolvimento deste trabalho para definirmos a
 estrutura do texto.}
 \todoend{}
