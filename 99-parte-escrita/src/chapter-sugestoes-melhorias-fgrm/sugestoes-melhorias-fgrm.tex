@@ -4,7 +4,7 @@
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: dom fev 26 12:49:27 BRT 2017
-%Modificação: dom abr 23 23:16:41 -03 2017
+%Modificação:: sáb mai 13 14:17:28 -03 2017
 %Revisão: dom abr 23 23:16:51 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Sugestões de Melhorias para FGRMs}
@@ -13,48 +13,48 @@
 \section{Introdução}
 \label{sec:sug_melhoria_intro}
 
-Os usuários das Ferramentas de Gerenciamento de Requisições de Mudança (FGRM),
-se mostraram, em geral, satisfeitos com as funcionalidades oferecidas. Cerca de
-90\% dos par\-ti\-ci\-pan\-tes do levantamento descrito no
-Capítulo~\ref{ch:pesquisa-profissionais} fizeram uma avaliação positiva da
-ferramenta que utilizava além de recomendarem a sua utilização em um novo
-projeto.
+No levantamento descrito no Capítulo~\ref{ch:pesquisa-profissionais} os
+profissionais consultados se mostraram, em geral, satisfeitos com as
+funcionalidades disponibilizadas pelas FGRMs. Cerca de 90\% dos
+par\-ti\-ci\-pan\-tes fizeram uma avaliação positiva da ferramenta que utiliza,
+além disso, uma quantidade equivalente disse que recomendariam a FGRM para um
+novo projeto.
 
-Não obstante, naquela mesma pesquisa, ao perguntarmos se o profissional sentiria
-falta de alguma das funcionalidades que lhe foi apresentada, cerca de 85\%
-responderam positivamente, ou seja, os participantes afirmaram que as funções
-evidenciadas poderiam contribuir em sua rotina de trabalho. A partir desta
-última informação podemos inferir que os desenvolvedores estão satisfeitos com a
-ferramenta utilizada, contudo, \textit{não conhecem ou não têm acesso ao
-    potencial de funções que este tipo software pode oferecer}.
+Não obstante, naquela mesma pesquisa, apresentamos uma lista de possíveis novas
+funcionalidades para as FGRMs e perguntamos ao participante se ele sente falta
+de alguma. O resultado desta pergunta foi que cerca de 85\% responderam
+positivamente, ou seja, os participantes se mostraram interessados na inclusão
+de pelo menos uma das funcionalidades propostas nas FGRMs que utilizam. A partir
+da análise deste resultado é possível inferir que os desenvolvedores estão
+satisfeitos com a ferramenta utilizada, contudo, \textit{não conhecem ou não têm
+    acesso ao potencial de funções que este tipo software poderia oferecer}.
 
-We want to evaluate a collection of Issue Tracking Systems features
-recommendations.  Diante do exposto, entendemos que podemos contribuir com o
-estado a\-tu\-al das funcionalidades das FGRMs através da proposição de um
-conjunto de melhorias. As sugestões foram compiladas utilizando os resultados
-obtidos nesta dissertação, especialmente com base nos
+Diante do exposto, entendemos que podemos contribuir com o estado a\-tu\-al das
+funcionalidades das FGRMs propondo um conjunto de melhorias. As sugestões foram
+compiladas utilizando a literatura da área e os resultados obtidos nesta
+dissertação, especialmente com base nos
 Capítulos~\ref{ch:mapeamento-sistematico} e~\ref{ch:pesquisa-profissionais}, na
 Seção~\ref{sec:caracterizacao_ferramentas} e nos estudos que propõem melhorias
 para as FGRM~\cite{zimmermann2009improving, bettenburg2008makes, singh2011bug}.
 Estas recomendações podem ser utilizadas por pesquisadores interessados em
 conduzir estudos sobre o avanço da produtividade dos desenvolvedores mediante o
-uso das FGRMs. Além disso, os responsáveis pela implementação deste tipo de
-software podem empregar este conjunto a fim de desenvolver futuras versões do
-sistema. Na mesma linha, os profissionais envolvidos em manutenção de software
-podem criar extensões (plugins) para as FGRM com base no que foi proposto de
-modo a aplicar as melhorias propostas neste estudo em sua rotina de trabalho.
+uso das FGRMs. Além disso, os responsáveis pelo desenvolvimento deste tipo de
+software, podem utilizar algumas das recomendações para a criação ou
+aperfeiçoamento das funcionalidades da FGRM que é responsável. Na mesma linha,
+os profissionais envolvidos com Manutenção de Software podem criar extensões
+(plugins) para as FGRM com base no que foi proposto de modo a aplicar as
+melhorias propostas em sua rotina de trabalho.
 
 Este capítulo está organizado da seguinte forma: a
 Seção~\ref{sec:sug_melhoria_melhorando_as_ferraementas} apresenta as sugestões
-de melhorias do qual acreditamos poderia ser implantadas nas FGRMs, cada
-sugestão foi seguida de uma breve discussão de como foi obtida e dos motivos de
-sua implementação; na Seção~\ref{sec:sug_melhoria_avaliacao_das_melhorias}
-realizamos a avaliação das sugestões que foram propostas, onde solicitamos a
-opinião de profissionais que participam de projetos de código aberto que
-desenvolvem FGRMs; na Seção~\ref{sec:sug_melhoria_discussao} discutimos os
-resultados obtidos do processo de avaliação; na
-Seção~\ref{sec:sug_melhoria_ameacas} apresentamos as ameaças à validade deste
-capítulo; encerramos o capítulo com um resumo na
+de melhorias propostas, cada sugestão foi seguida de uma breve discussão de como
+foi obtida e dos motivos de sua implementação; na
+Seção~\ref{sec:sug_melhoria_avaliacao_das_melhorias} realizamos a avaliação do
+que foi recomendado com base na opinião de profissionais que
+contribuem com projetos relacionados ao desenvolvimento de FGRMs; na
+Seção~\ref{sec:sug_melhoria_discussao} discutimos os resultados obtidos do
+processo de avaliação; na Seção~\ref{sec:sug_melhoria_ameacas} apresentamos as
+ameaças à validade; encerramos o capítulo com um resumo na
 Seção~\ref{sec:sug_melhoria_resumo}.
 
 \section{Sugestões de Melhorias para FGRMs}
@@ -62,24 +62,25 @@ Seção~\ref{sec:sug_melhoria_resumo}.
 
 As sugestões propostas neste capítulo não estão vinculadas exclusivamente à
 melhorias de funcionalidades existentes nas FGRMs. As recomendações podem
-representar o desenvolvimento de um novo comportamento para este tipo de
-ferramenta. Cabe-nos ressaltar que o conjunto proposto não é exaustivo e é
+representar o desenvolvimento de um novo comportamento ou a melhoria de outros
+já existentes. Cabe-nos ressaltar que o conjunto proposto não é exaustivo e é
 baseado nos resultados desta dissertação. Além disso, não houve compromisso com
 as dificuldades operacionais relacionadas com a implementação das
 funcionalidades.
 
 Ao longo da elaboração das sugestões verificamos que não conseguiríamos
-implementar todas elas. Além de decidirmos não desenvolver todas as sugestões
-por entendemos que a análise desta complexidade está fora do escopo desta
-dissertação. A única exceção é a recomendação descrita na
-Seção~\ref{sub:supote_a_qualidade_do_relato} que foi implementada como extensão
-de uma FGRM, conforme pode ser visto no Capítulo~\ref{ch:implemtacao_extensao}.
-É possível que algumas das recomendações propostas já estejam implementadas de
-maneira parcial ou integral em alguma FGRM\@. Contudo, não é possível validar
-esta premissa por conta de volume de ferramentas disponíveis quando esta
-dissertação foi escrita. Cada sugestão proposta foi estruturada como uma seção
+implementar todas elas, especialmente por entendemos que a análise desta
+complexidade está fora do escopo desta dissertação. Entretanto, como prova de
+conceito, a recomendação descrita na
+Seção~\ref{sub:supote_a_qualidade_do_relato} foi implementada como extensão de
+uma FGRM, conforme pode ser visto no Capítulo~\ref{ch:implemtacao_extensao}.  É
+possível que algumas das recomendações propostas já estejam implementadas de
+maneira parcial ou integral. Contudo, não é possível validar esta premissa por
+conta de volume de ferramentas disponíveis quando esta dissertação foi escrita.
+Além disso, o processo de validação pode nos alertar sobre a eventual proposição
+de uma funcionalidade existentes. Cada sugestão foi estruturada como uma seção
 deste capítulo onde apresentamos a \textit{justificativa, o benefício gerado, as
-    limitações e alguns exemplos de utilização.}
+    limitações e exemplos de utilização.}
 
 \subsection{Suporte à Qualidade do Texto Relatado}
 \label{sub:supote_a_qualidade_do_relato}
@@ -508,27 +509,21 @@ como base a literatura da área e os resultados e contribuições desta
 dissertação. Com o objetivo de avaliar a relevância e o grau de facilidade de
 implementação das recomendações propostas, conduzimos um levantamento mediante
 questionário com profissionais que contribuem em projetos de código aberto
-hospedados no Github. A metodologia utilizada na condução do levantamento é
-descrita na próxima subseção.
+hospedados no Github. Para realizarmos a coleta dos dados foi utilizado um
+levantamento (survey) através de um questionário eletrônico. O processo de
+seleção dos participantes, o desenho do questionário e como foi realizada a sua
+aplicação estão descritos a seguir.
 
-\subsection{Metodologia do Levantamento com Questionário}
-\label{sub:sug_melhoria_metodologia_levantamento}
-
-Para realizarmos a coleta dos dados foi utilizado um levantamento (survey)
-através de um questionário eletrônico. O processo de seleção dos participantes,
-o desenho do questionário e como foi realizada a sua aplicação estão descritos
-na próximas subseções.
-
-\subsubsection{Seleção dos Participantes}
+\subsection{Seleção dos Participantes}
 \label{ssub:sug_melhoria_selecao_participantes}
 
-Ficou definido que o público-alvo deste questionário seria profissionais que
-estejam ligados ao processo de desenvolvimento e manutenção de FGRMs. Este
-perfil foi selecionado porque permite avaliar a relevância das sugestões
-propostas ao mesmo tempo que possibilita verificar a viabilidade de
-implementação do que foi recomendado em funcionalidades para as FGRMs. Por esta
-razão, selecionamos profissionais que atuam como \textit{contribuidores} em três
-projetos de código aberto hospedados no Github.
+O público-alvo deste questionário é o conjunto de profissionais que estejam
+ligados ao processo de desenvolvimento e manutenção de algum projeto de FGRMs.
+A escolha se justifica tendo em vista que queremos avaliar a relevância das
+sugestões propostas e verificar a viabilidade de implementação do que foi
+recomendado como funcionalidades para as FGRMs. Neste sentido, optamos por um
+amostra de conveniência composta por profissionais que atuam como
+\textit{contribuidores} em projetos de código aberto hospedados no Github.
 
 Com cerca de 38 milhões de
 repositórios\footnote{\url{https://github.com/features}. Acesso em junho/2016.},
@@ -537,62 +532,41 @@ e a disponibilidade de metadados, acessíveis através de uma API, tem tornado
 Github bastante atrativo para a realização de pesquisas na área de Engenharia de
 Software.
 
-A seleção dos possíveis projetos utilizou a ferramenta de busca avançada
-oferecido pela plataforma Github. Ele permite pesquisar por critérios tais como
-data de criação, linguagem utilizada no desenvolvimento e proprietário do
-repositório, dentre outros. Para escolha dos projetos foi definido inicialmente
-um conjunto de critérios baseados em boas práticas recomendadas na
-literatura~\cite{Bird2009}. Fizemos uma investigação utilizando apenas o Github
-e contendo várias restrições, neste sentido as vulnerabilidades de nossas
-verificações são discutidas na Seção~\ref{sec:sug_melhoria_ameaca}. Em síntese,
-um projeto para ser escolhido deve atender simultaneamente aos seguintes
-requisitos:
+A seleção dos participantes iniciou com a escolha dos projetos que utilizou a
+ferramenta de busca avançada oferecido pela plataforma Github. Ela permite
+procurar por projetos utilizando critérios tais como data de criação, linguagem
+utilizada no desenvolvimento e proprietário do repositório, dentre outros. Neste
+estudo utilizamos critérios de seleção baseados em boas práticas recomendadas na
+literatura~\cite{Bird2009}. O fato de utilizarmos apenas o Github como a única
+fonte para seleção de participantes implica em certas ameças à validade do
+estudo que serão discutidas na Seção~\ref{sec:sug_melhoria_ameaca}. Os critérios
+de seleção dos projetos inclui os seguintes requisitos:
 
 \begin{itemize}
 	\item Os projetos devem representar o desenvolvimento de uma FGRM\@.
-	\item Os projetos devem ter no mínimo seis meses de desenvolvimento, para
-		evitar projetos que não tenham passado por um tempo de manutenção
-		relevante.
+    \item Os projetos devem ter no mínimo seis meses de desenvolvimento, para
+        evitar projetos que não tenham passado por um tempo de manutenção
+        relevante.
 	\item Os projetos devem  ter  no  mínimo  200  revisões (commits)  pelos
 		mesmos motivos  da restrição anterior.
-    \item Os projetos obtidos devem estar os 10 mais populares que atendem aos
+    \item Os projetos obtidos devem estar os 50 mais populares que atendem aos
         demais critérios e estejam entre os melhores classificados pela
         ordenação via a opção ``most stars'', que representa o número de usuário
         do Github que mostraram apreciação sobre o trabalhado desenvolvido no
         repositório.
 \end{itemize}
 
-Após aplicação dos critérios descritos obtivemos os projetos descritos na
-Tabela~\ref{tab:projetos_utilizados_para_avaliacao}. Conforme pode ser observado
-os projetos selecionados referem-se a ferramentas bem estabelecidas e largamente
-utilizadas por organizações e projetos de código aberto.
-
-\begin{table}[htpb]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}cccccc@{}}
-\toprule
-\textbf{Projeto} & \textbf{Revisões} & \textbf{Ramificações} &
-\textbf{Lançamentos} & \textbf{Contribuidores} & \textbf{Contrib.\ com E-mail} \\
-\midrule
-bugzilla & 9784 & 30 & 460 & 100 & 30 \\
-mantisbt & 10181 & 8 & 65 & 80 & 32 \\
-redmine & 13115 & 27 & 131 & 6 & 2 \\ \bottomrule
-\end{tabular}%
-}
-\caption{Projetos utilizados no levantamento com profissionais. Os dados
-	apresentados tem como referência 07/03/2017.}
-\label{tab:projetos_utilizados_para_avaliacao}
-\end{table}
-
-Com base nos projetos selecionados ficou definido que a amostra a ser utilizada
-no levantamento seria os respectivos contribuidores. Um contribuidor é alguém
-que participa efetivamente do desenvolvimento de um projeto, tendo o privilégio
-de acesso para alterar o código fonte. O contato com os contribuidores foi
-realizado por correio eletrônico, todavia, conforme pode ser verificado na
-coluna \textit{Contrib.\ com E-mail} nem todos permitem acesso público ao seu
-endereço. A Figura~\ref{fig:redmine_contribuidores} exibe uma página do projeto
-com seus respectivos colaboradores.
+Após aplicação dos critérios descritos obtivemos os projetos descritos no
+Anexo~\ref{ch:app-tb-lista-projetos-sug-melhorias}. Com base nos projetos
+selecionados ficou definido que a amostra a ser utilizada no levantamento seria
+os respectivos contribuidores. Um contribuidor é alguém que participa
+efetivamente do desenvolvimento de um projeto, tendo o privilégio de acesso para
+alterar o código fonte. A solicitação de participação foi realizada por meio de
+correio eletrônico. O atributo foi coletado de forma automatizada apenas dos
+usuários da plataforma que disponibilizam esta informação como pública, de modo
+a preservar a privacidade dos contribuidores. A
+Figura~\ref{fig:redmine_contribuidores} exibe uma página do projeto com seus
+respectivos colaboradores.
 
 \begin{figure}[htpb]
 	\centering
@@ -601,43 +575,81 @@ com seus respectivos colaboradores.
 \label{fig:redmine_contribuidores}
 \end{figure}
 
-\subsubsection{Desenho do Questionário}
+\subsection{Desenho do Questionário}
 \label{ssub:sug_melhoria_desenho_questionario}
 
 A fim de coletar a opinião dos participantes foi utilizado um questionário
 eletrônico. O questionário foi desenhado com a premissa de ser respondido em um
 prazo curto, de preferência entre 5 e 10 minutos. Neste sentido as perguntas
-foram organizadas em dois grupos principais.  As questões do primeiro grupo têm
+foram organizadas em dois grupos principais. As questões do primeiro grupo têm
 por objetivo coletar a opinião dos profissionais sobre a relevância da
 recomendação proposta e o grau de dificuldade de implementá-la. As perguntas
 foram estruturadas como uma escala de Likert em que o respondente deveria
 fornecer o seu nível de concordância para as declarações que lhe são
 apresentadas. No segundo grupo estamos interessados na formação de base
-(background) dos profissionais. Optamos por definir cada uma das questões como
-não obrigatórias por entendermos que a impossibilidade ou o não interesse em
-responder uma determinada pergunta impeça ao participante de enviar os dados de
-outras que foram respondidas. A Figura~\ref{} exibe uma parte do formulário
-utilizado neste estudo.
+(background) dos profissionais. Optamos por definir algumas das questões como
+não obrigatórias por entendermos que a impossibilidade ou falta de interesse em
+responder determinada pergunta impeça o participante de enviar os dados de
+outras que foram respondidas. O formulário utilizado para coletar os dados dos
+participantes pode ser visto no Anexo~\ref{ch:app-form-sug-melhorias}.
 
-\todobegin{Incluir figura com o formulário}
-
-\subsubsection{Processo de Aplicação}
+\subsection{Processo de Aplicação}
 \label{ssub:processo_de_aplicação}
 
 O questionário foi encaminhado à amostra de interesse através de correio
 eletrônico. O endereço foi coletado diretamente do projeto hospedado no Github.
 Foi desenvolvido um \textit{script} na linguagem Python que permitia coletar o
 endereço de e-mail e automatizar o processo de envio. As mensagem foram
-personalizadas de modo a identificar o nome do usuário e o projeto do Github
-com base no template exibido a seguir.
+personalizadas de modo a identificar o nome do usuário e o projeto do Github com
+base no template exibido a seguir. O pedido de participação foi enviado para uma
+amostra de 121 contribuidores.
 
-\todobegin{Incluir o quadro com o template de envio das mensagens.}
+\fbox{\begin{minipage}{\textwidth}
+Dear \{\{real\_name \}\}!
+
+I’m conducting a research supervised by Rodolfo Resende \@-\@
+homepages.dcc.ufmg.br/~rodolfo and we want to evaluate a collection of
+recommendations to new features in Issue Tracking System. As part of them, we
+planned and executed a survey aiming at to reach a large-scale population of
+practitioners interested in to improve the features of that type of tool. Based
+on your area of interest, we kindly invite you to take part in the following
+survey:
+
+\{\{url\_formulario\}\}
+
+You were chosen because your contribution in the project \{\{nome\_grupo\}\}
+\@-\@ \{\{url\_grupo\}\} hosted on the Github platform. Your opinion is
+essential to strength our findings. Please, help us answering this survey until
+May 05th. It takes 05 minutes. As soon as we conclude the data analysis, we will
+share the results with all participants and the software engineering community.
+If you have already fulfilled this questionnaire, please ignore this email.
+
+Thanks in advance,
+Vagner Clementino.
+
+\end{minipage}}
 
 O processo de envio consistia ainda de uma segunda mensagem de ``lembrete'' após
 dois dias. Esta estratégia foi adotada com base em estudos que discutem
 resultados em que o reenvio pode ser um dos fatores que aumentem a taxa de
 participação em levantamentos por questionários realizados através da
 web~\cite{fan2010factors}.
+
+\section{Resultados da Avaliação das Sugestões de Melhorias}
+\label{sec:resultados_avaliacao_sug_de_melhorias}
+
+Após o envio do formulários aos participantes obtivemos um total de 29
+respostas.
+
+\subsection{Perfil dos Participantes}
+\label{sub:sug_melhorias_resultados_perfil_dos_participantes}
+
+\subsection{Relevância das Sugestões}
+\label{sub:sug_melhorias_resultados_relevancia}
+
+\subsection{Implementação das Sugestões}
+\label{sub:sug_melhorias_resultados_implementacao}
+
 
 \section{Discussão}
 \label{sec:sug_melhoria_discussao}
