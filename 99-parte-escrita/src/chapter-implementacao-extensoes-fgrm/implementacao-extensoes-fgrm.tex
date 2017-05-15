@@ -4,7 +4,7 @@
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: dom fev 26 12:49:27 BRT 2017
-%Modificação: qui mar  9 20:55:46 BRT 2017
+%Modificação: dom mai 14 18:17:37 -03 2017
 %Revisão: dom mar 12 09:35:34 BRT 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Um Estudo sobre a Implementação de uma Extensão para FGRM}
@@ -13,60 +13,73 @@
 \section{Introdução}
 \label{sec:implemtacao_extensao_intro}
 
-Durante esta dissertação estamos discutindo que as funcionalidades oferecidas
-pelas Ferramentas de Gerenciamento de Requisições de Mudança \@-\@ FGRMs
-conseguem atender aos objetivos deste tipo de software. Todavia, verificamos que
-exite espaço para melhorias das funções já existentes ou mesmo a proposição de
-novas. O desenvolvimento de novas funcionalidades em FGRMs, mediante a
-capacidade de extensão propiciada por algumas delas, vem sendo explorada na
-literatura. A extensão
-\textit{Buglocalizer}~\cite{Thung:2014:BIT:2635868.2661678}, criada para a
-ferramenta Bugzilla, possibilita a localização dos arquivos do código fonte que
-estão relacionados ao defeito relatado. A ferramenta extrai texto dos campos de
-sumário e descrição da RM\@. Este texto é comparado com o código fonte por meio
-de técnicas de Recuperação da Informação.
+Durante esta dissertação discutimos que as funcionalidades oferecidas FGRMs
+atendem as expectativas dos seus usuários. Todavia, resultados como aqueles
+obtidos nos Capítulo~\ref{ch:pesquisa-profissionais} e~\ref{ch:sug_melhoria},
+verificamos que exite um espaço para melhorias das funcionalidades existentes ou
+mesmo para a proposição de novas. Alguns estudos vêm seguindo esta tendência,
+especialmente explorando a capacidade de extensão propiciada por algumas FGRMs.
+A extensão \textit{Buglocalizer}~\cite{Thung:2014:BIT:2635868.2661678}, criada
+para a ferramenta Bugzilla, possibilita a localização dos arquivos do código
+fonte que estão relacionados ao defeito relatado. A ferramenta extrai texto dos
+campos de sumário e descrição da RM\@. Este texto é comparado com o código fonte
+por meio de técnicas de Recuperação da Informação.
 
 Na mesma linha, o \textit{NextBug}~\cite{101186} é uma extensão para o Bugzilla
-que recomenda novas RMs para o desenvolvedor baseado naquela em que ele esteja
-tratando atualmente. O objetivo da extensão é sugerir defeitos com base em
-técnicas de Recuperação de Informação. Na ferramenta proposta por Thung e
+que recomenda novas RMs para o desenvolvedor com base na que ele esteja tratando
+atualmente. Na ferramenta proposta por Thung e
 outros~\cite{Thung:2014:DIT:2642937.2648627} o foco é na determinação de
 defeitos duplicados. A contribuição deste trabalho é a integração do estado da
-arte de técnicas não supervisionadas para detecção de falhas duplicadas conforme
-proposto por Runeson e outros.
+arte de técnicas não supervisionadas para detecção de RMs duplicadas.
 
-Esta dissertação também se propôs em contribuir com a melhoria das
-funcionalidades das FGRMs mediante a apresentação e discussão de um conjunto de
-recomendações conforme descrito no Capitulo~\ref{ch:sug_melhoria}. Apesar de ter
-sido conduzido um processo de avaliação daquilo que foi proposto, cujo resultado
-demonstrou uma boa aceitação dos participantes, optamos por analisar o impacto
-da implementação do que foi proposto em determinada FGRM\@.
+Esta dissertação se propôs em contribuir com a melhoria das funcionalidades das
+FGRMs mediante a apresentação e discussão de um conjunto de recomendações no
+Capitulo~\ref{ch:sug_melhoria}. Apesar de ter sido conduzido um processo de
+avaliação das recomendações, cujo resultado demonstrou uma boa aceitação dos
+participantes, optamos por analisar o impacto da implementação de uma das
+sugestões propostas.
 
-Conforme discutido, a Seção~\ref{sec:sug_melhoria_melhorando_as_ferraementas}
-apresenta um conjunto de $N$ sugestões de melhorias das funcionalidades.
 Idealmente gostaríamos de transformar todas as sugestões em extensões de
 funcionalidades para as FGRMs. Não há razões que justifiquem a priorização de
 implementação de uma recomendação sobre outra. Entretanto, após alguns ensaios e
 combinando de maneira mais intuitiva do que seguindo um fluxo de critérios,  foi
 investido mais esforço no desenvolvimento de uma extensão para o suporte à
-qualidade de relato.
+qualidade de relato. A extensão proposta tem por objetivo ser uma Prova de
+Conceito, ou seja, demostrar com o fim de verificar que conceito proposto possui
+certo \textit{potencial} prático. Na próxima seção apresentamos uma breve
+discussão sobre o problema da baixa qualidade do relato no contexto das FGRMs.
 
 \section{Qualidade do Relato de uma RM}
 \label{sec:avaliando_a_qualidade_do_relato_de_uma_rm}
 
-No estudo realizado por Bettenburg e outros~\cite{bettenburg2008makes} foi
+É possível considerar que as informações mais relevantes estejam no relato de
+uma RM, que é o atributo que representa o texto redigido pelo Reportador.
+Sabemos que o ato de reportar uma RM pode ser realizado por um usuário do
+software ou por um membro da equipe de desenvolvimento ou manutenção. Por esta
+razão, podemos encontrar Reportadores com diferentes níveis de conhecimento
+sobre o sistema. Esta situação pode provocar um efeito colateral: a baixa
+qualidade do texto no relatado de uma RM, como por exemplo a falta da informação
+necessária para sua solução
+
+Em alguns estudos é afirmam que a baixa qualidade do relato prejudicam o
+andamento do projeto mais do que RMs duplicadas~\cite{bettenburg2007quality}. No
+estudo realizado por Bettenburg e outros~\cite{bettenburg2008makes} foi
 desenvolvido um levantamento com questionário (\textit{survey}) entre
-desenvolvedores e usuários dos projetos
-Apache\footnote{\url{http://www.apache.org/}},
-Eclipse\footnote{\url{https://www.eclipse.org}} e
-Mozilla\footnote{\url{https://www.mozilla.org}} a fim de verificar o que
-produziria um bom relato de um RM\@. Os resultados demonstraram que do ponto de
-vista dos desenvolvedores eram consideradas informações úteis, que idealmente
-deveriam estar no relato de uma RM\@: \textit{(i)} a sequência de ações
-executadas até o aparecimento do erro (se for o caso), também conhecida como
-\textit{etapas para reproduzir}; \textit{(ii)} o registro de pilhas de ativação
-(stack traces) que são arquivos com os históricos de chamada de métodos (logs)
-que ocorreram antes do aparecimento do erro.
+desenvolvedores e usuários dos projetos três projetos de código
+aberto\footnote{Apache (\url{http://www.apache.org/}), Eclipse
+    (\url{https://www.eclipse.org}) e Mozilla (\url{https://www.mozilla.org})}.
+O objetivo era coletar informações de modo a verificar o que produziria um bom
+relato. Os resultados demonstraram que, do ponto de vista dos
+desenvolvedores, são consideradas informações úteis e
+estar no relato de uma RM\@:
+
+\begin{itemize}
+    \item a sequência de ações executadas até o aparecimento do erro (se for o
+        caso), também conhecida como \textit{etapas para reproduzir};
+    \item o registro de pilhas de ativação (stack traces) que são arquivos com
+        os históricos de chamada de métodos (logs) que ocorreram antes do
+        aparecimento do erro.
+\end{itemize}
 
 No estudo proposto por Zimmermann e outros~\cite{5070993} é discutida a
 importância de que a informação descrita em uma RM seja relevante e completa a
@@ -77,29 +90,44 @@ autores propõe um conjunto de diretrizes para a construção de uma extensão c
 de reunir informações relevantes a partir do usuário além de identificar
 arquivos que precisam ser corrigidos para resolver o defeito.
 
-\section{Uma Extensão para Suporte da Qualidade do Relato}
+Conforme exposto, a utilização de uma extensão que suporte a melhoria do
+qualidade do relato pode resultar nas seguintes melhorias: redução no tempo
+necessário para análise do que foi solicitado na RM;facilidade na identificação
+de RMs duplicadas; disciplinar os Reportadores sobre a boa prática de fornecer
+um relato com maior qualidade. Estas vantagens têm impacto no custo e qualidade
+do software produzido.
+
+\section{Uma Extensão para Suporte à Qualidade do Relato}
 \label{sec:uma_extensao_suporte_qualidade_relato}
 
-\begin{description}
-	\item[Questão 01:] Qual impacto da inclusão de uma extensão para o suporte à
-		qualidade do relato pode ter no tempo necessário para análise de uma
-		RM\@?
-	\item[Questão 02:] Existe relação entre a frequência que um participante
-		cria uma RM e a qualidade do relato?
-	\item[Questão 03:] Do ponto de vista dos profissionais envolvidos em
-		manutenção de software qual o impacto da inclusão de uma extensão para o
-		suporte à qualidade do relato no processo de manutenção de software?
-\end{description}
+Considerando as vantagens de analisar a qualidade do relato de uma RM,
+desenvolvemos uma extensão para o módulo de gerenciamento de RMs da plataforma
+Github\footnote{\url{https://guides.github.com/features/issues/}}. De uma
+maneira geral, a extensão proposta realiza a análise do relato realizado em uma
+RM e com base nele gera um comentário com ``dicas'' que podem melhorar a
+qualidade das informações prestadas. Nas próximas seções apresentamos com maior
+detalhe o desenho e funcionamento da extensão proposta.
 
-Na \textit{Questão 01} estamos interessados em verificar se a inclusão de uma
-extensão deste tipo pode atrasar o processo de resolução de uma RM por conta da
-eventual sobrecarga que a análise da qualidade do relato pode causar. A
-\textit{Questão 02} possui o foco em avaliar se aquelas pessoas que criam RM com
-maior frequência em determinado projeto possuem uma qualidade do relato superior
-daqueles que fazem isso eventualmente. Por fim, na \textit{Questão 03} queremos
-entender os prós e contras que a implantação deste tipo de extensão pode
-produzir no processo de manutenção de software tomando como base a opinião de
-profissionais da área.
+% \begin{description}
+% 	\item[Questão 01:] Qual impacto da inclusão de uma extensão para o suporte à
+% 		qualidade do relato pode ter no tempo necessário para análise de uma
+% 		RM\@?
+% 	\item[Questão 02:] Existe relação entre a frequência que um participante
+% 		cria uma RM e a qualidade do relato?
+% 	\item[Questão 03:] Do ponto de vista dos profissionais envolvidos em
+% 		manutenção de software qual o impacto da inclusão de uma extensão para o
+% 		suporte à qualidade do relato no processo de manutenção de software?
+% \end{description}
+
+% Na \textit{Questão 01} estamos interessados em verificar se a inclusão de uma
+% extensão deste tipo pode atrasar o processo de resolução de uma RM por conta da
+% eventual sobrecarga que a análise da qualidade do relato pode causar. A
+% \textit{Questão 02} possui o foco em avaliar se aquelas pessoas que criam RM com
+% maior frequência em determinado projeto possuem uma qualidade do relato superior
+% daqueles que fazem isso eventualmente. Por fim, na \textit{Questão 03} queremos
+% entender os prós e contras que a implantação deste tipo de extensão pode
+% produzir no processo de manutenção de software tomando como base a opinião de
+% profissionais da área.
 
 \subsection{Desenho da Extensão}
 \label{sub:desenho_da_extensao}
@@ -327,108 +355,80 @@ para o entendimento \textit{for maior ou igual a 13} que representa de maneira
 geral o número de anos de estudo e foi utilizado no trabalho de Bettenburg e
 outros~\cite{bettenburg2008makes}.
 
-\section{Avaliação da Extensão}
+\section{Execução da Extensão em Projetos Reais}
 \label{sec:avaliando_a_extensao_proposta}
 
-Com o objetivo de avaliar a extensão proposta conduzimos um levantamento
-(survey) através questionário com profissionais que contribuem em projetos de
-código aberto hospedados no Github. A metodologia utilizada na condução do
-levantamento é descrita na próxima subseção.
+A extensão descrita neste Capitulo foi desenvolvida como prova de conceito.
+Neste sentido, o desenho e desenvolvimento teve foco mais viabilidade do que
+estava sendo proposto do que melhorar ou sobrepor determinada solução estado da
+arte existente. Entretanto, com o objetivo de avaliar a extensão em um contexto
+mais próximo do real, ela foi executada utilizando os dados de \textit{issues}
+de projetos código aberto hospedados no Github.
 
-\subsection{Desenho da Avaliação}
-\label{sub:implementacao_extenscao_desenho_da_avaliacao}
+\subsection{Seleção dos Projetos}
+\label{sub:implementacao_selecao_projetos}
 
-Para realizarmos a coleta dos dados foi utilizado um levantamento (survey)
-através de um questionário eletrônico. O processo de seleção dos participantes,
-o desenho do questionário e como foi realizada a sua aplicação estão descritos
-nas próximas subseções.
-
-\subsubsection{Seleção dos Participantes}
-\label{ssub:sug_melhoria_selecao_participantes}
-
-Ficou definido que o público-alvo deste questionário seria profissionais que
-façam uso de FGRMs e que desta forma possam obter as vantagens da extensão
-proposta. Como este perfil é bastante genérico, optamos por utilizar uma
-amostra de conveniência através dos que atuam como \textit{contribuidores} em
-três projetos de código aberto hospedados no Github. Dentre os contribuidores de
-um projeto não houve nenhum critério de seleção, neste sentido todos poderiam
-eventualmente participar da pesquisa. Os critérios utilizados foram os mesmos
-descritos na Seção~\ref{ssub:sug_melhoria_selecao_participantes} além da
-restrição que o projeto fosse desenvolvido em Java. Esta última característica é
-por conta de algumas decisões de projeto realizadas no desenvolvimento da
-extensão que exigem que o repositório analisado utilize aquela linguagem. Após
-aplicação dos critérios descritos obtivemos os projetos descritos na
+Para realizarmos a execução da extensão optamos por uma amostra de conveniência
+composta de projetos hospedados na plataforma Github. Para isso utilizamos os
+mesmos critérios descritos na
+Seção~\ref{ssub:sug_melhoria_selecao_participantes}. As exceções foi que
+incluímos a restrição de que o projeto fosse desenvolvido em Java e avaliamos os
+dez primeiros projetos ordenados pelo critério ``most stars''. O condicionante
+da linguagem Java é por conta de algumas decisões tomadas duram ate o
+desenvolvimento da extensão que exigem a utilização da linguagem. Após aplicação
+dos critérios descritos obtivemos os projetos descritos na
 Tabela~\ref{tab:projetos_utilizados}.
 
 \begin{table}[htpb]
 \centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lccccc@{}}
+\resizebox{.7\textwidth}{!}{%
+\begin{tabular}{@{}llcc@{}}
 \toprule
-\multicolumn{1}{c}{\textbf{Projeto}} & \textbf{Revisões} & \textbf{Ramificações}
-& \textbf{Lançamentos} & \textbf{Contribuidores} &
-\textbf{Contrib\. com E-mail} \\ \midrule
-elasticsearch & 27.118 & 94 & 174 & 812 & 295\\
-guava & 4.081 & 84 & 175 & 103 & 330 \\
-spring-framework & 14575 & 12 & 106 & 211 & 295 \\ \bottomrule
+\multicolumn{1}{c}{\textbf{Projeto}} & \textbf{Revisões} & \textbf{Ramificações} & \textbf{Lançamentos} \\ \midrule
+elasticsearch & 27.118 & 94 & 174 \\
+guava & 4.081 & 84 & 175 \\
+spring-framework & 14575 & 12 & 106 \\ \bottomrule
 \end{tabular}%
 }
-\caption{Projetos utilizados no levantamento com profissionais. Os dados
-	apresentados tem como referência 23/04/2017.}
+\caption{Projetos utilizados no testes de execução da extensão. Os dados
+    apresentados tem como referência 23/04/2017.}
 \label{tab:projetos_utilizados}
 \end{table}
 
-Com base nos projetos selecionados ficou definido que a amostra a ser utilizada
-no levantamento seria os respectivos contribuidores. Um contribuidor é alguém
-que participa efetivamente do desenvolvimento de um projeto, tendo o privilégio
-de acesso para alterar o código fonte. O contato com os contribuidores foi
-realizado por correio eletrônico, todavia, conforme pode ser verificado na
-coluna \textit{Contrib.\ com E-mail} nem todos permitem acesso público ao seu
-endereço.
+\subsubsection{O Processo de Execução}
+\label{sub:implementacao_processo_execucao}
 
-\subsubsection{Desenho do Questionário}
-\label{ssub:sug_melhoria_desenho_questionario}
+Para avaliarmos a extensão começamos por criar uma ramificação (fork) dos
+projetos escolhidos. Este processo é realizado de forma automatizada pelo
+Github, contudo, não realiza a cópia das \textit{issues}, que no caso deste
+teste é a informação mais relevante. Para transpor os dados das issues foi
+desenvolvido um processo automatizado de copiada o título e o relato (corpo da
+issue) do projeto original para a sua ramificação. Para cada projeto realizamos
+a cópia de 100 \textit{issues}. A Figura~\ref{fig:copia-de-issues} exibe uma
+\textit{issue} do projeto Guava no lado esquerdo e sua cópia na ramificação
+criada. Como você pode observar o título e o relato são idênticos.
 
-Para avaliarmos a extensão desenvolvemos um questionário composto de duas
-partes. Na primeira o objetivo é que o participante emita opinião sobre a
-qualidade do relato de uma issue do projeto que contribui bem como do grau de
-relevância do comentários gerado pela extensão. Com este objetivo nós desenhamos
-um processo de avaliação conforme descrito a seguir. A descrição toma como base
-um único projeto, contudo, a mesma metodologia foi replicada para os demais.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter-implementacao-extensoes-fgrm/img/copia-de-issues.png}
+    \caption{Cópia de uma issue do projeto Guava para a sua ramificação.}
+\label{fig:copia-de-issues}
+\end{figure}
 
-Nós selecionamento uma amostra aleatória de 50 \textit{issues} do projeto que
-foram apresentados uma por uma aos participantes em uma ordem aleatória. Eles
-eram obrigados a visualizar o relato da \textit{issue} e classificá-lo em uma
-escala de Likert de cinco pontos variando de muito ruim (1) a muito bom (5).
-Logo em seguida era apresentado o comentário gerado pela extensão que precisa
-ser classificado através de uma escala de cinco ponto que variava de Nada
-Relevante até Muito Relevante. Também foi disponibilizado um campo de texto de
-preenchimento facultativo do qual o participante poderia incluir informações
-adicionais.
+Após finalizado o processo de cópia executamos a extensão nas 100
+\textit{issues} de cada projeto. Na Figura~\ref{fig:exemplo_comentario_issue}
+visualizamos o comentário gerado para a \textit{issue} apresentada na
+Figura~\ref{fig:copia-de-issues}. Na próxima seção apresentamos algumas métricas
+do processo de execução da extensão nos projetos escolhidos. Como se trata de
+uma prova de conceitos estes dados podem nos ajudar a avaliação a viabilidade de
+implantação da extensão proposta.
 
-Uma vez que o participante classificou o relato da \textit{issue} e o comentário
-gerado o formulário exibe uma nova \textit{issue} de forma aleatória. Os
-desenvolvedores poderiam interromper a avaliação a qualquer momento ou optar por
-continuar até que todos as 50 \textit{issues} do seu projeto tenham sido
-classificadas.
-
-A segunda parte é composta por questões sobre a formação de base (background) do
-participante. Este conjunto de perguntas não eram de preenchimento obrigatório.
-A Figura~\ref{} exibe uma parte do formulário utilizado neste estudo.
-
-\todobegin{Incluir figura com o formulário}
-
-\subsubsection{Processo de Aplicação}
-\label{ssub:processo_de_aplicação}
-
-O questionário foi encaminhado à amostra de interesse através de correio
-eletrônico. O endereço foi coletado diretamente do projeto hospedado no Github.
-Foi desenvolvido um \textit{script} na linguagem Python que permitia coletar o
-endereço de e-mail e automatizar o processo de envio. As mensagem foram
-personalizadas de modo a identificar o nome do usuário e o projeto do Github com
-base no template exibido a seguir.
-
-\todobegin{Incluir o quadro com o template de envio das mensagens.}
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter-implementacao-extensoes-fgrm/img/exemplo_comentario_issue.png}
+    \caption{Comentário para a issue do projeto Guava exibida na Figura~\ref{fig:copia-de-issues}}
+\label{fig:exemplo_comentario_issue}
+\end{figure}
 
 \subsection{Resultados}
 \label{sub:implementacao_extensao_avaliacao_resultados}
