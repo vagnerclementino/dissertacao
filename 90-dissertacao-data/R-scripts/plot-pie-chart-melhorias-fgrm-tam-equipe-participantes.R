@@ -6,17 +6,17 @@ library(ggplot2)
 library(scales)
 
 #Declarando as variáveis do gráfico
-WORKSPACE <-"~/workspace/dissertacao/99-parte-escrita/R-scripts/" 
-CSV_FILE <-'./data/201702051110_melhorias_fgrm_tamanho_equipe.csv'
-FILE_SEPARATOR <- ","
+WORKSPACE <-"~/workspace/dissertacao/90-dissertacao-data/R-scripts/" 
+CSV_FILE <-'./data/201705151550_frequencia_dimensoes.csv'
+FILE_SEPARATOR <- ";"
 WIDTH_BAR <- .3
 LEGEND_NAME <- "Virou Extensão"
 X_LABEL <- ""
-Y_LABEL <- "Total" 
-GRAPH_TITLE <-"Perfil dos Participantes: Tamanho da Equipe"
-X_AXIS_INCREMENT <- 10
+Y_LABEL <- "Frequência" 
+GRAPH_TITLE <-"Frequência de Dicas por Atributo"
+X_AXIS_INCREMENT <- 50
 IMG_DIR <-'./img/'
-FILE_NAME <- 'grafico_melhorias_fgrm_tamanho_equipe'
+FILE_NAME <- 'grafico_implementacao_extensao_freq_dicas_atributo'
 PS_FILE_NAME <-  paste(FILE_NAME,'.ps', sep='')
 PDF_FILE_NAME <- paste(FILE_NAME, '.pdf', sep='')
 PNG_FILE_NAME <- paste(FILE_NAME, '.png', sep='')
@@ -32,11 +32,11 @@ df_data <- read.csv(  file = CSV_FILE
 show(df_data)
 
 #Maior valor do eixo y
-ymax <- max(df_data$total) * 1.5
+ymax <- max(df_data$Frequência) * 1.5
 
 #Plotando o gráfico
-ggplot(data=df_data, aes(x=reorder(df_data$tamanho_equipe, df_data$total),
-                                    y=df_data$total, fill=df_data$tamanho_equipe
+ggplot(data=df_data, aes(x=reorder(df_data$Dimensão, df_data$Frequência),
+                                    y=df_data$Frequência, fill=df_data$Dimensão
                         )
        ) +
   geom_bar(colour="black",
@@ -52,7 +52,7 @@ ggplot(data=df_data, aes(x=reorder(df_data$tamanho_equipe, df_data$total),
   ggtitle(GRAPH_TITLE) +     # Set title
   theme_bw( ) +
   coord_flip(ylim = c(0, ymax)) +
-  geom_text(aes(label=df_data$total, hjust=-.5)) +
+  geom_text(aes(label=df_data$Frequência, hjust=-.5)) +
   scale_y_discrete(limits = c(seq(0,ymax,by=X_AXIS_INCREMENT)))
 
 # full_name <- paste(IMG_DIR, PS_FILE_NAME, sep='')

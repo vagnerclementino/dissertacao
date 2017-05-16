@@ -119,9 +119,9 @@ detalhe o desenho e funcionamento da extensão proposta.
 % 		suporte à qualidade do relato no processo de manutenção de software?
 % \end{description}
 
-% Na \textit{Questão 01} estamos interessados em verificar se a inclusão de uma
-% extensão deste tipo pode atrasar o processo de resolução de uma RM por conta da
-% eventual sobrecarga que a análise da qualidade do relato pode causar. A
+Na \textit{Questão 01} estamos interessados em verificar se a inclusão de uma
+extensão deste tipo pode atrasar o processo de resolução de uma RM por conta da
+eventual sobrecarga que a análise da qualidade do relato pode causar. A
 % \textit{Questão 02} possui o foco em avaliar se aquelas pessoas que criam RM com
 % maior frequência em determinado projeto possuem uma qualidade do relato superior
 % daqueles que fazem isso eventualmente. Por fim, na \textit{Questão 03} queremos
@@ -433,36 +433,73 @@ implantação da extensão proposta.
 \subsection{Resultados}
 \label{sub:implementacao_extensao_avaliacao_resultados}
 
-\begin{table}[htpb]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lccccc@{}}
-\toprule
-\multicolumn{1}{c}{\textbf{Projeto}} & \textbf{Média} & \textbf{Mediana} & \textbf{Desvio Padrão} & \textbf{Min} & \textbf{Max} \\ \midrule
-Todos & 1,91 & 1 & 2,93 & 0 & 31 \\
-vagnerclementino/spring-framework & 2,36 & 1 & 4,13 & 1 & 31 \\
-vagnerclementino/guava & 1,71 & 1 & 1,9 & 0 & 16 \\
-vagnerclementino/elasticsearch & 1,66 & 1 & 2,24 & 0 & 16 \\ \bottomrule
-\end{tabular}%
-}
-\caption{My caption}
-\label{my-label}
-\end{table}
+Uma possível preocupação com a inclusão deste tipo de extensão em uma FGRM é a o
+atraso que possa ocorrer no processo de solução das RMs. É natural que um tempo
+adicional seja necessário para analisar a qualidade do relato. A
+Tabela~\ref{tab:tempo_execucao_extensao} exibe o tempo em segundos que a
+extensão levou para analisar as \textit{issues}. É possível verificar que em
+média cerca de 02 segundos são necessário para avaliar a qualidade do relato. Em
+alguns casos o processo finalizada em menos de 01 segundo. Entretanto, é
+possível verificar situações em que o tempo de retorno da extensão é cerca de 30
+segundos. Em alguns casos esta discrepância é maior, como no caso do projeto
+\textit{Guava} que possui um desvio padrão acentuado onde o tempo de execução
+pode variar de 01 a 31 segundos.
 
 \begin{table}[htpb]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lccccc@{}}
 \toprule
-\multicolumn{1}{c}{\textbf{Projeto}} & \textbf{Média} & \textbf{Mediana} & \textbf{Desvio Padrão} & \textbf{Min} & \textbf{Max} \\ \midrule
-Todos & 3,26 & 3 & 0,96 & 1 & 5 \\
-vagnerclementino/elasticsearch & 2,95 & 3 & 0,85 & 1 & 5 \\
-vagnerclementino/guava & 3,16 & 3 & 0,88 & 2 & 5 \\
-vagnerclementino/spring-framework & 3,68 & 4 & 1,01 & 1 & 5 \\ \bottomrule
+\multicolumn{1}{c}{\textbf{Projeto}} & \textbf{Média (seg)} & \textbf{Mediana
+    (seg)} & \textbf{Desvio Padrão (seg)} & \textbf{Min (seg)} & \textbf{Max
+    (seg)} \\ \midrule
+Todos & 1,91 & 1 & 2,93 & 0 & 31 \\
+spring-framework & 2,36 & 1 & 4,13 & 1 & 31 \\
+guava & 1,71 & 1 & 1,9 & 0 & 16 \\
+elasticsearch & 1,66 & 1 & 2,24 & 0 & 16 \\ \bottomrule
 \end{tabular}%
 }
-\caption{My caption}
-\label{my-label}
+\caption{Tempo de execução da extensão.}
+\label{tab:tempo_execucao_extensao}
+\end{table}
+
+Com a execução utilizando os dados de \textit{issues} de projetos reais
+gostaríamos de verificar em qual atributo do relato os problemas são mais
+frequentes. Conforme apresentado na
+Tabela~\ref{tab:criterios_analise_qualidade_relato} a extensão avalia os
+seguintes atributos do relato: Etapas para Reproduzir, Arquivo Anexado,
+Fragmentos de Código, Completude de Palavras-Chaves e Legibilidade do Texto. Um
+comentário é gerado caso o relato não atenda determinados critérios para cada
+atributo analisado. A Figura~\ref{fig:frequencia_atributos_comentario} exibe a
+frequência que um item foi incluído ao comentário para atributo.
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=0.6\linewidth]{chapter-implementacao-extensoes-fgrm/img/grafico_implementacao_extensao_freq_dicas_atributo.pdf}
+    \caption{Frequência de dicas por atributo analisados.}
+\label{fig:frequencia_atributos_comentario}
+\end{figure}
+
+
+
+
+
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lccccc@{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Projeto}} & \textbf{Média (seg)} & \textbf{Mediana
+    (seg)} & \textbf{Desvio Padrão (seg)} & \textbf{Min (seg)} & \textbf{Max
+    (seg)} \\ \midrule
+Todos & 3,26 & 3 & 0,96 & 1 & 5 \\
+elasticsearch & 2,95 & 3 & 0,85 & 1 & 5 \\
+guava & 3,16 & 3 & 0,88 & 2 & 5 \\
+spring-framework & 3,68 & 4 & 1,01 & 1 & 5 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Número de dicas retornadas pela extensão.}
+\label{tab:numero_de_dicas}
 \end{table}
 
 \subsection{Discussão}
