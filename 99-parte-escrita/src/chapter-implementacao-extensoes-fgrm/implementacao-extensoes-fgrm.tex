@@ -410,7 +410,7 @@ criada. Como você pode observar o título e o relato são idênticos.
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=0.7\linewidth]{chapter-implementacao-extensoes-fgrm/img/copia-de-issues.png}
+    \includegraphics[width=1.1\linewidth]{chapter-implementacao-extensoes-fgrm/img/copia-de-issues.png}
     \caption{Cópia de uma issue do projeto Guava para a sua ramificação.}
 \label{fig:copia-de-issues}
 \end{figure}
@@ -480,9 +480,12 @@ frequência que um item foi incluído ao comentário para atributo.
 \label{fig:frequencia_atributos_comentario}
 \end{figure}
 
-
-
-
+Verificamos na figura que em quase todas as issues analisadas não foi detectado
+a inclusão de arquivos anexados ou de fragmentos de código. É possível observar
+que mais da metade do texto relatado apresentou uma legibilidade ruim do ponto
+de vista da nossa extensão. A situação menos frequente está relacionada com a
+inclusão de ``Etapas para Reproduzir'', onde é avaliado a existência de uma
+lista detalhando os passos executados até a ocorrência da falha.
 
 \begin{table}[htpb]
 \centering
@@ -502,14 +505,81 @@ spring-framework & 3,68 & 4 & 1,01 & 1 & 5 \\ \bottomrule
 \label{tab:numero_de_dicas}
 \end{table}
 
+Durante a execução estávamos interessados em avaliar o número de dicas de
+melhorias na qualidade do relato a extensão gerou. Esta informação está exibida
+na Tabela~\ref{tab:numero_de_dicas}. É possível observar em média 03 dicas são
+incluídas em cada \textit{issues}, ou seja, três em cada cinco dos itens
+apresentaram algum tipo de problema. Entretanto, para que possamos extrapolar
+qualquer discussão sobre este resultado era necessário uma avaliação de pessoas
+envolvidas nos projetos utilizados de modo a detectar falsos positivos.
+
 \subsection{Discussão}
 \label{sub:implemtacao_extensao_avaliacao_discussao}
+
+As execuções que foram realizadas têm como foco avaliar a viabilidade da
+extensão proposta. Neste sentido, os resultado obtidos na
+Seção~\ref{sec:avaliando_a_extensao_proposta} devem ser avaliados sobre esta
+ótica. No caso do tempo necessário verificamos que em média não causa impacto no
+processo de solução de uma RM\@. Nos casos de maior duração, com por exemplo 31
+segundos, pode estar relacionado a arquitetura escolhida. Conforme exposto, a
+extensão utiliza uma API do Github que pode estar sujeita a questões relativas à
+rede ou mesmo de sobrecarga.
+
+Com relação aos problemas mais frequentes uma tendência dos usuário em não
+incluir anexos, mas de relatar o problema copiando, por exemplo, os registros de
+pilha de ativação (stacks traces) no próprio corpo da \textit{issue}. Por outro
+lado, um fator a destacar é que mais da metade das \textit{issues} analisadas
+apresentam um texto com baixa legibilidade. Esta situação já foi verificada em
+estudos anteriores~\cite{ko2006linguistic, bettenburg2007quality}. Esta métrica
+depende menos de uma análise de alguém vinculado ao projeto pelo fato de
+utilizar índices existentes e utilizados em diversas áreas para medir
+legibilidade. Neste sentido pode ser interessante ao projetos de software
+disciplinar os Reportadores em fornecer sempre que possível um relato mais
+simples e direto.
 
 \section{Limitações e Ameças à Validade}
 \label{sec:limitações_e_ameças_à_validade}
 
-\section{Conclusões}
-\label{sec:conclusões}
+O desenvolvimento da extensão possui limitações que ameaçam a sua validade.
+Inicialmente não é possível determinar se os atributos avaliados são os mais
+indicados para avaliar a qualidade do relato. Eles foram utilizados com base em
+estudos já realizados~\cite{bettenburg2007quality} em que os atributo foram
+baseados na opinião de desenvolvedores.
 
-\section{Resumo do Capítulo}
-\label{sec:implemtacao_extensao_resumo}
+Para que uma dica de melhoria seja disparada é necessário algum dos critérios
+descritos na Tabela~\ref{tab:criterios_analise_qualidade_relato} não seja
+atendido. No caso do atributo ``Completude de Palavras-Chaves'' utilizou o
+conjunto de termos do trabalho de Ko e outros~\cite{ko2006linguistic}. Apesar de
+ambos os estudos utilizarem projetos desenvolvidos na linguagem Java, entretanto,
+não podemos garantir se o conjunto de termos é o mesmo nas RMs de diferentes
+projetos.
+
+A legibilidade do texto foi realizada utilizando testes descritos na literatura.
+Em todos os testes existem os limiares que definem o grau de legibilidade de um
+texto. Entretanto, não sabemos qual o impacto de utilizamos estes valores no
+relato de uma falha de software, por exemplo. Em geral, os testes de
+legibilidade são bastante genéricos, contudo, certas adequações podem ser
+necessárias para serem utilizados na análise do relato de uma RM\@.
+
+A principal limitação deste estudo está extrapolação dos resultados. O ideal é
+que a execução da extensão fosse avaliada por um profissional vinculado aos
+projetos utilizados. Esta análise poderia ajudar na detecção de falso
+positivos, por exemplo. Estendemos a importância deste tipo de suporte, mesmo
+que por inspeção de alguns casos. Uma trabalho futuro desta dissertação seria
+reaplicar a extensão uma configuração com suporte de um oráculo ligado ao
+projeto analisado.
+
+\section{Conclusão}
+\label{sec:implementacao_extensao_conclusao}
+
+Por se tratar de uma prova de conceito a extensão proposta apresentou um
+desempenho satisfatório. Em média, o tempo necessário para analisar a qualidade
+do relato não tem impacto no processo de solução das RMs. Além disso, foi
+possível analisar os diversos atributos o qual a extensão se propôs. Os
+resultados não podem ser extrapolados por não terem sido avaliados pelos
+desenvolvedores vinculados aos projetos. Todavia, apesar das limitações, uma
+extensão conforme a proposta pode disciplinar os Reportadores a fornecer
+relatos com mais qualidade.
+
+% \section{Resumo do Capítulo}
+% \label{sec:implemtacao_extensao_resumo}
