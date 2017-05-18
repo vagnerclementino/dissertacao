@@ -639,15 +639,59 @@ web~\cite{fan2010factors}.
 \label{sec:resultados_avaliacao_sug_de_melhorias}
 
 Após o envio do formulários aos participantes obtivemos um total de 29
-respostas. O nível participação foi similar ao observados em outros estudo em
-Engenharia de Software que um utilizam o levantamento por questionário (survey)
-como método de coleta de dados~\cite{fan2010factors}. Nas próximas seções
-apresentamos os resultados obtidos através do perfil dos participantes, a
-relevância das sugestões propostas e o grau de facilidade de implementação das
-mesmas.
+respostas. Como algumas das questões do formulário não eram de preenchimento
+obrigatório é possível que o número de repostas seja menor. O nível participação
+foi similar ao observados em outros estudo em Engenharia de Software que um
+utilizam o levantamento por questionário (survey) como método de coleta de
+dados~\cite{fan2010factors}. Nas próximas seções apresentamos os resultados
+obtidos através do perfil dos participantes, a relevância das sugestões
+propostas e o grau de facilidade de implementação das mesmas.
 
 \subsection{Perfil dos Participantes}
 \label{sub:sug_melhorias_resultados_perfil_dos_participantes}
+
+No levantamento realizado incluímos uma questão sobre qual sistema o
+desenvolvedor contribui. Esta informação é importante porque contribuidores que
+trabalham com ferramentas que são ``mainstream'' podem ter uma maior resistência
+quanto à inclusão de novas funcionalidades. A
+Tabela~\ref{tab:projetos_participantesmy-label} exibe o nome dos projetos que
+tiveram contribuidores que preencheram o nosso formulário. Verificamos nas
+primeiras posições ferramentas tradicionais como Mantis, Trac e Debbugs. As
+FGRMs que tiveram menos de duas participações foram agrupados sobre o termo
+``OUTROS''.
+
+\begin{table}[htpb]
+\centering
+\resizebox{.3\textwidth}{!}{%
+\begin{tabular}{@{}cc@{}}
+\toprule
+\textbf{Projeto} & \textbf{Participantes} \\ \midrule
+DEBBUGS & 4 \\
+MANTISBT & 4 \\
+TRAC & 4 \\
+FOSSIL & 3 \\
+BUGZILLA & 2 \\
+REDMINE & 2 \\
+OUTROS & 6 \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Projetos que os participantes contribuem.}
+\label{tab:projetos_participantesmy-label}
+\end{table}
+
+Com relação à função desempenhada mais da metade dos participantes são
+desenvolvedores (53\%). O segundo grupo de cargo com maior frequência são
+aqueles ligados à gerenciamento de equipes (Gerentes de Projetos, Chief
+Technical Officer e etc.). Verificamos ainda a participação de Engenheiros e
+Arquitetos de Software. Sobre o tempo de experiência, o percentual de 45\% dos
+respondentes têm entre dez e vinte anos de experiência. A maior parte desempenha
+suas atividades em equipes de pequeno (2~-~5 pessoas) ou médio porte (mais do 10
+pessoas). Quanto questionamos sobre qual o tipo de atividade desempenhada pelo
+participantes, cerca de 85\% estão trabalham com desenvolvimento ou manutenção
+de software. Com base no perfil apurado entendemos que os participantes são
+capazes de analisar as sugestões de melhorias de modo a contribuir com este
+estudo.
 
 \subsection{Relevância das Sugestões}
 \label{sub:sug_melhorias_resultados_relevancia}
@@ -683,3 +727,7 @@ risco de ficar vago e não sei se por causa disso ele deixaria de responder.
 
 \section{Resumo do Capítulo}
 \label{sec:sug_melhoria_resumo}
+
+O objetivo do levantamento foi avaliar a proposição de funcionalidades para
+FGRMs. A avaliação foi realizada com base na opinião de desenvolvedores que
+contribuem para projetos de código aberto deste tipo de software.
