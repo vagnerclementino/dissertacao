@@ -720,11 +720,12 @@ ranqueamento. O ordenamento consistiu de aplicar pesos para cada item da escala
 Likert conforme a Tabela~\ref{tab:pesos_rank_sug_melhorias}. O valor é obtido
 multiplicando a frequência de determinado item da escala pelo seu respectivo
 peso. A Tabela~\ref{fig:plot_likert_avaliacao_sug_melhorias} exibe as
-recomendações ordenados pelo nível de aceitação dos participantes.
+recomendações ordenados pelo nível de aceitação dos participantes. É possível
+visualizar o numero de respostas que cada item recebeu.
 
 \begin{table}[htpb]
 \centering
-\resizebox{\textwidth}{!}{%
+\resizebox{.3\textwidth}{!}{%
 \begin{tabular}{@{}lc@{}}
 \toprule
 \multicolumn{1}{c}{\textbf{Item da Escala}} & \textbf{Peso} \\ \midrule
@@ -739,13 +740,26 @@ Concordo Fortemente & 2 \\ \bottomrule
 \label{tab:pesos_rank_sug_melhorias}
 \end{table}
 
+Com base na Tabela~\ref{tab:ranking-sugestoes-melhorias} verificamos que
+recomendações que sobressaíram: utilização nas FGRMs uma linguagem além do do
+texto simples para redigir uma RM (\#3), suporte à tarefas colaborativas (\#8) e
+integração com processo de Integração Contínua (\#5). Por outro lado as
+sugestões de diferenciar as RMs pela reputação do Reportador (\#3) e avaliar a
+qualidade do relato (\#1) não foram avaliadas como as mais relevantes pelos
+participantes. É importar notar que as recomendações que ficaram nas últimas
+posições tiveram a opção ``Nem concordo ou discordo'' selecionadas com maior
+frequência. Este fato pode indicar que não houve uma rejeição pelos
+participantes, mas possivelmente, uma baixa compreensão do que estava sendo
+proposto.
 
 \begin{table}[htpb]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lcccccc@{}}
 \toprule
-\multicolumn{1}{c}{\textbf{Recomendações}} & \textbf{Discordo Fortemente} & \textbf{Discordo} & \textbf{Nem concordo ou discordo} & \textbf{Concordo} & \textbf{Concordo Fortemente} & \textbf{Ranking} \\ \midrule
+\multicolumn{1}{c}{\textbf{Recomendações}} & \textbf{Discordo Fortemente} &
+\textbf{Discordo} & \textbf{Nem concordo ou discordo} & \textbf{Concordo} &
+\textbf{Concordo Fortemente} & \textbf{Ranking} \\ \midrule
 \textit{Recomendação \#6} & 0 & 1 & 2 & 6 & 20 & 45 \\
 \textit{Recomendação \#8} & 0 & 1 & 1 & 15 & 12 & 38 \\
 \textit{Recomendação \#5} & 1 & 0 & 5 & 10 & 13 & 34 \\
@@ -783,7 +797,7 @@ apresentados na Tabela~\ref{tab:pesos-implementacao-sug-melhorias}.
 
 \begin{table}[htpb]
 \centering
-\resizebox{\textwidth}{!}{%
+\resizebox{.3\textwidth}{!}{%
 \begin{tabular}{@{}ll@{}}
 \toprule
 Item da Escala & Peso \\ \midrule
