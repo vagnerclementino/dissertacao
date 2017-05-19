@@ -696,8 +696,133 @@ estudo.
 \subsection{Relevância das Sugestões}
 \label{sub:sug_melhorias_resultados_relevancia}
 
+As sugestões de melhorias foram apresentadas aos participantes mediante uma
+escala Likert. Os resultados podem ser visualizados na
+Figura~\ref{fig:plot_likert_avaliacao_sug_melhorias}. Em uma primeira análise
+verificamos que a maioria das recomendações tiveram uma avaliação positiva dos
+participantes (Concordo ou Concordo Fortemente). A exceção foi para a
+Recomendação \#3 que trata da possibilidade de ordenar as RMs a serem analisadas
+pela reputação do Reportador. Por outro lado, as Recomendações \#6 e \#8 tiveram
+uma boa aceitação dos participantes. A primeira sugestão trata da utilização de
+uma linguagem, como o Markdown, para relatar uma RM\@. No caso da segunda
+recomendação foi proposto o suporte a tarefas compartilhadas, de modo que uma RM
+tenha mais de um ``dono''.
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=1.1\linewidth]{chapter-sugestoes-melhorias-fgrm/img/plot_likert_avaliacao_sug_melhorias.pdf}
+    \caption{Avaliação das Sugestões de Melhorias}
+\label{fig:plot_likert_avaliacao_sug_melhorias}
+\end{figure}
+
+Para avaliar quais recomendações tiveram maior aceitação definimos um
+ranqueamento. O ordenamento consistiu de aplicar pesos para cada item da escala
+Likert conforme a Tabela~\ref{tab:pesos_rank_sug_melhorias}. O valor é obtido
+multiplicando a frequência de determinado item da escala pelo seu respectivo
+peso. A Tabela~\ref{fig:plot_likert_avaliacao_sug_melhorias} exibe as
+recomendações ordenados pelo nível de aceitação dos participantes.
+
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lc@{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Item da Escala}} & \textbf{Peso} \\ \midrule
+Discordo Fortemente & -2 \\
+Discordo & -1 \\
+Nem concordo ou discordo & 0 \\
+Concordo & 1 \\
+Concordo Fortemente & 2 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Pesos utilizados para ordenar as sugestões propostas.}
+\label{tab:pesos_rank_sug_melhorias}
+\end{table}
+
+
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+\multicolumn{1}{c}{\textbf{Recomendações}} & \textbf{Discordo Fortemente} & \textbf{Discordo} & \textbf{Nem concordo ou discordo} & \textbf{Concordo} & \textbf{Concordo Fortemente} & \textbf{Ranking} \\ \midrule
+\textit{Recomendação \#6} & 0 & 1 & 2 & 6 & 20 & 45 \\
+\textit{Recomendação \#8} & 0 & 1 & 1 & 15 & 12 & 38 \\
+\textit{Recomendação \#5} & 1 & 0 & 5 & 10 & 13 & 34 \\
+\textit{Recomendação \#4} & 0 & 1 & 6 & 12 & 10 & 31 \\
+\textit{Recomendação \#2} & 0 & 2 & 7 & 13 & 7 & 25 \\
+\textit{Recomendação \#7} & 1 & 5 & 8 & 6 & 9 & 17 \\
+\textit{Recomendação \#1} & 1 & 3 & 10 & 13 & 2 & 12 \\
+\textit{Recomendação \#3} & 3 & 9 & 13 & 2 & 2 & -9 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Ranking das sugestões propostas}
+\label{tab:ranking-sugestoes-melhorias}
+\end{table}
+
 \subsection{Implementação das Sugestões}
 \label{sub:sug_melhorias_resultados_implementacao}
+
+Neste etapa do estudo estávamos interessados em avaliar o nível de dificuldade
+para implementar as sugestões propostas. A informação foi obtida através de uma
+escala Likert cujos resultados estão apresentados na
+Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}.
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=1.1\linewidth]{chapter-sugestoes-melhorias-fgrm/img/plot_likert_avaliacao_implementacao_melhorias.pdf}
+    \caption{Avaliação sobre a  implementação das sugestões propostas.}
+\label{fig:plot_likert_avaliacao_implementacao_melhorias}
+\end{figure}
+
+As sugestões foram ordenadas pelo grau de dificuldade de implementação.
+Utilizamos uma métrica similar à descrita na
+Seção~\ref{sub:sug_melhorias_resultados_relevancia} onde o valor é obtido
+multiplicando a frequência de um  item da escala por um peso. Os pesos estão
+apresentados na Tabela~\ref{tab:pesos-implementacao-sug-melhorias}.
+
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ll@{}}
+\toprule
+Item da Escala & Peso \\ \midrule
+Muito Difícil & -2 \\
+Difícil & -1 \\
+Neutro & 0 \\
+Fácil & 1 \\
+Muito Fácil & 2 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Pesos utilizados no ranqueamento das sugestões de melhorias}
+\label{tab:pesos-implementacao-sug-melhorias}
+\end{table}
+
+
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+\multicolumn{1}{l}{\textbf{Recomendações}} & \multicolumn{1}{l}{\textbf{Muito
+        Difícil}} & \multicolumn{1}{l}{\textbf{Difícil}} &
+\multicolumn{1}{l}{\textbf{Neutro}} & \multicolumn{1}{l}{\textbf{Fácil}} &
+\multicolumn{1}{l}{\textbf{Muito Fácil}} & \multicolumn{1}{l}{\textbf{Ranking}}
+\\ \midrule
+Recomendação \#6 & 0 & 0 & 8 & 16 & 5 & 26 \\
+Recomendação \#4 & 0 & 1 & 8 & 17 & 3 & 22 \\
+Recomendação \#3 & 4 & 3 & 9 & 10 & 3 & 5 \\
+Recomendação \#2 & 2 & 7 & 11 & 8 & 1 & -1 \\
+Recomendação \#7 & 3 & 12 & 4 & 7 & 3 & -5 \\
+Recomendação \#5 & 2 & 11 & 12 & 3 & 1 & -10 \\
+Recomendação \#8 & 0 & 16 & 7 & 6 & 0 & -10 \\
+Recomendação \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Ordenamento das sugestões pelo grau de dificuldade.}
+\label{tab:ranking_implementacao_sug_melhorias}
+\end{table}
 
 \section{Discussão}
 \label{sec:sug_melhoria_discussao}

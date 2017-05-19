@@ -6,7 +6,7 @@ library(ggplot2)
 library(scales)
 
 #Declarando as variáveis do gráfico
-WORKSPACE <-"~/workspace/dissertacao/99-parte-escrita/R-scripts/" 
+WORKSPACE <-"~/workspace/dissertacao/90-dissertacao-data/R-scripts/" 
 CSV_FILE <-'./data/201701221833_total_virou_extensao.csv'
 FILE_SEPARATOR <- ","
 WIDTH_BAR <- .3
