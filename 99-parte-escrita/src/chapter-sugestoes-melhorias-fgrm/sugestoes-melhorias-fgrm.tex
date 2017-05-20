@@ -790,14 +790,15 @@ Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}.
 \end{figure}
 
 As sugestões foram ordenadas pelo grau de dificuldade de implementação.
-Utilizamos uma métrica similar à descrita na
+Utilizamos um similar ao descrito na
 Seção~\ref{sub:sug_melhorias_resultados_relevancia} onde o valor é obtido
-multiplicando a frequência de um  item da escala por um peso. Os pesos estão
-apresentados na Tabela~\ref{tab:pesos-implementacao-sug-melhorias}.
+multiplicando a frequência de um item da escala por valor previamente definido,
+do qual chamamos de peso. Os pesos estão apresentados na
+Tabela~\ref{tab:pesos-implementacao-sug-melhorias}.
 
 \begin{table}[htpb]
 \centering
-\resizebox{.3\textwidth}{!}{%
+\resizebox{.2\textwidth}{!}{%
 \begin{tabular}{@{}ll@{}}
 \toprule
 Item da Escala & Peso \\ \midrule
@@ -812,6 +813,21 @@ Muito Fácil & 2 \\ \bottomrule
 \label{tab:pesos-implementacao-sug-melhorias}
 \end{table}
 
+Quando foram questionados sobre a facilidade de implementação a funcionalidades
+para o suporte do relato de uma RM além do texto simples (\#6), a criação de
+atalhos e filtros personalizáveis (\#4) e o ranqueamento das RMs pela reputação
+do Reportador (\#3). Segundo os participantes funções como o suporte a tarefas
+compartilhadas (\#8) e análise da qualidade do relato (\#1)  foram consideradas
+de um maior grau de dificuldade de implementação. O fato interessante é que a
+recomendação \#3 foi considerada como uma das mais fáceis de implementar,
+entretanto, está entre aquelas que tiveram menor aceite entre os participantes.
+Este fato pode sugerir que sua possível rejeição não estaria ligada à sua
+complexidade de desenvolvimento, mas a fatores como o não interesse em
+classificar aqueles que reportam uma RM\@. Em geral, ao analisarmos a
+Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias} é possível
+verificar que os participantes entenderam que metade das sugestões propostas
+possuem uma dificuldade média, enquanto a outra metade pode ser considerada com
+um baixo grau de complexidade.
 
 \begin{table}[htpb]
 \centering
@@ -841,17 +857,54 @@ Recomendação \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 \section{Discussão}
 \label{sec:sug_melhoria_discussao}
 
-Acreditávamos que a escolha de N elementos envolveria as principais
-características, mas existe possibilidade de ficar alguma característica
-relevante fora dos N elementos infelizmente, posteriormente, descobrimos que
-ficaram de fora algumas características\dots
+Em geral podemos considerar que as sugestões propostas tiveram uma boa
+aceitação dos participantes. Em média 32\% dos participantes avaliram as
+recomendações ``Concordo'' ou ``Concordo Fortemente''.  Além disso, por volta
+de 22\% em média selecionaram a opção ``Nem concordo ou discordo''. Segundo o
+nosso entendimento as respostas poderiam ser alteradas para uma visão mais
+positiva, com por exemplo ``Concordo'' ou ``Concordo Fortemente'', caso fosse
+possível fornecer maiores detalhes ao participantes.
+
+Com relação as recomendações propostas, verificamos que a utilização de uma
+linguagem além do texto simples, como por exemplo o Markdown, foi muito bem
+avaliado. Este tipo de recomendação tem como principal objetivo aumentar o
+poder de expressão do relato, tal como a possibilidade do destaque da sintaxe
+do código fonte. Conforme pode ser observado na
+Seção~\ref{sec:caracterizacao_ferramentas} trata-se de uma funcionalidade
+encontrada em uma das FGRMs analisadas. Entretanto, o nosso resultado
+demonstra, com base na amostra utilizada, que deveria ser expandida para outras
+ferramentas.
+
+O suporte à tarefa compartilhadas (sugestão \#8) também foi muito bem avaliada.
+Esta recomendação surgiu das tentativas de implantação das propostas dos
+agilistas~\ref{svensson2005introducing}. A recomendação defende que uma
+determinada RM não tenha um ``dono'', mas que a responsabilidade seja dividida
+entre dois ou mais membros da equipe. Esta divisão de tarefas pode resultar na
+melhor distribuição do conhecimento entre a equipe. A prevalência deste tipo de
+funcionalidade pode estar relacionada com o desejo das equipes de manutenção de
+utilizar algumas das práticas dos agilistas. Seria necessário um aprofundamento
+da opinião dos participantes para confirmamos esta hipótese. Apesar da sua
+popularidade entre os participantes, esta recomendação ficou entre aquelas com
+maior grau de dificuldade de implementação.
+
+Por outro lado, as sugestões que tem algum tipo de relação com a interface das
+FGRMs (sugestões \#6, \#4, \#3 e \#2) foram consideradas como mais ``fácil'' de
+implementar com mais frequência. Entretanto, a sugestão sobre a qualidade do
+relato (\#1) ficou entre aquelas com maior grau de dificuldade. Esta
+classificação pode ser decorrente do carácter subjetivo que a qualidade do
+relato pode ter. Em cada projeto a qualidade do relato pode ter características
+distintas o que pode dificultar o seu suporte.
+
 
 \section{Ameaças à Validade}
 \label{sec:sug_melhoria_ameacas}
 
-Foco em gente[contribuidores] que trabalha com ferramentas que são
-``mainstream'' e portanto têm o viés de visão mais ``tradicional'' (ou outras
-caracterizações que podem ser defendidas)
+Para avaliarmos as sugestões propostas utilizamos um levantamento utilizando
+uma amostra de conveniência. Apesar da taxa de resposta está dentro da faixa
+observada na literatura, o total de participantes não nos permite extrapolar os
+resultados para todos os contextos em que as FGRMs estão inseridas. Além disso
+não há garantias que o processo de seleção dos potenciais participantes garanta
+que acessamos o público-alvo do levantamento.
 
 Ao utilizarmos apenas projetos públicos hospedados no Github pode ter causado
 algum tipo de direcionamento, como por exemplo foco em projetos de código
@@ -860,13 +913,33 @@ como por exemplo seis meses de desenvolvimento ou ter no mínimo 200 revisões
 (commits), não nos permite afirmar que escolher os projetos mais
 representativos para o nosso público-alvo.
 
-Se (i) escrevermos de maneira extensa a explicação corremos o risco do sujeito
-não ler e não responder. Se (ii) escrevermos de maneira ``concisa'' corremos o
-risco de ficar vago e não sei se por causa disso ele deixaria de responder.
+A estrutura das perguntas do formulário podem ter causado impacto na quantidade
+de respostas ou na opção escolhida pelos participantes. Esta situação pode ter
+ocorrido especialmente quando apresentamos as sugestões. No caso de escrevermos
+de maneira extensa a explicação corremos o risco do sujeito não ler e não
+responder. Entretanto, se o texto fosse escrito de forma ``concisa'' corremos o
+risco de ficar vago, que pode ter impacto nas respostas. A
+Tabela~\ref{tab:projetos_participantesmy-label}, que detalha os projetos que os
+participantes contribuem. É possível observar que os participantes trabalham
+com ferramentas que são ``mainstream'' e portanto têm o viés de visão mais
+``tradicional''.
+
+Em um dos comentários um dos participantes citou que algumas das sugestões
+propostas podem funcionalidades similares em outras FGRMs. Acreditávamos que a
+escolha destas 08 sugestões envolveria as principais características, mas
+existe possibilidade de ficar alguma característica relevante de fora.
+Infelizmente, posteriormente, descobrimos que ficaram de fora algumas
+características.
 
 \section{Resumo do Capítulo}
 \label{sec:sug_melhoria_resumo}
 
 O objetivo do levantamento foi avaliar a proposição de funcionalidades para
 FGRMs. A avaliação foi realizada com base na opinião de desenvolvedores que
-contribuem para projetos de código aberto deste tipo de software.
+contribuem para projetos de código aberto deste tipo de software. Em geral, as
+sugestões de melhorias foram bem avaliadas. Mais de 30\% avaliaram as
+recomendações de forma positiva (``Concordo'' ou  ``Concordo Fortemente'').
+Quanto a dificuldade de implementação, metade delas foi escolhida como fácil.
+Estes resultados nos permite considerar a implementação de pelo menos uma das
+sugestões como Prova de Conceito. O próximo capítulo foi construído com este
+objetivo.
