@@ -14,7 +14,7 @@
 \label{sec:implemtacao_extensao_intro}
 
 Durante esta dissertação discutimos que as funcionalidades oferecidas FGRMs
-atendem as expectativas dos seus usuários. Todavia, resultados como aqueles
+atendem as expectativas dos seus usuários. Todavia, após resultados como aqueles
 obtidos nos Capítulo~\ref{ch:pesquisa-profissionais} e~\ref{ch:sug_melhoria},
 verificamos que exite um espaço para melhorias das funcionalidades existentes ou
 mesmo para a proposição de novas. Alguns estudos vêm seguindo esta tendência,
@@ -61,17 +61,16 @@ sobre o sistema. Esta situação pode provocar um efeito colateral: a baixa
 qualidade do texto no relatado de uma RM, como por exemplo a falta da informação
 necessária para sua solução
 
-Em alguns estudos é afirmam que a baixa qualidade do relato prejudicam o
-andamento do projeto mais do que RMs duplicadas~\cite{bettenburg2007quality}. No
-estudo realizado por Bettenburg e outros~\cite{bettenburg2008makes} foi
-desenvolvido um levantamento com questionário (\textit{survey}) entre
-desenvolvedores e usuários dos projetos três projetos de código
-aberto\footnote{Apache (\url{http://www.apache.org/}), Eclipse
-    (\url{https://www.eclipse.org}) e Mozilla (\url{https://www.mozilla.org})}.
-O objetivo era coletar informações de modo a verificar o que produziria um bom
-relato. Os resultados demonstraram que, do ponto de vista dos
-desenvolvedores, são consideradas informações úteis e
-estar no relato de uma RM\@:
+Alguns estudos afirmam que a baixa qualidade do relato prejudicam o andamento do
+projeto mais do que RMs duplicadas~\cite{bettenburg2007quality}. No estudo
+realizado por Bettenburg e outros~\cite{bettenburg2008makes} foi desenvolvido um
+levantamento com questionário (\textit{survey}) entre desenvolvedores e usuários
+de três projetos de código aberto\footnote{Apache
+    (\url{http://www.apache.org/}), Eclipse (\url{https://www.eclipse.org}) e
+    Mozilla (\url{https://www.mozilla.org})}. O objetivo era coletar informações
+de modo a verificar o que produziria um bom relato. Os resultados demonstraram
+que, do ponto de vista dos desenvolvedores, são consideradas informações úteis
+para estar no relato de uma RM\@:
 
 \begin{itemize}
     \item a sequência de ações executadas até o aparecimento do erro (se for o
@@ -83,14 +82,14 @@ estar no relato de uma RM\@:
 
 No estudo proposto por Zimmermann e outros~\cite{5070993} é discutida a
 importância de que a informação descrita em uma RM seja relevante e completa a
-fim de que esteja relatado seja resolvido rapidamente. Contudo, na prática, a
-informação apenas chega ao desenvolvedor com a qualidade requerida após diversas
-interações com o usuário afetado. Com o objetivo de minimizar este problema os
-autores propõe um conjunto de diretrizes para a construção de uma extensão capaz
-de reunir informações relevantes a partir do usuário além de identificar
-arquivos que precisam ser corrigidos para resolver o defeito.
+fim de que o problema relatado seja resolvido rapidamente.  Contudo, na prática,
+a informação apenas chega ao desenvolvedor com a qualidade requerida após
+diversas interações com o usuário afetado. Com o objetivo de minimizar este
+problema os autores propõe um conjunto de diretrizes para a construção de uma
+extensão capaz de reunir informações relevantes a partir do usuário além de
+identificar arquivos que precisam ser corrigidos para resolver o defeito.
 
-Conforme exposto, a utilização de uma extensão que suporte a melhoria do
+Conforme exposto, a utilização de uma extensão que suporte a melhoria da
 qualidade do relato pode resultar nas seguintes melhorias: redução no tempo
 necessário para análise do que foi solicitado na RM;facilidade na identificação
 de RMs duplicadas; disciplinar os Reportadores sobre a boa prática de fornecer
@@ -103,10 +102,10 @@ do software produzido.
 Considerando as vantagens de analisar a qualidade do relato de uma RM,
 desenvolvemos uma extensão para o módulo de gerenciamento de RMs da plataforma
 Github\footnote{\url{https://guides.github.com/features/issues/}}. De uma
-maneira geral, a extensão proposta realiza a análise do relato realizado em uma
-RM e com base nele gera um comentário com ``dicas'' que podem melhorar a
-qualidade das informações prestadas. Nas próximas seções apresentamos com maior
-detalhe o desenho e funcionamento da extensão proposta.
+maneira geral, a extensão proposta realiza a análise do relato contido em uma RM
+e com base nele gera um comentário com ``dicas'' que podem melhorar a qualidade
+das informações prestadas. Nas próximas seções apresentamos com mais detalhe o
+desenho e funcionamento da extensão proposta.
 
 % \begin{description}
 % 	\item[Questão 01:] Qual impacto da inclusão de uma extensão para o suporte à
@@ -119,10 +118,10 @@ detalhe o desenho e funcionamento da extensão proposta.
 % 		suporte à qualidade do relato no processo de manutenção de software?
 % \end{description}
 
-Na \textit{Questão 01} estamos interessados em verificar se a inclusão de uma
-extensão deste tipo pode atrasar o processo de resolução de uma RM por conta da
-eventual sobrecarga que a análise da qualidade do relato pode causar. A
-% \textit{Questão 02} possui o foco em avaliar se aquelas pessoas que criam RM com
+% Na \textit{Questão 01} estamos interessados em verificar se a inclusão de uma
+% extensão deste tipo pode atrasar o processo de resolução de uma RM por conta da
+% eventual sobrecarga que a análise da qualidade do relato pode causar. A
+%  \textit{Questão 02} possui o foco em avaliar se aquelas pessoas que criam RM com
 % maior frequência em determinado projeto possuem uma qualidade do relato superior
 % daqueles que fazem isso eventualmente. Por fim, na \textit{Questão 03} queremos
 % entender os prós e contras que a implantação deste tipo de extensão pode
@@ -208,12 +207,12 @@ especialmente nos trabalhos de Bettenburg e outros~\cite{bettenburg2007quality,
     bettenburg2008makes}. Na Figura~\ref{fig:issue_original} é possível
 visualizar como algumas dicas são apresentadas.
 
-O corpo é parte mais dinâmica do comentário. Ele é construído incluindo
-fragmentos de texto quando certos critérios de aceitação não foram atendidos.
-Por exemplo, caso não seja detectado a presença de \textit{``etapas para
-    reproduzir''} no relato de uma \textit{issue} o seguinte fragmento de texto é
-incluído no corpo do comentário: \textit{``Add step to reproduce''}. Os
-atributos avaliados e os critérios de aceitação estão descritos na
+O corpo é a parte dinâmica do comentário. Ele é construído incluindo fragmentos
+de texto quando certos critérios de aceitação não foram atendidos.  Por exemplo,
+caso não seja detectada a presença de \textit{``etapas para reproduzir''} no
+relato de uma \textit{issue} o seguinte fragmento de texto é incluído no corpo
+do comentário: \textit{``Add step to reproduce''}. Os atributos avaliados e os
+critérios de aceitação estão descritos na
 Tabela~\ref{tab:criterios_analise_qualidade_relato}.
 
 \begin{table}[htpb]
@@ -249,7 +248,7 @@ A seguir apresentamos os detalhes de como cada atributo é avaliado.
 \paragraph{Etapas para Reproduzir:}
 \label{par:etapas_para_reproduzir_}
 
-Verifica se reportador incluiu uma lista, na forma de itens, descrevendo as
+Verifica se o reportador incluiu uma lista, na forma de itens, descrevendo as
 etapas executadas até a ocorrência da falha. Para detectar este padrão a
 extensão aproveita da linguagem Markdown, que é o padrão utilizado para redigir
 o relato da \textit{issue}, e que possui uma sintaxe pré-definida para listas. O
@@ -289,9 +288,9 @@ de trecho de código.
 \label{par:completude_de_palavras_chaves}
 
 Nesta dimensão da avaliação há uma premissa que possa existir um vocabulário
-comum no relato de diferentes RMs. Sendo assim, algumas palavras aparecem
-com determinada frequência no relato de uma RM, independente do projeto. Com o
-objetivo de compreender como as pessoas descrevem problemas de software Ko e
+comum no relato de diferentes RMs. Sendo assim, algumas palavras aparecem com
+determinada frequência no relato de uma RM, independente do projeto. Com o
+objetivo de compreender como as pessoas descrevem problemas de software, Ko e
 outros~\cite{ko2006linguistic} analisaram o título de 200.000 RMs de cinco
 projetos de código aberto desenvolvidos na linguagem Java. Nós reutilizamos esta
 base de dados\footnote{Disponível para download em
@@ -320,13 +319,13 @@ seguida, categorizamos as palavras nos seguintes grupos:
 \paragraph{Legibilidade do Texto}
 \label{par:legibilidade_do_texto}
 
-Por fim a extensão avalia o nível legibilidade do texto com base em testes
+Por fim a extensão avalia o nível de legibilidade do texto com base em testes
 largamente utilizados na literatura~\cite{Si:2001:SMS:502585.502695}. Os testes
-de legibilidade são formulados para avaliar a legibilidade do texto, geralmente
-contando sílabas, palavras e frases.  Neste estudo utilizamos os testes de
-legibilidade \textit{Flesch–Kincaid, Automated Readability Index \@-\@ ARI e
-    Dale–Chall Readability Formula}. Os testes foram selecionados por
-apresentarem metodologias distintas para determinar a legibilidade do texto.
+são formulados para avaliar a legibilidade do texto, geralmente contando
+sílabas, palavras e frases. Neste estudo utilizamos os testes de legibilidade
+\textit{Flesch–Kincaid, Automated Readability Index \@-\@ ARI e Dale–Chall
+    Readability Formula}. As avaliações foram selecionadas por apresentarem
+metodologias distintas para determinar a legibilidade do texto.
 
 O Flesch-Kincaid (FK) é baseado no número de sílabas das palavras que compõem as
 sentenças do texto. Existem dois testes, o Flesch Reading Ease e Flesch–Kincaid
@@ -346,24 +345,24 @@ anos. O grau 12, o mais alto no ensino secundário dos EUA, corresponde ao níve
 de leitura de 17 anos de idade.
 
 Por outro lado, o teste Dale-Chall é baseado em um conjunto mínimo de palavras.
-A fórmula usa uma lista de 3000 palavras que grupos de estudantes americanos de
+A fórmula usa uma lista de 3000 vocábulos que grupos de estudantes americanos de
 quarta série poderiam entender de forma confiável, partindo-se da premissa que
 qualquer palavra nessa lista não seja de difícil
 compreensão~\cite{dale1948formula}. No caso dos testes ARI e Dale-Chall a
-legibilidade será considerada ruim se o número de anos de estudos necessário
-para o entendimento \textit{for maior ou igual a 13} que representa de maneira
-geral o número de anos de estudo e foi utilizado no trabalho de Bettenburg e
+legibilidade será considerada ruim se o valor do teste \textit{for maior ou
+    igual a 13}, ou seja, uma pessoa deveria estudar no mínimo 13 anos para
+``entender''. Esta limiar foi utilizado no trabalho de Bettenburg e
 outros~\cite{bettenburg2008makes}.
 
 \section{Execução da Extensão em Projetos Reais}
 \label{sec:avaliando_a_extensao_proposta}
 
 A extensão descrita neste Capitulo foi desenvolvida como prova de conceito.
-Neste sentido, o desenho e desenvolvimento teve foco mais viabilidade do que
-estava sendo proposto do que melhorar ou sobrepor determinada solução estado da
-arte existente. Entretanto, com o objetivo de avaliar a extensão em um contexto
-mais próximo do real, ela foi executada utilizando os dados de \textit{issues}
-de projetos código aberto hospedados no Github.
+Neste sentido, o desenho e desenvolvimento teve foco na viabilidade do que
+estava sendo proposto do que melhorar ou sobrepor determinada solução do estado
+da arte. Entretanto, com o objetivo de avaliar a extensão em um contexto mais
+próximo do real, ela foi executada utilizando os dados de \textit{issues} de
+projetos código aberto hospedados no Github.
 
 \subsection{Seleção dos Projetos}
 \label{sub:implementacao_selecao_projetos}
@@ -374,9 +373,9 @@ mesmos critérios descritos na
 Seção~\ref{ssub:sug_melhoria_selecao_participantes}. As exceções foi que
 incluímos a restrição de que o projeto fosse desenvolvido em Java e avaliamos os
 dez primeiros projetos ordenados pelo critério ``most stars''. O condicionante
-da linguagem Java é por conta de algumas decisões tomadas duram ate o
+da linguagem Java é por conta de algumas decisões tomadas durante o
 desenvolvimento da extensão que exigem a utilização da linguagem. Após aplicação
-dos critérios descritos obtivemos os projetos descritos na
+dos critérios descritos obtivemos os projetos apresentados na
 Tabela~\ref{tab:projetos_utilizados}.
 
 \begin{table}[htpb]
@@ -402,7 +401,7 @@ Para avaliarmos a extensão começamos por criar uma ramificação (fork) dos
 projetos escolhidos. Este processo é realizado de forma automatizada pelo
 Github, contudo, não realiza a cópia das \textit{issues}, que no caso deste
 teste é a informação mais relevante. Para transpor os dados das issues foi
-desenvolvido um processo automatizado de copiada o título e o relato (corpo da
+desenvolvido um processo automatizado que copiava o título e o relato (corpo da
 issue) do projeto original para a sua ramificação. Para cada projeto realizamos
 a cópia de 100 \textit{issues}. A Figura~\ref{fig:copia-de-issues} exibe uma
 \textit{issue} do projeto Guava no lado esquerdo e sua cópia na ramificação
@@ -420,8 +419,8 @@ Após finalizado o processo de cópia executamos a extensão nas 100
 visualizamos o comentário gerado para a \textit{issue} apresentada na
 Figura~\ref{fig:copia-de-issues}. Na próxima seção apresentamos algumas métricas
 do processo de execução da extensão nos projetos escolhidos. Como se trata de
-uma prova de conceitos estes dados podem nos ajudar a avaliação a viabilidade de
-implantação da extensão proposta.
+uma prova de conceito estes dados podem nos ajudar na avaliação da viabilidade
+de implantação da extensão proposta.
 
 \begin{figure}[htpb]
     \centering
@@ -438,8 +437,8 @@ atraso que possa ocorrer no processo de solução das RMs. É natural que um tem
 adicional seja necessário para analisar a qualidade do relato. A
 Tabela~\ref{tab:tempo_execucao_extensao} exibe o tempo em segundos que a
 extensão levou para analisar as \textit{issues}. É possível verificar que em
-média cerca de 02 segundos são necessário para avaliar a qualidade do relato. Em
-alguns casos o processo finalizada em menos de 01 segundo. Entretanto, é
+média cerca de 02 segundos são necessários para avaliar a qualidade do relato.
+Em alguns casos o processo é finalizado em menos de 01 segundo. Entretanto, é
 possível verificar situações em que o tempo de retorno da extensão é cerca de 30
 segundos. Em alguns casos esta discrepância é maior, como no caso do projeto
 \textit{Guava} que possui um desvio padrão acentuado onde o tempo de execução
@@ -469,7 +468,7 @@ frequentes. Conforme apresentado na
 Tabela~\ref{tab:criterios_analise_qualidade_relato} a extensão avalia os
 seguintes atributos do relato: Etapas para Reproduzir, Arquivo Anexado,
 Fragmentos de Código, Completude de Palavras-Chaves e Legibilidade do Texto. Um
-comentário é gerado caso o relato não atenda determinados critérios para cada
+comentário é gerado caso o relato não atenda a determinados critérios para cada
 atributo analisado. A Figura~\ref{fig:frequencia_atributos_comentario} exibe a
 frequência que um item foi incluído ao comentário para atributo.
 
@@ -484,7 +483,7 @@ Verificamos na figura que em quase todas as issues analisadas não foi detectado
 a inclusão de arquivos anexados ou de fragmentos de código. É possível observar
 que mais da metade do texto relatado apresentou uma legibilidade ruim do ponto
 de vista da nossa extensão. A situação menos frequente está relacionada com a
-inclusão de ``Etapas para Reproduzir'', onde é avaliado a existência de uma
+inclusão de ``Etapas para Reproduzir'', em que é avaliada a existência de uma
 lista detalhando os passos executados até a ocorrência da falha.
 
 \begin{table}[htpb]
@@ -507,8 +506,8 @@ spring-framework & 3,68 & 4 & 1,01 & 1 & 5 \\ \bottomrule
 
 Durante a execução estávamos interessados em avaliar o número de dicas de
 melhorias na qualidade do relato a extensão gerou. Esta informação está exibida
-na Tabela~\ref{tab:numero_de_dicas}. É possível observar em média 03 dicas são
-incluídas em cada \textit{issues}, ou seja, três em cada cinco dos itens
+na Tabela~\ref{tab:numero_de_dicas}. É possível observar que em média 03 dicas
+são incluídas em cada \textit{issues}, ou seja, três em cada cinco dos itens
 apresentaram algum tipo de problema. Entretanto, para que possamos extrapolar
 qualquer discussão sobre este resultado era necessário uma avaliação de pessoas
 envolvidas nos projetos utilizados de modo a detectar falsos positivos.
@@ -520,7 +519,7 @@ As execuções que foram realizadas têm como foco avaliar a viabilidade da
 extensão proposta. Neste sentido, os resultado obtidos na
 Seção~\ref{sec:avaliando_a_extensao_proposta} devem ser avaliados sobre esta
 ótica. No caso do tempo necessário verificamos que em média não causa impacto no
-processo de solução de uma RM\@. Nos casos de maior duração, com por exemplo 31
+processo de solução de uma RM\@. Nos casos de maior duração, como por exemplo 31
 segundos, pode estar relacionado a arquitetura escolhida. Conforme exposto, a
 extensão utiliza uma API do Github que pode estar sujeita a questões relativas à
 rede ou mesmo de sobrecarga.
@@ -542,7 +541,7 @@ simples e direto.
 
 O desenvolvimento da extensão possui limitações que ameaçam a sua validade.
 Inicialmente não é possível determinar se os atributos avaliados são os mais
-indicados para avaliar a qualidade do relato. Eles foram utilizados com base em
+indicados para medir a qualidade do relato. Eles foram utilizados com base em
 estudos já realizados~\cite{bettenburg2007quality} em que os atributo foram
 baseados na opinião de desenvolvedores.
 
@@ -550,23 +549,22 @@ Para que uma dica de melhoria seja disparada é necessário algum dos critérios
 descritos na Tabela~\ref{tab:criterios_analise_qualidade_relato} não seja
 atendido. No caso do atributo ``Completude de Palavras-Chaves'' utilizou o
 conjunto de termos do trabalho de Ko e outros~\cite{ko2006linguistic}. Apesar de
-ambos os estudos utilizarem projetos desenvolvidos na linguagem Java, entretanto,
-não podemos garantir se o conjunto de termos é o mesmo nas RMs de diferentes
-projetos.
+ambos os estudos utilizarem projetos desenvolvidos na linguagem Java não podemos
+garantir que o conjunto de termos é o mesmo nas RMs de diferentes projetos.
 
 A legibilidade do texto foi realizada utilizando testes descritos na literatura.
 Em todos os testes existem os limiares que definem o grau de legibilidade de um
-texto. Entretanto, não sabemos qual o impacto de utilizamos estes valores no
+texto. Entretanto, não sabemos qual o impacto de utilizarmos estes valores no
 relato de uma falha de software, por exemplo. Em geral, os testes de
 legibilidade são bastante genéricos, contudo, certas adequações podem ser
 necessárias para serem utilizados na análise do relato de uma RM\@.
 
-A principal limitação deste estudo está extrapolação dos resultados. O ideal é
-que a execução da extensão fosse avaliada por um profissional vinculado aos
-projetos utilizados. Esta análise poderia ajudar na detecção de falso
+A principal limitação deste estudo está na extrapolação dos resultados. O ideal
+é que a execução da extensão fosse avaliada por um profissional vinculado aos
+projetos utilizados. Esta análise poderia ajudar na detecção de falsos
 positivos, por exemplo. Estendemos a importância deste tipo de suporte, mesmo
-que por inspeção de alguns casos. Uma trabalho futuro desta dissertação seria
-reaplicar a extensão uma configuração com suporte de um oráculo ligado ao
+que por inspeção de alguns casos. Um trabalho futuro desta dissertação seria
+reaplicar a extensão em uma configuração com suporte de um oráculo ligado ao
 projeto analisado.
 
 \section{Conclusão}
