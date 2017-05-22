@@ -1,83 +1,98 @@
 \chapter{Conclusão}
 \label{ch:conclusao_trab_futuros}
 
-\todobegin{A minha sugestão é articular o ``concluir'' com o ``introduzir'': na
-    introdução você procura descrever o trabalho sem ter os elementos
-    conceituais que só aparecem no capítulos 2 3 4. Na conclusão você retoma a
-    descrição do trabalho e \textbf{traduz} a ``Introdução'' mais formalmente
-    podendo se referir a elementos conceituais de todos capítulos.  A distinção
-    principal da ``introdução'' e ``conclusão'' é construída pela descrição de
-    trabalhos futuros *talvez*  balizados pelas considerações de complexidade e
-    diversidade que a literatura provê. A complicação fica na decisão de os
-    trabalhos futuros ficarem intercalados ou não no texto finalizador.  Em
-    alguns trabalhos os ``trabalhos futuros''  ficam como sendo uma subseção.
-    Quando você estava lendo algumas dissertações e teses eu te falei para ficar
-    atento a isso para você poder decidir de forma mais tranquila.}
-
 A Manutenção de Software é um processo complexo e caro e, portanto, merece
-atenção da comunidade acadêmica e da indústria. Desta forma, emerge a
-necessidade do desenvolvimento de técnicas, processo e ferramentas que reduzam o
-custo e o esforço envolvidos nas atividades de manutenção e evolução de
+atenção da comunidade cientifica e da indústria. Neste contexto, surge a
+necessidade do desenvolvimento de técnicas, processos e ferramentas que reduzam
+o custo e o esforço envolvidos nas atividades de manutenção e evolução de
 software. Neste contexto, as Ferramentas de Gerenciamento de Requisição de
 Mudança desempenham um papel fundamental que ultrapassa a simples função de
-registrar falhas em software. Este estudo se propôs a avaliar as funcionalidades
-das FGRMs de modo a melhorá-las.
+registrar as falhas e os pedidos de melhoria dos softwares. Este estudo se
+propôs a avaliar as funcionalidades das FGRMs de modo a melhorá-las.
 
-Com base no estudo descrito na Seção~\ref{} verificamos que as FGRM dispõe de
-funcionalidades para gerenciar a criação, consulta, atualização e destruição de
-uma RM\@. Entretanto, em algumas plataformas, tais como o Github e o Gitlab, não
-há clara distinção entre o gerenciamento das RMs e o controle de versão de
-código. Uma possível desdobramento desta dissertação é avaliar o impacto desta
-abordagem na Manutenção de Software.
+Com base no estudo descrito na Seção~\ref{sec:caracterizacao_ferramentas}
+verificamos que as FGRM dispõem de funcionalidades para gerenciar a criação,
+consulta, atualização e destruição de uma RM\@. Entretanto, em algumas
+plataformas, tais como o Github e o Gitlab, não há clara separação entre o
+gerenciamento das RMs e o controle de versão de código. Uma possível
+desdobramento desta dissertação é avaliar o impacto desta abordagem na
+Manutenção de Software. Este tipo de análise poderia modificar o desenvolvimento
+de futuras deste tipo de software.
 
-Ao revisarmos a literatura sobre FGRMs foi possível recuperar estudos discutindo
-diversos aspectos dos problemas e desafios do gerenciamento das RMs. Apesar de
-constatarmos um foco em problemas como atribuição e RMs duplicadas, estudos
-discutem que os desenvolvedores estariam mais interessados em trabalhos que
-melhorem a qualidade do relato da RM\@. De maneira relacionada, em uma das
-classificações, os estudos foram agrupados pelo tipo de papel desempenhado na
-Manutenção de Software o qual visa dar suporte. Utilizamos uma classificação
-proposta por Polo e outros~\cite{}, data de 1999. Entendemos que seria
-importante uma nova realizar um novo trabalho avaliando os papéis realizados no
-processo de manter um software. Este estudo poderia avaliar como as práticas
-propostas pelos agilistas podem ter alterado a estrutura dos papéis na
-Manutenção de Software.
-
-O nível de satisfação dos profissionais envolvidos com Manutenção de Software
-com as funcionalidades das FGRMs é bom. Esta percepção foi obtida mediante um
-levantamento por questionário. Entretanto, o mesmo estudo demonstrou que os
-participantes desconhecem o potencial deste tipo de software. Ao apresentarmos
-algumas das propostas de melhorias discutidas na literatura o nível de aceitação
-foi bastante elevado. Neste sentido, observamos um distanciamento entre o estado
-da arte e o estado da prática das melhorias das FGRMs. Apesar deste
-distanciamento ser natural em determinados contextos, estudos devem ser
-realizados afim de diminuir esta distância. Entendemos que este estudo
-contribuiu neste sentido ao apresentar para os profissionais algumas das
-melhorias discutidas na literatura.
-
-Verificamos que a literatura da área tem dedicado nesta melhoria, contudo, tais
-avanços ainda não chegaram aos desenvolvedores. Apesar deles se mostrarem
+No Capítulo~\ref{ch:mapeamento-sistematico}, ao revisarmos a literatura sobre
+melhorias nas FGRMs, recuperamos estudos que discutem diversos aspectos dos
+problemas e desafios do gerenciamento das RMs. Apesar do foco em temas como
+atribuição automática e RMs duplicadas, outros estudos discutem que alguns
+desenvolvedores estariam mais interessados em propostas que melhorem a qualidade
+do relato da RM\@. Este é um exemplo do desacoplamento entre as necessidades dos
+desenvolvedores e o que está sendo proposto na literatura. Verificamos que a
+literatura da área tem se dedicado na melhoria das funções das FGRMs, contudo,
+tais avanços ainda não chegaram aos desenvolvedores. Apesar deles se mostrarem
 satisfeitos com as funcionalidades oferecidas, ainda existem muito outras que
 poderiam se acopladas a este tipo de software de modo a melhorar as atividades
-diárias de quem dedicar à manter software.
+de manter e evoluir um software. Transversalmente as metodologias propostas
+pelos agilistas vêm sendo adotadas por algumas equipes de manutenção de
+software. Neste contexto, as FGRM podem implantar funcionalidade de modo a
+suportar algumas destas práticas.
 
-Transversalmente as metodologias propostas pelos agilistas vêm sendo adotadas
-por algumas equipes de manutenção de software. Neste contexto, as FGRM podem
-implantar funcionalidade de modo a suportar algumas destas práticas. A
-contribuição deste trabalho está na proposição de melhorias para este tipo de
-sistema tomando como base a literatura em Engenharia e o estado da prática, com
-base na opinião dos profissionais.
+De maneira relacionada, em uma das classificações feitas no Mapeamento
+conduzido, os estudos foram agrupados pelo tipo de papel desempenhado na
+Manutenção de Software o qual daria suporte. Utilizamos uma classificação
+proposta por Polo e outros~\cite{Polo1999} construída em 1999. Em nossas
+pesquisas não identificamos uma discussão mais recente sobre os papéis
+desempenhados na Manutenção de Software. Entendemos que seria importante a
+realização de um novo trabalho com o objetivo de descreve e avaliar os papéis
+desempenhados no processo de manter um software. Este estudo poderia avaliar
+como as práticas propostas pelos agilistas podem ter alterado esta estrutura de
+trabalho.
 
-O gerenciamento das RMs formam as funcionalidades centrais de uma FGRM\@. Estas
-funções podem ser agrupadas em um termo único denominado \textit{Operações de
-    CRUD} (acrônimo de Create, Read, Update e Delete na língua Inglesa). As
-principais categorias de funcionalidades que foram encontradas para a dimensão
-de \textit{Gestão da RM} estão descritas a seguir.
+O nível de satisfação com as funcionalidades das FGRMs dos profissionais
+envolvidos com Manutenção de Software pode ser considerado como bom. Esta
+percepção foi obtida mediante um levantamento por questionário apresentado no
+Capítulo~\ref{ch:pesquisa-profissionais}. Entretanto, o mesmo estudo demonstrou
+que os participantes desconhecem o potencial deste tipo de software. No
+questionário, ao apresentarmos propostas de melhorias que eram discutidas na
+literatura o nível de aceitação foi bastante elevado. Neste sentido, observamos
+um distanciamento entre o estado da arte e o estado da prática das melhorias das
+FGRMs. Apesar deste distanciamento ser algo esperado, por diversas razões,
+estudos devem ser conduzidos afim de diminuir estas diferenças. Entendemos que
+esta dissertação contribuiu neste sentido ao apresentar para os profissionais
+algumas das melhorias discutidas na literatura. Este conhecimento pode ser
+utilizado pelos desenvolvedores para exigir ferramentas que atendam às suas
+demandas. Ao mesmo tempo o nosso trabalho conseguiu coletar, discutir e
+apresentar algumas da necessidades dos desenvolvedores. Da mesma forma,
+pesquisadores podem usar esta informação para propor trabalhos com o intuito de
+propor melhorias para as FGRMs.
 
-Realmente utilizar a justificativa esforço necessário é fazer como você mesmo
-disse aumenta superfície de ataque. Acho que o ideal é colocar que no momento de
-decisão qual ferramenta analisar optamos por um número menor, não pelo esforço,
-mas por entendermos que as escolhidas poderiam caracterizar o conjunto de
-ferramentas disponíveis. Posteriormente, verificamos que a escolha não se
-mostrou ideal já que no survey induziu a alguns erros na proposição das
-melhorias.
+Esta dissertação contribuiu para o estudo das FGRMs com a apresentação de um
+conjunto de melhorias no Capítulo~\ref{ch:sug_melhoria}. Considerando a sua boa
+aceitação, estas recomendações podem ser utilizadas por pesquisadores, pelos
+responsáveis por desenvolver e manter projetos de FGRMs e por os profissionais
+envolvidos com Manutenção de Software. Um possível desdobramento desta
+dissertação é a avaliação do impacto da implantação destas sugestões. Esta
+análise poderia ser realizada mediante um Estudo de Caso, por exemplo.
+
+No Capítulo~\ref{ch:implemtacao_extensao} implementamos uma das sugestões como
+uma extensão para o módulo de \textit{issues} da plataforma Github. Por ser
+tratar de uma Prova de Conceito, como não foi realizada uma avaliação com
+membros dos projetos selecionados. Por esta razão não é possível extrapolar o
+resultados.  Gostaríamos de futuramente conduzir um trabalho em uma configuração
+em que seja possível avaliar a opinião de alguém envolvido no projeto estudado.
+A contribuição deste trabalho de dissertação está na proposição de melhorias
+para as FGRMs tomando como base a literatura em Manutenção de Software e a
+opinião de profissionais envolvidos em Manutenção de Software.
+
+% O gerenciamento das RMs formam as funcionalidades centrais de uma FGRM\@.
+% Estas funções podem ser agrupadas em um termo único denominado
+% \textit{Operações de
+% CRUD} (acrônimo de Create, Read, Update e Delete na língua Inglesa). As
+% principais categorias de funcionalidades que foram encontradas para a dimensão
+% de \textit{Gestão da RM} estão descritas a seguir.
+
+% Realmente utilizar a justificativa esforço necessário é fazer como você mesmo
+% disse aumenta superfície de ataque. Acho que o ideal é colocar que no momento de
+% decisão qual ferramenta analisar optamos por um número menor, não pelo esforço,
+% mas por entendermos que as escolhidas poderiam caracterizar o conjunto de
+% ferramentas disponíveis. Posteriormente, verificamos que a escolha não se
+% mostrou ideal já que no survey induziu a alguns erros na proposição das
+% melhorias.
