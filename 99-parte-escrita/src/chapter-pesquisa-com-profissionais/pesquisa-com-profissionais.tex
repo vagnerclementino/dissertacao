@@ -14,63 +14,66 @@
 \section{Introdução}
 \label{sec:pesquisa-profissionais-intro}
 
-Um levantamento por questionários, conhecido na literatura como \textit{Survey},
+Um levantamento por questionário, conhecido na literatura como \textit{Survey},
 é uma abordagem de coleta e análise de dados em que os participantes respondem a
-perguntas ou declarações que foram desenvolvidas. Este tipo de estudo permite
-que os pesquisadores generalizem as crenças e opiniões de uma população mediante
-os dados coletados de um subconjunto do público-alvo (amostra). No trabalho
-conduzido por Kasunic~\cite{kasunic2005designing} são apresentadas uma sequência
-de etapas a serem seguidas no processo de condução deste tipo de trabalho:
+perguntas ou declarações que foram definidas previamente. Este tipo de estudo
+permite a generalização das crenças e opiniões de uma população mediante os
+dados coletados de um subconjunto do público-alvo (amostra). No trabalho
+conduzido por Kasunic~\cite{kasunic2005designing} é apresentada uma sequência de
+etapas a serem seguidas no processo de condução de um levantamento por
+questionário. Este passo-a-passo está descrito a seguir e foi utilização na
+condução do estudo descrito neste Capítulo.
 
 \begin{enumerate}
-\item{Identificar os objetivos da pesquisa}
-\item{Identificar e caracterizar o público-alvo}
-\item{Elaborar o plano de amostragem}
-\item{Elaborar e escrever um questionário}
-\item{Aplicar questionário de teste ou piloto}
-\item{Distribuir o questionário}
-\item{Analisar os resultados e escrever o relatório}
+    \item{Identificar os objetivos da pesquisa}
+    \item{Identificar e caracterizar o público-alvo}
+    \item{Elaborar o plano de amostragem}
+    \item{Elaborar e escrever um questionário}
+    \item{Aplicar questionário de teste ou piloto}
+    \item{Distribuir o questionário}
+    \item{Analisar os resultados e escrever o relatório}
 \end{enumerate}
 
-Com o objetivo de coletar os aspectos mais importantes das funcionalidades
-oferecidas pelas Ferramentas de Gerenciamento de Requisições de Mudança (FGRMs),
-do ponto de vista dos profissionais ligados à manutenção de software, realizamos
-um levantamento mediante questionário. O planejamento e o desenho do estudo
-seguiu as diretrizes propostas nos trabalhos de
-Wohlin~\cite{wohlin2012experimentation} e Kasunic~\cite{kasunic2005designing}.
-Em especial, no tocante a definição da população e da amostra de interesse
-utilizamos o arcabouço (framework) proposto por De Mello e
-outros~\cite{de2015investigating, de2014towards}.
+Neste Capítulo apresentamos um levantamento mediante questionário com o objetivo
+de coletar os aspectos mais importantes das funcionalidades oferecidas pelas
+FGRMs do ponto de vista dos profissionais ligados à manutenção de software. O
+planejamento e o desenho do estudo seguiram as diretrizes propostas nos
+trabalhos de Wohlin~\cite{wohlin2012experimentation} e
+Kasunic~\cite{kasunic2005designing}. Em especial, no tocante a definição da
+população e da amostra de interesse utilizamos o arcabouço (framework) proposto
+por De Mello e outros~\cite{de2015investigating, de2014towards}.
 
-A população da pesquisa é a comunidade envolvida com o processo de manutenção de
-software e que faça uso de FGRMs. Neste sentido, utilizamos como amostra os
-profissionais que estão envolvidos no projeto de código aberto
-Python\footnote{\url{http://bugs.python.org/}}. Por outro lado, visando alcançar
-profissionais que trabalham em empresas privadas, utilizamos os usuários da
-rede social de desenvolvedores Stack
+A população de interesse é a comunidade envolvida com o processo de manutenção
+de software e que faça uso de FGRMs. Pela abrangência e dificuldade de
+caracterização da população foi escolhida uma amostra de conveniência. Neste
+sentido, utilizamos como amostra os profissionais que estão envolvidos no
+projeto de código aberto Python\footnote{\url{http://bugs.python.org/}}. Por
+outro lado, visando alcançar profissionais que trabalham em empresas privadas,
+utilizamos os usuários da rede social de desenvolvedores Stack
 Overflow\footnote{\url{http://stackoverflow.com}}. Neste último caso, estamos
 interessados nos usuários da rede que tenham participado de discussões sobre
 assuntos relacionados à manutenção de software. A pesquisa foi replicada em uma
-empresa pública de software do qual o autor possui vínculo. Outros detalhes
-sobre o processo de escolha das amostras serão discutidos posteriormente.
+empresa pública de software do qual o autor possui vínculo. Mais detalhes sobre
+o processo de escolha das amostras serão discutidos posteriormente.
 
-A importância deste tipo de trabalho está na possibilidade de avaliar se as
-pesquisas relativas a evolução das funcionalidades das FGRMs estão em
-consonância com as necessidades dos profissionais. Neste sentido é possível
-discutir a distância entre o estado da arte e o estado da prática.
+A importância deste tipo de trabalho está na possibilidade de avaliar se os
+estudos conduzidos na literatura sobre a evolução das funcionalidades das FGRMs
+estão em consonância com as necessidades dos profissionais. Neste sentido é
+possível analisar como está o distanciamento entre o estado da arte e o da
+prática.
 
 \section{Objetivo do Levantamento com Profissionais}
 \label{sec:objetivo_da_pesquisa_com_profissionais}
 
 Em linhas gerais, o objetivo desta etapa da dissertação é analisar, através da
-percepção e opinião dos profissionais envolvidos em manutenção de software, a
-situação das funcionalidades atualmente oferecidas pelas FGRMs, bem como a
+percepção e opinião dos profissionais envolvidos em Manutenção de Software, a
+situação das funcionalidades atualmente oferecidas pelas FGRMs, bem como sobre a
 adoção das metodologias propostos pelos agilistas no processo de manutenção de
-software. Colocando a finalidade do levantamento conforme propõe a metodologia
-GQM (Goal, Question e Metric)\cite{gqm}, \textit{o propósito deste estudo é
+software. Colocando a finalidade do levantamento com base na metodologia
+GQM (Goal, Question e Metric)\cite{gqm},  propósito deste estudo \textit{é
     avaliar as funcionalidades oferecidas pelas FGRMs e as melhorias propostas
-    nas literatura, do ponto de vista dos profissionais envolvidos em manutenção
-    de software no contexto de projetos de software de código aberto e em
+    nas literatura, do ponto de vista dos profissionais envolvidos em Manutenção
+    de Software no contexto de projetos de software de código aberto e em
     empresas publicas e privadas de informática.}
 
 Com intuito de atingir os objetivos propostos foram definidas as seguintes
@@ -78,19 +81,19 @@ questões de pesquisa:
 
 \begin{description}
 	\item[Questão 01] Qual a opinião dos profissionais envolvidos em Manutenção
-		de Software com relação as funcionalidades oferecidas atualmente pelas
+		de Software com relação as funcionalidades oferecidas pelas
 		FGRM\@?
 	\item[Questão 02] Na visão dos profissionais envolvidos em Manutenção de
-		Software quais das extensões propostas na literatura teriam maior
-		relevância em suas atividades atuais?
-	\item[Questão 03] Como as práticas propostas pelos agilistas estão sendo
-	utilizadas especialmente no processo de manutenção de software?
-	\item[Questão 04] Como as FGRMs podem ajudar aos times devotados à manutenção
-	de software na prática adotada pelos agilistas?
+        Software quais das melhorias nas funcionalidades das FGRMs propostas na
+        literatura teriam maior relevância em suas atividades?
+	\item[Questão 03] As práticas propostas pelos agilistas estão sendo
+        utilizadas no processo de Manutenção de Software?
+	\item[Questão 04] Como as FGRMs podem ajudar as equipes de manutenção de
+        softaware na adoção das práticas propostas pelos agilistas?
 \end{description}
 
 O desenho da pesquisa é detalhado na próxima seção onde discutimos a estrutura
-do questionário bem como a amostra da população que foi utilizada.
+do questionário bem como detalhamos a amostra da população utilizada.
 
 \section{Desenho e Metodologia da Pesquisa com Profissionais}
 \label{sec:desenho_da_pesquisa_com_profissionais}
@@ -110,13 +113,13 @@ amostras são os projetos de código e seus respectivos artefatos.
 O nosso levantamento com profissionais consistiu de um estudo exploratório sem
 uma hipótese prévia. Idealmente, este levantamento deveria ser aplicado em todos
 os profissionais envolvidos em desenvolvimento e manutenção de software e que
-tenham feito o uso razoável de alguma FGRM\@. Naturalmente não é possível alcançar
-aquela população. Desta forma, foi utilizada uma estratégia de amostragem de
-\textit{conveniência} onde o questionário foi aplicado em dois grupos distintos.
-Neste tipo de amostragem a seleção de indivíduos é realizada por conta de sua
-facilidade de acesso ou proximidade~\cite{marshall1996sampling}. Outros detalhes
-sobre o processo de amostragem serão discutidos na
-Seção~\ref{subsubsec:fontes_amostragem}.
+tenham feito o uso razoável de alguma FGRM\@. Naturalmente não é possível
+alcançar aquela população. Desta forma, foi utilizada uma estratégia de
+amostragem de \textit{conveniência} onde o questionário foi aplicado em dois
+grupos distintos. Neste tipo de amostragem a seleção de indivíduos é realizada
+por conta de sua facilidade de acesso ou
+proximidade~\cite{marshall1996sampling}. Outros detalhes sobre o processo de
+amostragem serão discutidos na Seção~\ref{subsubsec:fontes_amostragem}.
 
 O trabalho de Mello e outros~\cite{de2014towards} apresenta um
 arcabouço (framework) conceitual para a determinação de fontes adequadas para
@@ -204,12 +207,12 @@ software\footnote{Não colocamos esforço em tentar distinguir se o foco de
 
 \begin{table}[htpb]
 \centering
-\resizebox{\textwidth}{!}{%
+\resizebox{.8\textwidth}{!}{%
 \begin{tabular}{@{}lllc@{}}
 \toprule
-\textbf{Identificador} & \multicolumn{1}{c}{\textbf{Fonte de Amostragem}} & \multicolumn{1}{c}{\textbf{URL}} & \textbf{Membros} \\ \midrule
-FA01 & Python & https://bugs.python.org/ & $\sim$19 K \\
-FA02 & Stack Overflow & https://stackoverflow.com & $\sim$6 M \\ \bottomrule
+\textbf{Identificador} & \multicolumn{1}{c}{\textbf{Fonte de Amostragem}} & \multicolumn{1}{c}{\textbf{URL}} \\ \midrule
+FA01 & Python & https://bugs.python.org/ \\
+FA02 & Stack Overflow & https://stackoverflow.com \\ \bottomrule
 \end{tabular}%
 }
 \caption{Fontes de Amostragem utilizadas no levantamento com questionário.}
@@ -290,14 +293,14 @@ aplicação das regras de inclusão e exclusão.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/stack-exchange.png}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/stack-exchange.png}
 	\caption{Ferramenta de coleta de dados da rede Stack Overflow}
 \label{fig:stack-exchange}
 \end{figure}
 
 Para a fonte FA01 foi desenvolvido um Web Crawler para coletar as informações
 dos participantes. Um Web Crawler (rastreador web) é um programa de computador
-que navega pela World Wide Web de uma forma metódica e automatizada.  A partir
+que navega pela World Wide Web de uma forma metódica e automatizada. A partir
 de uma lista de RMs previamente coletadas a ferramenta coletou os dados dos
 participantes a partir do histórico de modificações da mesma. A
 Figura~\ref{fig:historico-rm-python} apresenta o histórico de registros de uma
@@ -349,7 +352,7 @@ exclusão de participantes:
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/setencas-grupos.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/setencas-grupos.pdf}
 	\caption{Sentenças utilizadas para escolhas dos grupos do LinkedIn e de
 		discussões no Stack Overflow}
 \label{fig:setencas-grupos}
@@ -472,7 +475,7 @@ as diferenças que a localização do participante pode influenciar aos resultad
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_localizacao_geografica.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_localizacao_geografica.pdf}
 	\caption{Localização Geográfica dos Participantes}
 \label{fig:grafico_melhorias_fgrm_localizacao_geografica}
 \end{figure}
@@ -480,7 +483,7 @@ as diferenças que a localização do participante pode influenciar aos resultad
 Os respondentes trabalham em sua maioria em empresas privadas de software.
 Existem também aqueles que participam de projetos de código aberto. A
 distribuição do local de trabalho pode ser vista na
-Figura~\cite{fig:grafico_melhorias_fgrm_local_trabalho}. É importante considerar
+Figura~\ref{fig:grafico_melhorias_fgrm_local_trabalho}. É importante considerar
 que grande parte dos respondentes pertencem à empresas privadas, onde os
 processos e ferramentas não podem ser modificados pelo desenvolvedor. Esta
 característica pode afetar os resultados, especialmente quando avaliarmos o
@@ -488,7 +491,7 @@ nível de satisfação das funcionalidades das FGRMs.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_local_trabalho.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_local_trabalho.pdf}
 	\caption{Local de Trabalho}
 \label{fig:grafico_melhorias_fgrm_local_trabalho}
 \end{figure}
@@ -501,7 +504,7 @@ acreditamos que o número de membros não seja muito maior do que isso.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_tamanho_equipe.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_tamanho_equipe.pdf}
 	\caption{Tamanho da Equipe}
 \label{fig:grafico_melhorias_fgrm_tamanho_equipe}
 \end{figure}
@@ -515,7 +518,7 @@ visualizado na Figura~\ref{fig:grafico_melhorias_fgrm_tempo_experiencia}.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_tempo_experiencia.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_tempo_experiencia.pdf}
 	\caption{Tempo de Experiência}
 \label{fig:grafico_melhorias_fgrm_tempo_experiencia}
 \end{figure}
@@ -534,40 +537,40 @@ ferramentas utilizadas pelo profissional que respondeu a pesquisa. Esta
 informação é importante tendo em vista que as opiniões dadas pelos
 participantes estão diretamente relacionadas com a versão utilizada, podendo os
 resultados se mostrarem diferentes se a pesquisa fosse realizada com outra
-versão dos sistema.  A
+versão dos sistema. A
 Figura~\ref{fig:grafico_melhorias_fgrm_ferramentas_utilizadas} exibe as
-ferramentas utilizadas pelos profissionais que responderam ao questionário. A
-maior frequência ocorre para a ferramenta \textit{Jira} que é uma FGRM que
-integra em seu processo de gestão das RMs métodos propostos pelos agilistas. Na
-segunda posição visualizamos o Github que é um serviço de web para armazenamento
-de projetos que usam o controle de versionamento \textit{Git} e possui uma FGRM
-integrada.
+ferramentas utilizadas pelos profissionais que responderam ao questionário.
+Estão apresentadas aquelas com no mínimo duas respostas e um total de 19 outros
+softwares foram escolhidos uma única vez. A maior frequência ocorre para a
+ferramenta \textit{Jira} que é uma FGRM que integra em seu processo de gestão
+das RMs métodos propostos pelos agilistas. Na segunda posição visualizamos o
+Github que é um serviço de web para armazenamento de projetos que usam o
+controle de versionamento \textit{Git} e possui uma FGRM integrada.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_ferramentas_utilizadas.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_ferramentas_utilizadas.pdf}
 	\caption{Ferramentas utilizadas pelos participantes}
 \label{fig:grafico_melhorias_fgrm_ferramentas_utilizadas}
 \end{figure}
 
 Inicialmente gostaríamos de saber qual o nível de satisfação dos participantes
-com as funcionalidades oferecidas pelas FGRMs que ele utiliza atualmente.
-Esta medida pode ser visualizada na
-Figura~\ref{grafico_melhorias_fgrm_nivel_satisfacao}. Em grande parte os
-respondentes estão satisfeitos com as funcionalidades. A resposta com maior
-frequência foi \textit{OK}, o que pode representar que as FGRMs estavam, no
-momento da realização deste estudo, atendendo as expectativas de seus usuários.
-Este resultado não segue o que literatura da área discute, onde este tipo de
-ferramenta é vista com necessidade de melhorias, tomando como base a visão dos
-profissionais. Esta aparente dicotomia pode ser justificada, possivelmente, pelo
-desconhecimento dos profissionais de funcionalidades que estão sendo propostas
-na literatura que podem melhorar as suas atividades diárias.
+com as funcionalidades oferecidas pelas FGRMs que ele utiliza. Esta medida pode
+ser visualizada na Figura~\ref{fig:grafico_melhorias_fgrm_nivel_satisfacao}. Em
+grande parte os respondentes estão satisfeitos com as funcionalidades. A
+resposta com maior frequência foi \textit{OK}, o que pode representar que as
+FGRMs estavam, no momento da realização deste estudo, atendendo as expectativas
+de seus usuários. Este resultado não segue o que literatura da área discute,
+onde este tipo de ferramenta é vista com necessidade de melhorias, tomando como
+base a visão dos profissionais. Esta aparente dicotomia pode ser justificada,
+possivelmente, pelo desconhecimento dos profissionais de funcionalidades que
+estão sendo propostas na literatura que podem melhorar as suas atividades
+diárias.
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_nivel_satisfacao.pdf}
-	\caption{Nível de satisfação com as Ferramentas}
-\label{fig:grafico_melhorias_fgrm_nivel_satisfacao}
+\begin{figure}[htpb] \centering
+    \includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_nivel_satisfacao.pdf}
+    \caption{Nível de satisfação com as Ferramentas}
+    \label{fig:grafico_melhorias_fgrm_nivel_satisfacao}
 \end{figure}
 
 No mesmo questionário verificamos se o respondente recomendaria a ferramenta que
@@ -580,7 +583,7 @@ que utiliza ao ponto de recomendá-la.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_probabilidade_recomentacao.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_probabilidade_recomentacao.pdf}
 	\caption{Probabilidade de Recomendação da Ferramenta Utilizada}
 \label{fig:grafico_melhorias_fgrm_probabilidade_recomentacao}
 \end{figure}
@@ -603,29 +606,34 @@ atividades diárias.
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}|l|ccccc|@{}}
 \toprule
-\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Funcionalidade}}} & \multicolumn{5}{c|}{\textbf{Classificação}} \\ \cmidrule(l){2-6}
-\multicolumn{1}{|c|}{} & \multicolumn{1}{c|}{\textbf{Not at all important}} & \multicolumn{1}{c|}{\textbf{Slightly Important}} & \multicolumn{1}{c|}{\textbf{Important}} & \multicolumn{1}{c|}{\textbf{Fairly Important}} & \textbf{Very Important} \\ \midrule
-Documentation integration/generation, business reporting & 11 & 12 & 15 & 12 & 14 \\
-Test planning integration & 11 & 13 & 13 & 13 & 9 \\
-Customizable workflow & 9 & 14 & 21 & 14 & 15 \\
-Unicode support & 9 & 9 & 21 & 16 & 24 \\
-Custom fields & 5 & 17 & 25 & 22 & 8 \\
-Support to Service Level Agreement & 14 & 22 & 15 & 13 & 10 \\
-Plugin API to integration with other products & 8 & 14 & 21 & 19 & 16 \\
-Multiple projects & 3 & 8 & 17 & 21 & 28 \\
-Full-text search & 1 & 5 & 17 & 15 & 40 \\
-File search & 4 & 15 & 18 & 17 & 24 \\
-VCS integration & 7 & 16 & 16 & 13 & 21 \\
-Multiples interfaces of notifications (E-mail, RSS, XMPP, etc) & 7 & 11 & 23 & 16 & 19 \\
-Code Review Support & 2 & 2 & 0 & 0 & 5 \\
-Ease of use & 0 & 2 & 2 & 0 & 1 \\
-Integration with database \& app & 4 & 6 & 4 & 1 & 2 \\
-Reviewing & 0 & 4 & 10 & 6 & 1 \\
-User Experience and Ease of Use & 2 & 4 & 0 & 6 & 3 \\
-Git branch style & 10 & 2 & 2 & 3 & 2 \\ \bottomrule
+\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{Funcionalidade}}} &
+\multicolumn{5}{c|}{\textbf{Classificação}} \\ \cmidrule(l){2-6}
+\multicolumn{1}{|c|}{} &
+\multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Nada \\
+            Importante\end{tabular}}} &
+\multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Pouco\\
+            Importante\end{tabular}}} & \multicolumn{1}{c|}{\textbf{Importante}}
+& \multicolumn{1}{c|}{\textbf{\begin{tabular}[c]{@{}c@{}}Levemente\\
+            Importante\end{tabular}}} &
+\textbf{\begin{tabular}[c]{@{}c@{}}Muito\\ Importante\end{tabular}} \\ \midrule
+Integração com a documentação de software & 11 & 12 & 15 & 12 & 14 \\
+Integração com plano de teste & 11 & 13 & 13 & 13 & 9 \\
+Fluxo de trabalho customizável & 9 & 14 & 21 & 14 & 15 \\
+Suporte à Unicode & 9 & 9 & 21 & 16 & 24 \\
+Campos customizáveis & 5 & 17 & 25 & 22 & 8 \\
+Suporte ao Acordo de Nível de Serviço (SLA) & 14 & 22 & 15 & 13 & 10 \\
+Extensões (plugins) / APIs para integração com outros produtos & 8 & 14 & 21 & 19 & 16 \\
+Suporte à múltiplos projetos & 3 & 8 & 17 & 21 & 28 \\
+Busca textual & 1 & 5 & 17 & 15 & 40 \\
+Busca por arquivos & 4 & 15 & 18 & 17 & 24 \\
+Integração com Sistemas de Controle de Versão & 7 & 16 & 16 & 13 & 21 \\
+Múltiplas interfaces de notificações (E-mail, RSS, XMPP, etc) & 7 & 11 & 23 & 16 & 19 \\
+Suporte à Revisão de Código & 2 & 2 & 0 & 0 & 5 \\
+Facilidade de Uso & 0 & 2 & 2 & 0 & 1 \\
+Integração com bancos de dados & 4 & 6 & 4 & 1 & 2 \\ \bottomrule
 \end{tabular}%
 }
-\caption{My caption}
+\caption{Avaliação da importância das funcionalidades pelos profissionais}
 \label{tab:avaliacao_funcionalidades}
 \end{table}
 
@@ -638,7 +646,7 @@ melhorar as atividades do desenvolvedor.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_funcionalidades_faltantes.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_funcionalidades_faltantes.pdf}
 	\caption{Funcionalidades que o participantes sentem falta.}
 \label{fig:grafico_melhorias_fgrm_funcionalidades_falantes}
 \end{figure}
@@ -652,7 +660,7 @@ Análise de Impacto foram as mais frequentes.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_melhorias.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_melhorias.pdf}
 	\caption{Novas funcionalidades para as FGRMs.}
 \label{fig:ggrafico_melhorias_fgrm_melhorias}
 \end{figure}
@@ -670,7 +678,7 @@ Programação e Refatoração.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_praticas_ageis_adotadas.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_praticas_ageis_adotadas.pdf}
 	\caption{Metodologias propostas pelos agilistas que são adotadas pelos
 		participantes.}
 \label{fig:grafico_melhorias_fgrm_praticas_ageis_adotadas}
@@ -687,7 +695,7 @@ foram as respostas mais frequentes.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_suporte_particas_ageis.pdf}
+	\includegraphics[width=0.6\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_suporte_particas_ageis.pdf}
 	\caption{Classificação das funcionalidades que possam dar suporte ao uso das
 	metodologias dos agilistas.}
 \label{fig:grafico_melhorias_fgrm_suporte_particas_ageis}
@@ -756,7 +764,7 @@ Ainda avaliando o processo de seleção das amostras utilizadas, não temos
 garantias que as regras para seleção de participantes resultaram no conjunto
 mais representativo da população. Vale ressaltar que todas as opiniões coletadas
 devem levar em conta a ferramenta que o profissional utilizava quando da
-aplicação do questionário.  Caso este mesmo estudo fosse realizado com outras
+aplicação do questionário. Caso este mesmo estudo fosse realizado com outras
 versões do mesmo sistema os resultados poderiam ser diferentes. Neste sentido, a
 generalização dos resultados passa por esta característica do estudo.
 
