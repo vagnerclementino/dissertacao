@@ -227,7 +227,8 @@ caso descreva um problema que afeta um grande número de usuários ou represente
 uma falha de segurança do software. Além disso, deve ser redigida de forma clara
 e fornecer as informações necessárias para sua solução.
 
-\paragraph{Exemplo de Utilização:} \label{par:exemplo_de_utilização_s03}
+\paragraph{Exemplo de Utilização:}
+\label{par:exemplo_de_utilização_s03}
 
 Conforme descrito anteriormente, um \textit{Agente de Triagem} poderia ordenar a
 lista de RMs do qual é responsável pelo grau de reputação do
@@ -302,7 +303,7 @@ e implantar (deploy) imediatamente após um desenvolvedor consolidar (commit) o
 código fonte para o repositório~\cite{aiello2010configuration}. Neste sentido,
 as FGRMs poderiam vincular a solução de uma RM com a execução de processo de
 IC\@. Uma discussão sobre o ciclo de vida das RMs pode ser encontrada na
-Seção~\ref{sub:sub:fluxo_de_trabalho_requisicao_mudanca}. Desta forma, seria
+Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}. Desta forma, seria
 possível mapear uma versão do sistema com o conjunto de RMs solucionadas até a
 sua geração. Este tipo de integração foi descrita como uma funcionalidade
 ausente nas FGRMs por alguns participantes do levantamento por questionário
@@ -537,7 +538,7 @@ utilizada no desenvolvimento e proprietário do repositório, dentre outros. Nes
 estudo utilizamos critérios de seleção baseados em boas práticas recomendadas na
 literatura~\cite{Bird2009}. O fato de utilizarmos apenas o Github como a única
 fonte para seleção de participantes implica em certas ameças à validade do
-estudo que serão discutidas na Seção~\ref{sec:sug_melhoria_ameaca}. Os critérios
+estudo que serão discutidas na Seção~\ref{sec:sug_melhoria_ameacas}. Os critérios
 de seleção dos projetos inclui os seguintes requisitos:
 
 \begin{itemize}
@@ -588,8 +589,7 @@ apresentadas. No segundo grupo estamos interessados na formação de base
 (background) dos profissionais. Optamos por definir algumas das questões como
 não obrigatórias por entendermos que a impossibilidade ou falta de interesse em
 responder determinada pergunta impeça o participante de enviar os dados de
-outras que foram respondidas. O formulário utilizado para coletar os dados dos
-participantes pode ser visto no Anexo~\ref{ch:app-form-sug-melhorias}.
+outras que foram respondidas.
 
 \subsection{Processo de Aplicação}
 \label{ssub:processo_de_aplicação}
@@ -602,30 +602,30 @@ personalizadas de modo a identificar o nome do usuário e o projeto do Github co
 base no template exibido a seguir. O pedido de participação foi enviado para uma
 amostra de 121 contribuidores.
 
-\fbox{\begin{minipage}{\textwidth}
-Dear \{\{real\_name \}\}!
+% \fbox{\begin{minipage}{\textwidth}
+% Dear \{\{real\_name \}\}!
 
-I’m conducting a research supervised by Rodolfo Resende \@-\@
-homepages.dcc.ufmg.br/~rodolfo and we want to evaluate a collection of
-recommendations to new features in Issue Tracking System. As part of them, we
-planned and executed a survey aiming at to reach a large-scale population of
-practitioners interested in to improve the features of that type of tool. Based
-on your area of interest, we kindly invite you to take part in the following
-survey:
+% I’m conducting a research supervised by Rodolfo Resende \@-\@
+% homepages.dcc.ufmg.br/~rodolfo and we want to evaluate a collection of
+% recommendations to new features in Issue Tracking System. As part of them, we
+% planned and executed a survey aiming at to reach a large-scale population of
+% practitioners interested in to improve the features of that type of tool. Based
+% on your area of interest, we kindly invite you to take part in the following
+% survey:
 
-\{\{url\_formulario\}\}
+% \{\{url\_formulario\}\}
 
-You were chosen because your contribution in the project \{\{nome\_grupo\}\}
-\@-\@ \{\{url\_grupo\}\} hosted on the Github platform. Your opinion is
-essential to strength our findings. Please, help us answering this survey until
-May 05th. It takes 05 minutes. As soon as we conclude the data analysis, we will
-share the results with all participants and the software engineering community.
-If you have already fulfilled this questionnaire, please ignore this email.
+% You were chosen because your contribution in the project \{\{nome\_grupo\}\}
+% \@-\@ \{\{url\_grupo\}\} hosted on the Github platform. Your opinion is
+% essential to strength our findings. Please, help us answering this survey until
+% May 05th. It takes 05 minutes. As soon as we conclude the data analysis, we will
+% share the results with all participants and the software engineering community.
+% If you have already fulfilled this questionnaire, please ignore this email.
 
-Thanks in advance,
-Vagner Clementino.
+% Thanks in advance,
+% Vagner Clementino.
 
-\end{minipage}}
+% \end{minipage}}
 
 O processo de envio consistia ainda de uma segunda mensagem de ``lembrete'' após
 dois dias. Esta estratégia foi adotada com base em estudos que discutem
@@ -694,16 +694,16 @@ de analisar as sugestões de melhorias de modo a contribuir com este estudo.
 \label{sub:sug_melhorias_resultados_relevancia}
 
 As sugestões de melhorias foram apresentadas aos participantes mediante uma
-escala Likert. Os resultados podem ser visualizados na
+escala de Likert. Os resultados podem ser visualizados na
 Figura~\ref{fig:plot_likert_avaliacao_sug_melhorias}. Em uma primeira análise
 verificamos que a maioria das recomendações tiveram uma avaliação positiva dos
 participantes (Concordo ou Concordo Fortemente). A exceção foi para a
-Recomendação \#3 que trata da possibilidade de ordenar as RMs a serem analisadas
-pela reputação do Reportador. Por outro lado, as Recomendações \#6 e \#8 tiveram
-uma boa aceitação dos participantes. A primeira sugestão trata da utilização de
-uma linguagem, como o Markdown, para relatar uma RM\@. No caso da segunda
-recomendação foi proposto o suporte a tarefas compartilhadas, de modo que uma RM
-tenha mais de um ``dono''.
+Recomendação \#3 que trata da possibilidade de ordenar as RMs a serem
+analisadas pela reputação do Reportador. Por outro lado, as Recomendações \#6 e
+\#8 tiveram uma boa aceitação dos participantes. A primeira sugestão trata da
+utilização de uma linguagem, como o Markdown, para relatar uma RM\@. No caso da
+segunda recomendação foi proposto o suporte a tarefas compartilhadas, de modo
+que uma RM tenha mais de um ``dono''.
 
 \begin{figure}[htpb]
     \centering
@@ -714,11 +714,11 @@ tenha mais de um ``dono''.
 
 Para avaliar quais recomendações tiveram maior aceitação definimos um
 ranqueamento. O ordenamento consistiu em aplicar pesos para cada item da escala
-Likert conforme a Tabela~\ref{tab:pesos_rank_sug_melhorias}. O valor é obtido
-multiplicando a frequência de determinado item da escala pelo seu respectivo
-peso. A Tabela~\ref{fig:plot_likert_avaliacao_sug_melhorias} exibe as
-recomendações ordenadas pelo nível de aceitação dos participantes. É possível
-visualizar o número de respostas que cada item recebeu.
+de Likert conforme a Tabela~\ref{tab:pesos_rank_sug_melhorias}. O valor é
+obtido multiplicando a frequência de determinado item da escala pelo seu
+respectivo peso. A Tabela~\ref{fig:plot_likert_avaliacao_sug_melhorias} exibe
+as recomendações ordenadas pelo nível de aceitação dos participantes. É
+possível visualizar o número de respostas que cada item recebeu.
 
 \begin{table}[htpb]
 \centering
@@ -776,7 +776,7 @@ proposto.
 
 Neste etapa do estudo estávamos interessados em avaliar o nível de dificuldade
 para implementar as sugestões propostas. A informação foi obtida através de uma
-escala Likert cujos resultados estão apresentados na
+escala de Likert cujos resultados estão apresentados na
 Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}.
 
 \begin{figure}[htpb]
@@ -874,7 +874,7 @@ ferramentas.
 
 O suporte à tarefa compartilhadas (sugestão \#8) também foi muito bem avaliada.
 Esta recomendação surgiu das tentativas de implantação das propostas dos
-agilistas~\ref{svensson2005introducing}. A recomendação defende que uma
+agilistas~\cite{svensson2005introducing}. A recomendação defende que uma
 determinada RM não tenha um ``dono'', mas que a responsabilidade seja dividida
 entre dois ou mais membros da equipe. Esta divisão de tarefas pode resultar na
 melhor distribuição do conhecimento entre a equipe. A prevalência deste tipo de
