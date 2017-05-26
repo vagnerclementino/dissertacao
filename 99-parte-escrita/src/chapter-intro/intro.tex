@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Objetivo: Introduzir os conceitos envolvidos na dissertação bem como do
-%trabalho realizado.  A ideia é que qualquer pessoa que leia a introdução
+%trabalho realizado. A ideia é que qualquer pessoa que leia a introdução
 %consiga ter uma visão geral sobre a dissertação.
 %Autor: Vagner Clementino<vagnercs@dcc.ufmg.br> e
 %		Rodolfo Resende<rodolfo@dcc.ufmg.br>
@@ -12,35 +12,35 @@
 \label{ch:intro}
 
 Dentro do ciclo de vida de um produto de software o processo de manutenção tem
-papel fundamental. Devido ao seu alto custo, que segundo alguns estudos varia de
-60\% a 90\% do preço final do software~\cite{kaur2015review}, as atividades
-relacionadas a manter e evoluir têm sua importância considerada tanto pela
-comunidade científica quanto pela indústria. Desde o final da década de
-1970~\cite{Zelkowitz:1979:PSE:578504} uma atenção tem sido dada para os custos
-da Manutenção de Software. Nas décadas de 1980 e 1990 alguns estudos propuseram
-modelos de mensuração do valor necessário para manter o
+papel fundamental. Devido ao seu alto custo, que segundo alguns estudos varia
+entre 60\% a 90\% do preço final do software~\cite{kaur2015review}, as
+atividades relacionadas com manter e evoluir têm sua importância considerada
+tanto pela comunidade científica quanto pela indústria. Desde o final da década
+de 1970~\cite{Zelkowitz:1979:PSE:578504} uma atenção tem sido dada para os
+custos da Manutenção de Software. Nas décadas de 1980 e 1990 alguns estudos
+propuseram modelos de mensuração do valor necessário para manter o
 software~\cite{Herrin:1985:SMC:323287.323383,hirota1994approach}. Apesar da
 evolução das metologias para se manter um software a estimativa é que nas
 últimas duas décadas o custo de manutenção tenha aumentado em
 50\%~\cite{koskinen2010software}. Esta tendência pode ser observada na
 Figura~\ref{fig:software-maintence-costs} onde é possível verificar a evolução
-dos gastos com manutenção de software como fração do preço final do produto.
+dos gastos com Manutenção de Software como fração do preço final do produto.
 
 \begin{figure}[htpb]
 \centering
 \includegraphics[width=0.6\linewidth]
 				{./chapter-intro/img/software-maintence-costs.png}
-\caption{Evolução da manutenção de software como percentual do custo total.
-	Extraído de~\cite{engelbertink2010save}}
+\caption{Evolução dos gastos com Manutenção de Software como razão do custo
+    total do projeto. Extraído de~\cite{engelbertink2010save}}
 \label{fig:software-maintence-costs}
 \end{figure}
 
 Uma vez que o software entra em operação, anomalias são descobertas, mudanças
-ocorrem no ambiente de operação e novos requisitos são solicitados pelo usuário.
-Todas estas demandas devem ser solucionadas pela Manutenção de Software que se
-inicia com entrega do sistema. Contudo, alguns autores defendem que certas
-atividades, como aquelas relativas à analise da qualidade, começam bem antes da
-entrega do produto.
+ocorrem no ambiente de execução e novos requisitos são solicitados pelo usuário.
+Todas estas demandas devem ser solucionadas pelo processo de Manutenção de
+Software que se inicia com entrega do sistema. Contudo, alguns autores defendem
+que certas atividades, como aquelas relativas à analise da qualidade, começam
+bem antes da entrega do produto.
 
 A \textit{Manutenção}, dentre outros aspectos, corresponde ao processo de
 modificar um componente ou sistema de software após a sua entrega com o objetivo
@@ -70,17 +70,17 @@ compartilhadas pelos demais tipos.
 \label{fig:modification-request} \end{figure}
 
 Por conta do volume das RM é importante a utilização de um software com o
-objetivo de gerenciá-las. Esse controle é geralmente realizado por
-\textit{Ferramentas de Gerenciamento de Requisição de Mudança -~FGRM}, que
-auxiliam os desenvolvedores na correção de forma individual ou colaborativa de
-falhas (bugs) e no desenvolvimento de novas funcionalidades, por exemplo. Estas
-ferramentas podem ainda ser utilizadas por gestores, analistas de qualidade e
-usuários finais para atividades como gerenciamento de projetos, comunicação,
-discussão e revisões de código. A literatura em Manutenção de Software não
-define uma nomenclatura comum para este tipo de ferramenta. Em alguns estudos é
-utilizado nomes como Sistema de Controle de Defeito -~Bug Tracking Systems,
-Sistema de Gerenciamento da Requisição -~Request Management System, Sistemas de
-Controle de Demandas (SCD)- Issue Tracking Systems. Todavia, de modo geral, o
+objetivo de gerenciá-las. Esse controle é realizado por \textit{Ferramentas de
+    Gerenciamento de Requisição de Mudança -~FGRM}, que auxiliam os
+desenvolvedores na correção, de forma individual ou colaborativa, de falhas
+(bugs) ou na implantação de melhorias. Estas ferramentas podem ainda ser
+utilizadas por gestores, analistas de qualidade e usuários finais para
+atividades como gerenciamento de projetos, comunicação, discussão e revisões de
+código. A literatura em Manutenção de Software não define uma nomenclatura comum
+para este tipo de ferramenta. Em alguns estudos são utilizados nomes como
+Sistema de Controle de Defeito -~Bug Tracking Systems, Sistema de Gerenciamento
+da Requisição~-~Request Management System, sendo o mais comum o termo Sistemas
+de Controle de Demandas (SCD)- Issue Tracking Systems. Todavia, de modo geral, o
 termo se refere as ferramentas utilizadas pelas organizações para \textit{gerir
     as Requisições de Mudança}. Neste trabalho utilizaremos o termo
 \texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) ao
@@ -94,16 +94,16 @@ de Software como Serviço~\cite{fox2013engineering}.
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}clll@{}}
 \toprule
-\multicolumn{2}{c|}{Ferramentas}                   & \multicolumn{2}{c}{Serviços da Internet} \\ \midrule
+\multicolumn{2}{c}{Ferramentas}                   & \multicolumn{2}{c}{Serviços da Internet} \\ \midrule
 Bugzilla & https://www.bugzilla.org/               & SourceForge  & https://sourceforge.net/  \\ \midrule
 MantisBT & https://www.mantisbt.org/               & Lauchpad     & https://launchpad.net/    \\ \midrule
 Trac     & https://trac.edgewall.org/              & Code Plex    & https://www.codeplex.com/ \\ \midrule
-Redmine  & www.redmine.org/                        & Google Code  & https://code.google.com/  \\
+Redmine  & www.redmine.org/                        & Google Code  & https://code.google.com/  \\ \midrule
 Jira     & https://www.atlassian.com/software/jira & GitHub       & https://github.com/       \\ \bottomrule
 \end{tabular}%
 }
-\caption{Exemplos de ferramentas e serviços da Internet. Extraído
-		de~\cite{cavalcanti2014challenges}}
+\caption{Exemplos de ferramentas e serviços da Internet que podem ser
+    classificados como FGRMs. Extraído de~\cite{cavalcanti2014challenges}}
 \label{tab:exemplo}
 \end{table}
 
@@ -111,63 +111,61 @@ Jira     & https://www.atlassian.com/software/jira & GitHub       & https://gith
 \label{sec:intro-motivacao}
 
 Diante da maior presença de software em todos os setores da sociedade existe um
-interesse por parte da academia e da industria no desenvolvimento de processos,
-técnicas e \textit{ferramentas} que reduzam o esforço e o custo do
-desenvolvimento e manutenção de software. Um exemplo é o trabalho de Yong \&
-Mookerjee~\cite{1423995} que propõe um modelo que reduz os custos de manutenção
-e reposição durante a vida útil de um sistema de software. O modelo demonstrou
-que em algumas situações é \textit{melhor substituir um sistema do que
-    mantê-lo}.  Este pro\-ble\-ma é agravado tendo em vista que em alguns casos
-são necessários 60\% dos desenvolvedores dedicados à tarefas de manutenção de
+interesse por parte da comunidade científica e da industria no desenvolvimento
+de processos, técnicas e \textit{ferramentas} que reduzam o esforço e o custo do
+desenvolvimento e da manutenção de software. Nesta linha, o trabalho de Yong \&
+Mookerjee~\cite{1423995} propõe um modelo que reduz os custos de manutenção e
+reposição durante a vida útil de um sistema de software. O resultado é que em
+algumas situações é \textit{melhor substituir um sistema do que mantê-lo}. Este
+pro\-ble\-ma é agravado pelo fato que, em alguns casos, são necessários 60\% dos
+desenvolvedores dedicados às tarefas de manutenção de
 sistemas~\cite{Zhang_2003}.
 
 Dependendo do tamanho de um projeto de software é necessário a utilização de uma
-FGRM para gerenciar as Requisições~de~Mudança por conta do volume e das
-diferentes partes interessadas que necessitam de um local centralizado onde
-possa registrar as falhas encontradas e as melhorias que
-necessitam~\cite{1407819}. Neste sentido, podemos afirmar que as RMs suportam
-projetos de diferentes tipos e tamanhos, sejam eles de código aberto (Apache,
-Linux, Open Office) ou em organizações públicas e privadas (NASA e IBM). Dando
-suporte à software de diferentes plataformas, seja aplicativos de área de
-trabalho (desktop), web ou móvel (mobile).
+FGRM para gerenciar as Requisições~de~Mudança. Além disso, as diferentes partes
+interessadas necessitam de um espaço centralizado onde possam registrar as
+falhas encontradas e as melhorias que necessitam~\cite{1407819}. Neste sentido,
+podemos afirmar que as FGRMs fazem parte de projetos de diferentes tipos e
+tamanhos, em empresas públicas e privadas (NASA e IBM) e diversos projeto de
+código aberto (Mozilla, Ecplise, Apache). Elas dão suporte à software de
+diferentes plataformas, seja aplicativos de área de trabalho (desktop), web ou
+móvel (mobile).
 
-A literatura da área nos mostra que as FGRMs desempenham um papel além do
-gerenciamento dos pedidos de manutenção software. Avaliando o controle de
+A literatura sobre FGRMs discute que a ferramenta desempenha um papel além do
+gerenciamento dos pedidos de manutenção em software. Avaliando o controle de
 demandas como um processo social, Bertram e
 outros~\cite{Bertram:2010:CCB:1718918.1718972} realizaram um estudo qualitativo
-sobre FGRMs que são utilizadas por equipes pequenas de desenvolvimento de
-software. Os resultados demonstraram que a ferramenta não é apenas um banco de
-dados de rastreamento de falhas, mas atua como um ponto central para a
-comunicação e coordenação de diversas partes interessadas (stakeholders) dentro
-e fora da equipe de manutenção. Os clientes, gerentes de projeto, analistas de
-qualidade e programadores contribuem em conjunto para o compartilhamento de
-conhecimento do projeto por meio da utilização das FGRMs.
+sobre FGRMs que eram utilizadas por equipes de pequeno porte. Os resultados
+demonstraram que a FGRM utilizada não era apenas um banco de dados de
+rastreamento de falhas, mas atuava como um ponto central para a comunicação e
+coordenação de diversas partes interessadas (stakeholders) dentro e fora da
+equipe de manutenção. Os clientes, gerentes de projeto, analistas de qualidade e
+programadores contribuíam em conjunto para o compartilhamento de conhecimento do
+projeto através da ferramenta.
 
 No trabalho de Breu e outros~\cite{Breu:2010:INB:1718918.1718973} o foco é
-analisar o papel dos FGRMs no suporte à colaboração entre desenvolvedores e
+analisar o papel das FGRMs no suporte à colaboração entre desenvolvedores e
 usuários de um software. Com base nos resultados foi possível verificar que o
 uso da ferramenta possibilitou que os usuários desempenhassem um papel além de
 simplesmente reportar uma falha: a participação ativa e permanente foi
-importante no progresso da resolução das falhas que eles descreveram.
-
-Um outro benefício da utilização das FGRM é que as mudanças no
-software podem ser rapidamente identificadas e reportadas para os
-desenvolvedores~\cite{anvik2005coping}. Além disso, eles podem ajudar a estimar
-o custo do software, na análise de impacto, planejamento, rastreabilidade,
-descoberta do conhecimento~\cite{cavalcanti2013bug}.
+importante no progresso da resolução das falhas que eles descreveram. Um outro
+benefício das FGRM é que as mudanças no software podem ser rapidamente
+identificadas e reportadas para os desenvolvedores~\cite{anvik2005coping}. Além
+disso, eles podem ajudar a estimar o custo do software, na análise de impacto,
+planejamento, rastreabilidade, descoberta do
+conhecimento~\cite{cavalcanti2013bug}.
 
 Conforme exposto as FGRMs desempenham um papel fundamental no contexto do
-desenvolvimento e manutenção de software. Contudo, no escopo de utilização das
-FGRMs diversos desafios se apresentam: duplicação de RMs, pedidos de modificação
-abertos inadvertidamente, grande volume de RMs que devem ser atribuídas aos
-desenvolvedores mais aptos, erros descrito de forma incompleta, análise de
-impacto das RMs e atribuídas de maneira
-incorreta~\cite{cavalcanti2014challenges}. Diante destes problemas e desafios é
-importante entender como estas ferramentas estão sendo utilizadas. Com base
-neste conhecimento, e com  o que está sendo proposto na literatura, é possível
-avaliar e entender necessidades dos profissionais envolvidos com Manutenção de
-Software com o objetivo de melhorar as funcionalidades oferecidas por este tipo
-de software.
+desenvolvimento e da manutenção de software. Contudo, no escopo de utilização
+das FGRMs diversos desafios se apresentam: duplicação de RMs, pedidos de
+modificação abertos inadvertidamente, grande volume de RMs que devem ser
+atribuídas aos desenvolvedores, RMs descritas de forma incompleta,
+análise de impacto das RMs, dentre outros~\cite{cavalcanti2014challenges}.
+Diante destes problemas e desafios é importante entender como estas ferramentas
+estão sendo utilizadas. Com base neste conhecimento, em conjunto com o que está
+sendo proposto na literatura, seria possível avaliar e entender necessidades dos
+profissionais envolvidos com Manutenção de Software com o objetivo de melhorar
+as funcionalidades oferecidas por este tipo de software.
 
 %No trabalho de Junio et al.~\cite{5741246} é proposto um processo denominado
 %PASM (Process for Arranging Software Maintenance Requests) que propõe lidar com
@@ -240,9 +238,9 @@ aspecto são as diversas RMs que devem ser gerenciadas. Este controle é realiza
 pelas FGRMs cujo o uso vem crescendo em importância, sobretudo, por sua
 utilização por gestores, analistas da qualidade e usuários finais para
 atividades como tomada de decisão e comunicação. Contudo, em alguns casos, as
-ferramentas são meramente interfaces melhores para o banco de dados que
-armazena as RMs~\cite{zimmermann2009improving}. Apesar da inegável importância
-das FGRMs, percebe-se um aparente desacoplamento deste tipo de ferramenta com as
+ferramentas são meramente melhores interfaces para o banco de dados que armazena
+as RMs~\cite{zimmermann2009improving}. Apesar da inegável importância das FGRMs,
+percebe-se um aparente desacoplamento deste tipo de ferramenta com as
 necessidades das diversas partes interessadas (stakeholders) na manutenção e
 evolução de software. A utilização de \textit{``demanda''} como conceito central
 para as FGRMs parece ser distante das necessidades práticas dos projetos de
@@ -253,10 +251,10 @@ Um exemplo deste desacoplamento pode ser visto no trabalho proposto por Baysal
 \& Holme~\cite{baysal2012qualitative} no qual desenvolvedores que utilizam o
 Bugzilla\footnote{\url{https://www.bugzilla.org}} relataram dificuldade em
 manter uma compreensão do escopo que as RMs atribuídas a eles possuem. Segundo
-os participantes do estudo seria importante que a ferramenta tivesse um suporte
-melhorado para o conceito de Consciência Situacional~-~Situational Awareness. Em
-síntese, eles gostariam de estar cientes da situação global do projeto bem como
-das atividades que outras pessoas estão realizando.
+os participantes seria importante que a ferramenta tivesse um suporte melhorado
+para o conceito de Consciência Situacional~-~Situational Awareness. Em síntese,
+eles gostariam de estar cientes da situação global do projeto bem como das
+atividades que outras pessoas estão realizando.
 
 Existem outros prolemas que são potencializados pela ausência de certas
 funcionalidades nas FGRMs. Um exemplo são as RMs que acabam sendo relatadas com
@@ -269,7 +267,7 @@ Corroborando com a necessidade de evolução das FGRMs, o estudo realizado por
 Zimmermann e outros~\cite{zimmermann2009improving} propõem quatro dimensões de
 melhorias para este tipo de software. Estas dimensões estão apresentadas na
 Figura~\ref{fig:dimensoes_melhorias_fgrm} e serão detalhadas no
-Capítulo~\ref{ch:mapeamento-sistematico} onde foram utilizadas na classificação
+Capítulo~\ref{ch:mapeamento-sistematico}, onde foram utilizadas na classificação
 de estudos no Mapeamento Sistemático realizado.
 
 % \begin{enumerate} [(i)]
@@ -290,12 +288,10 @@ Neste estudo estamos especialmente interessados em analisar e propor melhorias
 relativas ao domínio da \textit{Ferramenta}. Ao bem do nosso conhecimento é
 reduzido o número de trabalhos que avaliem de forma sistemática as
 funcionalidades oferecidas pelas FGRMs ao mesmo tempo que faça relação com que
-vem sendo proposto na li\-te\-ra\-tu\-ra sobre o assunto.
-
-É importante ressaltar que os estudos sobre melhorias das FGRMs a crescente
-adoção de técnicas propostas pelos agilistas na Manutenção de
-Software~\cite{Soltan2016,Devulapally2015, Heeager2015}. Neste contexto, seria
-importante que ferramentas que dão suporte à manutenção, tal como as FGRMs,
+vem sendo proposto na li\-te\-ra\-tu\-ra sobre o assunto. Adicionalmente, os
+estudos sobre melhorias das FGRMs não discutem a adoção das técnicas propostas
+pelos agilistas na Manutenção de Software~\cite{Soltan2016,Devulapally2015,
+    Heeager2015}. Neste contexto, seria importante que ferramentas que as FGRMs
 evoluíssem para se adaptar a esta nova forma de trabalhar. Um outro fator que
 agrega sobre a necessidade de adequação das FGRMs são as diversas extensões
 (plugins) propostas na literatura
@@ -322,7 +318,7 @@ Requisição de Mudança (FGRM) com os seguintes objetivos:
 	\item mapear as melhorias para as FGRM que estão sendo propostas na
 		literatura;
 	\item avaliar sobre o ponto de vista dos profissionais a
-		situação atual dos FGRM\@;
+		situação atual das FGRM\@;
 	\item propor melhorias ou novas funcionalidades para as FGRM\@.
 \end{enumerate}
 
@@ -339,27 +335,27 @@ Requisição de Mudança (FGRM) com os seguintes objetivos:
 A fim de alcançarmos os objetivos descritos foi proposto um conjunto de
 melhorias para as funcionalidades das FGRMs. As melhorias foram realizadas com
 base em três estudos empíricos: um mapeamento sistemático da literatura,
-apresentado no Capítulo~\ref{ch:mapeamento-sistematico}; e uma pesquisa com
-profissionais, apresentada no Capítulo~\ref{ch:pesquisa-profissionais}; um
-levantamento com questionário validando sugestões de melhorias descrito no
+apresentado no Capítulo~\ref{ch:mapeamento-sistematico}; uma pesquisa com
+profissionais, descrita no Capítulo~\ref{ch:pesquisa-profissionais}; um
+levantamento com questionário validando sugestões de melhorias discutido no
 Capítulo~\ref{ch:sug_melhoria}.
 
-Mediante o mapeamento sistemático obtivemos e avaliamos o estado da arte sobre
-novas funcionalidades que estão propostas na literatura. A partir do estudo foi
-possível propor dois esquemas de classificação: por dimensão de melhoria e
-suporte ao papel desempenhado na manutenção de software. De maneira similar,
-através da caracterização das funcionalidade de algumas FGRMs código aberto ou
-disponíveis comercialmente e escolhidas mediante uma pesquisa com profissionais
-identificamos o estado da prática deste tipo de ferramenta.
+Mediante o mapeamento sistemático obtivemos e avaliamos uma parte das melhorias
+para as funcionalidades das FGRMs que estavam sendo propostas na literatura
+quando esta dissertação estava sendo redigida. A partir do estudo foi possível
+propor dois esquemas de classificação: por dimensão de melhoria e suporte ao
+papel desempenhado na manutenção de software. De maneira similar, através da
+caracterização das funcionalidade de algumas FGRMs código aberto ou disponíveis
+comercialmente, identificamos o estado da prática deste tipo de ferramenta.
 
 Com base em dois estudos anteriores conduzimos uma pesquisa com profissionais
 envolvidos em manutenção de software onde pedimos que avaliassem os requisitos
-funcionais e não funcionais que poderiam melhorar as FGRM já existentes. O
-questionário também quis saber a opinião dos profissionais sobre a relevância
-das propostas de me\-lho\-ri\-as existente na literatura em sua rotina de
-trabalho. Fundamentado nos estudos descritos foi proposto um conjunto de
-melhorias.  Como prova de conceito, uma destas melhorias foi implementada como
-uma extensão de uma FGRM\@.
+funcionais e não funcionais que poderiam melhorar as FGRMs. O questionário
+também quis saber a opinião dos profissionais sobre a relevância das propostas
+de me\-lho\-ri\-as existente na literatura em sua rotina de trabalho.
+Fundamentado nos estudos descritos foi proposto um conjunto de melhorias. Como
+prova de conceito, uma destas melhorias foi implementada como extensão de uma
+FGRM\@.
 
 \section{Metodologia de Pesquisa}
 \label{sec:intro-metodologia}
@@ -388,29 +384,33 @@ seguir:
 		Mudança (FGRM)
 	\item Pesquisa (Survey) com os
 		desenvolvedores~\cite{wohlin2012experimentation}
-%	\item Desenvolvimento de extensões para as FGRMs
+	\item Proposição e avaliação de um conjunto de melhorias para as FGRMs
+    \item Implementação, como Prova de Conceito, de extensão para uma FGRM
 \end{itemize}
 
 \section{Contribuições do Estudo}
 \label{sec:intro-contribuicao}
 
-Este estudo sistematiza a literatura sobre melhorias das funcionalidades das
-FGRMs ao mesmo tempo que avalia junto aos profissionais as relevâncias de tais
-alterações. Este estudo ainda se propõe este tipo de software por meio de uma
-caracterização de suas funcionalidades. Ao final deste trabalho teremos um
-conjunto de funcionalidades que podem ser implementadas neste tipo de software
-visando a sua melhoria.
+Este estudo sistematizou uma parte da literatura sobre melhorias das
+funcionalidades das FGRMs ao mesmo tempo que avalia junto aos profissionais as
+relevâncias de tais alterações. Além disso, foi proposto um conjunto de
+melhorias que podem contribuir com a melhoria das funcionalidades
+disponibilizadas por este tipo de software. Entendemos que uma FGRM que atenda
+as necessidades dos desenvolvedores possa contribuir com a melhoria das
+atividades relacionadas com manutenção de software e por consequência do custo
+envolvido.
 
 \section{Organização do Trabalho}
 \label{sec:intro-organizacao-dissertacao}
 
 Este trabalho de dissertação está organizado conforme descrito a seguir. No
 Capítulo~\ref{ch:visao-geral-manutencao} apresentamos e discutimos os principais
-conceitos neste estudo. Neste mesmo capítulo é descrito um estudo onde coletamos
-as principais funcionalidades de um conjunto de FGRMs que foram definidas como
-relevantes na visão de profissionais envolvidos em Manutenção de Software.
+conceitos utilizados nesta dissertação. Neste mesmo capítulo é descrito um
+estudo onde coletamos as principais funcionalidades de um conjunto de FGRMs que
+foram definidas como relevantes na visão de profissionais envolvidos em
+Manutenção de Software.
 
-Um Mapeamento Sistemático da Literatura foi conduzido no
+Um Mapeamento Sistemático foi conduzido no
 Capítulo~\ref{ch:mapeamento-sistematico} com o objetivo de levantar as melhorias
 nas funcionalidades das FGRMs que estão sendo propostas na literatura. Os
 estudos foram classificados em dimensões de melhorias e pelo papel desempenhado
@@ -418,19 +418,18 @@ na Manutenção de Software que a melhoria visa dar suporte.
 
 No Capítulo~\ref{ch:pesquisa-profissionais} reunimos a opinião de profissionais
 envolvidos em Manutenção de Software sobre as funcionalidades oferecidas pelas
-FGRMs que eles utilizam. Estes profissionais exercem suas atividades em projetos
-de código aberto e empresas no setor público e privado. Foi possível identificar
-que grande parte dos profissionais estão satisfeito com a ferramenta que
-utiliza, contudo, eles estão bastante interessados em novos tipos de
-comportamento no software.
+FGRMs. Estes profissionais exercem suas atividades em projetos de código aberto
+e empresas no setor público e privado. Foi possível identificar que grande parte
+dos profissionais estão satisfeito com a ferramenta que utiliza, contudo, eles
+estão interessados em novos tipos de funções para este tipo de software.
 
 Tomando como base a literatura sobre melhorias nas FGRMs e os resultados obtidos
 nos estudos descritos nos capítulos anteriores, apresentamos e discutimos um
 conjunto de sugestões de melhorias no Capítulo~\ref{ch:sug_melhoria}. As
 recomendações propostas foram avaliadas por profissionais que contribuem no
-desenvolvimento de FGRM\@. Em geral, as recomendações tiveram boa aceitação
-tanto sobre sua necessidade quanto por sua facilidade de implementação.  No
-Capítulo~\ref{ch:implemtacao_extensao} foi realizada uma prova de conceito uma
-das sugestões propostas foram implementadas com uma extensão de uma FGRM\@. As
-conclusões e trabalhos futuros estão descritos no
-Capítulo~\ref{ch:conclusao_trab_futuros}.
+desenvolvimento de FGRM\@. Em geral, as recomendações tiveram boa aceitação com
+relação à sua necessidade e facilidade de implementação. No
+Capítulo~\ref{ch:implemtacao_extensao} foi realizada uma Prova de Conceito com uma
+das sugestões propostas no capítulo anterior, de modo que ela foi implementada
+como extensão de uma FGRM\@. As conclusões e trabalhos futuros estão descritos
+no Capítulo~\ref{ch:conclusao_trab_futuros}.
