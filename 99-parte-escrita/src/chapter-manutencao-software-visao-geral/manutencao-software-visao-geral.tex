@@ -5,7 +5,7 @@
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: Ter Set 13 19:22:37 BRT 2016
 %Modificação: sex mai  5 13:17:17 UTC 2017
-%Revisão: qui mai  4 19:27:33 -03 2017
+%Revisão: sáb mai 27 17:13:26 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{As FGRMs no Contexto da Manutenção de Software}
@@ -47,12 +47,12 @@ de Software.
 \subsection{Visão Geral da Manutenção de Software}
 \label{sub:visão_geral_da_manutenção_de_softare}
 
-De uma maneira geral, podemos definir atividade de manter
-software como a totalidade das ações necessárias para fornecer suporte a um
-produto de software. No Padrão IEEE 1219~\cite{ISO-1219-1998} ela é definida
-como a modificação de um produto de software após a sua entrega com o objetivo
-de corrigir falhas, melhorar o desempenho ou outros atributos com a finalidade
-de adaptar o software às modificações ambientais.
+De uma maneira geral, podemos definir atividade de manter software como a
+totalidade das ações necessárias para fornecer suporte a um produto de software.
+No Padrão IEEE 1219~\cite{ISO-1219-1998} ela é definida como a modificação de um
+produto de software após a sua entrega com o objetivo de corrigir falhas,
+melhorar o desempenho ou outros atributos com a finalidade de adaptar o software
+às modificações ambientais.
 
 Posteriormente a IEEE/EIA 12207~-~Padrão para o Processo de Ciclo de Vida do
 Software~\cite{ISOIEC-12207-2008}, retrata a manutenção como um dos principais
@@ -156,9 +156,7 @@ Engenharia de Software~\cite{4425813} destaca algumas delas:
 	\item[Transição:] uma sequência controlada e coordenada de atividades onde o
 		software é transferido progressivamente do desenvolvedor para o
 		mantenedor;
-    \item[Aceitação/rejeição de Requisições de Mudança\footnote{O conceito de
-            Requisição de Mudança é discutido na
-            Seção~\ref{sec:requisicao_de_mudanca}}:] as modificações que
+    \item[Aceitação/rejeição de Requisições de Mudança:] as modificações que
         ultrapassem determinado limiar de tamanho, esforço ou complexidade podem
         ser rejeitadas pelos mantenedores e redirecionadas para outro
         desenvolvedor;
@@ -209,7 +207,7 @@ manutenção através da identificação das tarefas que cada membro deve execut
 O conjunto de papéis é o resultado da aplicação da metodologia
 MANTEMA~\cite{756695} em projetos de software bancários espanhóis em que o setor
 de manutenção foi terceirizada (outsourcing). Os autores reforçam que apesar da
-taxonomia ter sido criada em um contexto específico, ela pode ser utilizada para
+classificação ter sido criada em um contexto específico, ela pode ser utilizada para
 aplicação em outras situações.
 
 Para esta dissertação removemos os papéis que segundo o nosso entendimento estão
@@ -217,7 +215,7 @@ mais vinculados a um contexto de manutenção terceirizada (outsourcing).  Além
 disso, dividimos o papel ``time de manutenção' (maintenance team) em
 \textit{Desenvolvedor e Analista de Qualidade} por entendermos que são papéis
 comuns a muito dos processos de manutenção existentes. Os papéis que compõem a
-taxonomia utilizadas durante o texto da dissertação estão descritos a seguir:
+classificação utilizadas durante o texto da dissertação estão descritos a seguir:
 
 \paragraph{Usuário Afetado:}
 Indivíduo que utiliza o sistema que correspondente à Requisição de Mudanças (RM)
@@ -245,16 +243,17 @@ ele define qual tipo de manutenção deverá ser aplicada. Posteriormente cabe a
 este profissional encaminhar a RM para o Agente de Triagem.
 
 \paragraph{Agente de Triagem (Scheduler)}:
-Deve planejar a fila de RMs e atribuí-las para o desenvolver mais apto. A
-decisão pode considerar a carga de trabalho existente para cada desenvolvedor.
+Deve planejar a fila de RMs e atribuí-las para o desenvolvedor mais apto. A
+decisão pode considerar a carga de trabalho existente para cada possível
+destinatário da RM\@.
 
 \paragraph{Desenvolvedor:}
 Responsável por realizar as ações que irão solucionar a RM\@.
 
 \paragraph{Analista de Qualidade:}
-Tem por responsabilidade avaliar se uma RM solucionada por um Desenvolvedor afim
-de verificar se ela foi resolvida de forma correta e dentro dos padrões de
-qualidade do projeto.
+Tem por responsabilidade avaliar se uma RM solucionada por um Desenvolvedor foi
+resolvida de forma correta e dentro dos padrões de qualidade exigidos pelo
+projeto.
 
 \paragraph{Chefe da Manutenção (Head of	Maintenance):}
 Este papel é responsável por definir os padrões e procedimentos que compõem o
@@ -262,14 +261,15 @@ processo de manutenção que será utilizado.
 
 Apesar da classificação de papéis derivar de um contexto específico (setor
 bancário e empresas com a área de manutenção terceirizada), ela é capaz de
-acoplar com outros tipos modelos de processo como aquele proposto por Ihara e
-outros~\cite{Ihara:2009:AMI:1595808.1595833}. Naquele estudo foi criada uma
-representação de um processo de modificação de falhas (bugs) tomando como base
-as diversas situações que ela possui em uma FGRM no contexto de projetos de
-código aberto. O processo resultante é facilmente acoplável com a classificação
-utilizada em nosso estudo.
+acoplar com tipos modelos de processo de manutenção existente na literatura. Um
+exemplo está no trabalho proposto por Ihara e
+outros~\cite{Ihara:2009:AMI:1595808.1595833} em que foi criada uma representação
+de um processo de modificação de falhas (bugs) tomando como base as diversas
+estágios de uma RM no contexto de projetos de código aberto. O processo
+resultante é facilmente acoplável com a classificação proposta por Polo e outros
+e que utilizada nesta dissertação.
 
-Cabe ressaltar que está fora do escopo deste estudo elaborar uma taxonomia dos
+Cabe ressaltar que está fora do escopo deste estudo elaborar uma classificação dos
 papeis envolvidos na Manutenção de Software em função de supormos que isto
 corresponde a um esforço bem extenso. Nossa ação é identificar se existem papeis
 e quais são eles, sem com isso, envolver em uma consolidação definitiva.
@@ -555,7 +555,7 @@ entendida, por algum membro das partes interessadas, como atendida.
 \paragraph{Rejeitada (Decline).}
 \label{par:rejeitada}
 
-Uma RM pode ser rejeitada caso ela deixar de produzir relevante impacto no
+Uma RM pode ser rejeitada caso ela deixa de produzir relevante impacto no
 sistema, não seja possível tecnicamente realizar o que foi solicitado na RM\@ e
 a equipe de qualidade conclui que as mudanças no software para atender à RM não
 podem ser satisfatoriamente verificadas.
@@ -783,7 +783,7 @@ softwares.
 
 As RMs são controladas por uma FGRM na forma de um fluxo de trabalho de modo a
 identificar, descrever e controlar a situação de cada RM\@. Em geral, os
-objetivos de um projeto adotar uma FGRM para gerenciar suas RMs são os
+objetivos de um projeto em adotar uma FGRM para gerenciar suas RMs são os
 seguintes~\cite{tripathy2014software}:
 
 \begin{itemize}
@@ -821,7 +821,7 @@ As FGRMs vêm sendo utilizadas por diversos projetos com características
 próprias. Neste sentido, este tipo de software deveria oferecer diferentes
 funcionalidades a fim de atender esta demanda. Apesar da variedade de
 ferramentas
-disponíveis~\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}
+disponíveis\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}
 é possível encontrar atributos comuns que permitem a compilação de um modelo
 conceitual.
 
@@ -999,7 +999,7 @@ que o software possui e que o torna diferenciável dentro do seu domínio.
 \label{subsec:caracterizacao_objetivo_do_capitulo}
 
 O objetivo deste estudo é apresentar e discutir as principais funcionalidades
-das FGRMs que dão suporte ao desenvolvimento e manutenção de software. O pronto
+das FGRMs que dão suporte ao desenvolvimento e manutenção de software. O ponto
 de partida é o conjunto de sistemas escolhidos por meio de um levantamento
 (survey). Acreditamos que o resultado permitirá uma melhor compreensão deste
 tipo de software tomando como base o conjunto de funções que eles oferecem aos
@@ -1100,7 +1100,7 @@ Antes da seleção as FGRMs foram categorizados como \textit{''ferramentas''} e
 grupos utilizamos a respectiva documentação do software. A primeira categoria
 representa os softwares que são capazes de serem implantados na infraestrutura
 do seu cliente e permite algum grau de personalização de pelo menos um dos
-componentes, como por exemplo, o banco de dados utilizado. No segunda estão os
+componentes, como por exemplo, o banco de dados utilizado. Na segunda estão os
 software que ofertam a gerência das RMs mediante uma arquitetura do tipo
 Software como Serviço (Software as Service)~\cite{fox2013engineering}, onde
 certos tipos de alterações no comportamento do software são mais restritas.
@@ -1194,10 +1194,10 @@ Os dados obtidos da leitura do material disponíveis para cada ferramenta foram
 sistematizados por meio de técnica denominada \textit{Cartões de
     Classificação~-~Sorting Cards}. Trata-se de uma técnica de elicitação de
 conhecimento de baixo custo e com foco no usuário. Ela é utilizada na área de
-arquitetura da informação para criar modelos mentais e derivar taxonomias a
-partir dos dados utilizados~\cite{just2008towards}. Ela envolve a categorização
-de um conjunto de cartões em grupos distintos de acordo com um critério
-previamente definido~\cite{mcgee2009software}. O estudo de Maiden e
+arquitetura da informação para criar modelos mentais e derivar uma classificação
+a partir dos dados utilizados~\cite{just2008towards}. Ela envolve a
+categorização de um conjunto de cartões em grupos distintos de acordo com um
+critério previamente definido~\cite{mcgee2009software}. O estudo de Maiden e
 outros~\cite{maiden1996acre} sugere que a técnica de Cartões de Classificação é
 uma das mais úteis para aquisição de conhecimento de dados, em contraste ao
 conhecimento de comportamento ou de processo.
@@ -1248,7 +1248,7 @@ depender de uma análise subjetiva do responsável pela atividade. Neste sentido
 a fim de evitar algum tipo de viés o agrupamento foi realizado em duas etapas:
 
 \begin{description}
-	\item[Análise Individual] Neste etapa o autor e um outro especialista
+	\item[Análise Individual] Nesta etapa o autor e um outro especialista
 		realizam de forma separada os agrupamentos.
 	\item[Anaĺise Compartilhada] Em um segundo momento tanto o autor quanto o
 		es\-pe\-ci\-a\-lis\-ta discutem as possíveis divergências até que um
@@ -1340,16 +1340,16 @@ Gitlab Issue Tracking System & Serviço & \@-\@ & https://gitlab.com/ \\
 Após a inspeção da documentação e validação dos dados obtivemos um total de 123
 cartões. Nós sistematizamos os cartões manualmente tendo em vista que não
 existem ferramentas ou métodos capazes de automatizar o processo de construção
-deste tipo de hi\-e\-rar\-qui-\-a. Como o nosso objetivo é derivar tópicos a
-partir de um conjunto inicial de cartões, optamos por realizar um
-\textit{ordenamento aberto}. Neste tipo de abordagem, os grupos são
-estabelecidos durante o processo de classificação dos cartões em oposição a
-outra forma de utilização da técnica onde a sistematização dos cartões ocorre
-com base em grupos pré-determinados. Ao final do processo compilamos os tópicos
-de modo a construir um espectro de funcionalidades para as FGRM que pode ser
-observado na Figura~\ref{fig:diagrama-espectro-funcionalidades-fgrm}, no qual
-temos três dimensões de funcionalidades que são compostas por diferentes
-categorias de funcionalidades.
+deste tipo de hierarquia. Como o nosso objetivo é derivar tópicos a partir de um
+conjunto inicial de cartões, optamos por realizar um \textit{ordenamento
+    aberto}. Neste tipo de abordagem, os grupos são estabelecidos durante o
+processo de classificação dos cartões em oposição a outra forma de utilização da
+técnica onde a sistematização dos cartões ocorre com base em grupos
+pré-determinados. Ao final do processo compilamos os tópicos de modo a construir
+um espectro de funcionalidades para as FGRM que pode ser observado na
+Figura~\ref{fig:diagrama-espectro-funcionalidades-fgrm}, no qual temos três
+dimensões de funcionalidades que são compostas por diferentes categorias de
+funcionalidades.
 
 \begin{figure}[htpb]
 	\centering
@@ -1481,12 +1481,12 @@ software.
 \paragraph{Fluxo de trabalho}
 \label{par:fluxo_de_trabalho}
 
-Nesta categoria que dão suporte ao processo de trabalho adotado no
-desenvolvimento e manutenção de software. Nela estão incluídos funcionalidade
-para gerenciamento de tarefas e suporte à múltiplos projetos. Também é possível
-personalizar o fluxo de trabalho adotado. Esta customização é realizada através
-da definição de \textit{situações} próprias que se adéquem às necessidades do
-projeto.
+Nesta categoria as funcionalidades que dão suporte ao processo de trabalho
+adotado no desenvolvimento e manutenção de software. Nela estão incluídos
+funcionalidade para gerenciamento de tarefas e suporte à múltiplos projetos.
+Também é possível personalizar o fluxo de trabalho adotado. Esta customização é
+realizada através da definição de \textit{situações} próprias que se adéquem às
+necessidades do projeto.
 
 \paragraph{Gerenciamento de Artefatos}
 \label{par:gerenciamento_de_artefatos}
@@ -1573,7 +1573,7 @@ ocorre no processo de atribuição do Desenvolvedor responsável por solucionar
 determinada RM\@. Conforme discutido no Capítulo~\ref{ch:visao-geral-manutencao}
 esta atividade fica sob a responsabilidade do \textit{Agente de Triagem}. Ele
 deve realizar a escolha de forma manual tendo em vistas que as FGRM não
-apresentam funcionalidades que sejam capaz de ` `recomendar'' o desenvolvedor
+apresentam funcionalidades que sejam capaz de ``recomendar'' o desenvolvedor
 mais apto.
 
 As FGRMs possuem funcionalidades que permitem a realização do papel ao qual este
