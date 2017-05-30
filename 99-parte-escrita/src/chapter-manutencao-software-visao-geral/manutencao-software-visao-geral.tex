@@ -426,7 +426,7 @@ conta~\cite{tripathy2014software}:
 	\item \textit{Corretude da RM:} uma RM deve ser descrita de forma não
 		ambígua tal que seja fácil revisá-la afim de determinar sua corretude. O
 		``formulário'', que são os campos que devem ser preenchidos na RM, são a
-		chave para efetiva interação entre a organização que desenvolver o
+		chave para efetiva interação entre a organização que desenvolve o
 		software e os seus usuários. O formulário, neste sentido, documenta
 		informações essenciais sobre mudanças no software, hardware e
 		documentação.
@@ -436,7 +436,7 @@ conta~\cite{tripathy2014software}:
                discutiremos em maior detalhe as diferentes partes interessadas
                no contexto da manutenção de software.}}: as RMs necessitam ser
        claramente comunicadas entre as parte interessadas, inclusive entre a
-       equipe de manutenção. O resultado por avaliar de maneira distinta uma RM
+       equipe de manutenção. O resultado de avaliar de maneira distinta uma RM
        pode ser contra-produtivo: \textit{(i)} a equipe que realiza mudanças no
        sistema e a equipe que executa testes podem ter visões contraditórias
        sobre a qualidade do software; \textit{(ii)} O sistema alterado pode não
@@ -444,19 +444,19 @@ conta~\cite{tripathy2014software}:
 \end{itemize}
 
 No caminho entre sua criação e solução uma RM possui diferentes estágios. O
-ciclo de vida de uma RM pode ser ilustrado através do diagrama de estados da
-Figura~\ref{fig:diagrama-estado-rm}. No diagrama uma RM inicia como
-\textit{Submetida (Submit)} e vai sendo modificada até alcançar o estado
-\textit{Fechada (Closed)} onde é considerada como solucionada. Neste caminho o
-conjunto de fatores que resultou na necessidade de relatar uma RM pode não mais
-existir. Neste caso, ela é alterada para o estado \textit{Rejeitada (Decline)}.
+ciclo de vida de uma RM é ilustrado através do diagrama de estados da
+Figura~\ref{fig:diagrama-estado-rm}. Nele uma RM inicia como \textit{Submetida
+    (Submit)} e vai sendo modificada até alcançar o estado \textit{Fechada
+    (Closed)}, em que é considerada como solucionada. Neste caminho o conjunto
+de fatores que resultou na necessidade de relatar a RM pode não mais existir.
+Neste caso, ela é alterada para o estado \textit{Rejeitada (Decline)}.
 
 Existe um aspecto importante do ciclo de vida de uma RM que não consta na
 discussão apresentada por Tripathy \& Naik. Em teoria uma RM poderia ter novos
-estados como ``Reaberta'', quando um usuário ou outro membro da equipe de
-manutenção entende que ela não foi solucionada, ou ``Relacionada'' quando uma
-nova RM é na realidade uma sucessora ou possui algum tipo de relação com outra
-RM anteriormente registrada.
+estados: ``Reaberta'', quando um usuário ou outro membro da equipe de manutenção
+entende que ela não foi solucionada; ``Relacionada'', quando uma nova RM é na
+realidade uma sucessora ou possui algum tipo de relação com outra RM
+anteriormente registrada.
 
 \begin{figure}[htpb]
 	\centering
@@ -477,11 +477,11 @@ Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}.
 \paragraph{Submetida (Submit).}
 \label{par:submetida)}
 
-Este é o estado inicial de uma RM recentemente criada. Geralmente são os
-usuários do sistema a fonte primária das RM nesta situação. Com base no nível de
-prioridade da RM, ela é movida de \textit{Submetida} para \textit{Em Revisão}.
-Normalmente cabe ao \textit{Gerente de Requisição de Mudança} a responsabilidade
-da manipulação inicial das RMs. Neste instante ele se torna o ``dono'' da RM\@.
+Este é o estado inicial de uma RM criada. Geralmente são os usuários do sistema
+a fonte primária das RMs nesta situação. Com base no nível de prioridade, ela é
+movida de \textit{Submetida} para \textit{Em Revisão}. Normalmente cabe ao
+\textit{Gerente de Requisição de Mudança} a responsabilidade da manipulação
+inicial das RMs. Neste instante ele se torna o ``dono'' das mesmas.
 
 \paragraph{Em Revisão (Review).}
 \label{par:em_revisao}
@@ -489,36 +489,36 @@ Normalmente, cabe ao \textit{Gerente de Requisição de Mudanças} manipular as
 RMs no estado \textit{Em Revisão} através das seguintes atividades:
 
 \begin{itemize}
-	\item Verificar se a RM submetida recentemente é idêntica a outra já
-		existente. Se a RM é identificada como duplicada o estado da mesma é
-		alterado para \textit{Rejeitada}. Neste caso, uma breve explicação e
-		algum tipo de ligação para a original são inseridos nos comentários da
-		RM\@.
+    \item Verificar se a RM submetida recentemente é idêntica a outra já
+        existente. Se ela é identificada como duplicada o estado da mesma é
+        alterado para \textit{Rejeitada}. Neste caso, uma breve explicação e
+        algum tipo de ligação para a original são inseridos nos comentários da
+        RM\@.
 	\item Aceitar o nível de prioridade atribuído para a RM ou alterá-lo.
 	\item Determinar o nível de severidade da RM\@: normal ou crítico.
 \end{itemize}
 
-No caso das atividades descritas anteriormente não possam ser
-re\-a\-li\-za\-das, a RM é movida para o estado em \textit{Em análise}.
+Caso as atividades descritas anteriormente não possam ser re\-a\-li\-za\-das, a
+RM é movida para o estado \textit{Em análise}.
 
 \paragraph{Em Análise (Analysis).}
 \label{par:em_analise}
 Neste estágio uma análise de impacto é conduzida para entender o que foi
 solicitado na RM e estimar o tempo necessário para implementá-la. Caso não seja
-possível ou desejável atender a RM ela é alterada para a situação
-\textit{Rejeitada}. Caso contrário a RM é movida para estado
-\textit{Compromissada (Commit)}. No estado \textit{Em Análise} o ``dono'' da RM
-é denominado \textit{Agente de Triagem}.
+possível ou desejável atendê-la a situação é alterada para \textit{Rejeitada}.
+Caso contrário, a RM é movida para estado \textit{Compromissada (Commit)}. No
+estado \textit{Em Análise} o ``dono'' da RM é denominado \textit{Agente de
+    Triagem}.
 
 \paragraph{Compromissada (Commit).}
 \label{par:commit}
 
-A RM no estado \textit{Compromissada} não foi atendida mas se encontra no
-planejamento do projeto de modo a estarem disponíveis em uma próxima versão do
-produto. Por ser um estado relacionado ao gerenciamento da manutenção, as RMs
-nesta situação estão à cargo do \textit{Gerente de Requisição de Mudança}.
-Algumas RMs podem ser incluídas em futuras versões do sistema após acordo com as
-demais partes interessadas.
+A RM no estado \textit{Compromissada} não foi atendida, mas se encontra no
+planejamento do projeto de modo a estar em uma próxima versão do produto. Por
+ser um estado relacionado ao gerenciamento da manutenção, as RMs nesta situação
+estão à cargo do \textit{Gerente de Requisição de Mudança}. Algumas RMs podem
+ser incluídas em futuras versões do sistema após acordo com as demais partes
+interessadas.
 
 \paragraph{Em Implementação (Implement).}
 \label{par:em_implementacao}
@@ -537,10 +537,9 @@ No estágio de \textit{Em Implementação} diferentes cenários podem ocorrer:
 
 No estado de verificação as atividades são controladas pela equipe de testes.  A
 verificação de uma RM pode ser realizada pelo seguintes métodos: demonstração,
-análise, inspeção ou teste. No primeiro caso, o software é executado com um
-conjunto de testes. A inspeção significa revisar o código em busca de defeitos.
-No caso da análise, o processo consiste em demonstrar que o sistema está em
-operação.
+análise ou inspeção. No primeiro caso, o software é executado com um conjunto de
+testes. A inspeção significa revisar o código em busca de defeitos. No caso da
+análise, o processo consiste em demonstrar que o sistema está em operação.
 
 \paragraph{Fechada (Closed).}
 \label{par:fechada}
@@ -549,7 +548,7 @@ Após a verificação de que a RM foi atendida, ela é movida de \textit{Em
     verificação} para \textit{Fechada}. Esta ação é realizada pelo
 \textit{Analista de Qualidade} que é o ``proprietário'' da RM durante o estado
 de \textit{Em Verificação}. Nesta dissertação, quando referenciamos ao último
-estágio do ciclo de vida da RM utilizaremos o termo ``Solução da RM'' para
+estágio do ciclo de vida da RM, utilizaremos o termo ``Solução da RM'' para
 representar a situação onde a falha relatada ou a melhoria solicitada é
 entendida, por algum membro das partes interessadas, como atendida.
 
@@ -557,7 +556,7 @@ entendida, por algum membro das partes interessadas, como atendida.
 \label{par:rejeitada}
 
 Uma RM pode ser rejeitada caso ela deixa de produzir relevante impacto no
-sistema, não seja possível tecnicamente realizar o que foi solicitado na RM\@ e
+sistema, não seja possível tecnicamente realizar o que foi solicitado na RM\@ ou
 a equipe de qualidade conclui que as mudanças no software para atender à RM não
 podem ser satisfatoriamente verificadas.
 
@@ -572,7 +571,7 @@ Figura~\ref{fig:diagrama-estado-rm-codigo-aberto}.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.5\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-estado-rm-codigo-aberto.pdf}
+    \includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-estado-rm-codigo-aberto.pdf}
 	\caption{Um processo de modificação de uma RM utilizando uma FGRM\@. Extraído
 	de~\cite{ihara2009analysis}}
 \label{fig:diagrama-estado-rm-codigo-aberto}
@@ -580,9 +579,9 @@ Figura~\ref{fig:diagrama-estado-rm-codigo-aberto}.
 
 Os autores ponderam que apesar da maneira que uma RM é modificada pode alterar
 em diferentes projetos, o diagrama é capaz de representar de maneira geral o
-processo de transição de uma RM\@. O processo é composto de três diferentes
-fases: \textit{não tratada (untreated), modificação (modification) e verificação
-    (verification)}.
+processo de transição de uma RM\@. O processo é composto de três fases
+diferentes: \textit{não tratada (untreated), modificação (modification) e
+    verificação (verification)}.
 
 A fase \textit{não tratada} foca em um subprocesso onde as RMs são relatadas,
 todavia, não foram aceitas ou atribuídas à algum membro da equipe. A fase de
@@ -607,7 +606,7 @@ base o modelo de Tripathy \& Naik.
 \label{ssub:problemas_relacionadas_rm}
 
 A gestão das RMs é um desafio em projetos de software de diferentes tamanhos. A
-literatura discute e apresenta os problemas sobre o gerenciamento das RMs. A
+literatura discute e apresenta alguns problemas sobre o gerenciamento das RMs. A
 seguir discutimos os que do nosso ponto de vista são os mais relevantes.
 
 \paragraph{Localização do Problema:}
@@ -620,7 +619,7 @@ afetados, identificar em quais deles o problema reside (buggy files) é uma
 tarefa árdua~\cite{Thung:2014:BIT:2635868.2661678}.
 
 Neste contexto, pesquisadores vêm propondo abordagens baseadas em Recuperação da
-Informação para localizar o arquivo que contêm uma falha com base no texto do
+Informação para localizar o arquivo que contém uma falha com base no texto do
 relato de uma RM\@. Nesse tipo de abordagem existe a tentativa de encontrar um
 elo entre o texto do relato e um conjunto de arquivos que podem estar
 relacionados com a solução do problema~\cite{Wong:2014:BBF:2705615.2706096}.
@@ -630,25 +629,25 @@ relacionados com a solução do problema~\cite{Wong:2014:BBF:2705615.2706096}.
 Uma tomada de decisão deve ser subsidiada por informações corretas. Este fato
 não é diferente na manutenção e desenvolvimento de software. Pouco se sabe sobre
 o comportamento evolutivo, o tempo de vida, distribuição e estabilidade dos
-problemas reportados nas FGRM~\cite{hora2012bug}. Este problema é reforçado pela
-forma como as FGRMs armazenam os dados das RMs. Em geral, esses exibem
-informações sobre as RMs de forma textual, o que não é apenas complicado para
-navegar, mas também dificulta a compreensão das complexas peças de informação
-que giram em torno dos problemas de software~\cite{dal2014bug}. Por esta razão
-estudos estão sendo realizados de modo a propor novas formas de visualização da
-informação contida em uma RM~\cite{takama2013application,hora2012bug}.
+problemas reportados nas FGRMs~\cite{hora2012bug}. Este problema é reforçado
+pela forma como as FGRMs armazenam os dados das RMs. Em geral, essas ferramentas
+exibem informações sobre as RMs de forma textual, o que não é apenas complicado
+para navegar, mas também dificulta a compreensão dos problemas do
+software~\cite{dal2014bug}. Por esta razão estudos estão sendo realizados de
+modo a propor novas formas de visualização da informação contida nas
+RMs~\cite{takama2013application,hora2012bug}.
 
 \paragraph{Baixa Qualidade do Relato:}
 
 Durante o processo de solução de uma RM a reprodução manual das falhas
 reportadas é demorada e tediosa. Os mantenedores tentam reproduzir problemas
-usando a informação contida nas RMs que muitas das vezes está
+usando a informação contida nas RMs que muitas vezes está
 incompleta~\cite{White:2015:GRR:2820282.2820291}. Em algumas situações, para
 obter os dados que necessita, o desenvolvedor deve registrar um comentário para
-que o responsável do relato inclua as informações necessárias~\cite{5070993}.
-A melhoria da qualidade do relato pode implicar na redução do custo do processo
-de garantia de qualidade bem como aumentar a confiabilidade do software com a
-redução gradativa de bugs~\cite{Tu:2014:MQI:2677832.2677844}.
+que o responsável do relato inclua as informações necessárias~\cite{5070993}. A
+melhoria da qualidade do relato pode implicar na redução do custo do processo de
+garantia de qualidade bem como aumentar a confiabilidade do software com a
+redução gradativa de falhas~\cite{Tu:2014:MQI:2677832.2677844}.
 
 % \paragraph{Organização da Informação da RM:}
 
@@ -660,7 +659,7 @@ redução gradativa de bugs~\cite{Tu:2014:MQI:2677832.2677844}.
 % desenvolvedores procurar por problemas semelhantes que foram resolvidos no
 % passado.
 
-\paragraph{Identificação de RM Duplicadas:}
+\paragraph{Identificação de RMs Duplicadas:}
 
 O processo de identificação de RMs Duplicadas consiste em avaliar se determinado
 relato já foi realizado em outro momento. Quando uma RM é identificada como
@@ -683,29 +682,30 @@ na desconsideração de problemas relevantes.
 
 \paragraph{Atribuição (Triagem) de RM:}
 
-A atividade de atribuição de RM, cuja principal atividade é conhecida como
+O processo de atribuição de RMs, cuja principal atividade é conhecida como
 \textit{triagem}, tem como objetivo encontrar o desenvolvedor mais capacitado
 para manipular uma dada RM~\cite{cavalcanti2014challenges}. Existe a premissa de
 que a escolha do desenvolvedor apropriado é crucial para obter em menor tempo a
 so\-lu\-ção da RM~\cite{di2002approach}. Estudos também discutem que o processo
 de atribuição deve considerar fatores tais como a carga de trabalho do
-desenvolvedor, a prioridade da RM, dentre outros~\cite{aljarah2011selecting}.
+desenvolvedor e a prioridade da RM, dentre outros~\cite{aljarah2011selecting}.
 
 \paragraph{Classificação da RM:}
 
 Independentemente do tipo e tamanho de um projeto é importante determinar qual
-tipo de manutenção deverá ser realizada. Geralmente este tipo de classificação é
-feita com base no texto que corresponde ao relato da RM\@. A diversidade de
-categorias pode tornar complexa a tarefa pelo fato de que em muitos casos não é
-fácil determinar os limites entre os tipos~\cite{antoniol2008bug}. Por exemplo,
-a uma classificação incorreta de um defeito que na verdade trata-se de uma
-melhoria pode acarretar em atrasos no projeto~\cite{cavalcanti2014challenges}.
+tipo de manutenção deverá ser realizada para cada RM que é criada. Geralmente
+este tipo de classificação é feita com base no texto que corresponde ao relato
+da RM\@. A diversidade de categorias pode tornar a tarefa complexa pelo fato de
+que em muitos casos não é fácil determinar os limites entre os
+tipos~\cite{antoniol2008bug}. Por exemplo, a uma classificação incorreta de um
+defeito que na verdade trata-se de uma melhoria pode acarretar em atrasos no
+projeto~\cite{cavalcanti2014challenges}.
 
 \paragraph{Estimativa de Esforço da RM:}
 
-A gestão de custo e esforço de um projeto de manutenção de software passa pelo
-controle do esforço necessário para solucionar suas RMs. Os estudos que discutem
-o esforço para solução de uma RM  utilizam três formas de
+A gestão de custo e esforço de um projeto de manutenção passa pelo controle do
+esforço necessário para solucionar suas RMs. Os estudos que discutem o esforço
+para solução de uma RM utilizam três formas de
 estimativa~\cite{cavalcanti2014challenges}: determinar o tempo para solucionar
 novas RMs; definir os artefatos que são impactados por determinada RM (Análise
 de Impacto); prever o número de novas RMs que poderão fazer parte do projeto. A
@@ -724,23 +724,22 @@ sistema~\cite{Vijayakumar2014}.
 Em alguns projetos, um membro experiente da equipe, geralmente ensina os
 recém-chegados o que eles precisam fazer para solucionar uma RM\@. Todavia,
 alocar um membro experiente de uma equipe por um longo tempo para ensinar um
-novo membro da equipe nem sempre é possível ou desejável. A premissa é que o
-mentor poderia ser mais útil fazendo tarefas mais
-importantes~\cite{malheiros2012source}.  Por exemplo, quando um novo
-desenvolvedor entra na equipe seria interessante que ele resolvesse as RMs que
-tivessem um menor nível de dificuldade.  Posteriormente, quando o desenvolvedor
-ganhasse experiência, poderia aumentar o grau de dificuldade relacionado à RM
-que ele deve tratar. Este tipo de processo ocorre com certa frequência em
-projetos de código aberto, onde a contribuição de desenvolvedores fora do
-projeto é fundamental. No entanto, encontrar um defeito apropriado ao nível de
-conhecimento do desenvolvedor, bem como a correção apropriada para o mesmo
-requer uma boa compreensão do projeto~\cite{Wang2011bug}.
+novato nem sempre é possível ou desejável. A premissa é que o mentor poderia ser
+mais útil fazendo tarefas mais importantes~\cite{malheiros2012source}. Por
+exemplo, quando um novo desenvolvedor entra na equipe seria interessante que ele
+resolvesse as RMs que tivessem um menor nível de dificuldade. Posteriormente,
+quando o desenvolvedor ganhasse mais experiência, poderia aumentar o grau de
+dificuldade das RMs que ele deve tratar. Este tipo de processo ocorre com certa
+frequência em projetos de código aberto, onde a contribuição de desenvolvedores
+externos ao projeto é fundamental. No entanto, encontrar um defeito apropriado
+ao nível de conhecimento do desenvolvedor, bem como a correção apropriada para o
+mesmo requer uma boa compreensão do projeto~\cite{Wang2011bug}.
 
 Para facilitar a inclusão de novos desenvolvedores alguns estudos vêm se
-dedicando em desenvolver sistemas de recomendação de
+dedicando ao desenvolvimento de sistemas de recomendação de
 RMs~\cite{malheiros2012source, Wang2011bug}. Estes sistemas podem ajudar o
-recém-chegado a solucionar uma RM mediante a apresentação de outras de código
-fonte potencialmente relevante que o ajudará na solução da RM do qual ficou
+recém-chegado a solucionar uma RM mediante a apresentação do código fonte
+potencialmente relevante que o ajudará na solução da RM do qual ficou
 responsável~\cite{malheiros2012source}.
 
 % O segundo tipo de abordagem pode ser vista como ambiente de exploração do
