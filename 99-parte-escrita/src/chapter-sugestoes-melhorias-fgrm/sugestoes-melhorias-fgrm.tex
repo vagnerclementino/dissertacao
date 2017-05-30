@@ -96,15 +96,15 @@ Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software} o
 responsável por reportar uma RM pode ser tanto um usuário do sistema quanto um
 membro da equipe de desenvolvimento ou manutenção. Por esta razão, podemos
 encontrar Reportadores com diferentes níveis de conhecimento sobre o sistema.
-Do ponto de vista dos desenvolvedores, um problema recorrente é baixa qualidade
-do texto no relatado de uma RM, como por exemplo a falta da informação
+Do ponto de vista dos desenvolvedores, um problema recorrente é a baixa
+qualidade do texto no relatado de uma RM, como por exemplo a falta da informação
 necessária para sua solução. Alguns estudos demonstram que a falta de
 informação, tais como as etapas para reproduzir a falha e o registro de pilha de
 ativação (stack track), dificultam mais o andamento do projeto do que RMs
 duplicadas~\cite{bettenburg2008makes, bettenburg2007quality}. Neste sentido, as
-FGRM poderia fornecer uma funcionalidade capaz de reduzir o número de relatos de
-baixa qualidade através, por exemplo, de um retorno ao Reportador da qualidade
-do que foi informado no relato da RM\@.
+FGRMs poderiam fornecer uma funcionalidade capaz de reduzir o número de relatos
+de baixa qualidade através, por exemplo, de um retorno ao Reportador da
+qualidade do que foi informado no relato da RM\@.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficio_s01}
@@ -220,9 +220,9 @@ diversos critérios como por exemplo a prioridade do que foi relatado. Segundo a
 nossa proposta, o \textit{Agente de Triagem} pode previamente ordenar a lista de
 RMs sob sua responsabilidade pelo grau de reputação de quem as redigiu. A partir
 daquele ordenamento ele poderia atribuir primeiro aquelas de Reportadores com um
-maior grau de reputação. Com base nesta estratégica, é possível que RMs com
-maior relevância sejam analisadas primeiro. O conceito de relevância pode variar
-em diferentes projetos. Contudo, uma RM poderia ser classificada como relevante
+maior grau de reputação. Com base nesta estratégia, é possível que RMs com maior
+relevância sejam analisadas primeiro. O conceito de relevância pode variar em
+diferentes projetos. Contudo, uma RM poderia ser classificada como relevante
 caso descreva um problema que afeta um grande número de usuários ou represente
 uma falha de segurança do software. Além disso, deve ser redigida de forma clara
 e fornecer as informações necessárias para sua solução.
@@ -357,7 +357,7 @@ Quando uma nova RM é registrada as informações mais relevantes estão no text
 correspondente ao atributo \textit{relato}. Além do problema da falta de
 informação no relato da RM, discutido na
 Seção~\ref{sub:supote_a_qualidade_do_relato}, o Reportador enfrenta a
-dificuldade de expressar a falha ou pedido de melhoria do software. A baixa
+dificuldade de expressar a falha ou o pedido de melhoria do software. A baixa
 expressividade do texto do relato pode estar relacionado pelo fato que algumas
 ferramentas analisadas utilizam texto simples (vide
 Seção~\ref{sec:caracterizacao_ferramentas}). A possibilidade de usar linguagens
@@ -369,13 +369,13 @@ expressar com maior qualidade a falha ou pedido de melhoria.
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s06}
 
-Em um estudo sobre a transcrição de materiais de estudo, Voegler e
+Em um trabalho sobre a transcrição de materiais de estudo, Voegler e
 outros~\cite{voegler2014markdown} mostraram que o uso da linguagem Markdown pode
 melhorar a qualidade técnica e a acessibilidade do documento resultante. As
 FGRMs poderiam se apropriar destas facilidades com o objetivo de melhorar a
 legibilidade do texto contido na RM\@. Diante do uso deste tipo de formato, os
 Reportadores poderiam, por exemplo, incluir no próprio relato uma parte do
-código fonte do qual ele supõem que está localizada a falha.
+código fonte no qual ele supõem que está localizada a falha.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s06}
@@ -548,8 +548,8 @@ de seleção dos projetos inclui os seguintes requisitos:
         relevante.
 	\item Os projetos devem  ter  no  mínimo  200  revisões (commits)  pelos
 		mesmos motivos  da restrição anterior.
-    \item Os projetos obtidos devem estar os 50 mais populares que atendam aos
-        demais critérios e estejam entre os melhores classificados pela
+    \item Os projetos obtidos devem estar entre os 50 mais populares que atendam
+        aos demais critérios e estejam entre os melhores classificados pela
         ordenação via a opção ``most stars'', que representa o número de usuário
         do Github que mostraram apreciação sobre o trabalhado desenvolvido no
         repositório.
@@ -636,11 +636,11 @@ web~\cite{fan2010factors}.
 \section{Resultados da Avaliação das Sugestões de Melhorias}
 \label{sec:resultados_avaliacao_sug_de_melhorias}
 
-Após o envio do formulários aos participantes obtivemos um total de 29
-respostas. Como algumas das questões do formulário não eram de preenchimento
-obrigatório é possível que o número de repostas seja menor. O nível de
-participação foi similar ao observado em outros estudo em Engenharia de Software
-que utilizam o levantamento por questionário (survey) como método de coleta de
+Após o envio do formulário aos participantes obtivemos um total de 29 respostas.
+Como algumas das questões do formulário não eram de preenchimento obrigatório é
+possível que o número de repostas seja menor. O nível de participação foi
+similar ao observado em outros estudo em Engenharia de Software que utilizam o
+levantamento por questionário (survey) como método de coleta de
 dados~\cite{fan2010factors}. Nas próximas seções apresentamos os resultados
 obtidos através do perfil dos participantes, a relevância das sugestões
 propostas e o grau de facilidade de implementação das mesmas.
@@ -740,7 +740,7 @@ Concordo Fortemente & 2 \\ \bottomrule
 Com base na Tabela~\ref{tab:ranking-sugestoes-melhorias} verificamos que
 recomendações que sobressaíram: utilização nas FGRMs de uma linguagem além do
 texto simples para redigir uma RM (\#3), suporte à tarefas colaborativas (\#8) e
-integração com processo de Integração Contínua (\#5). Por outro lado as
+incorporação de processos de Integração Contínua (\#5). Por outro lado as
 sugestões de diferenciar as RMs pela reputação do Reportador (\#3) e avaliar a
 qualidade do relato (\#1) não foram avaliadas como as mais relevantes pelos
 participantes. É importar notar que as recomendações que ficaram nas últimas
@@ -872,7 +872,7 @@ encontrada em uma das FGRMs analisadas. Entretanto, o nosso resultado
 demonstra, com base na amostra utilizada, que deveria ser expandida para outras
 ferramentas.
 
-O suporte à tarefa compartilhadas (sugestão \#8) também foi muito bem avaliada.
+O suporte à tarefas compartilhadas (sugestão \#8) também foi muito bem avaliado.
 Esta recomendação surgiu das tentativas de implantação das propostas dos
 agilistas~\cite{svensson2005introducing}. A recomendação defende que uma
 determinada RM não tenha um ``dono'', mas que a responsabilidade seja dividida
@@ -902,7 +902,7 @@ observada na literatura, o total de participantes não nos permite extrapolar os
 resultados para todos os contextos em que as FGRMs estão inseridas.
 Adicionalmente, os critérios utilizados para seleção, como por exemplo, seis
 meses de desenvolvimento ou ter no mínimo duzentas revisões, não nos permite
-afirmar que escolhemos os projetos mais representativos para o nosso
+afirmar que foi escolhido os projetos mais representativos para o nosso
 público-alvo.
 
 Ao utilizarmos apenas projetos públicos hospedados no Github pode ter causado

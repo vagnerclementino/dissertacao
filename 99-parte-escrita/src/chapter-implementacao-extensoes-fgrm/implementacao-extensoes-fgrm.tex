@@ -32,7 +32,7 @@ outros~\cite{Thung:2014:DIT:2642937.2648627} o foco é na determinação de
 defeitos duplicados. A contribuição deste trabalho é a integração do estado da
 arte de técnicas não supervisionadas para detecção de RMs duplicadas.
 
-Esta dissertação se propôs em contribuir com a melhoria das funcionalidades das
+Esta dissertação se propôs a contribuir com a melhoria das funcionalidades das
 FGRMs mediante a apresentação e discussão de um conjunto de recomendações no
 Capitulo~\ref{ch:sug_melhoria}. Apesar de ter sido conduzido um processo de
 avaliação das recomendações, cujo resultado demonstrou uma boa aceitação dos
@@ -45,8 +45,8 @@ implementação de uma recomendação sobre outra. Entretanto, após alguns ensa
 combinando de maneira mais intuitiva do que seguindo um fluxo de critérios,  foi
 investido mais esforço no desenvolvimento de uma extensão para o suporte à
 qualidade de relato. A extensão proposta tem por objetivo ser uma Prova de
-Conceito, ou seja, demostrar com o fim de verificar que conceito proposto possui
-certo \textit{potencial} prático. Na próxima seção apresentamos uma breve
+Conceito, ou seja, demostrar com o fim de verificar que o conceito proposto
+possui certo \textit{potencial} prático. Na próxima seção apresentamos uma breve
 discussão sobre o problema da baixa qualidade do relato no contexto das FGRMs.
 
 \section{Qualidade do Relato de uma RM}
@@ -199,7 +199,7 @@ exibe o cabeçalho padrão incluídos nos comentários.
 \end{figure}
 
 Ao final do comentário é incluído um conjunto de dicas com objetivo de reforçar
-com reportador os benefícios que a melhoria da qualidade do relato pode ter na
+com o reportador os benefícios que a melhoria da qualidade do relato pode ter na
 solução de sua \textit{issue}, como por exemplo dizendo que issues que são mais
 fáceis de serem lidas possuem um tempo de solução menor. Estas dicas foram
 obtidas com base na literatura sobre melhoria da qualidade do relato,
@@ -276,7 +276,7 @@ vistas dos desenvolvedores~\cite{bettenburg2008makes}.
 \paragraph{Fragmentos de Código}
 \label{par:fragmentos_de_código}
 
-Este atributo de avaliação verifica se fragmentos de código foi adicionado no
+Este atributo de avaliação verifica se fragmentos de código foram adicionados no
 relato da \textit{issue}. O processo de detecção faz uso de expressão regulares
 e da sintaxe oferecida pela versão do Markdown utilizado pelo
 Github\footnote{\url{https://guides.github.com/features/mastering-markdown/\#GitHub-flavored-markdown}}.
@@ -358,11 +358,11 @@ outros~\cite{bettenburg2008makes}.
 \label{sec:avaliando_a_extensao_proposta}
 
 A extensão descrita neste Capitulo foi desenvolvida como prova de conceito.
-Neste sentido, o desenho e desenvolvimento teve foco na viabilidade do que
-estava sendo proposto do que melhorar ou sobrepor determinada solução do estado
-da arte. Entretanto, com o objetivo de avaliar a extensão em um contexto mais
-próximo do real, ela foi executada utilizando os dados de \textit{issues} de
-projetos código aberto hospedados no Github.
+Neste sentido, o desenho e o desenvolvimento tiveram mais foco na viabilidade do
+que estava sendo proposto do que melhorar ou sobrepor determinada solução do
+estado da arte. Entretanto, com o objetivo de avaliar a extensão em um contexto
+mais próximo do real, ela foi executada utilizando os dados de \textit{issues}
+de projetos código aberto hospedados no Github.
 
 \subsection{Seleção dos Projetos}
 \label{sub:implementacao_selecao_projetos}
@@ -532,7 +532,7 @@ apresentam um texto com baixa legibilidade. Esta situação já foi verificada e
 estudos anteriores~\cite{ko2006linguistic, bettenburg2007quality}. Esta métrica
 depende menos de uma análise de alguém vinculado ao projeto pelo fato de
 utilizar índices existentes e utilizados em diversas áreas para medir
-legibilidade. Neste sentido pode ser interessante ao projetos de software
+legibilidade. Neste sentido pode ser interessante ao projeto de software
 disciplinar os Reportadores em fornecer sempre que possível um relato mais
 simples e direto.
 
@@ -545,9 +545,9 @@ indicados para medir a qualidade do relato. Eles foram utilizados com base em
 estudos já realizados~\cite{bettenburg2007quality} em que os atributo foram
 baseados na opinião de desenvolvedores.
 
-Para que uma dica de melhoria seja disparada é necessário algum dos critérios
+Para que uma dica de melhoria seja disparada é necessário alguns dos critérios
 descritos na Tabela~\ref{tab:criterios_analise_qualidade_relato} não seja
-atendido. No caso do atributo ``Completude de Palavras-Chaves'' utilizou o
+atendido. No caso do atributo ``Completude de Palavras-Chaves'' utilizou-se o
 conjunto de termos do trabalho de Ko e outros~\cite{ko2006linguistic}. Apesar de
 ambos os estudos utilizarem projetos desenvolvidos na linguagem Java não podemos
 garantir que o conjunto de termos é o mesmo nas RMs de diferentes projetos.

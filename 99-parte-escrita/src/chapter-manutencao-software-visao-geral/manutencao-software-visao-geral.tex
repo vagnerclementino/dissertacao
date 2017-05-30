@@ -47,11 +47,11 @@ de Software.
 \subsection{Visão Geral da Manutenção de Software}
 \label{sub:visão_geral_da_manutenção_de_softare}
 
-De uma maneira geral, podemos definir atividade de manter software como a
+De uma maneira geral, podemos definir a atividade de manter software como a
 totalidade das ações necessárias para fornecer suporte a um produto de software.
 No Padrão IEEE 1219~\cite{ISO-1219-1998} ela é definida como a modificação de um
 produto de software após a sua entrega com o objetivo de corrigir falhas,
-melhorar o desempenho ou outros atributos com a finalidade de adaptar o software
+melhorar o desempenho ou outros atributos com a finalidade de adaptar o sistema
 às modificações ambientais.
 
 Posteriormente a IEEE/EIA 12207~-~Padrão para o Processo de Ciclo de Vida do
@@ -206,19 +206,20 @@ outros~\cite{Polo1999} cujo objetivo é definir a estrutura da equipe de
 manutenção através da identificação das tarefas que cada membro deve executar.
 O conjunto de papéis é o resultado da aplicação da metodologia
 MANTEMA~\cite{756695} em projetos de software bancários espanhóis em que o setor
-de manutenção foi terceirizada (outsourcing). Os autores reforçam que apesar da
+de manutenção foi terceirizado (outsourcing). Os autores reforçam que apesar da
 classificação ter sido criada em um contexto específico, ela pode ser utilizada para
 aplicação em outras situações.
 
 Para esta dissertação removemos os papéis que segundo o nosso entendimento estão
 mais vinculados a um contexto de manutenção terceirizada (outsourcing).  Além
 disso, dividimos o papel ``time de manutenção' (maintenance team) em
-\textit{Desenvolvedor e Analista de Qualidade} por entendermos que são papéis
-comuns a muito dos processos de manutenção existentes. Os papéis que compõem a
-classificação utilizadas durante o texto da dissertação estão descritos a seguir:
+\textit{Desenvolvedor e Analista de Qualidade} por entendermos que são
+atribuições comuns a muito dos processos de manutenção existentes. Os papéis que
+compõem a classificação utilizadas durante o texto da dissertação estão
+descritos a seguir:
 
 \paragraph{Usuário Afetado:}
-Indivíduo que utiliza o sistema que correspondente à Requisição de Mudanças (RM)
+Indivíduo que utiliza o sistema do qual pertence à Requisição de Mudanças (RM)
 que será relatada. O defeito, a melhoria ou evolução no software, representada
 pela RM, estão relacionadas com os desejos e necessidades deste papel.
 
@@ -232,7 +233,7 @@ ser um usuário do sistema ou um membro da equipe de manutenção.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.5\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-caso-uso-reportador.pdf}
+	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-caso-uso-reportador.pdf}
 	\caption{Diagrama de caso de uso do papel Reportador}
 \label{fig:diagrama-caso-uso-reportador}
 \end{figure}
@@ -401,7 +402,7 @@ Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.5\linewidth]{./chapter-manutencao-software-visao-geral/img/rm-exemplo.pdf}
+	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/rm-exemplo.pdf}
 	\caption{Um exemplo de uma RM do Projeto Eclipse}
 \label{fig:rm-exemplo}
 \end{figure}
@@ -418,7 +419,7 @@ ao termo ``Requisição de Mudança'' e sua sigla \textit{RM}.
 \label{sub:fluxo_de_trabalho_requisicao_mudanca}
 
 Uma RM descreve os desejos e necessidades dos usuários de como um sistema deve
-operar. Quanto uma RM é relatada dois fatores devem ser levados em
+operar. Quando uma RM é relatada dois fatores devem ser levados em
 conta~\cite{tripathy2014software}:
 
 \begin{itemize}
@@ -514,7 +515,7 @@ possível ou desejável atender a RM ela é alterada para a situação
 
 A RM no estado \textit{Compromissada} não foi atendida mas se encontra no
 planejamento do projeto de modo a estarem disponíveis em uma próxima versão do
-produto. Por se um estado relacionado ao gerenciamento da manutenção, as RMs
+produto. Por ser um estado relacionado ao gerenciamento da manutenção, as RMs
 nesta situação estão à cargo do \textit{Gerente de Requisição de Mudança}.
 Algumas RMs podem ser incluídas em futuras versões do sistema após acordo com as
 demais partes interessadas.
@@ -670,7 +671,7 @@ primeiramente incluída no repositório de erros. Alguns estudos revelam que ent
 duplicadas~\cite{anvik2005coping,cavalcanti2013bug,Runeson:2007:DDD:1248820.1248882}.
 Por conta do grande número de RMs repetidas uma das soluções é o \textit{Agente
     de Triagem} analisá-las manualmente com objetivo de evitar que elas cheguem
-as desenvolvedores~\cite{anvik2005coping}. Em alguns casos esta solução não é
+aos desenvolvedores~\cite{anvik2005coping}. Em alguns casos esta solução não é
 viável. O processo de identificação de RMs duplicadas requer: \textit{(i)} um
 prévio conhecimento do conjunto de relatos existentes anteriormente no projeto;
 \textit{(ii)} a busca manual em toda base de dados da
@@ -762,7 +763,7 @@ projeto de software, seja manutenção com características tradicionais (vide
 Seção~\ref{subsec:manutenção_de_software_tradicional}) ou ainda naqueles que
 utilizam os métodos propostos pelos agilistas.
 
-Por conta do volume das RMs e os diversos desafios relacionado com sua gestão é
+Por conta do volume das RMs e os diversos desafios relacionados com sua gestão é
 necessária a utilização de ferramentas com o objetivo de gerenciá-las. Esse
 controle é geralmente realizado por Sistemas de Controle de Demandas (SCD)-
 Issue Tracking Systems, que auxiliam os desenvolvedores na correção de forma
@@ -792,13 +793,13 @@ seguintes~\cite{tripathy2014software}:
 	\item Identificar de forma única e controlar a situação de cada RM\@. Esta
 		característica simplifica o processo de relatar uma RM e fornece um
 		melhor controle sobre as mudanças.
-    \item Manter uma base de dados sobre todas as mudanças sobre o sistema
+    \item Manter uma base de dados sobre todas as mudanças no sistema
         desenvolvido ou mantido pelo projeto. Esta informação pode ser utilizada
         para monitoramento e métricas de medição.
 \end{itemize}
 
 No momento em que este trabalho estava sendo desenvolvido, estudos discutem o
-fato que as FGRMs não apenas ajudam as organizações a gerenciar, atribuir,
+fato de que as FGRMs não apenas ajudam as organizações a gerenciar, atribuir,
 controlar, resolver e arquivar as RMs~\cite{Bertram:2010:CCB:1718918.1718972}.
 Em alguns casos, este tipo de ferramenta se tornou o ponto focal para
 comunicação e coordenação para diversas partes interessadas, dentro e além da
@@ -925,7 +926,7 @@ uma característica ou comportamento específico para um programa de
 computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in\_(computing)}}.
 Cabe-nos ressaltar que a nossa definição de extensão incluí aquelas que não
 estão acopladas ao código de determinada FGRM\@. Por exemplo, a funcionalidade
-de atribuição de uma RM está presente na maior parte das FGRMs, todavia, segunda
+de atribuição de uma RM está presente na maior parte das FGRMs, todavia, segundo
 nossa definição, uma proposta de melhoria desta funcionalidade mediante uma
 atribuição automatizada, por exemplo, será analisada como extensão mesmo que ela
 não esteja efetivamente funcionando em alguma FGRM\@. Vamos a\-na\-li\-sar as
@@ -1026,7 +1027,7 @@ aprendidas.
 \subsubsection{Seleção das Ferramentas}
 \label{subsubsec:selecao-ferramentas}
 
-A primeira etapa consistiu da definição das ferramentas que seriam utilizadas
+A primeira etapa consistiu na definição das ferramentas que seriam utilizadas
 no estudo. A partir de uma pesquisa na Internet obtivemos um conjunto inicial
 de 50
 ferramentas\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
@@ -1059,8 +1060,8 @@ ferramentas que foram citadas de forma espontânea foi atribuído um grau de
 importância igual ``Muito relevante'' conforme
 Tabela~\ref{tab:graus_relevancia}.
 
-Antes do aplicação o questionário foi validado em um processo de três etapas. Na
-primeira parte foi solicitado a avaliação por dois pesquisadores experientes da
+Antes da aplicação o questionário foi validado em um processo de três etapas. Na
+primeira parte foi solicitada a avaliação por dois pesquisadores experientes da
 área de Engenharia de Software. Após as alterações uma nova versão do formulário
 foi enviada para dois profissionais que trabalham com manutenção de software. O
 critério utilizado para seleção dos profissionais foi o tempo de experiência com
@@ -1120,12 +1121,6 @@ estivesse na lista, mas foi informada pelo participante de uma forma espontânea
 recebia uma pontuação igual a 5. Após o cálculo de pontuação de cada ferramenta,
 ordenamos do maior para o menor valor e escolhemos as três melhores posicionadas
 de cada categoria.
-
-% \begin{equation}
-% \label{eq:escolha_ferramenta}
-% r_i = \sum_{i=1}^{n} f_i \times w_j
-% \end{equation}
-
 
 \begin{table}[htpb]
 \centering
@@ -1203,16 +1198,16 @@ uma das mais úteis para aquisição de conhecimento de dados, em contraste ao
 conhecimento de comportamento ou de processo.
 
 Existem três principais fases dentro do processo de Classificação dos Cartões:
-($i$) preparação, no qual participantes ou o conteúdo dos cartões são selecionados;
-($ii$) execução, onde o cartões são organizados em grupo significativos com um
-título que o descreve; e por fim, ($iii$) análise, no qual os cartões são
-sistematizados para formar hierarquias mais abstratas que são usadas para
-deduzir resultados. No processo tradicional de Cartões Ordenados cada declaração
-realizada por um participante resulta na criação de exatamente um único
-cartão~\cite{just2008towards}. Contudo, no nosso caso, foi realizada a divisão
-da documentação da ferramenta por cada funcionalidade encontrada. Neste sentido,
-cada funcionalidade obtida mediante a inspeção da documentação foi mapeada em
-único cartão.
+($i$) preparação, no qual participantes ou o conteúdo dos cartões são
+selecionados; ($ii$) execução, onde os cartões são organizados em grupo
+significativos com um título que o descreve; e por fim, ($iii$) análise, no qual
+os cartões são sistematizados para formar hierarquias mais abstratas que são
+usadas para deduzir resultados. No processo tradicional de Cartões Ordenados
+cada declaração realizada por um participante resulta na criação de exatamente
+um único cartão~\cite{just2008towards}. Contudo, no nosso caso, foi realizada a
+divisão da documentação da ferramenta por cada funcionalidade encontrada. Neste
+sentido, cada funcionalidade obtida mediante a inspeção da documentação foi
+mapeada em único cartão.
 
 Os cartões foram organizados de modo que continham o nome e a versão da
 ferramenta analisada; a URL da documentação utilizada; o nome da funcionalidade
@@ -1360,7 +1355,8 @@ funcionalidades.
 
 A figura foi construída com base nas categorias de funcionalidades exibidas na
 Tabela~\ref{tab:freq_categorias_cartoes} em que é possível verificar ainda a
-frequência que cada uma das categorias apareceu no conjunto de cartões coletado.
+frequência que cada uma das categorias apareceu no conjunto de cartões
+coletados.
 
 \begin{table}[htpb]
 \centering
@@ -1420,7 +1416,7 @@ Verificamos ainda que algumas FGRMs permitem que o relato da RM seja realizado
 em linguagem de marcação como o
 Markdown\footnote{\url{https://en.wikipedia.org/wiki/Markdown}}, que permite
 dentre outras opções a inclusão de código fonte com a sintaxe realçada. Isso
-possibilita visualizar de forma mais clara partes do código fonte podem ser
+possibilita visualizar de forma mais clara partes do código que podem ser
 incluídas na RM\@. Neste mesmo tópico encontramos funcionalidades para recuperar
 uma RM utilizando o texto relatado na RM, mediante filtros personalizáveis ou
 por meio de uma Linguagem de Domínio Específico (Domain-Specific Language \@-\@
