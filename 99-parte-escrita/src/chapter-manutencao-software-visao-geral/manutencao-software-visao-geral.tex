@@ -153,9 +153,9 @@ Engenharia de Software~\cite{4425813} destaca algumas delas:
 	\item[Compreensão do programa:] atividades necessárias para obter um
 		conhecimento geral do que um produto de software faz e como as partes
 		funcionam em conjunto;
-	\item[Transição:] uma sequência controlada e coordenada de atividades onde o
-		software é transferido progressivamente do desenvolvedor para o
-		mantenedor;
+    \item[Transição:] uma sequência controlada e coordenada de atividades em que
+        o software é transferido progressivamente do desenvolvedor para o
+        mantenedor;
     \item[Aceitação/rejeição de Requisições de Mudança:] as modificações que
         ultrapassem determinado limiar de tamanho, esforço ou complexidade podem
         ser rejeitadas pelos mantenedores e redirecionadas para outro
@@ -228,7 +228,7 @@ Responsável por registrar a RM que pode ser qualquer pessoa envolvida no
 processo de Manutenção de Software. Neste sentido, as atividades relacionadas
 com o papel de Reportador podem estar vinculados com outras contidas nesta
 classificação. A Figura~\ref{fig:diagrama-caso-uso-reportador} apresenta esta
-situação através de um Diagrama de Caso de Uso, onde o \textit{Reportador} pode
+situação através de um Diagrama de Caso de Uso, em que o \textit{Reportador} pode
 ser um usuário do sistema ou um membro da equipe de manutenção.
 
 \begin{figure}[htpb]
@@ -299,7 +299,7 @@ e quais são eles, sem com isso, envolver em uma consolidação definitiva.
 %me\-lho\-ri\-as e agrupa as manutenções corretivas e preventivas em uma única
 %categoria de correção, conforme exibido na
 %Tabela~\ref{tab:categorias_requisicao_mudanca}. A manutenção preventiva é
-%frequentemente realizada em produtos de software onde atributos de segurança são
+%frequentemente realizada em produtos de software em que atributos de segurança são
 %mais críticos.
 
 %\begin{table}[htpb] \centering 	\begin{tabular}{l|l|l|} \cline{2-3} &
@@ -380,7 +380,7 @@ Os principais conceitos envolvidos no modelo estão detalhados a seguir:
 Conforme pode ser observado na
 Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas} os atributos
 \textit{Comentário} e \textit{Anexo} foram modelados como uma agregação, dando
-aos mesmos um caráter multivalorado. Esta escolha foi intencional para salientar
+aos mesmos um caráter multi-valorado. Esta escolha foi intencional para salientar
 que uma RM pode conter diversos anexos ou comentários. No caso dos comentários
 esta característica é ainda mais relevante tendo em vista que eles são
 realizados durante o processo de solução de uma RM\@. A partir do conjunto de
@@ -549,7 +549,7 @@ Após a verificação de que a RM foi atendida, ela é movida de \textit{Em
 \textit{Analista de Qualidade} que é o ``proprietário'' da RM durante o estado
 de \textit{Em Verificação}. Nesta dissertação, quando referenciamos ao último
 estágio do ciclo de vida da RM, utilizaremos o termo ``Solução da RM'' para
-representar a situação onde a falha relatada ou a melhoria solicitada é
+representar a situação em que a falha relatada ou a melhoria solicitada é
 entendida, por algum membro das partes interessadas, como atendida.
 
 \paragraph{Rejeitada (Decline).}
@@ -583,21 +583,21 @@ processo de transição de uma RM\@. O processo é composto de três fases
 diferentes: \textit{não tratada (untreated), modificação (modification) e
     verificação (verification)}.
 
-A fase \textit{não tratada} foca em um subprocesso onde as RMs são relatadas,
+A fase \textit{não tratada} foca em um subprocesso em que as RMs são relatadas,
 todavia, não foram aceitas ou atribuídas à algum membro da equipe. A fase de
-\textit{modificação} é um subprocesso onde as RMs são efetivamente modificadas.
+\textit{modificação} é um subprocesso em que as RMs são efetivamente modificadas.
 Nesta fase uma RM é aceita e posteriormente atribuída a algum desenvolvedor.
 Caso o pedido da RM não possa ser atendido ela é \textit{rejeitada}.  A fase de
-\textit{verificação} é o subprocesso onde membros com a responsabilidade de
+\textit{verificação} é o subprocesso em que membros com a responsabilidade de
 garantia da qualidade verificam se as RMs modificadas foram efetivamente
 solucionadas. Caso uma RM modificada por um desenvolver não seja verificada, ela
 poderia não ser reconhecida como fechada (closed).
 
 É possível relacionar o modelo descrito por Tripathy \&
 Naik~\cite{tripathy2014software} e aquele proposto por Ihara e
-outros~\cite{ihara2009analysis}. Em ambos é possível identificar fases onde uma
+outros~\cite{ihara2009analysis}. Em ambos é possível identificar fases em que uma
 RM é relatada, analisada e verificada. Além disso, os modelos discriminam
-situações onde o pedido descrito na RM não é capaz de ser realizado. Nesta
+situações em que o pedido descrito na RM não é capaz de ser realizado. Nesta
 dissertação utilizamos de forma geral o modelo proposto por Ihara e outros. Nos
 casos em que houver necessidade de um maior detalhamento a discussão tomará como
 base o modelo de Tripathy \& Naik.
@@ -730,7 +730,7 @@ exemplo, quando um novo desenvolvedor entra na equipe seria interessante que ele
 resolvesse as RMs que tivessem um menor nível de dificuldade. Posteriormente,
 quando o desenvolvedor ganhasse mais experiência, poderia aumentar o grau de
 dificuldade das RMs que ele deve tratar. Este tipo de processo ocorre com certa
-frequência em projetos de código aberto, onde a contribuição de desenvolvedores
+frequência em projetos de código aberto, em que a contribuição de desenvolvedores
 externos ao projeto é fundamental. No entanto, encontrar um defeito apropriado
 ao nível de conhecimento do desenvolvedor, bem como a correção apropriada para o
 mesmo requer uma boa compreensão do projeto~\cite{Wang2011bug}.
@@ -848,7 +848,7 @@ utilizamos. Os conceitos envolvidos no modelo estão descritos a seguir.
 				que interferem no processo de desenvolvimento e manutenção de
 				software. Nele está contido o processo de desenvolvimento (por
 				exemplo métodos ágeis, cascata, iterativo e etc), as ferramentas
-				utilizadas (compiladores, ferramentas debug e build), dentre
+				utilizadas (compiladores, ferramentas de debug e de build), dentre
                 outros aspectos.
 		\end{itemize}
 	\item[Repositório de RM:] Trata-se da base de dados onde as RMs são
@@ -1190,7 +1190,7 @@ de comportamento ou de processo.
 
 Existem três principais fases dentro do processo de Classificação dos Cartões:
 ($i$) preparação, no qual participantes ou o conteúdo dos cartões são
-selecionados; ($ii$) execução, onde os cartões são organizados em grupo
+selecionados; ($ii$) execução, em que os cartões são organizados em grupo
 significativos com um título que o descreve; e por fim, ($iii$) análise, no qual
 os cartões são sistematizados para formar hierarquias mais abstratas e que são
 usadas para deduzir resultados. No processo tradicional de Cartões Ordenados
@@ -1327,7 +1327,7 @@ deste tipo de hierarquia. Como o nosso objetivo é derivar tópicos a partir de 
 conjunto inicial de cartões, optamos por realizar um \textit{ordenamento
     aberto}. Neste tipo de abordagem, os grupos são estabelecidos durante o
 processo de classificação dos cartões em oposição a outra forma de utilização da
-técnica onde a sistematização dos cartões ocorre com base em grupos
+técnica em que a sistematização dos cartões ocorre com base em grupos
 pré-determinados. Ao final do processo compilamos os tópicos de modo a construir
 um espectro de funcionalidades para as FGRMs exibido na
 Figura~\ref{fig:diagrama-espectro-funcionalidades-fgrm}.

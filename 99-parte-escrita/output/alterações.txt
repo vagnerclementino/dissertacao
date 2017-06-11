@@ -1,0 +1,10 @@
+[Capítulo 01]
+    - Remoção da figura sobre custos
+    - Inclusão o primeiro parágrafo do tema da dissertação
+    - Na Seção 1.3 foi alterado o texto do objetivo (i)
+    - Alteração nas Contribuições do trabalho. Vide as duas últimas frases do
+      parágrafo.
+[Capítulo 04]
+    - Remoção da Figura 4.5 que exibia o percentual da avalição dos
+      profissionais sobre as funcionalidades das FGRMs. O que estava exibido foi
+      incluído no texto.
