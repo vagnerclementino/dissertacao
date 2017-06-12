@@ -8,3 +8,6 @@
     - Remoção da Figura 4.5 que exibia o percentual da avalição dos
       profissionais sobre as funcionalidades das FGRMs. O que estava exibido foi
       incluído no texto.
+[Capítulo 07]
+    - Inclusão de um paragráfo sobre um estudo que utilize chatbots como
+      interface para criação de uma nova RM.
