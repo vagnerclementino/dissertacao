@@ -818,27 +818,36 @@ produto de software~\cite{breu2010information}.
 \label{sub:espectro_funcionalidades_fgrm}
 
 As FGRMs vêm sendo utilizadas por diversos projetos com características
-próprias. Neste sentido, este tipo de software deveria oferecer diferentes
-funcionalidades para que possa atender a diferentes demandas. Apesar da
-variedade de ferramentas
-disponíveis\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}
+próprias. Neste sentido, elas devem oferecer diferentes funcionalidades para que
+possa atender demandas específicas. Apesar da variedade de ferramentas
+disponíveis\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}},
 é possível encontrar atributos comuns que permitem a compilação de um modelo
-conceitual.
+conceitual do contexto dessa ferramenta.
 
-Nós construímos um modelo conceitual com base na literatura da área, em especial
-nos trabalhos de~\cite{cavalcanti2014challenges, singh2011bug,
+Nós construímos um modelo conceitual do contexto com base na literatura da área,
+em especial nos trabalhos de~\cite{cavalcanti2014challenges, singh2011bug,
     kshirsagar2015issue}. Nós sintetizamos os dados através da identificação de
-temas recorrentes da definição de FGRMs disponíveis naqueles artigos. Foram
+temas recorrentes da definição de FGRMs disponíveis nos artigos. Foram
 encontrados quatro principais conceitos que estão retratados na
 Figura~\ref{fig:diagrama-classe-conceitual-fgrm} como um diagrama baseado na
-UML\@. Esta figura foi derivada dos estudos primários e consiste em uma
-generalização de elementos utilizados com frequência nos estudos que nós
-utilizamos. Os conceitos envolvidos no modelo estão descritos a seguir.
+UML\@. É importante salientar que não havia um padrão na definição dos conceitos
+entre os artigos utilizados. Neste sentido, preferimos construir um modelo
+conceitual do contexto das FGRM de modo a utilizá-lo em discussões posteriores.
+Assim, a Figura~\ref{fig:diagrama-classe-conceitual-fgrm} apenas organiza
+diagramaticamente alguns dos tópicos que percebemos importantes na literatura.
+Optamos por não investir na organização conceitual da área de FGRMs em
+particular ou Manutenção de Software em geral tendo em vista que o nosso foco
+são funcionalidades existentes e as respectivas melhorias. Os conceitos
+envolvidos no modelo estão descritos a seguir.
 
 \begin{description}
-	\item[Projeto:] Projeto de software para o qual a FGRM visa suportar.
-		Ele é composto pelos atributos \textit{Componentes de Software},
-		\textit{Artefatos} e \textit{Contexto de Desenvolvimento}.
+    \item[Projeto:] Projeto de software para o qual a FGRM visa suportar. Neste
+        contexto uma FGRM organiza suas informações para cada projeto associado.
+        Por exemplo, no caso da Fundação Mozilla, existem diversos projetos que
+        estão sendo suportados pela mesma FGRM (Bugzilla). Desta forma, no caso
+        da Fundação Mozilla, nós temos o Projeto Firefox, o Projeto Thunderbird
+        e etc. Ele é composto pelos atributos \textit{Componentes de Software},
+        \textit{Artefatos} e \textit{Contexto de Desenvolvimento}.
 		\begin{itemize}
 			\item  \textit{Componente de Software} representa um ou mais módulo
 				que fazem parte do sistema que a FGRM suporta.
@@ -877,9 +886,11 @@ utilizamos. Os conceitos envolvidos no modelo estão descritos a seguir.
 
 A partir da Figura~\ref{fig:diagrama-classe-conceitual-fgrm} é possível
 verificar que um \textit{projeto} pode \textit{definir} o seu \textit{fluxo de
-    trabalho}, como por exemplo resolvendo que uma RM só pode ser considerada
-Fechada (Closed) \@-\@ vide Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}
-\@-\@ caso ela tenha sido avaliada por um Analista de Qualidade (vide
+    trabalho}, ou seja, quais são as regras que governam o processo de solução
+de RM, desde de quando ela é criada, passando pelo processo de atribuição e
+chegando a sua solução. Por exemplo, RM apenas pode ser considerada Fechada
+(Closed) \@-\@ vide Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca} \@-\@
+caso ela tenha sido avaliada por um Analista de Qualidade (vide
 Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}). A partir
 deste fluxo as RMs podem ser \textit{atendidas} visando à sua solução o que é
 feito por uma \textit{pessoa} devidamente registrada no \textit{repositório de
