@@ -4,6 +4,9 @@
     - Na Seção 1.3 foi alterado o texto do objetivo (i)
     - Alteração nas Contribuições do trabalho. Vide as duas últimas frases do
       parágrafo.
+[Capítulo 02]
+    - Removida a tabela 2.1 - Graus de revelância. As informações apresentadas
+      na tabela foi "diluídas" no texto por meio de texto e exemplos.
 [Capítulo 04]
     - Remoção da Figura 4.5 que exibia o percentual da avalição dos
       profissionais sobre as funcionalidades das FGRMs. O que estava exibido foi
