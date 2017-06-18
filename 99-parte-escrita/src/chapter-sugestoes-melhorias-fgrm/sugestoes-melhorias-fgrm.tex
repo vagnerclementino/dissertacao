@@ -154,14 +154,14 @@ As RMs permitem a inclusão de fragmentos de código fonte em seu relato ou nos
 comentários em diversas etapas do seu ciclo de vida. O código pode ser incluído
 durante a criação das RMs, nas discussões realizadas para a sua solução ou mesmo
 quando ela é concluída (fechada). Neste último caso o código anexo recebe o nome
-de \textit{patch}. Neste contexto, os fragmentos de código podem ser utilizados
-para descrever uma falha ou apresentar uma solução candidata. Apesar de sua
-importância este tipo de informação não é facilmente recuperada no contexto de
-uso de uma FGRM\@. O estudo de Damevski e outros~\cite{damevski2016field}, que
-analisa o problema da localização de funcionalidades no código fonte (feature
-location), ressalta a importância da facilidade de acesso ao código fonte pode
-propiciar a redução do tempo de conclusão da tarefa de manutenção e o aumento da
-qualidade das alterações realizadas.
+de \textit{patch}. Os fragmentos de código podem ser utilizados para descrever
+uma falha ou apresentar uma solução candidata. Apesar de sua importância este
+tipo de informação não é facilmente recuperada no contexto de uso de uma FGRM\@.
+O estudo de Damevski e outros~\cite{damevski2016field}, que analisa o problema
+da localização de funcionalidades no código fonte (feature location), ressalta a
+importância da facilidade de acesso ao código fonte pode propiciar a redução do
+tempo de conclusão da tarefa de manutenção e o aumento da qualidade das
+alterações realizadas.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficios_s02}
@@ -178,10 +178,9 @@ classes, funções, constantes e outros.
 
 Em certas ocasiões, uma RM em análise pode ter similaridades com outras
 solucionadas anteriormente. A similaridade pode ser devido a afetarem o mesmo
-módulo do sistema, por exemplo. Neste contexto, um desenvolvedor poderia
-realizar uma busca por código fonte na RM solucionada com o objetivo de
-encontrar fragmentos de código que o ajudem no entendimento e solução do pedido
-atual.
+módulo do sistema, por exemplo. Um desenvolvedor poderia realizar uma busca por
+código fonte na RM solucionada com o objetivo de encontrar fragmentos de código
+que o ajudem no entendimento e solução do pedido atual.
 
 \subsection{Ranqueamento pela Reputação do Reportador}
 \label{sub:diferenciacao_do_reportdor}
@@ -409,15 +408,14 @@ um dos formatos disponíveis.
 Conforme discutido na Seção~\ref{sub:diferenciacao_do_reportdor} a escolha das
 RMs que serão analisadas é um problema recorrente nas equipes de manutenção.
 Alguns times estão adotando práticas propostas pelos agilistas em suas rotinas
-de manutenção de software~\cite{svensson2005introducing}. Neste contexto, um
-problema comum, é que as iterações (sprint) estão sujeitas à interrupções por
-demandas urgentes de clientes~\cite{bennett2000software}. Uma possível solução é
-a utilização de uma reserva de tempo (buffer) que não é alocada no planejamento
-da iteração de modo a atender eventuais demandas não
-esperadas~\cite{schwaber2002agile}. Para apresentação da solução proposta ainda
-é necessário definir quais RMs devem ser priorizadas durante a iteração, o que
-geralmente é realizado manualmente. As FGRMs poderiam suportar à priorização
-automática de RMs urgentes.
+de manutenção de software~\cite{svensson2005introducing}. Um problema comum, é
+que as iterações (sprint) estão sujeitas à interrupções por demandas urgentes de
+clientes~\cite{bennett2000software}. Uma possível solução é a utilização de uma
+reserva de tempo (buffer) que não é alocada no planejamento da iteração de modo
+a atender eventuais demandas não esperadas~\cite{schwaber2002agile}. Para
+apresentação da solução proposta ainda é necessário definir quais RMs devem ser
+priorizadas durante a iteração, o que geralmente é realizado manualmente. As
+FGRMs poderiam suportar à priorização automática de RMs urgentes.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s07}
@@ -477,8 +475,8 @@ um conjunto de desenvolvedores com experiência em solucionar determinadas RMs.
 \label{par:papéis_afetados_s08}
 
 A atribuição de uma RM a mais de um desenvolvedor ajuda a otimizar a carga de
-trabalho em toda a equipe e pode aumentar a moral do time. Neste contexto, os
-mantenedores deixam de ser especialistas em determinados sistemas para se
+trabalho em toda a equipe e pode aumentar a moral do time. Em algumas situações
+os desenvolvedores deixam de ser especialistas em determinados sistemas para se
 tornarem generalistas, trabalhando com outros projetos. Esses benefícios são
 discutidos na literatura sobre o desenvolvimento e a manutenção que adotam as
 práticas propostas pelos agilistas~\cite{dybaa2008empirical,rudzki2009agile}.
