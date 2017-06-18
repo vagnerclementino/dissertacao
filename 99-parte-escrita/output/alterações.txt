@@ -7,6 +7,10 @@
 [Capítulo 02]
     - Removida a tabela 2.1 - Graus de revelância. As informações apresentadas
       na tabela foi "diluídas" no texto por meio de texto e exemplos.
+    - Eu acho que TRANSIÇÂO é uma atividade comum a DESENV e MANUT. O melhor
+      aqui é ver se vc precisa de alguma destes itens se não for o caso sugiro
+      remover  tudo desde acima: "O Corpo de Conhecimento.etc etc etc até
+      2.1.2.2."
 [Capítulo 04]
     - Remoção da Figura 4.5 que exibia o percentual da avalição dos
       profissionais sobre as funcionalidades das FGRMs. O que estava exibido foi

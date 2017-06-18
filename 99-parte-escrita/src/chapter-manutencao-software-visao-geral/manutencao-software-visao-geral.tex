@@ -39,20 +39,17 @@ diferentes partes interessadas de um projeto de software.
 \section{A Manutenção de Software e a Requisição de Mudança}
 \label{sec:conceitos_basicos}
 
-Nesta seção apresentamos terminologias que ajudam no entendimento do papel e
-finalidade da Manutenção de Software e a relação destes termos com o conceito de
-Requisição de Mudança. Iniciaremos com uma visão geral do processo de Manutenção
-de Software.
+Nesta seção apresentamos os vários termos e conceitos relacionados à Manutenção
+de Software e a relação destes termos com o conceito de Requisição de Mudança.
+Iniciaremos com uma visão geral da Manutenção de Software.
 
 \subsection{Visão Geral da Manutenção de Software}
 \label{sub:visão_geral_da_manutenção_de_softare}
 
-De uma maneira geral, podemos definir a atividade de manter software como a
-totalidade das ações necessárias para fornecer suporte a um produto de software.
-No Padrão IEEE 1219~\cite{ISO-1219-1998} ela é definida como a modificação de um
-produto de software após a sua entrega com o objetivo de corrigir falhas,
-melhorar o desempenho ou outros atributos com a finalidade de adaptar o sistema
-às modificações ambientais.
+No Padrão IEEE 1219~\cite{ISO-1219-1998} a Manutenção de Software é definida
+como a modificação de um produto de software após a sua entrega com o objetivo
+de corrigir falhas, melhorar o desempenho ou outros atributos com a finalidade
+de adaptar o sistema às modificações ambientais.
 
 Posteriormente a IEEE/EIA 12207~-~Padrão para o Processo de Ciclo de Vida do
 Software~\cite{ISOIEC-12207-2008}, retrata a manutenção como um dos principais
@@ -104,20 +101,20 @@ manutenção, que segundo o nosso entendimento, são os principais disponíveis 
 literatura. No contexto desta dissertação estes modelos são descritos como
 tradicionais. Em resumo, um processo de manutenção de software descreve as
 atividades e suas respectivas entradas e saídas. Alguns modelos são descritos
-nos padrões IEEE 1219 e ISO/IEC 14764. O processo especificado no padrão
-IEEE\@-\@1219 indica que as atividades de manutenção de software iniciem após a
-entrega do produto de software. O padrão também discute aspectos de planejamento
-da manutenção. As atividades que compõem o processo são apresentadas na
+nos padrões IEEE~1219 e ISO/IEC~14764. O processo especificado no padrão IEEE
+1219 indica que as atividades de manutenção de software iniciem após a entrega
+do produto de software. O padrão também discute aspectos de planejamento da
+manutenção. As atividades que compõem o processo são apresentadas na
 Figura~\ref{fig:ieee-1219-processo-man-software}.
 
 \begin{figure}[htpb] \centering
-	\includegraphics[width=0.5\linewidth]{./chapter-manutencao-software-visao-geral/img/ieee_1219_98_processo_manutencao.png}
-	\caption{IEEE 1219 -~Processo de Manutenção de
+    \includegraphics[width=0.5\linewidth]{./chapter-manutencao-software-visao-geral/img/ieee_1219_98_processo_manutencao.png}
+	\caption{IEEE~1219 Processo de Manutenção de
 		Software}\label{fig:ieee-1219-processo-man-software}
 \end{figure}
 
-De maneira relacionada, na ISO/IEC 14764 as atividades que compõem o processo
-são similares aquelas propostas na IEEE-~1219, exceto pelo fato que elas são
+De maneira relacionada, na ISO/IEC~14764 as atividades que compõem o processo
+são similares aquelas propostas na IEEE~1219, exceto pelo fato que elas são
 agregadas de uma forma diferente. O processo descrito na ISO/IEC~14764 são
 exibidas na Figura~\ref{fig:ieee-14764-processo-manutencao}.
 
@@ -127,14 +124,14 @@ exibidas na Figura~\ref{fig:ieee-14764-processo-manutencao}.
 	\caption{ISO/IEC~14764 Processo de Manutenção de Software}
 \label{fig:ieee-14764-processo-manutencao} \end{figure}
 
-As atividades de manutenção propostas na ISO/IEC 14764 são detalhadas nas
+As atividades de manutenção propostas na ISO/IEC~14764 são detalhadas nas
 tarefas descritas a seguir:
 
 \begin{itemize}
    	\item Implementação do Processo
-   	\item Análise e Modificação do
-		Problema
-	\item Aceitação e Revisão da Manutenção
+   	\item Análise do Problema e da Modificação
+    \item Implementação da Modificação
+	\item Revisão ou aceitação da Manutenção
    	\item Migração
    	\item Aposentadoria do Software
 \end{itemize}
@@ -142,20 +139,20 @@ tarefas descritas a seguir:
 É possível notar que algumas atividades realizadas durante a manutenção de
 software são similares a outras presentes no desenvolvimento de software, como
 por exemplo, análise de desempenho, codificação, teste e documentação. Outra
-atividade comum à manter e desenvolver software é o gerenciamento dos
-requisitos. Nas duas situações os profissionais responsáveis por controlar os
-requisitos devem atualizar a do\-cu\-men\-ta\-ção  por conta de alterações
-ocorridas no código fonte. Por outro lado, certas atividades estão vinculadas
-apenas ao contexto da manutenção de software. O Corpo de Conhecimento em
-Engenharia de Software~\cite{4425813} destaca algumas delas:
+atividade comum é o gerenciamento dos requisitos. Nas duas situações os
+profissionais responsáveis por controlar os requisitos devem atualizar a
+do\-cu\-men\-ta\-ção  por conta de alterações ocorridas no código fonte. Por
+outro lado, certas atividades estão vinculadas apenas ao contexto da manutenção
+de software. O Corpo de Conhecimento em Engenharia de Software~\cite{4425813}
+destaca algumas delas:
 
 \begin{description}
 	\item[Compreensão do programa:] atividades necessárias para obter um
 		conhecimento geral do que um produto de software faz e como as partes
 		funcionam em conjunto;
-    \item[Transição:] uma sequência controlada e coordenada de atividades em que
-        o software é transferido progressivamente do desenvolvedor para o
-        mantenedor;
+    % \item[Transição:] uma sequência controlada e coordenada de atividades em que
+    %     o software é transferido progressivamente do desenvolvedor para o
+    %     mantenedor;
     \item[Aceitação/rejeição de Requisições de Mudança:] as modificações que
         ultrapassem determinado limiar de tamanho, esforço ou complexidade podem
         ser rejeitadas pelos mantenedores e redirecionadas para outro
@@ -196,19 +193,19 @@ encorajamento e confiança entre os desenvolvedores.
 \subsection{Papéis na Manutenção de Software}
 \label{subsec:man_visao_geral_papeis_na_manutencao_de_software}
 
-As ações realizadas durante a manutenção de um software são desempenhadas por
-diferentes pessoas. Neste processo cada integrante da equipe de manutenção pode
-desempenhar um ou mais papéis. Os nomes e as atividades desenvolvidas por cada
-um pode variar de um projeto para outro, contudo, é possível determinar uma
-classificação que agregue um ponto comum entre os diferentes papéis. Nesta
-dissertação, utilizamos a classificação proposta por Polo e
-outros~\cite{Polo1999} cujo objetivo é definir a estrutura da equipe de
-manutenção através da identificação das tarefas que cada membro deve executar.
-O conjunto de papéis é o resultado da aplicação da metodologia
+As ações realizadas durante a manutenção de um software podem ser desempenhadas
+por uma ou mais pessoas. Similarmente ao que ocorre em equipes de
+desenvolvimento, cada integrante de uma equipe de manutenção pode desempenhar um
+ou mais papéis. Os nomes e as atividades desenvolvidas por cada um pode variar,
+contudo, é possível determinar uma classificação que agregue um pontos comuns
+entre os diferentes papéis. Nesta dissertação, utilizamos a classificação
+proposta por Polo e outros~\cite{Polo1999} cujo objetivo é definir uma estrutura
+da equipe de manutenção através da identificação de papéis responsáveis por
+tarefas. O conjunto de papéis é o resultado da aplicação da metodologia
 MANTEMA~\cite{756695} em projetos de software bancários espanhóis em que o setor
 de manutenção foi terceirizado (outsourcing). Os autores reforçam que apesar da
-classificação ter sido criada em um contexto específico, ela pode ser utilizada para
-aplicação em outras situações.
+classificação ter sido criada em um contexto específico, ela pode ser utilizada
+para aplicação em outras situações.
 
 Para esta dissertação removemos os papéis que segundo o nosso entendimento estão
 mais vinculados a um contexto de manutenção terceirizada (outsourcing).  Além
@@ -219,36 +216,39 @@ compõem a classificação utilizadas durante o texto da dissertação estão
 descritos a seguir:
 
 \paragraph{Usuário Afetado:}
-Indivíduo que utiliza o sistema do qual pertence à Requisição de Mudanças (RM)
+Indivíduo que utiliza o software correspondente à Requisição de Mudanças (RM)
 que será relatada. O defeito, a melhoria ou evolução no software, representada
 pela RM, estão relacionadas com os desejos e necessidades deste papel.
 
 \paragraph{Reportador:}
-Responsável por registrar a RM que pode ser qualquer pessoa envolvida no
-processo de Manutenção de Software. Neste sentido, as atividades relacionadas
-com o papel de Reportador podem estar vinculados com outras contidas nesta
-classificação. A Figura~\ref{fig:diagrama-caso-uso-reportador} apresenta esta
-situação através de um Diagrama de Caso de Uso, em que o \textit{Reportador} pode
-ser um usuário do sistema ou um membro da equipe de manutenção.
+Responsável por registrar a RM\@. Em certas situações este papel é desempenhado
+tanto pelo usuário do sistema quanto pela equipe de manutenção.
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-caso-uso-reportador.pdf}
-	\caption{Diagrama de caso de uso do papel Reportador}
-\label{fig:diagrama-caso-uso-reportador}
-\end{figure}
+% que pode ser qualquer pessoa envolvida no processo de Manutenção de Software.
+% Neste sentido, as atividades relacionadas com o papel de Reportador podem estar
+% vinculados com outras contidas nesta classificação. A
+% Figura~\ref{fig:diagrama-caso-uso-reportador} apresenta esta situação através de
+% um Diagrama de Caso de Uso, em que o \textit{Reportador} pode ser um usuário do
+% sistema ou um membro da equipe de manutenção.
+
+% \begin{figure}[htpb]
+% 	\centering
+% 	\includegraphics[width=0.8\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-caso-uso-reportador.pdf}
+% 	\caption{Diagrama de caso de uso do papel Reportador}
+% \label{fig:diagrama-caso-uso-reportador}
+% \end{figure}
 
 \paragraph{Gerente de Requisição de Mudança (Maintenance-request manager):}
 Res\-pon\-sá\-vel por decidir se uma RM será aceita ou rejeitada. Além disso,
-ele define qual tipo de manutenção deverá ser aplicada. Posteriormente cabe a
-este profissional encaminhar a RM para o Agente de Triagem.
+ele define qual tipo de manutenção deverá ser aplicada. Posteriormente cabe ao
+profissional que cumpre este papel encaminhar a RM para o Agente de Triagem.
 
 \paragraph{Agente de Triagem (Scheduler)}:
 Deve planejar a fila de RMs e atribuí-las para o desenvolvedor mais apto. A
 decisão pode considerar a carga de trabalho existente para cada possível
 destinatário da RM\@.
 
-\paragraph{Desenvolvedor:}
+\paragraph{Desenvolvedor}
 Responsável por realizar as ações que irão solucionar a RM\@.
 
 \paragraph{Analista de Qualidade:}
@@ -262,17 +262,19 @@ processo de manutenção que será utilizado.
 
 Apesar da classificação de papéis derivar de um contexto específico (setor
 bancário e empresas com a área de manutenção terceirizada), ela é capaz de
-acoplar com tipos modelos de processo de manutenção existente na literatura. Um
-exemplo está no trabalho proposto por Ihara e
-outros~\cite{Ihara:2009:AMI:1595808.1595833} em que foi criada uma representação
-de um processo de modificação de falhas (bugs) tomando como base as diversas
-estágios de uma RM no contexto de projetos de código aberto. O processo
-resultante é facilmente acoplável com a classificação proposta por Polo e outros
-e que utilizada nesta dissertação.
+acoplar com alguns tipos de modelos de processo de manutenção existente na
+literatura.
 
-Cabe ressaltar que está fora do escopo deste estudo elaborar uma classificação dos
-papeis envolvidos na Manutenção de Software em função de supormos que isto
-corresponde a um esforço bem extenso. Nossa ação é identificar se existem papeis
+% Um exemplo está no trabalho proposto por Ihara e
+% outros~\cite{Ihara:2009:AMI:1595808.1595833} em que foi criada uma representação
+% de um processo de modificação de falhas (bugs) tomando como base as diversas
+% estágios de uma RM no contexto de projetos de código aberto. O processo
+% resultante é facilmente acoplável com a classificação proposta por Polo e outros
+% e que utilizada nesta dissertação.
+
+Cabe ressaltar que está fora do escopo deste estudo elaborar uma classificação
+dos papeis envolvidos na Manutenção de Software em função de supormos que isto
+corresponde a um esforço bem extenso. Nossa ação é identificar alguns dos papeis
 e quais são eles, sem com isso, envolver em uma consolidação definitiva.
 
 \subsection{Requisição de Mudança}
@@ -314,7 +316,7 @@ e quais são eles, sem com isso, envolver em uma consolidação definitiva.
 %Alguns pesquisadores e profissionais entendem a manutenção preventiva como um
 %subconjunto da perfectiva~\cite{tripathy2014software}.
 
-Uma Requisição de Mudança (RM) é o veículo para registrar a informação sobre o
+Uma Requisição de Mudança (RM) corresponde ao registro da informação sobre o
 defeito, evolução ou melhoria de um sistema~\cite{tripathy2014software}. De
 maneira geral, uma RM pode ser especializada como o \textit{Pedido de Correção}
 de uma falha ou o \textit{Pedido de Melhoria} que pode estar relacionado com o
@@ -394,10 +396,9 @@ Esses campos fornecem uma variedade de metadados descritivos tais como
     produto}~\cite{zhang2016literature}. Em alguns casos a RM pode conter um
 campo de modo à relacioná-la com outra já existente na base de dados. Este tipo
 de vínculo é importante para minimizar problemas da gestão das RMs como por
-exemplo as duplicadas. Alguns dos problemas relacionados com a gestão das RMs
-estão descritos na Seção~\ref{ssub:problemas_relacionadas_rm}. A
-Figura~\ref{fig:rm-exemplo} exibe um exemplo representativo de uma RM contendo
-os elementos básicos descritos no modelo proposto na
+exemplo a duplicação discutida na Subseção~\ref{ssub:problemas_relacionadas_rm}.
+A Figura~\ref{fig:rm-exemplo} exibe um exemplo de uma RM contendo os elementos
+básicos descritos no modelo proposto na
 Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}.
 
 \begin{figure}[htpb]
@@ -408,39 +409,40 @@ Figura~\ref{fig:diagrama-classe-atributos-requisicao-mudancas}.
 \end{figure}
 
 Em síntese, apesar das diferentes nomenclaturas existentes na literatura
-(demanda, bug, defeito, bilhete, tíquete, requisição de modificação, relato de
-problema) uma Requisição de Mudança representa uma descrição, independente da
-estrutura, que visa gerar a manutenção ou evolução do software. A manutenção ou
-evolução estão relacionados com o reparo de uma falha ou com um desejo ou
-necessidade do usuário do software. Nesta dissertação procuramos ficar aderentes
-ao termo ``Requisição de Mudança'' e sua sigla \textit{RM}.
+(demanda, bug, defeito, bilhete, tíquete, requisição de modificação, solicitação
+de modificação, relato de problema) uma Requisição de Mudança representa uma
+descrição, independente da estrutura, que visa gerar a manutenção ou evolução do
+software. A manutenção ou evolução estão relacionados com o reparo de uma falha
+ou com um desejo ou necessidade do usuário do software. Nesta dissertação
+procuramos ficar aderentes ao termo ``Requisição de Mudança'' e sua sigla
+\textit{RM}.
 
 \subsubsection{Ciclo de Vida de uma Requisição de Mudança}
 \label{sub:fluxo_de_trabalho_requisicao_mudanca}
 
 Uma RM descreve os desejos e necessidades dos usuários de como um sistema deve
-operar. Quando uma RM é relatada dois fatores devem ser levados em
+operar. Quando uma RM é relatada pelo menos dois fatores devem ser levados em
 conta~\cite{tripathy2014software}:
 
 \begin{itemize}
-	\item \textit{Corretude da RM:} uma RM deve ser descrita de forma não
-		ambígua tal que seja fácil revisá-la afim de determinar sua corretude. O
-		``formulário'', que são os campos que devem ser preenchidos na RM, são a
-		chave para efetiva interação entre a organização que desenvolve o
-		software e os seus usuários. O formulário, neste sentido, documenta
-		informações essenciais sobre mudanças no software, hardware e
-		documentação.
-   \item \textit{Comunicação clara das RMs entre as partes
+    \item \textit{Corretude da RM:} uma RM deve ser descrita de forma não
+        ambígua tal que seja fácil revisá-la afim de determinar sua corretude. O
+        ``formulário'', que corresponde aos campos que devem ser preenchidos na
+        RM, é a chave para efetiva interação entre a organização que desenvolve
+        o software e os seus usuários. O formulário, neste sentido, documenta
+        informações essenciais sobre mudanças no software, hardware e
+        documentação.
+   \item \textit{Comunicação clara das RMs para as partes
            interessadas\footnote{Na
                Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}
                discutiremos em maior detalhe as diferentes partes interessadas
                no contexto da manutenção de software.}}: as RMs necessitam ser
-       claramente comunicadas entre as parte interessadas, inclusive entre a
-       equipe de manutenção. O resultado de avaliar de maneira distinta uma RM
-       pode ser contra-produtivo: \textit{(i)} a equipe que realiza mudanças no
-       sistema e a equipe que executa testes podem ter visões contraditórias
-       sobre a qualidade do software; \textit{(ii)} O sistema alterado pode não
-       atender às necessidades e desejos dos usuários finais.
+       claramente comunicadas para as partes interessadas. O resultado de
+       avaliar de maneira distinta uma RM pode ser contra-produtivo:
+       \textit{(i)} a equipe que realiza mudanças no sistema e a equipe que
+       executa testes podem ter visões contraditórias sobre a qualidade do
+       software; \textit{(ii)} O sistema alterado pode não atender às
+       necessidades e desejos dos usuários finais.
 \end{itemize}
 
 No caminho entre sua criação e solução uma RM possui diferentes estágios. O
@@ -451,7 +453,7 @@ Figura~\ref{fig:diagrama-estado-rm}. Nele uma RM inicia como \textit{Submetida
 de fatores que resultou na necessidade de relatar a RM pode não mais existir.
 Neste caso, ela é alterada para o estado \textit{Rejeitada (Decline)}.
 
-Existe um aspecto importante do ciclo de vida de uma RM que não consta na
+Existe um aspecto importante do ciclo de vida de uma RM não abordado na
 discussão apresentada por Tripathy \& Naik. Em teoria uma RM poderia ter novos
 estados: ``Reaberta'', quando um usuário ou outro membro da equipe de manutenção
 entende que ela não foi solucionada; ``Relacionada'', quando uma nova RM é na
@@ -470,8 +472,7 @@ A seguir apresentamos as características dos estados do ciclo de vida de uma
 RM\@ como base na discussão realizada por Tripathy \&
 Naik~\cite{tripathy2014software}. Para cada estado pode haver mais de um papel
 responsável pelas ações executadas. Também pode ocorrer que uma mesma pessoa
-desempenhe diferentes papéis neste processo. Uma discussão sobre os papéis
-utilizados no escopo desta dissertação pode ser encontrada na
+desempenhe diferentes papéis neste processo, conforme discutido na
 Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}.
 
 \paragraph{Submetida (Submit).}
@@ -503,22 +504,22 @@ RM é movida para o estado \textit{Em análise}.
 
 \paragraph{Em Análise (Analysis).}
 \label{par:em_analise}
+
 Neste estágio uma análise de impacto é conduzida para entender o que foi
 solicitado na RM e estimar o tempo necessário para implementá-la. Caso não seja
 possível ou desejável atendê-la a situação é alterada para \textit{Rejeitada}.
 Caso contrário, a RM é movida para estado \textit{Compromissada (Commit)}. No
-estado \textit{Em Análise} o ``dono'' da RM é denominado \textit{Agente de
+estado \textit{Em Análise} o responsável pela RM é denominado \textit{Agente de
     Triagem}.
 
 \paragraph{Compromissada (Commit).}
 \label{par:commit}
 
 A RM no estado \textit{Compromissada} não foi atendida, mas se encontra no
-planejamento do projeto de modo a estar em uma próxima versão do produto. Por
-ser um estado relacionado ao gerenciamento da manutenção, as RMs nesta situação
-estão à cargo do \textit{Gerente de Requisição de Mudança}. Algumas RMs podem
-ser incluídas em futuras versões do sistema após acordo com as demais partes
-interessadas.
+planejamento do projeto de modo a estar em uma próxima versão do produto. As RMs
+neste estado são responsabilidade de um \textit{Gerente de Requisição de
+    Mudança}. Algumas RMs podem ser incluídas em futuras versões do sistema após
+acordo com as demais partes interessadas.
 
 \paragraph{Em Implementação (Implement).}
 \label{par:em_implementacao}
@@ -535,11 +536,9 @@ No estágio de \textit{Em Implementação} diferentes cenários podem ocorrer:
 \paragraph{Em Verificação (Verification).}
 \label{par:em_verificacao}
 
-No estado de verificação as atividades são controladas pela equipe de testes.  A
-verificação de uma RM pode ser realizada pelos seguintes métodos: demonstração,
-análise ou inspeção. No primeiro caso, o software é executado com um conjunto de
-testes. A inspeção significa revisar o código em busca de defeitos. No caso da
-análise, o processo consiste em demonstrar que o sistema está em operação.
+No estado de verificação as atividades são controladas pelo Analista de
+Qualidade. Dentre os métodos de verificação temos demonstrações, análises,
+inspeções e testes.
 
 \paragraph{Fechada (Closed).}
 \label{par:fechada}
@@ -555,7 +554,7 @@ entendida, por algum membro das partes interessadas, como atendida.
 \paragraph{Rejeitada (Decline).}
 \label{par:rejeitada}
 
-Uma RM pode ser rejeitada caso ela deixa de produzir relevante impacto no
+Uma RM pode ser rejeitada caso ela seja considerada sem impacto relevante no
 sistema, não seja possível tecnicamente realizar o que foi solicitado na RM\@ ou
 a equipe de qualidade conclui que as mudanças no software para atender à RM não
 podem ser satisfatoriamente verificadas.
@@ -565,9 +564,9 @@ organizações que possuem uma área exclusivamente dedicada à manutenção de
 software. Em outros contextos, como por exemplo em projetos de código aberto, o
 processo de modificação dos estados de uma RM pode ser diferente. No trabalho de
 Ihara e outros~\cite{ihara2009analysis} foi conduzido um estudo de caso nos
-projetos Firefox e Apache e um dos resultados foi um digrama de estados que
-representa o processo de modificação de uma RM\@. Este diagrama é apresentado na
-Figura~\ref{fig:diagrama-estado-rm-codigo-aberto}.
+projetos Firefox e Apache e um dos resultados foi um diagrama apresentado na
+Figura~\ref{fig:diagrama-estado-rm-codigo-aberto} que representa o processo de
+modificação de uma RM\@.
 
 \begin{figure}[htpb]
 	\centering
@@ -595,25 +594,23 @@ poderia não ser reconhecida como fechada (closed).
 
 É possível relacionar o modelo descrito por Tripathy \&
 Naik~\cite{tripathy2014software} e aquele proposto por Ihara e
-outros~\cite{ihara2009analysis}. Em ambos é possível identificar fases em que uma
-RM é relatada, analisada e verificada. Além disso, os modelos discriminam
+outros~\cite{ihara2009analysis}. Em ambos é possível identificar fases em que
+uma RM é relatada, analisada e verificada. Além disso, os modelos discriminam
 situações em que o pedido descrito na RM não é capaz de ser realizado. Nesta
-dissertação utilizamos de forma geral o modelo proposto por Ihara e outros. Nos
-casos em que houver necessidade de um maior detalhamento a discussão tomará como
-base o modelo de Tripathy \& Naik.
+dissertação utilizamos de forma geral o modelo proposto por Ihara e outros.
 
 \subsubsection{Problemas e Desafios do Gerenciamento das RMs}
 \label{ssub:problemas_relacionadas_rm}
 
-A gestão das RMs é um desafio em projetos de software de diferentes tamanhos. A
-literatura discute e apresenta alguns problemas sobre o gerenciamento das RMs. A
-seguir discutimos os que do nosso ponto de vista são os mais relevantes.
+A gestão de RMs é um desafio no desenvolvimento e manutenção de software.  A
+seguir discutimos alguns dos problemas e desafios do gerenciamento de RMs
+discutidos na literatura.
 
 \paragraph{Localização do Problema:}
 
-A tarefa de encontrar a origem de uma falha de software é complexa e consome
-muito tempo. O estudo de Lúcia e outros afirma que na faixa de 84 a 93\% de
-problemas em software afetam entre 1 e 2 arquivos de
+A tarefa de encontrar a origem de uma falha de software em boa parte das vezes é
+complexa e consome muito tempo. O estudo de Thung e outros afirma que na faixa
+de 84 a 93\% de problemas em software afetam entre 1 e 2 arquivos de
 código-fonte~\cite{thung2012faults}. Apesar da pequena quantidade de arquivos
 afetados, identificar em quais deles o problema reside (buggy files) é uma
 tarefa árdua~\cite{Thung:2014:BIT:2635868.2661678}.
@@ -640,7 +637,7 @@ RMs~\cite{takama2013application,hora2012bug}.
 \paragraph{Baixa Qualidade do Relato:}
 
 Durante o processo de solução de uma RM a reprodução manual das falhas
-reportadas é demorada e tediosa. Os mantenedores tentam reproduzir problemas
+reportadas é demorada e tediosa. Os desenvolvedores tentam reproduzir problemas
 usando a informação contida nas RMs que muitas vezes está
 incompleta~\cite{White:2015:GRR:2820282.2820291}. Em algumas situações, para
 obter os dados que necessita, o desenvolvedor deve registrar um comentário para
@@ -662,11 +659,12 @@ redução gradativa de falhas~\cite{Tu:2014:MQI:2677832.2677844}.
 \paragraph{Identificação de RMs Duplicadas:}
 
 O processo de identificação de RMs Duplicadas consiste em avaliar se determinado
-relato já foi realizado em outro momento. Quando uma RM é identificada como
-duplicada ela deveria ser relacionada com a sua ``cópia''. Uma delas é definida
-como RM Mestre e as demais RMs Filhas. Geralmente a Mestre é aquela que foi
-primeiramente incluída no repositório de erros. Alguns estudos revelam que entre
-10\% e 30\% das RMs podem ser classificadas como
+relato de uma RM trata do mesmo assunto tratado no relato de outra RM\@. Quando
+uma RM é identificada como duplicada ela deveria ser relacionada com a sua
+``cópia''. Uma delas é definida como RM Mestre e as demais RMs Filhas.
+Geralmente a Mestre é aquela que foi primeiramente incluída no repositório de
+erros. Alguns estudos revelam que entre 10\% e 30\% das RMs podem ser
+classificadas como
 duplicadas~\cite{anvik2005coping,cavalcanti2013bug,Runeson:2007:DDD:1248820.1248882}.
 Por conta do grande número de RMs repetidas uma das soluções é o \textit{Agente
     de Triagem} analisá-las manualmente com objetivo de evitar que elas cheguem
@@ -721,26 +719,25 @@ sistema~\cite{Vijayakumar2014}.
 
 \paragraph{Recomendação de RMs:}
 
-Em alguns projetos, um membro experiente da equipe, geralmente ensina os
-recém-chegados o que eles precisam fazer para solucionar uma RM\@. Todavia,
-alocar um membro experiente de uma equipe por um longo tempo para ensinar um
-novato nem sempre é possível ou desejável. A premissa é que o mentor poderia ser
-mais útil fazendo tarefas mais importantes~\cite{malheiros2012source}. Por
-exemplo, quando um novo desenvolvedor entra na equipe seria interessante que ele
-resolvesse as RMs que tivessem um menor nível de dificuldade. Posteriormente,
-quando o desenvolvedor ganhasse mais experiência, poderia aumentar o grau de
-dificuldade das RMs que ele deve tratar. Este tipo de processo ocorre com certa
-frequência em projetos de código aberto, em que a contribuição de desenvolvedores
-externos ao projeto é fundamental. No entanto, encontrar um defeito apropriado
-ao nível de conhecimento do desenvolvedor, bem como a correção apropriada para o
-mesmo requer uma boa compreensão do projeto~\cite{Wang2011bug}.
+Em algumas equipes, um membro experiente geralmente ensina os recém-chegados o
+que eles precisam fazer para solucionar uma RM\@. Todavia, alocar um membro
+experiente de uma equipe por um longo tempo para ensinar um novato nem sempre é
+possível ou desejável. A premissa é que o mentor poderia ser mais útil fazendo
+tarefas mais importantes~\cite{malheiros2012source}. Por exemplo, quando um novo
+desenvolvedor entra no projeto seria interessante que ele resolvesse as RMs que
+tivessem um menor nível de dificuldade. Posteriormente, quando o desenvolvedor
+ganhasse mais experiência, poderia aumentar o grau de dificuldade das RMs que
+ele deve tratar. Este tipo de situação ocorre com certa frequência em projetos
+de código aberto, em que a contribuição de desenvolvedores externos ao projeto é
+fundamental. No entanto, encontrar um defeito apropriado ao nível de
+conhecimento do desenvolvedor, bem como a correção apropriada para o mesmo
+requer uma boa compreensão do projeto~\cite{Wang2011bug}.
 
 Para facilitar a inclusão de novos desenvolvedores alguns estudos vêm se
 dedicando ao desenvolvimento de sistemas de recomendação de
 RMs~\cite{malheiros2012source, Wang2011bug}. Estes sistemas podem ajudar o
 recém-chegado a solucionar uma RM mediante a apresentação do código fonte
-potencialmente relevante que o ajudará na solução da RM do qual ficou
-responsável~\cite{malheiros2012source}.
+potencialmente relevante~\cite{malheiros2012source}.
 
 % O segundo tipo de abordagem pode ser vista como ambiente de exploração do
 % repositório de RMs.  Esta funcionalidade permite que novos desenvolvedores
@@ -751,34 +748,34 @@ responsável~\cite{malheiros2012source}.
 \section{As Ferramentas de Gerenciamento de Requisições de Mudança (FGRM)}
 \label{sec:ferramentas_de_gerenciamento_requisicoes_de_mudanca}
 
-Dentro da disciplina de Gerenciamento da Configuração do Software a atividade de
-controle de configuração é responsável por gerenciar mudanças ocorridas durante
-o ciclo de vida de um produto de software~\cite{tripathy2014software}. Entre as
-atividades deste processo estão determinar quais alterações serão feitas,
-definir o papel responsável por autorizar certos tipos de mudanças e aprovar
-desvios relativos aos requisitos iniciais do projeto~\cite{4425813}. De uma
-forma mais ou menos estruturada tais ações ocorrem em diferentes tipos de
-projeto de software, seja ele com características tradicionais (vide
-Seção~\ref{subsec:manutenção_de_software_tradicional}) ou ainda naqueles que
-utilizam os métodos propostos pelos agilistas.
+% Dentro do Gerenciamento da Configuração do Software a atividade de controle de
+% configuração é responsável por gerenciar mudanças ocorridas durante o ciclo de
+% vida de um produto de software~\cite{tripathy2014software}. Entre as atividades
+% do gerenciamento da configuração estão determinar quais alterações serão feitas,
+% definir o papel responsável por autorizar certos tipos de mudanças e aprovar
+% desvios relativos aos requisitos iniciais do projeto~\cite{4425813}. De uma
+% forma mais ou menos estruturada tais ações ocorrem em diferentes tipos de
+% projeto de software, seja ele com características tradicionais (vide
+% Seção~\ref{subsec:manutenção_de_software_tradicional}) ou ainda naqueles que
+% utilizam os métodos propostos pelos agilistas.
 
-Por conta do volume das RMs, e os diversos desafios relacionados com sua gestão,
-é necessária a utilização de ferramentas com o objetivo de gerenciá-las. Esse
-controle é geralmente realizado por Sistemas de Controle de Demandas (SCD)\@-\@
-Issue Tracking Systems, que auxiliam os desenvolvedores na correção de forma
-individual ou colaborativa de defeitos (bugs), no desenvolvimento de novas
-funcionalidades, dentre outras tarefas relativas à manutenção de software. Não
-existe na literatura uma nomenclatura padrão para este tipo de sistema. Em
-alguns estudos é possível verificar nomes tais como Sistema de Controle de
-Defeito\@-\@ Bug Tracking Systems, Sistema de Gerenciamento da Requisição\@-\@
-Request Management System, Sistemas de Controle de Demandas (SCD)\@-\@ Issue
-Tracking Systems. Todavia, de modo geral, o termo se refere às ferramentas
-utilizadas pelas organizações para \textit{gerenciar as Requisições de Mudança}.
-Estas ferramentas podem ainda ser utilizadas por gestores, analistas de
-qualidade e usuários finais para atividades para gerenciamento de projetos,
-comunicação, discussão e revisão de código. Neste trabalho utilizaremos o termo
-\texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) ao nos
-referir a este tipo de software.
+% Por conta do volume das RMs, e os diversos desafios relacionados com sua gestão,
+% é necessária a utilização de ferramentas com o objetivo de gerenciá-las. Esse
+% controle é geralmente realizado por Sistemas de Controle de Demandas (SCD)\@-\@
+% Issue Tracking Systems, que auxiliam os desenvolvedores na correção de forma
+% individual ou colaborativa de defeitos (bugs), no desenvolvimento de novas
+% funcionalidades, dentre outras tarefas relativas à manutenção de software. Não
+% existe na literatura uma nomenclatura padrão para este tipo de sistema. Em
+% alguns estudos é possível verificar nomes tais como Sistema de Controle de
+% Defeito\@-\@ Bug Tracking Systems, Sistema de Gerenciamento da Requisição\@-\@
+% Request Management System, Sistemas de Controle de Demandas (SCD)\@-\@ Issue
+% Tracking Systems. Todavia, de modo geral, o termo se refere às ferramentas
+% utilizadas pelas organizações para \textit{gerenciar as Requisições de Mudança}.
+% Estas ferramentas podem ainda ser utilizadas por gestores, analistas de
+% qualidade e usuários finais para atividades para gerenciamento de projetos,
+% comunicação, discussão e revisão de código. Neste trabalho utilizaremos o termo
+% \texttt{Ferramentas de Gerenciamento de Requisições de Mudança} (FGRM) ao nos
+% referir a este tipo de software.
 
 As RMs são controladas por uma FGRM na forma de um fluxo de trabalho de modo a
 identificar, descrever e controlar a sua situação. Em geral, os objetivos de um
@@ -786,67 +783,68 @@ projeto em adotar uma FGRM para gerenciar suas RMs são os
 seguintes~\cite{tripathy2014software}:
 
 \begin{itemize}
-    \item Disponibilizar um espaço comum para a comunicação entre as partes
+    \item Disponibilizar um método comum para a comunicação entre as partes
         interessadas.
-	\item Identificar de forma única e controlar a situação de cada RM\@. Esta
+	\item Identificar de forma única e rastrear a situação de cada RM\@. Esta
 		característica simplifica o processo de relatar uma RM e fornece um
 		melhor controle sobre as mudanças.
-    \item Manter uma base de dados sobre todas as mudanças no sistema
-        desenvolvido ou mantido pelo projeto. Esta informação pode ser utilizada
-        para monitoramento e métricas de medição.
+    \item Manter uma base de dados sobre todas as mudanças no sistema. Esta
+        informação pode ser utilizada para monitoramento e métricas de medição.
 \end{itemize}
 
-No momento em que este trabalho estava sendo desenvolvido, estudos discutem o
-fato de que as FGRMs não apenas ajudam as organizações a gerenciar, atribuir,
-controlar, resolver e arquivar as RMs~\cite{Bertram:2010:CCB:1718918.1718972}.
-Em alguns casos, este tipo de ferramenta se tornou o ponto focal para
-comunicação e coordenação para diversas partes interessadas, dentro e além da
-equipe de manutenção. As FGRMs servem como um repositório central para monitorar
-o progresso das ações dos mantenedores associadas a uma RM, para solicitar
-informações adicionais da pessoa responsável por redigir a requisição e o ponto
-de discussão para potenciais soluções de um defeito
-(bug)~\cite{zimmermann2009improving}.
+No momento em que os trabalhos desta dissertação estavam sendo desenvolvido,
+alguns estudos discutiam o fato de que as FGRMs não apenas ajudam as
+organizações a gerenciar, atribuir, controlar, resolver e arquivar as
+RMs~\cite{Bertram:2010:CCB:1718918.1718972}.  Em alguns casos, este tipo de
+ferramenta se tornou o ponto focal para comunicação e coordenação para diversas
+partes interessadas, dentro e além da equipe de manutenção. As FGRMs servem como
+um repositório central para monitorar o progresso das ações dos mantenedores
+associadas a uma RM, para solicitar informações adicionais da pessoa responsável
+por redigir a requisição e o ponto de discussão para potenciais soluções de um
+defeito (bug)~\cite{zimmermann2009improving}.
 
 Em projetos de código aberto, as FGRMs são um importante espaço onde a equipe de
 desenvolvimento interage com a comunidade. Como consequência é possível observar
 o fenômeno da participação dos usuários no processo de solução da RM:\@ eles não
-apenas submetem a RM, mas também participam da discussão de como resolvê-la.
-Desta forma, o usuário final ajuda nas decisões sobre a direção futura do
-produto de software~\cite{breu2010information}.
+apenas submetem a RM, mas também participam da discussão da solução. Desta
+forma, o usuário final ajuda nas decisões sobre a direção futura do produto de
+software~\cite{breu2010information}.
 
 \subsection{Modelo Conceitual do Contexto das FGRMs}
 \label{sub:espectro_funcionalidades_fgrm}
 
-As FGRMs vêm sendo utilizadas por diversos projetos com características
-próprias. Neste sentido, elas devem oferecer diferentes funcionalidades para que
-possa atender demandas específicas. Apesar da variedade de ferramentas
-disponíveis\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}},
-é possível encontrar atributos comuns que permitem a compilação de um modelo
-conceitual do contexto dessa ferramenta.
+As FGRMs têm características as vezes distintas e têm sido usadas em diferentes
+contextos, apesar disso é possível encontrar atributos comuns que permitem a
+compilação de um modelo das FGRMs e de seu contexto. A construção de um modelo
+conceitual do contexto das FGRM pode ajudar em discussões posteriores.
+Acreditamos que o esforço para a criação de um modelo conceitual para FGRMs e
+seu contexto é bem extenso. Conforme discutido na Conclusão desta dissertação
+percebemos que organizar de maneira consistente e abrangente as FGRMs e seu
+contexto não foi o foco de nosso trabalho e aqui apenas itemizamos alguns
+conceitos que podem ser candidatos a estarem presentes em um trabalho que se
+proponha a preparar um modelo.
 
-Nós construímos um modelo conceitual do contexto com base na literatura da área,
-em especial nos trabalhos de~\cite{cavalcanti2014challenges, singh2011bug,
-    kshirsagar2015issue}. Nós sintetizamos os dados através da identificação de
-temas recorrentes da definição de FGRMs disponíveis nos artigos. Foram
-encontrados quatro principais conceitos que estão retratados na
-Figura~\ref{fig:diagrama-classe-conceitual-fgrm} como um diagrama baseado na
-UML\@. É importante salientar que não havia um padrão na definição dos conceitos
-entre os artigos utilizados. Neste sentido, preferimos construir um modelo
-conceitual do contexto das FGRM de modo a utilizá-lo em discussões posteriores.
-Assim, a Figura~\ref{fig:diagrama-classe-conceitual-fgrm} apenas organiza
-diagramaticamente alguns dos tópicos que percebemos importantes na literatura.
-Optamos por não investir na organização conceitual da área de FGRMs em
-particular ou Manutenção de Software em geral tendo em vista que o nosso foco
-são funcionalidades existentes e as respectivas melhorias. Os conceitos
-envolvidos no modelo estão descritos a seguir.
+% Nós construímos um modelo conceitual do contexto com base em alguns estudos
+% sobre o tema~\cite{cavalcanti2014challenges, singh2011bug, kshirsagar2015issue}.
+% Nós sintetizamos os dados através da identificação de temas envolvendo as FGRMs
+% disponíveis nos artigos.
+
+% É importante salientar que não havia um padrão na definição dos conceitos entre
+% os artigos utilizados. Neste sentido, preferimos construir um modelo conceitual
+% do contexto das FGRM de modo a utilizá-lo em discussões posteriores. Conforme
+% discutido na Conclusão desta dissertação percebemos que organizar de maneira
+% consistente e abrangente as FGRMs e seu contexto não foi o foco de nosso
+% trabalho e aqui apresentamos apenas um modelo bastante incipiente. Optamos por
+% não investir na organização conceitual da área de FGRMs em particular ou
+% Manutenção de Software em geral tendo em vista que o nosso foco são
+% funcionalidades existentes e as respectivas melhorias. Os conceitos envolvidos
+% no modelo estão descritos a seguir.
 
 \begin{description}
-    \item[Projeto:] Projeto de software para o qual a FGRM visa suportar. Neste
-        contexto uma FGRM organiza suas informações para cada projeto associado.
-        Por exemplo, no caso da Fundação Mozilla, existem diversos projetos que
-        estão sendo suportados pela mesma FGRM (Bugzilla). Desta forma, no caso
-        da Fundação Mozilla, nós temos o Projeto Firefox, o Projeto Thunderbird
-        e etc. Ele é composto pelos atributos \textit{Componentes de Software},
+    \item[Projeto:] Em vários contextos um ``projeto'' corresponde a um
+        ``projeto de manutenção de software'', mas há também contextos que
+        tratam de um ``projeto'' que não é claramente especificado. Este pode
+        ser composto pelos atributos \textit{Componentes de Software},
         \textit{Artefatos} e \textit{Contexto de Desenvolvimento}.
 		\begin{itemize}
 			\item  \textit{Componente de Software} representa um ou mais módulo
@@ -882,34 +880,34 @@ envolvidos no modelo estão descritos a seguir.
 		De maneira relacionada, os diferentes estados de um ciclo de vida de uma
 		RM estão descritos na
 		Subseção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}.
-\end{description}
+    \end{description}
 
-A partir da Figura~\ref{fig:diagrama-classe-conceitual-fgrm} é possível
-verificar que um \textit{projeto} pode \textit{definir} o seu \textit{fluxo de
-    trabalho}, ou seja, quais são as regras que governam o processo de solução
-de RM, desde de quando ela é criada, passando pelo processo de atribuição e
-chegando a sua solução. Por exemplo, RM apenas pode ser considerada Fechada
-(Closed) \@-\@ vide Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca} \@-\@
-caso ela tenha sido avaliada por um Analista de Qualidade (vide
-Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}). A partir
-deste fluxo as RMs podem ser \textit{atendidas} visando à sua solução o que é
-feito por uma \textit{pessoa} devidamente registrada no \textit{repositório de
-    pessoas} e com permissão para realizar a ação necessária.
+% A partir da Figura~\ref{fig:diagrama-classe-conceitual-fgrm} é possível
+% verificar que um \textit{projeto} pode \textit{definir} o seu \textit{fluxo de
+%     trabalho}, ou seja, quais são as regras que governam o processo de solução
+% de RM, desde de quando ela é criada, passando pelo processo de atribuição e
+% chegando a sua solução. Por exemplo, RM apenas pode ser considerada Fechada
+% (Closed) \@-\@ vide Seção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca} \@-\@
+% caso ela tenha sido avaliada por um Analista de Qualidade (vide
+% Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}). A partir
+% deste fluxo as RMs podem ser \textit{atendidas} visando à sua solução o que é
+% feito por uma \textit{pessoa} devidamente registrada no \textit{repositório de
+%     pessoas} e com permissão para realizar a ação necessária.
 
-\begin{figure}[htpb] \centering
-	\includegraphics[width=1.15\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-fgrm.pdf}
-	\caption{Modelo conceitual do contexto de uma FGRM}
-\label{fig:diagrama-classe-conceitual-fgrm}
-\end{figure}
+% \begin{figure}[htpb] \centering
+% 	\includegraphics[width=1.15\linewidth]{./chapter-manutencao-software-visao-geral/img/diagrama-classe-conceitual-fgrm.pdf}
+% 	\caption{Modelo conceitual do contexto de uma FGRM}
+% \label{fig:diagrama-classe-conceitual-fgrm}
+% \end{figure}
 
-Conforme exposto, as FGRMs desempenham um papel que vai além de gerenciar as
-Requisições de Mudança. Neste sentido, é importante estudar este tipo de
-software em busca do conhecimento de como melhorá-los de modo a atender as
-diversas necessidades dos seus usuários. Contudo, é importante avaliar as novas
-funcionalidades propostas na li\-te\-ra\-tu\-ra. Uma possível forma de melhoria
-é através do uso de extensões. Na próxima seção abordamos esta propriedade de
-algumas FGRMs que permitem a inclusão e modificação de funcionalidades e
-comportamentos segundo as necessidades do usuário.
+As FGRMs desempenham um papel que vai além de gerenciar as Requisições de
+Mudança. Neste sentido, é importante estudar este tipo de software em busca do
+conhecimento de como melhorá-los de modo a atender as diversas necessidades dos
+seus usuários. Contudo, é importante avaliar as novas funcionalidades propostas
+na li\-te\-ra\-tu\-ra. Uma possível forma de melhoria é através do uso de
+extensões. Na próxima seção abordamos esta propriedade de algumas FGRMs que
+permitem a inclusão e modificação de funcionalidades e comportamentos segundo as
+necessidades do usuário.
 
 \subsection{Extensões de Funcionalidades em FGRM}
 \label{subsec:manutencao_visao_geral_extensoes_fgrm}
@@ -917,8 +915,8 @@ comportamentos segundo as necessidades do usuário.
 Em determinados domínios de aplicação é interessante desenvolver produtos de
 software com uma arquitetura que permita o sistema se adaptar às mudanças em em
 seu ambiente. Existe a possibilidade de incluir novas funcionalidades dentro das
-já existentes no software, todavia, verificamos que sistemas que permitem
-extensões apresentam os seguintes benefícios:
+já existentes no software. Verificamos que os sistemas que permitem extensões
+apresentam os seguintes benefícios:
 
 \begin{itemize}
     \item Extensibilidade: o software pode ser dinamicamente estendido mediante
@@ -936,12 +934,13 @@ uma característica ou comportamento específico para um programa de
 computador\footnote{\url{https://en.wikipedia.org/wiki/Plug-in\_(computing)}}.
 Cabe-nos ressaltar que a nossa definição de extensão incluí aquelas que não
 estão acopladas ao código de determinada FGRM\@. Por exemplo, a funcionalidade
-de atribuição de uma RM está presente na maior parte das FGRMs, todavia, segundo
-nossa definição, uma proposta de melhoria desta funcionalidade mediante uma
-atribuição automatizada, por exemplo, será analisada como extensão mesmo que ela
-não esteja efetivamente funcionando em alguma FGRM\@. Vamos a\-na\-li\-sar as
-extensões de funcionalidade de forma independente se ela é oferecida baseada nos
-mecanismos de extensão discutidos nesta seção.
+de atribuição de uma RM a um desenvolvedor está presente na maior parte das
+FGRMs, todavia, segundo nossa definição, uma proposta de melhoria desta
+funcionalidade mediante uma atribuição automatizada, por exemplo, será analisada
+como extensão mesmo que ela não esteja efetivamente funcionando em alguma
+FGRM\@. Vamos a\-na\-li\-sar as extensões de funcionalidade de forma
+independente se ela é oferecida baseada nos mecanismos de extensão discutidos
+nesta seção.
 
 Verificamos na literatura alguns estudos em que as soluções propostas já se
 tornaram extensões de determinadas FGRM\@. Como pode ser observado no Mapeamento
@@ -977,31 +976,28 @@ melhorias para as FGRMs pode estar interessado em analisar o conjunto de funçõ
 que permita caracterizar este tipo de software.
 
 O número de FGRMs disponíveis quando esta dissertação foi escrita era de cerca
-de \textit{50} ferramentas, fornecidas comercialmente ou em código
-aberto\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
-Apesar das diversas opções disponíveis, ao bem do nosso conhecimento, são poucos
-os estudos que avaliam sistematicamente as funcionalidades oferecidas por este
-tipo de software. A nossa expectativa é que, a partir de um conjunto compartilhado
-de funções e comportamentos, sejamos capazes de caracterizar as FGRMs, ao mesmo
-tempo que possibilitaria avaliar a contribuição de novas funcionalidades
-propostas na li\-te\-ra\-tu\-ra, conforme será apresentado no
-Capítulo~\ref{ch:mapeamento-sistematico}. Com este objetivo realizamos um estudo
-exploratório para coletar as funcionalidades presentes nas FGRMs. Em um estudo
-exploratório a preocupação é analisar o objeto em sua configuração natural,
-deixando que as descobertas surjam da própria
+de \textit{50}
+ferramentas\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
+A nossa expectativa é que, a partir de um conjunto compartilhado de funções e
+comportamentos, sejamos capazes de caracterizar as FGRMs e também avaliar a
+contribuição de novas funcionalidades propostas na li\-te\-ra\-tu\-ra, conforme
+será apresentado no Capítulo~\ref{ch:mapeamento-sistematico}. Com este objetivo
+realizamos um estudo exploratório para coletar as funcionalidades presentes nas
+FGRMs. Em um estudo exploratório a preocupação é analisar o objeto em sua
+configuração natural, deixando que as descobertas surjam da própria
 observação~\cite{wohlin2012experimentation}.
 
-O estudo descrito nesta Seção consistiu na leitura da documentação disponível na
-Internet de algumas FGRMs de modo a compilar e agrupar as funcionalidades
-o\-fe\-re\-ci\-das por cada ferramenta. As funções foram coletadas e organizadas
-utilizando a técnica de Cartões de Classificação (Sorting Cards)~\cite{5070993,
-    rugg2005sorting}. Devido ao alto volume de ferramentas disponíveis e ao
-esforço necessário para analisar a documentação de cada uma delas, optamos por
-realizar este estudo com 6 ferramentas que foram escolhidas com a ajuda de
-profissionais envolvidos em manutenção de software. A opinião dos profissionais
-foi coletada através de um levantamento por questionário (survey) em que eles
-selecionavam as FGRMs que julgavam mais representativas dentre aquelas que lhe
-foi apresentada a partir de uma lista previamente definida.
+% O estudo descrito nesta Seção consistiu na leitura da documentação disponível na
+% Internet de algumas FGRMs de modo a compilar e agrupar as funcionalidades
+% o\-fe\-re\-ci\-das por cada ferramenta. As funções foram coletadas e organizadas
+% utilizando a técnica de Cartões de Classificação (Sorting Cards)~\cite{5070993,
+%     rugg2005sorting}. Devido ao alto volume de ferramentas disponíveis e ao
+% esforço necessário para analisar a documentação de cada uma delas, optamos por
+% realizar este estudo com 6 ferramentas que foram escolhidas com a ajuda de
+% profissionais envolvidos em manutenção de software. A opinião dos profissionais
+% foi coletada através de um levantamento por questionário (survey) em que eles
+% selecionavam as FGRMs que julgavam mais representativas dentre aquelas que lhe
+% foi apresentada a partir de uma lista previamente definida.
 
 \subsection{Objetivo do Estudo}
 \label{subsec:caracterizacao_objetivo_do_capitulo}
@@ -1009,12 +1005,11 @@ foi apresentada a partir de uma lista previamente definida.
 O objetivo do estudo descrito nesta Seção é coletar, apresentar e discutir as
 principais funcionalidades das FGRMs que dão suporte ao desenvolvimento e
 manutenção de software. O ponto de partida é o conjunto de sistemas escolhidos
-por meio de um levantamento (survey). Acreditamos que o resultado obtido
-permitirá uma melhor compreensão deste tipo de software tomando como base o
-conjunto de funções que eles oferecem aos seus usuários. Em um segundo momento
-também será possível propor novas funcionalidades ou melhorias das existentes
-tendo em vista a possibilidade de determinar o conjunto mínimo de comportamentos
-das FGRMs.
+por meio de um levantamento (survey). Acreditamos que o resultado obtido permite
+uma melhor compreensão deste tipo de software tomando como base o conjunto de
+funções que eles oferecem aos seus usuários. Em um segundo momento também será
+possível propor novas funcionalidades ou melhorias das existentes tendo em vista
+a possibilidade de determinar o conjunto mínimo de comportamentos das FGRMs.
 
 \subsection{Metodologia}
 \label{subsec:metodologia}
@@ -1055,8 +1050,8 @@ dois grupos de profissionais em que o questionário foi replicado. Na segunda,
 apresentamos as ferramentas e solicitamos aos participantes que avaliassem a
 relevância de cada uma delas através de uma escala do tipo
 Likert~\cite{robbins2011plotting}. Foi disponibilizado aos participantes um
-campo de texto em que era possível registrar outras FGRMs que ele entenda
-relevante, mas que não estava na lista que lhe foi apresentada.
+campo de texto em que era possível registrar outras FGRMs também julgadas
+relevantes, mas que não estava na lista que lhe foi apresentada.
 
 Antes da aplicação, o questionário foi validado em um processo de três etapas.
 Na primeira parte foi solicitada a avaliação por dois pesquisadores experientes
@@ -1072,13 +1067,13 @@ informática. Trata-se de uma amostra de conveniência devida a nossa facilidade
 de acesso aos mesmos. Os programadores tiveram que preencher o questionário,
 contudo, foram adicionadas questões em que era possível inserir sugestões de
 melhoria. Como o público-alvo do questionário poderia incluir desenvolvedores de
-diferentes nacionalidades foi criada uma versão em língua inglesa do formulário.
+diferentes nacionalidades foi criada uma versão em inglês.
 
 No caso deste levantamento a população é o conjunto de profissionais que
 trabalham com desenvolvimento e manutenção de software e que tenham uma razoável
 experiência de uso com as FGRMs. A caracterização e estratificação desta
-população não é simples. Neste sentido, visando minimizar possíveis
-enviesamentos, replicamos o questionário em dois grupos:
+população não é simples. Neste sentido, visando diminuir possíveis viéses,
+replicamos o questionário em dois grupos:
 
 \begin{description}
 	\item[Grupo 01:] Profissionais que participam de fóruns e discussões sobre
@@ -1119,7 +1114,7 @@ para resposta mais positiva como ``Muito relevante''.  Por exemplo, se uma
 ferramenta $X$ teve a opção ``Muito relevante'' escolhida por três profissionais
 ela receberia a pontuação final de 15. Caso uma ferramenta não estivesse na
 lista, mas foi informada pelo participante de forma espontânea, ela recebia uma
-pontuação igual a 5. Após o cálculo de pontuação de cada ferramenta, ordenamos
+pontuação igual a 5. Após o cálculo da pontuação de cada ferramenta, ordenamos
 do maior para o menor valor e escolhemos as três melhores posicionadas de cada
 categoria.
 
@@ -1143,15 +1138,14 @@ categoria.
 
 Nesta etapa do trabalho realizamos a leitura do material disponível na Internet
 para cada uma das ferramentas selecionadas conforme descrito anteriormente.
-Entre os materiais utilizados encontram-se manuais do usuário e de desenvolvedor
-e notas de lançamento. Para cada uma das FGRMs optamos por analisar a última
-versão estável do software a fim de analisarmos o que há de mais novo disponível
-aos usuários. A documentação de algumas ferramentas, em especial aquelas que
-adotam uma arquitetura cliente/servidor e necessitam de um certo grau de
-administração, dividem as funcionalidades do software entre aquelas com foco no
-usuário final e ad\-mi\-nis\-tra\-do\-res de sistema. Nestes casos, optamos por
-coletar as funcionalidades cujo foco seja o usuário da FGRM, tendo em vista que
-funcionalista com foco administradores não estão no escopo desta dissertação.
+Para cada uma das FGRMs optamos por analisar a última versão estável do software
+a fim de analisarmos o que há de mais novo disponível aos usuários. A
+documentação de algumas ferramentas, em especial aquelas que adotam uma
+arquitetura cliente/servidor e necessitam de um certo grau de administração,
+dividem as funcionalidades do software entre aquelas com foco no usuário final e
+ad\-mi\-nis\-tra\-do\-res de sistema. Nestes casos, optamos por coletar as
+funcionalidades para os usuários finais das FGRMs tendo em vista que aquelas com
+foco em administradores de sistemas não estão no escopo desta dissertação.
 
 A Tabela~\ref{tab:fgrm-docs} apresenta as ferramentas e o elo de ligação para os
 respectivos documentos que foram utilizados. Para aquelas sistemas que
@@ -1186,27 +1180,25 @@ Redmine & \url{http://www.redmine.org/projects/redmine/wiki/Features} \\ \bottom
 \end{table}
 
 Os dados obtidos da leitura da documentação de cada ferramenta foram
-sistematizados por meio da técnica denominada \textit{Cartões de
-    Classificação~-~Sorting Cards}. Trata-se de uma processo de elicitação de
-conhecimento de baixo custo e com foco no usuário que é utilizada na área de
-arquitetura da informação para criar modelos mentais e derivar uma classificação
-a partir dos dados utilizados~\cite{just2008towards}. A técnica envolve a
+classificados por meio da técnica denominada \textit{Cartões de
+    Classificação~-~Sorting Cards}. Trata-se de um processo de elicitação de
+conhecimento de baixo custo e com foco no usuário que é utilizado na área de
+arquitetura da informação para criar modelos mentais e derivar classificações a
+partir dos dados utilizados~\cite{just2008towards}. A técnica envolve a
 categorização de um conjunto de cartões em grupos distintos de acordo com algum
 critério previamente definido~\cite{mcgee2009software}. O estudo de Maiden e
-outros~\cite{maiden1996acre} sugere que os Cartões de Classificação seja uma das
-mais úteis para aquisição de conhecimento de dados, em contraste ao conhecimento
-de comportamento ou de processo.
+outros~\cite{maiden1996acre} sugere que a técnica dos Cartões de Classificação
+seja uma das mais úteis para aquisição de conhecimento de dados.
 
 Existem três fases dentro do processo de Cartões de Classificação ($i$)
-preparação, no qual os participantes ou o conteúdo dos cartões são selecionados;
-($ii$) execução, em que os cartões são organizados em grupos significativos com
-um título que seja capaz de descrever o grupo; ($iii$) análise, no qual os
-cartões são sistematizados para formar hierarquias mais abstratas e que são
-usadas para deduzir resultados. No processo tradicional de Cartões de
-Classificação cada declaração realizada por um participante resulta na criação
-de exatamente um único cartão~\cite{just2008towards}. Contudo, no nosso caso,
-cada funcionalidade obtida mediante a inspeção da documentação foi mapeada em um
-único cartão.
+preparação, na qual os participantes ou o conteúdo dos cartões são selecionados;
+($ii$) execução, em que os cartões são organizados em grupos com um título que
+seja capaz de descrever o grupo; ($iii$) análise, na qual os cartões são
+sistematizados para formar hierarquias mais abstratas e que são usadas para
+deduzir resultados. No processo tradicional de Cartões de Classificação cada
+declaração realizada por um participante resulta na criação de exatamente um
+único cartão~\cite{just2008towards}. Contudo, no nosso caso, cada funcionalidade
+obtida mediante a inspeção da documentação foi mapeada em um único cartão.
 
 \begin{figure}[htpb]
 	\centering
@@ -1288,9 +1280,7 @@ se dedica a projetos de software livre e 01 estudante.
 
 Em geral, podemos caracterizar o participante típico como um desenvolvedor entre
 três e dez anos de experiência trabalhando em uma empresa privada de
-desenvolvimento de software em uma equipe de aproximadamente dez membros. Este
-perfil profissional tem o conhecimento necessário para nos ajudar no processo de
-escolha das ferramentas.
+desenvolvimento de software em uma equipe de aproximadamente dez membros.
 
 \subsubsection{Ferramentas Escolhidas}
 \label{subsec:resultados_ferramentas_escolhidas}
@@ -1298,7 +1288,7 @@ escolha das ferramentas.
 A partir do levantamento realizado e do processo de seleção descrito na
 Seção~\ref{ssub:metodologia_criterios_selecao} obtivemos as ferramentas
 apresentas na Tabela~\ref{tab:ferramenta_utilizadas_estudo}. Conforme pode ser
-observado foi escolhido três softwares que conforme os critérios que adotamos
+observado foram escolhidos três softwares que conforme os critérios que adotamos
 podem ser classificadas como ferramenta ou serviço da Internet. É importante
 perceber que o \textit{Github} e o \textit{Gitlab} não estavam na lista inicial,
 contudo, apareceram no resultado final. Isso decorre pelo fato de optarmos por
@@ -1401,13 +1391,13 @@ personalizado de modo à capturar informações específicas de um projeto. Este
 campos podem ainda ser exibidos com base no valor de outro, para usá-los apenas
 quando for de interesse.
 
-Esta categoria também agrupa as funcionalidades relacionadas a busca de RMs e a
-localização de duplicadas. Durante o processo de criação de uma RM, uma das
-ferramentas possui a funcionalidade para detecção automatizada de duplicadas.
-Para criar RMs algumas ferramentas possibilitam diferentes \textit{interfaces de
-    entrada} de modo que ela pode ser criada através do envio de e-mail,
-utilizando dispositivos móveis ou mediante formulários que podem ser criados em
-qualquer site da web.
+Esta categoria também agrupa as funcionalidades relacionadas à busca de RMs e à
+localização de RMs duplicadas. Durante o processo de criação de uma RM, uma das
+ferramentas possui a funcionalidade para detecção automatizada de duplicação de
+RMs. Para criar RMs algumas ferramentas possibilitam diferentes
+\textit{interfaces de entrada} de modo que ela pode ser criada através do envio
+de e-mail, utilizando dispositivos móveis ou mediante formulários disponíveis
+via WWW\@.
 
 Verificamos ainda que algumas FGRMs permitem que o relato da RM seja realizado
 em linguagem com semântica de apresentação como o
@@ -1417,8 +1407,7 @@ possibilita visualizar de forma mais clara partes do código que podem ser
 incluídas no relato da RM\@. Neste mesmo tópico encontramos funcionalidades para
 recuperação das RMs utilizando o texto contido no atributo que corresponde ao
 relato, através de filtros personalizáveis ou por meio de uma Linguagem de
-Domínio Específico (Domain-Specific Language \@-\@ DSL em inglês) baseada em
-SQL\@.
+Domínio Específico (Domain-Specific Language \@-\@ DSL) baseada em SQL\@.
 
 \paragraph{Gerenciamento da Informação}
 \label{par:gerenciamento_da_informação}
@@ -1427,11 +1416,10 @@ Dentro de um projeto de desenvolvimento ou manutenção de software gerenciar um
 RM por vez não é muito eficiente. Neste sentido, é necessário que as FGRMs
 permitam o gerenciamento em massa da informação armazenada. Este tópico
 contempla as funcionalidades que se dedicam ao armazenamento e consistência das
-informações contidas na FGRM\@. As ferramentas analisadas possuem
-funcionalidades para \textit{suportar múltiplas bases de dados}, como suporte
-aos diferentes Sistemas de Gerenciamento de Banco de Dados disponíveis no
-mercado. Além disso, a ferramenta Bugzilla oferece funcionalidade para validação
-de consistências dos dados armazenados.
+informações contidas na FGRM\@. As ferramentas podem ser configuradas para
+utilizar diferentes sistemas de gerência de bancos de dados. Além disso, a
+ferramenta Bugzilla oferece funcionalidade para validação de consistências dos
+dados armazenados.
 
 \paragraph{Extensão de Funcionalidades}
 \label{par:extensão_de_funcionalidades}
@@ -1440,9 +1428,7 @@ As FGRMs oferecem recursos que permitem que outras ferramentas possam interagir
 e manipular a informação que elas armazenam. Nesta dimensão estão as
 funcionalidades que possibilitam a manipulação externa dos dados contidos nas
 RMs ou mesmo o desenvolvimento de novas funções ou comportamentos da FGRM
-mediante o uso de
-APIs\footnote{\url{https://en.wikipedia.org/wiki/Application_programming_interface}}
-e extensões.
+mediante o uso de interfaces de programação (APIs) e extensões.
 
 As funcionalidades que compõem este grupo têm por objetivo estender o conjunto
 de comportamentos oferecidos através de uma arquitetura de plugins ou mediante o
@@ -1456,55 +1442,56 @@ Webservices.
 
 As FGRMs podem acessar os repositórios de código de fonte, gerenciados mediante
 um Sistema de Controle de Versão (SCV), permitindo que o usuário navegue pelo
-seu conteúdo, visualize e procure por alterações realizadas. As ferramentas
-também possibilitam acesso à diferentes tipos de SCV, tais como Git, SVN,
+seu conteúdo, visualize e procure as alterações realizadas. As ferramentas
+também possibilitam acesso aos diferentes tipos de SCV, tais como Git, SVN,
 Mercurial e etc.
 
 \paragraph{Interfaces de Notificação}
 \label{par:interfaces_de_notificação}
 
 Neste tópico estão as funcionalidades oferecidas pelas FGRMs para notificar as
-diversas partes interessadas envolvidas em determinado projeto de software. As
-FGRMs podem notificar através de e-mail, RSS, Twitter e chats.
+diversas partes interessadas envolvidas em determinada RM\@. As FGRMs podem
+notificar através de e-mail, RSS, Twitter e chats.
 
 \paragraph{Fluxo de trabalho}
 \label{par:fluxo_de_trabalho}
 
-Nesta categoria estão as funcionalidades que dão suporte ao processo de trabalho
-adotado no desenvolvimento e manutenção de software. Nela estão incluídos
-funções para gerenciamento de tarefas e suporte à múltiplos projetos. Também é
-possível personalizar o fluxo de trabalho adotado. Esta customização é realizada
-através da definição de \textit{situações} próprias que se adéquem às
-necessidades do projeto.
+Nesta categoria estão as funcionalidades que dão suporte às tarefas do
+desenvolvimento e manutenção de software. Nela estão incluídos funções para
+gerenciamento de tarefas e suporte à múltiplos projetos. Também é possível
+personalizar o fluxo de trabalho adotado. Esta customização é realizada através
+da definição de \textit{situações} próprias que se adequem às necessidades do
+projeto de software.
 
 \paragraph{Gerenciamento de Artefatos}
 \label{par:gerenciamento_de_artefatos}
 
-O processo de manutenção de software pode consumir ou gerar diversos artefatos,
-tais como documentos de requisitos, código fonte, registros (logs) de teste e
-assim por diante~\cite{cavalcanti2013bug}. Em alguns contextos, devido ao volume
-de artefato gerados, é importante que a FGRM forneça suporte para armazenamento
-e recuperação deste ativos do processo de desenvolvimento de um software. As
-FGRMs possuem funcionalidades que interagem diretamente com a documentação de
-software, geralmente no formato de Wikis. Além disso, algumas ferramentas
-permitem uma melhor visualização de anexos incluídos na RM, como por exemplo
-arquivos no formato CSV (comma-separated values).
+O processo de trabalho relacionado com a manutenção de software pode consumir ou
+gerar diversos artefatos, tais como documentos de requisitos, código fonte,
+registros (logs) de teste e assim por diante~\cite{cavalcanti2013bug}. Em alguns
+contextos, devido ao volume de artefato gerados, é importante que a FGRM forneça
+suporte para armazenamento e recuperação deste ativos correspondentes ao
+processo de desenvolvimento de um software. As FGRMs possuem funcionalidades que
+interagem diretamente com a documentação de software, geralmente no formato de
+Wikis. Além disso, algumas ferramentas permitem uma melhor visualização de
+anexos incluídos na RM, como por exemplo arquivos no formato CSV
+(comma-separated values).
 
 \paragraph{Triagem de RMs}
 \label{par:triagem_de_rm_s}
 
-Este tópico descreve as funcionalidades relacionadas com o processo de triagem
-de RMs. As FGRMs dão suporte a esta atividade principalmente através da
-categorização das RMs. Todas as ferramentas analisadas permitem algum tipo de
-classificação através do uso de etiquetas previamente definidas.
+Este tópico descreve as funcionalidades relacionadas com a triagem de RMs. As
+FGRMs dão suporte a esta atividade principalmente através da categorização das
+RMs. Todas as ferramentas analisadas permitem algum tipo de classificação
+através do uso de etiquetas previamente definidas.
 
 \paragraph{Internacionalização da Ferramenta}
 \label{par:internacionalização_da_ferramenta}
 
-Neste tópico estão as características das FGRMs que ajudam no desenvolvimento
-e/ou adaptação da interface para uma língua e cultura de um país. As FGRMs
-possuem tradução para diversos idiomas e também possuem funcionalidades que
-permitem à colaboradores criarem novas traduções.
+Neste tópico estão as características das FGRMs que ajudam no desenvolvimento ou
+adaptação da interface para uma língua e cultura de um país. As FGRMs possuem
+tradução para diversos idiomas e também possuem funcionalidades que permitem aos
+colaboradores criarem novas traduções.
 
 \paragraph{Segurança da Informação}
 \label{par:segurança_da_informação}
@@ -1521,11 +1508,11 @@ informação armazenada.
 Em diversos contextos, devido ao volume das RMs, é importante que as partes
 interessadas na manutenção do software, possam visualizar e monitorar a situação
 das RMs que estão sendo analisadas. Neste contexto, as FGRMs oferecem
-funcionalidades para visualizar a informação das RMs mediante quadro como
-aqueles utilizados nas metodologias ágeis do tipo Kanban ou SCRUM\@. Existem
+funcionalidades para visualizar a informação das RMs mediante quadros similares
+àqueles utilizados nas metodologias ágeis do tipo Kanban ou SCRUM\@. Existem
 funcionalidades que permitem ao usuário visualizar um conjunto específico de
-RMs. Neste mesma categoria estão as funcionalidades para geração de relatório
-que ajudam aos gerentes de projetos na tomada de decisão.
+RMs. Nesta mesma categoria estão as funcionalidades para geração de relatórios
+para auxílio dos tomadores de decisões.
 
 \subsection{Discussão}
 \label{sec:discussao}
@@ -1537,38 +1524,39 @@ personalizar os campos que compõem uma RM\@. Esta função está relacionada co
 criação da RM (Operação de CRUD), contudo, também faz parte da definição do
 processo de trabalho próprio de um projeto, o que permitiria categorizá-la como
 Fluxo de Trabalho. Esta mesma situação ocorre com as funcionalidades de deleção
-de uma RM que foram classificadas como \textit{Operações de CRUD}, mas que tem
+de uma RM que foram classificadas como \textit{Operações de CRUD}, mas que têm
 relação com a categoria de \textit{Segurança da Informação} já que para realizar
 tal ação o usuário deve ser identificado (login realizado no sistema) e estar
 autorizado para realizar a ação.
 
 A análise das funcionalidades nos permite verificar que o suporte oferecido
-pelas FGRMs evoluíram de simplesmente gerenciar as RMs para colaborar no
-processo de desenvolvimento e manutenção do software. Entretanto, esta evolução
-não é tão rápida quanto o necessário. As ferramentas analisadas apresentaram um
-suporte bem estabelecido para atividades relativas à gestão da RM, como por
-exemplo a criação de uma nova RM\@. Contudo, são bastantes escassas as funções
-que minimizem os problemas que ocorrem quando as RMs são criadas. Por exemplo
-não foi possível verificar funcionalidades nativas das RMs que ajudem ao
-responsável pelo relato em fornecer as informações que serão necessária à
-solução do que está sendo pedido. Uma outra facilidade ausente neste tipo de
-ferramenta é a identificação de possíveis RMs duplicadas.
+pelas FGRMs evoluíram da gerência simples de RMs para colaborar no processo de
+desenvolvimento e manutenção do software. Entretanto, esta evolução não abrange
+todo tipo de necessidade. As ferramentas analisadas apresentaram um suporte bem
+estabelecido para atividades relativas à gestão da RM, como por exemplo a
+criação de uma nova RM\@. Contudo, são bastante escassas as funções que
+minimizem os problemas que ocorrem quando as RMs são criadas. Por exemplo não
+foi possível verificar funcionalidades nativas das RMs que ajudem ao responsável
+pelo relato em fornecer as informações que serão necessária à solução do que
+está sendo pedido. Uma outra facilidade ausente neste tipo de ferramenta é a
+identificação de possíveis RMs duplicadas.
 
 Com base no resultado obtido foi possível verificar que as FGRMs oferecem
 funcionalidades que dão suporte a todo o ciclo de vida de uma RM, conforme
 discutido na Subseção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}. Todavia,
 grande parte do esforço fica a cargo do usuário da ferramenta, o que pode
-resultar em atrasos em situações em que se tem muitas RMs. Um exemplo deste
-problema ocorre no processo de atribuição do desenvolvedor responsável por
-solucionar determinada RM\@. Esta atividade fica sob a responsabilidade do
-\textit{Agente de Triagem}, que deve realizar a escolha de forma manual já que
-as FGRMs não são capazes de ``recomendar'' o desenvolvedor mais apto.
+resultar em atrasos nas situações em que se têm muitas RMs para gerenciar. Um
+exemplo deste problema ocorre no processo de atribuição do desenvolvedor
+responsável por solucionar determinada RM\@. Esta atividade fica sob a
+responsabilidade do \textit{Agente de Triagem}, que deve realizar a escolha de
+forma manual já que as FGRMs não são capazes de ``recomendar'' o desenvolvedor
+mais apto.
 
 Devido à sua importância, seria importante que as FGRMs incorporassem outros
 comportamentos que ajudem no processo de desenvolvimento e manutenção de
 software, especialmente em temas como busca de duplicados, melhoria da qualidade
-do relato e atribuição e classificação automatizadas das RMs. Algumas sugestões
-de novas funcionalidades para as FGRMs serão discutidas no
+do relato e atribuição e classificação automatizadas das RMs. As sugestões de
+novas funcionalidades para as FGRMs são discutidas no
 Capítulo~\ref{ch:sug_melhoria}.
 
 \subsection{Ameças à Validade}
@@ -1608,11 +1596,12 @@ fronteira clara de qual grupo ela poderia pertence.
 \section{Resumo do Capítulo}
 \label{sec:resumo_do_capitulo}
 
-Neste capítulo relacionamos a disciplina de Manutenção de Software com as FGRMs.
-Para tanto apresentamos e discutimos os principais conceitos relacionados e que
-foram utilizados durante os demais capítulos desta dissertação. Além disso,
-apresentamos uma análise das funcionalidades das FGRMS realizado com o suporte
-de um levantamento por questionário. A partir deste levantamento foi obtido as
-principais funções existentes nas FGRMs. O conjunto comum de funcionalidades que
-foi encontrado será utilizado durante a dissertação para discutir a proposição
-de novas funcionalidades ou melhorias das existentes.
+Neste capítulo discutimos o relacionamento da disciplina de Manutenção de
+Software com as FGRMs. Para tanto apresentamos e discutimos os principais
+conceitos relacionados e que são utilizados nos demais capítulos desta
+dissertação. Além disso, apresentamos uma análise das funcionalidades das FGRMS
+realizado com o suporte de um levantamento por questionário. A partir deste
+levantamento foram obtidas as principais funções existentes nas FGRMs. O
+conjunto comum de funcionalidades que foi encontrado será utilizado durante a
+dissertação para discutir a proposição de novas funcionalidades ou melhorias das
+existentes.
