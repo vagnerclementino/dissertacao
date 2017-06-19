@@ -548,39 +548,37 @@ indicados para medir a qualidade do relato. Eles foram utilizados com base em
 estudos já realizados~\cite{bettenburg2007quality} em que os atributo foram
 baseados na opinião de desenvolvedores.
 
-Para que uma dica de melhoria seja disparada é necessário alguns dos critérios
-descritos na Tabela~\ref{tab:criterios_analise_qualidade_relato} não seja
-atendido. No caso do atributo ``Completude de Palavras-Chaves'' utilizou-se o
-conjunto de termos do trabalho de Ko e outros~\cite{ko2006linguistic}. Apesar de
-ambos os estudos utilizarem projetos desenvolvidos na linguagem Java não podemos
-garantir que o conjunto de termos é o mesmo nas RMs de diferentes projetos.
+Para que uma dica de melhoria seja disparada é necessário que um ou mais dos
+critérios descritos na Tabela~\ref{tab:criterios_analise_qualidade_relato} não
+sejam atendidos. No caso do atributo ``Completude de Palavras-Chaves''
+utilizou-se o conjunto de termos do trabalho de Ko e
+outros~\cite{ko2006linguistic}. Apesar de ambos os estudos utilizarem projetos
+desenvolvidos na linguagem Java não podemos garantir que o conjunto de termos é
+o mesmo nas RMs de diferentes projetos.
 
-A legibilidade do texto foi realizada utilizando testes descritos na literatura.
-Em todos os testes existem os limiares que definem o grau de legibilidade de um
-texto. Entretanto, não sabemos qual o impacto de utilizarmos estes valores no
-relato de uma falha de software, por exemplo. Em geral, os testes de
-legibilidade são bastante genéricos, contudo, certas adequações podem ser
-necessárias para serem utilizados na análise do relato de uma RM\@.
+A legibilidade do texto foi implementada considerando testes descritos na
+literatura. Em todos os testes existem os limiares que definem o grau de
+legibilidade de um texto. Entretanto, não sabemos qual o impacto de utilizarmos
+estes valores no relato de uma falha de software, por exemplo. Em geral, os
+testes de legibilidade são bastante genéricos, contudo, certas adequações podem
+ser necessárias para serem utilizados na análise do relato de uma RM\@.
 
 A principal limitação deste estudo está na extrapolação dos resultados. O ideal
 é que a execução da extensão fosse avaliada por um profissional vinculado aos
 projetos utilizados. Esta análise poderia ajudar na detecção de falsos
-positivos, por exemplo. Estendemos a importância deste tipo de suporte, mesmo
-que por inspeção de alguns casos. Um trabalho futuro desta dissertação seria
-reaplicar a extensão em uma configuração com suporte de um oráculo ligado ao
-projeto analisado.
+positivos, por exemplo.
+
+% Estendemos a importância deste tipo de suporte, mesmo que por inspeção de alguns
+% casos. Um trabalho futuro desta dissertação seria reaplicar a extensão em uma
+% configuração com suporte de um oráculo ligado ao projeto analisado.
 
 \section{Conclusão}
 \label{sec:implementacao_extensao_conclusao}
 
-Por se tratar de uma prova de conceito a extensão proposta apresentou um
-desempenho satisfatório. Em média, o tempo necessário para analisar a qualidade
-do relato não tem impacto no processo de solução das RMs. Além disso, foi
-possível analisar os diversos atributos o qual a extensão se propôs. Os
-resultados não podem ser extrapolados por não terem sido avaliados pelos
-desenvolvedores vinculados aos projetos. Todavia, apesar das limitações, uma
-extensão conforme a proposta pode disciplinar os Reportadores a fornecer
-relatos com mais qualidade.
+Neste capítulo discutimos alguns dos aspectos envolvidos na implementação de
+melhorias de funcionalidades de FGRMs. Entendemos que existem vários aspectos
+que não foram discutidos, como por exemplo planejamento de capacidade e
+segurança, mas acreditamos que foram explicitados alguns aspectos importantes.
 
 % \section{Resumo do Capítulo}
 % \label{sec:implemtacao_extensao_resumo}
