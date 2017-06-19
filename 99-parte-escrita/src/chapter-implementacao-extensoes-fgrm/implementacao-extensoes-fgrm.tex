@@ -13,41 +13,46 @@
 \section{Introdução}
 \label{sec:implemtacao_extensao_intro}
 
-Durante esta dissertação discutimos que as funcionalidades oferecidas FGRMs
-atendem as expectativas dos seus usuários. Todavia, após resultados como aqueles
-obtidos nos Capítulo~\ref{ch:pesquisa-profissionais} e~\ref{ch:sug_melhoria},
-verificamos que exite um espaço para melhorias das funcionalidades existentes ou
-mesmo para a proposição de novas. Alguns estudos vêm seguindo esta tendência,
-especialmente explorando a capacidade de extensão propiciada por algumas FGRMs.
-A extensão \textit{Buglocalizer}~\cite{Thung:2014:BIT:2635868.2661678}, criada
-para a ferramenta Bugzilla, possibilita a localização dos arquivos do código
-fonte que estão relacionados ao defeito relatado. A ferramenta extrai texto dos
-campos de sumário e descrição da RM\@. Este texto é comparado com o código fonte
-por meio de técnicas de Recuperação da Informação.
+% Durante esta dissertação discutimos que as funcionalidades oferecidas FGRMs
+% atendem as expectativas dos seus usuários. Todavia, após resultados como aqueles
+% obtidos nos Capítulo~\ref{ch:pesquisa-profissionais} e~\ref{ch:sug_melhoria},
+% verificamos que exite um espaço para melhorias das funcionalidades existentes ou
+% mesmo para a proposição de novas. Alguns estudos vêm seguindo esta tendência,
+% especialmente explorando a capacidade de extensão propiciada por algumas FGRMs.
+% A extensão \textit{Buglocalizer}~\cite{Thung:2014:BIT:2635868.2661678}, criada
+% para a ferramenta Bugzilla, possibilita a localização dos arquivos do código
+% fonte que estão relacionados ao defeito relatado. A ferramenta extrai texto dos
+% campos de sumário e descrição da RM\@. Este texto é comparado com o código fonte
+% por meio de técnicas de Recuperação da Informação.
 
-Na mesma linha, o \textit{NextBug}~\cite{101186} é uma extensão para o Bugzilla
-que recomenda novas RMs para o desenvolvedor com base na que ele esteja tratando
-atualmente. Na ferramenta proposta por Thung e
-outros~\cite{Thung:2014:DIT:2642937.2648627} o foco é na determinação de
-defeitos duplicados. A contribuição deste trabalho é a integração do estado da
-arte de técnicas não supervisionadas para detecção de RMs duplicadas.
+% Na mesma linha, o \textit{NextBug}~\cite{101186} é uma extensão para o Bugzilla
+% que recomenda novas RMs para o desenvolvedor com base na que ele esteja tratando
+% atualmente. Na ferramenta proposta por Thung e
+% outros~\cite{Thung:2014:DIT:2642937.2648627} o foco é na determinação de
+% defeitos duplicados. A contribuição deste trabalho é a integração do estado da
+% arte de técnicas não supervisionadas para detecção de RMs duplicadas.
 
-Esta dissertação se propôs a contribuir com a melhoria das funcionalidades das
-FGRMs mediante a apresentação e discussão de um conjunto de recomendações no
-Capitulo~\ref{ch:sug_melhoria}. Apesar de ter sido conduzido um processo de
-avaliação das recomendações, cujo resultado demonstrou uma boa aceitação dos
-participantes, optamos por analisar o impacto da implementação de uma das
-sugestões propostas.
+% Esta dissertação se propôs a contribuir com a melhoria das funcionalidades das
+% FGRMs mediante a apresentação e discussão de um conjunto de recomendações no
+% Capitulo~\ref{ch:sug_melhoria}. Apesar de ter sido conduzido um processo de
+% avaliação das recomendações, cujo resultado demonstrou uma boa aceitação dos
+% participantes, optamos por analisar o impacto da implementação de uma das
+% sugestões propostas.
 
-Idealmente gostaríamos de transformar todas as sugestões em extensões de
-funcionalidades para as FGRMs. Não há razões que justifiquem a priorização de
-implementação de uma recomendação sobre outra. Entretanto, após alguns ensaios e
-combinando de maneira mais intuitiva do que seguindo um fluxo de critérios,  foi
-investido mais esforço no desenvolvimento de uma extensão para o suporte à
-qualidade de relato. A extensão proposta tem por objetivo ser uma Prova de
-Conceito, ou seja, demostrar com o fim de verificar que o conceito proposto
-possui certo \textit{potencial} prático. Na próxima seção apresentamos uma breve
-discussão sobre o problema da baixa qualidade do relato no contexto das FGRMs.
+% Idealmente gostaríamos de transformar todas as sugestões em extensões de
+% funcionalidades para as FGRMs. Não há razões que justifiquem a priorização de
+% implementação de uma recomendação sobre outra. Entretanto, após alguns ensaios e
+% combinando de maneira mais intuitiva do que seguindo um fluxo de critérios,  foi
+% investido mais esforço no desenvolvimento de uma extensão para o suporte à
+% qualidade de relato. A extensão proposta tem por objetivo ser uma Prova de
+% Conceito, ou seja, demostrar com o fim de verificar que o conceito proposto
+% possui certo \textit{potencial} prático. Na próxima seção apresentamos uma breve
+% discussão sobre o problema da baixa qualidade do relato no contexto das FGRMs.
+
+Neste capítulo complementamos a contribuição do Capítulo 5 com a discussão de
+aspectos de implementação. Este capítulo apresenta a implementação da Sugestão
+\#1 na plataforma Github. A escolha da Sugestão \#1 e da plataforma Github
+envolve mais aspectos de serem convenientes do que algum tipo de decisão formal.
 
 \section{Qualidade do Relato de uma RM}
 \label{sec:avaliando_a_qualidade_do_relato_de_uma_rm}
@@ -58,26 +63,25 @@ Sabemos que o ato de reportar uma RM pode ser realizado por um usuário do
 software ou por um membro da equipe de desenvolvimento ou manutenção. Por esta
 razão, podemos encontrar Reportadores com diferentes níveis de conhecimento
 sobre o sistema. Esta situação pode provocar um efeito colateral: a baixa
-qualidade do texto no relatado de uma RM, como por exemplo a falta da informação
-necessária para sua solução
+qualidade do texto no relato de uma RM, como por exemplo a falta da informação
+necessária para sua solução.
 
 Alguns estudos afirmam que a baixa qualidade do relato prejudicam o andamento do
 projeto mais do que RMs duplicadas~\cite{bettenburg2007quality}. No estudo
 realizado por Bettenburg e outros~\cite{bettenburg2008makes} foi desenvolvido um
-levantamento com questionário (\textit{survey}) entre desenvolvedores e usuários
-de três projetos de código aberto\footnote{Apache
-    (\url{http://www.apache.org/}), Eclipse (\url{https://www.eclipse.org}) e
-    Mozilla (\url{https://www.mozilla.org})}. O objetivo era coletar informações
-de modo a verificar o que produziria um bom relato. Os resultados demonstraram
-que, do ponto de vista dos desenvolvedores, são consideradas informações úteis
-para estar no relato de uma RM\@:
+levantamento com questionário entre desenvolvedores e usuários de três projetos
+de código aberto\footnote{Apache (\url{http://www.apache.org/}), Eclipse
+    (\url{https://www.eclipse.org}) e Mozilla (\url{https://www.mozilla.org})}.
+O objetivo era coletar informação de modo a verificar o que produziria um bom
+relato. Os resultados demonstraram que, do ponto de vista dos desenvolvedores,
+são consideradas informações úteis para estar no relato de uma RM\@:
 
 \begin{itemize}
-    \item a sequência de ações executadas até o aparecimento do erro (se for o
-        caso), também conhecida como \textit{etapas para reproduzir};
-    \item o registro de pilhas de ativação (stack traces) que são arquivos com
-        os históricos de chamada de métodos (logs) que ocorreram antes do
-        aparecimento do erro.
+    \item a sequência de ações executadas até o aparecimento da falha, também
+        conhecida como \textit{etapas para reproduzir};
+    \item a cadeia de registros de ativação (stack traces) que corresponde à
+        descrição das chamadas de funções ou métodos que ocorreram antes do
+        aparecimento da falha.
 \end{itemize}
 
 No estudo proposto por Zimmermann e outros~\cite{5070993} é discutida a
@@ -85,16 +89,16 @@ importância de que a informação descrita em uma RM seja relevante e completa 
 fim de que o problema relatado seja resolvido rapidamente.  Contudo, na prática,
 a informação apenas chega ao desenvolvedor com a qualidade requerida após
 diversas interações com o usuário afetado. Com o objetivo de minimizar este
-problema os autores propõe um conjunto de diretrizes para a construção de uma
+problema os autores propõem um conjunto de diretrizes para a construção de uma
 extensão capaz de reunir informações relevantes a partir do usuário além de
 identificar arquivos que precisam ser corrigidos para resolver o defeito.
 
 Conforme exposto, a utilização de uma extensão que suporte a melhoria da
-qualidade do relato pode resultar nas seguintes melhorias: redução no tempo
-necessário para análise do que foi solicitado na RM;facilidade na identificação
-de RMs duplicadas; disciplinar os Reportadores sobre a boa prática de fornecer
-um relato com maior qualidade. Estas vantagens têm impacto no custo e qualidade
-do software produzido.
+qualidade do relato pode resultar nas seguintes vantagens: redução no tempo
+necessário para análise do que foi solicitado na RM\@; facilidade na
+identificação de RMs duplicadas; melhor disciplina dos Reportadores sobre a boa
+prática de fornecer um relato com maior qualidade. Estas vantagens têm impacto
+no custo e qualidade do software produzido.
 
 \section{Uma Extensão para Suporte à Qualidade do Relato}
 \label{sec:uma_extensao_suporte_qualidade_relato}
@@ -103,9 +107,9 @@ Considerando as vantagens de analisar a qualidade do relato de uma RM,
 desenvolvemos uma extensão para o módulo de gerenciamento de RMs da plataforma
 Github\footnote{\url{https://guides.github.com/features/issues/}}. De uma
 maneira geral, a extensão proposta realiza a análise do relato contido em uma RM
-e com base nele gera um comentário com ``dicas'' que podem melhorar a qualidade
-das informações prestadas. Nas próximas seções apresentamos com mais detalhe o
-desenho e funcionamento da extensão proposta.
+e com base nele gera uma realimentação contendo ``dicas'' que podem melhorar a
+qualidade da informação prestada. Nas próximas seções apresentamos com mais
+detalhe o desenho e funcionamento da extensão proposta.
 
 % \begin{description}
 % 	\item[Questão 01:] Qual impacto da inclusão de uma extensão para o suporte à
@@ -132,14 +136,14 @@ desenho e funcionamento da extensão proposta.
 \label{sub:desenho_da_extensao}
 
 O objetivo da extensão é analisar de maneira automatizada a qualidade do relato
-de uma \textit{issue} em repositórios do GitHub. No contexto da extensão
-proposta, o elemento correspondente ao conceito de uma RM foi mapeado para o
+de uma \textit{RM} em repositórios do GitHub. No contexto da extensão proposta,
+o elemento correspondente ao conceito de uma RM nesta dissertação representa o
 elemento \textit{issue} no âmbito da plataforma Github. Um Repositório é o
 elemento mais básico do GitHub e contém os arquivos do projeto (incluindo
 documentação) e armazena o histórico de revisões de cada
 arquivo\footnote{\url{https://help.github.com/articles/github-glossary/}}. A
 execução da extensão resulta em um conjunto de dicas para o responsável por
-redigir a \textit{issue} com o intuito de melhorar a qualidade da informação
+redigir a \textit{RM} com o intuito de melhorar a qualidade da informação
 fornecida no relato, por esta razão recebeu o nome de \textit{IssueQuality}.
 
 \subsubsection{Visão Geral}
@@ -151,11 +155,11 @@ qualidade da informação fornecida no relato. Uma visão geral sobre o
 funcionamento da \textit{IssueQuality} pode ser visualizada na
 Figura~\ref{fig:diagrama_funcionamento_issuequality}. A partir de uma lista
 pré-definida de repositórios (1) a extensão solicita, através da API do Github
-(2), o conjunto de \textit{issues} que estão com a situação \textit{``aberta''}
-(etapas 3 e 4). Para cada uma das \textit{issues} recebidas, a ferramenta cria
-um comentário por meio da API (5) que é registrado e armazenado na base de dados
-do Github (etapas 6 e 7). A partir do comentário gerado o próprio Github se
-encarrega de notificar (8) o responsável por relatar a \textit{issue} (9). A
+(2), o conjunto de \textit{RMs} que estão com a situação \textit{``aberta''}
+(etapas 3 e 4). Para cada uma das \textit{RMs} recebidas, a ferramenta cria
+um comentário por meio da API (5) que é registrado e armazenado no repositório
+de RMs do Github (etapas 6 e 7). A partir do comentário gerado o próprio Github
+se encarrega de notificar (8) o responsável por relatar a \textit{RM} (9). A
 partir desta notificação espera-se que o responsável inclua a informação
 solicitada mediante a criação de um novo comentário.
 
@@ -174,21 +178,20 @@ seção.
 \subsubsection{Análise da Qualidade do Relato}
 \label{ssub:implementacao_extensao_analise_qualidade_do_relato}
 
-Para cada issue analisada a extensão cria um \textit{vetor de características}
-que armazena uma pontuação para cada atributo do texto que será analisado. Estes
-valores podem ser binário (por exemplo, anexo presente ou não) ou contínuo (por
-exemplo, legibilidade do texto). A análise dos atributos utilizam da sintaxe da
-linguagem de marcação
+Para cada RM analisada a extensão cria um \textit{vetor de características} que
+armazena uma pontuação para cada atributo do texto que será analisado. A análise
+dos atributos utilizam da sintaxe da linguagem de marcação
 Markdown\footnote{\url{https://help.github.com/categories/writing-on-github/}},
-que é o padrão para as issues dos repositórios no GitHub.
+que é o padrão para as RMs dos repositórios no GitHub.
 
-Conforme descrito, o resultado da análise feita pela extensão é um comentário na
-\textit{issue}. Em geral, ele é composto de três partes: \textit{cabeçalho,
-    corpo e dicas}. O cabeçalho apresenta um texto padrão que é personalizado
-com o nome do usuário (login) no Github do reportador. Ao utilizarmos a sintaxe
-\textit{\@[Github login]} o próprio Github se encarrega de enviar um e-mail
-notificando o usuário sobre o comentário. A Figura~\ref{fig:issue_original}
-exibe o cabeçalho padrão incluídos nos comentários.
+Conforme descrito, o resultado da análise feita pela extensão é uma
+realimentação na forma de um comentário associado à RM\@. Em geral, ele é
+composto de três partes: \textit{cabeçalho, corpo e dicas}. O cabeçalho
+apresenta um texto padrão que é personalizado com o nome do usuário (login) no
+Github do reportador. Ao utilizarmos a sintaxe \textit{\@[Github login]} o
+próprio Github se encarrega de enviar um e-mail notificando o usuário sobre o
+comentário. A Figura~\ref{fig:issue_original} exibe o cabeçalho padrão incluídos
+nos comentários.
 
 \begin{figure}[htpb]
     \centering
@@ -199,9 +202,9 @@ exibe o cabeçalho padrão incluídos nos comentários.
 \end{figure}
 
 Ao final do comentário é incluído um conjunto de dicas com objetivo de reforçar
-com o reportador os benefícios que a melhoria da qualidade do relato pode ter na
-solução de sua \textit{issue}, como por exemplo dizendo que issues que são mais
-fáceis de serem lidas possuem um tempo de solução menor. Estas dicas foram
+os benefícios que a melhoria da qualidade do relato pode ter na solução da RM
+correspondente, como por exemplo dizendo: \textit{``as RMs que são mais fáceis
+    de serem lidas possuem um tempo de solução menor''}. Estas dicas foram
 obtidas com base na literatura sobre melhoria da qualidade do relato,
 especialmente nos trabalhos de Bettenburg e outros~\cite{bettenburg2007quality,
     bettenburg2008makes}. Na Figura~\ref{fig:issue_original} é possível
@@ -210,7 +213,7 @@ visualizar como algumas dicas são apresentadas.
 O corpo é a parte dinâmica do comentário. Ele é construído incluindo fragmentos
 de texto quando certos critérios de aceitação não foram atendidos.  Por exemplo,
 caso não seja detectada a presença de \textit{``etapas para reproduzir''} no
-relato de uma \textit{issue} o seguinte fragmento de texto é incluído no corpo
+relato de uma \textit{RM} o seguinte fragmento de texto é incluído no corpo
 do comentário: \textit{``Add step to reproduce''}. Os atributos avaliados e os
 critérios de aceitação estão descritos na
 Tabela~\ref{tab:criterios_analise_qualidade_relato}.
@@ -224,11 +227,11 @@ Tabela~\ref{tab:criterios_analise_qualidade_relato}.
 \midrule
 Completude de Palavras-chaves & Existência de uma lista representando as etapa
 executadas até ocorrência do erro.         \\
-Arquivos Anexados             & Pelo menos um arquivo anexado a issue
+Arquivos Anexados             & Pelo menos um arquivo anexado a RM
 \\
 Fragmentos de Código          & Existência de pelo menos um fragmento de código
-no relato da issue.                       \\
-Completude do Texto           & As palavras que compõe o relato da issue devem
+no relato da RM\@.                       \\
+Completude do Texto           & As palavras que compõe o relato da RM devem
 fazer parte de pelo menos duas categorias. \\
 Legibilidade do Texto         & Dois testes de legibilidade apresentarem valores
 acima dos limiares.                      \\ \bottomrule
@@ -251,33 +254,33 @@ A seguir apresentamos os detalhes de como cada atributo é avaliado.
 Verifica se o reportador incluiu uma lista, na forma de itens, descrevendo as
 etapas executadas até a ocorrência da falha. Para detectar este padrão a
 extensão aproveita da linguagem Markdown, que é o padrão utilizado para redigir
-o relato da \textit{issue}, e que possui uma sintaxe pré-definida para listas. O
+o relato da \textit{RM}, e que possui uma sintaxe pré-definida para listas. O
 padrão é detectado através da utilização de expressões regulares. Pode ocorrer
 que o Reportador utilize outro formato para relatar as etapas executadas até a
 ocorrência da falha, contudo, o fato da extensão exigir a informação através de
 uma lista, pode criar no Reportador uma boa prática. Cabe ressaltar que uma
-lista com etapas para reproduzir foi uma das informações mais relevantes a
-estarem no relato de uma RM~\cite{bettenburg2008makes}.
+lista com etapas para reproduzir uma falha foi considerada uma das informações
+mais relevantes de um relato~\cite{bettenburg2008makes}.
 
 \paragraph{Arquivos Anexados:}
 \label{par:arquivos_anexados}
 
-Nesta dimensão avaliamos a existência de arquivos anexados à \textit{issue},
-tais como capturas de telas (screenshots) e cadeia de registros de ativação de
+Nesta dimensão avaliamos a existência de arquivos anexados à \textit{RM}, tais
+como capturas de telas (screenshots) e cadeia de registros de ativação de
 funções (stack trace). A detecção é realizada utilizando expressões regulares
 que é a sintaxe padrão para o relato da
 RM\footnote{\url{https://guides.github.com/features/mastering-markdown/}}. Não
 houve avaliação sobre o conteúdo do anexo, contudo, conforme descrito na
 Tabela~\ref{tab:criterios_analise_qualidade_relato}, uma mensagem é incluída no
-corpo do comentário no caso de nenhum anexo for detectado. A existência de
-anexos em uma RM consta como uma das informações mais relevante do ponto de
+corpo do comentário no caso de nenhum anexo ser detectado. A existência de
+anexos em uma RM consta como uma das informações mais relevantes do ponto de
 vistas dos desenvolvedores~\cite{bettenburg2008makes}.
 
 \paragraph{Fragmentos de Código}
 \label{par:fragmentos_de_código}
 
 Este atributo de avaliação verifica se fragmentos de código foram adicionados no
-relato da \textit{issue}. O processo de detecção faz uso de expressão regulares
+relato da \textit{RM}. O processo de detecção faz uso de expressão regulares
 e da sintaxe oferecida pela versão do Markdown utilizado pelo
 Github\footnote{\url{https://guides.github.com/features/mastering-markdown/\#GitHub-flavored-markdown}}.
 De forma similar aos atributos descritos anteriormente, a verificação de
@@ -292,7 +295,7 @@ comum no relato de diferentes RMs. Sendo assim, algumas palavras aparecem com
 determinada frequência no relato de uma RM, independente do projeto. Com o
 objetivo de compreender como as pessoas descrevem problemas de software, Ko e
 outros~\cite{ko2006linguistic} analisaram o título de 200.000 RMs de cinco
-projetos de código aberto desenvolvidos na linguagem Java. Nós reutilizamos esta
+projetos de código aberto desenvolvidos na linguagem Java. Nós empregamos esta
 base de dados\footnote{Disponível para download em
     \url{http://www.cs.cmu.edu/~marmalade/reports.html.}} para construir uma
 distribuição da frequência de ocorrências de palavras no relato de uma RM\@.  Em
@@ -338,11 +341,11 @@ forma, foi considerada como legibilidade baixa uma pontuação \textit{menor do
 teste~\cite{kincaid1975derivation}.
 
 O ARI considera o número de caracteres de cada palavra. O resultado do teste é
-uma representação aproximada do grau de escolaridade americano necessário para
-compreender o texto~\cite{senter1967automated}. De maneira aproximada, o grau 1
-corresponde a idades 6\@-\@8. O nível de leitura 8 corresponde a jovem de 14
-anos. O grau 12, o mais alto no ensino secundário dos EUA, corresponde ao nível
-de leitura de 17 anos de idade.
+uma representação aproximada do grau de escolaridade no estilo K-12 dos Estados
+Unidos necessário para compreender o texto~\cite{senter1967automated}. De
+maneira aproximada, o grau 1 corresponde a idades 6\@-\@8. O nível de leitura 8
+corresponde a jovem de 14 anos. O grau 12, o mais alto no ensino secundário dos
+EUA, corresponde ao nível de leitura de 17 anos de idade.
 
 Por outro lado, o teste Dale-Chall é baseado em um conjunto mínimo de palavras.
 A fórmula usa uma lista de 3000 vocábulos que grupos de estudantes americanos de
@@ -354,22 +357,22 @@ legibilidade será considerada ruim se o valor do teste \textit{for maior ou
 ``entender''. Esta limiar foi utilizado no trabalho de Bettenburg e
 outros~\cite{bettenburg2008makes}.
 
-\section{Execução da Extensão em Projetos Reais}
+\section{Uso da Extensão em Projetos Reais}
 \label{sec:avaliando_a_extensao_proposta}
 
 A extensão descrita neste Capitulo foi desenvolvida como prova de conceito.
 Neste sentido, o desenho e o desenvolvimento tiveram mais foco na viabilidade do
 que estava sendo proposto do que melhorar ou sobrepor determinada solução do
 estado da arte. Entretanto, com o objetivo de avaliar a extensão em um contexto
-mais próximo do real, ela foi executada utilizando os dados de \textit{issues}
-de projetos código aberto hospedados no Github.
+mais próximo do cotidiano de desenvolvedores, ela foi executada utilizando os
+dados de \textit{RMs} de projetos código aberto hospedados no Github.
 
 \subsection{Seleção dos Projetos}
 \label{sub:implementacao_selecao_projetos}
 
-Para realizarmos a execução da extensão optamos por uma amostra de conveniência
-composta de projetos hospedados na plataforma Github. Para isso utilizamos os
-mesmos critérios descritos na
+Para realizarmos a execução da extensão usamos, por motivos já explicados, uma
+amostra de conveniência composta de projetos hospedados na plataforma Github.
+Para isso utilizamos os mesmos critérios descritos na
 Seção~\ref{ssub:sug_melhoria_selecao_participantes}. As exceções foi que
 incluímos a restrição de que o projeto fosse desenvolvido em Java e avaliamos os
 dez primeiros projetos ordenados pelo critério ``most stars''. O condicionante
@@ -390,7 +393,7 @@ spring-framework & 14575 & 12 & 106 \\ \bottomrule
 \end{tabular}%
 }
 \caption{Projetos utilizados no testes de execução da extensão. Os dados
-    apresentados tem como referência 23/04/2017.}
+    apresentados têm como referência 23/04/2017.}
 \label{tab:projetos_utilizados}
 \end{table}
 
@@ -399,24 +402,24 @@ spring-framework & 14575 & 12 & 106 \\ \bottomrule
 
 Para avaliarmos a extensão começamos por criar uma ramificação (fork) dos
 projetos escolhidos. Este processo é realizado de forma automatizada pelo
-Github, contudo, não realiza a cópia das \textit{issues}, que no caso deste
-teste é a informação mais relevante. Para transpor os dados das issues foi
-desenvolvido um processo automatizado que copiava o título e o relato (corpo da
-issue) do projeto original para a sua ramificação. Para cada projeto realizamos
-a cópia de 100 \textit{issues}. A Figura~\ref{fig:copia-de-issues} exibe uma
-\textit{issue} do projeto Guava no lado esquerdo e sua cópia na ramificação
-criada. Como você pode observar o título e o relato são idênticos.
+Github, contudo, não realiza a cópia das \textit{RMs}, que no caso deste teste é
+a informação mais relevante. Para transpor os dados das RMs foi desenvolvido um
+processo automatizado que copiava o título e o relato (corpo da RM) do projeto
+original para a sua ramificação. Para cada projeto realizamos a cópia de 100
+\textit{RMs}. A Figura~\ref{fig:copia-de-issues} exibe uma \textit{RM} do
+projeto Guava no lado esquerdo e sua cópia na ramificação criada. Como pode ser
+observado título e o relato são idênticos.
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=1.1\linewidth]{chapter-implementacao-extensoes-fgrm/img/copia-de-issues.png}
-    \caption{Cópia de uma issue do projeto Guava para a sua ramificação.}
+    \caption{Cópia de uma RM do projeto Guava para a sua ramificação.}
 \label{fig:copia-de-issues}
 \end{figure}
 
-Após finalizado o processo de cópia executamos a extensão nas 100
-\textit{issues} de cada projeto. Na Figura~\ref{fig:exemplo_comentario_issue}
-visualizamos o comentário gerado para a \textit{issue} apresentada na
+Após finalizado o processo de cópia executamos a extensão com as 100
+\textit{RMs} de cada projeto. Na Figura~\ref{fig:exemplo_comentario_issue}
+visualizamos o comentário gerado para a \textit{RM} apresentada na
 Figura~\ref{fig:copia-de-issues}. Na próxima seção apresentamos algumas métricas
 do processo de execução da extensão nos projetos escolhidos. Como se trata de
 uma prova de conceito estes dados podem nos ajudar na avaliação da viabilidade
@@ -425,7 +428,7 @@ de implantação da extensão proposta.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=0.7\linewidth]{chapter-implementacao-extensoes-fgrm/img/exemplo_comentario_issue.png}
-    \caption{Comentário para a issue do projeto Guava exibida na Figura~\ref{fig:copia-de-issues}}
+    \caption{Comentário para a RM do projeto Guava exibida na Figura~\ref{fig:copia-de-issues}}
 \label{fig:exemplo_comentario_issue}
 \end{figure}
 
@@ -436,7 +439,7 @@ Uma possível preocupação com a inclusão deste tipo de extensão em uma FGRM 
 atraso que possa ocorrer no processo de solução das RMs. É natural que um tempo
 adicional seja necessário para analisar a qualidade do relato. A
 Tabela~\ref{tab:tempo_execucao_extensao} exibe o tempo em segundos que a
-extensão levou para analisar as \textit{issues}. É possível verificar que em
+extensão levou para analisar as \textit{RMs}. É possível verificar que em
 média cerca de 02 segundos são necessários para avaliar a qualidade do relato.
 Em alguns casos o processo é finalizado em menos de 01 segundo. Entretanto, é
 possível verificar situações em que o tempo de retorno da extensão é cerca de 30
@@ -462,15 +465,15 @@ elasticsearch & 1,66 & 1 & 2,24 & 0 & 16 \\ \bottomrule
 \label{tab:tempo_execucao_extensao}
 \end{table}
 
-Com a execução utilizando os dados de \textit{issues} de projetos reais
-gostaríamos de verificar em qual atributo do relato os problemas são mais
-frequentes. Conforme apresentado na
-Tabela~\ref{tab:criterios_analise_qualidade_relato} a extensão avalia os
-seguintes atributos do relato: Etapas para Reproduzir, Arquivo Anexado,
-Fragmentos de Código, Completude de Palavras-Chaves e Legibilidade do Texto. Um
-comentário é gerado caso o relato não atenda a determinados critérios para cada
-atributo analisado. A Figura~\ref{fig:frequencia_atributos_comentario} exibe a
-frequência que um item foi incluído ao comentário para atributo.
+Com a execução utilizando os dados de \textit{RMs} de projetos reais queríamos
+de verificar em qual atributo do relato os problemas são mais frequentes.
+Conforme apresentado na Tabela~\ref{tab:criterios_analise_qualidade_relato} a
+extensão avalia os seguintes atributos do relato: Etapas para Reproduzir,
+Arquivo Anexado, Fragmentos de Código, Completude de Palavras-Chaves e
+Legibilidade do Texto. Um comentário é gerado caso o relato não atenda a
+determinados critérios para cada atributo analisado. A
+Figura~\ref{fig:frequencia_atributos_comentario} exibe a frequência que um item
+foi incluído no comentário para atributo.
 
 \begin{figure}[htpb]
     \centering
@@ -479,8 +482,8 @@ frequência que um item foi incluído ao comentário para atributo.
 \label{fig:frequencia_atributos_comentario}
 \end{figure}
 
-Verificamos na figura que em quase todas as issues analisadas não foi detectado
-a inclusão de arquivos anexados ou de fragmentos de código. É possível observar
+Verificamos na figura que em quase todas as RMs analisadas não foi detectada a
+inclusão de arquivos anexados ou de fragmentos de código. É possível observar
 que mais da metade do texto relatado apresentou uma legibilidade ruim do ponto
 de vista da nossa extensão. A situação menos frequente está relacionada com a
 inclusão de ``Etapas para Reproduzir'', em que é avaliada a existência de uma
@@ -505,9 +508,9 @@ spring-framework & 3,68 & 4 & 1,01 & 1 & 5 \\ \bottomrule
 \end{table}
 
 Durante a execução estávamos interessados em avaliar o número de dicas de
-melhorias na qualidade do relato a extensão gerou. Esta informação está exibida
-na Tabela~\ref{tab:numero_de_dicas}. É possível observar que em média 03 dicas
-são incluídas em cada \textit{issues}, ou seja, três em cada cinco dos itens
+melhorias na qualidade do relato que a extensão gerou. Esta informação está
+exibida na Tabela~\ref{tab:numero_de_dicas}. É possível observar que em média 03
+dicas são incluídas em cada \textit{RM}, ou seja, três em cada cinco dos itens
 apresentaram algum tipo de problema. Entretanto, para que possamos extrapolar
 qualquer discussão sobre este resultado era necessário uma avaliação de pessoas
 envolvidas nos projetos utilizados de modo a detectar falsos positivos.
@@ -521,19 +524,19 @@ Seção~\ref{sec:avaliando_a_extensao_proposta} devem ser avaliados sobre esta
 ótica. No caso do tempo necessário verificamos que em média não causa impacto no
 processo de solução de uma RM\@. Nos casos de maior duração, como por exemplo 31
 segundos, pode estar relacionado a arquitetura escolhida. Conforme exposto, a
-extensão utiliza uma API do Github que pode estar sujeita a questões relativas à
-rede ou mesmo de sobrecarga.
+extensão utiliza uma API do Github está sujeita a questões relativas à rede ou
+mesmo de sobrecarga.
 
 Com relação aos problemas mais frequentes uma tendência dos usuário em não
-incluir anexos, mas de relatar o problema copiando, por exemplo, os registros de
-pilha de ativação (stacks traces) no próprio corpo da \textit{issue}. Por outro
-lado, um fator a destacar é que mais da metade das \textit{issues} analisadas
+incluir anexos, mas de relatar o problema copiando, por exemplo, as mensagens
+contendo a cadeia de registros de ativação no próprio corpo da \textit{RM}. Por
+outro lado, um fator a destacar é que mais da metade das \textit{RMs} analisadas
 apresentam um texto com baixa legibilidade. Esta situação já foi verificada em
 estudos anteriores~\cite{ko2006linguistic, bettenburg2007quality}. Esta métrica
 depende menos de uma análise de alguém vinculado ao projeto pelo fato de
 utilizar índices existentes e utilizados em diversas áreas para medir
 legibilidade. Neste sentido pode ser interessante ao projeto de software
-disciplinar os Reportadores em fornecer sempre que possível um relato mais
+disciplinar os reportadores em fornecer sempre que possível um relato mais
 simples e direto.
 
 \section{Limitações e Ameças à Validade}
