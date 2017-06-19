@@ -7,7 +7,7 @@
 %Modificação:: sáb mai 13 14:17:28 -03 2017
 %Revisão: dom abr 23 23:16:51 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Sugestões de Melhorias para FGRMs}
+\chapter{Sugestões de Melhorias para as FGRMs}
 \label{ch:sug_melhoria}
 
 \section{Introdução}
@@ -17,21 +17,21 @@ No levantamento por questionário descrito no
 Capítulo~\ref{ch:pesquisa-profissionais} os profissionais consultados se
 mostraram, em geral, satisfeitos com as funcionalidades disponibilizadas pelas
 FGRMs. Cerca de 90\% dos par\-ti\-ci\-pan\-tes fizeram uma avaliação positiva da
-ferramenta que utiliza, além disso, uma quantidade equivalente disse que
-recomendariam a FGRM para um novo projeto.
+ferramenta que utilizam, além disso, também cerca de 90\% dos participantes
+disseram que recomendariam as FGRMs que utilizam para um novo projeto.
 
 Não obstante, naquela mesma pesquisa, apresentamos uma lista de possíveis novas
-funcionalidades para as FGRMs e perguntamos ao participante se ele sente falta
-de alguma. O resultado desta pergunta foi que cerca de 85\% responderam
-positivamente, ou seja, se mostraram interessados na inclusão de pelo menos uma
-das funções propostas na FGRM que utiliza. A partir da análise deste resultado é
-possível inferir que os desenvolvedores estão satisfeitos com a ferramenta
-utilizada, contudo, \textit{não conhecem ou não têm acesso ao potencial de
-    funcionalidades que este tipo de software pode oferecer}.
+funcionalidades para as FGRMs e perguntamos ao participante quais
+funcionalidades ele desejaria que fosse incluída  em sua FGRM\@. O resultado
+desta pergunta foi que cerca de 85\% se mostraram interessados na inclusão de
+pelo menos uma das funções propostas na FGRM que utiliza. A partir da análise
+deste resultado é possível inferir que os desenvolvedores estão satisfeitos com
+a ferramenta utilizada, contudo, \textit{não conhecem ou não têm acesso ao
+    potencial de funcionalidades que este tipo de software pode oferecer}.
 
 Diante do exposto, entendemos que podemos contribuir com o estado a\-tu\-al das
 funcionalidades das FGRMs propondo um conjunto de melhorias. As sugestões foram
-compiladas utilizando a literatura da área e os resultados obtidos nesta
+compiladas utilizando a literatura da área e os levantamentos realizados nesta
 dissertação, especialmente com base nos
 Capítulos~\ref{ch:mapeamento-sistematico} e~\ref{ch:pesquisa-profissionais}, na
 Seção~\ref{sec:caracterizacao_ferramentas} e nos estudos que propõem melhorias
@@ -42,16 +42,18 @@ uso das FGRMs. Além disso, os responsáveis pelo desenvolvimento deste tipo de
 software, podem utilizar algumas das recomendações para a criação ou
 aperfeiçoamento das funcionalidades da FGRM que é responsável. Na mesma linha,
 os profissionais envolvidos com Manutenção de Software podem criar extensões
-(plugins) com base no que foi proposto de modo a aplicar essas melhorias
-sugeridas em sua rotina de trabalho.
+(plugins) com base no que foi proposto de modo a aplicar essas melhorias em sua
+rotina de trabalho.
 
 Este capítulo está organizado da seguinte forma: a
 Seção~\ref{sec:sug_melhoria_melhorando_as_ferraementas} apresenta as sugestões
-de melhorias propostas, cada sugestão foi seguida de uma breve discussão de como
-foi obtida e justificativa de sua implementação; na
-Seção~\ref{sec:sug_melhoria_avaliacao_das_melhorias} realizamos a avaliação do
+de melhorias propostas, cada sugestão é seguida de uma breve discussão de como
+foi obtida e justificativa de sua consideração; na
+Seção~\ref{sec:sug_melhoria_avaliacao_das_melhorias} realizamos uma avaliação do
 que foi recomendado com base na opinião de profissionais que contribuem para
-projetos relacionados ao desenvolvimento de FGRMs; na
+projetos relacionados ao desenvolvimento de FGRMs; os resultados do processo de
+avaliação são apresentados na
+Seção~\ref{sec:resultados_avaliacao_sug_de_melhorias}; na
 Seção~\ref{sec:sug_melhoria_discussao} discutimos os resultados obtidos no
 processo de avaliação; na Seção~\ref{sec:sug_melhoria_ameacas} apresentamos as
 ameaças à validade; encerramos o capítulo com um resumo na
@@ -64,21 +66,19 @@ As sugestões propostas neste capítulo não estão vinculadas exclusivamente à
 melhorias de funcionalidades existentes nas FGRMs. As recomendações podem
 representar o desenvolvimento de um novo comportamento ou a melhoria de outros
 já existentes. Cabe-nos ressaltar que o conjunto proposto não é exaustivo e é
-baseado nos resultados desta dissertação. Além disso, não houve compromisso com
-as dificuldades operacionais relacionadas com a implementação das
-funcionalidades.
+baseado nos resultados desta dissertação.
 
 É possível que algumas das recomendações propostas já estejam implementadas de
-maneira parcial ou integral. Contudo, não é possível validar esta premissa por
-conta de volume de ferramentas disponíveis quando esta dissertação foi escrita.
-Além disso, o processo de validação descrito na
-Seção~\ref{sec:sug_melhoria_avaliacao_das_melhorias} pode nos alertar sobre a
+maneira parcial ou integral.  Infelizmente não tivemos como verificar isso em
+função do esforço exigido pelo grande volume de ferramentas disponíveis quando
+esta dissertação foi escrita. Além disso, o processo de validação descrito na
+Seção~\ref{sec:sug_melhoria_avaliacao_das_melhorias} pôde nos alertar sobre a
 eventual proposição de uma funcionalidade existente. Ao longo da elaboração das
-sugestões verificamos que não conseguiríamos implementar todas elas,
-especialmente por entendermos que a análise desta complexidade está fora do
-escopo desta dissertação. Entretanto, como prova de conceito, a recomendação
-descrita na Seção~\ref{sub:supote_a_qualidade_do_relato} foi implementada como
-extensão de uma FGRM, conforme pode ser visto no
+sugestões verificamos que não conseguiríamos implementá-las e também não
+conseguiríamos analisar a complexidade de estratégias de implementação.
+Entretanto, como prova de conceito, a sugestão descrita na
+Seção~\ref{sub:supote_a_qualidade_do_relato} foi implementada como extensão de
+do repositório de RMs da plataforma Github, conforme pode ser visto no
 Capítulo~\ref{ch:implemtacao_extensao}. As sugestões realizadas foram
 estruturadas como seções deste capítulo, em que apresentamos a
 \textit{justificativa, o benefício gerado, as limitações e exemplos de
@@ -87,8 +87,8 @@ estruturadas como seções deste capítulo, em que apresentamos a
 \subsection{Suporte à Qualidade do Texto Relatado}
 \label{sub:supote_a_qualidade_do_relato}
 
-\sugestao{01}{As FGRMs deveriam suportar algum tipo de retorno (feedback)
-    relacionado com a qualidade do texto relatado.}
+\sugestao{01}{As FGRMs devem fornecer realimentação (feedback) relacionado com a
+    qualidade do texto relatado.}
 
 \paragraph{Justificativa:}
 \label{par:justificativa_s01}
@@ -99,24 +99,24 @@ responsável por reportar uma RM pode ser tanto um usuário do sistema quanto um
 membro da equipe de desenvolvimento ou manutenção. Por esta razão, podemos
 encontrar Reportadores com diferentes níveis de conhecimento sobre o sistema.
 Do ponto de vista dos desenvolvedores, um problema recorrente é a baixa
-qualidade do texto no relatado na RM, como por exemplo a falta da informação
-necessária à solução. Alguns estudos demonstram que a ausência das etapas para
-reproduzir a falha e o do registro de pilha de ativação (stack track),
-dificultam o andamento do projeto do que RMs
+qualidade do texto no relato da RM, tipicamente a falta da informação necessária
+à solução. Alguns estudos mostram que a ausência das etapas para reproduzir a
+falha e a ausência da cadeia de registros de ativação dificultam mais o
+andamento do projeto do que a ocorrência de RMs
 duplicadas~\cite{bettenburg2008makes, bettenburg2007quality}. Neste sentido, as
 FGRMs poderiam fornecer uma funcionalidade capaz de reduzir o número de relatos
-de baixa qualidade através, por exemplo, de um retorno ao Reportador da
-qualidade do que foi informado no relato da RM\@.
+de baixa qualidade através, por exemplo, de uma realimentação ao Reportador
+envolvendo uma estimativa da qualidade do que foi informado no relato da RM\@.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficio_s01}
 
 Com este tipo de funcionalidade uma FGRM poderia reduzir o tempo de análise das
 RMs pelo fato que o responsável por criá-la estaria ciente das informações
-necessárias à sua solução. Neste caso, o programador seria diretamente
-beneficiado já que teria a sua disposição um relato mais completo.  Não
-obstante, um trabalho adicional seria dado aos reportadores que em algumas
-situações devem rever as informações incluídas na RM\@.
+necessárias à sua solução. Neste caso, o desenvolvedor seria diretamente
+beneficiado já que teria a sua disposição um relato mais completo. Não obstante,
+um trabalho adicional seria dado aos reportadores que em algumas situações devem
+rever as informações incluídas na RM\@.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s01}
@@ -135,16 +135,16 @@ de uma RM\@.
 
 Após o usuário relatar um problema ou pedido de melhoria, a ferramenta de
 poderia avaliar o texto corresponde ao atributo \textit{relato} da RM gerada e
-apresentar ao responsável dicas de como a informação fornecida poderia ser
-melhorada, como por exemplo através da inclusão de um arquivo com o histórico de
-execução do software (log). Como prova de conceito foi implementada uma extensão
-para uma FGRM com estas características no
+apresentar ao responsável realimentação sobre como a informação fornecida
+poderia ser melhorada, como por exemplo através da inclusão de um arquivo com o
+histórico de execução do software (log). Como prova de conceito foi implementada
+uma extensão para uma FGRM com estas características no
 Capítulo~\ref{ch:implemtacao_extensao}.
 
 \subsection{Acesso Facilitado ao Código Fonte Incluído nas RMs}
 \label{sub:busca_por_código_fonte}
 
-\sugestao{02}{As FGRMs deveriam fornecer busca pelo código fonte contida no
+\sugestao{02}{As FGRMs deveriam fornecer busca pelo código fonte contido no
     relato, comentários ou anexos das RMs.}
 
 \paragraph{Justificativa:}
@@ -153,15 +153,19 @@ Capítulo~\ref{ch:implemtacao_extensao}.
 As RMs permitem a inclusão de fragmentos de código fonte em seu relato ou nos
 comentários em diversas etapas do seu ciclo de vida. O código pode ser incluído
 durante a criação das RMs, nas discussões realizadas para a sua solução ou mesmo
-quando ela é concluída (fechada). Neste último caso o código anexo recebe o nome
-de \textit{patch}. Os fragmentos de código podem ser utilizados para descrever
-uma falha ou apresentar uma solução candidata. Apesar de sua importância este
-tipo de informação não é facilmente recuperada no contexto de uso de uma FGRM\@.
-O estudo de Damevski e outros~\cite{damevski2016field}, que analisa o problema
-da localização de funcionalidades no código fonte (feature location), ressalta a
-importância da facilidade de acesso ao código fonte pode propiciar a redução do
-tempo de conclusão da tarefa de manutenção e o aumento da qualidade das
-alterações realizadas.
+quando ela é concluída (fechada). Quando o código corresponde a uma solução
+então recebe o nome de \textit{patch}. Os fragmentos de código podem ser
+utilizados para descrever uma falha ou apresentar uma solução candidata. Apesar
+de sua importância este tipo de informação não é facilmente recuperada no
+contexto de uso de uma FGRM\@. O estudo de Damevski e
+outros~\cite{damevski2016field}, que analisa o problema da localização de
+funcionalidades no código fonte (feature location), ressalta a importância da
+facilidade de acesso ao código fonte pode propiciar a redução do tempo de
+conclusão da tarefa de manutenção e o aumento da qualidade das alterações
+realizadas. Este é um caso particular de uma sugestão de melhoria que envolve
+generalizar ou especializar a interface de busca das FGRMs. Esta interface tem
+relação com a sugestão \#06 porque pode ser só texto (Recuperação da Informação)
+ou pode envolver elementos não textuais.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficios_s02}
@@ -195,8 +199,8 @@ Um problema recorrente em diversos projetos de software é a definição da orde
 que o conjunto de RMs deve ser analisado. Conforme discutido na
 Seção~\ref{ssub:melhorias_dim_processo} alguns estudos vêm se dedicando em
 classificar as RMs sob determinados critérios. Por outro lado, é possível
-observar que determinados \textit{Reportadores} tem por hábito relatar pedidos
-que possuem um maior grau de relevância ao projeto. Por exemplo, existem certos
+observar que determinados \textit{Reportadores} têm por hábito relatar pedidos
+que possuem um maior grau de relevância no projeto. Por exemplo, existem certos
 usuários que geralmente relatam RMs relativas à questões de segurança do
 sistema. Neste contexto, seria interessante se as FGRMs aplicassem algum tipo de
 métrica de relevância aos seus usuários, em especial aos reportadores. Em um
@@ -220,8 +224,8 @@ Uma das possíveis atividades desempenhadas pelo \textit{Agente de Triagem} é
 definir o desenvolvedor mais apto para determinada RM\@. Ele pode utilizar
 diversos critérios no exercício desta atividade, como por exemplo a prioridade
 do que foi relatado. Segundo a nossa proposta, o \textit{Agente de Triagem} pode
-previamente ordenar a lista de RMs pelo grau de reputação de quem as redigiu. A
-partir disso, ele poderia atribuir primeiro aquelas de Reportadores com maior
+previamente ordenar uma lista de RMs pelo grau de reputação de quem as redigiu.
+A partir disso, ele poderia atribuir primeiro as RMs de Reportadores com maior
 grau de reputação. Com base nesta estratégia, é possível que RMs com maior
 relevância sejam analisadas primeiro. O conceito de relevância pode variar em
 diferentes projetos. Contudo, uma RM poderia ser classificada como relevante
@@ -232,11 +236,10 @@ e fornecer as informações necessárias para sua solução.
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s03}
 
-Conforme descrito anteriormente, um \textit{Agente de Triagem} poderia ordenar a
-lista de RMs que é responsável pelo grau de reputação do \textit{Reportador}. Em
-seguida daria início ao processo de atribuição analisando primeiro as RMs mais
-bem ranqueadas. Caso as elas sejam relevantes o profissional poderia realizar a
-atribuição.
+Conforme descrito anteriormente, um \textit{Agente de Triagem} poderia ordenar
+uma lista de RMs pelo grau de reputação do \textit{Reportador}. Em seguida daria
+início ao processo de atribuição analisando primeiro as RMs mais bem ranqueadas.
+Caso as elas sejam relevantes o profissional poderia realizar a atribuição.
 
 \subsection{Atalhos para filtros e classificação (rankings) das RMs}
 \label{sub:histórico_das_ùltimas_rm_s}
@@ -272,9 +275,9 @@ classificações.
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s04}
 
-Com um acesso mais rápido às últimas RMs analisadas o desenvolver poderia ter
+Com um acesso mais rápido às últimas RMs analisadas o desenvolvedor poderia ter
 uma noção geral do trabalho desenvolvido. Este panorama poderia ajudá-lo no
-planejamento de suas atividade diárias.
+planejamento de suas atividades diárias.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s04}
@@ -293,22 +296,23 @@ que julgar importante no desenvolvimento de suas atividades.
 \label{par:justificativa_s05}
 
 A solução de determinada RM pode levar a resultados não esperados em outros
-módulos do sistema mantido. Para minimizar os possíveis problemas recomenda-se a
-avaliação do impacto da RM\@. A Análise de Impacto estima o que será afetado no
-software e na documentação relacionada caso uma mudança proposta seja
-feita~\cite{arnold1996software}. A literatura sobre RMs discute algumas soluções
-com o objetivo de realizar a Análise de Impacto. Alguns exemplos de trabalhos
-nesta linha são apresentados na Seção~\ref{ssub:melhorias_dim_processo}. Dentro
-das propostas feitas pelos agilistas uma das possibilidades de reduzir os
-efeitos colaterais de uma mudança é periodicamente realizar a construção (build)
-do sistema. A \textit{Integração Contínua} (IC) é a prática de construir (build)
-e implantar (deploy) imediatamente após um desenvolvedor consolidar (commit) o
-código fonte no repositório~\cite{aiello2010configuration}. Neste sentido,
-as FGRMs poderiam vincular a solução de uma RM com a execução de processo de
-IC\@. Desta forma, seria possível mapear uma versão do sistema com o conjunto de
-RMs solucionadas até a sua geração. Este tipo de integração foi descrita como
-uma funcionalidade ausente nas FGRMs por alguns participantes do levantamento
-por questionário descrito no Capítulo~\ref{ch:pesquisa-profissionais}.
+módulos do sistema mantido. Para tomar conhecimento dos possíveis problemas
+recomenda-se a avaliação do impacto da RM\@. A Análise de Impacto estima o que
+será afetado no software e na documentação relacionada caso uma mudança proposta
+seja feita~\cite{arnold1996software}. A literatura sobre RMs discute algumas
+soluções com o objetivo de realizar a Análise de Impacto. Alguns exemplos de
+trabalhos nesta linha são apresentados na
+Seção~\ref{ssub:melhorias_dim_processo}. Dentro das propostas feitas pelos
+agilistas uma das possibilidades de reduzir os efeitos colaterais de uma mudança
+é periodicamente realizar a construção (build) do sistema. A \textit{Integração
+    Contínua} (IC) é a prática de construir e implantar (deploy) imediatamente
+após um desenvolvedor compromissar (commit) o código
+fonte~\cite{aiello2010configuration}. Neste sentido, as FGRMs poderiam vincular
+a solução de uma RM com a execução do processo de IC\@. Desta forma, seria
+possível associar uma versão do sistema com o conjunto de RMs solucionadas até a
+sua geração. Este tipo de integração foi descrita como uma funcionalidade
+ausente nas FGRMs por alguns participantes do levantamento por questionário
+descrito no Capítulo~\ref{ch:pesquisa-profissionais}.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s05}
@@ -316,24 +320,24 @@ por questionário descrito no Capítulo~\ref{ch:pesquisa-profissionais}.
 A integração de uma FGRM com processos de IC traria para as atividades de
 manutenção os benefícios desta prática, tais como a redução de riscos e a
 facilidade de encontrar e remover falhas~\cite{fowler2006continuous}.  Além
-disso, segundo o nosso entendimento, o fato de vincular a solução de uma RM com
+disso, segundo o nosso entendimento, o fato de associar a solução de uma RM com
 determinada versão de um sistema, pode minimizar problemas levantados no
-Mapeamento Sistemático descrito no Capítulo~\ref{ch:mapeamento-sistematico},
-por exemplo a Localização do Problema
-(Seção~\ref{ssub:melhorias_dim_ferramenta}) e a Estimativa de Esforço da RM
-(Seção~\ref{ssub:melhorias_dim_processo}). Em ambos os casos é possível
-aproveitar da facilidade que a IC propicia em fornecer a localização de uma
-falha que, por exemplo, pode ter sido causada pela solução de uma RM\@.
+Mapeamento Sistemático descrito no Capítulo~\ref{ch:mapeamento-sistematico}, por
+exemplo a Localização do Problema (Seção~\ref{ssub:melhorias_dim_ferramenta}) e
+a Estimativa de Esforço da RM (Seção~\ref{ssub:melhorias_dim_processo}). Em
+ambos os casos é possível aproveitar a facilidade que a IC propicia em fornecer
+a localização de uma falha que, por exemplo, pode ter sido causada pela solução
+de uma RM\@.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s05}
 
 Algumas vezes a mudança de situação de uma RM para \textit{Fechada} pode não
 representar a sua efetiva solução. Por exemplo, a falha descrita pode ser
-definida como de baixo impacto e desta maneira não tratada, ou ainda o conjunto
-de fatores que geraram o problema descrito na RM deixa de existir. Nestas
-situação não faz sentido que responsável por fechar a RM engatilhe um processo
-de Integração Contínua.
+definida como de baixo impacto e desta maneira não ser tratada, ou ainda o
+conjunto de fatores que geraram o problema descrito na RM deixa de existir.
+Nestas situação não faz sentido que responsável por fechar a RM engatilhe um
+processo de Integração Contínua.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s05}
@@ -359,7 +363,7 @@ correspondente ao atributo \textit{relato}. Além do problema da falta de
 informação no relato da RM, discutido na
 Seção~\ref{sub:supote_a_qualidade_do_relato}, o Reportador enfrenta a
 dificuldade de expressar a falha ou o pedido de melhoria do software. A baixa
-expressividade do texto do relato pode estar relacionado pelo fato que algumas
+expressividade do texto do relato pode estar relacionada com o fato que algumas
 ferramentas analisadas utilizam texto simples (vide
 Seção~\ref{sec:caracterizacao_ferramentas}). A possibilidade de usar linguagens
 com semântica de apresentação, como por exemplo Rich Text Format \@-\@
@@ -376,7 +380,7 @@ melhorar a qualidade técnica e a acessibilidade do documento resultante. As
 FGRMs poderiam se apropriar destas facilidades com o objetivo de melhorar a
 legibilidade do texto contido na RM\@. Diante do uso deste tipo de formato, os
 Reportadores poderiam, por exemplo, incluir no próprio relato uma parte do
-código fonte em que eles supõem que está localizada a falha.
+código fonte onde eles supõem que esteja localizada a falha.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s06}
@@ -385,16 +389,17 @@ Considerando que os responsáveis por reportar uma RM possuem diferentes níveis
 de conhecimento sobre o sistema. Neste sentido, é possível que nem todos os
 Reportadores consigam fazer uso de todas as facilidades oferecidas por um novo
 formato de texto para o relato da RM\@. Além disso, a utilização de uma
-linguagem que exija conhecimento prévio pode inibir o desejo de relatá-la.
+linguagem que exija conhecimento prévio pode inibir o desejo de reportar uma
+RM\@.
 
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_de_utilização_s06}
 
 Conforme discutido na Seção~\ref{sec:caracterizacao_ferramentas}, algumas FGRMs
 permitem a utilização de linguagens com semântica de apresentação no processo de
-relato. O módulo para a criação de uma RM, que no contexto da plataforma Github
-corresponde ao elemento \textit{issue}, permite o uso da linguagem Markdown como
-um dos formatos disponíveis.
+relato. No Github o módulo para a criação de uma RM (\textit{issue} no contexto
+da plataforma), permite o uso da linguagem Markdown como um dos formatos
+disponíveis.
 
 \subsection{Classificação Automática pela Urgência da RM}
 \label{sub:priorizacao_automatica_rms}
@@ -415,7 +420,7 @@ reserva de tempo (buffer) que não é alocada no planejamento da iteração de m
 a atender eventuais demandas não esperadas~\cite{schwaber2002agile}. Para
 apresentação da solução proposta ainda é necessário definir quais RMs devem ser
 priorizadas durante a iteração, o que geralmente é realizado manualmente. As
-FGRMs poderiam suportar à priorização automática de RMs urgentes.
+FGRMs poderiam dar suporte à priorização automática de RMs urgentes.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s07}
@@ -443,9 +448,9 @@ resultados.
 \label{par:exemplo_de_utilização_s07}
 
 Após uma nova RM ser criada, a FGRM dispara um processo para determinar se ela
-deve ser classificada como urgente conforme critérios previamente definidos. Em
-positivo, a ferramenta realiza a priorização da RM através, por exemplo, da
-atribuição automatizada para o desenvolvedor disponível.
+deve ser classificada como urgente conforme critérios previamente definidos.
+Caso positivo, a ferramenta realiza a priorização da RM através, por exemplo, da
+atribuição automatizada para um desenvolvedor disponível.
 
 \subsection{Suporte à tarefas compartilhadas}
 \label{sub:suporte_tarefas_compartilhadas}
@@ -458,25 +463,25 @@ atribuição automatizada para o desenvolvedor disponível.
 
 Dentro do que é proposto pelos agilistas, o compartilhamento de código é visto
 como uma boa prática~\cite{meyer2014agile}. Por outro lado, mantenedores tendem
-a ser tornarem especialistas nos sistemas que são
+a se tornarem especialistas nos sistemas que são
 responsáveis~\cite{singer1998practices}. A propriedade compartilhada de tarefas
-permite que a carga de trabalho seja distribuída de forma mais igual, permitindo
-que os mantenedores sejam capazes de ajudar uns aos outros em períodos de muita
-atividade. No contexto das FGRMs, as tarefas compartilhadas poderiam ser
-representadas com a ``propriedade'' de uma RM por dois ou mais desenvolvedores.
-Uma abordagem semelhante a esta sugestão foi realizada no estudo proposto por
-Banitaan \& Alenezi~\cite{banitaan2013decoba} no qual os autores construíram uma
-comunidade de desenvolvedores baseados nos comentários realizados nas RMs. Cada
-RM criada era atribuída para uma comunidade. Os resultados mostraram que a
-abordagem atingiu uma precisão razoável de atribuição de RMs, além de construir
-um conjunto de desenvolvedores com experiência em solucionar determinadas RMs.
+permite que a carga de trabalho seja distribuída de forma mais flexível,
+permitindo que os mantenedores sejam capazes de ajudar uns aos outros. No
+contexto das FGRMs, as tarefas compartilhadas poderiam ser representadas com a
+``propriedade'' de uma RM por dois ou mais desenvolvedores. Uma abordagem
+semelhante a esta sugestão foi realizada no estudo proposto por Banitaan \&
+Alenezi~\cite{banitaan2013decoba} no qual os autores construíram uma comunidade
+de desenvolvedores baseados nos comentários realizados nas RMs. Cada RM criada
+era atribuída para uma comunidade. Os resultados mostraram que a abordagem
+atingiu uma precisão razoável de atribuição de RMs, além de construir um
+conjunto de desenvolvedores com experiência em solucionar determinadas RMs.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s08}
 
-A atribuição de uma RM a mais de um desenvolvedor ajuda a otimizar a carga de
-trabalho em toda a equipe e pode aumentar a moral do time. Em algumas situações
-os desenvolvedores deixam de ser especialistas em determinados sistemas para se
+A atribuição de uma RM a mais de um desenvolvedor flexibiliza a carga de
+trabalho e pode aumentar a moral do time. Em algumas situações os
+desenvolvedores deixam de ser especialistas em determinados sistemas para se
 tornarem generalistas, trabalhando com outros projetos. Esses benefícios são
 discutidos na literatura sobre o desenvolvimento e a manutenção que adotam as
 práticas propostas pelos agilistas~\cite{dybaa2008empirical,rudzki2009agile}.
@@ -484,7 +489,7 @@ práticas propostas pelos agilistas~\cite{dybaa2008empirical,rudzki2009agile}.
 \paragraph{Limitações:}
 \label{par:limitacoes_s08}
 
-Uma funcionalidade com suporte ao compartilhamento de tarefas padece dos mesmos
+Uma funcionalidade com suporte ao compartilhamento de tarefas tem os mesmos
 desafios e problemas do processo de atribuição automatizada de RMs, conforme
 discutido na Seção~\ref{ssub:melhorias_dim_processo}. Além disso, a RM deve
 permitir a divisão atômica de tarefas de modo que cada atividade fique com um
@@ -494,38 +499,40 @@ permitir a divisão atômica de tarefas de modo que cada atividade fique com um
 \label{par:exemplo_de_utilização_s08}
 
 Quando uma nova RM é criada um processo automatizado define dois ou mais
-desenvolvedores como responsáveis. Posteriormente, a RM é dividida em tarefas
-que serão compartilhadas entre o conjunto de desenvolvedores para o qual ela foi
-atribuída.
+desenvolvedores como responsáveis. Posteriormente, a RM pode ser dividida em
+tarefas que serão compartilhadas entre os desenvolvedores.
 
 \section{Avaliação das Melhorias Propostas}
 \label{sec:sug_melhoria_avaliacao_das_melhorias}
 
 Este capítulo apresentou um conjunto de sugestões que foram construídas tomando
-como base a literatura da área e os resultados e contribuições desta
-dissertação. Com o objetivo de avaliar a relevância e o grau de facilidade de
-implementação das recomendações propostas, conduzimos um levantamento mediante
-questionário com profissionais que contribuem em projetos de código aberto
-hospedados no Github. O processo de seleção dos participantes, o desenho do
-questionário e como foi realizada a sua aplicação estão descritos a seguir.
+como base a literatura da área e os levantamentos desta dissertação. Com o
+objetivo de avaliar a relevância e o grau de facilidade de implementação das
+recomendações propostas, conduzimos um levantamento mediante questionário com
+profissionais que contribuem em projetos de código aberto hospedados no Github.
+O processo de seleção dos participantes, o desenho do questionário e como foi
+realizada a aplicação estão descritos a seguir.
 
 \subsection{Seleção dos Participantes}
 \label{ssub:sug_melhoria_selecao_participantes}
 
 O público-alvo deste questionário é o conjunto de profissionais que estejam
 ligados ao processo de desenvolvimento e manutenção de algum projeto de FGRMs.
-A escolha é porque avaliar a relevância das sugestões propostas e verificar a
-viabilidade de implementação do que foi recomendado. Neste sentido, optamos por
-um amostra de conveniência composta por profissionais que atuam como
-\textit{contribuidores} em projetos de código aberto hospedados no Github. Com
-cerca de 38 milhões de repositórios\footnote{\url{https://github.com/features}.
-    Acesso em junho/2016.}, Github é atualmente o maior repositório de código na
-Internet.  Sua popularidade e a disponibilidade de metadados, acessíveis através
-de uma API, tem tornado Github bastante atrativo para a realização de pesquisas
-na área de Engenharia de Software.
+Esta escolha se deu em função de envolver a avaliação da relevância das
+sugestões propostas e verificar a viabilidade de implementação do que foi
+recomendado. Neste sentido, optamos por um amostra de conveniência composta por
+profissionais que atuam como \textit{contribuidores} em projetos de código
+aberto hospedados no Github. Com cerca de 38 milhões de
+repositórios\footnote{Disponível em \url{https://github.com/features}. Acesso em
+    junho/2016. Uma definição do conceito de repositório no contexto da
+    plataforma Github é realizada no Capítulo~\ref{ch:implemtacao_extensao}}, o
+Github é atualmente o maior repositório de código na Internet. Sua popularidade
+e a disponibilidade de metadados, acessíveis através de uma API, têm tornado
+Github bastante atrativo para a realização de pesquisas na área de Engenharia de
+Software.
 
 A seleção dos participantes iniciou com a escolha dos projetos através da
-ferramenta de busca avançada oferecida pela plataforma Github. Ela permite
+interface de busca avançada oferecida pela plataforma Github. Ela permite
 recuperar projetos utilizando critérios tais como data de criação, linguagem
 utilizada no desenvolvimento e proprietário do repositório, dentre outros. Neste
 estudo, utilizamos os critérios de seleção baseados em boas práticas
@@ -549,9 +556,9 @@ inclui os seguintes requisitos:
         repositório.
 \end{itemize}
 
-Após aplicação dos critérios descritos obtivemos os projetos retratados no
+Após aplicação destes critérios descritos obtivemos os projetos retratados no
 Anexo~\ref{ch:app-tb-lista-projetos-sug-melhorias}. Com base nos projetos
-selecionados ficou definido que a amostra a ser utilizada no levantamento seria
+selecionados ficou definido que a amostra a ser utilizada no levantamento seriam
 os respectivos contribuidores. Um contribuidor é alguém que participa
 efetivamente do desenvolvimento de um projeto, tendo o privilégio de acesso para
 alterar o código fonte. A solicitação de participação foi realizada por meio de
@@ -577,12 +584,12 @@ prazo curto, de preferência entre 5 e 10 minutos. Neste sentido, as perguntas
 foram organizadas em dois grupos principais. As questões do primeiro grupo têm
 por objetivo coletar a opinião dos profissionais sobre a relevância da
 recomendação proposta e o grau de dificuldade em implementá-la. As perguntas
-foram estruturadas como uma escala de Likert em que o respondente deveria
-fornecer o seu nível de concordância para as declarações que lhe foram
-apresentadas. No segundo grupo estamos interessados na formação de base
-(background) dos profissionais. Optamos por definir algumas das questões como
-não obrigatórias por entendermos que a impossibilidade ou falta de interesse em
-responder determinada pergunta não poderia impedir o participante de enviar os
+foram estruturadas de maneira a permitir respostas na forma de uma escala de
+Likert em que o respondente deveria fornecer o seu nível de concordância para as
+declarações que lhe foram apresentadas. No segundo grupo estamos interessados na
+formação dos profissionais. Optamos por definir algumas das questões como não
+obrigatórias por entendermos que a impossibilidade ou falta de interesse em
+responder determinada pergunta não deveria impedir o participante de enviar os
 dados de outras questões respondidas.
 
 \subsection{Processo de Aplicação}
@@ -590,7 +597,7 @@ dados de outras questões respondidas.
 
 O questionário foi encaminhado à amostra de interesse através de correio
 eletrônico. O endereço foi coletado diretamente do projeto hospedado no Github.
-Foi desenvolvido um \textit{script} na linguagem Python que permitia coletar o
+Foi desenvolvido um \textit{script} na linguagem Python que permite coletar o
 endereço de e-mail e automatizar o processo de envio. As mensagem foram
 personalizadas de modo a identificar o nome do usuário e o projeto do Github com
 base no template exibido a seguir. O pedido de participação foi enviado para um
@@ -631,25 +638,25 @@ web~\cite{fan2010factors}.
 \label{sec:resultados_avaliacao_sug_de_melhorias}
 
 Após o envio do formulário aos participantes obtivemos um total de 29 respostas.
-Como algumas das questões do formulário não eram de preenchimento obrigatório é
-possível que o número de repostas seja menor. O nível de participação foi
+Como algumas das questões do formulário não eram de preenchimento obrigatório
+algumas perguntas não totalizam 29 respostas. O nível de participação foi
 similar ao observado em outros estudo em Engenharia de Software que utilizam o
 levantamento por questionário (survey) como método de coleta de
-dados~\cite{fan2010factors}. Nas próximas seções apresentamos os resultados
-obtidos através do perfil dos participantes, a relevância das sugestões
-propostas e o grau de facilidade de implementação das mesmas.
+dados~\cite{fan2010factors}. Nas próximas seções apresentamos o perfil dos
+participantes, a relevância das sugestões propostas e o grau de facilidade de
+implementação das mesmas.
 
 \subsection{Perfil dos Participantes}
 \label{sub:sug_melhorias_resultados_perfil_dos_participantes}
 
 No levantamento realizado incluímos uma questão sobre qual sistema o
 desenvolvedor contribui. Esta informação é importante porque contribuidores que
-trabalham com ferramentas que são ``mainstream'' podem ter uma maior resistência
-quanto à inclusão de novas funcionalidades. A
+trabalham com ferramentas que são consideradas mais famosas e poderosas podem
+ter uma maior resistência quanto à inclusão de novas funcionalidades. A
 Tabela~\ref{tab:projetos_participantesmy-label} exibe o nome dos projetos que
 tiveram contribuidores que preencheram o nosso formulário. Verificamos nas
 primeiras posições ferramentas tradicionais como Mantis, Trac e Debbugs. As
-FGRMs que tiveram menos de duas participações foram agrupados sobre o termo
+FGRMs que tiveram menos de duas participações foram agrupados sob o termo
 ``OUTROS''.
 
 \begin{table}[htpb]
@@ -678,26 +685,23 @@ aqueles ligados à gerenciamento de equipes (Gerentes de Projetos, Chief
 Technical Officer e etc.). Verificamos ainda a participação de Engenheiros e
 Arquitetos de Software. Sobre o tempo de experiência, o percentual de 45\% dos
 respondentes têm entre dez e vinte anos de experiência. A maior parte desempenha
-suas atividades em equipes de pequeno (2~-~5 pessoas) ou médio porte (mais do 10
-pessoas). Quando questionamos sobre qual o tipo de atividade desempenhada pelo
-participante, cerca de 85\% trabalham com desenvolvimento ou manutenção de
-software. Com base no perfil apurado entendemos que os participantes são capazes
-de analisar as sugestões de melhorias de modo a contribuir com este estudo.
+suas atividades em equipes com 2 a 5 pessoas ou com mais do 10 membros. Quando
+questionamos sobre qual o tipo de atividade desempenhada pelo participante,
+cerca de 85\% trabalham com desenvolvimento ou manutenção de software. Com base
+no perfil apurado entendemos que os participantes são adequados para efetuar a
+análise das sugestões de melhorias desta dissertação.
 
 \subsection{Relevância das Sugestões}
 \label{sub:sug_melhorias_resultados_relevancia}
 
-As sugestões de melhorias foram apresentadas aos participantes mediante uma
-escala de Likert. Os resultados podem ser visualizados na
-Figura~\ref{fig:plot_likert_avaliacao_sug_melhorias}. Em uma primeira análise
-verificamos que a maioria das recomendações tiveram uma avaliação positiva dos
-participantes (Concordo ou Concordo Fortemente). A exceção foi para a
-Recomendação \#3 que trata da possibilidade de ordenar as RMs a serem
-analisadas pela reputação do Reportador. Por outro lado, as Recomendações \#6 e
-\#8 tiveram uma boa aceitação dos participantes. A primeira sugestão trata da
-utilização de uma linguagem, como o Markdown, para relatar uma RM\@. No caso da
-segunda recomendação foi proposto o suporte a tarefas compartilhadas, de modo
-que uma RM tenha mais de um ``dono''.
+As sugestões de melhorias foram apresentadas aos participantes e eles respondiam
+se achavam as sugestões pertinentes mediante uma escala de Likert. Os resultados
+podem ser visualizados na Figura~\ref{fig:plot_likert_avaliacao_sug_melhorias}.
+Em uma primeira análise verificamos que a maioria das recomendações tiveram uma
+avaliação positiva dos participantes (Concordo ou Concordo Fortemente). A
+exceção foi para a Sugestão \#3 que trata da possibilidade de ordenar as RMs a
+serem analisadas pela reputação do Reportador. Por outro lado, as Sugestões \#6
+e \#8 tiveram uma boa aceitação dos participantes.
 
 \begin{figure}[htpb]
     \centering
@@ -706,13 +710,13 @@ que uma RM tenha mais de um ``dono''.
 \label{fig:plot_likert_avaliacao_sug_melhorias}
 \end{figure}
 
-Para avaliar quais recomendações tiveram maior aceitação definimos um
-ranqueamento. O ordenamento consistiu em aplicar pesos para cada item da escala
-de Likert conforme a Tabela~\ref{tab:pesos_rank_sug_melhorias}. O valor é
-obtido multiplicando a frequência de determinado item da escala pelo seu
-respectivo peso. A Tabela~\ref{fig:plot_likert_avaliacao_sug_melhorias} exibe
-as recomendações ordenadas pelo nível de aceitação dos participantes. É
-possível visualizar o número de respostas que cada item recebeu.
+Para avaliar quais sugestões tiveram maior aceitação definimos um ranqueamento.
+O ordenamento consistiu em aplicar pesos para cada item da escala de Likert
+conforme a Tabela~\ref{tab:pesos_rank_sug_melhorias}. O valor é obtido
+multiplicando a frequência de determinado item da escala pelo seu respectivo
+peso. A Tabela~\ref{fig:plot_likert_avaliacao_sug_melhorias} exibe as
+recomendações ordenadas pelo nível de aceitação dos participantes. É possível
+visualizar o número de respostas que cada item recebeu.
 
 \begin{table}[htpb]
 \centering
@@ -738,7 +742,7 @@ incorporação de processos de Integração Contínua (\#5). Por outro lado as
 sugestões de diferenciar as RMs pela reputação do Reportador (\#3) e avaliar a
 qualidade do relato (\#1) não foram avaliadas como as mais relevantes pelos
 participantes. É importar notar que as recomendações que ficaram nas últimas
-posições tiveram a opção ``Nem concordo ou discordo'' selecionadas com maior
+posições tiveram a opção ``Não concordo nem discordo'' selecionadas com maior
 frequência. Este fato pode indicar que não houve uma rejeição pelos
 participantes, mas possivelmente, uma baixa compreensão do que estava sendo
 proposto.
@@ -749,16 +753,16 @@ proposto.
 \begin{tabular}{@{}lcccccc@{}}
 \toprule
 \multicolumn{1}{c}{\textbf{Recomendações}} & \textbf{Discordo Fortemente} &
-\textbf{Discordo} & \textbf{Nem concordo ou discordo} & \textbf{Concordo} &
+\textbf{Discordo} & \textbf{Não concordo e nem discordo} & \textbf{Concordo} &
 \textbf{Concordo Fortemente} & \textbf{Ranking} \\ \midrule
-\textit{Recomendação \#6} & 0 & 1 & 2 & 6 & 20 & 45 \\
-\textit{Recomendação \#8} & 0 & 1 & 1 & 15 & 12 & 38 \\
-\textit{Recomendação \#5} & 1 & 0 & 5 & 10 & 13 & 34 \\
-\textit{Recomendação \#4} & 0 & 1 & 6 & 12 & 10 & 31 \\
-\textit{Recomendação \#2} & 0 & 2 & 7 & 13 & 7 & 25 \\
-\textit{Recomendação \#7} & 1 & 5 & 8 & 6 & 9 & 17 \\
-\textit{Recomendação \#1} & 1 & 3 & 10 & 13 & 2 & 12 \\
-\textit{Recomendação \#3} & 3 & 9 & 13 & 2 & 2 & -9 \\ \bottomrule
+\textit{Sugestão \#6} & 0 & 1 & 2 & 6 & 20 & 45 \\
+\textit{Sugestão \#8} & 0 & 1 & 1 & 15 & 12 & 38 \\
+\textit{Sugestão \#5} & 1 & 0 & 5 & 10 & 13 & 34 \\
+\textit{Sugestão \#4} & 0 & 1 & 6 & 12 & 10 & 31 \\
+\textit{Sugestão \#2} & 0 & 2 & 7 & 13 & 7 & 25 \\
+\textit{Sugestão \#7} & 1 & 5 & 8 & 6 & 9 & 17 \\
+\textit{Sugestão \#1} & 1 & 3 & 10 & 13 & 2 & 12 \\
+\textit{Sugestão \#3} & 3 & 9 & 13 & 2 & 2 & -9 \\ \bottomrule
 \end{tabular}%
 }
 \caption{Ranking das sugestões propostas}
@@ -769,8 +773,7 @@ proposto.
 \label{sub:sug_melhorias_resultados_implementacao}
 
 Neste etapa do estudo estávamos interessados em avaliar o nível de dificuldade
-para implementar as sugestões propostas. A informação foi obtida através de uma
-escala de Likert cujos resultados estão apresentados na
+para implementar as sugestões propostas. Os resultados estão apresentados na
 Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}.
 
 \begin{figure}[htpb]
@@ -781,7 +784,7 @@ Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}.
 \end{figure}
 
 As sugestões foram ordenadas pelo grau de dificuldade de implementação.
-Utilizamos um similar ao descrito na
+Utilizamos um mecanismo similar ao descrito na
 Seção~\ref{sub:sug_melhorias_resultados_relevancia} em que o valor é obtido
 multiplicando a frequência de um item da escala por valor previamente definido,
 que chamamos de peso. Os pesos estão apresentados na
@@ -804,21 +807,20 @@ Muito Fácil & 2 \\ \bottomrule
 \label{tab:pesos-implementacao-sug-melhorias}
 \end{table}
 
-Quando foram questionados sobre a facilidade de implementação das
-funcionalidades para o suporte do relato de uma RM além do texto simples (\#6),
-a criação de atalhos e filtros personalizáveis (\#4) e o ranqueamento das RMs
-pela reputação do Reportador (\#3). Segundo os participantes funções como o
-suporte a tarefas compartilhadas (\#8) e análise da qualidade do relato (\#1)
-foram consideradas de um maior grau de dificuldade de implementação. O fato
-interessante é que a recomendação \#3 foi considerada como uma das mais fáceis
-de implementar, entretanto, está entre aquelas que tiveram menor aceite entre os
-participantes.  Este fato pode sugerir que sua possível rejeição não estaria
-ligada à sua complexidade de desenvolvimento, mas a fatores como o não interesse
-em classificar aqueles que reportam uma RM\@. Em geral, ao analisarmos a
-Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias} é possível
-verificar que os participantes entenderam que metade das sugestões propostas
-possuem uma dificuldade média, enquanto a outra metade pode ser considerada com
-um baixo grau de complexidade.
+Foram consideradas ser de fácil implementação: o suporte do relato de uma RM
+além do texto simples (\#6), a criação de atalhos e filtros personalizáveis
+(\#4) e o ranqueamento das RMs pela reputação do Reportador (\#3). Segundo os
+participantes funções como o suporte a tarefas compartilhadas (\#8) e análise da
+qualidade do relato (\#1) foram consideradas de um maior grau de dificuldade de
+implementação. O fato interessante é que a Sugestão \#3 foi considerada como
+uma das mais fáceis de implementar, entretanto, está entre aquelas que tiveram
+menor aceite entre os participantes. Este fato pode sugerir que sua possível
+rejeição não estaria ligada à sua complexidade de desenvolvimento, mas a fatores
+como não haver interesse em classificar aqueles que reportam uma RM\@. Em geral,
+ao analisarmos a Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}
+é possível verificar que os participantes entenderam que metade das sugestões
+propostas possuem uma dificuldade média, enquanto a outra metade pode ser
+considerada com um baixo grau de complexidade.
 
 \begin{table}[htpb]
 \centering
@@ -830,14 +832,14 @@ um baixo grau de complexidade.
 \multicolumn{1}{l}{\textbf{Neutro}} & \multicolumn{1}{l}{\textbf{Fácil}} &
 \multicolumn{1}{l}{\textbf{Muito Fácil}} & \multicolumn{1}{l}{\textbf{Ranking}}
 \\ \midrule
-Recomendação \#6 & 0 & 0 & 8 & 16 & 5 & 26 \\
-Recomendação \#4 & 0 & 1 & 8 & 17 & 3 & 22 \\
-Recomendação \#3 & 4 & 3 & 9 & 10 & 3 & 5 \\
-Recomendação \#2 & 2 & 7 & 11 & 8 & 1 & -1 \\
-Recomendação \#7 & 3 & 12 & 4 & 7 & 3 & -5 \\
-Recomendação \#5 & 2 & 11 & 12 & 3 & 1 & -10 \\
-Recomendação \#8 & 0 & 16 & 7 & 6 & 0 & -10 \\
-Recomendação \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
+Sugestão \#6 & 0 & 0 & 8 & 16 & 5 & 26 \\
+Sugestão \#4 & 0 & 1 & 8 & 17 & 3 & 22 \\
+Sugestão \#3 & 4 & 3 & 9 & 10 & 3 & 5 \\
+Sugestão \#2 & 2 & 7 & 11 & 8 & 1 & -1 \\
+Sugestão \#7 & 3 & 12 & 4 & 7 & 3 & -5 \\
+Sugestão \#5 & 2 & 11 & 12 & 3 & 1 & -10 \\
+Sugestão \#8 & 0 & 16 & 7 & 6 & 0 & -10 \\
+Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 \bottomrule
 \end{tabular}%
 }
@@ -853,86 +855,84 @@ dos participantes. Em média 32\% dos participantes avaliaram as recomendações
 ``Concordo'' ou ``Concordo Fortemente''.  Além disso, por volta de 22\% em média
 selecionaram a opção ``Nem concordo ou discordo''. Segundo o nosso entendimento
 as respostas poderiam ser alteradas para uma visão mais positiva, com por
-exemplo ``Concordo'' ou ``Concordo Fortemente'', caso fosse possível fornecer
-mais detalhes ao participantes.
+exemplo ``Concordo'' ou ``Concordo Fortemente'', caso fossem fornecidos mais
+detalhes ao participantes.
 
-Com relação as recomendações propostas, verificamos que a utilização de uma
+Com relação às recomendações propostas, verificamos que a utilização de uma
 linguagem além do texto simples, como por exemplo o Markdown, foi muito bem
-avaliado. Este tipo de recomendação tem como principal objetivo aumentar o
-poder de expressão do relato, tal como a possibilidade do destaque da sintaxe
-do código fonte. Conforme pode ser observado na
+aceita. Este tipo de sugestão tem como principal objetivo aumentar o poder
+de expressão do relato, tal como a possibilidade do destaque da sintaxe do
+código fonte. Conforme pode ser observado na
 Seção~\ref{sec:caracterizacao_ferramentas} trata-se de uma funcionalidade
-encontrada em uma das FGRMs analisadas. Entretanto, o nosso resultado
-demonstra, com base na amostra utilizada, que deveria ser expandida para outras
+encontrada em uma das FGRMs analisadas. Entretanto, o nosso resultado demonstra,
+com base na amostra utilizada, que deveria ser estendida para outras
 ferramentas.
 
-O suporte à tarefas compartilhadas (sugestão \#8) também foi muito bem avaliado.
+O suporte à tarefas compartilhadas (sugestão \#8) também foi muito bem aceita.
 Esta recomendação surgiu das tentativas de implantação das propostas dos
-agilistas~\cite{svensson2005introducing}. A recomendação defende que uma
-determinada RM não tenha um ``dono'', mas que a responsabilidade seja dividida
-entre dois ou mais membros da equipe. Esta divisão de tarefas pode resultar na
-melhor distribuição do conhecimento entre a equipe. A prevalência deste tipo de
-funcionalidade pode estar relacionada com o desejo das equipes de manutenção de
-utilizar algumas das práticas dos agilistas. Seria necessário um aprofundamento
-da opinião dos participantes para confirmamos esta hipótese. Apesar da sua
-popularidade entre os participantes, esta recomendação ficou entre aquelas com
-maior grau de dificuldade de implementação.
+agilistas~\cite{svensson2005introducing}. A sugestão defende que uma
+determinada RM não tenha um único ``dono'', mas que a responsabilidade seja
+dividida entre dois ou mais membros da equipe. Esta divisão de tarefas pode
+resultar na melhor distribuição do conhecimento entre a equipe. A prevalência
+deste tipo de funcionalidade pode estar relacionada com o desejo das equipes de
+manutenção de utilizar algumas das práticas dos agilistas. Seria necessário um
+aprofundamento da opinião dos participantes para confirmamos esta hipótese.
+Apesar da sua popularidade entre os participantes, esta sugestão ficou entre
+aquelas com maior grau de dificuldade de implementação.
 
-Por outro lado, as sugestões que tem algum tipo de relação com a interface das
+Por outro lado, as sugestões que têm algum tipo de relação com a interface das
 FGRMs (sugestões \#6, \#4, \#3 e \#2) foram consideradas como mais ``fácil'' de
 implementar com mais frequência. Entretanto, a sugestão sobre a qualidade do
 relato (\#1) ficou entre aquelas com maior grau de dificuldade. Esta
-classificação pode ser decorrente do carácter subjetivo que a qualidade do
-relato pode ter. Em cada projeto a qualidade do relato pode ter características
+classificação pode ser decorrente do caráter subjetivo que a qualidade do relato
+pode ter. Em cada projeto a qualidade do relato pode ter características
 distintas o que pode dificultar o seu suporte.
-
 
 \section{Ameaças à Validade}
 \label{sec:sug_melhoria_ameacas}
 
-Para avaliarmos as sugestões propostas utilizamos um levantamento através de uma
-amostra de conveniência. Apesar da taxa de resposta está dentro da faixa
+Para avaliarmos as sugestões propostas utilizamos um levantamento empregando uma
+amostra de conveniência. Apesar da taxa de resposta estar dentro da faixa
 observada na literatura, o total de participantes não nos permite extrapolar os
 resultados para todos os contextos em que as FGRMs estão inseridas.
 Adicionalmente, os critérios utilizados para seleção, como por exemplo, seis
 meses de desenvolvimento ou ter no mínimo duzentas revisões, não nos permite
-afirmar que foi escolhido os projetos mais representativos para o nosso
+afirmar que foram escolhidos os projetos mais representativos para o nosso
 público-alvo.
 
-Ao utilizarmos apenas projetos públicos hospedados no Github pode ter causado
+A utilização de apenas projetos públicos hospedados no Github pode ter causado
 algum tipo de direcionamento, como por exemplo foco em projetos de código
 aberto. Além disso, não há garantidas que os critérios utilizados para seleção,
 como por exemplo seis meses de desenvolvimento ou ter no mínimo 200 revisões
-(commits), não nos permite afirmar que escolher os projetos mais
-representativos para o nosso público-alvo.
+(commits), não nos permite afirmar que foram escolhidos escolher os projetos
+mais representativos.
 
-A estrutura das perguntas do formulário podem ter causado impacto na quantidade
+A estrutura das perguntas do formulário pode ter causado impacto na quantidade
 de respostas ou na opção escolhida pelos participantes. Esta situação pode ter
 ocorrido especialmente quando apresentamos as sugestões. No caso de escrevermos
-de maneira extensa a explicação corremos o risco do sujeito não ler e não
-responder. Entretanto, se o texto fosse escrito de forma ``concisa'' corremos o
-risco de ficar vago, o que pode ter impacto nas respostas. A
+de maneira extensa a explicação corremos o risco do respondente desistir do
+item. Entretanto, se o texto fosse escrito de forma ``concisa'' corremos o risco
+de ficar vago, o que pode ter impacto nas respostas. A
 Tabela~\ref{tab:projetos_participantesmy-label} detalha os projetos que os
 participantes contribuem. É possível observar que os participantes trabalham com
-ferramentas que são ``mainstream'' e portanto têm o viés de visão mais
+ferramentas que são mais famosas e portanto têm o viés de visão mais
 ``tradicional''.
 
 Em um dos comentários um dos participantes citou que algumas das sugestões
 propostas podem ter funcionalidades similares em outras FGRMs. Acreditávamos que
 a escolha destas 08 sugestões envolveria as principais características, mas
 existe possibilidade de ficar alguma característica relevante de fora.
-Infelizmente, posteriormente, descobrimos que ficaram de fora algumas dessas
-características.
+Infelizmente, posteriormente, julgamos que poderíamos ter incluído mais
+sugestões.
 
 \section{Resumo do Capítulo}
 \label{sec:sug_melhoria_resumo}
 
-O objetivo do levantamento foi avaliar a proposição de funcionalidades para
-FGRMs. A avaliação foi realizada com base na opinião de desenvolvedores que
-contribuem para projetos de código aberto deste tipo de software. Em geral, as
-sugestões de melhorias foram bem avaliadas. Mais de 30\% avaliaram as
-recomendações de forma positiva (``Concordo'' ou  ``Concordo Fortemente'').
-Quanto a dificuldade de implementação, metade delas foi escolhida como fácil.
-Estes resultados nos permite considerar a implementação de pelo menos uma das
-sugestões como Prova de Conceito. O próximo capítulo foi construído com este
-objetivo.
+O objetivo do levantamento foi avaliar as sugestões de melhorias de
+funcionalidades das FGRMs. A avaliação foi realizada com base na opinião de
+desenvolvedores que contribuem para projetos de código aberto deste tipo de
+software. Em geral, as sugestões de melhorias foram bem avaliadas. Mais de 30\%
+avaliaram as recomendações de forma positiva (``Concordo'' ou  ``Concordo
+Fortemente''). Quanto a dificuldade de implementação, metade delas foi
+considerada de fácil implementação. No próximo capítulo discutimos aspectos de
+implementação da Sugestão \#1 na plataforma Github.
