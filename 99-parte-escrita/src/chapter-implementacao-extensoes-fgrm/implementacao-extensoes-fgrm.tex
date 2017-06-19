@@ -435,35 +435,30 @@ de implantação da extensão proposta.
 \subsection{Resultados}
 \label{sub:implementacao_extensao_avaliacao_resultados}
 
-Uma possível preocupação com a inclusão deste tipo de extensão em uma FGRM é a o
-atraso que possa ocorrer no processo de solução das RMs. É natural que um tempo
-adicional seja necessário para analisar a qualidade do relato. A
-Tabela~\ref{tab:tempo_execucao_extensao} exibe o tempo em segundos que a
-extensão levou para analisar as \textit{RMs}. É possível verificar que em
-média cerca de 02 segundos são necessários para avaliar a qualidade do relato.
-Em alguns casos o processo é finalizado em menos de 01 segundo. Entretanto, é
-possível verificar situações em que o tempo de retorno da extensão é cerca de 30
-segundos. Em alguns casos esta discrepância é maior, como no caso do projeto
-\textit{Guava} que possui um desvio padrão acentuado em que o tempo de execução
-pode variar de 01 a 31 segundos.
+Fizemos algumas medidas de desempenho mas infelizmente não tivemos condições de
+elaborar uma estrutura que nos desse medidas repetíveis. Em uma estrutura
+sujeita a aspectos não muito bem controlados observamos que o tempo médio para
+avaliação de uma RM é de 02 segundos. Em alguns casos o processo é finalizado em
+menos de 01 segundo. Entretanto, é possível verificar situações em que o tempo
+para uma gerar uma realimentação na forma de um comentário é de 30 segundos.
 
-\begin{table}[htpb]
-\centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{@{}lccccc@{}}
-\toprule
-\multicolumn{1}{c}{\textbf{Projeto}} & \textbf{Média (seg.)} & \textbf{Mediana
-    (seg.)} & \textbf{Desvio Padrão (seg.)} & \textbf{Min (seg.)} & \textbf{Max
-    (seg.)} \\ \midrule
-Todos & 1,91 & 1 & 2,93 & 0 & 31 \\
-spring-framework & 2,36 & 1 & 4,13 & 1 & 31 \\
-guava & 1,71 & 1 & 1,9 & 0 & 16 \\
-elasticsearch & 1,66 & 1 & 2,24 & 0 & 16 \\ \bottomrule
-\end{tabular}%
-}
-\caption{Tempo de execução da extensão.}
-\label{tab:tempo_execucao_extensao}
-\end{table}
+% \begin{table}[htpb]
+% \centering
+% \resizebox{\textwidth}{!}{%
+% \begin{tabular}{@{}lccccc@{}}
+% \toprule
+% \multicolumn{1}{c}{\textbf{Projeto}} & \textbf{Média (seg.)} & \textbf{Mediana
+%     (seg.)} & \textbf{Desvio Padrão (seg.)} & \textbf{Min (seg.)} & \textbf{Max
+%     (seg.)} \\ \midrule
+% Todos & 1,91 & 1 & 2,93 & 0 & 31 \\
+% spring-framework & 2,36 & 1 & 4,13 & 1 & 31 \\
+% guava & 1,71 & 1 & 1,9 & 0 & 16 \\
+% elasticsearch & 1,66 & 1 & 2,24 & 0 & 16 \\ \bottomrule
+% \end{tabular}%
+% }
+% \caption{Tempo de execução da extensão.}
+% \label{tab:tempo_execucao_extensao}
+% \end{table}
 
 Com a execução utilizando os dados de \textit{RMs} de projetos reais queríamos
 de verificar em qual atributo do relato os problemas são mais frequentes.
