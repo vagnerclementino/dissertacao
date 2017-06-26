@@ -1,8 +1,9 @@
-NAME=semana-da-pos-vagner-clementino
-BIBLIOGRAPHY=semana-da-pos-vagner-clementino
+NAME=defesa-vagner-clementino
+BIBLIOGRAPHY=defesa-vagner-clementino
+DIR_BIB=../bib
 DIR_PDF_NAME=../output/
 all: aspell compile clean
-compile: $(NAME).tex $(BIBLIOGRAPHY).bib	
+compile: $(NAME).tex $(DIR_BIB)/$(BIBLIOGRAPHY).bib
 	@pdflatex -shell-escape $(NAME).tex
 	@bibtex $(NAME)
 	@pdflatex $(NAME).tex
@@ -14,4 +15,3 @@ clean:
 	@rm ${NAME}.aux ${NAME}.blg ${NAME}.bbl ${NAME}.dvi ${NAME}.ps ${NAME}.log ${NAME}.toc ${NAME}.out ${NAME}.nav ${NAME}.snm ${NAME}.synctex.gz *.bak
 aspell: $(NAME).tex
 	@aspell --encoding="utf-8" -c -t=tex --lang="pt_BR" $(NAME).tex
-	#@aspell --encoding="utf-8" -c -t=tex --lang="en_US" $(NAME).tex
