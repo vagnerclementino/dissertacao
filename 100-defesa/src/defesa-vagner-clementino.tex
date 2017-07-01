@@ -32,9 +32,18 @@
 \usepackage{adjustbox}
 \usepackage{array}
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\usepackage{booktabs}
+
 %\usepackage[cmex10]{amsmath}
 % Or whatever. Note that the encoding and the font should match. If T1
 % does not look nice, try deleting the line with the fontenc.
+
+\newcommand{\sugestao}[2]{\fbox{
+		\begin{minipage}{.9\textwidth}
+			\textbf{Sugestão \##1:} #2
+		\end{minipage}
+	}
+}
 
 \newcommand{\semitransp}[2][35]{\color{fg!#1}#2}
 
@@ -155,7 +164,7 @@ Gerenciamento de Requisição de Mudança}
                 Adaptativa, Perfectiva e
                 Preventiva}~\cite{Lientz:1980:SMM:601062,159342}.
 
-        \item A \textit{ISO 14764}~\cite{1703974} ropõe que exista um elemento
+        \item A \textit{ISO 14764}~\cite{1703974} propõe que exista um elemento
             denominado Requisição de Mudança (RM) que corresponde a uma
             agregação de características que representam uma solicitação de
             manutenção de qualquer das quatro categorias.
@@ -288,13 +297,27 @@ Gerenciamento de Requisição de Mudança}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Problemas e Desafios da Gestão das RMs}
+	\begin{itemize}
+
+        \item Localização do Problema
+        \item Dificuldade na Visualização das Informações das RMs
+        \item Baixa Qualidade do Relato
+        \item Identificação de RMs Duplicadas
+        \item Atribuição (Triagem) de RM
+        \item Classificação da RM
+        \item Estimativa de Esforço da RM
+        \item Recomendação de RMs
+	\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Volume de RMs do Projeto \ldots}
 	\begin{itemize}
          \item Incluir uma figura ou tabela com o volume de RMs de um projeto
 	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Ferramentas de Gerenciamento de Requisição de Mudança (FGRM)}
 	\begin{itemize}
@@ -309,7 +332,6 @@ Gerenciamento de Requisição de Mudança}
 	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Ferramentas de Gerenciamento de Requisição de Mudança}
 		\begin{figure}[hbtp]
@@ -318,12 +340,11 @@ Gerenciamento de Requisição de Mudança}
 		\end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Além do que Gerenciar RMs}
 	\begin{itemize}
         \item Ponto central para a comunicação e coordenação das diversas partes
-              interessadas~\cite{Bertram:2010:CCB:1718918.1718972}.
+            interessadas~\cite{Bertram:2010:CCB:1718918.1718972}.
         \item Possibilita que os usuários participem do processo de solução das
               RMs~\cite{Breu:2010:INB:1718918.1718973}.
         \item Suporte para atividades como~\cite{cavalcanti2013bug}:
@@ -337,7 +358,6 @@ Gerenciamento de Requisição de Mudança}
       \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PROBLEMA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -357,7 +377,6 @@ Gerenciamento de Requisição de Mudança}
 	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % OBJETIVOS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -379,7 +398,6 @@ Gerenciamento de Requisição de Mudança}
 	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % METODOLOGIA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -398,32 +416,232 @@ Gerenciamento de Requisição de Mudança}
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Estudo sobre as funcionalidades das FGRMs}
 
     \begin{itemize}
-        \item
+        \item Análise das funcionalidades oferecidas pelas FGRMs
+        \item Inspeção inicial resulto em aproximadamente 50
+            ferramentas\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
+        \item Optamos por conduzir o estudo em um conjunto menor
     \end{itemize}
 
 \end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Estudo sobre as funcionalidades das FGRMs}
+    \begin{itemize}
+        \item Etapas do estudo
+            \begin{enumerate}[(i)]
+                \item Seleção das Ferramentas
+                \item Inspeção da Documentação
+                \item Agrupamento das Funcionalidades
+            \end{enumerate}
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Estudo sobre as funcionalidades das FGRMs}
+    \begin{itemize}
+        \item Seleção das Ferramentas
+            \begin{itemize}
+                \item Levantamento por Questionário
+                \item Dois grupos de participantes
+                \item 52 participações
+                \item 06 ferramentas escolhidas
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Estudo sobre as funcionalidades das FGRMs}
+    \begin{itemize}
+        \item Inspeção da Documentação
+            \begin{itemize}
+                \item Leitura do material disponível na Internet
+                \item As funcionalidades foram classificadas através da técnica
+                    de \textit{Cartões de Classificação~-~Sorting
+                        Cards}~\cite{just2008towards, mcgee2009software,
+                        maiden1996acre}.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Estudo sobre as funcionalidades das FGRMs}
+
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=0.55\linewidth]{../img/exemplo_cartao_ordenado.png}
+        \caption{Exemplo de um cartão ordenado para uma funcionalidade da FGRM
+            Bugzilla}\label{fig:exemplo_cartao_ordenado}
+    \end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Estudo sobre as funcionalidades das FGRMs}
+    \begin{itemize}
+        \item Agrupamento das Funcionalidades
+            \begin{itemize}
+                \item Análise Individual: O autor e um outro especialista
+                    realizam de forma separada os agrupamentos.
+                \item Anaĺise Compartilhada: Em um segundo momento tanto o autor
+                    quanto o es\-pe\-ci\-a\-lis\-ta discutem as possíveis
+                    divergências até que um consenso seja obtido.
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Mapeamento Sistemático da Literatura}
 
     \begin{itemize}
-        \item
+        \item Mapeamento com base nas diretrizes propostas por Petersen e
+            outros~\cite{Petersen2008}.
+        \item Questões de Pesquisa
+            \begin{itemize}
+                \item \textit{Questão 01}: Quais as melhorias e novas
+                funcionalidades estão sendo propostas para as FGRM?
+                \item \textit{Questão 02}: Quais papéis envolvidos no processo de
+                    manutenção de software as melhorias das funcionalidades visam
+                    dar suporte?
+            \end{itemize}
+    \end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Mapeamento Sistemático da Literatura}
+
+    \begin{itemize}
+       \item Os estudos primários coletados das bases de pesquisa \textit{IEEE
+             Explore, ACM Digital Library, Scopus, e Inspec/Compendex}.
+     \item As sentenças de buscas foram produzidas com base na metodologia PICO
+          (Population, Intervention, Comparison and
+          Outcomes)~\cite{keele2007guidelines}.
+    \end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Mapeamento Sistemático da Literatura}
+
+            \begin{figure} \centering \includegraphics[width=0.45\linewidth]
+        {../img/diagrama-processo-selecao.eps}
+        \caption{Número de artigos incluídos durante o processo de seleção dos
+            estudos. Figura baseada em~\cite{Petersen2015}}
+\label{fig:diagrama-processo-selecao}
+
+    \end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Levantamento com Desenvolvedores}
+
+    \begin{itemize}
+        \item Questão 01: Qual a opinião dos profissionais envolvidos em
+            manutenção de software com relação as funcionalidades
+            oferecidas pelas FGRM\@?
+        \item Questão 02: Na visão dos profissionais envolvidos em
+            manutenção de software quais das melhorias nas
+            funcionalidades das FGRMs propostas na literatura teriam
+            maior relevância em suas atividades?
     \end{itemize}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Levantamento com Desenvolvedores}
 
     \begin{itemize}
-        \item
+        \item Questão 03: As práticas propostas pelos agilistas estão
+            sendo utilizadas no processo de manutenção de software?
+        \item Questão 04: Como as FGRMs podem ajudar as equipes de
+            manutenção na adoção das práticas propostas pelos agilistas?
+    \end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Levantamento com Desenvolvedores}
+
+    \begin{itemize}
+        \item {Fonte de Amostragem} corresponde a um banco de dados, não
+            necessariamente automatizado, em que um subconjunto válido da
+            população pode ser recuperado. Outra característica é permitir a
+            extração aleatória de amostras da população de
+            interesse~\cite{de2014towards}.
+    \end{itemize}
+
+    \begin{table}[htpb]
+        \centering
+        \resizebox{.8\textwidth}{!}{%
+            \begin{tabular}{@{}lllc@{}}
+                \toprule
+                \textbf{Identificador} & \multicolumn{1}{c}{\textbf{Fonte de
+                        Amostragem}} &
+                \multicolumn{1}{c}{\textbf{URL}} \\ \midrule
+                FA01 & Python & https://bugs.python.org/ \\
+                FA02 & Stack Overflow & https://stackoverflow.com \\ \bottomrule
+            \end{tabular}%
+        }
+        \caption{Fontes de Amostragem utilizadas no estudo}
+        \label{tab:fontes-amostragens}
+    \end{table}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Levantamento com Desenvolvedores}
+
+    \begin{itemize}
+        \item Formulário preenchido por 85 participantes
+    \end{itemize}
+
+    \begin{table}[htpb]
+    \centering
+    \resizebox{.4\textwidth}{!}{%
+    \begin{tabular}{@{}lc@{}}
+    \toprule
+    \textbf{Função Desempenhada} & \textbf{Total} \\ \midrule
+    Desenvolvedor & 23 \\
+    Engenheiro de Software & 17 \\
+    Gerente & 12 \\
+    Arquiteto de Software & 5 \\
+    Pesquisador & 5 \\
+    Consultor & 4 \\
+    Estudante & 3 \\
+    Analista de Qualidade & 1 \\
+    Designer & 1 \\ \bottomrule
+    \end{tabular}%
+    }
+    \caption{Função desempenhada pelos participantes}
+    \label{tab:grafico_melhorias_fgrm_funcao_particantes}
+    \end{table}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Sugestões de Melhorias}
+
+    \begin{itemize}
+        \item Sugestões foram compiladas utilizando a literatura da área e os
+            levantamentos realizados nesta dissertação, especialmente com
+            Mapeamento Sistemático e Levantamento com Profissionais;
+        \item E nos estudos que propõem melhorias para as
+            FGRM~\cite{zimmermann2009improving, bettenburg2008makes,
+                singh2011bug}.
     \end{itemize}
 
 \end{frame}
@@ -433,19 +651,61 @@ Gerenciamento de Requisição de Mudança}
 \begin{frame}{Sugestões de Melhorias}
 
     \begin{itemize}
-        \item
+        \item Propostas 08 sugestões de melhorias
+        \item Avaliadas através de um levantamento mediante questionário com
+              profissionais que contribuem em projetos de código aberto
+              hospedados no Github.
     \end{itemize}
+
+    \begin{table}[htpb]
+        \centering
+        \resizebox{.3\textwidth}{!}{%
+        \begin{tabular}{@{}cc@{}}
+            \toprule
+            \textbf{Projeto} & \textbf{Participantes} \\ \midrule
+            DEBBUGS & 4 \\
+            MANTISBT & 4 \\
+            TRAC & 4 \\
+            FOSSIL & 3 \\
+            BUGZILLA & 2 \\
+            REDMINE & 2 \\
+            OUTROS & 6 \\
+            \bottomrule
+            \end{tabular}%
+        }
+        \caption{Projetos que os participantes contribuem.}
+        \label{tab:projetos_participantesmy-label}
+    \end{table}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Implementação de Extensão}
+
+    \begin{itemize}
+        \item Implementação da Sugestão \#1 na plataforma Github.
+        \item Cliente para API do Github\footnote{\url{https://api.github.com/}}
+              que possibilita analisar a qualidade da informação fornecida no
+              relato.
+        \item Batizada de \textit{IssueQuality}
+    \end{itemize}
+
+    \sugestao{01}{As FGRMs devem fornecer realimentação (feedback)
+        relacionado com a qualidade do texto relatado.}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Implementação de Extensão}
 
-    \begin{itemize}
-        \item
-    \end{itemize}
-
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=0.7\linewidth]{../img/diagrama_funcionamento_issuequality.png}
+        \caption{Visão geral do funcionamento da extensão \textit{IssueQuality}}
+\label{fig:diagrama_funcionamento_issuequality}
+    \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
