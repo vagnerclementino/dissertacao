@@ -507,7 +507,7 @@ Gerenciamento de Requisição de Mudança}
         \item Questões de Pesquisa
             \begin{itemize}
                 \item \textit{Questão 01}: Quais as melhorias e novas
-                funcionalidades estão sendo propostas para as FGRM?
+                funcionalidades estão sendo propostas para as FGRM\@?
                 \item \textit{Questão 02}: Quais papéis envolvidos no processo de
                     manutenção de software as melhorias das funcionalidades visam
                     dar suporte?
@@ -596,7 +596,7 @@ Gerenciamento de Requisição de Mudança}
             \end{tabular}%
         }
         \caption{Fontes de Amostragem utilizadas no estudo}
-        \label{tab:fontes-amostragens}
+\label{tab:fontes-amostragens}
     \end{table}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -626,7 +626,7 @@ Gerenciamento de Requisição de Mudança}
     \end{tabular}%
     }
     \caption{Função desempenhada pelos participantes}
-    \label{tab:grafico_melhorias_fgrm_funcao_particantes}
+\label{tab:grafico_melhorias_fgrm_funcao_particantes}
     \end{table}
 
 \end{frame}
@@ -674,7 +674,7 @@ Gerenciamento de Requisição de Mudança}
             \end{tabular}%
         }
         \caption{Projetos que os participantes contribuem.}
-        \label{tab:projetos_participantesmy-label}
+\label{tab:projetos_participantesmy-label}
     \end{table}
 
 \end{frame}
@@ -715,45 +715,241 @@ Gerenciamento de Requisição de Mudança}
 \section{Resultados}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Estudo sobre as funcionalidades das FGRMs}
+
+    \begin{table}[htpb]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lccl}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Ferramenta}} & \textbf{\textbf{Classificação}} &
+    \textbf{Versão} & \multicolumn{1}{c}{URL} \\
+    \bottomrule
+    Bugzilla & Ferramenta & 5.0.3 & https://www.bugzilla.org \\
+    Mantis Bug Tracker & Ferramenta & 1.3.2 & https://www.mantisbt.org \\
+    Redmine & Ferramenta & 3.3.1 & http://www.redmine.org/ \\
+    JIRA Software & Serviço & 7.2.4 & https://br.atlassian.com/software/jira \\
+    Github Issue System & Serviço & \@-\@ & https://github.com/ \\
+    Gitlab Issue Tracking System & Serviço & \@-\@ & https://gitlab.com/ \\ 
+    \bottomrule
+    \end{tabular}%
+    }
+    \caption{Ferramentas utilizados no estudo}
+    \label{tab:ferramenta_utilizadas_estudo}
+    \end{table}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Estudo sobre as funcionalidades das FGRMs}
+
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=.71\linewidth]{../img/diagrama-espectro-funcionalidades-fgrm.eps}
+        \caption{Modelo de funcionalidades básicas das FGRMs}
+    \label{fig:diagrama-espectro-funcionalidades-fgrm}
+    \end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Mapeamento Sistemático da Literatura}
-	\begin{itemize}
-		\item Situação: Feito
-    \end{itemize}
 
-	\begin{figure}[hbtp]
-		\centering
-		\includegraphics[scale=.39]{../img/mapeamento.png}
-	\end{figure}
+    \begin{figure}[tb] \centering
+        \makebox[\textwidth]{\includegraphics[width=.7\paperwidth]{../img/diagrama-esquema-dimensoes-melhorias.eps}}
+        \caption{Esquema de classificação das melhorias propostas na literatura.
+            Os retângulos representam as dimensões de melhorias e os polígonos
+            de cantos arredondados representam tópicos de problemas do
+            gerenciamento das RMs.}
+    \label{fig:diagrama-esquema-dimensao-melhorias}
+    \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Caracterização de Requisitos das FSPS}
-		\begin{itemize}
-			\item Situação: Em andamento
-			\item Resultados Parciais:
-				\begin{itemize}
-					 \item CRUD dos problemas
-                     \item CRUD de interessados (desenvolvedores, usuários,
-                         gerentes de projeto e etc)
-					 \item Regras relacionando Problemas vs Interessados
-		             \item Classificação (Prioridade e Severidade)
-				\end{itemize}
-	    \end{itemize}
+\begin{frame}{Mapeamento Sistemático da Literatura}
+
+    \begin{table}[htpb]
+    \centering
+    \resizebox{.6\textwidth}{!}{%
+    \begin{tabular}{lc}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Papel}} & \textbf{Total de Artigos} \\
+    \midrule
+    Agente de Triagem & 37 \\
+    Desenvolvedor & 26 \\
+    Analista de Qualidade & 13 \\
+    Gerente de Requisição de Mudança & 11 \\
+    Reportador & 6 \\
+    Líder da Manutenção & 4 \\
+    Todos & 3 \\
+    \bottomrule
+    \end{tabular}%
+    }
+    \caption{Total de artigos por papel na manutenção de software}
+    \label{tab:graf_papel_por_artigo}
+    \end{table}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Survey com os desenvolvedores}
-		\begin{itemize}
-			\item Situação: Em andamento
-			\item Atividades:
-			\begin{itemize}
-				\item Planejamento do Survey (Feito)
-				\item Ferramenta de Coleta (Em andamento)
-				\item ``Survey Piloto'' (Em andamento)
-			\end{itemize}
-		\end{itemize}
+\begin{frame}{Levantamento com Desenvolvedores}
+
+\begin{figure}[htpb] \centering
+    \includegraphics[width=0.5\linewidth]{../img/grafico_melhorias_fgrm_nivel_satisfacao.pdf}
+    \caption{Nível de satisfação com as Ferramentas}
+\label{fig:grafico_melhorias_fgrm_nivel_satisfacao}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Levantamento com Desenvolvedores}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.5\linewidth]{../img/grafico_melhorias_fgrm_probabilidade_recomentacao.pdf}
+	\caption{Probabilidade de Recomendação da Ferramenta Utilizada}
+\label{fig:grafico_melhorias_fgrm_probabilidade_recomentacao}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Levantamento com Desenvolvedores}
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Levantamento com Desenvolvedores}
+
+\begin{figure}[htpb]
+	\centering
+	\includegraphics[width=0.9\linewidth]{../img/grafico_melhorias_fgrm_funcionalidades_faltantes.eps}
+	\caption{Funcionalidades que o participantes sentem falta.}
+\label{fig:grafico_melhorias_fgrm_funcionalidades_falantes}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Levantamento com Desenvolvedores}
+
+
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Melhorias Propostas} & \multicolumn{1}{l}{\textbf{Classificação}} \\
+\midrule Priorização automatizada de RMs  urgentes e inesperadas & 1 \\ Sugestão
+automatizada das  RMs que farão parte da iteração. & 2 \\ Suporte aos
+desenvolvedores na  preparação para reunião diária & 3 \\ Suporte à
+divisão de tarefas de forma compartilhada & 4 \\ Facilitar a propriedade
+compartilhada de código & 5 \\ \bottomrule \end{tabular}%
+}
+\caption{Classificação das funcionalidades que possam dar suporte ao uso das
+metodologias dos agilistas.}
+\label{tab:melhorias_fgrm_suporte_particas_ageis}
+
+\end{table}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Sugestões de Melhorias}
+
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=1.1\linewidth]{../img/plot_likert_avaliacao_sug_melhorias.pdf}
+        \caption{Avaliação das Sugestões de Melhorias}
+    \label{fig:plot_likert_avaliacao_sug_melhorias}
+    \end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Sugestões de Melhorias}
+
+    \begin{table}[htpb]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}lcccccc@{}}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Recomendações}} & \textbf{Discordo Fortemente} &
+    \textbf{Discordo} & \textbf{Não concordo e nem discordo} & \textbf{Concordo} &
+    \textbf{Concordo Fortemente} & \textbf{Ranking} \\ \midrule
+    \textit{Sugestão \#6} & 0 & 1 & 2 & 6 & 20 & 45 \\
+    \textit{Sugestão \#8} & 0 & 1 & 1 & 15 & 12 & 38 \\
+    \textit{Sugestão \#5} & 1 & 0 & 5 & 10 & 13 & 34 \\
+    \textit{Sugestão \#4} & 0 & 1 & 6 & 12 & 10 & 31 \\
+    \textit{Sugestão \#2} & 0 & 2 & 7 & 13 & 7 & 25 \\
+    \textit{Sugestão \#7} & 1 & 5 & 8 & 6 & 9 & 17 \\
+    \textit{Sugestão \#1} & 1 & 3 & 10 & 13 & 2 & 12 \\
+    \textit{Sugestão \#3} & 3 & 9 & 13 & 2 & 2 & -9 \\ \bottomrule
+    \end{tabular}%
+    }
+    \caption{Ranking das sugestões propostas}
+    \label{tab:ranking-sugestoes-melhorias}
+    \end{table}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Sugestões de Melhorias}
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=1.1\linewidth]{../img/plot_likert_avaliacao_implementacao_melhorias.pdf}
+    \caption{Avaliação sobre a  implementação das sugestões propostas.}
+\label{fig:plot_likert_avaliacao_implementacao_melhorias}
+\end{figure}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Sugestões de Melhorias}
+
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+\multicolumn{1}{l}{\textbf{Recomendações}} & \multicolumn{1}{l}{\textbf{Muito
+        Difícil}} & \multicolumn{1}{l}{\textbf{Difícil}} &
+\multicolumn{1}{l}{\textbf{Neutro}} & \multicolumn{1}{l}{\textbf{Fácil}} &
+\multicolumn{1}{l}{\textbf{Muito Fácil}} & \multicolumn{1}{l}{\textbf{Ranking}}
+\\ \midrule
+Sugestão \#6 & 0 & 0 & 8 & 16 & 5 & 26 \\
+Sugestão \#4 & 0 & 1 & 8 & 17 & 3 & 22 \\
+Sugestão \#3 & 4 & 3 & 9 & 10 & 3 & 5 \\
+Sugestão \#2 & 2 & 7 & 11 & 8 & 1 & -1 \\
+Sugestão \#7 & 3 & 12 & 4 & 7 & 3 & -5 \\
+Sugestão \#5 & 2 & 11 & 12 & 3 & 1 & -10 \\
+Sugestão \#8 & 0 & 16 & 7 & 6 & 0 & -10 \\
+Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Ordenamento das sugestões pelo grau de dificuldade.}
+\label{tab:ranking_implementacao_sug_melhorias}
+\end{table}
+
+\section{Discussão}
+\label{sec:sug_melhoria_discussao}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
