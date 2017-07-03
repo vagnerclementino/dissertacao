@@ -21,7 +21,6 @@
 % notice.
 
 \input{style.tex}
-
 \usepackage[brazil]{babel}
 \usepackage{graphicx}	%Package para figuras
 \usepackage[utf8]{inputenc}
@@ -132,6 +131,15 @@ Gerenciamento de Requisição de Mudança}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Importância da Manutenção de Software}
+\begin{itemize}
+    \item \textit{``Another flaw in the human character is that everybody wants to build
+        and nobody wants to do maintenance''.} Kurt Vonnegut, Jr.
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Importância da Manutenção de Software}
 	\begin{itemize}
         \item Dentro do ciclo de vida do software o processo de Manutenção de
             Software tem papel fundamental.
@@ -210,8 +218,7 @@ Gerenciamento de Requisição de Mudança}
         \item \textit{Gerente de Requisição de Mudança (Maintenance-request
                 manager):} Res\-pon\-sá\-vel por decidir se uma RM será aceita
             ou rejeitada. Além disso, ele define qual tipo de manutenção deverá
-            ser aplicada. Posteriormente cabe ao profissional que cumpre este
-            papel encaminhar a RM para o Agente de Triagem.
+            ser aplicada.
 
         \item \textit{Agente de Triagem (Scheduler)}: Deve planejar a fila de
             RMs e atribuí-las para o desenvolvedor mais apto. A decisão pode
@@ -735,7 +742,7 @@ Gerenciamento de Requisição de Mudança}
     \end{tabular}%
     }
     \caption{Ferramentas utilizados no estudo}
-    \label{tab:ferramenta_utilizadas_estudo}
+\label{tab:ferramenta_utilizadas_estudo}
     \end{table}
 
 \end{frame}
@@ -748,7 +755,7 @@ Gerenciamento de Requisição de Mudança}
         \centering
         \includegraphics[width=.71\linewidth]{../img/diagrama-espectro-funcionalidades-fgrm.eps}
         \caption{Modelo de funcionalidades básicas das FGRMs}
-    \label{fig:diagrama-espectro-funcionalidades-fgrm}
+\label{fig:diagrama-espectro-funcionalidades-fgrm}
     \end{figure}
 
 \end{frame}
@@ -762,8 +769,7 @@ Gerenciamento de Requisição de Mudança}
         \caption{Esquema de classificação das melhorias propostas na literatura.
             Os retângulos representam as dimensões de melhorias e os polígonos
             de cantos arredondados representam tópicos de problemas do
-            gerenciamento das RMs.}
-    \label{fig:diagrama-esquema-dimensao-melhorias}
+            gerenciamento das RMs.}\label{fig:diagrama-esquema-dimensao-melhorias}
     \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -789,7 +795,7 @@ Gerenciamento de Requisição de Mudança}
     \end{tabular}%
     }
     \caption{Total de artigos por papel na manutenção de software}
-    \label{tab:graf_papel_por_artigo}
+\label{tab:graf_papel_por_artigo}
     \end{table}
 
 \end{frame}
@@ -812,7 +818,7 @@ Gerenciamento de Requisição de Mudança}
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.5\linewidth]{../img/grafico_melhorias_fgrm_probabilidade_recomentacao.pdf}
+	\includegraphics[width=0.45\linewidth]{../img/grafico_melhorias_fgrm_probabilidade_recomentacao.pdf}
 	\caption{Probabilidade de Recomendação da Ferramenta Utilizada}
 \label{fig:grafico_melhorias_fgrm_probabilidade_recomentacao}
 \end{figure}
@@ -823,16 +829,9 @@ Gerenciamento de Requisição de Mudança}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Levantamento com Desenvolvedores}
 
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Levantamento com Desenvolvedores}
-
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.9\linewidth]{../img/grafico_melhorias_fgrm_funcionalidades_faltantes.eps}
+	\includegraphics[width=0.5\linewidth]{../img/grafico_melhorias_fgrm_funcionalidades_faltantes.eps}
 	\caption{Funcionalidades que o participantes sentem falta.}
 \label{fig:grafico_melhorias_fgrm_funcionalidades_falantes}
 \end{figure}
@@ -870,9 +869,9 @@ metodologias dos agilistas.}
 
     \begin{figure}[htpb]
         \centering
-        \includegraphics[width=1.1\linewidth]{../img/plot_likert_avaliacao_sug_melhorias.pdf}
+        \includegraphics[width=.9\linewidth]{../img/plot_likert_avaliacao_sug_melhorias.pdf}
         \caption{Avaliação das Sugestões de Melhorias}
-    \label{fig:plot_likert_avaliacao_sug_melhorias}
+\label{fig:plot_likert_avaliacao_sug_melhorias}
     \end{figure}
 
 \end{frame}
@@ -900,7 +899,7 @@ metodologias dos agilistas.}
     \end{tabular}%
     }
     \caption{Ranking das sugestões propostas}
-    \label{tab:ranking-sugestoes-melhorias}
+\label{tab:ranking-sugestoes-melhorias}
     \end{table}
 
 \end{frame}
@@ -911,8 +910,8 @@ metodologias dos agilistas.}
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=1.1\linewidth]{../img/plot_likert_avaliacao_implementacao_melhorias.pdf}
-    \caption{Avaliação sobre a  implementação das sugestões propostas.}
+    \includegraphics[width=.9\linewidth]{../img/plot_likert_avaliacao_implementacao_melhorias.pdf}
+    \caption{Avaliação sobre a implementação das sugestões propostas.}
 \label{fig:plot_likert_avaliacao_implementacao_melhorias}
 \end{figure}
 
@@ -947,9 +946,6 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 \label{tab:ranking_implementacao_sug_melhorias}
 \end{table}
 
-\section{Discussão}
-\label{sec:sug_melhoria_discussao}
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -960,11 +956,87 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Discussão}
+\begin{frame}{Estudo sobre as Funcionalidades}
+    \begin{itemize}
+        \item As FGRMs evoluíram da gerência simples de RMs para colaborar no
+            processo de desenvolvimento e manutenção do software. Entretanto,
+            esta evolução não abrange todo tipo de necessidade.
+        \item Seria importante que as FGRMs incorporassem outros comportamentos
+            que ajudem no processo de desenvolvimento e manutenção de software,
+            especialmente em temas como busca de duplicados, melhoria da
+            qualidade do relato e atribuição e classificação automatizadas das
+            RMs.
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Mapeamento Sistemático da Literatura}
+
+    \begin{itemize}
+        \item Prevalência de estudos na dimensão \textit{Processo} especialmente
+            para os tópicos de \textit{Localização de RMs Duplicadas, Atribuição
+                (Triagem) de RMs e Classificação de RMs}, respectivamente.
+        \item Dos estudos que fizeram parte do mapeamento um total de 10 foram
+            implementados como extensões ou protótipos, este número poderia ser
+            maior.
+    \end{itemize}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Mapeamento Sistemático da Literatura}
+
+    \begin{itemize}
+        \item Prevalência de estudos com foco no papel de
+            \textit{Agente de Triagem}. Existe possivelmente uma crença de que é
+            possível melhorar a produtividade do processo de manutenção de
+            software reduzindo o esforço de encontrar o desenvolvedor mais apto.
+        \item As FGRMs deveriam dar suporte ao Reportador que, na maioria da
+            vezes, é o primeiro a registrar as informações que serão necessárias
+            à solução da RM\@.
+    \end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Levantamento com Desenvolvedores}
+    \begin{itemize}
+        \item Em geral, o nível de satisfação com as funcionalidades oferecidas
+            pelas FGRMs é alto.
+        \item As funcionalidades que os
+            participantes mais sentiram falta, também representam a maior
+            quantidade de estudos na literatura.
+        \item As FGRMs poderiam oferecer suporte às praticas propostas pelos
+            agilistas.
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Sugestões de Melhorias}
+    \begin{itemize}
+        \item Em geral podemos considerar que as sugestões propostas tiveram uma
+            boa aceitação dos participantes.
+        \item Com relação às recomendações propostas, verificamos que a
+            utilização de uma linguagem além do texto simples, como por exemplo
+            o Markdown, foi muito bem aceita.
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Sugestões de Melhorias}
+    \begin{itemize}
+        \item O suporte à tarefas compartilhadas (sugestão \#8) também foi muito
+            bem aceita.
+        \item Por outro lado, as sugestões que têm algum tipo de relação com a
+            interface das FGRMs (sugestões \#6, \#4, \#3 e \#2) foram
+            consideradas como mais ``fácil'' de implementar.
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % AMEÇAS À VALIDADE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -972,7 +1044,85 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Ameças à Validade}
+\begin{frame}{Estudo sobre as Funcionalidades}
+    \begin{itemize}
+        \item Uma ameaça à validade do trabalho está no processo de seleção das
+            ferramentas.
+        \item Como a extração dos dados dos Cartões foi realizada de forma
+            manual pode ter ocorrido algum tipo de equívoco no processo, como
+            por exemplo a não coleta de algum dado de determinada ferramenta por
+            algum descuido.
+        \item A classificação dos cartões pode ter ocorrido uma classificação de
+            forma incorreta o que pode acarretar em limitação dos resultados
+            apresentados.
+    \end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Mapeamento Sistemático da Literatura}
+    \begin{itemize}
+        \item É possível que as perguntas de discussões com membros do projeto e
+            especialistas em Manutenção de Software foram realizadas para
+            validar as perguntas.
+
+        \item A forma que as sentenças de busca foram estruturadas pode não ser
+            a mais otimizada para pesquisa do maior número de documentos
+            relevantes.
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Mapeamento Sistemático da Literatura}
+    \begin{itemize}
+
+        \item É possível que as perguntas de discussões com membros do projeto e
+            especialistas em Manutenção de Software foram realizadas para
+            validar as perguntas.
+
+        \item A forma que as sentenças de busca foram estruturadas pode não ser
+            a mais otimizada para pesquisa do maior número de documentos
+            relevantes.
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Levantamento com Desenvolvedores}
+
+    \begin{itemize}
+        \item Uma ameaça à validade deste trabalho está no número de
+            respondentes da pesquisa.
+        \item A amostragem de conveniência implica que as generalizações são
+            limitadas já que a amostra pode não representar a população.
+        \item Não temos garantias que as regras para seleção de participantes
+             resultaram em um conjunto bem representativo da população.
+     \end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Sugestões de Melhorias}
+
+    \begin{itemize}
+        \item O total de participantes não nos permite extrapolar os resultados
+            para todos os contextos em que as FGRMs estão inseridas.
+
+        \item A utilização de apenas projetos públicos hospedados no Github pode
+            ter causado algum tipo de direcionamento, como por exemplo foco em
+            projetos de código aberto.
+
+        \item A estrutura das perguntas do formulário pode ter causado impacto
+            na quantidade de respostas ou na opção escolhida pelos
+            participantes.
+
+        \item Acreditávamos que a escolha destas 08 sugestões envolveria as
+            principais características, mas existe possibilidade de ficar alguma
+            característica relevante de fora.
+    \end{itemize}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -985,7 +1135,63 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Conclusão e Trabalhos Futuros}
+    \begin{itemize}
+        \item A contribuição deste trabalho de dissertação está na proposição de
+            melhorias para as FGRMs tomando como base a literatura da área e a
+            opinião de profissionais envolvidos em Manutenção de Software.
 
+        \item Em algumas plataformas, tais como o Github e o Gitlab, foi
+            possível perceber a tendência em que não existe uma clara separação
+            entre o gerenciamento das RMs e o controle de versão do código.
+
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Conclusão e Trabalhos Futuros}
+    \begin{itemize}
+
+        \item Foi possível verificar um desacoplamento entre as necessidades
+            dos desenvolvedores e o que está sendo proposto na literatura.
+
+        \item Percebemos que os profissionais consultados estão satisfeitos com
+            as funcionalidades oferecidas. Todavia, a nossa visão é que existem
+            muitos outros comportamentos que poderiam ser acoplados a este tipo
+            de software de modo a melhorar as atividades de manter e evoluir um
+            software.
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Conclusão e Trabalhos Futuros}
+    \begin{itemize}
+
+        \item  As metodologias propostas pelos agilistas vêm sendo adotadas por
+            algumas equipes de manutenção de software. As FGRMs poderiam
+            implantar funcionalidades com o objetivo de suportar algumas destas
+            práticas.
+
+        \item Entendemos que seria importante a condução de um novo trabalho com
+            o objetivo de descrever e avaliar os papéis realizados no processo
+            de manter um software.
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Conclusão e Trabalhos Futuros}
+    \begin{itemize}
+
+        \item Entendemos que seria importante a realização de um estudo com o
+            objetivo de melhorar a organização dos conceitos da área de
+            Manutenção de Software, em especial sobre as RMs e FGRMs.
+
+        \item O processo de criação de RMs poderia ser melhorado com a
+            utilização de uma interface que utilize um
+            \textit{chatbot}~\cite{mauldin1994chatterbots,huang2007extracting},
+            permitindo a criação iterativa de uma RM\@.
+    \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1005,4 +1211,5 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
    \bibliography{IEEEfull,../bib/defesa-vagner-clementino.bib}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}
