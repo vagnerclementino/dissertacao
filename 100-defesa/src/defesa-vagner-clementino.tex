@@ -22,7 +22,7 @@
 
 \input{style.tex}
 \usepackage[brazil]{babel}
-\usepackage{graphicx}	%Package para figuras
+\usepackage{graphicx}%Package para figuras
 \usepackage[utf8]{inputenc}
 \usepackage{times}
 \usepackage[T1]{fontenc}
@@ -130,10 +130,10 @@ Gerenciamento de Requisição de Mudança}
 \section{Contexto}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Importância da Manutenção de Software}
+\begin{frame}{Uma Reflexão \ldots}
 \begin{itemize}
-    \item \textit{``Another flaw in the human character is that everybody wants to build
-        and nobody wants to do maintenance''.} Kurt Vonnegut, Jr.
+    \item \textit{``Another flaw in the human character is that everybody wants
+            to build and nobody wants to do maintenance''.} Kurt Vonnegut, Jr.
 \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -143,10 +143,13 @@ Gerenciamento de Requisição de Mudança}
 	\begin{itemize}
         \item Dentro do ciclo de vida do software o processo de Manutenção de
             Software tem papel fundamental.
-        \item Devido ao seu alto custo, que pode variar entre 60\% e 90\% do
-            preço final do sistema~\cite{kaur2015review}, sua importância vêm
-            sendo considerada tanto pela comunidade científica quanto pela
-            indústria.
+            \begin{itemize}
+                \item Evolução do software (Leis de
+                      Lehman~\cite{lehman1980understanding}).
+                \item Correção de falhas
+                \item Alto custo, que pode variar entre 60\% e 90\% do preço
+                      final~\cite{kaur2015review}.
+            \end{itemize}
 	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,34 +157,38 @@ Gerenciamento de Requisição de Mudança}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Conceito de Manutenção de Software}
 	\begin{itemize}
-        \item \textit{Manutenção de Software:} processo de modificar um
-               componente ou sistema de software após a sua entrega com o objetivo
-               de \textit{corrigir falhas, melhorar o desempenho ou adaptá-lo
-               devido à mudanças ambientais}~\cite{{159342}}.
-        \item \textit{Manutenibilidade:} propriedade de um sistema ou componente
-               de software em relação ao grau de \textit{facilidade} que ele pode
-               ser corrigido, melhorado ou adaptado~\cite{{159342}}.
-	\end{itemize}
+
+        \item A \alert{Manutenção de Software} é o processo de modificar um
+              componente ou sistema de software após a sua entrega com o
+              objetivo de \textit{corrigir falhas, melhorar o desempenho ou
+              adaptá-lo devido à mudanças ambientais}~\cite{{159342}}.
+
+        \item Com a adoção das práticas propostas pelos agilistas essa definição
+              pode não ser adequada em determinados contextos.
+
+    \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Tipos de Manutenção em Software}
+\begin{frame}{Tipos de Manutenção de Software}
 	\begin{itemize}
-        \item A manutenção de software pode ser dividida em \textit{Corretiva,
-                Adaptativa, Perfectiva e
-                Preventiva}~\cite{Lientz:1980:SMM:601062,159342}.
+
+        \item A Manutenção de Software pode ser dividida em \textit{Corretiva,
+              Adaptativa, Perfectiva e
+              Preventiva}~\cite{Lientz:1980:SMM:601062,159342}.
 
         \item A \textit{ISO 14764}~\cite{1703974} propõe que exista um elemento
-            denominado Requisição de Mudança (RM) que corresponde a uma
-            agregação de características que representam uma solicitação de
-            manutenção de qualquer das quatro categorias.
+              denominado \alert{Requisição de Mudança (RM)} que corresponde a
+              uma agregação de características das quatro categorias.
+
 	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Tipos de Manutenção em Software}
+
     \begin{figure}[hbtp]
         \centering
         \includegraphics[width=.75\textwidth]{../img/modification_request.eps}
@@ -189,76 +196,20 @@ Gerenciamento de Requisição de Mudança}
                  ISO/IEC~14764~\cite{1703974}}
 \label{fig:modification-request}
     \end{figure}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Papéis na Manutenção de Software}
-	\begin{itemize}
-        \item Nesta dissertação consideramos os seguintes papéis desempenhados
-            no processo de manter e evoluir software:
-            \begin{itemize}
-                \item \textit{Usuário Afetado:} Indivíduo que utiliza o software
-                    correspondente à Requisição de Mudanças (RM) que será
-                    relatada. O defeito, a melhoria ou evolução no software,
-                    representada pela RM, estão relacionadas com os desejos e
-                    necessidades deste papel.
-
-                \item \textit{Reportador:} Responsável por registrar a RM\@. Em
-                    certas situações este papel é desempenhado tanto pelo
-                    usuário do sistema quanto pela equipe de manutenção.
-            \end{itemize}
-	\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Papéis na Manutenção de Software}
-	\begin{itemize}
-        \item \textit{Gerente de Requisição de Mudança (Maintenance-request
-                manager):} Res\-pon\-sá\-vel por decidir se uma RM será aceita
-            ou rejeitada. Além disso, ele define qual tipo de manutenção deverá
-            ser aplicada.
-
-        \item \textit{Agente de Triagem (Scheduler)}: Deve planejar a fila de
-            RMs e atribuí-las para o desenvolvedor mais apto. A decisão pode
-            considerar a carga de trabalho existente para cada possível
-            destinatário da RM\@.
-	\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Papéis na Manutenção de Software}
-	\begin{itemize}
-
-        \item \textit{Desenvolvedor:} Responsável por realizar as ações que irão
-            solucionar a RM\@.
-
-        \item \textit{Analista de Qualidade:} Tem por responsabilidade avaliar
-              se uma RM solucionada por um Desenvolvedor foi resolvida de forma
-              correta e dentro dos padrões de qualidade exigidos pelo projeto.
-
-        \item \textit{Chefe da Manutenção (Head of Maintenance):} Este papel é
-            responsável por definir os padrões e procedimentos que compõem o
-            processo de manutenção que será utilizado.
-	\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Requisição de Mudança}
-	\begin{itemize}
-        \item Requisição de Mudança (RM) corresponde ao registro da informação
-            sobre o defeito, evolução ou melhoria de um
-            sistema~\cite{tripathy2014software}
+\begin{frame}{Modelo Conceitual de uma RM}
         \begin{figure}[htpb]
             \centering
             \includegraphics[width=0.75\linewidth]{../img/diagrama-classe-conceitual-requisicao-mudancas.pdf}
-            \caption{Modelo conceitual de uma Requisição de Mudanças}
+                \caption{Modelo conceitual de uma Requisição de Mudança.
+                         Baseado em Tripathy \&
+                         Naik~\cite{tripathy2014software}.}
 \label{fig:diagrama-classe-requisicao-mudancas}
         \end{figure}
-	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -281,7 +232,7 @@ Gerenciamento de Requisição de Mudança}
 
     \begin{figure}[htpb]
         \centering
-        \includegraphics[width=0.55\linewidth]{../img/rm-exemplo.pdf}
+        \includegraphics[width=0.5\linewidth]{../img/rm-exemplo.pdf}
         \caption{RM do Projeto Eclipse}
 \label{fig:rm-exemplo}
     \end{figure}
@@ -290,17 +241,17 @@ Gerenciamento de Requisição de Mudança}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Ciclo de Vida da RM}
+% \begin{frame}{Ciclo de Vida da RM}
 
-    \begin{figure}[htpb]
-        \centering
-        \includegraphics[width=0.55\linewidth]{../img/diagrama-estado-rm.pdf}
-        \caption{Diagrama de estados de uma RM\@. Extraído
-            de~\cite{tripathy2014software}}
-\label{fig:diagrama-estado-rm}
-    \end{figure}
+%     \begin{figure}[htpb]
+%         \centering
+%         \includegraphics[width=0.55\linewidth]{../img/diagrama-estado-rm.pdf}
+%         \caption{Diagrama de estados de uma RM\@. Extraído de Tripathy \&
+%                  Naik~\cite{tripathy2014software}.}
+% \label{fig:diagrama-estado-rm}
+%     \end{figure}
 
-\end{frame}
+% \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -308,56 +259,80 @@ Gerenciamento de Requisição de Mudança}
 	\begin{itemize}
 
         \item Localização do Problema
-        \item Dificuldade na Visualização das Informações das RMs
+        % \item Dificuldade na Visualização das Informações das RMs
         \item Baixa Qualidade do Relato
         \item Identificação de RMs Duplicadas
         \item Atribuição (Triagem) de RM
         \item Classificação da RM
         \item Estimativa de Esforço da RM
-        \item Recomendação de RMs
+        % \item Recomendação de RMs
+
 	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Volume de RMs do Projeto \ldots}
+\begin{frame}{Papéis na Manutenção de Software}
+
+    Nesta dissertação, utilizamos a classificação proposta por Polo e
+    outros~\cite{Polo1999}:
+
 	\begin{itemize}
-         \item Incluir uma figura ou tabela com o volume de RMs de um projeto
-	\end{itemize}
+        \item Usuário Afetado
+        \item Reportador
+        \item Gerente de Requisição de Mudança
+        \item Agente de Triagem
+        \item Desenvolvedor
+        \item Analista de Qualidade
+        \item Chefe da Manutenção
+    \end{itemize}
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Volume de RMs do Editor Emacs}
+    \begin{figure}[htpb]
+        \centering
+        \includegraphics[width=.45\linewidth]{../img/sample.png}
+\caption{Número de RMs por ano\footnote{\url{https://debbugs.gnu.org/stats/emacs.html}}.}
+\label{fig:emacs_num_rm_por_ano}
+    \end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Ferramentas de Gerenciamento de Requisição de Mudança (FGRM)}
 	\begin{itemize}
-        \item Gerenciar as atividades de manutenção e seus artefatos
-            possui um alto custo.
         \item Dependendo do tamanho do projeto de software é necessário a
-            utilização de uma FGRM para gerenciar as suas requisições de
-            mudança.
-        \item As partes interessadas (stakeholders) necessitam de um espaço
-            único onde possam registrar as falhas encontradas e as melhorias que
-            necessitam~\cite{1407819}.
+              utilização de uma \alert{FGRM} para gerenciar as suas requisições de
+              mudança.
+        \item As \alert{FGRMs} são um espaço único onde as partes interessadas
+              podem registrar as falhas e as melhorias~\cite{1407819}.
 	\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Ferramentas de Gerenciamento de Requisição de Mudança}
+\begin{frame}{Exemplos de FGRMs}
 		\begin{figure}[hbtp]
 			\centering
 			\includegraphics[scale=.3]{../img/issue-tracking-sytem.png}
 		\end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Além do que Gerenciar RMs}
+\begin{frame}{Além do Gerenciamento de RMs}
 	\begin{itemize}
-        \item Ponto central para a comunicação e coordenação das diversas partes
-            interessadas~\cite{Bertram:2010:CCB:1718918.1718972}.
-        \item Possibilita que os usuários participem do processo de solução das
+        \item Ponto central para a comunicação e
+              coordenação~\cite{Bertram:2010:CCB:1718918.1718972}.
+        \item Participação do processo de solução das
               RMs~\cite{Breu:2010:INB:1718918.1718973}.
-        \item Suporte para atividades como~\cite{cavalcanti2013bug}:
+        \item Suporte para atividades~\cite{cavalcanti2013bug}:
             \begin{itemize}
-                \item estimativa do custo do software
-                \item análise do impacto de uma modificação
+                \item estimativa de custo
+                \item análise de impacto
                 \item planejamento do projeto
                 \item rastreabilidade de uma falha
                 \item extração de conhecimento
@@ -365,6 +340,7 @@ Gerenciamento de Requisição de Mudança}
       \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PROBLEMA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -428,7 +404,7 @@ Gerenciamento de Requisição de Mudança}
 
     \begin{itemize}
         \item Análise das funcionalidades oferecidas pelas FGRMs
-        \item Inspeção inicial resulto em aproximadamente 50
+        \item Inspeção inicial resultou em aproximadamente 50
             ferramentas\footnote{\url{https://en.wikipedia.org/wiki/Comparison_of_issue-tracking_systems}}.
         \item Optamos por conduzir o estudo em um conjunto menor
     \end{itemize}
@@ -1040,7 +1016,7 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % AMEÇAS À VALIDADE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Ameças à Validade}
+\section{Ameaças à Validade}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1130,7 +1106,7 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONCLUSÕES E TRABALHOS FUTUROS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusão e Trabalhos Futuros}
+\section{Conclusões e Trabalhos Futuros}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1207,8 +1183,9 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[allowframebreaks]
    \frametitle{References}
-   \bibliographystyle{IEEEtranS}
-   \bibliography{IEEEfull,../bib/defesa-vagner-clementino.bib}
+   % \bibliographystyle{IEEEtranS}
+   \bibliographystyle{apalike}
+   \bibliography{../bib/defesa-vagner-clementino.bib}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
