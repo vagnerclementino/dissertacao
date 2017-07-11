@@ -1,0 +1,102 @@
+[Slide 1]
+
+Neste trabalho de dissertação realizamos um estudo sobre as Ferramentas de
+Gerenciamento de Requisições de Mudança e apresenta contribuições sobre como
+melhorar este tipo de software. Mais a frente caracterizamos o que denominamos
+como “Requisição de Mudança” (RM) e o nosso interesse neste tipo de ferramenta.
+
+[Slide 2]
+
+Esta apresentação foi estruturada da seguinte forma: na seção "Contexto"
+apresentamos os principais conceitos e as respectivas definições adotadas no
+texto da dissertação; na seção "Problema" discutimos os desafios relacionados
+com as FGRMs que motivaram a condução desta dissertação; em seguida
+relacionamos os objetivos do nosso estudo; apresentamos uma visão geral dos
+trabalhos elaboradas durante a dissertação na seção "Atividades"; para uma das
+atividades descritas anteriormente apresentamos os principais resultados
+obtidos; em seguida, discutimos cada um daqueles resultados; apresentamos as
+ameças à validade dos resultados obtidos e finalizamos a apresentação com as
+conclusões da nossa dissertação e de seus desdobramentos através de trabalhos
+futuros.
+
+[Slide 3]
+
+Antes de iniciar a apresentação do nosso trabalho, achei importante trazer uma
+reflexão que estava no Capítulo 01 de uma das referências que utilizamos. Como
+pode ser observado, em uma livre tradução, o autor quer chamar atenção ao fato
+que se dá mais atenção ao construir/desenvolvedor do que ao manter/evoluir. No
+contexto da Engenharia de Software, no meu ponto de vista, a discussão sobre
+questões relativas à desenvolvimento de software são mais frequentemente
+tratadas do que aquelas sobre manutenção.
+
+[Slide 4]
+
+Existem diversos aspectos que podem ser listados para ilustrar a importância da
+Manutenção de Software no ciclo de vida de um software. Dentre eles, gostaria
+de citar alguns:
+
+    - é o processo responsável pela evolução do software
+    - é o "momento" em que as falhas são corrigidas
+    - possui um alto custo associado
+
+[Slide 5]
+
+No texto da dissertação adotamos a definição do glossário da IEEE para a
+Manutenção de Software que é vista como um processo em que um sistema de
+software ou um dos seus componentes, como por exemplo a sua documentação, é
+modificado para corrigir falhas, melhorar o desempenho ou adaptar à mudanças
+ambientais.
+
+Apesar de diversos aspectos da definição serem válidos, em determinados
+contexto, como naqueles que adotam as práticas dos agilistas, o fato da
+manutenção começar após a entrega do software não faz muito sentido. Do ponto
+de vista dos agilistas não há uma clara separação entre desenvolvimento e
+manutenção de software. Por outro lado, os textos em Engenharia de Software em
+geral preferem separar os dois processos.
+
+[Slide 6]
+
+Alguns textos dividem a manutenção de software em 04 tipos: corretiva,
+adaptativa, perfectiva e preventiva. Na manutenção corretiva o foco é corrigir
+falhas; na adapativa o objetivo é adequar o software por conta de mudanças em
+seu ambiente de execução; a manutenção perfectiva trata principalmente de
+acomodar novos requisitos de usuários tais como aumentar o desempenho do
+sistema ou melhorar a interface do usuário; a preventiva diz respeito às
+atividades destinadas a aumentar a capacidade de manutenção do sistema.
+
+A ISO 14474 propõe que exita características comuns entre os quatros tipos de
+modo que, quando agregadas, dão origem a um tipo único o qual denomina
+Requisição de Mudança.
+
+[Slide 7]
+
+Na figura visualizamos os quatro tipos de manutenção conforme proposto pela
+ISO/IEC. Como pode ser visualizado elas podem classificadas como correção ou
+melhoria.
+
+[Slide 8]
+
+Nesta dissertação, ao referirmos à uma Requisição de Mudança estamos tratando,
+em última análise, de um *Pedido de Correção* ou um *Pedido de Melhoria*.
+
+[Slide 9]
+
+A Figura 03 exibe os atributos que compõem uma RM. É possível observar a
+presença de um identificador único, geralmente númerico; o sumário, que tem por
+objetivo apresentar de forma resumido o assunto da RM; o relato, que é uma
+descrição detalhada da falha ou melhoria que é solicitada na RM; o
+identificador de quem criou a RM e a pessoa que está responsável por sua
+análise. É possível verificar os atributos Comentário e Anexo modelados como
+uma agregação, dando aos mesmos um caráter multivalorado.
+
+[Slide 10]
+
+A Figura 4 exibe uma RM do projeto Eclipse em que os atributos estão
+enumerados.
+
+[Slide 11]
+
+Alguns autores dizem que as RMs são o veículo para registrar a informação sobre
+uma falha ou melhoria de um software. Contudo, existem diversos problemas
+relacionado com as RMs.
+
