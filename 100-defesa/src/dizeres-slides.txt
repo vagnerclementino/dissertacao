@@ -58,13 +58,13 @@ geral preferem separar os dois processos.
 
 Alguns textos dividem a manutenção de software em 04 tipos: corretiva,
 adaptativa, perfectiva e preventiva. Na manutenção corretiva o foco é corrigir
-falhas; na adapativa o objetivo é adequar o software por conta de mudanças em
+falhas; na adaptativa o objetivo é adequar o software por conta de mudanças em
 seu ambiente de execução; a manutenção perfectiva trata principalmente de
 acomodar novos requisitos de usuários tais como aumentar o desempenho do
 sistema ou melhorar a interface do usuário; a preventiva diz respeito às
 atividades destinadas a aumentar a capacidade de manutenção do sistema.
 
-A ISO 14474 propõe que exita características comuns entre os quatros tipos de
+A ISO 14474 propõe que exita características comuns entre os quatro tipos de
 modo que, quando agregadas, dão origem a um tipo único o qual denomina
 Requisição de Mudança.
 
@@ -82,7 +82,7 @@ em última análise, de um *Pedido de Correção* ou um *Pedido de Melhoria*.
 [Slide 9]
 
 A Figura 03 exibe os atributos que compõem uma RM. É possível observar a
-presença de um identificador único, geralmente númerico; o sumário, que tem por
+presença de um identificador único, geralmente numérico; o sumário, que tem por
 objetivo apresentar de forma resumido o assunto da RM; o relato, que é uma
 descrição detalhada da falha ou melhoria que é solicitada na RM; o
 identificador de quem criou a RM e a pessoa que está responsável por sua
@@ -98,5 +98,103 @@ enumerados.
 
 Alguns autores dizem que as RMs são o veículo para registrar a informação sobre
 uma falha ou melhoria de um software. Contudo, existem diversos problemas
-relacionado com as RMs.
+relacionado com as RMs, tais como:
 
+    - Localização do Problema
+    - Baixa Qualidade do Relato
+    - Identificação de RMs Duplicadas
+    - Atribuição (Triagem) de RM
+    - Classificação da RM
+    - Estimativa de Esforço da RM
+
+[Slide 12]
+
+Conforme foi exposto a Manutenção de Software é um processo conduzido por uma
+ou mais pessoa desempenhando determinado papel. Nesta dissertação utilização
+proposta por Polo e outros que inclui os seguintes papéis:
+
+    - Usuário Afetado
+    - Reportador
+    - Gerente de Requisição de Mudança
+    - Agente de Triagem
+    - Desenvolvedor
+    - Analista de Qualidade
+    - Chefe da Manutenção
+
+[Slide 13]
+
+A Figura 05 é meramente ilustrativa e exibe o número de RMs que são criadas por
+ano em um projeto de código aberto. Entretanto, a figura nos mostra que
+dependendo do volume de RMs de um projeto é importante a adoção de um sistema
+de informação que permita gerenciá-las.
+
+[Slide 14]
+
+As FGRMs possuem como principal objetivo o gerenciamento das RMs de um projeto,
+tornando-se, desta forma, o espaço centralizado para registros das falhas e
+melhorias do software.
+
+[Slide 15]
+
+Caso ainda não tenha ficado claro que tipo de ferramenta corresponde às FGRMs,
+a Figura 06 exibe alguns exemplos deste tipo de ferramenta.
+
+[Slide 16]
+
+Apesar de gerenciar as RMs estar entre as principais funções das FGRMs, a
+literatura sobre o tema discute outros tipos de suporte oferecidos. Dentre eles
+gostaríamos de destacar: ponto central de comunicação e coordenação;
+possibilidade a participação no processo de solução; auxílio na estimativa de
+custo, planejamento do projeto, extração do conhecimento.
+
+[Slide 17]
+
+Apesar de sua inegável importância, a literatura sobre FGRMs discute alguns
+problemas sobre suas funcionalidades. Entre eles destacamos o desacoplamentos
+de suas funcionalidades com as necessidades dos seus usuários. Além disso
+existem diversas extensões sendo propostas na literatura com o objetivo de
+melhorar ou adicionar novos comportamentos para as FGRMs.
+
+[Slide 18]
+
+Para contribuir com a melhoria das funcionalidades oferecidas pelas FGRMs
+conduzimos este trabalho de dissertação com os seguintes objetivos:
+
+        (i) analisar as funcionalidades oferecidas por este tipo de ferramenta;
+        (ii) mapear as melhorias para as FGRMs que estão sendo propostas na
+        literatura;
+        (iii) verificar como os profissionais avaliam as funcionalidades das
+        ferramentas que têm contato;
+        (iv) propor melhorias para as funcionalidades das FGRMs.
+
+
+[Slide 19]
+
+Para alcançarmos os objetivos propostos realizados as seguintes atividades:
+
+    Estudo sobre as funcionalidades das FGRMs
+    Mapeamento Sistemático da Literatura [Petersen et al., 2008]
+    Levantamento (Survey) com desenvolvedores [Wohlin et al., 2012]
+    Sugestões de melhorias para as FGRMs
+    Implementação de extensão para FGRM
+
+[Slide 20]
+
+Com o objetivo de entender as funcionalidades oferecidas pelas FGRMs conduzimos
+um estudo divido em três etapas.
+
+    (i) Seleção das Ferramentas
+    (ii) Inspeção da Documentação
+    (iii) Agrupamento das Funcionalidades
+
+[Slide 21]
+
+Em uma inspeção inicial na Internet encontramos cerca de 50 FGRMs disponíveis
+comercialmente ou por código aberto. Por questões relacionadas ao esforço
+necessário em relação ao tempo disponível, optamos por realizar o estudo em um
+número de ferramentas. Para a escolha deste grupo realizamos um levantamento
+por questionário. O questionário foi aplicado em dois grupos: o primeiro pode
+representar profissionais que contribuem em projetos de código aberto e o
+segundo acreditamos que representa profissionais que trabalham em empresas
+privadas de software. Após a aplicação do questionário obtivemos 52
+participações que nos permitiu escolher 06 ferramentas.
