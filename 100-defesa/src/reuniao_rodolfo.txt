@@ -1,0 +1,43 @@
+------------------------------------------------------------------------------
+Q) Eu acho que estas questões de "integração" de ferramentas nas IDEs são muito
+relevantes... e muito do que acontece na "linha de comando" não tem muito
+sentido na "GUI"
+
+R)
+
+
+------------------------------------------------------------------------------
+Q) tem que ser mais dirigido ou então ligado ao problema das ferramentas nas
+IDEs serem "integradas"... e aí vc falaria que uma "visão" que vc teve foi a
+questão de interfaces mais modernas (mais distantes da "linha de comando" )
+onde existem, por exemplo os chatbots
+
+R)
+
+
+------------------------------------------------------------------------------
+Q) Alguém pergunta que a maior parte do trabalho utilizou levantamentos?
+
+
+R)
+
+
+------------------------------------------------------------------------------
+Q) A extensão proposta não foi avaliada?
+
+R)
+------------------------------------------------------------------------------
+Q) Principal contribuição do trabalho?
+
+R)
+------------------------------------------------------------------------------
+Q) Pontos Fracos do trablho?
+
+R)
+------------------------------------------------------------------------------
+
+Modelo baseado no diagrama de classe de UML
+
+Modelo baseado interface gráfica
+
+

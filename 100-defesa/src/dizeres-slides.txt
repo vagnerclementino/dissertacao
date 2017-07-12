@@ -198,3 +198,79 @@ representar profissionais que contribuem em projetos de código aberto e o
 segundo acreditamos que representa profissionais que trabalham em empresas
 privadas de software. Após a aplicação do questionário obtivemos 52
 participações que nos permitiu escolher 06 ferramentas.
+
+[Slide 22]
+
+Para caracterizar as funcionalidades realizamos a leitura da documentação
+disponível na Internet. A informação obtida foram classificadas através da
+técnica conhecida como Cartões de Classificação.
+
+[Slide 23]
+
+Na terceira etapa do trabalho agrupamos as funcionalidades em um processo de
+duas etapas. Na primeira, as funcionalidades eram agrupadas pelo autor e por um
+outro especialista. Em em segundo momento o autor e o especialista discutem as
+divergências até chegarem a um consenso.
+
+
+[Slide 24]
+
+Conduzimos um mapeamento sistemático com base nas diretrizes propostas por
+Petersen e outros. Para conduzir esta atividade foram propostas 02 questões de
+pesquisa
+
+[Slide 25]
+
+Para recuperarmos os estudos primários utilizamos 04 bases de dados em que
+utilizamos a metodologia PICO para produzir a setença de busca.
+
+[Slide 26]
+
+A Figura 07 exibe um visão geral do processo de coleta dos estudos primários. É
+possível visualizar a seleção dos estudos, remoção de duplicados, aplicação de
+critérios de inclusão/exclusão
+
+[Slide 27]
+
+Realizamos uma levantamento com desenvolvedores visando responder 04 questões
+de pesquisa.
+    - Questão de Pesquisa 01
+    - Questão de Pesquisa 02
+
+[Slide 28]
+
+Realizamos uma levantamento com desenvolvedores visando responder 04 questões
+de pesquisa.
+    - Questão de Pesquisa 03
+    - Questão de Pesquisa 04
+
+[Slide 29]
+
+Nós utilizamos Fonte de Amostragem conforme o trabalho do de Mello e outros.
+Utilizamos o Projeto Python e  o Stack Overflow.
+
+[Slide 30]
+
+Realizamos um levantamento com profissionais com 85 participações. A maior
+parte dos participantes se autodeclaram como Desenvolvedor e Engenheiro de
+Software.
+
+[Slide 31]
+
+Com base nos resultados obtidos na dissertação, em especial no Mapeamento
+Sistemático e o Levantamento com Profissionais, bem como na literatura da area
+realizamos um conjunto de melhorias.
+
+[Slide 32]
+
+As propostas foram avaliadas por profissionais que contribuem para projetos que
+desenvolvem FGRM, conforme Tabela 3.
+
+[Slide 33]
+
+Implementamos  uma das sugestões como uma extensão da plataforma Github. Em
+resumo a extensão analisa a qualidade da informação fornecida no relato.
+
+[Slide 34]
+
+A Figura 8 apresenta uma visão geral do funcionamento da extensão IssueQuality.

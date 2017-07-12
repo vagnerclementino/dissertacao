@@ -1,0 +1,49 @@
+1 - Não tem a palavra "space" e não tem "unique" ou similares... Qual o trecho
+deste artigo que vc se baseou para escrever esta frase?  QUeria que vc me
+respondesse isso em uma mensagem separada só com este assunto...  As FGRMs são
+um espaço único onde as partes interessadas podem registrar as falhas e as
+melhorias [Serrano and Ciordia, 2005].???
+
+Não foi uma "citação direta". Na realidade eu fiz uma interpretação da seguinte
+parte do texto:
+
+    At first, we might list them on a spreadsheet. But when the number of bugs
+    becomes too large and a lot of people must access and input data on them, we
+    have to give up the spreadsheet and instead use a bug- or issue-tracking
+    system. Many software projects reach this point, especially during testing and
+    deployment when users tend to find an application's bugs.
+
+Segundo o meu entedimento os autores fala da necessidade de um local para
+registro de falhas (bugs) quando estes aumentam em quantidade.
+
+2 - avaliar sobre o ponto de vista dos profissionais a situação atual
+funcionalidades oferecidas pelas FGRMs não é "sobre" seria "sob" mas acho que
+mesmo com o sob a frase não ficaria boa verificar como os profissionais avaliam
+a funcionalidade das ferramentas que têm contato.  Nós *não* avaliamos *sob* o
+ponto de vista dos profissionais...  (por favor verifique isso no texto da
+dissertação!) Nós avaliamos o ponto de vista dos profissionais<<<<
+
+    Eu revisei o texto da dissertação mediante a busca do termo "ponto de vista" e
+    existia um local na introdução com erro. Eu substitui a frase com a sua
+    sugestão:
+        "verificar como os profissionais avaliam a funcionalidade das ferramentas que
+        têm contato"
+
+3 - Eu e meu problema com estes gráficos que vc se encantou e não conseguiu se
+desembaraçar...  Vc observou que o eixo x é ilegível??  os Slides 38 e 42 são
+legíveis!!  O eixo X nos Slides 39, 40, 41 é ilegível!!  Vc vai ter que ler
+para a plateia.
+
+4 - Eu acho que vc deve se preparar (lendo artigos) para perguntas sobre este
+item: Em algumas plataformas, tais como o Github e o Gitlab, foi possível
+perceber a tendência em que não existe uma clara separação entre o
+gerenciamento das RMs e o controle de versão do código.
+
+5 - Eu acho que estas questões de "integração" de ferramentas nas IDEs são
+muito relevantes... e muito do que acontece na "linha de comando" não tem muito
+sentido na "GUI"
+
+6 - tem que ser mais dirigido ou então ligado ao problema das ferramentas nas
+IDEs serem "integradas"... e aí vc falaria que uma "visão" que vc teve foi a
+questão de interfaces mais modernas (mais distantes da "linha de comando" )
+onde existem, por exemplo os chatbots

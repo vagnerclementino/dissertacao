@@ -30,9 +30,7 @@
 \usepackage{multirow}
 \usepackage{adjustbox}
 \usepackage{array}
-\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
 \usepackage{booktabs}
-
 %\usepackage[cmex10]{amsmath}
 % Or whatever. Note that the encoding and the font should match. If T1
 % does not look nice, try deleting the line with the fontenc.
@@ -219,8 +217,8 @@ Gerenciamento de Requisição de Mudança}
     \begin{figure}[htpb]
         \centering
         \includegraphics[width=0.55\linewidth]{../img/diagrama-classe-atributos-requisicao-mudancas.pdf}
-        \caption{Informações que compõem uma RM\@. Baseado em trabalho de Singh \&
-            Chaturvedi~\cite{singh2011bug}}
+        \caption{Modelo de uma RM como diagrama UML\@. Adaptado
+            de Singh \& Chaturvedi~\cite{singh2011bug}}
 \label{fig:diagrama-classe-atributos-requisicao-mudancas}
     \end{figure}
 
@@ -233,7 +231,7 @@ Gerenciamento de Requisição de Mudança}
     \begin{figure}[htpb]
         \centering
         \includegraphics[width=0.5\linewidth]{../img/rm-exemplo.pdf}
-        \caption{RM do Projeto Eclipse}
+        \caption{Modelo de uma RM baseado em GUI.}
 \label{fig:rm-exemplo}
     \end{figure}
 
@@ -768,11 +766,22 @@ Gerenciamento de Requisição de Mudança}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{[Resultados] Levantamento com Desenvolvedores}
 
-\begin{figure}[htpb] \centering
-    \includegraphics[width=0.5\linewidth]{../img/grafico_melhorias_fgrm_nivel_satisfacao.pdf}
-    \caption{Nível de satisfação com as Ferramentas}
-\label{fig:grafico_melhorias_fgrm_nivel_satisfacao}
-\end{figure}
+\begin{table}[]
+\centering
+\resizebox{.4\textwidth}{!}{%
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Nível de Satisfação} & \textbf{Total} \\ \midrule
+OK & 32 \\
+Satisfeito & 21 \\
+Muito Satisfeito & 11 \\
+Desapontado & 6 \\
+Muito Desapontado & 2 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Nível de satisfação com as Ferramentas}
+\label{tab:grafico_melhorias_fgrm_nivel_satisfacao}
+\end{table}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -780,12 +789,22 @@ Gerenciamento de Requisição de Mudança}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{[Resultados] Levantamento com Desenvolvedores}
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.45\linewidth]{../img/grafico_melhorias_fgrm_probabilidade_recomentacao.pdf}
-	\caption{Probabilidade de Recomendação da Ferramenta Utilizada}
-\label{fig:grafico_melhorias_fgrm_probabilidade_recomentacao}
-\end{figure}
+\begin{table}[]
+\centering
+\resizebox{.75\textwidth}{!}{%
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Recomendação da Ferramenta Utilizada} & \textbf{Total} \\ \midrule
+Provável & 32 \\
+Com certeza & 22 \\
+Pouco Provável & 9 \\
+Não & 5 \\
+Muito Improvável & 3 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Probabilidade de Recomendação da Ferramenta Utilizada}
+\label{tab:grafico_melhorias_fgrm_probabilidade_recomentacao}
+\end{table}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -793,12 +812,25 @@ Gerenciamento de Requisição de Mudança}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{[Resultados] Levantamento com Desenvolvedores}
 
-\begin{figure}[htpb]
-	\centering
-	\includegraphics[width=0.5\linewidth]{../img/grafico_melhorias_fgrm_funcionalidades_faltantes.eps}
-	\caption{Funcionalidades que o participantes sentem falta.}
+\begin{table}[]
+\centering
+\resizebox{.55\textwidth}{!}{%
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Funcionalidade} & \textbf{Total} \\ \midrule
+Identificação de RMs Duplicadas & 42 \\
+Atribuição Automática de RM & 20 \\
+Análise de Impacto de RM & 18 \\
+Análise. Automática de Esforço & 15 \\
+Não sente falta de nenhuma & 13 \\
+Análise da Qualidade do Relato & 13 \\
+Suporte à Integração Contínua & 4 \\
+RM’s trabalhadas anteriormente & 1 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Funcionalidades que o participantes sentem falta.}
 \label{fig:grafico_melhorias_fgrm_funcionalidades_falantes}
-\end{figure}
+\end{table}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1082,12 +1114,23 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 \begin{frame}{[Ameaças à Validade] Sugestões de Melhorias}
 
     \begin{itemize}
+
         \item O total de participantes não nos permite extrapolar os resultados
             para todos os contextos em que as FGRMs estão inseridas.
 
-        \item A utilização de apenas projetos públicos hospedados no Github pode
-            ter causado algum tipo de direcionamento, como por exemplo foco em
-            projetos de código aberto.
+        \item A utilização de apenas projetos públicos hospedados no Github
+            pode ter causado algum tipo de direcionamento, como por exemplo
+            foco em projetos de código aberto.
+
+    \end{itemize}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{[Ameaças à Validade] Sugestões de Melhorias}
+
+    \begin{itemize}
 
         \item A estrutura das perguntas do formulário pode ter causado impacto
             na quantidade de respostas ou na opção escolhida pelos
@@ -1096,11 +1139,11 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
         \item Acreditávamos que a escolha destas 08 sugestões envolveria as
             principais características, mas existe possibilidade de ficar alguma
             característica relevante de fora.
+
     \end{itemize}
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CONCLUSÕES E TRABALHOS FUTUROS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
