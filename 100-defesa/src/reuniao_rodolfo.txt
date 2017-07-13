@@ -1,4 +1,4 @@
-------------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 Q) Eu acho que estas questões de "integração" de ferramentas nas IDEs são muito
 relevantes... e muito do que acontece na "linha de comando" não tem muito
 sentido na "GUI"
