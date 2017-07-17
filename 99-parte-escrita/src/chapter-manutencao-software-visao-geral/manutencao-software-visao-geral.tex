@@ -1042,38 +1042,44 @@ demais que lhe foi apresentado ou com outras que ele já teve contato.
 \subsubsection{Desenho do Levantamento por Questionário}
 \label{ssub:metodologia_desenho_da_pesquisa_com_profissionais}
 
-Para coletar a opinião dos profissionais utilizamos um formulário estruturado em
-duas partes: a formação de base do participante (background) e a avaliação das
-ferramentas. Na primeira, estávamos interessados em conhecer as características
-do respondente. Esta informação é relevante para analisar de forma separada os
-dois grupos de profissionais em que o questionário foi replicado. Na segunda,
-apresentamos as ferramentas e solicitamos aos participantes que avaliassem a
-relevância de cada uma delas através de uma escala do tipo
-Likert~\cite{robbins2011plotting}. Foi disponibilizado aos participantes um
-campo de texto em que era possível registrar outras FGRMs também julgadas
-relevantes, mas que não estava na lista que lhe foi apresentada.
+Para coletar a opinião dos profissionais utilizamos um formulário estruturado
+em duas partes: a formação de base do participante (background) e a avaliação
+das ferramentas. Na primeira, estávamos interessados em conhecer as
+características do respondente. Esta informação é relevante para analisar de
+forma separada os dois grupos de profissionais em que o questionário foi
+replicado. Na segunda, apresentamos uma lista previamente definida de
+ferramentas e solicitamos aos participantes que avaliassem a relevância de cada
+uma delas através de uma escala do tipo Likert~\cite{robbins2011plotting}. As
+ferramentas que foram apresentadas aos participantes estão disponíveis no
+Anexo~\ref{ch:app-lista-fgrm}. O formulário também dispunha de um campo de
+texto em que era possível registrar outras FGRMs também julgadas relevantes,
+mas que não estava na lista que lhe foi apresentada.
 
 Antes da aplicação, o questionário foi validado em um processo de três etapas.
 Na primeira parte foi solicitada a avaliação por dois pesquisadores experientes
-da área de Engenharia de Software. Após as alterações, uma versão modificada foi
-enviada para dois profissionais que trabalham com manutenção de software. O
+da área de Engenharia de Software. Após as alterações, uma versão modificada
+foi enviada para dois profissionais que trabalham com manutenção de software. O
 critério utilizado para seleção dos profissionais foi o tempo de experiência em
-desenvolvimento e manutenção de software. No caso específico cada um deles tinha
-em média de 10 anos de trabalho na areá. O formulário foi modificado com as
-sugestões dos profissionais finalizando assim a segunda etapa de validação. A
-última etapa consistiu na realização de um piloto com dez desenvolvedores que
+desenvolvimento e manutenção de software. No caso específico cada um deles
+tinha em média de 10 anos de trabalho na areá. O formulário foi modificado com
+as sugestões dos profissionais finalizando assim a segunda etapa de validação.
+A última etapa consistiu na realização de um piloto com dez desenvolvedores que
 trabalham em um setor manutenção de software de uma empresa pública de
 informática. Trata-se de uma amostra de conveniência devida a nossa facilidade
 de acesso aos mesmos. Os programadores tiveram que preencher o questionário,
 contudo, foram adicionadas questões em que era possível inserir sugestões de
-melhoria. Como o público-alvo do questionário poderia incluir desenvolvedores de
-diferentes nacionalidades foi criada uma versão em inglês.
+melhoria. A versão final do formulário está disponível no
+Anexo~\ref{ch:app-form-selecao-ferramentas}. Como o público-alvo do
+questionário poderia incluir desenvolvedores de diferentes nacionalidades foi
+criada uma versão em inglês\footnote{A versão inglês do formulário está
+    disponínvel em
+    \url{https://archive.org/download/dissertacao-vagner-clementino-um-estudo/form-avalicao-ferramentas-en.pdf}}.
 
 No caso deste levantamento a população é o conjunto de profissionais que
-trabalham com desenvolvimento e manutenção de software e que tenham uma razoável
-experiência de uso com as FGRMs. A caracterização e estratificação desta
-população não é simples. Neste sentido, visando diminuir possíveis viéses,
-replicamos o questionário em dois grupos:
+trabalham com desenvolvimento e manutenção de software e que tenham uma
+razoável experiência de uso com as FGRMs. A caracterização e estratificação
+desta população não é simples. Neste sentido, visando diminuir possíveis
+viéses, replicamos o questionário em dois grupos:
 
 \begin{description}
 	\item[Grupo 01:] Profissionais que participam de fóruns e discussões sobre
@@ -1082,30 +1088,22 @@ replicamos o questionário em dois grupos:
 		projetos de código aberto.
 \end{description}
 
-% A seleção dos potenciais participantes do levantamento foi utilizando os mesmo
-% critérios que foram aplicados no estudo descrito na
-% Seção~\ref{subsubsec:pesquisa_profissionais_plano_pesquisa}.
-
 \subsubsection{Critérios de Seleção das FGRMs}
 \label{ssub:metodologia_criterios_selecao}
 
 Antes da seleção das FGRMs que seriam utilizadas neste estudo, elas foram
-categorizados como \textit{''ferramentas''} e \textit{''serviços da internet''}.
-Para incluir determinado software em um dos grupos utilizamos a respectiva
-documentação do software. A primeira categoria representa os softwares que são
-capazes de serem implantados na infraestrutura do seu cliente e permite algum
-grau de personalização de seus componentes, como por exemplo, o banco de dados a
-ser utilizado. Na segunda categoria estão os softwares que oferecem o
-gerenciamento das RMs mediante uma arquitetura do tipo Software como Serviço
-(Software as Service)~\cite{fox2013engineering}, onde certos tipos de alterações
-no comportamento do sistema são mais restritas. Acreditamos que ao escolher
-ferramentas destes dois tipos poderíamos cobrir uma maior parte do domínio de
-aplicação das FGRMs do que se a escolha priorizasse apenas um tipo. Optamos por
-escolher~\textit{03 ferramentas} de cada categoria.
-
-% Para seleção das ferramentas utilizados a formula apresentada na
-% Equação~\ref{eq:escolha_ferramenta}. Atribuímos a métrica $r_i$ que representa a
-% relevância de determinada ferramenta $f_i$.
+categorizados como \textit{''ferramentas''} e \textit{''serviços da
+    internet''}.  Para incluir determinado software em um dos grupos utilizamos
+a respectiva documentação do software. A primeira categoria representa os
+softwares que são capazes de serem implantados na infraestrutura do seu cliente
+e permite algum grau de personalização de seus componentes, como por exemplo, o
+banco de dados a ser utilizado. Na segunda categoria estão os softwares que
+oferecem o gerenciamento das RMs mediante uma arquitetura do tipo Software como
+Serviço (Software as Service)~\cite{fox2013engineering}, onde certos tipos de
+alterações no comportamento do sistema são mais restritas. Acreditamos que ao
+escolher ferramentas destes dois tipos poderíamos cobrir uma maior parte do
+domínio de aplicação das FGRMs do que se a escolha priorizasse apenas um tipo.
+Optamos por escolher~\textit{03 ferramentas} de cada categoria.
 
 O grupo final de FGRMs foi selecionado pela frequência com que cada grau de
 relevância apareceu no levantamento. A pontuação seguiu uma escala que atribuía
@@ -1138,19 +1136,21 @@ categoria.
 
 Nesta etapa do trabalho realizamos a leitura do material disponível na Internet
 para cada uma das ferramentas selecionadas conforme descrito anteriormente.
-Para cada uma das FGRMs optamos por analisar a última versão estável do software
-a fim de analisarmos o que há de mais novo disponível aos usuários. A
+Para cada uma das FGRMs optamos por analisar a última versão estável do
+software a fim de analisarmos o que há de mais novo disponível aos usuários. A
 documentação de algumas ferramentas, em especial aquelas que adotam uma
 arquitetura cliente/servidor e necessitam de um certo grau de administração,
-dividem as funcionalidades do software entre aquelas com foco no usuário final e
-ad\-mi\-nis\-tra\-do\-res de sistema. Nestes casos, optamos por coletar as
-funcionalidades para os usuários finais das FGRMs tendo em vista que aquelas com
-foco em administradores de sistemas não estão no escopo desta dissertação.
+dividem as funcionalidades do software entre aquelas com foco no usuário final
+e ad\-mi\-nis\-tra\-do\-res de sistema. Nestes casos, optamos por coletar as
+funcionalidades para os usuários finais das FGRMs tendo em vista que aquelas
+com foco em administradores de sistemas não estão no escopo desta dissertação.
+Os dados obtidos durante o processo de seleção foram incluídos no formulário
+disponível no Anexo~\ref{ch:app-form-cartoes-ordenados}.
 
-A Tabela~\ref{tab:fgrm-docs} apresenta as ferramentas e o elo de ligação para os
-respectivos documentos que foram utilizados. Para aquelas sistemas que
-apresentam documentação em mais de um i\-di\-o\-ma optamos por aquela escrita em
-inglês por entendermos que poderia ser a mais atualizada.
+A Tabela~\ref{tab:fgrm-docs} apresenta as ferramentas e o elo de ligação para
+os respectivos documentos que foram utilizados. Para aquelas sistemas que
+apresentam documentação em mais de um i\-di\-o\-ma optamos por aquela escrita
+em inglês por entendermos que poderia ser a mais atualizada.
 
 \begin{table}[htpb]
 \centering
@@ -1210,11 +1210,13 @@ obtida mediante a inspeção da documentação foi mapeada em um único cartão.
 Os cartões foram organizados de modo que continham: o nome e a versão da
 ferramenta analisada; a URL da documentação utilizada; o nome da funcionalidade
 coletada, que consiste de uma descrição breve conforme existente na
-documentação; descrição detalhada da funcionalidade, cujo objetivo é facilitar o
-processo de agrupamento que será descrito na próxima seção. Nas
+documentação; descrição detalhada da funcionalidade, cujo objetivo é facilitar
+o processo de agrupamento que será descrito na próxima seção. Nas
 Figura~\ref{fig:documentacao_bugzilla} e~\ref{fig:exemplo_cartao_ordenado} é
 possível visualizar, respectivamente, a documentação de uma funcionalidade da
-ferramenta Bugzilla e o cartão produzido.
+ferramenta Bugzilla e o cartão produzido\footnote{O conteúdo integral dos
+    cartões utilizados neste estudo estão disponíveis em
+    \url{https://archive.org/download/dissertacao-vagner-clementino-um-estudo/cartoes-ordenados.csv}}
 
 \begin{figure}[htpb]
 	\centering
