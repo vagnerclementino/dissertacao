@@ -41,3 +41,39 @@
 
 ## Capítulo 04 ##
 
+    - Mudar posição do primeiro paragráfo da Seção 4.1 no começo da 2.3.3.2
+      Desenho do Levantamento por Questionário
+    - Remover as questões de pesquisa 03 e 04 na Seção 4.2
+    - Apresentar e explicar os motivos pelo qual a fonte de amostragem atendem
+      aos Requisitos Essenciais conforme descrito no último parágrafo da página
+      65.
+    - Incluir o formulário da pesquisa com profissionais como apêndice da
+      dissertação
+    - Remover menção da empresa PRODABEL na página 69
+    - Incluir o número de pessoas qeu foi enviada a mensagem descrita na página
+      69, o período de envio e a mensagem enviada.
+    - Gerar um gráfica sobre a distribuição geográfica descrito no final da
+      página 69
+    - Incluir um gráfico em substituição ao segundo páragrafo da página 70 em
+      que é descrito o tamanho da equipe dos participantes.
+    - Remover a generealização do "perfil do participante" conforme descrito no
+      último parágrafo da página 70
+    - Revisar os resultados apresentados na Seção 4.4.2 conforme as sugestões
+      da Raquel
+    - Ordenar Tabela 4.3 pela "força da recomendaçaõ"
+    - Explicar na Seção 4.4.3 o que seria a apresentação de um "cardápio"
+    - As funções apresentadas no primeiro parágrafo da seçaõ 4.4.3 não estavam
+      no estudo descrito na Seção 2.3
+    - Explicar como a questão que é representada pela questão 4.4.
+    - Explicar como a questão que é representada pela tabela 4.4.
+    - Explicar os resultados apresentados na Seção 4.5
+    - Incluir análise dos resultados obtidos no capítulo 04 relacionando a
+      resposta do participante com a ferramenta utilizada pelo participante
+    - Incluir antes do perfil do participante o total de participações antes da
+      apresentação do perfil dos participantes.
+
+## Capítulo 05 ##
+
+    - Explicar melhor os números descritos no primeiro e segundo parágrafo da
+      Seção 5.1
+    -  

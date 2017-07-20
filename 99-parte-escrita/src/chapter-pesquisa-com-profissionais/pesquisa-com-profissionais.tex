@@ -111,7 +111,7 @@ fontes disponíveis na Internet, como rede sociais e projetos de código aberto,
 que permitem o aumento de potenciais participantes~\cite{de2013would}. Neste
 estudo utilizamos estas duas fontes de amostragens.
 
-O levantamento descrito neste capitulo consistiu de um estudo exploratório sem
+O levantamento descrito neste capítulo consistiu de um estudo exploratório sem
 uma hipótese prévia. Idealmente, ele deveria ser respondido por todos os
 profissionais envolvidos com desenvolvimento e manutenção de software. Como não
 é possível alcançar aquela população, nos conformamos em utilizar uma
@@ -134,9 +134,9 @@ modo a possibilitar a extração de subconjuntos que serão as amostras da
 população. Neste sentido, o estudo afirma que no caso de uma Fonte de Amostragem
 ser considerada pertinente para um contexto de pesquisa específico, pode-se
 concluir que as amostras extraídas desta fonte também podem ser consideradas
-válidas. No estudo os autores apresentam alguns atributos, denominado Requisitos
-Essenciais~-~Essential Requeriments (ER) que podem ser utilizadas para
-determinar que uma Fonte de Amostragem é válida.
+válidas. No estudo os autores apresentam alguns atributos, denominado
+Requisitos Essenciais~-~Essential Requeriments (ER) que podem ser utilizadas
+para determinar que uma Fonte de Amostragem é válida.
 
 % \begin{description}
 %     \item[ER1] Uma Fonte de Amostragem não deve representar intencionalmente um
@@ -211,26 +211,16 @@ suas RMs. Por outro lado, a fonte FA02 foi selecionada devido sua extensão:
 envolve mais de 6 milhões de usuários\footnote{Disponível em
     \url{http://stackexchange.com/sites}. Acessado em novembro de 2016.}.
 
-Conforme anteriormente discutido, este levantamento fez uso de uma amostragem de
-conveniência. Embora este tipo de estratégia apresente limitações devido a forma
-subjetiva que uma amostra pode ser escolhida, ela é útil especialmente quando a
-randomização não é possível, como no caso de uma população muito grande ou de
-difícil caracterização~\cite{boxill1997introduction}. No estudo conduzido por de
-Melo e outros~\cite{de2014towards} são apresentados quatro elementos denominados
-``Requisitos Essenciais'' que são utilizados para dar validade a uma fonte de
-amostragem. Nossa avaliação é que nossa fonte satisfaz bem todos aqueles
+Conforme anteriormente discutido, este levantamento fez uso de uma amostragem
+de conveniência. Embora este tipo de estratégia apresente limitações devido a
+forma subjetiva que uma amostra pode ser escolhida, ela é útil especialmente
+quando a randomização não é possível, como no caso de uma população muito
+grande ou de difícil caracterização~\cite{boxill1997introduction}. No estudo
+conduzido por de Melo e outros~\cite{de2014towards} são apresentados quatro
+elementos denominados ``Requisitos Essenciais'' que são utilizados para dar
+validade a uma fonte de amostragem. Nossa avaliação é que nossa fonte satisfaz
+bem todos aqueles
 requisitos.
-
-%However, a researcher may not be able to obtain a random or stratified sample,
-%or it may be too expensive. A researcher may not care about generalizing to a
-%larger population. The validity of non-probability samples can be increased by
-%trying to approximate random selection, and by eliminating as many sources of
-%bias as possible.
-
-%A convenience sample is a matter of taking what you can get. It is an accidental
-%sample. Although selection may be unguided, it probably is not random, using the
-%correct definition of everyone in the population having an equal chance of being
-%selected. Volunteers would constitute a convenience sample.
 
 \subsubsection{Construção das Fontes de Amostragem}
 \label{subsubsec:construcao_fonte_amostragem}
@@ -240,7 +230,7 @@ construção. Para a FA01 utilizamos a lista de RMs disponível na Internet atra
 da FGRM do projeto\footnote{\url{http:bugs.python.com}}. No caso da FA02 a fonte
 primária de informação são as discussões realizadas pelos seus usuários,
 especialmente aquelas sobre a temática da Manutenção de Software. Em ambos os
-casos foram coletados os atributos:
+casos foram coletados automaticamente os atributos:
 
 \begin{itemize}
 	\item Nome do Participante
@@ -262,12 +252,12 @@ atribuições, dentre outros.
 No caso do Stack Overflow utilizamos para seleção dos participantes uma métrica
 adicional da própria rede social conhecida como
 reputação\footnote{\url{http://stackoverflow.com/help/whats-reputation}}.
-Trata-se de uma medida aproximada de quanto a comunidade avalia as contribuições
-de um usuário da rede nas discussões que participa. A métrica é calculada com
-base nas ações do usuário e em como a comunidade avalia tais ações. Neste
-trabalho ela foi utilizada como um dos critérios de seleção do participante, que
-incluiu ainda a sua frequência de participação de discussões sobre Manutenção de
-Software.
+Trata-se de uma medida aproximada de quanto a comunidade avalia as
+contribuições de um usuário da rede nas discussões que participa. A métrica é
+calculada com base nas ações do usuário e em como a comunidade avalia tais
+ações. Neste trabalho ela foi utilizada como um dos critérios de seleção do
+participante, que incluiu ainda a sua frequência de participação em discussões
+sobre Manutenção de Software.
 
 Para extrairmos os dados da rede social Stack Overflow utilizamos a interface de
 busca avançada que a plataforma disponibiliza e que permite consultar e analisar
@@ -279,12 +269,12 @@ coleta dos dados.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.9\linewidth]{./chapter-pesquisa-com-profissionais/img/stack-exchange.png}
-	\caption{Interface de coleta de dados da rede Stack Overflow}
+	\includegraphics[width=0.7\linewidth]{./chapter-pesquisa-com-profissionais/img/stack-exchange.png}
+	\caption{Ferramenta de coleta de dados da rede Stack Overflow}
 \label{fig:stack-exchange}
 \end{figure}
 
-Para a fonte FA01 foi desenvolvido um robô (web crawler) para coletar as
+Para a fonte FA01 foi desenvolvido um robo (web crawler) para coletar as
 informações dos participantes. Um robô rastreador web é um programa de
 computador que navega pela World Wide Web de uma forma metódica e automatizada.
 A partir de uma lista de RMs previamente coletadas a ferramenta coletou os dados
@@ -298,7 +288,7 @@ de critérios de inclusão e exclusão.
 
 \begin{figure}[htpb]
 	\centering
-	\includegraphics[width=0.9\linewidth]{./chapter-pesquisa-com-profissionais/img/historico-rm-python.pdf}
+	\includegraphics[width=0.7\linewidth]{./chapter-pesquisa-com-profissionais/img/historico-rm-python.pdf}
 	\caption{Histórico de relatos de uma RM do projeto Python}
 \label{fig:historico-rm-python}
 \end{figure}
@@ -357,16 +347,14 @@ realizado um processo de avaliação constituído de quatro etapas:
 	\item Tradução do Formulário: Em cada uma das etapas anteriores o
 		formulário foi aplicado em português, tendo em vista a falta de fluência
 		em Inglês de alguns profissionais envolvidos no processo de avaliação,
-		em especial na fase ``Piloto da Pesquisa'. Neste sentido, a última etapa
+		em especial na fase Piloto da Pesquisa. Neste sentido, a última etapa
 		consistiu na tradução do formulário para a língua inglesa. Esta etapa
 		foi conduzida com  o suporte de um pesquisador experiente na área de
 		Engenharia de Software.
 \end{enumerate}
 
 Após o processo de avaliação do questionário, enviamos uma mensagem de correio
-eletrônico solicitando colaboração com nosso trabalho de mestrado. A versão do
-formulário que foi enviada aos possíveis participantes está disponível no
-Anexo~\ref{ch:app-form-pesq-profissionais}.
+eletrônico solicitando colaboração com nosso trabalho de mestrado.
 
 %\subsubsection{Envio da Mensagem}
 %\label{subsubsub:envio_mensagem}
@@ -454,16 +442,16 @@ A distribuição geográfica dos participantes demostra uma proeminência de pes
 da Ásia (32\%), Europa (27\%) e em seguida das América do Norte (17\%) e América
 do Sul (12\%). Esta distribuição pode atenuar possíveis enviesamentos que por
 ventura algum nicho geográfico possa apresentar. Todavia, não está no escopo
-deste estudo discutir como que as diferenças de localização do participante pode
-influenciar nos resultados. Os respondentes trabalham em sua maioria em empresas
-privadas de software (74\%). Existem também aqueles que participam de projetos
-de código aberto (6\%) e empresa pública de software (4\%). O restante do grupo
-que respondeu esta questão é composto por contribuidores de projetos de software
-livre e estudantes. É importante considerar que grande parte dos respondentes
-pertencem à empresas privadas, em que os processos e ferramentas não podem ser
-modificados pelo desenvolvedor. Esta característica pode afetar os resultados,
-especialmente quando avaliarmos o nível de satisfação das funcionalidades das
-FGRMs.
+deste estudo discutir como que as diferenças de localização do participante
+podem influenciar nos resultados. Os respondentes trabalham em sua maioria em
+empresas privadas de software (74\%). Existem também aqueles que participam de
+projetos de código aberto (6\%) e empresa pública de software (4\%). O restante
+do grupo que respondeu esta questão é composto por contribuidores de projetos
+de software livre e estudantes. É importante considerar que grande parte dos
+respondentes pertencem à empresas privadas, em que os processos e ferramentas
+não podem ser modificados pelo desenvolvedor. Esta característica pode afetar
+os resultados, especialmente quando avaliarmos o nível de satisfação das
+funcionalidades das FGRMs.
 
 % \begin{figure}[htpb]
 % 	\centering
@@ -531,12 +519,12 @@ Verificamos o nível de satisfação dos participantes com as funcionalidades
 oferecidas pelas FGRMs que ele utiliza. Em grande parte os respondentes estão
 satisfeitos com as funcionalidades. A resposta com maior frequência foi
 \textit{Nem satisfeito ou insatisfeito}, com cerca de 44\% das respostas. Na
-segunda posição, 21 profissionais que corresponde a 29\% dos respondentes, estão
-\textit{Satisfeitos}. A opção \textit{Muito satisfeito} foi escolhida por 15\%
-dos profissionais. As alternativas que podem refletir uma insatisfação sobre as
-funcionalidades (\textit{desapontado ou muito desapontado}) foram escolhidas por
-8 participantes. Considerando os dados obtidos desta amostra, é possível
-verificar que a maior parte dos respondentes estão satisfeitos com as
+segunda posição, 21 profissionais que correspondem a 29\% dos respondentes,
+estão \textit{Satisfeitos}. A opção \textit{Muito satisfeito} foi escolhida por
+15\% dos profissionais. As alternativas que podem refletir uma insatisfação
+sobre as funcionalidades (\textit{desapontado ou muito desapontado}) foram
+escolhidas por 8 participantes. Considerando os dados obtidos desta amostra, é
+possível verificar que a maior parte dos respondentes estão satisfeitos com as
 funcionalidades da FGRM que utiliza. O número de respostas não nos permite
 generalizar o nosso resultado, entretanto, ele não segue o que a literatura
 sobre melhorias em funcionalidades das FGRMs em que se discute um possível
@@ -579,8 +567,9 @@ Muito Improvável & 3 \\ \bottomrule
 \end{tabular}%
 }
 \caption{Probabilidade de Recomendação da Ferramenta Utilizada}
-\label{tab:grafico_melhorias_fgrm_probabilidade_recomentacao}
+\label{tab:grafico_melhorias_fgrm_funcao_particantes}
 \end{table}
+
 
 \subsection{Avaliação das Funcionalidades Existentes}
 \label{sub:avaliação_das_funcionalidades_existentes}
@@ -676,10 +665,11 @@ Análise de Impacto foram as mais frequentes.
 Nesta etapa do levantamento com profissionais, estamos interessados em analisar
 como as práticas propostas pelos agilistas estão sendo utilizadas no
 desenvolvimento e em especial na manutenção de software. Após a apresentação de
-um cardápio de opções os participantes selecionaram como as práticas mais
-adotadas: \textit{Integração Contínua} (17\%), \textit{Padrões de Programação}
-(16\%), \textit{Refatoração} (15\%), \textit{Reunião Diária (daily)} (13\%) e
-\textit{Propriedade compartilhada de código} (10\%).
+um cardápio de opções, obtidas de um livro sobre metodologias
+ágeis~\cite{meyer2014agile}, os participantes selecionaram como as práticas
+mais adotadas: \textit{Integração Contínua} (17\%), \textit{Padrões de
+    Programação} (16\%), \textit{Refatoração} (15\%), \textit{Reunião Diária
+    (daily)} (13\%) e \textit{Propriedade compartilhada de código} (10\%).
 
 A fim de avaliar como as FGRMs podem ajudar aos times de manutenção de software
 na adoção das práticas propostas agilistas, apresentamos aos participantes do
@@ -718,7 +708,7 @@ participantes em que verificamos que cerca de 90\% estão de alguma forma
 satisfeito com a ferramenta que utilizam. Este mesmo sentimento pode ser
 observado pela alta probabilidade de recomendação da FGRM utilizada para um novo
 projeto. Naquela medida verificamos que o mesmo percentual de participantes
-pretendem recomendar o software que utiliza.
+pretende recomendar o software que utiliza.
 
 \paragraph{Funcionalidades Faltantes:}
 \label{par:pesq_profissionais_funcionalidades_faltantes}
@@ -734,11 +724,11 @@ como um dos problemas que pode ocasionar em atrasos na solução das RMs.
 
 Um ponto interessante é que as funcionalidades que os participantes mais
 sentiram falta, também representam a maior quantidade de estudos na literatura.
-Posto de outra forma, a automatização da detecção de duplicadas e atribuição de
-RMs são as soluções mais demandadas e representam o maior número de trabalhos na
-literatura. Este resultado pode sugerir a necessidade de divulgação do que está
-sendo proposto na literatura tendo em vista que os profissionais se mostraram
-interessados nestes tipos de funcionalidades.
+Posto de outra forma, a automatização da detecção de RMs duplicadas e
+atribuição de RMs são as soluções mais demandadas e representam o maior número
+de trabalhos na literatura. Este resultado pode sugerir a necessidade de uma
+maior divulgação do que está sendo proposto na literatura tendo em vista que os
+profissionais se mostraram interessados nestes tipos de funcionalidades.
 
 \paragraph{Suporte às Práticas dos Agilistas:}
 \label{par:pesq_profissionais_suporte_pratica_agilistas}
@@ -753,7 +743,7 @@ funcionalidades tal tendência. Conforme discutido na
 Seção~\ref{sec:caracterizacao_ferramentas} as FGRMs, em sua maioria, não
 apresentam funcionalidades que suportem as práticas propostas pelos agilistas.
 
-\section{Ameças à Validade}
+\section{Ameaças à Validade}
 \label{sec:pesquisa_profissionais_ameacas_validade}
 
 Uma ameaça à validade deste trabalho está no número de respondentes da pesquisa.
