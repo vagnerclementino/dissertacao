@@ -23,3 +23,21 @@
 
 ## Capítulo 03 ##
 
+    - Incluir na Seção 3.2.2 a definição de *gray literature*
+    - Incluir um apêndice com as setenças de busca
+    - Inclusão na seção 3.3 (página 49) de um gráfico para melhor visualização
+      do parágrafo "A frequencia ..."
+    - Na seção 3.3.1.1 no item "Localização do Problema" incluir exemplo para a
+      descrição: "Algumas das melhorias propostas foram incluídas em
+      ferramentas largamente empregadas no mercado utilizando os mecanismos de
+      extensão que elas oferecem"
+    - Na seção 3.3.1.2 incluir a URL das ferramentas ferramentas bugMaps e
+      In* Bug
+    - Na seção 3.3.1.2 revisar a referência Bettenburg et al, 2008
+    - Incluir na seção 3.3.2 um tabela como a Tabela 3.2 para indicar os
+      artigos por tipo de papel
+    - Remoção de duplicadas x remoçaõ de duplicatas
+    - Incluir na seção 3.4 a discussão proposta na página 57
+
+## Capítulo 04 ##
+
