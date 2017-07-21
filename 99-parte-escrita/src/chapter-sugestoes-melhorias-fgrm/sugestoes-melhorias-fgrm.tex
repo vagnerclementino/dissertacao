@@ -4,7 +4,7 @@
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: dom fev 26 12:49:27 BRT 2017
-%Modificação:: sáb mai 13 14:17:28 -03 2017
+%Modificação: qui jul 20 20:46:30 -03 2017
 %Revisão: dom abr 23 23:16:51 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Sugestões de Melhorias para as FGRMs}
@@ -40,10 +40,10 @@ Estas recomendações podem ser utilizadas por pesquisadores interessados em
 conduzir estudos sobre o avanço da produtividade dos desenvolvedores mediante o
 uso das FGRMs. Além disso, os responsáveis pelo desenvolvimento deste tipo de
 software, podem utilizar algumas das recomendações para a criação ou
-aperfeiçoamento das funcionalidades da FGRM que é responsável. Na mesma linha,
-os profissionais envolvidos com Manutenção de Software podem criar extensões
-(plugins) com base no que foi proposto de modo a aplicar essas melhorias em sua
-rotina de trabalho.
+aperfeiçoamento das funcionalidades da FGRM pelas quais são responsáveis. Na
+mesma linha, os profissionais envolvidos com Manutenção de Software podem criar
+extensões (\textit{plug-in}) com base no que foi proposto de modo a aplicar
+essas melhorias em sua rotina de trabalho.
 
 Este capítulo está organizado da seguinte forma: a
 Seção~\ref{sec:sug_melhoria_melhorando_as_ferraementas} apresenta as sugestões
@@ -77,8 +77,8 @@ eventual proposição de uma funcionalidade existente. Ao longo da elaboração 
 sugestões verificamos que não conseguiríamos implementá-las e também não
 conseguiríamos analisar a complexidade de estratégias de implementação.
 Entretanto, como prova de conceito, a sugestão descrita na
-Seção~\ref{sub:supote_a_qualidade_do_relato} foi implementada como extensão de
-do repositório de RMs da plataforma Github, conforme pode ser visto no
+Seção~\ref{sub:supote_a_qualidade_do_relato} foi implementada como extensão do
+repositório de RMs da plataforma Github, conforme pode ser visto no
 Capítulo~\ref{ch:implemtacao_extensao}. As sugestões realizadas foram
 estruturadas como seções deste capítulo, em que apresentamos a
 \textit{justificativa, o benefício gerado, as limitações e exemplos de
@@ -87,8 +87,8 @@ estruturadas como seções deste capítulo, em que apresentamos a
 \subsection{Suporte à Qualidade do Texto Relatado}
 \label{sub:supote_a_qualidade_do_relato}
 
-\sugestao{01}{As FGRMs devem fornecer realimentação (feedback) relacionado com a
-    qualidade do texto relatado.}
+\sugestao{01}{As FGRMs devem fornecer realimentação (\textit{feedback})
+    relacionado à qualidade do texto relatado.}
 
 \paragraph{Justificativa:}
 \label{par:justificativa_s01}
@@ -112,11 +112,11 @@ envolvendo uma estimativa da qualidade do que foi informado no relato da RM\@.
 \label{par:beneficio_s01}
 
 Com este tipo de funcionalidade uma FGRM poderia reduzir o tempo de análise das
-RMs pelo fato que o responsável por criá-la estaria ciente das informações
+RMs uma vez que o responsável por criá-la estaria ciente das informações
 necessárias à sua solução. Neste caso, o desenvolvedor seria diretamente
-beneficiado já que teria a sua disposição um relato mais completo. Não obstante,
-um trabalho adicional seria dado aos reportadores que em algumas situações devem
-rever as informações incluídas na RM\@.
+beneficiado já que teria a sua disposição um relato mais completo. Não
+obstante, um trabalho adicional seria dado aos reportadores que em algumas
+situações devem rever as informações incluídas na RM\@.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s01}
@@ -133,12 +133,12 @@ de uma RM\@.
 \paragraph{Exemplo de Utilização:}
 \label{par:exemplo_s01}
 
-Após o usuário relatar um problema ou pedido de melhoria, a ferramenta de
-poderia avaliar o texto corresponde ao atributo \textit{relato} da RM gerada e
+Após o usuário relatar um problema ou pedido de melhoria, a ferramenta poderia
+avaliar o texto corresponde ao atributo \textit{relato} da RM gerada e
 apresentar ao responsável realimentação sobre como a informação fornecida
 poderia ser melhorada, como por exemplo através da inclusão de um arquivo com o
-histórico de execução do software (log). Como prova de conceito foi implementada
-uma extensão para uma FGRM com estas características no
+histórico de execução do software (log). Como prova de conceito foi
+implementada uma extensão para uma FGRM com estas características no
 Capítulo~\ref{ch:implemtacao_extensao}.
 
 \subsection{Acesso Facilitado ao Código Fonte Incluído nas RMs}
@@ -152,20 +152,20 @@ Capítulo~\ref{ch:implemtacao_extensao}.
 
 As RMs permitem a inclusão de fragmentos de código fonte em seu relato ou nos
 comentários em diversas etapas do seu ciclo de vida. O código pode ser incluído
-durante a criação das RMs, nas discussões realizadas para a sua solução ou mesmo
-quando ela é concluída (fechada). Quando o código corresponde a uma solução
-então recebe o nome de \textit{patch}. Os fragmentos de código podem ser
-utilizados para descrever uma falha ou apresentar uma solução candidata. Apesar
-de sua importância este tipo de informação não é facilmente recuperada no
-contexto de uso de uma FGRM\@. O estudo de Damevski e
+durante a criação das RMs, nas discussões realizadas para a sua solução ou
+mesmo quando ela é concluída (fechada). Quando o código corresponde a uma
+solução então recebe o nome de \textit{patch}. Os fragmentos de código podem
+ser utilizados para descrever uma falha ou apresentar uma solução candidata.
+Apesar de sua importância este tipo de informação não é facilmente recuperada
+no contexto de uso de uma FGRM\@. O estudo de Damevski e
 outros~\cite{damevski2016field}, que analisa o problema da localização de
-funcionalidades no código fonte (feature location), ressalta a importância da
-facilidade de acesso ao código fonte pode propiciar a redução do tempo de
+funcionalidades no código fonte (feature location), ressalta a importância que
+a facilidade de acesso ao código fonte pode propiciar a redução do tempo de
 conclusão da tarefa de manutenção e o aumento da qualidade das alterações
 realizadas. Este é um caso particular de uma sugestão de melhoria que envolve
 generalizar ou especializar a interface de busca das FGRMs. Esta interface tem
-relação com a sugestão \#06 porque pode ser só texto (Recuperação da Informação)
-ou pode envolver elementos não textuais.
+relação com a sugestão \#06 porque pode ser só texto (Recuperação da
+Informação) ou pode envolver elementos não textuais.
 
 \paragraph{Benefício Gerado:}
 \label{par:beneficios_s02}
@@ -201,21 +201,13 @@ Seção~\ref{ssub:melhorias_dim_processo} alguns estudos vêm se dedicando em
 classificar as RMs sob determinados critérios. Por outro lado, é possível
 observar que determinados \textit{Reportadores} têm por hábito relatar pedidos
 que possuem um maior grau de relevância no projeto. Por exemplo, existem certos
-usuários que geralmente relatam RMs relativas à questões de segurança do
-sistema. Neste contexto, seria interessante se as FGRMs aplicassem algum tipo de
-métrica de relevância aos seus usuários, em especial aos reportadores. Em um
+usuários que geralmente relatam RMs relativas a questões de segurança do
+sistema. Neste contexto, seria interessante se as FGRMs aplicassem algum tipo
+de métrica de relevância aos seus usuários, em especial aos reportadores. Em um
 segundo momento, esta mesma medida poderia ser utilizada com a finalidade de
 ranquear as RMs. Neste sentido, conforme a conveniência, um desenvolvedor
-poderia priorizar as requisições de reportadores com um maior grau de reputação.
-
-%Sejam relevantes ao projeto de software, tais requisições deveriam receber algum
-%tipo de etiqueta de modo a diferenciá-las dentro da FGRM\@. Segundo o nosso
-%entendimento uma RM pode ser classificada como relevante se descreve um problema
-%que afeta um grande número de usuários do sistema ou representa uma falha de
-%segurança do software. Além disso deve ser redigida de forma clara e fornecer as
-%informações necessárias para sua solução. O grau de relevância de determinada RM
-%pode variar em diferentes projetos e pode depender de critérios subjetivos de
-%quem analisa.
+poderia priorizar as requisições de reportadores com um maior grau de
+reputação.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s03}
@@ -241,7 +233,7 @@ uma lista de RMs pelo grau de reputação do \textit{Reportador}. Em seguida dar
 início ao processo de atribuição analisando primeiro as RMs mais bem ranqueadas.
 Caso as elas sejam relevantes o profissional poderia realizar a atribuição.
 
-\subsection{Atalhos para filtros e classificação (rankings) das RMs}
+\subsection{Atalhos para filtros e classificação (\textit{rankings}) das RMs}
 \label{sub:histórico_das_ùltimas_rm_s}
 
 \sugestao{04}{As FGRMs deveriam fornecer atalhos para filtros
@@ -286,10 +278,10 @@ Ao acessar a FGRM o desenvolvedor tem acesso as últimas $n$ RMs que ele
 analisou. Além disso, ele poderia criar filtros para acessar outras informações
 que julgar importante no desenvolvimento de suas atividades.
 
-\subsection{Suporte à Processos de Integração Contínua}
+\subsection{Suporte a Processos de Integração Contínua}
 \label{sub:suporte_integracao_continua}
 
-\sugestao{05}{As FGRMs deveriam fornecer suporte à Processos de Integração
+\sugestao{05}{As FGRMs deveriam fornecer suporte a Processos de Integração
     Contínua.}
 
 \paragraph{Justificativa:}
@@ -304,15 +296,16 @@ soluções com o objetivo de realizar a Análise de Impacto. Alguns exemplos de
 trabalhos nesta linha são apresentados na
 Seção~\ref{ssub:melhorias_dim_processo}. Dentro das propostas feitas pelos
 agilistas uma das possibilidades de reduzir os efeitos colaterais de uma mudança
-é periodicamente realizar a construção (build) do sistema. A \textit{Integração
-    Contínua} (IC) é a prática de construir e implantar (deploy) imediatamente
-após um desenvolvedor compromissar (commit) o código
-fonte~\cite{aiello2010configuration}. Neste sentido, as FGRMs poderiam vincular
-a solução de uma RM com a execução do processo de IC\@. Desta forma, seria
-possível associar uma versão do sistema com o conjunto de RMs solucionadas até a
-sua geração. Este tipo de integração foi descrita como uma funcionalidade
-ausente nas FGRMs por alguns participantes do levantamento por questionário
-descrito no Capítulo~\ref{ch:pesquisa-profissionais}.
+é periodicamente realizar a construção (\textit{build}) do sistema. A
+\textit{Integração Contínua} (IC) é a prática de construir e implantar
+(\textit{deploy}) imediatamente após um desenvolvedor compromissar
+(\textit{commit}) o código fonte~\cite{aiello2010configuration}. Neste sentido,
+as FGRMs poderiam vincular a solução de uma RM com a execução do processo de
+IC\@. Desta forma, seria possível associar uma versão do sistema com o conjunto
+de RMs solucionadas até a sua geração. Este tipo de integração foi descrita
+como uma funcionalidade ausente nas FGRMs por alguns participantes do
+levantamento por questionário descrito no
+Capítulo~\ref{ch:pesquisa-profissionais}.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s05}
@@ -404,8 +397,8 @@ disponíveis.
 \subsection{Classificação Automática pela Urgência da RM}
 \label{sub:priorizacao_automatica_rms}
 
-\sugestao{07}{As FGRMs deveriam fornecer uma classificação automática em termos da
-    urgência da RM.}
+\sugestao{07}{As FGRMs deveriam fornecer uma classificação automática em termos
+    da urgência da RM.}
 
 \paragraph{Justificativa:}
 \label{par:justificativa_s07}
@@ -414,13 +407,14 @@ Conforme discutido na Seção~\ref{sub:diferenciacao_do_reportdor} a escolha das
 RMs que serão analisadas é um problema recorrente nas equipes de manutenção.
 Alguns times estão adotando práticas propostas pelos agilistas em suas rotinas
 de manutenção de software~\cite{svensson2005introducing}. Um problema comum, é
-que as iterações (sprint) estão sujeitas à interrupções por demandas urgentes de
-clientes~\cite{bennett2000software}. Uma possível solução é a utilização de uma
-reserva de tempo (buffer) que não é alocada no planejamento da iteração de modo
-a atender eventuais demandas não esperadas~\cite{schwaber2002agile}. Para
-apresentação da solução proposta ainda é necessário definir quais RMs devem ser
-priorizadas durante a iteração, o que geralmente é realizado manualmente. As
-FGRMs poderiam dar suporte à priorização automática de RMs urgentes.
+que as iterações (\textit{sprint}) estão sujeitas a interrupções por demandas
+urgentes de clientes~\cite{bennett2000software}. Uma possível solução é a
+utilização de uma reserva de tempo (\textit{buffer}) que não é alocada no
+planejamento da iteração de modo a atender eventuais demandas não
+esperadas~\cite{schwaber2002agile}. Para apresentação da solução proposta ainda
+é necessário definir quais RMs devem ser priorizadas durante a iteração, o que
+geralmente é realizado manualmente. As FGRMs poderiam dar suporte à priorização
+automática de RMs urgentes.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s07}
@@ -429,9 +423,9 @@ Ao realizarmos a priorização automática estamos reduzindo o esforço desempen
 por alguns membros da equipe de manutenção, em especial pelo Agente de Triagem.
 No caso em que as RMs forem corretamente classificadas como urgentes, elas
 poderão ser solucionadas em um prazo mais curto. Para as equipes que organizam
-as suas atividades em iterações (sprints) pode ocorrer a redução de iterações
-interrompidas o que pode evitar algum tipo de frustração e desmotivação com
-relação ao planejamento e objetivos da iteração.
+as suas atividades em iterações (\textit{sprints}) pode ocorrer a redução de
+iterações interrompidas o que pode evitar algum tipo de frustração e
+desmotivação com relação ao planejamento e objetivos da iteração.
 
 \paragraph{Limitações:}
 \label{par:limitacoes_s07}
@@ -441,7 +435,7 @@ A priorização automática pode ser vista como um problema de
 Seção~\ref{ssub:melhorias_dim_processo}. Em geral, são utilizadas técnicas de
 Mineração de Dados com o objetivo de classificar uma RM, o que possui diversas
 limitações. Neste sentido, o uso de técnicas supervisionadas, ou seja, com
-suporte de membros da equipe de manutenção, podem ajudar na melhoria dos
+suporte de membros da equipe de manutenção, pode ajudar na melhoria dos
 resultados.
 
 \paragraph{Exemplo de Utilização:}
@@ -468,13 +462,13 @@ responsáveis~\cite{singer1998practices}. A propriedade compartilhada de tarefas
 permite que a carga de trabalho seja distribuída de forma mais flexível,
 permitindo que os mantenedores sejam capazes de ajudar uns aos outros. No
 contexto das FGRMs, as tarefas compartilhadas poderiam ser representadas com a
-``propriedade'' de uma RM por dois ou mais desenvolvedores. Uma abordagem
-semelhante a esta sugestão foi realizada no estudo proposto por Banitaan \&
-Alenezi~\cite{banitaan2013decoba} no qual os autores construíram uma comunidade
-de desenvolvedores baseados nos comentários realizados nas RMs. Cada RM criada
-era atribuída para uma comunidade. Os resultados mostraram que a abordagem
-atingiu uma precisão razoável de atribuição de RMs, além de construir um
-conjunto de desenvolvedores com experiência em solucionar determinadas RMs.
+``propriedade'' de uma RM por dois ou mais desenvolvedores. A literatura sobre
+o tema aparesenta uma abordagem semelhante em que os autores construíram uma
+comunidade de desenvolvedores baseada nos comentários realizados nas
+RMs~\cite{banitaan2013decoba}. Cada RM criada era atribuída para uma
+comunidade. Os resultados mostraram que a abordagem atingiu uma precisão
+razoável de atribuição de RMs, além de construir um conjunto de desenvolvedores
+com experiência em solucionar determinadas RMs.
 
 \paragraph{Benefício Gerado:}
 \label{par:papéis_afetados_s08}
@@ -552,7 +546,7 @@ inclui os seguintes requisitos:
     \item Os projetos obtidos devem estar entre os 50 mais populares que atendam
         aos demais critérios e estejam entre os melhores classificados pela
         ordenação via a opção ``most stars'', que representa o número de usuário
-        do Github que mostraram apreciação sobre o trabalhado desenvolvido no
+        do Github que mostraram apreciação sobre o trabalho desenvolvido no
         repositório.
 \end{itemize}
 
@@ -681,15 +675,16 @@ OUTROS & 6 \\
 
 Com relação à função desempenhada mais da metade dos participantes são
 desenvolvedores (53\%). O segundo grupo de cargo com maior frequência são
-aqueles ligados à gerenciamento de equipes (Gerentes de Projetos, Chief
-Technical Officer e etc.). Verificamos ainda a participação de Engenheiros e
-Arquitetos de Software. Sobre o tempo de experiência, o percentual de 45\% dos
-respondentes têm entre dez e vinte anos de experiência. A maior parte desempenha
-suas atividades em equipes com 2 a 5 pessoas ou com mais do 10 membros. Quando
-questionamos sobre qual o tipo de atividade desempenhada pelo participante,
-cerca de 85\% trabalham com desenvolvimento ou manutenção de software. Com base
-no perfil apurado entendemos que os participantes são adequados para efetuar a
-análise das sugestões de melhorias desta dissertação.
+aqueles ligados ao gerenciamento de equipes (Gerentes de Projetos,
+\textit{Chief Technical Officer} e etc.). Verificamos ainda a participação de
+Engenheiros e Arquitetos de Software. Sobre o tempo de experiência, o
+percentual de 45\% dos respondentes tem entre dez e vinte anos de experiência.
+A maior parte desempenha suas atividades em equipes com 2 a 5 pessoas ou com
+mais do 10 membros. Quando questionamos sobre qual o tipo de atividade
+desempenhada pelo participante, cerca de 85\% trabalham com desenvolvimento ou
+manutenção de software. Com base no perfil apurado entendemos que os
+participantes são adequados para efetuar a análise das sugestões de melhorias
+desta dissertação.
 
 \subsection{Relevância das Sugestões}
 \label{sub:sug_melhorias_resultados_relevancia}
@@ -868,7 +863,7 @@ encontrada em uma das FGRMs analisadas. Entretanto, o nosso resultado demonstra,
 com base na amostra utilizada, que deveria ser estendida para outras
 ferramentas.
 
-O suporte à tarefas compartilhadas (sugestão \#8) também foi muito bem aceita.
+O suporte a tarefas compartilhadas (sugestão \#8) também foi muito bem aceita.
 Esta recomendação surgiu das tentativas de implantação das propostas dos
 agilistas~\cite{svensson2005introducing}. A sugestão defende que uma
 determinada RM não tenha um único ``dono'', mas que a responsabilidade seja
@@ -891,21 +886,16 @@ distintas o que pode dificultar o seu suporte.
 \section{Ameaças à Validade}
 \label{sec:sug_melhoria_ameacas}
 
-Para avaliarmos as sugestões propostas utilizamos um levantamento empregando uma
-amostra de conveniência. Apesar da taxa de resposta estar dentro da faixa
+Para avaliarmos as sugestões propostas utilizamos um levantamento empregando
+uma amostra de conveniência. Apesar da taxa de resposta estar dentro da faixa
 observada na literatura, o total de participantes não nos permite extrapolar os
 resultados para todos os contextos em que as FGRMs estão inseridas.
 Adicionalmente, os critérios utilizados para seleção, como por exemplo, seis
 meses de desenvolvimento ou ter no mínimo duzentas revisões, não nos permite
 afirmar que foram escolhidos os projetos mais representativos para o nosso
-público-alvo.
-
-A utilização de apenas projetos públicos hospedados no Github pode ter causado
-algum tipo de direcionamento, como por exemplo foco em projetos de código
-aberto. Além disso, não há garantidas que os critérios utilizados para seleção,
-como por exemplo seis meses de desenvolvimento ou ter no mínimo 200 revisões
-(commits), não nos permite afirmar que foram escolhidos escolher os projetos
-mais representativos.
+público-alvo. A utilização de apenas projetos públicos hospedados no Github
+pode ter causado algum tipo de direcionamento, como por exemplo foco em
+projetos de código aberto.
 
 A estrutura das perguntas do formulário pode ter causado impacto na quantidade
 de respostas ou na opção escolhida pelos participantes. Esta situação pode ter
@@ -933,6 +923,6 @@ funcionalidades das FGRMs. A avaliação foi realizada com base na opinião de
 desenvolvedores que contribuem para projetos de código aberto deste tipo de
 software. Em geral, as sugestões de melhorias foram bem avaliadas. Mais de 30\%
 avaliaram as recomendações de forma positiva (``Concordo'' ou  ``Concordo
-Fortemente''). Quanto a dificuldade de implementação, metade delas foi
+Fortemente''). Quanto à dificuldade de implementação, metade delas foi
 considerada de fácil implementação. No próximo capítulo discutimos aspectos de
 implementação da Sugestão \#1 na plataforma Github.

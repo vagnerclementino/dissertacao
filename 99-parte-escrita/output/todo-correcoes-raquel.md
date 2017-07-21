@@ -76,4 +76,12 @@
 
     - Explicar melhor os números descritos no primeiro e segundo parágrafo da
       Seção 5.1
-    -  
+    - Incluir nas sugestões de melhorias as sugestões da professora Raquel
+    - Incluir quais as boas práticas descritas na Seleção dos Participantes
+      (Bird et al., 2009)
+    - Incluir a mensagem enviada aos participantes do levantamento descrito na
+      seçaõ  5.3.3
+    - Incluir quais a descrição das sugestões de melhorias ao invés do seu
+      apelido (ex. #1)
+    - Revisar as figuras 5.2 e 5.3 para exibição no formato de escla de cinza 
+    - Revisar o temor "dificuldade média" apresentado na página 94
