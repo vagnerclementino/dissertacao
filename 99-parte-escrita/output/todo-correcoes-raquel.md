@@ -85,3 +85,8 @@
       apelido (ex. #1)
     - Revisar as figuras 5.2 e 5.3 para exibição no formato de escla de cinza 
     - Revisar o temor "dificuldade média" apresentado na página 94
+    - Revisar as "provocações" Raquel nas sugestões de melhoria
+
+## Capítulo 06 ##
+
+    - Revisar os dizeres da "IssueQuality" conforme exibido na figura 6.2 e 6.4
