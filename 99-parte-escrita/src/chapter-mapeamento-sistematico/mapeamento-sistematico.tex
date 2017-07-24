@@ -107,8 +107,11 @@ critérios para inclusão ou exclusão de artigos no mapeamento:
 		\end{itemize}
 	\item Critérios de Exclusão
 		\begin{itemize}
-			\item Livros e literatura cinza (\textit{gray literature})
-			\item Artigos que não possuem relação com FGRM
+            \item Livros e literatura cinza (\textit{grey
+                  literature}~\cite{keele2007guidelines}), por exemplo,
+                  relatórios técnicos, \textit{white papers}, trabalhos em
+                  progresso e etc.)
+             \item Artigos que não possuem relação com FGRM
 			\item Estudos duplicados, neste caso foi considerada a versão mais
 				completa do trabalho
 		\end{itemize}
@@ -130,8 +133,9 @@ de pesquisa estão disponíveis no
 Anexo~\ref{ch:app-setenca-de-busca-base-dados}.
 
 Após uma busca automatizada chegamos a um total de 286 artigos\footnote{A lista
-    inicial de artigos pode ser acessada em~\url{}}. A
-Tabela~\ref{tab:estudos-por-base-dados} exibe o total de estudos recuperados
+    inicial de artigos, após a remoção do duplicados, pode ser acessada
+    em~\url{https://archive.org/download/dissertacao-vagner-clementino-um-estudo/artigo-todos-sem-duplicados.csv}}.
+A Tabela~\ref{tab:estudos-por-base-dados} exibe o total de estudos recuperados
 por base de pequisa. Os trabalhos coletados foram avaliados, através da
 ferramenta \textit{JabRef}\footnote{\url{https://www.jabref.org/}}, em busca de
 possíveis duplicados. Esta etapa resultou na exclusão de 81 artigos, desta
@@ -271,39 +275,31 @@ uma das dimensões de melhoria. Seguimos com a análise dos estudos pelo papel a
 qual a funcionalidade proposta visa dar suporte.
 
 A frequência de publicação dos estudos teve em 2010, primeiro ano do período
-analisado, um total de 05 trabalhos publicados. A maior quantidade de publicação
-ocorreu entre os anos de 2012, 2013 e 2014, com, respectivamente, 14, 12 e 13
-artigos. No ano de 2016, último ano do período de referência, encontramos 03
-estudos publicados
+analisado, um total de 05 trabalhos publicados. A maior quantidade de
+publicação ocorreu entre os anos de 2012, 2013 e 2014, com, respectivamente,
+14, 12 e 13 artigos. No ano de 2016, último ano do período de referência,
+encontramos 03 estudos publicados. A Tabela~\ref{tab:publicacao_por_ano} exibe
+o número de estudos primários identificados entre os anos de 2010 e 2016,
+período de referência utilizado no mapeamento.
 
-% \subsection{Frequência das Publicações}
-% \label{sub:frequencia_publicacao}
-
-% A Tabela~\ref{tab:publicacao_por_ano} exibe o número de estudos primários
-% identificados entre os anos de 2010 e 2016, período de referência utilizado no
-% mapeamento. Dentre os estudos escolhidos, verificamos que em 2010 foram
-% publicados cinco estudos sobre o assunto~\cite{sun2010discriminative,
-% 	gegick2010identifying, song2010jdf, nagwani2010predictive,
-% 	zimmermann2010makes}. Posteriormente constatamos um acréscimo no número de
-% estudos no qual o maior aumento pode ser observado entre os anos de
-% 2012\@-\@2014.
-
-% \begin{table}[htpb]
-% \centering
-% \begin{tabular}{@{}cc@{}}
-% \toprule
-% \multicolumn{1}{l}{\textbf{Ano}} & \textbf{Frequência} \\ \midrule
-% 2010 & 5 \\
-% 2011 & 8 \\
-% 2012 & 14 \\
-% 2013 & 12 \\
-% 2014 & 13 \\
-% 2015 & 9 \\
-% 2016 & 3 \\ \bottomrule
-% \end{tabular}
-% \caption{Número de estudos primários por ano de publicação.}
-% \label{tab:publicacao_por_ano}
-% \end{table}
+\begin{table}[htpb]
+\centering
+\resizebox{.25\textwidth}{!}{%
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Ano} & \textbf{Frequência} \\ \midrule
+2010         & 5                   \\
+2011         & 8                   \\
+2012         & 14                  \\
+2013         & 12                  \\
+2014         & 13                  \\
+2015         & 9                   \\
+2016         & 3                   \\ \bottomrule
+\end{tabular}%
+}
+\caption{Número de estudos primários por ano de publicação.}
+\label{tab:publicacao_por_ano}
+\end{table}
 
 \subsection{Classificação por Dimensões de Melhoria}
 \label{sub:extensões_para_problemas_na_manutenção_de_software}
@@ -315,8 +311,8 @@ discutidas na Subseção~\ref{subsubsec:map-esquema-suporte-problema}. O segundo
 nível é composto por tópicos que são os problemas do gerenciamento das RMs. Uma
 discussão mais detalhada sobre estes problemas pode ser encontrada na
 Subseção~\ref{ssub:problemas_relacionadas_rm}. A
-Tabela~\ref{tab:taxonomia-problemas-manutencao} exibe a distribuição dos estudos
-pela dimensão de melhoria e o seu respectivo tópico.
+Tabela~\ref{tab:taxonomia-problemas-manutencao} exibe a distribuição dos
+estudos pela dimensão de melhoria e o seu respectivo tópico.
 
 % Inclusão da tabela
 \input{chapter-mapeamento-sistematico/tables/tb-taxonomia-problemas-manutencao.tex}
@@ -340,8 +336,18 @@ versões do código fonte do
 sistema~\cite{Bangcharoensap:2012:LSC:2419061.2419428, corley2011recovering,
     Romo:2015:TAT:2745802.2745833}. Algumas das melhorias propostas foram
 incluídas em ferramentas largamente empregadas no mercado utilizando os
-mecanismos de extensão que elas
-oferecem~\cite{Thung:2014:BIT:2635868.2661678,corley2011recovering}.
+mecanismos de extensão que elas oferecem. A ferramenta
+\textit{BugLocalizer}\footnote{\url{https://github.com/smagsmu/buglocalizer}},
+implementada como extensão do Bugzilla, extrai o texto do sumário e do relato
+de uma RM e calcula a semelhança entre o texto relatado e o código fonte para
+encontrar os arquivos onde a falha possívelmente está
+localizada~\cite{Thung:2014:BIT:2635868.2661678}. A ferramenta
+\textit{BugTrace}~\cite{corley2011recovering} é uma extensão do Bugzilla que
+implementa uma abordagem que analisa os \textit{patches}\footnote{Um
+    \textit{patch} é um software projetado para atualizar um programa de
+    computador ou seus dados de suporte, para corrigi-lo ou melhorá-lo.}
+inseridos em RM para determinar um elo de rastreabilidade entre uma falha e o
+código fonte.
 
 \paragraph{Visualização de RM:}
 
@@ -349,7 +355,7 @@ Os estudos neste tópico estão relacionados com melhoria da visualização da
 informação contida na RM\@. Com o objetivo de apresentar diferentes formas de
 visualizar os dados de uma RM novos conceitos estão sendo propostos. No estudo
 de Hora e outros~\cite{hora2012bug} é apresentado o conceito de Mapas de
-Defeitos (\textit{Bugs Maps}) que mostra a RM e uma ligação dela com outros
+Defeitos (\textit{BugsMaps)} que mostra a RM e uma ligação dela com outros
 artefatos de software, por exemplo, o histórico de versões. O conceito de
 hiperligação entre documentos é utilizado para permitir a navegação entre os
 artefatos que estão relacionados a uma RM~\cite{dal2014bug}.
@@ -367,8 +373,9 @@ atualizações ocorridas nas mesmas.
 Por conta da natureza das melhorias propostas neste tópico de pesquisa,
 verificamos que diversos estudos foram implementados como protótipos. Desta
 forma, é possível avaliar as propostas contidas neste tópico através das
-ferramentas como o \textit{bugMaps}~\cite{hora2012bug} e \textit{In*
-    Bug}~\cite{dal2014bug}.
+ferramentas como o
+\textit{bugMaps}\footnote{\url{http://rmod.lille.inria.fr/web/pier/software/BugMaps}}~\cite{hora2012bug}
+e \textit{In* Bug}\footnote{\url{http://inbug.inf.usi.ch}}~\cite{dal2014bug}.
 
 \subsubsection{Melhorias Propostas na Dimensão Informação}
 \label{ssub:melhorias_dim_informacao}

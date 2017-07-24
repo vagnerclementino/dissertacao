@@ -1,0 +1,220 @@
+"nome_ferramenta","relevancia","frequencia"
+Apache Bloodhound,Muito relevante,1
+Apache Bloodhound,Nada relevante,1
+Apache Bloodhound,Não conheço a ferramenta,50
+Apache Bloodhound,Pouco relevante,1
+Apache Bloodhound,Relevante,1
+Assembla Tickets,Nada relevante,2
+Assembla Tickets,Não conheço a ferramenta,48
+Assembla Tickets,Pouco relevante,2
+Assembla Tickets,Relevante,2
+Axosoft,Nada relevante,2
+Axosoft,Não conheço a ferramenta,50
+Axosoft,Pouco relevante,1
+Axosoft,Relevante,1
+BMC Remedy Action Request System,Nada relevante,1
+BMC Remedy Action Request System,Não conheço a ferramenta,50
+BMC Remedy Action Request System,Pouco relevante,2
+BMC Remedy Action Request System,Relevante,1
+Bontq,Nada relevante,1
+Bontq,Não conheço a ferramenta,51
+Bontq,Pouco relevante,1
+Bontq,Relevante,1
+Brimir,Nada relevante,2
+Brimir,Não conheço a ferramenta,50
+Brimir,Pouco relevante,1
+Brimir,Relevante,1
+Bugzilla,Muito relevante,13
+Bugzilla,Nada relevante,6
+Bugzilla,Não conheço a ferramenta,17
+Bugzilla,Pouco relevante,10
+Bugzilla,Relevante,8
+CA Service Desk,Muito relevante,4
+CA Service Desk,Nada relevante,1
+CA Service Desk,Não conheço a ferramenta,43
+CA Service Desk,Pouco relevante,4
+Debbugs,Nada relevante,1
+Debbugs,Não conheço a ferramenta,49
+Debbugs,Pouco relevante,3
+Debbugs,Relevante,1
+FogBugz,Muito relevante,1
+FogBugz,Nada relevante,3
+FogBugz,Não conheço a ferramenta,41
+FogBugz,Pouco relevante,5
+FogBugz,Relevante,4
+Fossil SCM,Nada relevante,2
+Fossil SCM,Não conheço a ferramenta,48
+Fossil SCM,Pouco relevante,3
+Fossil SCM,Relevante,1
+FusionForge,Nada relevante,2
+FusionForge,Não conheço a ferramenta,50
+FusionForge,Pouco relevante,1
+FusionForge,Relevante,1
+Gestionnaire libre de parc informatique,Nada relevante,1
+Gestionnaire libre de parc informatique,Não conheço a ferramenta,51
+Gestionnaire libre de parc informatique,Pouco relevante,1
+Gestionnaire libre de parc informatique,Relevante,1
+GNATS GNU,Nada relevante,2
+GNATS GNU,Não conheço a ferramenta,49
+GNATS GNU,Pouco relevante,1
+GNATS GNU,Relevante,2
+Google Code Hosting,Nada relevante,5
+Google Code Hosting,Não conheço a ferramenta,37
+Google Code Hosting,Pouco relevante,8
+Google Code Hosting,Relevante,4
+HP Quality Center,Muito relevante,1
+HP Quality Center,Nada relevante,2
+HP Quality Center,Não conheço a ferramenta,45
+HP Quality Center,Pouco relevante,3
+HP Quality Center,Relevante,3
+IBM Rational ClearQuest,Nada relevante,1
+IBM Rational ClearQuest,Não conheço a ferramenta,43
+IBM Rational ClearQuest,Pouco relevante,6
+IBM Rational ClearQuest,Relevante,4
+IBM Rational Team Concert,Muito relevante,1
+IBM Rational Team Concert,Nada relevante,1
+IBM Rational Team Concert,Não conheço a ferramenta,45
+IBM Rational Team Concert,Pouco relevante,4
+IBM Rational Team Concert,Relevante,3
+JIRA Software,Muito relevante,23
+JIRA Software,Nada relevante,2
+JIRA Software,Não conheço a ferramenta,14
+JIRA Software,Pouco relevante,1
+JIRA Software,Relevante,14
+Kayako SupportSuite,Nada relevante,1
+Kayako SupportSuite,Não conheço a ferramenta,47
+Kayako SupportSuite,Pouco relevante,4
+Kayako SupportSuite,Relevante,2
+Launchpad,Muito relevante,1
+Launchpad,Nada relevante,5
+Launchpad,Não conheço a ferramenta,42
+Launchpad,Pouco relevante,3
+Launchpad,Relevante,3
+Liberum Help Desk,Nada relevante,3
+Liberum Help Desk,Não conheço a ferramenta,49
+Liberum Help Desk,Pouco relevante,1
+Liberum Help Desk,Relevante,1
+Mantis Bug Tracker,Muito relevante,7
+Mantis Bug Tracker,Nada relevante,2
+Mantis Bug Tracker,Não conheço a ferramenta,36
+Mantis Bug Tracker,Pouco relevante,4
+Mantis Bug Tracker,Relevante,5
+Microsoft Dynamics CRM,Nada relevante,10
+Microsoft Dynamics CRM,Não conheço a ferramenta,38
+Microsoft Dynamics CRM,Pouco relevante,3
+Microsoft Dynamics CRM,Relevante,3
+Open-source Ticket Request System,Muito relevante,1
+Open-source Ticket Request System,Nada relevante,1
+Open-source Ticket Request System,Não conheço a ferramenta,45
+Open-source Ticket Request System,Pouco relevante,4
+Open-source Ticket Request System,Relevante,3
+org-mode,Nada relevante,2
+org-mode,Não conheço a ferramenta,50
+org-mode,Pouco relevante,1
+org-mode,Relevante,1
+Pivotal Tracker,Muito relevante,2
+Pivotal Tracker,Nada relevante,2
+Pivotal Tracker,Não conheço a ferramenta,43
+Pivotal Tracker,Pouco relevante,3
+Pivotal Tracker,Relevante,4
+Plain Ticket,Nada relevante,2
+Plain Ticket,Não conheço a ferramenta,50
+Plain Ticket,Pouco relevante,1
+Plain Ticket,Relevante,1
+Planbox,Nada relevante,1
+Planbox,Não conheço a ferramenta,49
+Planbox,Pouco relevante,1
+Planbox,Relevante,3
+QuickBase,Nada relevante,2
+QuickBase,Não conheço a ferramenta,50
+QuickBase,Pouco relevante,1
+QuickBase,Relevante,1
+Redmine,Muito relevante,8
+Redmine,Nada relevante,2
+Redmine,Não conheço a ferramenta,34
+Redmine,Pouco relevante,4
+Redmine,Relevante,6
+Request Tracker,Nada relevante,2
+Request Tracker,Não conheço a ferramenta,49
+Request Tracker,Pouco relevante,1
+Request Tracker,Relevante,2
+Roundup Issue Tracker,Muito relevante,1
+Roundup Issue Tracker,Nada relevante,3
+Roundup Issue Tracker,Não conheço a ferramenta,46
+Roundup Issue Tracker,Pouco relevante,1
+Roundup Issue Tracker,Relevante,3
+SourceSafe,Muito relevante,1
+SourceSafe,Nada relevante,6
+SourceSafe,Não conheço a ferramenta,37
+SourceSafe,Relevante,1
+StarTeam,Nada relevante,1
+StarTeam,Não conheço a ferramenta,51
+StarTeam,Pouco relevante,1
+StarTeam,Relevante,1
+Supportworks,Nada relevante,1
+Supportworks,Não conheço a ferramenta,51
+Supportworks,Pouco relevante,1
+Supportworks,Relevante,1
+SysAid,Nada relevante,1
+SysAid,Não conheço a ferramenta,51
+SysAid,Pouco relevante,1
+SysAid,Relevante,1
+Targetprocess,Nada relevante,1
+Targetprocess,Não conheço a ferramenta,50
+Targetprocess,Pouco relevante,1
+Targetprocess,Relevante,2
+Team Foundation Server,Muito relevante,4
+Team Foundation Server,Nada relevante,2
+Team Foundation Server,Não conheço a ferramenta,36
+Team Foundation Server,Pouco relevante,7
+Team Foundation Server,Relevante,5
+TechExcel's DevTrack,Nada relevante,1
+TechExcel's DevTrack,Não conheço a ferramenta,51
+TechExcel's DevTrack,Pouco relevante,1
+TechExcel's DevTrack,Relevante,1
+TestTrack,Nada relevante,1
+TestTrack,Não conheço a ferramenta,50
+TestTrack,Pouco relevante,2
+TestTrack,Relevante,1
+The Bug Genie,Nada relevante,1
+The Bug Genie,Não conheço a ferramenta,50
+The Bug Genie,Pouco relevante,2
+The Bug Genie,Relevante,1
+Trac Bug Tracking System,Nada relevante,4
+Trac Bug Tracking System,Não conheço a ferramenta,44
+Trac Bug Tracking System,Pouco relevante,2
+Trac Bug Tracking System,Relevante,4
+TrackerSuite.Net,Nada relevante,1
+TrackerSuite.Net,Não conheço a ferramenta,51
+TrackerSuite.Net,Pouco relevante,1
+TrackerSuite.Net,Relevante,1
+Tuleap,Nada relevante,1
+Tuleap,Não conheço a ferramenta,51
+Tuleap,Pouco relevante,1
+Tuleap,Relevante,1
+Twproject,Nada relevante,1
+Twproject,Não conheço a ferramenta,51
+Twproject,Pouco relevante,1
+Twproject,Relevante,1
+Usersnap Bug Tracking System,Nada relevante,1
+Usersnap Bug Tracking System,Não conheço a ferramenta,51
+Usersnap Bug Tracking System,Pouco relevante,1
+Usersnap Bug Tracking System,Relevante,1
+Web Help Desk,Muito relevante,2
+Web Help Desk,Nada relevante,1
+Web Help Desk,Não conheço a ferramenta,47
+Web Help Desk,Pouco relevante,3
+Web Help Desk,Relevante,1
+Wrike Project management software,Nada relevante,2
+Wrike Project management software,Não conheço a ferramenta,49
+Wrike Project management software,Pouco relevante,2
+Wrike Project management software,Relevante,1
+YouTrack,Muito relevante,3
+YouTrack,Nada relevante,1
+YouTrack,Não conheço a ferramenta,48
+YouTrack,Pouco relevante,1
+YouTrack,Relevante,1
+Zoho BugTracker,Nada relevante,2
+Zoho BugTracker,Não conheço a ferramenta,47
+Zoho BugTracker,Pouco relevante,2
+Zoho BugTracker,Relevante,3
