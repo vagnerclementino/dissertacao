@@ -7,18 +7,17 @@
 %Modificação: qui jul 20 20:46:30 -03 2017
 %Revisão: dom abr 23 23:16:51 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Sugestões de Melhorias para as FGRMs}
-\label{ch:sug_melhoria}
+\chapter{Sugestões de Melhorias para as FGRMs}\label{ch:sug_melhoria}
 
-\section{Introdução}
-\label{sec:sug_melhoria_intro}
+\section{Introdução}\label{sec:sug_melhoria_intro}
 
 No levantamento por questionário descrito no
 Capítulo~\ref{ch:pesquisa-profissionais} os profissionais consultados se
 mostraram, em geral, satisfeitos com as funcionalidades disponibilizadas pelas
-FGRMs. Cerca de 90\% dos par\-ti\-ci\-pan\-tes fizeram uma avaliação positiva da
-ferramenta que utilizam, além disso, também cerca de 90\% dos participantes
-disseram que recomendariam as FGRMs que utilizam para um novo projeto.
+FGRMs. Cerca de 44\% dos par\-ti\-ci\-pan\-tes fizeram uma avaliação positiva
+da ferramenta que utilizam, além disso, também cerca de 76\% dos participantes
+disseram que recomendariam as FGRMs que utilizam para um novo projeto (opções
+\textit{Provável} e \textit{Com certeza}).
 
 Não obstante, naquela mesma pesquisa, apresentamos uma lista de possíveis novas
 funcionalidades para as FGRMs e perguntamos ao participante quais
@@ -59,8 +58,7 @@ processo de avaliação; na Seção~\ref{sec:sug_melhoria_ameacas} apresentamos 
 ameaças à validade; encerramos o capítulo com um resumo na
 Seção~\ref{sec:sug_melhoria_resumo}.
 
-\section{Sugestões de Melhorias para FGRMs}
-\label{sec:sug_melhoria_melhorando_as_ferraementas}
+\section{Sugestões de Melhorias para FGRMs}\label{sec:sug_melhoria_melhorando_as_ferraementas}
 
 As sugestões propostas neste capítulo não estão vinculadas exclusivamente à
 melhorias de funcionalidades existentes nas FGRMs. As recomendações podem
@@ -84,14 +82,12 @@ estruturadas como seções deste capítulo, em que apresentamos a
 \textit{justificativa, o benefício gerado, as limitações e exemplos de
     utilização.}
 
-\subsection{Suporte à Qualidade do Texto Relatado}
-\label{sub:supote_a_qualidade_do_relato}
+\subsection{Suporte à Qualidade do Texto Relatado}\label{sub:supote_a_qualidade_do_relato}
 
 \sugestao{01}{As FGRMs devem fornecer realimentação (\textit{feedback})
     relacionado à qualidade do texto relatado.}
 
-\paragraph{Justificativa:}
-\label{par:justificativa_s01}
+\paragraph{Justificativa:}\label{par:justificativa_s01}
 
 Conforme discutido na
 Seção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software} o
@@ -108,8 +104,7 @@ FGRMs poderiam fornecer uma funcionalidade capaz de reduzir o número de relatos
 de baixa qualidade através, por exemplo, de uma realimentação ao Reportador
 envolvendo uma estimativa da qualidade do que foi informado no relato da RM\@.
 
-\paragraph{Benefício Gerado:}
-\label{par:beneficio_s01}
+\paragraph{Benefício Gerado:}\label{par:beneficio_s01}
 
 Com este tipo de funcionalidade uma FGRM poderia reduzir o tempo de análise das
 RMs uma vez que o responsável por criá-la estaria ciente das informações
@@ -118,8 +113,7 @@ beneficiado já que teria a sua disposição um relato mais completo. Não
 obstante, um trabalho adicional seria dado aos reportadores que em algumas
 situações devem rever as informações incluídas na RM\@.
 
-\paragraph{Limitações:}
-\label{par:limitacoes_s01}
+\paragraph{Limitações:}\label{par:limitacoes_s01}
 
 Alguns estudos sobre a melhoria da qualidade do relato da RM focam
 prioritariamente nas requisições que descrevem defeitos do software. Conforme
@@ -130,8 +124,7 @@ mesma forma, seria importante definir padrões distintos para analisar a
 qualidade do relato por conta de suas diferentes características e necessidades
 de uma RM\@.
 
-\paragraph{Exemplo de Utilização:}
-\label{par:exemplo_s01}
+\paragraph{Exemplo de Utilização:}\label{par:exemplo_s01}
 
 Após o usuário relatar um problema ou pedido de melhoria, a ferramenta poderia
 avaliar o texto corresponde ao atributo \textit{relato} da RM gerada e
@@ -141,14 +134,12 @@ histórico de execução do software (log). Como prova de conceito foi
 implementada uma extensão para uma FGRM com estas características no
 Capítulo~\ref{ch:implemtacao_extensao}.
 
-\subsection{Acesso Facilitado ao Código Fonte Incluído nas RMs}
-\label{sub:busca_por_código_fonte}
+\subsection{Acesso Facilitado ao Código Fonte Incluído nas RMs}\label{sub:busca_por_código_fonte}
 
 \sugestao{02}{As FGRMs deveriam fornecer busca pelo código fonte contido no
     relato, comentários ou anexos das RMs.}
 
-\paragraph{Justificativa:}
-\label{par:justificativa_s02}
+\paragraph{Justificativa:}\label{par:justificativa_s02}
 
 As RMs permitem a inclusão de fragmentos de código fonte em seu relato ou nos
 comentários em diversas etapas do seu ciclo de vida. O código pode ser incluído
@@ -167,8 +158,7 @@ generalizar ou especializar a interface de busca das FGRMs. Esta interface tem
 relação com a sugestão \#06 porque pode ser só texto (Recuperação da
 Informação) ou pode envolver elementos não textuais.
 
-\paragraph{Benefício Gerado:}
-\label{par:beneficios_s02}
+\paragraph{Benefício Gerado:}\label{par:beneficios_s02}
 
 Com um fácil acesso ao código fonte um desenvolvedor pode obter exemplos de
 solução para RMs similares. Este tipo de funcionalidade pode ser vantajosa em
@@ -177,8 +167,7 @@ permitir a recuperação com base em elementos específicos da linguagem de
 programação utilizada pelo software que a FGRM suporta, como por exemplo
 classes, funções, constantes e outros.
 
-\paragraph{Exemplo de Utilização:}
-\label{par:exemplo_s02}
+\paragraph{Exemplo de Utilização:}\label{par:exemplo_s02}
 
 Em certas ocasiões, uma RM em análise pode ter similaridades com outras
 solucionadas anteriormente. A similaridade pode ser devido a afetarem o mesmo
@@ -186,14 +175,12 @@ módulo do sistema, por exemplo. Um desenvolvedor poderia realizar uma busca por
 código fonte na RM solucionada com o objetivo de encontrar fragmentos de código
 que o ajudem no entendimento e solução do pedido atual.
 
-\subsection{Ranqueamento pela Reputação do Reportador}
-\label{sub:diferenciacao_do_reportdor}
+\subsection{Ranqueamento pela Reputação do Reportador}\label{sub:diferenciacao_do_reportdor}
 
 \sugestao{03}{As FGRMs deveriam permitir um ranqueamento das RMs de acordo com a
 reputação do Reportador.}
 
-\paragraph{Justificativa:}
-\label{par:justificativa_s03}
+\paragraph{Justificativa:}\label{par:justificativa_s03}
 
 Um problema recorrente em diversos projetos de software é a definição da ordem
 que o conjunto de RMs deve ser analisado. Conforme discutido na
@@ -209,8 +196,7 @@ ranquear as RMs. Neste sentido, conforme a conveniência, um desenvolvedor
 poderia priorizar as requisições de reportadores com um maior grau de
 reputação.
 
-\paragraph{Benefício Gerado:}
-\label{par:papéis_afetados_s03}
+\paragraph{Benefício Gerado:}\label{par:papéis_afetados_s03}
 
 Uma das possíveis atividades desempenhadas pelo \textit{Agente de Triagem} é
 definir o desenvolvedor mais apto para determinada RM\@. Ele pode utilizar
@@ -225,22 +211,19 @@ caso descreva um problema que afete um grande número de usuários ou represente
 uma falha de segurança do software. Além disso, deve ser redigida de forma clara
 e fornecer as informações necessárias para sua solução.
 
-\paragraph{Exemplo de Utilização:}
-\label{par:exemplo_de_utilização_s03}
+\paragraph{Exemplo de Utilização:}\label{par:exemplo_de_utilização_s03}
 
 Conforme descrito anteriormente, um \textit{Agente de Triagem} poderia ordenar
 uma lista de RMs pelo grau de reputação do \textit{Reportador}. Em seguida daria
 início ao processo de atribuição analisando primeiro as RMs mais bem ranqueadas.
 Caso as elas sejam relevantes o profissional poderia realizar a atribuição.
 
-\subsection{Atalhos para filtros e classificação (\textit{rankings}) das RMs}
-\label{sub:histórico_das_ùltimas_rm_s}
+\subsection{Atalhos para filtros e classificação (\textit{rankings}) das RMs}\label{sub:histórico_das_ùltimas_rm_s}
 
 \sugestao{04}{As FGRMs deveriam fornecer atalhos para filtros
     per\-so\-na\-li\-zá\-veis e classificações (rankings).}
 
-\paragraph{Justificativa:}
-\label{par:justificativa_s04}
+\paragraph{Justificativa:}\label{par:justificativa_s04}
 
 As RMs atribuídas a determinado desenvolvedor podem estar em diferentes estados.
 Existem aquelas que não foram analisadas, que estão aguardando informações
@@ -264,28 +247,24 @@ classificações.
 	\end{itemize}
 \end{itemize}
 
-\paragraph{Benefício Gerado:}
-\label{par:papéis_afetados_s04}
+\paragraph{Benefício Gerado:}\label{par:papéis_afetados_s04}
 
 Com um acesso mais rápido às últimas RMs analisadas o desenvolvedor poderia ter
 uma noção geral do trabalho desenvolvido. Este panorama poderia ajudá-lo no
 planejamento de suas atividades diárias.
 
-\paragraph{Exemplo de Utilização:}
-\label{par:exemplo_de_utilização_s04}
+\paragraph{Exemplo de Utilização:}\label{par:exemplo_de_utilização_s04}
 
 Ao acessar a FGRM o desenvolvedor tem acesso as últimas $n$ RMs que ele
 analisou. Além disso, ele poderia criar filtros para acessar outras informações
 que julgar importante no desenvolvimento de suas atividades.
 
-\subsection{Suporte a Processos de Integração Contínua}
-\label{sub:suporte_integracao_continua}
+\subsection{Suporte a Processos de Integração Contínua}\label{sub:suporte_integracao_continua}
 
 \sugestao{05}{As FGRMs deveriam fornecer suporte a Processos de Integração
     Contínua.}
 
-\paragraph{Justificativa:}
-\label{par:justificativa_s05}
+\paragraph{Justificativa:}\label{par:justificativa_s05}
 
 A solução de determinada RM pode levar a resultados não esperados em outros
 módulos do sistema mantido. Para tomar conhecimento dos possíveis problemas
@@ -307,8 +286,7 @@ como uma funcionalidade ausente nas FGRMs por alguns participantes do
 levantamento por questionário descrito no
 Capítulo~\ref{ch:pesquisa-profissionais}.
 
-\paragraph{Benefício Gerado:}
-\label{par:papéis_afetados_s05}
+\paragraph{Benefício Gerado:}\label{par:papéis_afetados_s05}
 
 A integração de uma FGRM com processos de IC traria para as atividades de
 manutenção os benefícios desta prática, tais como a redução de riscos e a
@@ -322,8 +300,7 @@ ambos os casos é possível aproveitar a facilidade que a IC propicia em fornece
 a localização de uma falha que, por exemplo, pode ter sido causada pela solução
 de uma RM\@.
 
-\paragraph{Limitações:}
-\label{par:limitacoes_s05}
+\paragraph{Limitações:}\label{par:limitacoes_s05}
 
 Algumas vezes a mudança de situação de uma RM para \textit{Fechada} pode não
 representar a sua efetiva solução. Por exemplo, a falha descrita pode ser
@@ -332,8 +309,7 @@ conjunto de fatores que geraram o problema descrito na RM deixa de existir.
 Nestas situação não faz sentido que responsável por fechar a RM engatilhe um
 processo de Integração Contínua.
 
-\paragraph{Exemplo de Utilização:}
-\label{par:exemplo_de_utilização_s05}
+\paragraph{Exemplo de Utilização:}\label{par:exemplo_de_utilização_s05}
 
 Após um desenvolvedor solucionar determinada RM, mudando a sua situação para
 \textit{Fechada}, por exemplo, a FGRM dispara o processo de compilação do
@@ -342,14 +318,12 @@ incluindo o responsável pela mudança mais recente no sistema e as compilaçõe
 que resultaram em falhas. O painel poderia incluir ainda dados da RM que
 engatilhou o processo de compilação como por exemplo o seu número e título.
 
-\subsection{Suporte além do Texto Simples}
-\label{sub:suporte_linguagem_marcacao}
+\subsection{Suporte além do Texto Simples}\label{sub:suporte_linguagem_marcacao}
 
 \sugestao{06}{As FGRMs deveriam dar suporte além da especificação de texto
     simples.}
 
-\paragraph{Justificativa:}
-\label{par:justificativa_s06}
+\paragraph{Justificativa:}\label{par:justificativa_s06}
 
 Quando uma nova RM é registrada as informações mais relevantes estão no texto
 correspondente ao atributo \textit{relato}. Além do problema da falta de
@@ -364,8 +338,7 @@ RTF\footnote{\url{https://msdn.microsoft.com/en-us/library/aa140280(office.10).a
 ou que permitam realce da sintaxe do código, poderia ajudar ao Reportador a
 expressar com maior qualidade a falha ou pedido de melhoria.
 
-\paragraph{Benefício Gerado:}
-\label{par:papéis_afetados_s06}
+\paragraph{Benefício Gerado:}\label{par:papéis_afetados_s06}
 
 Em um trabalho sobre a transcrição de materiais de estudo, Voegler e
 outros~\cite{voegler2014markdown} mostraram que o uso da linguagem Markdown pode
@@ -375,8 +348,7 @@ legibilidade do texto contido na RM\@. Diante do uso deste tipo de formato, os
 Reportadores poderiam, por exemplo, incluir no próprio relato uma parte do
 código fonte onde eles supõem que esteja localizada a falha.
 
-\paragraph{Limitações:}
-\label{par:limitacoes_s06}
+\paragraph{Limitações:}:\label{par:limitacoes_s06}
 
 Considerando que os responsáveis por reportar uma RM possuem diferentes níveis
 de conhecimento sobre o sistema. Neste sentido, é possível que nem todos os
@@ -416,8 +388,7 @@ esperadas~\cite{schwaber2002agile}. Para apresentação da solução proposta ai
 geralmente é realizado manualmente. As FGRMs poderiam dar suporte à priorização
 automática de RMs urgentes.
 
-\paragraph{Benefício Gerado:}
-\label{par:papéis_afetados_s07}
+\paragraph{Benefício Gerado:}\label{par:papéis_afetados_s07}
 
 Ao realizarmos a priorização automática estamos reduzindo o esforço desempenhado
 por alguns membros da equipe de manutenção, em especial pelo Agente de Triagem.
@@ -517,23 +488,21 @@ sugestões propostas e verificar a viabilidade de implementação do que foi
 recomendado. Neste sentido, optamos por um amostra de conveniência composta por
 profissionais que atuam como \textit{contribuidores} em projetos de código
 aberto hospedados no Github. Com cerca de 38 milhões de
-repositórios\footnote{Disponível em \url{https://github.com/features}. Acesso em
-    junho/2016. Uma definição do conceito de repositório no contexto da
+repositórios\footnote{Disponível em \url{https://github.com/features}. Acesso
+    em junho/2016. Uma definição do conceito de repositório no contexto da
     plataforma Github é realizada no Capítulo~\ref{ch:implemtacao_extensao}}, o
 Github é atualmente o maior repositório de código na Internet. Sua popularidade
 e a disponibilidade de metadados, acessíveis através de uma API, têm tornado
-Github bastante atrativo para a realização de pesquisas na área de Engenharia de
-Software.
+Github bastante atrativo para a realização de pesquisas na área de Engenharia
+de Software.
 
 A seleção dos participantes iniciou com a escolha dos projetos através da
 interface de busca avançada oferecida pela plataforma Github. Ela permite
 recuperar projetos utilizando critérios tais como data de criação, linguagem
-utilizada no desenvolvimento e proprietário do repositório, dentre outros. Neste
-estudo, utilizamos os critérios de seleção baseados em boas práticas
-recomendadas na literatura~\cite{Bird2009}. O fato de utilizarmos apenas o
-Github como a única fonte para seleção de participantes implica em certas
-ameaças à validade do estudo que são discutidas na
-Seção~\ref{sec:sug_melhoria_ameacas}. Os critérios de seleção dos projetos
+utilizada no desenvolvimento e proprietário do repositório, dentre outros. O
+fato de utilizarmos apenas o Github como a única fonte para seleção de
+participantes implica em certas ameaças à validade do estudo que são discutidas
+na Seção~\ref{sec:sug_melhoria_ameacas}. Os critérios de seleção dos projetos
 inclui os seguintes requisitos:
 
 \begin{itemize}
@@ -584,7 +553,8 @@ declarações que lhe foram apresentadas. No segundo grupo estamos interessados 
 formação dos profissionais. Optamos por definir algumas das questões como não
 obrigatórias por entendermos que a impossibilidade ou falta de interesse em
 responder determinada pergunta não deveria impedir o participante de enviar os
-dados de outras questões respondidas.
+dados de outras questões respondidas. A versão final do questionário pode ser
+visualizado no Anexo~\ref{ch:app-form-sug-melhorias}.
 
 \subsection{Processo de Aplicação}
 \label{ssub:processo_de_aplicação}
@@ -593,9 +563,11 @@ O questionário foi encaminhado à amostra de interesse através de correio
 eletrônico. O endereço foi coletado diretamente do projeto hospedado no Github.
 Foi desenvolvido um \textit{script} na linguagem Python que permite coletar o
 endereço de e-mail e automatizar o processo de envio. As mensagem foram
-personalizadas de modo a identificar o nome do usuário e o projeto do Github com
-base no template exibido a seguir. O pedido de participação foi enviado para um
-total de 121 contribuidores.
+personalizadas de modo a identificar o nome do usuário e o projeto do Github
+com base no template exibido a seguir. O pedido de participação foi enviado
+para um total de 121 contribuidores no período de 28/04/2017 a 01/05/2017. A
+mensagem enviada pode ser visualizada no
+Anexo~\ref{ch:app-template-msg-avaliacao-sug-melhorias}.
 
 % \fbox{\begin{minipage}{\textwidth}
 % Dear \{\{real\_name \}\}!
@@ -689,14 +661,19 @@ desta dissertação.
 \subsection{Relevância das Sugestões}
 \label{sub:sug_melhorias_resultados_relevancia}
 
-As sugestões de melhorias foram apresentadas aos participantes e eles respondiam
-se achavam as sugestões pertinentes mediante uma escala de Likert. Os resultados
-podem ser visualizados na Figura~\ref{fig:plot_likert_avaliacao_sug_melhorias}.
-Em uma primeira análise verificamos que a maioria das recomendações tiveram uma
-avaliação positiva dos participantes (Concordo ou Concordo Fortemente). A
-exceção foi para a Sugestão \#3 que trata da possibilidade de ordenar as RMs a
-serem analisadas pela reputação do Reportador. Por outro lado, as Sugestões \#6
-e \#8 tiveram uma boa aceitação dos participantes.
+As sugestões de melhorias foram apresentadas aos participantes e eles
+respondiam se achavam as sugestões pertinentes mediante uma escala de Likert.
+Os resultados podem ser visualizados na
+Figura~\ref{fig:plot_likert_avaliacao_sug_melhorias}.  Em uma primeira análise
+verificamos que a maioria das recomendações tiveram uma avaliação positiva dos
+participantes (Concordo ou Concordo Fortemente). A exceção foi para a Sugestão
+\#3 \@-\@ \textit{As FGRMs deveriam permitir um ranqueamento das RMs de acordo
+    com a reputação do Reportador} que trata da possibilidade de ordenar as RMs
+a serem analisadas pela reputação do Reportador. Por outro lado, as Sugestões
+\#6 \@-\@ \textit{As FGRMs deveriam dar suporte além da especificação de texto
+    simples}  e \#8 \@-\@ \textit{As FGRMs deveriam suportar tarefas
+    compartilhadas, permitindo o trabalho colaborativo}  tiveram uma boa
+aceitação dos participantes.
 
 \begin{figure}[htpb]
     \centering
@@ -732,8 +709,8 @@ Concordo Fortemente & 2 \\ \bottomrule
 
 Com base na Tabela~\ref{tab:ranking-sugestoes-melhorias} verificamos que
 recomendações que sobressaíram: utilização nas FGRMs de uma linguagem além do
-texto simples para redigir uma RM (\#3), suporte à tarefas colaborativas (\#8) e
-incorporação de processos de Integração Contínua (\#5). Por outro lado as
+texto simples para redigir uma RM (\#3), suporte à tarefas colaborativas (\#8)
+e incorporação de processos de Integração Contínua (\#5). Por outro lado as
 sugestões de diferenciar as RMs pela reputação do Reportador (\#3) e avaliar a
 qualidade do relato (\#1) não foram avaliadas como as mais relevantes pelos
 participantes. É importar notar que as recomendações que ficaram nas últimas
@@ -814,8 +791,9 @@ rejeição não estaria ligada à sua complexidade de desenvolvimento, mas a fat
 como não haver interesse em classificar aqueles que reportam uma RM\@. Em geral,
 ao analisarmos a Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}
 é possível verificar que os participantes entenderam que metade das sugestões
-propostas possuem uma dificuldade média, enquanto a outra metade pode ser
-considerada com um baixo grau de complexidade.
+propostas possuem uma dificuldade que pode ser considerada mediana, enquanto a
+outra parte das sugestões pode ser considerada com um baixo grau de
+complexidade.
 
 \begin{table}[htpb]
 \centering
@@ -915,8 +893,7 @@ existe possibilidade de ficar alguma característica relevante de fora.
 Infelizmente, posteriormente, julgamos que poderíamos ter incluído mais
 sugestões.
 
-\section{Resumo do Capítulo}
-\label{sec:sug_melhoria_resumo}
+\section{Resumo do Capítulo}\label{sec:sug_melhoria_resumo}
 
 O objetivo do levantamento foi avaliar as sugestões de melhorias de
 funcionalidades das FGRMs. A avaliação foi realizada com base na opinião de

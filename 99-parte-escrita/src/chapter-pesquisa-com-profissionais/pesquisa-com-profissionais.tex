@@ -382,10 +382,13 @@ enviamos um total de 452 mensagens no período de 02/01/2017 a 27/01/2017.
 \section{Resultados}\label{sec:analise_dados}
 
 Nesta seção apresentamos os resultados obtidos na aplicação do questionário.
-Começamos com a análise do perfil dos respondentes. Em seguida, avaliamos o
-nível de satisfação com as ferramentas que utilizam. Posteriormente verificamos
-o grau de adoção das metodologias propostas pelos agilistas no processo de
-desenvolvimento e Manutenção de Software.
+Após o envio das mensagens obtivemos 85 participações. É importante salientar
+que nenhuma das questões do formulário era de preenchimento obrigatório, desta
+forma, alguns dos resultados não necessariamente vai apresentar o total de
+respostas recebidas. Começamos com a análise do perfil dos respondentes. Em
+seguida, avaliamos o nível de satisfação com as ferramentas que utilizam.
+Posteriormente verificamos o grau de adoção das metodologias propostas pelos
+agilistas no processo de desenvolvimento e Manutenção de Software.
 
 \subsection{Perfil dos Participantes}\label{sub:pesquisa_prof_perfil_dos_participantes}
 
@@ -418,57 +421,71 @@ Designer & 1 \\ \bottomrule
 \caption{Função desempenhada pelos participantes}\label{tab:grafico_melhorias_fgrm_funcao_particantes}
 \end{table}
 
-A distribuição geográfica dos participantes demostra uma proeminência de pessoas
-da Ásia (32\%), Europa (27\%) e em seguida das América do Norte (17\%) e América
-do Sul (12\%). Esta distribuição pode atenuar possíveis enviesamentos que por
-ventura algum nicho geográfico possa apresentar. Todavia, não está no escopo
-deste estudo discutir como que as diferenças de localização do participante
-podem influenciar nos resultados. Os respondentes trabalham em sua maioria em
-empresas privadas de software (74\%). Existem também aqueles que participam de
-projetos de código aberto (6\%) e empresa pública de software (4\%). O restante
-do grupo que respondeu esta questão é composto por contribuidores de projetos
-de software livre e estudantes. É importante considerar que grande parte dos
-respondentes pertencem à empresas privadas, em que os processos e ferramentas
-não podem ser modificados pelo desenvolvedor. Esta característica pode afetar
-os resultados, especialmente quando avaliarmos o nível de satisfação das
-funcionalidades das FGRMs.
+A distribuição geográfica dos participantes demostra uma proeminência de
+pessoas da Ásia (32\%), Europa (27\%) e em seguida das América do Norte (17\%)
+e América do Sul (12\%). A
+Tabela~\ref{tab:melhorias_fgrm_localizacao_geografica} exibe o total de
+participações pela localização geográfica. Esta distribuição pode atenuar
+possíveis enviesamentos que por ventura algum nicho geográfico possa
+apresentar. Todavia, não está no escopo deste estudo discutir como que as
+diferenças de localização do participante podem influenciar nos resultados. Os
+respondentes trabalham em sua maioria em empresas privadas de software (74\%).
+Existem também aqueles que participam de projetos de código aberto (6\%) e
+empresa pública de software (4\%). O restante do grupo que respondeu esta
+questão é composto por contribuidores de projetos de software livre e
+estudantes. É importante considerar que grande parte dos respondentes pertencem
+à empresas privadas, em que os processos e ferramentas não podem ser
+modificados pelo desenvolvedor. Esta característica pode afetar os resultados,
+especialmente quando avaliarmos o nível de satisfação das funcionalidades das
+FGRMs.
 
-% \begin{figure}[htpb]
-% 	\centering
-% 	\includegraphics[width=0.5\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_localizacao_geografica.pdf}
-% 	\caption{Localização Geográfica dos Participantes}
-% \label{fig:grafico_melhorias_fgrm_localizacao_geografica}
-% \end{figure}
-
-
-% \begin{figure}[htpb] \centering
-% \includegraphics[width=0.5\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_local_trabalho.pdf}
-% \caption{Local de Trabalho} \label{fig:grafico_melhorias_fgrm_local_trabalho}
-% \end{figure}
+\begin{table}[htpb]
+\centering
+\resizebox{.4\textwidth}{!}{%
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Localização} & \textbf{Participações} \\ \midrule
+Asia                 & 28                     \\
+Europa               & 23                     \\
+América do Norte     & 15                     \\
+América do Sul       & 11                     \\
+Africa               & 4                      \\
+América Central      & 2                      \\
+Oceania              & 2                      \\ \bottomrule
+\end{tabular}%
+}
+\caption{Localização Geográfica dos Participantes}\label{tab:melhorias_fgrm_localizacao_geografica}
+\end{table}
 
 A equipe que o participante faz parte possui em geral mais de dez componentes
-(31\%). Em segundo lugar, temos equipes de médio porte, entre seis e dez membros
-(28\%). Os participantes possuem com maior frequência entre três e dez anos de
-experiência. Existem ainda 09 participantes que possuem mais de dez anos
-trabalhando com desenvolvimento ou manutenção de software. Em síntese, temos um
-grupo com significativa experiência o que pode agregar valor aos resultados
-finais.
+(31\%). Em segundo lugar, temos equipes de médio porte, entre seis e dez
+membros (28\%). A Tabela~\ref{tab:melhorias_fgrm_tamanho_equipe} apresenta a
+frequência de respostas para o tamanho da equipe. Os participantes possuem com
+maior frequência entre três e dez anos de experiência. Existem ainda 09
+participantes que possuem mais de dez anos trabalhando com desenvolvimento ou
+manutenção de software. Em síntese, temos um grupo com significativa
+experiência o que pode agregar valor aos resultados finais.
 
-% \begin{figure}[htpb] \centering
-% \includegraphics[width=0.5\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_tamanho_equipe.pdf}
-% \caption{Tamanho da Equipe} \label{fig:grafico_melhorias_fgrm_tamanho_equipe}
-% \end{figure}
+\begin{table}[htpb]
+\centering
+\resizebox{.6\textwidth}{!}{%
+\begin{tabular}{@{}lc@{}}
+\toprule
+\textbf{Tamanho da Equipe} & \multicolumn{1}{l}{\textbf{Número de Respostas}} \\ \midrule
+Mais do que 10 & 23 \\
+Entre 6 e 10 & 21 \\
+Entre 2 e 5 & 1 \\
+1 (eu mesmo) & 13 \\ \bottomrule
+\end{tabular}%
+}
+\caption{Tamanho da equipe dos participantes}\label{tab:melhorias_fgrm_tamanho_equipe}
+\end{table}
 
-% \begin{figure}[htpb] \centering
-% \includegraphics[width=0.5\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_tempo_experiencia.pdf}
-% \caption{Tempo de Experiência}
-% \label{fig:grafico_melhorias_fgrm_tempo_experiencia} \end{figure}
-
-Em resumo as respostas tipicamente vieram de desenvolvedores, localizados na
-Ásia e Europa, com um tempo de experiência entre três e dez anos, trabalhando em
-uma equipe com aproximadamente dez membros. A partir deste perfil entendemos que
-foi possível alcançar uma amostra com um perfil adequado para responder as
-questões propostas.
+% Em resumo as respostas tipicamente vieram de desenvolvedores, localizados na
+% Ásia e Europa, com um tempo de experiência entre três e dez anos, trabalhando em
+% uma equipe com aproximadamente dez membros. A partir deste perfil entendemos que
+% foi possível alcançar uma amostra com um perfil adequado para responder as
+% questões propostas.
 
 \subsection{Nível de Satisfação com as FGRM}\label{sub:nivel_de_satisfação_com_as_fgrm}
 
@@ -497,25 +514,23 @@ extensão das FGRMs disponíveis.
 Verificamos o nível de satisfação dos participantes com as funcionalidades
 oferecidas pelas FGRMs que ele utiliza. Em grande parte os respondentes estão
 satisfeitos com as funcionalidades. A resposta com maior frequência foi
-\textit{Nem satisfeito ou insatisfeito}, com cerca de 44\% das respostas. Na
-segunda posição, 21 profissionais que correspondem a 29\% dos respondentes,
-estão \textit{Satisfeitos}. A opção \textit{Muito satisfeito} foi escolhida por
-15\% dos profissionais. As alternativas que podem refletir uma insatisfação
-sobre as funcionalidades (\textit{desapontado ou muito desapontado}) foram
-escolhidas por 8 participantes. Considerando os dados obtidos desta amostra, é
-possível verificar que a maior parte dos respondentes estão satisfeitos com as
-funcionalidades da FGRM que utiliza. O número de respostas não nos permite
-generalizar o nosso resultado, entretanto, ele não segue o que a literatura
-sobre melhorias em funcionalidades das FGRMs em que se discute um possível
-descontentamento dos usuários deste tipo de software. Uma possível explicação
-seria o desconhecimento dos profissionais de funcionalidades que estão sendo
-propostas na literatura que podem melhorar as suas atividades.
-
-%\begin{figure}[htpb] \centering
-%    \includegraphics[width=0.5\linewidth]{./chapter-pesquisa-com-profissionais/img/grafico_melhorias_fgrm_nivel_satisfacao.pdf}
-%    \caption{Nível de satisfação com as Ferramentas}
-%\label{fig:grafico_melhorias_fgrm_nivel_satisfacao}
-%\end{figure}
+\textit{Nem satisfeito ou insatisfeito}, com cerca de 32 (44\%) respostas. Na
+segunda posição, 21 profissionais (29\%) responderam que estão
+\textit{Satisfeitos}. A opção \textit{Muito satisfeito} foi escolhida por 11
+(15\%) dos profissionais. As alternativas que podem refletir uma insatisfação
+sobre as funcionalidades (\textit{Desapontado ou Muito Desapontado}) foram
+escolhidas por 8 (11\%) participantes. O item \textit{desapontado} teve 6
+respostas e a opção \textit{Muito Desapontado} foi escolhida por 2
+participantes. Se desconsiderarmos aqueles que selecionaram \textit{Nem
+    satisfeito ou insatisfeito}, é possível verificar que a maior parte dos
+respondentes (44\%) estão satisfeitos com as funcionalidades da FGRM que
+utiliza. Em contrapartida, os participantes insastisfeitos representam 11\% da
+amostra. O número de respostas não nos permite generalizar o resultado,
+entretanto, ele não segue o que a literatura sobre melhorias em funcionalidades
+das FGRMs em que se discute um possível descontentamento dos usuários deste
+tipo de software. Uma possível explicação seria o desconhecimento dos
+profissionais de funcionalidades que estão sendo propostas na literatura que
+podem melhorar as suas atividades.
 
 No mesmo questionário verificamos se o respondente recomendaria a ferramenta
 que utiliza para outro projeto. A probabilidade de recomendação é exibida na
@@ -531,11 +546,11 @@ que utilizam ao ponto de recomendá-la.
 \begin{tabular}{@{}lc@{}}
 \toprule
 \textbf{Recomendação da Ferramenta Utilizada} & \textbf{Total} \\ \midrule
-Provável & 32 \\
 Com certeza & 22 \\
+Provável & 32 \\
 Pouco Provável & 9 \\
-Não & 5 \\
-Muito Improvável & 3 \\ \bottomrule
+Muito Improvável & 3 \\
+Não Recomendaria & 5 \\ \bottomrule
 \end{tabular}%
 }
 \caption{Probabilidade de Recomendação da Ferramenta Utilizada}\label{tab:grafico_melhorias_fgrm_probabilidade_recomentacao}
@@ -546,10 +561,13 @@ Muito Improvável & 3 \\ \bottomrule
 Nesta seção apresentamos a opinião dos profissionais sobre as funcionalidades
 oferecidas atualmente pelas FGRMs\@. O conjunto de funcionalidades apresentado
 ao participante é o resultado do estudo descrito na
-Seção~\ref{sec:caracterizacao_ferramentas}. Após a apresentação de um cardápio
-de funcionalidades, os profissionais avaliaram como importantes funções tais
-como \textit{Suporte ao Unicode, Múltiplos Projetos, Integração com Sistemas de
-    Controle de Versão (VCS Integration)}.
+Seção~\ref{sec:caracterizacao_ferramentas}. No questionário apresentamos ao
+participante uma lista de funcionalidades e pedimos que para cada uma fosse
+escolhida um item de uma escala de importância (\textit{Nada Importante, Pouco
+    Importante, Importante, Levemente Importante, Muito Importante}). Com base
+nas respostas, as seguinte funcionalidades foram consideradas como as mais
+importantes: \textit{Suporte ao Unicode, Múltiplos Projetos, Integração com
+    Sistemas de Controle de Versão (VCS Integration)}.
 
 % \begin{table}[htpb]
 % \centering
@@ -583,8 +601,7 @@ como \textit{Suporte ao Unicode, Múltiplos Projetos, Integração com Sistemas 
 % Integração com bancos de dados & 4 & 6 & 4 & 1 & 2 \\ \bottomrule
 % \end{tabular}%
 % }
-% \caption{Avaliação da importância das funcionalidades pelos profissionais}
-% \label{tab:avaliacao_funcionalidades}
+% \caption{Avaliação da importância das funcionalidades pelos profissionais}\label{tab:avaliacao_funcionalidades}
 % \end{table}
 
 Por outro lado, apresentamos aos profissionais funcionalidades que poderiam ser
@@ -592,9 +609,11 @@ integradas à FGRM que ele utiliza. As funcionalidades foram baseados na
 literatura da área, tomando com base o Mapeamento Sistemático descrito no
 Capítulo~\ref{ch:mapeamento-sistematico}. A
 Figura~\ref{fig:grafico_melhorias_fgrm_funcionalidades_falantes} apresenta as
-funcionalidades que os participantes sentem falta. Funções tais como
-identificação automática de RMs duplicadas, atribuição automática de RM e
-Análise de Impacto foram as mais frequentes.
+funcionalidades que os participantes sentem falta. As funcionalidades foram
+apresentadas aos profissionais através de uma lista e foi permitido que eles
+escolhessem mais de uma opção. O resultado nos mostrou que funções tais como
+\textit{Identificação Automática de RMs Duplicadas, Atribuição Automática de RM
+    e Análise de Impacto} foram as mais frequentes.
 
 % \begin{table}[htpb]
 % \centering
@@ -640,12 +659,16 @@ mais adotadas: \textit{Integração Contínua} (17\%), \textit{Padrões de
 
 A fim de avaliar como as FGRMs podem ajudar aos times de manutenção de software
 na adoção das práticas propostas agilistas, apresentamos aos participantes do
-levantamento uma lista de possíveis funcionalidades com este viés. A
-Tabela~\ref{tab:melhorias_fgrm_suporte_particas_ageis} apresenta a opinião dos
-profissionais sobre as funcionalidades mais relevantes. Segundo eles, a
-priorização automática de RMs urgentes e não esperadas, ajuda o desenvolvedor
-nas reuniões diárias e o suporte a tarefas compartilhadas foram as respostas
-mais frequentes.
+levantamento uma lista de possíveis funcionalidades com este viés. Foi
+solicitado a eles escolhessem a ordem em que estas melhorias seriam
+implementadas na ferramenta que utiliza, sendo 1 a maior prioridade e 7 a
+menor. Segundo o nosso entendimento as funções que tivessem uma maior
+prioridade para serem implementadas poderiam ser consideradas mais relevantes
+para os profissionais. A Tabela~\ref{tab:melhorias_fgrm_suporte_particas_ageis}
+apresenta a opinião dos profissionais sobre as funcionalidades mais relevantes.
+Segundo eles, a priorização automática de RMs urgentes e não esperadas, ajuda o
+desenvolvedor nas reuniões diárias e o suporte a tarefas compartilhadas foram
+as respostas mais frequentes.
 
 \begin{table}[htpb]
 \centering
@@ -669,11 +692,12 @@ metodologias dos agilistas.}\label{tab:melhorias_fgrm_suporte_particas_ageis}
 
 Em geral, o nível de satisfação com as funcionalidades oferecidas pelas FGRMs é
 alto. Esta medida foi observada na análise do nível da satisfação dos
-participantes em que verificamos que cerca de 90\% estão de alguma forma
-satisfeito com a ferramenta que utilizam. Este mesmo sentimento pode ser
-observado pela alta probabilidade de recomendação da FGRM utilizada para um novo
-projeto. Naquela medida verificamos que o mesmo percentual de participantes
-pretende recomendar o software que utiliza.
+participantes em que verificamos que cerca de 44\% estão de alguma forma
+satisfeito com a ferramenta que utilizam. Em contrapartida, os participantes
+que mostraram algum tipo de insatisfação representaram 11\% da amostra. Este
+mesmo sentimento pode ser observado pela alta probabilidade de recomendação da
+FGRM utilizada para um novo projeto. Naquela medida verificamos que o mesmo
+percentual de participantes pretende recomendar o software que utiliza.
 
 \paragraph{Funcionalidades Faltantes:}\label{par:pesq_profissionais_funcionalidades_faltantes}
 
