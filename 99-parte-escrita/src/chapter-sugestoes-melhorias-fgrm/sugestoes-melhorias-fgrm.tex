@@ -34,7 +34,7 @@ compiladas utilizando a literatura da área e os levantamentos realizados nesta
 dissertação, especialmente com base nos
 Capítulos~\ref{ch:mapeamento-sistematico} e~\ref{ch:pesquisa-profissionais}, na
 Seção~\ref{sec:caracterizacao_ferramentas} e nos estudos que propõem melhorias
-para as FGRM~\cite{zimmermann2009improving, bettenburg2008makes, singh2011bug}.
+para as FGRM~\cite{zimmermann2009improving, zimmermann2010makes, singh2011bug}.
 Estas recomendações podem ser utilizadas por pesquisadores interessados em
 conduzir estudos sobre o avanço da produtividade dos desenvolvedores mediante o
 uso das FGRMs. Além disso, os responsáveis pelo desenvolvimento deste tipo de
@@ -99,7 +99,7 @@ qualidade do texto no relato da RM, tipicamente a falta da informação necessá
 à solução. Alguns estudos mostram que a ausência das etapas para reproduzir a
 falha e a ausência da cadeia de registros de ativação dificultam mais o
 andamento do projeto do que a ocorrência de RMs
-duplicadas~\cite{bettenburg2008makes, bettenburg2007quality}. Neste sentido, as
+duplicadas~\cite{zimmermann2010makes, bettenburg2007quality}. Neste sentido, as
 FGRMs poderiam fornecer uma funcionalidade capaz de reduzir o número de relatos
 de baixa qualidade através, por exemplo, de uma realimentação ao Reportador
 envolvendo uma estimativa da qualidade do que foi informado no relato da RM\@.
@@ -233,19 +233,22 @@ FGRMs permitem visualizar a situação das RMs de um desenvolvedor mediante
 relatórios pré-definidos. Contudo, no levantamento mediante questionário,
 apresentado no Capítulo~\ref{ch:pesquisa-profissionais}, identificamos que uma
 parte dos profissionais solicitou um acesso mais facilitado a este tipo de
-informação. Desta forma, sugerimos uma alteração nas interfaces das FGRMs de
-modo a fornecer acesso facilitado a filtros personalizáveis e outros tipos de
-classificações.
+informação. Por exemplo, na questão em que deixamos livre ao profissional
+sugerir uma nova funcionalidade, obtivemos a seguinte respostas:  \textit{``The
+    ability to clearly visualize how many tickets are at the to do, in
+    progress, to validate or done steps.''}. Desta forma, sugerimos uma
+alteração nas interfaces das FGRMs de modo a fornecer acesso facilitado a
+filtros personalizáveis e outros tipos de classificações.
 
-\begin{itemize}
-	\item Conforme relato dos participantes eles gostariam:
-	\begin{itemize}
-		\item \textit{``The ability to clearly visualize how many tickets are at
-				the to do, in progress, to validate or done steps.''}.
-		\item \textit{``History tracking, commenting, attachments, priority
-				setting, task assignment, tie in with deployment systems.''}
-	\end{itemize}
-\end{itemize}
+% \begin{itemize}
+% 	\item Conforme relato dos participantes eles gostariam:
+% 	\begin{itemize}
+% 		\item \textit{``The ability to clearly visualize how many tickets are at
+% 				the to do, in progress, to validate or done steps.''}.
+% 		\item \textit{``History tracking, commenting, attachments, priority
+% 				setting, task assignment, tie in with deployment systems.''}
+% 	\end{itemize}
+% \end{itemize}
 
 \paragraph{Benefício Gerado:}\label{par:papéis_afetados_s04}
 
@@ -687,8 +690,9 @@ O ordenamento consistiu em aplicar pesos para cada item da escala de Likert
 conforme a Tabela~\ref{tab:pesos_rank_sug_melhorias}. O valor é obtido
 multiplicando a frequência de determinado item da escala pelo seu respectivo
 peso. A Tabela~\ref{fig:plot_likert_avaliacao_sug_melhorias} exibe as
-recomendações ordenadas pelo nível de aceitação dos participantes. É possível
-visualizar o número de respostas que cada item recebeu.
+recomendações ordenadas pelo nível de aceitação dos participantes, conforme o
+valor atribuído a cada opção da escala Likert. É possível visualizar o número
+de respostas que cada item recebeu.
 
 \begin{table}[htpb]
 \centering
@@ -717,7 +721,7 @@ participantes. É importar notar que as recomendações que ficaram nas últimas
 posições tiveram a opção ``Não concordo nem discordo'' selecionadas com maior
 frequência. Este fato pode indicar que não houve uma rejeição pelos
 participantes, mas possivelmente, uma baixa compreensão do que estava sendo
-proposto.
+proposto, ou ainda que não tinham opinião formada.
 
 \begin{table}[htpb]
 \centering
@@ -782,18 +786,18 @@ Muito Fácil & 2 \\ \bottomrule
 Foram consideradas ser de fácil implementação: o suporte do relato de uma RM
 além do texto simples (\#6), a criação de atalhos e filtros personalizáveis
 (\#4) e o ranqueamento das RMs pela reputação do Reportador (\#3). Segundo os
-participantes funções como o suporte a tarefas compartilhadas (\#8) e análise da
-qualidade do relato (\#1) foram consideradas de um maior grau de dificuldade de
-implementação. O fato interessante é que a Sugestão \#3 foi considerada como
+participantes funções como o suporte a tarefas compartilhadas (\#8) e análise
+da qualidade do relato (\#1) foram consideradas de um maior grau de dificuldade
+de implementação. O fato interessante é que a Sugestão \#3 foi considerada como
 uma das mais fáceis de implementar, entretanto, está entre aquelas que tiveram
 menor aceite entre os participantes. Este fato pode sugerir que sua possível
-rejeição não estaria ligada à sua complexidade de desenvolvimento, mas a fatores
-como não haver interesse em classificar aqueles que reportam uma RM\@. Em geral,
-ao analisarmos a Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}
-é possível verificar que os participantes entenderam que metade das sugestões
-propostas possuem uma dificuldade que pode ser considerada mediana, enquanto a
-outra parte das sugestões pode ser considerada com um baixo grau de
-complexidade.
+rejeição não estaria ligada à sua complexidade de desenvolvimento, mas a
+fatores como não haver interesse em classificar aqueles que reportam uma RM\@.
+Em geral, ao analisarmos a
+Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias} é possível
+verificar que os participantes entenderam que metade das sugestões propostas
+possuem uma dificuldade que pode ser considerada mediana. Contudo, as sugestões
+\#1, \#5 e \#8 parecem ter sido consideradas difíceis.
 
 \begin{table}[htpb]
 \centering
@@ -823,13 +827,14 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 \section{Discussão}
 \label{sec:sug_melhoria_discussao}
 
-Em geral podemos considerar que as sugestões propostas tiveram uma boa aceitação
-dos participantes. Em média 32\% dos participantes avaliaram as recomendações
-``Concordo'' ou ``Concordo Fortemente''.  Além disso, por volta de 22\% em média
-selecionaram a opção ``Nem concordo ou discordo''. Segundo o nosso entendimento
-as respostas poderiam ser alteradas para uma visão mais positiva, com por
-exemplo ``Concordo'' ou ``Concordo Fortemente'', caso fossem fornecidos mais
-detalhes ao participantes.
+Em geral podemos considerar que as sugestões propostas tiveram uma boa
+aceitação dos participantes. Em média 32\% dos participantes avaliaram as
+recomendações ``Concordo'' ou ``Concordo Fortemente''.  Além disso, por volta
+de 22\% em média selecionaram a opção ``Nem concordo ou discordo''. Uma questão
+a ser futuramente investigada é se as as respostas poderiam ser alteradas para
+uma visão mais positiva, com por exemplo ``Concordo'' ou ``Concordo
+Fortemente'', caso fossem fornecidos mais detalhes ao participantes. Com este
+objetivo um estudo do tipo entrevista poderia ser conduzido.
 
 Com relação às recomendações propostas, verificamos que a utilização de uma
 linguagem além do texto simples, como por exemplo o Markdown, foi muito bem
@@ -854,11 +859,11 @@ Apesar da sua popularidade entre os participantes, esta sugestão ficou entre
 aquelas com maior grau de dificuldade de implementação.
 
 Por outro lado, as sugestões que têm algum tipo de relação com a interface das
-FGRMs (sugestões \#6, \#4, \#3 e \#2) foram consideradas como mais ``fácil'' de
+FGRMs (sugestões \#6, \#4, e \#2) foram consideradas como mais ``fácil'' de
 implementar com mais frequência. Entretanto, a sugestão sobre a qualidade do
 relato (\#1) ficou entre aquelas com maior grau de dificuldade. Esta
-classificação pode ser decorrente do caráter subjetivo que a qualidade do relato
-pode ter. Em cada projeto a qualidade do relato pode ter características
+classificação pode ser decorrente do caráter subjetivo que a qualidade do
+relato pode ter. Em cada projeto a qualidade do relato pode ter características
 distintas o que pode dificultar o seu suporte.
 
 \section{Ameaças à Validade}
@@ -879,27 +884,30 @@ A estrutura das perguntas do formulário pode ter causado impacto na quantidade
 de respostas ou na opção escolhida pelos participantes. Esta situação pode ter
 ocorrido especialmente quando apresentamos as sugestões. No caso de escrevermos
 de maneira extensa a explicação corremos o risco do respondente desistir do
-item. Entretanto, se o texto fosse escrito de forma ``concisa'' corremos o risco
-de ficar vago, o que pode ter impacto nas respostas. A
+item. Entretanto, se o texto fosse escrito de forma ``concisa'' corremos o
+risco de ficar vago, o que pode ter impacto nas respostas. O ideal seria uma
+descrição concisa associada com uma explicação detalhada. A opção por apenas
+uma descrição concisa pode fazer com que a pesquisa ficasse superficial. A
 Tabela~\ref{tab:projetos_participantesmy-label} detalha os projetos que os
-participantes contribuem. É possível observar que os participantes trabalham com
-ferramentas que são mais famosas e portanto têm o viés de visão mais
+participantes contribuem. É possível observar que os participantes trabalham
+com ferramentas que são mais famosas e portanto têm o viés de visão mais
 ``tradicional''.
 
 Em um dos comentários um dos participantes citou que algumas das sugestões
-propostas podem ter funcionalidades similares em outras FGRMs. Acreditávamos que
-a escolha destas 08 sugestões envolveria as principais características, mas
-existe possibilidade de ficar alguma característica relevante de fora.
-Infelizmente, posteriormente, julgamos que poderíamos ter incluído mais
-sugestões.
+propostas podem ter funcionalidades similares em outras FGRMs. Acreditávamos
+que a escolha destas 08 sugestões envolveria as principais melhorias para as
+funcionalidades das FGRMs, mas existia a possibilidade de alguma sugestão
+existir de forma parcial ou completa em determinada ferramenta. A condução da
+avaliação das sugestões melhorias foi realizada também para identificar este
+tipo de situação.
 
 \section{Resumo do Capítulo}\label{sec:sug_melhoria_resumo}
 
 O objetivo do levantamento foi avaliar as sugestões de melhorias de
 funcionalidades das FGRMs. A avaliação foi realizada com base na opinião de
 desenvolvedores que contribuem para projetos de código aberto deste tipo de
-software. Em geral, as sugestões de melhorias foram bem avaliadas. Mais de 30\%
-avaliaram as recomendações de forma positiva (``Concordo'' ou  ``Concordo
-Fortemente''). Quanto à dificuldade de implementação, metade delas foi
-considerada de fácil implementação. No próximo capítulo discutimos aspectos de
-implementação da Sugestão \#1 na plataforma Github.
+software. Em geral, as sugestões de melhorias foram bem avaliadas. Das 8
+sugestões propostas 5 foram avaliadas de forma positiva (``Concordo'' ou
+``Concordo Fortemente''). Quanto à dificuldade de implementação, metade delas
+foi considerada de fácil implementação. No próximo capítulo discutimos aspectos
+de implementação da Sugestão \#1 na plataforma Github.

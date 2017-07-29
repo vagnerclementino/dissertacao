@@ -34,13 +34,14 @@ necessária para sua solução.
 
 Alguns estudos afirmam que a baixa qualidade do relato prejudicam o andamento do
 projeto mais do que RMs duplicadas~\cite{bettenburg2007quality}. No estudo
-realizado por Bettenburg e outros~\cite{bettenburg2008makes} foi desenvolvido um
-levantamento com questionário entre desenvolvedores e usuários de três projetos
-de código aberto\footnote{Apache (\url{http://www.apache.org/}), Eclipse
-    (\url{https://www.eclipse.org}) e Mozilla (\url{https://www.mozilla.org})}.
-O objetivo era coletar informação de modo a verificar o que produziria um bom
-relato. Os resultados demonstraram que, do ponto de vista dos desenvolvedores,
-são consideradas informações úteis para estar no relato de uma RM\@:
+realizado por Zimmermann e outros~\cite{zimmermann2010makes} foi desenvolvido
+um levantamento com questionário entre desenvolvedores e usuários de três
+projetos de código aberto\footnote{Apache (\url{http://www.apache.org/}),
+    Eclipse (\url{https://www.eclipse.org}) e Mozilla
+    (\url{https://www.mozilla.org})}.  O objetivo era coletar informação de
+modo a verificar o que produziria um bom relato. Os resultados demonstraram
+que, do ponto de vista dos desenvolvedores, são consideradas informações úteis
+para estar no relato de uma RM\@:
 
 \begin{itemize}
     \item a sequência de ações executadas até o aparecimento da falha, também
@@ -161,7 +162,7 @@ nos comentários.
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=0.8\linewidth]{chapter-implementacao-extensoes-fgrm/img/issue_original.png}
+    \includegraphics[width=0.8\linewidth]{chapter-implementacao-extensoes-fgrm/img/issue_original.eps}
     \caption{Comentário produzido pela extensão IssueQuality com os cabeçalhos e
         dicas padrões.}
 \label{fig:issue_original}
@@ -172,9 +173,10 @@ os benefícios que a melhoria da qualidade do relato pode ter na solução da RM
 correspondente, como por exemplo dizendo: \textit{``as RMs que são mais fáceis
     de serem lidas possuem um tempo de solução menor''}. Estas dicas foram
 obtidas com base na literatura sobre melhoria da qualidade do relato,
-especialmente nos trabalhos de Bettenburg e outros~\cite{bettenburg2007quality,
-    bettenburg2008makes}. Na Figura~\ref{fig:issue_original} é possível
-visualizar como algumas dicas são apresentadas.
+especialmente nos trabalhos de Zimmermann e
+Bettenburg~\cite{bettenburg2007quality, zimmermann2010makes}. Na
+Figura~\ref{fig:issue_original} é possível visualizar como algumas dicas são
+apresentadas.
 
 O corpo é a parte dinâmica do comentário. Ele é construído incluindo fragmentos
 de texto quando certos critérios de aceitação não foram atendidos.  Por
@@ -211,8 +213,9 @@ acima dos limiares.                      \\ \bottomrule
 O corpo do comentário é produzido com análise dos seguintes atributos do relato
 da RM\@: \textit{Etapas para Reproduzir, Arquivos Anexados, Fragmentos de
     Código, Completude do Texto e Legibilidade do Texto}. Estes atributos foram
-baseados no estudo realizado por Bettenburg e outros~\cite{bettenburg2008makes}.
-A seguir apresentamos os detalhes de como cada atributo é avaliado.
+baseados no estudo realizado por Zimmermann e
+outros~\cite{zimmermann2010makes}.  A seguir apresentamos os detalhes de como
+cada atributo é avaliado.
 
 \paragraph{Etapas para Reproduzir:}
 \label{par:etapas_para_reproduzir_}
@@ -226,7 +229,7 @@ que o Reportador utilize outro formato para relatar as etapas executadas até a
 ocorrência da falha, contudo, o fato da extensão exigir a informação através de
 uma lista, pode criar no Reportador uma boa prática. Cabe ressaltar que uma
 lista com etapas para reproduzir uma falha foi considerada uma das informações
-mais relevantes de um relato~\cite{bettenburg2008makes}.
+mais relevantes de um relato~\cite{zimmermann2010makes}.
 
 \paragraph{Arquivos Anexados:}
 \label{par:arquivos_anexados}
@@ -240,7 +243,7 @@ houve avaliação sobre o conteúdo do anexo, contudo, conforme descrito na
 Tabela~\ref{tab:criterios_analise_qualidade_relato}, uma mensagem é incluída no
 corpo do comentário no caso de nenhum anexo ser detectado. A existência de
 anexos em uma RM consta como uma das informações mais relevantes do ponto de
-vistas dos desenvolvedores~\cite{bettenburg2008makes}.
+vistas dos desenvolvedores~\cite{zimmermann2010makes}.
 
 \paragraph{Fragmentos de Código}
 \label{par:fragmentos_de_código}
@@ -320,8 +323,8 @@ qualquer palavra nessa lista não seja de difícil
 compreensão~\cite{dale1948formula}. No caso dos testes ARI e Dale-Chall a
 legibilidade será considerada ruim se o valor do teste \textit{for maior ou
     igual a 13}, ou seja, uma pessoa deveria estudar no mínimo 13 anos para
-``entender''. Esta limiar foi utilizado no trabalho de Bettenburg e
-outros~\cite{bettenburg2008makes}.
+``entender''. Esta limiar foi utilizado no trabalho de Zimmermann e
+outros~\cite{zimmermann2010makes}.
 
 \section{Uso da Extensão em Projetos Reais}
 \label{sec:avaliando_a_extensao_proposta}
