@@ -665,24 +665,44 @@ desta dissertação.
 \label{sub:sug_melhorias_resultados_relevancia}
 
 As sugestões de melhorias foram apresentadas aos participantes e eles
-respondiam se achavam as sugestões pertinentes mediante uma escala de Likert.
-Os resultados podem ser visualizados na
-Figura~\ref{fig:plot_likert_avaliacao_sug_melhorias}.  Em uma primeira análise
-verificamos que a maioria das recomendações tiveram uma avaliação positiva dos
-participantes (Concordo ou Concordo Fortemente). A exceção foi para a Sugestão
-\#3 \@-\@ \textit{As FGRMs deveriam permitir um ranqueamento das RMs de acordo
-    com a reputação do Reportador} que trata da possibilidade de ordenar as RMs
-a serem analisadas pela reputação do Reportador. Por outro lado, as Sugestões
-\#6 \@-\@ \textit{As FGRMs deveriam dar suporte além da especificação de texto
-    simples}  e \#8 \@-\@ \textit{As FGRMs deveriam suportar tarefas
-    compartilhadas, permitindo o trabalho colaborativo}  tiveram uma boa
-aceitação dos participantes.
+respondiam se achavam as sugestões pertinentes mediante uma escala do tipo
+Likert. A Tabela~\ref{tab:freq_percentual_avaliacao_sug_melhorias} apresenta a
+frequência e o percentual de escolha para cada sugestão de melhoria. A
+Figura~\ref{fig:plot_likert_avaliacao_sug_melhorias} exibe o nível de aceitação
+das sugestões propostas. Em uma primeira análise verificamos que a maioria das
+recomendações tiveram uma avaliação positiva dos participantes (Concordo ou
+Concordo Fortemente). A exceção foi para a Sugestão \#3 \@-\@ \textit{As FGRMs
+    deveriam permitir um ranqueamento das RMs de acordo com a reputação do
+    Reportador} que trata da possibilidade de ordenar as RMs a serem analisadas
+pela reputação do Reportador. Por outro lado, as Sugestões \#6 \@-\@ \textit{As
+    FGRMs deveriam dar suporte além da especificação de texto simples}  e \#8
+\@-\@ \textit{As FGRMs deveriam suportar tarefas compartilhadas, permitindo o
+    trabalho colaborativo}  tiveram uma boa aceitação dos participantes.
+
+\begin{table}[htpb]
+\centering
+\resizebox{.9\textwidth}{!}{%
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\textbf{Sugestão} & \textbf{Discordo Fortemente} & \textbf{Discordo} & \textbf{Não concordo e nem discordo} & \textbf{Concordo} & \textbf{Concordo Fortemente} \\ \midrule
+\textit{Sugestão \#1} & 1 (3,4\%) & 3 (10,3\%) & 10 (34,5\%) & 13 (44,9\%) & 2 (6,9\%) \\
+\textit{Sugestão \#2} & 0 (0,0\%) & 2 (6,9\%) & 7 (24,1\%) & 13 (44,9\%) & 7 (24,1\%) \\
+\textit{Sugestão \#3} & 3 (10,3\%) & 9 (31,0\%) & 13 (44,9\%) & 2 (6,9\%) & 2 (6,9\%) \\
+\textit{Sugestão \#4} & 0 (0,0\%) & 1 (3,4\%) & 6 (20,7\%) & 12 (41,4\%) & 10 (34,5\%) \\
+\textit{Sugestão \#5} & 1 (3,4\%) & 0 (0,0\%) & 5 (17,2\%) & 10 (34,5\%) & 13 (44,9\%) \\
+\textit{Sugestão \#6} & 0 (0,0\%) & 1 (3,4\%) & 2 (6,9\%) & 6 (20,7\%) & 20 (69,0\%) \\
+\textit{Sugestão \#7} & 1 (3,4\%) & 5 (17,2\%) & 8 (27,7\%) & 6 (20,7\%) & 9 (31,0\%) \\
+\textit{Sugestão \#8} & 0 (0,0\%) & 1 (3,4\%) & 1 (3,4\%) & 15 (51,7\%) & 12 (41,4\%) \\ \bottomrule
+\end{tabular}%
+}
+\caption{Frequência e percentual das respostas sobre a relevância das sugestões de melhorias}
+\label{tab:freq_percentual_avaliacao_sug_melhorias}
+\end{table}
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=1.1\linewidth]{chapter-sugestoes-melhorias-fgrm/img/plot_likert_avaliacao_sug_melhorias.pdf}
-    \caption{Avaliação das Sugestões de Melhorias}
-\label{fig:plot_likert_avaliacao_sug_melhorias}
+    \includegraphics[width=.9\linewidth]{chapter-sugestoes-melhorias-fgrm/img/plot_likert_avaliacao_sug_melhorias_grayscale.pdf}
+    \caption{Avaliação das Sugestões de Melhorias}\label{fig:plot_likert_avaliacao_sug_melhorias}
 \end{figure}
 
 Para avaliar quais sugestões tiveram maior aceitação definimos um ranqueamento.
@@ -728,7 +748,7 @@ proposto, ou ainda que não tinham opinião formada.
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lcccccc@{}}
 \toprule
-\multicolumn{1}{c}{\textbf{Recomendações}} & \textbf{Discordo Fortemente} &
+\multicolumn{1}{c}{\textbf{Sugestão}} & \textbf{Discordo Fortemente} &
 \textbf{Discordo} & \textbf{Não concordo e nem discordo} & \textbf{Concordo} &
 \textbf{Concordo Fortemente} & \textbf{Ranking} \\ \midrule
 \textit{Sugestão \#6} & 0 & 1 & 2 & 6 & 20 & 45 \\
@@ -749,12 +769,33 @@ proposto, ou ainda que não tinham opinião formada.
 \label{sub:sug_melhorias_resultados_implementacao}
 
 Neste etapa do estudo estávamos interessados em avaliar o nível de dificuldade
-para implementar as sugestões propostas. Os resultados estão apresentados na
-Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}.
+para implementar as sugestões propostas. A frequência e o percentual das
+respostas para cada sugestão de melhoria estão disponíveis na
+Tabela~\ref{tab:freq_percent_aval_sug_melhorias_implementacao} e podem ser
+visualizados na Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}
+
+\begin{table}[htpb]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+\textbf{Sugestão} & \textbf{Discordo Fortemente} & \textbf{Discordo} & \textbf{Não concordo e nem discordo} & \textbf{Concordo} & \textbf{Concordo Fortemente} \\ \midrule
+\textit{Sugestão \#1} & 1 (3,4\%) & 3 (10,3\%) & 10 (34,5\%) & 13 (44,9\%) & 2 (6,9\%) \\
+\textit{Sugestão \#2} & 0 (0,0\%) & 2 (6,9\%) & 7 (24,1\%) & 13 (44,9\%) & 7 (24,1\%) \\
+\textit{Sugestão \#3} & 3 (10,3\%) & 9 (31,0\%) & 13 (44,9\%) & 2 (6,9\%) & 2 (6,9\%) \\
+\textit{Sugestão \#4} & 0 (0,0\%) & 1 (3,4\%) & 6 (20,7\%) & 12 (41,4\%) & 10 (34,5\%) \\
+\textit{Sugestão \#5} & 1 (3,4\%) & 0 (0,0\%) & 5 (17,2\%) & 10 (34,5\%) & 13 (44,9\%) \\
+\textit{Sugestão \#6} & 0 (0,0\%) & 1 (3,4\%) & 2 (6,9\%) & 6 (20,7\%) & 20 (69,0\%) \\
+\textit{Sugestão \#7} & 1 (3,4\%) & 5 (17,2\%) & 8 (27,7\%) & 6 (20,7\%) & 9 (31,0\%) \\
+\textit{Sugestão \#8} & 0 (0,0\%) & 1 (3,4\%) & 1 (3,4\%) & 15 (51,8\%) & 12 (41,4\%) \\ \bottomrule
+\end{tabular}%
+} \caption{Frequência e percentual das respostas sobre a dificuldade de
+    implementação das
+    sugestões de melhoria}\label{tab:freq_percent_aval_sug_melhorias_implementacao} \end{table}
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=1.1\linewidth]{chapter-sugestoes-melhorias-fgrm/img/plot_likert_avaliacao_implementacao_melhorias.pdf}
+    \includegraphics[width=1.1\linewidth]{chapter-sugestoes-melhorias-fgrm/img/plot_likert_avaliacao_implementacao_melhorias_grayscale.pdf}
     \caption{Avaliação sobre a  implementação das sugestões propostas.}
 \label{fig:plot_likert_avaliacao_implementacao_melhorias}
 \end{figure}

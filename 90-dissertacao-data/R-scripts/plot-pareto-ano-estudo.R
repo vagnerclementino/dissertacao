@@ -1,5 +1,5 @@
 df_total_estudos <- read.csv("/home/vagner/workspace/dissertacao/90-dissertacao-data/csv/mapeamento-its/2016-12-19-total-artigos-por-ano.csv")
-  
+
 total_estudos <- df_total_estudos$total
 names(total_estudos) <- df_total_estudos$ano_artigo
 total_estudos_sort <- sort(total_estudos, decreasing=TRUE)

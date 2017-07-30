@@ -20,7 +20,7 @@ yLabels = c('Recomendação #8',
 
 WORKSPACE <-"~/workspace/dissertacao/90-dissertacao-data/R-scripts/" 
 IMG_DIR <-'./img/'
-FILE_NAME <- 'plot_likert_avaliacao_implementacao_melhorias'
+FILE_NAME <- 'plot_likert_avaliacao_implementacao_melhorias_grayscale'
 PS_FILE_NAME <-  paste(FILE_NAME,'.ps', sep='')
 PDF_FILE_NAME <- paste(FILE_NAME, '.pdf', sep='')
 PNG_FILE_NAME <- paste(FILE_NAME, '.png', sep='')
@@ -62,7 +62,7 @@ myPanelFunc <- function(...){
   DF$perc <-format(ave(DF$abs,DF$y,FUN=function(x){x/sum(x) * 100}), digits=1, nsmall=1)
   ###
   
-  panel.text(x=DF$correctX+.2, y=DF$y, label=paste0(DF$perc,'%'), cex=0.5)
+  #panel.text(x=DF$correctX+.2, y=DF$y, label=paste0(DF$perc,'%'), cex=0.5)
 }
 
 # plot passing our custom panel function
@@ -70,7 +70,13 @@ likert(sgbar.likert,
        scales = list(y = list(labels = yLabels)),
        xlab="Número de Respostas",
        main="Avaliação da Implementação das Melhorias",
-       BrewerPaletteName="Blues",
+       reference.line.col="black",
+       col=likertColorBrewer(length(sgbar.likert),
+                             ReferenceZero=NULL,
+                             BrewerPaletteName="Greys",
+                             middle.color="black"
+       ),
+       
        panel=myPanelFunc)
 
 full_name <- paste(IMG_DIR, PS_FILE_NAME, sep='')
