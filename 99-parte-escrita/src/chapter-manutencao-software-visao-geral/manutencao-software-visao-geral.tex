@@ -4,44 +4,40 @@
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
 %		  Rodolfo Resende <rodolfo@dcc.ufmg.br>
 %Criação: Ter Set 13 19:22:37 BRT 2016
-%Modificação: qua jul 19 22:05:06 -03 2017
+%Modificação: qua set 13 22:49:56 -03 2017
 %Revisão: sáb mai 27 17:13:26 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{As FGRMs no Contexto da Manutenção de Software}
-\label{ch:visao-geral-manutencao}
+\chapter{As FGRMs no Contexto da Manutenção de Software}\label{ch:visao-geral-manutencao}
 
-A tendência é que os sistemas de software evoluam para atender aos requisitos e
-alterações do ambiente no qual eles estejam inseridos. Em uma série de estudos,
-Lehman propôs leis sobre a evolução do software. A Lei da Mudança Contínua
+Os sistemas de software têm tendência de evoluir para atender  aos requisitos e
+alterações do ambiente no qual eles se inserem. Em uma série de estudos, Lehman
+propôs leis sobre a evolução do software. A Lei da Mudança Contínua
 (\textit{Continuing Change}) afirma que um software em uso deve mudar ou se
 tornará progressivamente menos útil~\cite{lehman1980understanding}. A Lei da
 Complexidade Crescente (\textit{Increasing complexity}) afirma que as mudanças
-realizadas em um sistema torna a sua estrutura cada vez mais complexa. Neste
+realizadas em um sistema transforma sua estrutura cada vez mais complexa. Neste
 contexto, recursos extras devem ser disponibilizados a fim de preservar e
 simplificar a estrutura do software~\cite{lehman1980understanding}. As leis de
 Lehman têm sido validadas, especialmente aquelas relacionadas ao tamanho e
-complexidade do software. Em um trabalho sobre o tema Yu \&
+complexidade do software. Em um trabalho sobre o tema Yu e
 Mishra~\cite{{yu2013empirical}} examinaram de forma empírica as Leis de Lehman
 em relação à evolução da qualidade do software. O estudo demonstrou que a
-qualidade de um produto de software declinará a menos que uma restruturação seja
-realizada.
+qualidade declinará a menos que sejam realizadas modificações com objetivo de
+melhoria da qualidade do produto.
 
 Partindo da premissa de que mudanças em software são inevitáveis, torna-se
 importante uma disciplina com foco no gerenciamento e controle das alterações.
 Em geral, dentro do escopo da Engenharia de Software a tarefa fica a cargo da
-\textit{Manutenção de Software}. Nas próximas seções discutiremos os conceitos
+\textit{Manutenção de Software}. Nas próximas seções discutimos os conceitos
 básicos da Manutenção de Software que foram utilizados nesta dissertação e sua
-relação com as FGRMs, que é a sigla para Ferramentas de Gerenciamento de
-Requisições de Mudança que é o software utilizado para gerenciar uma Requisição
-de Mudança, o veículo de comunicação de uma falha ou melhoria entre as
-diferentes partes interessadas de um projeto de software.
+relação com as FGRMs.
 
 \section{A Manutenção de Software e a Requisição de Mudança}\label{sec:conceitos_basicos}
 
 Nesta seção apresentamos os vários termos e conceitos relacionados à Manutenção
 de Software e a relação destes termos com o conceito de Requisição de Mudança.
-Iniciaremos com uma visão geral da Manutenção de Software.
+Iniciamos com uma visão geral da Manutenção de Software.
 
 \subsection{Visão Geral da Manutenção de Software}\label{sub:visão_geral_da_manutenção_de_softare}
 
@@ -52,8 +48,8 @@ de adaptar o sistema às modificações ambientais.
 
 Posteriormente a IEEE/EIA 12207~-~Padrão para o Processo de Ciclo de Vida do
 Software~\cite{ISOIEC-12207-2008}, retrata a manutenção como um dos principais
-processos no ciclo de vida do software. Em seu texto a disciplina é definida
-como a atividade de modificação do código e da documentação associada em
+processos no ciclo de vida do software. Em seu texto a disciplina corresponde
+às atividades de modificação do código e da documentação associada em
 decorrência de uma falha ou necessidade de melhoria no
 software~\cite{IEEEComputerSociety:2014:GSE:2616205}.
 
@@ -72,19 +68,16 @@ de forma intercambiáveis.
 
 \subsection{O Processo de Manutenção de Software}\label{sec:o_processo_de_manutecao_de_software}
 
-O Processo de Manutenção de Software é o conjunto de atividades, métodos,
-práticas e transformações utilizadas para desenvolver ou manter um software e
-seus artefatos associados~\cite{paulk1993key}. Existe na literatura alguns
-modelos para o processo de manutenção de software, especialmente baseados em uma
-visão ``tradicional''. Nesta perspectiva o desenvolvimento e a manutenção de
-software possuem uma separação clara. Contudo, no momento do desenvolvimento
-desta dissertação, existia uma tendência de adoção das práticas propostas pelos
-agilistas na manutenção de software. Esta inclinação surge da demanda por
-serviços de manutenção de rápido retorno para o usuário.
-
-%Nas próximas seções apresentamos alguns modelos encontrados na literatura na
-%perspectiva tradicional, ao mesmo tempo descrevemos propostas do uso da
-%metodologia dos agilistas na manutenção de software.
+O Processo de Manutenção de Software é caracterizado pelo conjunto de
+atividades, métodos, práticas e transformações utilizadas para desenvolver ou
+manter um software e seus artefatos associados~\cite{paulk1993key}. Existe na
+literatura alguns modelos para o processo de manutenção de software,
+especialmente baseados em uma visão ``tradicional''. Nesta perspectiva o
+desenvolvimento e a manutenção de software possuem uma separação clara.
+Contudo, no momento do desenvolvimento desta dissertação, existia uma tendência
+cada vez maior da adoção das práticas propostas pelos agilistas na manutenção
+de software. Esta inclinação surge da demanda por serviços de manutenção de
+rápido retorno para o usuário.
 
 \subsubsection{Manutenção de Software Tradicional}\label{subsec:manutenção_de_software_tradicional}
 
@@ -95,10 +88,10 @@ tradicionais. Em resumo, um processo de manutenção de software descreve as
 atividades e suas respectivas entradas e saídas. Alguns modelos são descritos
 nos padrões IEEE~1219~\cite{IEEE1999-Std1219} e
 ISO/IEC~14764~\cite{institute2006norma}. O processo especificado no padrão IEEE
-1219 indica que as atividades de manutenção de software iniciem após a entrega
-do produto de software. O padrão também discute aspectos de planejamento da
-manutenção. As atividades que compõem o processo são apresentadas na
-Figura~\ref{fig:ieee-1219-processo-man-software}.
+1219 prescreve que as atividades de manutenção de software devem ser iniciadas
+após a entrega do produto de software. O padrão também discute aspectos de
+planejamento da manutenção. As atividades que compõem o processo são
+apresentadas na Figura~\ref{fig:ieee-1219-processo-man-software}.
 
 \begin{figure}[htpb] \centering
     \includegraphics[width=0.9\linewidth]
@@ -108,9 +101,9 @@ Figura~\ref{fig:ieee-1219-processo-man-software}.
 \end{figure}
 
 De maneira relacionada, na ISO/IEC~14764 as atividades que compõem o processo
-são similares aquelas propostas na IEEE~1219, exceto pelo fato que elas são
-agregadas de uma forma diferente. O processo descrito na ISO/IEC~14764 é exibido
-na Figura~\ref{fig:ieee-14764-processo-manutencao}.
+são similares àquelas propostas na IEEE~1219, exceto pelo fato que elas são
+agregadas de uma forma diferente. O processo descrito na ISO/IEC~14764 é
+exibido na Figura~\ref{fig:ieee-14764-processo-manutencao}.
 
 \begin{figure}[htpb]
     \centering
@@ -139,8 +132,8 @@ atividade comum é o gerenciamento dos requisitos. Nas duas situações os
 profissionais responsáveis por controlar os requisitos devem atualizar a
 do\-cu\-men\-ta\-ção  por conta de alterações ocorridas no código fonte. Por
 outro lado, certas atividades estão vinculadas apenas ao contexto da manutenção
-de software. O Corpo de Conhecimento em Engenharia de Software~\cite{4425813}
-destaca algumas delas:
+de software. O Corpo de Conhecimento em Engenharia de
+Software~\cite{IEEEComputerSociety:2014:GSE:2616205} destaca algumas delas:
 
 \begin{description}
 	\item[Compreensão do programa:] atividades necessárias para obter um
@@ -167,11 +160,11 @@ Grande parte da literatura em Manutenção de Software trata de técnicas e
 metodologias tradicionais da Engenharia de Software. Todavia, verifica-se a
 tendência de que os departamentos dedicados à Manutenção de Software se mostrem
 interessados nas metodologias propostas pelos agilistas~\cite{Heeager2015}.  No
-momento da elaboração desta dissertação boa parte dos textos em Engenharia de
+momento da elaboração desta dissertação boa parte dos textos de Engenharia de
 Software tratam desenvolvimento e manutenção como atividades com natureza
 distintas. Todavia, algumas ``práticas ágeis'' podem ser utilizadas em tarefas
-de manutenção tais como processo de trabalho iterativo, um maior envolvimento do
-cliente, a comunicação face a face e os testes frequentes.
+de manutenção tais como processo de trabalho iterativo, um maior envolvimento
+do cliente, a comunicação face a face e os testes frequentes.
 
 A adoção das práticas dos agilistas na manutenção de software pode apresentar
 algumas dificuldades~\cite{1402140}. Entre elas está a adequação das práticas
