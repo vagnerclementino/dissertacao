@@ -130,29 +130,30 @@ software são similares a outras presentes no desenvolvimento de software, como
 por exemplo, análise de desempenho, codificação, teste e documentação. Outra
 atividade comum é o gerenciamento dos requisitos. Nas duas situações os
 profissionais responsáveis por controlar os requisitos devem atualizar a
-do\-cu\-men\-ta\-ção  por conta de alterações ocorridas no código fonte. Por
-outro lado, certas atividades estão vinculadas apenas ao contexto da manutenção
-de software. O Corpo de Conhecimento em Engenharia de
-Software~\cite{IEEEComputerSociety:2014:GSE:2616205} destaca algumas delas:
+do\-cu\-men\-ta\-ção  por conta de alterações ocorridas no código fonte.
 
-\begin{description}
-	\item[Compreensão do programa:] atividades necessárias para obter um
-		conhecimento geral do que um produto de software faz e como as partes
-		funcionam em conjunto;
-    \item[Aceitação/rejeição de Requisições de Mudança:] as modificações que
-        ultrapassem determinado limiar de tamanho, esforço ou complexidade podem
-        ser rejeitadas pelos mantenedores e redirecionadas para outro
-        desenvolvedor;
-	\item[Suporte ao usuário:] uma função de suporte para o usuário final que
-		pode resultar na priorização ou avaliação de esforço das Requisições
-		de Mudança;
-	\item[Análise de impacto:] uma técnica para identificar os módulos que
-		possivelmente são afetados por determinada mudança solicitada;
-	\item[Contratos de Acordo de Nível de Serviço (\textit{Service Level Agreements
-		\@-\@ SLA}):] acordos contratuais que descrevem os serviços a serem
-		realizados pela equipe de manutenção e os objetivos de qualidade do
-		produto de software.
-\end{description}
+% Por outro lado, certas atividades estão vinculadas apenas ao contexto da
+% manutenção de software. O Corpo de Conhecimento em Engenharia de
+% Software~\cite{IEEEComputerSociety:2014:GSE:2616205} destaca algumas delas:
+
+% \begin{description}
+% 	\item[Compreensão do programa:] atividades necessárias para obter um
+% 		conhecimento geral do que um produto de software faz e como as partes
+% 		funcionam em conjunto;
+%     \item[Aceitação/rejeição de Requisições de Mudança:] as modificações que
+%         ultrapassem determinado limiar de tamanho, esforço ou complexidade podem
+%         ser rejeitadas pelos mantenedores e redirecionadas para outro
+%         desenvolvedor;
+% 	\item[Suporte ao usuário:] uma função de suporte para o usuário final que
+% 		pode resultar na priorização ou avaliação de esforço das Requisições
+% 		de Mudança;
+% 	\item[Análise de impacto:] uma técnica para identificar os módulos que
+% 		possivelmente são afetados por determinada mudança solicitada;
+% 	\item[Contratos de Acordo de Nível de Serviço (\textit{Service Level Agreements
+% 		\@-\@ SLA}):] acordos contratuais que descrevem os serviços a serem
+% 		realizados pela equipe de manutenção e os objetivos de qualidade do
+% 		produto de software.
+% \end{description}
 
 \subsubsection{Manutenção de Software na Perspectiva dos Agilistas}\label{sub:manutenção_de_software_com_método_dos_agilistas}
 
@@ -582,15 +583,15 @@ consomem tempo e não garantem que falsos positivos não possam
 ocorrer~\cite{kaushik2012comparative}. Os falsos positivos podem ainda acarretar
 na desconsideração de problemas relevantes.
 
-\paragraph{Atribuição (Triagem) de RM:}
+\paragraph{Atribuição da RM:}
 
-O processo de atribuição de RMs, cuja principal atividade é conhecida como
-\textit{triagem}, tem como objetivo encontrar o desenvolvedor mais capacitado
-para manipular uma dada RM~\cite{cavalcanti2014challenges}. Existe a premissa de
-que a escolha do desenvolvedor apropriado é crucial para obter em menor tempo a
-so\-lu\-ção da RM~\cite{di2002approach}. Estudos também discutem que o processo
-de atribuição deve considerar fatores tais como a carga de trabalho do
-desenvolvedor e a prioridade da RM, dentre outros~\cite{aljarah2011selecting}.
+O processo de atribuição de RMs tem como objetivo encontrar o desenvolvedor
+mais capacitado para manipular uma dada RM~\cite{cavalcanti2014challenges}.
+Existe a premissa de que a escolha do desenvolvedor apropriado é crucial para
+obter em menor tempo a so\-lu\-ção da RM~\cite{di2002approach}. Estudos também
+discutem que o processo de atribuição deve considerar fatores tais como a carga
+de trabalho do desenvolvedor e a prioridade da RM, dentre
+outros~\cite{aljarah2011selecting}.
 
 \paragraph{Classificação da RM:}
 
@@ -601,7 +602,9 @@ da RM\@. A diversidade de categorias pode tornar a tarefa complexa pelo fato de
 que em muitos casos não é fácil determinar os limites entre os
 tipos~\cite{antoniol2008bug}. Por exemplo, a uma classificação incorreta de um
 defeito que na verdade trata-se de uma melhoria pode acarretar em atrasos no
-projeto~\cite{cavalcanti2014challenges}.
+projeto~\cite{cavalcanti2014challenges}. A principal atividade associada é a
+triagem de RMs que tem como objetivo revisar uma lista de RMs para determinar
+aquelas que necessitam ser acompanhadas ou priorizadas.
 
 \paragraph{Estimativa de Esforço da RM:}
 
@@ -1266,16 +1269,14 @@ geralmente no formato de Wikis. Além disso, algumas ferramentas permitem uma
 melhor visualização de anexos da RM, como por exemplo arquivos no formato CSV
 (comma-separated values).
 
-\paragraph{Triagem de RMs:}
-\label{par:triagem_de_rm_s}
+\paragraph{Triagem de RMs:}\label{par:triagem_de_rm_s}
 
 Este tópico descreve as funcionalidades relacionadas com a triagem de RMs. As
 FGRMs dão suporte a esta atividade principalmente através da categorização das
 RMs. Todas as ferramentas analisadas permitem algum tipo de classificação
 através do uso de etiquetas previamente definidas.
 
-\paragraph{Internacionalização da Ferramenta:}
-\label{par:internacionalização_da_ferramenta}
+\paragraph{Internacionalização da Ferramenta:}\label{par:internacionalização_da_ferramenta}
 
 Neste tópico estão as características das FGRMs que ajudam no desenvolvimento
 ou adaptação da interface para diferentes idiomas. As FGRMs possuem tradução
