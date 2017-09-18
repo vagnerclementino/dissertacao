@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Objetivo: Descrever os principais conceitos relativos a Manutenção de Software
 %		   envolvidos na dissertação
 %Autores: Vagner Clementino <vagnercs@dcc.ufmg.br>
@@ -197,9 +197,13 @@ Para esta dissertação removemos os papéis que segundo o nosso entendimento
 estão mais vinculados a um contexto de manutenção terceirizada. Além disso,
 dividimos o papel ``equipe de manutenção' (\textit{maintenance team}) em
 \textit{Desenvolvedor e Analista de Qualidade} por entendermos que são
-atribuições comuns a muito dos processos de manutenção existentes. Os papéis
-que compõem a classificação utilizadas durante o texto da dissertação estão
-descritos a seguir:
+atribuições comuns a muito dos processos de manutenção existentes. Além disso,
+o perfil \textit{Usuário} foi dividido em \textit{Usuário Afetado} e
+\textit{Reportador}, especialmente para explicitar as atividades relacionadas à
+relatar RMs. O estudo de Polo e outros não explicita o papel responsável pela
+atribuição das RMs, contudo, entendemos que em cada equipe de manutenção a
+atribuição é realizada de forma adequada. Os papéis que compõem a classificação
+utilizadas durante o texto da dissertação estão descritos a seguir:
 
 \paragraph{Usuário Afetado:}
 Indivíduo que utiliza o software correspondente à Requisição de Mudanças (RM)
@@ -214,12 +218,11 @@ tanto pelo usuário do sistema quanto pela equipe de manutenção.
         manager}):} Res\-pon\-sá\-vel por decidir se uma RM será aceita ou
 rejeitada. Além disso, ele define qual tipo de manutenção deverá ser aplicada.
 Posteriormente cabe ao profissional que cumpre este papel encaminhar a RM para
-o Agente de Triagem.
+o Escalonador.
 
-\paragraph{Agente de Triagem (\textit{Scheduler})}:
-Deve planejar a fila de RMs e atribuí-las para o desenvolvedor mais apto. A
-decisão pode considerar a carga de trabalho existente para cada possível
-destinatário da RM\@.
+\paragraph{Escalonador (\textit{Scheduler}):}
+Deve planejar a fila das RMs que foram aceitas, ou seja, que tenham sido
+aprovadas pelo Gerente de Requisição de Mudança.
 
 \paragraph{Desenvolvedor:}
 Responsável por realizar as ações que irão solucionar a RM\@.
@@ -298,8 +301,7 @@ Os principais elementos envolvidos no modelo estão detalhados a seguir:
     \item [Atribuído Para:] A RM pode ser atribuída a uma pessoa específica
         caso ela seja capaz de resolvê-la, caso contrário, a RM será atribuída
         para alguém que possui o papel de definir o desenvolvedor mais apto
-        para solucioná-la. Nesta dissertação, o membro de uma equipe de
-        manutenção com esta função é denominado \textit{Agente de Triagem}.
+        para solucioná-la.
     \item [Anexo:] Refere-se à informação em formato diferente de texto e que
         pode ser incluída na RM\@. Por exemplo, casos de teste, capturas de
         tela, e cadeia de registros de ativação (\textit{stack trace}).
@@ -431,9 +433,7 @@ RM é movida para o estado \textit{Em análise}.
 Neste estágio uma análise de impacto é conduzida para entender o que foi
 solicitado na RM e estimar o tempo necessário para implementá-la. Caso não seja
 possível ou desejável atendê-la a situação é alterada para \textit{Rejeitada}.
-Caso contrário, a RM é movida para estado \textit{Compromissada (Commit)}. No
-estado \textit{Em Análise} o responsável pela RM é denominado \textit{Agente de
-    Triagem}.
+Caso contrário, a RM é movida para estado \textit{Compromissada (Commit)}.
 
 \paragraph{Compromissada (\textit{Commit}):}\label{par:commit}
 
@@ -571,17 +571,17 @@ Geralmente a Mestre é aquela que foi primeiramente incluída no repositório de
 erros. Alguns estudos revelam que entre 10\% e 30\% das RMs podem ser
 classificadas como
 duplicadas~\cite{anvik2005coping,cavalcanti2013bug,Runeson:2007:DDD:1248820.1248882}.
-Por conta do grande número de RMs repetidas uma das soluções é o \textit{Agente
-    de Triagem} analisá-las manualmente com objetivo de evitar que elas cheguem
-aos desenvolvedores~\cite{anvik2005coping}. Em alguns casos esta solução não é
-viável. O processo de identificação de RMs duplicadas requer: \textit{(i)} um
-prévio conhecimento do conjunto de relatos existentes anteriormente no projeto;
-\textit{(ii)} a busca manual em toda base de dados da
+Por conta do grande número de RMs repetidas uma das soluções é durante o
+processo de atribuição a análise seja realizada de forma manual com objetivo de
+evitar que elas cheguem aos desenvolvedores~\cite{anvik2005coping}. Em alguns
+casos esta solução não é viável. O processo de identificação de RMs duplicadas
+requer: \textit{(i)} um prévio conhecimento do conjunto de relatos existentes
+anteriormente no projeto; \textit{(ii)} a busca manual em toda base de dados da
 FGRM~\cite{banerjee2012automated,
     Lerch:2013:FDY:2495256.2495763,hindle2016contextual}. Ambas as estratégias
 consomem tempo e não garantem que falsos positivos não possam
-ocorrer~\cite{kaushik2012comparative}. Os falsos positivos podem ainda acarretar
-na desconsideração de problemas relevantes.
+ocorrer~\cite{kaushik2012comparative}. Os falsos positivos podem ainda
+acarretar na desconsideração de problemas relevantes.
 
 \paragraph{Atribuição da RM:}
 
@@ -1337,10 +1337,8 @@ discutido na Subseção~\ref{sub:fluxo_de_trabalho_requisicao_mudanca}. Todavia,
 grande parte do esforço fica a cargo do usuário da ferramenta, o que pode
 resultar em atrasos nas situações em que se têm muitas RMs para gerenciar. Um
 exemplo deste problema ocorre no processo de atribuição do desenvolvedor
-responsável por solucionar determinada RM\@. Esta atividade fica sob a
-responsabilidade do \textit{Agente de Triagem}, que deve realizar a escolha de
-forma manual já que as FGRMs não são capazes de ``recomendar'' o desenvolvedor
-mais apto.
+responsável por solucionar determinada RM\@ que é realizado de forma manual já
+que as FGRMs não são capazes de ``recomendar'' o desenvolvedor mais apto.
 
 Devido à sua importância, seria importante que as FGRMs incorporassem outros
 comportamentos que ajudem no processo de desenvolvimento e manutenção de

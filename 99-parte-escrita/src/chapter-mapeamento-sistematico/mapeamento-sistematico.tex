@@ -205,11 +205,11 @@ que atenda aos diversos contextos em que este tipo software está integrado.
 		Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}).
 	\item[Foco no Processo] Melhorias com foco no processo visam dar suporte às
 		atividades de administração focadas na solução das RMs. Por exemplo, a
-		triagem de RM, poderia ser automatizada visando acelerar o processo. Um
-		outro exemplo de melhoria poderia ocorrer no aumento do entendimento do
-		progresso realizado em cada RM ou mesmo fornecer ao usuário afetado por
-		uma falha a estimativa do tempo necessário para atendimento (estimativa
-		de esforço).
+        atribuição de RM, poderia ser automatizada visando acelerar o processo.
+        Um outro exemplo de melhoria poderia ocorrer no aumento do entendimento
+        do progresso realizado em cada RM ou mesmo fornecer ao usuário afetado
+        por uma falha a estimativa do tempo necessário para atendimento
+        (estimativa de esforço).
 	\item[Foco no Usuário] Nesta dimensão estão incluídos tanto os usuários que
 		relatam as RMs (Reportadores) quanto os desenvolvedores responsáveis por
         solucioná-las. Os reportadores podem ser orientados sobre qual
@@ -465,7 +465,7 @@ Em resumo verificamos que o relato contido na RM é utilizado como fonte de
 informação para técnicas de Re\-cu\-pe\-ra\-ção da Informação visando determinar
 a similaridade entre duas RMs.
 
-\paragraph{Atribuição (Triagem) de RM:}
+\paragraph{Atribuição de RM:}
 
 Os estudos apresentados neste tópico foram classificados pela pertinência com a
 automatização do processo de encontrar o desenvolvedor mais apto para solucionar
@@ -476,18 +476,18 @@ controle de versão~\cite{shokripour2012automatic, Hu:2014:EBT:2707683.2708297} 
 itens do contexto do projeto como por exemplo: o perfil e preferências do
 desenvolvedor, quantidade de RMs atribuídas e o tempo estimado de
 correção~\cite{hosseini2012market}. Em outros trabalhos verificamos que é
-explorada a característica colaborativa que existe no processo de triagem das
-RMs. Nestes estudos é desenvolvida uma ``rede de colaboração'' que possibilita
-determinar o desenvolvedor mais apto~\cite{Zhang2014,Zanetti2013, Wu2011}.  Em
-geral técnicas de Recuperação da Informação (RI) são utilizadas pelos estudos
-que espaço vetorial e ranqueamento de páginas.
+explorada a característica colaborativa que existe no processo de atribuição
+das RMs. Nestes estudos é desenvolvida uma ``rede de colaboração'' que
+possibilita determinar o desenvolvedor mais apto~\cite{Zhang2014,Zanetti2013,
+    Wu2011}.  Em geral técnicas de Recuperação da Informação (RI) são
+utilizadas pelos estudos que espaço vetorial e ranqueamento de páginas.
 
 \paragraph{Classificação da RM:}
 
 Os estudos neste tópico visam automatizar o processo de clas\-si\-fi\-ca\-ção
-de uma RM\@.  Este tipo de abordagem faz uso da funcionalidade de atribuição de
+de uma RM\@. Este tipo de abordagem faz uso da funcionalidade de atribuição de
 rótulo (\textit{labels}) que é comum  a grande parte das FGRMs. Em muitos
-projetos esta atividade é realizada manualmente pelo Agente de Triagem,
+projetos esta atividade é realizada manualmente pelo \textit{Escalonador},
 Desenvolvedor ou Analista de Qualidade, o que pode resultar em classificações
 equivocadas.
 
@@ -544,12 +544,12 @@ com papeis abordados na
 Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}. A
 Tabela~\ref{tab:graf_papel_por_artigo} exibe o total de artigos por papel que a
 funcionalidade proposta visa dar suporte.  Como pode ser observado verificamos
-um maior número de estudos para os papéis de Agente de Triagem e Desenvolvedor.
-Na Tabela~\ref{tab:taxonomia-suporte-papeis} é possível observar os estudos
-pelo papel o qual dão suporte. É possível observar que um mesmo estudo pode dar
-suporte a mais de um papel. Por exemplo, o estudo de Zimmermann e outros
-propõe uma ferramenta que mede a qualidade do relato das RMs e recomenda quais
-elementos devem ser adicionados para melhorar a
+um maior número de estudos para os papéis de \textit{Escalonador} e
+\textit{Desenvolvedor}. Na Tabela~\ref{tab:taxonomia-suporte-papeis} é possível
+observar os estudos pelo papel o qual dão suporte. É possível observar que um
+mesmo estudo pode dar suporte a mais de um papel. Por exemplo, o estudo de
+Zimmermann e outros propõe uma ferramenta que mede a qualidade do relato das
+RMs e recomenda quais elementos devem ser adicionados para melhorar a
 qualidade~\cite{zimmermann2010makes}. Os possíveis benefícios podem ajudar o
 \textit{Reportador}, que pode ter reduzido o tempo para analisar a RM que ele
 registrou já que a RM fornece a informação necessária para sua análise; o
@@ -564,7 +564,7 @@ atendida tendo em vista a maior facilidade em entender o que foi solicitado.
 \toprule
 \multicolumn{1}{c}{\textbf{Papel}} & \textbf{Total de Artigos} \\
 \midrule
-Agente de Triagem & 37 \\
+Escalonador & 37 \\
 Desenvolvedor & 26 \\
 Analista de Qualidade & 13 \\
 Gerente de Requisição de Mudança & 11 \\
@@ -581,13 +581,11 @@ Todos & 3 \\
 % Inclusão da tabela do suporte dos papéis
 \input{chapter-mapeamento-sistematico/tables/tb-taxonomia-papeis-suportados.tex}
 
-\paragraph{Agente de Triagem:}
+\paragraph{Escalonador:}
 
 Esta função tem como principal objetivo a atribuição das RMs para o
 desenvolvedor mais apto~\cite{banitaan2013decoba}.  Os estudos recuperados
-focam em apresentar soluções de atribuição automática~\cite{banitaan2013decoba,
-    shokripour2012automatic, somasundaram2012automatic, Naguib2013, Zhang2014,
-    Zanetti2013}; classificação
+focam em apresentar classificação
 automatizada~\cite{gegick2010identifying,liu2014faceted, behl2014bug,
     chawla2015automated,tian2015automated}; visualização das RMs armazenadas no
 repositórios de RMs~\cite{izquierdo2015gila}; agrupamento (clustering) das
@@ -684,7 +682,7 @@ navegabilidade entre as RMs~\cite{dal2014bug}.
 
 Ao realizarmos este mapeamento verificamos uma prevalência de estudos na
 dimensão \textit{Processo} especialmente para os tópicos de \textit{Localização
-    de RMs Duplicadas, Atribuição (Triagem) de RMs e Classificação de RMs},
+    de RMs Duplicadas, Atribuição de RMs e Classificação de RMs},
 respectivamente. A prevalência destes tópicos pode estar relacionada ao fato de
 que eles afetam projetos de diferentes tipos e tamanhos. No caso da
 \textit{Localização de RMs Duplicadas} apesar de ser o de maior frequência não é
@@ -706,18 +704,18 @@ criar novas funcionalidades ou melhorias.
 % software poderia melhorar a qualidade das soluções mediante a redução da
 % diferença entre o estado-da-prática com o estado-da-arte.
 
-Quando analisamos o esquema de Classificação por Papéis, verificamos uma
-prevalência de estudos com foco no papel de \textit{Agente de Triagem}. Existe
-possivelmente uma crença de que é possível melhorar a produtividade do processo
-de manutenção de software reduzindo o esforço de encontrar o desenvolvedor mais
-apto. Os estudos que fazem parte desta classe destacam que um considerável
-conhecimento sobre o projeto é necessário bem como a capacidade de negociação
-com os desenvolvedores e demais partes interessadas são importantes para o
-desempenho do papel. Todavia, tendo em vista o esforço e tempo gasto por esta
-tarefa, especialmente quando realizada ma\-nu\-al\-men\-te, seria importante que
-as FGRMs automatizassem algumas destas atividades. Um outro ponto a destacar é
-que as FGRMs deveriam dar suporte ao Reportador que, na maioria da vezes, é o
-primeiro a registrar as informações que serão necessárias à solução da RM\@.
+% Quando analisamos o esquema de Classificação por Papéis, verificamos uma
+% prevalência de estudos com foco no papel de \textit{Agente de Triagem}. Existe
+% possivelmente uma crença de que é possível melhorar a produtividade do processo
+% de manutenção de software reduzindo o esforço de encontrar o desenvolvedor mais
+% apto. Os estudos que fazem parte desta classe destacam que um considerável
+% conhecimento sobre o projeto é necessário bem como a capacidade de negociação
+% com os desenvolvedores e demais partes interessadas são importantes para o
+% desempenho do papel. Todavia, tendo em vista o esforço e tempo gasto por esta
+% tarefa, especialmente quando realizada ma\-nu\-al\-men\-te, seria importante que
+% as FGRMs automatizassem algumas destas atividades. Um outro ponto a destacar é
+% que as FGRMs deveriam dar suporte ao Reportador que, na maioria da vezes, é o
+% primeiro a registrar as informações que serão necessárias à solução da RM\@.
 
 \section{Limitações e Ameaças à Validade}
 \label{sec:map_limitacoes_ameacas}
@@ -816,10 +814,10 @@ funcionalidades das FGRMs.
 Neste capítulo realizamos um mapeamento sistemático envolvendo 64 estudos
 divididos em dois esquemas de classificação: dimensões de melhoria e suporte ao
 papel exercido na manutenção de software. Verificamos que tópicos como
-Localização de RMs Duplicadas, Atribuição (Triagem) de RMs e Classificação de
+Localização de RMs Duplicadas, Atribuição de RMs e Classificação de
 RMs estão sendo tratados com maior frequência na literatura. Da mesma forma, o
-Agente de Triagem e Desenvolvedor possuem um maior número de funcionalidades
-que podem dar-lhes suporte. Verificamos ainda que é reduzido o número de
-estudos que efetivaram as melhorias propostas em protótipos de ferramentas.
-Esta última constatação pode causar um distanciamento entre o estado da arte e
-o estado da prática.
+Escalonador e Desenvolvedor possuem um maior número de funcionalidades que
+podem dar-lhes suporte. Verificamos ainda que é reduzido o número de estudos
+que efetivaram as melhorias propostas em protótipos de ferramentas.  Esta
+última constatação pode causar um distanciamento entre o estado da arte e o
+estado da prática.
