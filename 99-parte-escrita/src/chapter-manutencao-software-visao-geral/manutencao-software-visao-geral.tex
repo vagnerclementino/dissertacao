@@ -214,8 +214,14 @@ rejeitada. Além disso, ele define qual tipo de manutenção deverá ser aplicad
 Posteriormente a RM é encaminhada para o \textit{Escalonador}.
 
 \paragraph{Escalonador (\textit{Scheduler})}:
-Deve planejar a fila das RMs que foram aceitas, ou seja, que tenham sido
-aprovadas pelo Gerente de Requisição de Mudança.
+Deve planejar a fila das RMs que foram aceitas, ou seja, planeja a ordem de
+atendimento das RMs que tenham sido aprovadas pelo Gerente de Requisição de
+Mudança.
+
+\paragraph{Atribuidor:}
+Deve atribuir a solução de RMs aos desenvolvedores, ou seja, considerar o
+planejamento de RMs feito pelo Escalonador e determinar os desenvolvedores que
+elaborarão as soluções.
 
 \paragraph{Desenvolvedor:}
 Responsável por realizar as ações que irão solucionar a RM\@.
@@ -224,11 +230,6 @@ Responsável por realizar as ações que irão solucionar a RM\@.
 Tem por responsabilidade avaliar se uma RM solucionada por um Desenvolvedor foi
 resolvida de forma correta e dentro dos padrões de qualidade exigidos pelo
 projeto.
-
-\paragraph{Atribuidor:}
-Deve atribuir determinada RM para o desenvolvedor mais apto. A decisão pode
-considerar a carga de trabalho existente para cada possível destinatário da
-RM\@.
 
 \paragraph{Chefe da Manutenção (\textit{Head of	Maintenance}):}
 Este papel é responsável por definir os padrões e procedimentos que compõem o
