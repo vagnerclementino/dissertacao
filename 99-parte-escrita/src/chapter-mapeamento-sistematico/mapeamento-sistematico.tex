@@ -3,7 +3,7 @@
 %está sendo proposto de melhorias nas funcionalidades das FGRM
 %Autor: Vagner Clementino e Rodolfo Resende
 %Criação: Ter Out 11 19:03:45 BRT 2016
-%Modificação: qua jul 19 22:07:06 -03 2017
+%Modificação: sáb set 23 15:07:16 -03 2017
 %Revisão: ter abr  4 21:13:00 -03 2017
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -15,32 +15,32 @@
 
 Neste capítulo apresentamos um Mapeamento Sistemático com o objetivo de
 identificar estudos que propõem melhorias das funcionalidades fornecidas pelas
-FGRMs. Realizamos a divisão de um conjunto de \textit{64} artigos em dois grupos
-pela pertinência do estudo com as seguintes categorias: \textit{(i)}
-\textit{dimensões de melhoria}, conforme proposto por Zimmermann e
+FGRMs. Realizamos a divisão de um conjunto de \textit{64} artigos pela
+pertinência com as seguintes categorias: \textit{(i)} \textit{dimensões de
+    melhoria}, conforme proposto por Zimmermann e
 outros~\cite{zimmermann2009improving} e \textit{(ii)} \textit{função
-    desempenhada} no processo de manutenção de software, a partir de um conjunto
-de papéis desempenhados por pessoas envolvidas com Manutenção e discutidos por
-Polo e outros~\cite{Polo1999}.
+    desempenhada} no processo de manutenção de software, a partir do conjunto
+de papéis envolvidas com Manutenção que foi apresentado no
+Capítulo~\cite{ch:visao-geral-manutencao}.
 
-A principal contribuição deste mapeamento é uma visão do estado da arte sobre
-propostas de melhorias das funcionalidades das FGRMs, com foco especial na
-gerenciamento das RMs. Nossa expectativa é que pesquisadores possam encontrar
-questões para pesquisa e que profissionais com interesses em FGRMs possam
-encontrar discussões e referências neste domínio. Além disso, os desenvolvedores
-de FGRMs podem incorporar alguns dos aspectos deste estudo nas funcionalidades
-oferecidas pelas FGRMs que são responsáveis.
+A principal contribuição deste mapeamento é uma visão do estado da arte das
+propostas de melhorias das funcionalidades das FGRMs. Nossa expectativa é que
+pesquisadores possam encontrar questões que contribuam para suas investigações
+e que profissionais com interesses em FGRMs possam encontrar discussões e
+referências neste domínio. Além disso, os desenvolvedores de FGRMs podem
+incorporar alguns dos aspectos deste estudo nas funcionalidades oferecidas
+pelas ferramentas que são responsáveis.
 
 Este capítulo está organizado conforme descrito a seguir. Na
 Seção~\ref{sec:map-metodologia} descrevemos a metodologia adotada através das
 perguntas direcionadoras, dos critérios para seleção dos estudos e dos esquemas
 de classificação utilizados. Na Seção~\ref{sec:mapeamento_resultados}
-apresentamos o resultado do processo de classificar os artigos que fizeram parte
-do mapeamento. Uma discussão dos resultados é feita na Seção~\ref{sec:discussao}
-As ameaças à validade e os trabalhos relacionados são discutidos nas
-Seções~\ref{sec:map_limitacoes_ameacas} e~\ref{sec:map_trabalhos_relacionados},
-respectivamente. Um resumo do capítulo é feito na
-Seção~\ref{sec:resumo_capitulo}.
+apresentamos o resultado do processo de classificar os artigos que fizeram
+parte do mapeamento. Uma discussão dos resultados é feita na
+Seção~\ref{sec:discussao}. As ameaças à validade e os trabalhos relacionados
+foram discutidos nas Seções~\ref{sec:map_limitacoes_ameacas}
+e~\ref{sec:map_trabalhos_relacionados}, respectivamente. Um resumo do capítulo
+foi realizado na Seção~\ref{sec:resumo_capitulo}.
 
 \section{Metodologia de Pesquisa}
 \label{sec:map-metodologia}
@@ -52,19 +52,22 @@ sobre um tema de interesse e fornecer uma indicação da quantidade de trabalhos
 na linha de pesquisa sob
 análise~\cite{keele2007guidelines,wohlin2012experimentation}. Nesta dissertação
 empregamos as diretrizes propostas por Petersen e outros~\cite{Petersen2008} em
-que um conjunto de questões de pesquisa é utilizado para guiar a busca e seleção
-dos estudos primários. Em seguida, foram construídos esquemas de classificação
-com base nos dados extraídos dos artigos. Por fim, foi realizada uma análise
-para posicionar os trabalhos em seus respectivos esquemas. A estrutura desta
-seção está de acordo com o processo descrito por \textit{Petersen e outros}, de
-modo que cada subseção representa uma das etapas propostas pelos autores.
+que um conjunto de questões de pesquisa é utilizado para guiar a busca e
+seleção dos estudos primários. Em seguida, foram construídos dois esquemas de
+classificação com base nos dados extraídos dos artigos. Por fim, foi realizada
+uma análise para posicionar os trabalhos em seus respectivos esquemas.
+
+% A estrutura desta seção está de acordo com o processo descrito por
+% \textit{Petersen e outros}, de modo que cada subseção representa uma das etapas
+% propostas pelos autores.
 
 \subsection{Questões de Pesquisa}
 \label{subsec:map-questoes-de-pesquisa}
 
-O objetivo deste mapeamento sistemático é identificar novas funcionalidades e
-melhorias das existentes que estão sendo propostas na literatura para as FGRMs.
-Deste modo, foram definidas as seguintes questões de pesquisa:
+O objetivo deste mapeamento é identificar na literatura a proposição de novas
+funcionalidades para as FGRMs ou a melhoria daquelas que existiam quanto esta
+dissertação foi escrita. Deste modo, foram definidas as seguintes questões de
+pesquisa:
 
 \begin{itemize}
 	\item \textbf{Questão 01}: \textit{Quais as melhorias e novas
@@ -75,21 +78,22 @@ Deste modo, foram definidas as seguintes questões de pesquisa:
 \end{itemize}
 
 Na \textit{Questão de Pesquisa 01} estamos interessados em entender como a
-literatura da área vem propondo melhorias ou apresentando novos comportamentos
-para as FGRMs. Estas melhorias devem potencialmente estar relacionadas com os
+literatura da área estava propondo melhorias ou novas funcionalidades para as
+FGRMs. Estas melhorias deveriam potencialmente estar relacionadas com os
 problemas do gerenciamento das RMs, conforme discutido na
 Seção~\ref{ssub:problemas_relacionadas_rm}. O intuito é entender as técnicas e
-abordagens adotadas nas soluções propostas. Na \textit{Questão de Pesquisa 02} o
-objetivo é descobrir como os diferentes tipos de papéis que fazem parte do
-processo de manutenção de software estão recebendo suporte pelos estudos da
-área.
+abordagens adotadas nas soluções propostas. Na \textit{Questão de Pesquisa 02}
+o objetivo é descobrir como os diferentes tipos de papéis que fazem parte do
+processo de manutenção de software, e que foram apresentados no
+Capítulo~\ref{ch:visao-geral-manutencao} estavam recebendo suporte pelos
+estudos da área.
 
 \subsection{Pesquisa da Literatura}
 \label{subsec:map-pesquisa-literatura}
 
-Para encontrar o conjunto de estudos mais relevantes, bem como eliminar aqueles
-que não permitissem responder as questões de pesquisas, adotamos os seguintes
-critérios para inclusão ou exclusão de artigos no mapeamento:
+Para encontrarmos o conjunto de estudos mais relevantes, bem como eliminarmos
+aqueles que não permitiam responder as questões de pesquisas, adotamos os
+seguintes critérios para inclusão ou exclusão de artigos no mapeamento:
 
 \begin{itemize}
 	\item Critérios de Inclusão
@@ -97,8 +101,8 @@ critérios para inclusão ou exclusão de artigos no mapeamento:
 			\item Artigos
 				publicados em conferências e periódicos (journals)
 			\item Estudos
-				publicados a partir de 2010\footnote{Foram considerados neste
-					estudo artigos publicados até maio/2016, data de realização
+				publicados a partir de 2010\footnote{Foram considerados os
+                    artigos publicados até maio/2016, data de realização
 					da pesquisa nas base de dados.}
 			\item Artigos escritos em
 				língua inglesa
@@ -111,41 +115,40 @@ critérios para inclusão ou exclusão de artigos no mapeamento:
                   literature}~\cite{keele2007guidelines}), por exemplo,
                   relatórios técnicos, \textit{white papers}, trabalhos em
                   progresso e etc.)
-             \item Artigos que não possuem relação com FGRM
+             \item Artigos que não possuíam relação com FGRM
 			\item Estudos duplicados, neste caso foi considerada a versão mais
 				completa do trabalho
 		\end{itemize}
 \end{itemize}
 
 Os estudos primários foram coletados mediante a aplicação de sentenças de
-buscas nas seguintes bases de pesquisa: \textit{IEEE Explore, ACM Digital
-    Library, Scopus, e Inspec/Compendex}. No estudo descrito por Dyba e
-outros~\cite{dybaa2007applying} verifica-se que o uso de apenas algumas
-bibliotecas apresenta um resultado semelhante que uma configuração quase
-exaustiva de base de dados. Neste sentido, tomando como base aquele estudo, o
-conjunto de bibliotecas digitais utilizada neste mapeamento pode propiciar o
-acesso a uma quantidade satisfatória de estudos relevantes. As sentenças de
-buscas foram produzidas com base na metodologia PICO (\textit{Population,
-    Intervention, Comparison and Outcomes})~\cite{keele2007guidelines} para
-ajudar pesquisadores na formulação de termos de busca tomando como ponto de
-partida as questões de pesquisa. As sentenças de busca aplicadas em cada base
-de pesquisa estão disponíveis no
+buscas nas bases de pesquisa \textit{IEEE Explore, ACM Digital Library, Scopus,
+    e Inspec/Compendex}. Elas foram escolhidas por possibilitarem  acesso a uma
+quantidade similar de estudos relevantes se comparada com uma configuração
+muito maior de base de dados~\cite{dybaa2007applying}. As sentenças de buscas
+foram produzidas com base na metodologia PICO (\textit{Population,
+    Intervention, Comparison and Outcomes})~\cite{keele2007guidelines} que tem
+como objetivo dar suporte ao pesquisadores na formulação de termos de busca
+tomando como ponto de partida as questões de pesquisa. As sentenças de busca
+aplicadas em cada base de pesquisa estão disponíveis no
 Apêndice~\ref{ch:app-setenca-de-busca-base-dados}.
 
-Após uma busca automatizada chegamos a um total de 286 artigos\footnote{A lista
-    inicial de artigos, após a remoção do duplicados, pode ser acessada
+A aplicação de uma busca automatizada chegamos a um total de 286
+artigos\footnote{A lista inicial de artigos, após a remoção do duplicados, pode
+    ser acessada
     em~\url{https://archive.org/download/dissertacao-vagner-clementino-um-estudo/artigo-todos-sem-duplicados.csv}}.
 A Tabela~\ref{tab:estudos-por-base-dados} exibe o total de estudos recuperados
-por base de pequisa. Os trabalhos coletados foram avaliados, através da
-ferramenta \textit{JabRef}\footnote{\url{https://www.jabref.org/}}, em busca de
-possíveis duplicados. Esta etapa resultou na exclusão de 81 artigos, desta
-maneira chegamos a 205 estudos ao final desta etapa do processo.  Finalmente os
-trabalhos foram analisados com base na leitura do título e resumo.  Nos casos
-em que o título e resumo não eram capazes de indicar que o artigo atendia aos
-critérios de inclusão foi realizada uma leitura completa do texto. O processo
-descrito resultou em \textbf{64} estudos. A
-Figura~\ref{fig:diagrama-processo-selecao} resume a seleção dos estudos
-primários através da exibição do número de artigos em cada etapa.
+por base de pequisa. Os metadados dos artigos foram organizados com ajuda da
+ferramenta \textit{JabRef}\footnote{\url{https://www.jabref.org/}}, de modo a
+encontrar possíveis duplicados. Com a ajuda da ferramenta \textit{JabRef} foi
+possível remover 81 artigos, resultando em 205 estudos ao final desta etapa do
+processo. Finalmente os trabalhos foram analisados com base na leitura do
+título e do resumo. Nos casos em que o título e o resumo não eram capazes de
+indicar que o artigo atendia aos critérios de inclusão foi realizada uma
+leitura completa do texto. A aplicação de todas as etapas descritas resultou em
+\textbf{64} estudos. A Figura~\ref{fig:diagrama-processo-selecao} resume a
+seleção dos estudos primários através da exibição do número de artigos em cada
+etapa.
 
 \begin{figure} \centering \includegraphics[width=0.75\linewidth]
 	{./chapter-mapeamento-sistematico/img/diagrama-processo-selecao.pdf}
@@ -173,27 +176,27 @@ primários através da exibição do número de artigos em cada etapa.
 \subsection{Esquemas de Classificação}
 \label{subsec:map-esquemas-classificacao}
 
-O mapeamento foi conduzido utilizando dois esquemas de classificação. O primeiro
-organiza os artigos pela pertinência com a dimensão de melhoria da
-funcionalidade proposta. As dimensões de melhorias foram baseadas no trabalho de
-Zimmermann e outros cujo objetivo é aperfeiçoar as funcionalidades das FGRMs de
-maneira integral~\cite{zimmermann2009improving}. A segunda classificação
-distribui os estudos pelo relacionamento com o suporte dado a determinado papel
-no processo de manutenção de software. Entendemos que estes dois esquemas nos
-fornecem uma visão de como as melhorias das funcionalidades vêm sendo propostas
-tanto do ponto de vista de quem desenvolve quanto das diferentes partes
-interessadas dos projetos de software. As pró\-xi\-mas subseções discutem com
-mais detalhe cada esquema.
+O mapeamento foi conduzido utilizando dois esquemas de classificação. O
+primeiro organiza os artigos pela pertinência funcionalidade proposta no estudo
+com alguma das dimensões de melhoria proposta por Zimmermann e
+outros~\cite{zimmermann2009improving}. A segunda classificação distribui os
+estudos pelo relacionamento com o suporte dado a determinado papel no processo
+de manutenção de software e que foi adotado nesta dissertação. Entendemos que
+estes dois esquemas nos fornecem uma visão de como as melhorias das
+funcionalidades estavam sendo propostas tanto do ponto de vista de quem
+desenvolve quanto das diferentes partes interessadas dos projetos de software.
+As pró\-xi\-mas subseções discutem com mais detalhe cada esquema.
 
 \subsubsection{Classificação por Dimensão de Melhoria}
 \label{subsubsec:map-esquema-suporte-problema}
 
 Em um estudo sobre o aperfeiçoamento das FGRMs~\cite{zimmermann2009improving},
-os autores argumentam que ter informações completas nos relatos de falhas
-(Requisição de Mudança), tão logo quanto possível, ajuda os desenvolvedores a
-resolver com mais rapidez o problema. Neste mesmo estudo, eles discutem como
-melhorar as funcionalidades oferecidas pelas FGRMs de forma integral, ou seja,
-que atenda aos diversos contextos em que este tipo software está integrado.
+os autores argumentam que ter informações completas nos relatos de falhas, ou
+seja, nas RMs, tão logo quanto possível, ajuda os desenvolvedores a resolver
+com mais rapidez o problema. Neste mesmo estudo, eles discutem como melhorar as
+funcionalidades oferecidas pelas FGRMs de forma integral, ou seja, que atenda
+aos diversos contextos em que este tipo software está integrado. Para isso, os
+autores propõe quatro dimensões de melhoria, conforme descritas a seguir.
 
 \begin{description}
 	\item[Foco na Informação] Estas melhorias focam diretamente na informação
@@ -227,24 +230,22 @@ que atenda aos diversos contextos em que este tipo software está integrado.
 \end{description}
 
 Para a classificação dos estudos nos esquemas utilizados foi realizado um
-processo baseado no trabalho de Petersen e outros~\cite{Petersen2008}, que é
-composto por duas etapas:
-
-\begin{enumerate}[I]
-	\item análise das palavras-chaves e conceitos que
-		identificam as contribuições do estudo por meio da analise do título e
-		resumo.
-	\item combinações das palavras-chaves para construir um conjunto de
-		categorias para classificação dos artigos.
-\end{enumerate}
-
-Os autores recomendam que nos casos em que o resumo e o título do estudo não
-sejam capazes de caracterizá-lo, as seções de introdução e conclusão também
-devem ser analisadas. Para as bases de pesquisa de dados em que era informado
-mais de um conjunto de palavras-chaves para um mesmo artigo, utilizamos aquelas
-que foram definidas pelos autores. Mediante a aplicação do processo descrito foi
+processo baseado no trabalho de Petersen e outros~\cite{Petersen2008}. Os
+autores recomendam que nos casos em que o resumo e o título do estudo não sejam
+capazes de caracterizá-lo, as seções de introdução e conclusão também devem ser
+analisadas. Para as bases de pesquisa de dados em que era informado mais de um
+conjunto de palavras-chaves para um mesmo artigo, utilizamos aquelas que foram
+definidas pelos autores. Mediante a aplicação do processo descrito foi
 construído o esquema de classificação apresentado na
 Figura~\ref{fig:diagrama-esquema-dimensao-melhorias}.
+
+% \begin{enumerate}[I]
+% 	\item análise das palavras-chaves e conceitos que
+% 		identificam as contribuições do estudo por meio da analise do título e
+% 		resumo.
+% 	\item combinações das palavras-chaves para construir um conjunto de
+% 		categorias para classificação dos artigos.
+% \end{enumerate}
 
 \begin{figure}[tb] \centering
 	\makebox[\textwidth]{\includegraphics[width=.7\paperwidth]{./chapter-mapeamento-sistematico/img/diagrama-esquema-dimensoes-melhorias.eps}}
@@ -262,25 +263,25 @@ Neste esquema de classificação estamos interessado em avaliar como os estudos
 dão suporte aos papéis apresentados na
 Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}. A
 construção da classificação utiliza a mesma metodologia descrita na seção
-anterior e utilizada a classificação de papéis da manutenção proposto por Polo e
-outros~\cite{Polo1999}.
+anterior e utiliza uma versão modificada do conjunto de papéis proposto Polo e
+outros~\cite{Polo1999} e que está descrito na
+Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}.
 
 \section{Resultados}
 \label{sec:mapeamento_resultados}
 
 Nesta seção apresentamos os estudos divididos para cada um dos esquemas de
-classificação utilizados. Iniciamos com uma análise da frequência de publicação
-sobre o tema do mapeamento e posteriormente apresentamos os resultados para cada
-uma das dimensões de melhoria. Seguimos com a análise dos estudos pelo papel ao
-qual a funcionalidade proposta visa dar suporte.
+classificação utilizados. Iniciamos com uma análise da frequência de
+publicações e posteriormente apresentamos os resultados para cada uma das
+dimensões de melhoria. Seguimos com a análise dos estudos pelo papel ao qual a
+funcionalidade proposta visa dar suporte.
 
-A frequência de publicação dos estudos teve em 2010, primeiro ano do período
-analisado, um total de 05 trabalhos publicados. A maior quantidade de
-publicação ocorreu entre os anos de 2012, 2013 e 2014, com, respectivamente,
-14, 12 e 13 artigos. No ano de 2016, último ano do período de referência,
-encontramos 03 estudos publicados. A Tabela~\ref{tab:publicacao_por_ano} exibe
-o número de estudos primários identificados entre os anos de 2010 e 2016,
-período de referência utilizado no mapeamento.
+Para os artigos recuperados, em 2010, primeiro ano do período analisado,
+obtivemos um total de 05 trabalhos publicados. A maior quantidade de publicação
+ocorreu entre os anos de 2012, 2013 e 2014, com, respectivamente, 14, 12 e 13
+artigos. No ano de 2016, último ano do período de referência, encontramos 03
+estudos publicados. A Tabela~\ref{tab:publicacao_por_ano} exibe o número de
+estudos primários identificados entre os anos de 2010 e 2016.
 
 \begin{table}[htpb]
 \centering
@@ -294,7 +295,8 @@ período de referência utilizado no mapeamento.
 2013         & 12                  \\
 2014         & 13                  \\
 2015         & 9                   \\
-2016         & 3                   \\ \bottomrule
+2016         & 3                   \\ 
+\bottomrule
 \end{tabular}%
 }
 \caption{Número de estudos primários por ano de publicação.}
@@ -306,13 +308,13 @@ período de referência utilizado no mapeamento.
 
 Nesta seção apresentamos estudos relacionados com a dimensão denominada
 ``Melhoria das funcionalidades das FGRMs\@''. A classificação está estruturada
-de modo que no primeiro nível temos uma das quatro dimensões de melhorias
-discutidas na Subseção~\ref{subsubsec:map-esquema-suporte-problema}. O segundo
-nível é composto por tópicos que são os problemas do gerenciamento das RMs. Uma
-discussão mais detalhada sobre estes problemas pode ser encontrada na
-Subseção~\ref{ssub:problemas_relacionadas_rm}. A
-Tabela~\ref{tab:taxonomia-problemas-manutencao} exibe a distribuição dos
-estudos pela dimensão de melhoria e o seu respectivo tópico.
+de modo que no primeiro nível temos as dimensões de melhoria discutidas na
+Subseção~\ref{subsubsec:map-esquema-suporte-problema}. O segundo nível é
+composto por tópicos representando os problema relacionado com o gerenciamento
+das RMs, conforme discutidos na Subseção~\ref{ssub:problemas_relacionadas_rm}.
+A Tabela~\ref{tab:taxonomia-problemas-manutencao} exibe a distribuição dos
+estudos pela dimensão de melhoria e por sua pertinência com determinado
+problema do gerenciamento das RMs.
 
 % Inclusão da tabela
 \input{chapter-mapeamento-sistematico/tables/tb-taxonomia-problemas-manutencao.tex}
