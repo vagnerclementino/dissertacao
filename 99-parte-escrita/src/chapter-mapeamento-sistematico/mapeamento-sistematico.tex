@@ -310,7 +310,7 @@ Nesta seção apresentamos estudos relacionados com a dimensão denominada
 ``Melhoria das funcionalidades das FGRMs\@''. A classificação está estruturada
 de modo que no primeiro nível temos as dimensões de melhoria discutidas na
 Subseção~\ref{subsubsec:map-esquema-suporte-problema}. O segundo nível é
-composto por tópicos representando os problema relacionado com o gerenciamento
+composto por tópicos representando os problema relacionados com o gerenciamento
 das RMs, conforme discutidos na Subseção~\ref{ssub:problemas_relacionadas_rm}.
 A Tabela~\ref{tab:taxonomia-problemas-manutencao} exibe a distribuição dos
 estudos pela dimensão de melhoria e por sua pertinência com determinado
@@ -327,18 +327,18 @@ tópicos como Localização do Problema e Visualização de RMs.
 
 \paragraph{Localização do Problema:}
 
-Os estudos incluídos neste tópico focam em localizar a origem de um problema de
+Os estudos incluídos neste tópico focam em localizar a origem do problema no
 software com base nos dados da RM~\cite{Hovemeyer:2004:FBE:1052883.1052895}.
-Com objetivo de melhorar a eficiência da localização de um problema, diversas
-informações contidas nas RMs estão sendo utilizadas. As abordagens propostas
-utilizam informações como cadeia de registros de
-ativação~\cite{Wong:2014:BBF:2705615.2706096}, des\-cri\-ção e campos
+Com objetivo de melhorar a eficiência da localização de um problema, a
+informação contida nas RMs vem sendo utilizada. As abordagens propostas
+utilizam a cadeia de registros de
+ativação~\cite{Wong:2014:BBF:2705615.2706096}, a des\-cri\-ção e campos
 estruturados das RMs~\cite{Thung:2014:BIT:2635868.2661678} e os históricos de
 versões do código fonte do
 sistema~\cite{Bangcharoensap:2012:LSC:2419061.2419428, corley2011recovering,
     Romo:2015:TAT:2745802.2745833}. Algumas das melhorias propostas foram
-incluídas em ferramentas largamente empregadas no mercado utilizando os
-mecanismos de extensão que elas oferecem. A ferramenta
+incluídas em ferramentas que estavam disponíveis quando esta dissertação foi
+escrita por meio dos mecanismos de extensão que elas oferecem. A ferramenta
 \textit{BugLocalizer}\footnote{\url{https://github.com/smagsmu/buglocalizer}},
 implementada como extensão do Bugzilla, extrai o texto do sumário e do relato
 de uma RM e calcula a semelhança entre o texto relatado e o código fonte para
@@ -353,14 +353,14 @@ código fonte.
 
 \paragraph{Visualização de RM:}
 
-Os estudos neste tópico estão relacionados com melhoria da visualização da
+Os artigos neste tópico estão relacionados com melhoria da visualização da
 informação contida na RM\@. Com o objetivo de apresentar diferentes formas de
-visualizar os dados de uma RM novos conceitos estão sendo propostos. No estudo
+visualizar os dados de uma RM, novos conceitos estão sendo propostos. No estudo
 de Hora e outros~\cite{hora2012bug} é apresentado o conceito de Mapas de
 Defeitos (\textit{BugsMaps)} que mostra a RM e uma ligação dela com outros
 artefatos de software, por exemplo, o histórico de versões. O conceito de
 hiperligação entre documentos é utilizado para permitir a navegação entre os
-artefatos que estão relacionados a uma RM~\cite{dal2014bug}.
+artefatos que podem estar relacionados com a RM~\cite{dal2014bug}.
 
 Verificamos ainda no artigo proposto por Takama e
 Kurosawa~\cite{takama2013application} a aplicação de tecnologias de
@@ -368,7 +368,7 @@ visualização de informação empregada para o monitoramento das informações
 contidas nas RMs. Uma FGRM atualiza quase toda informação de uma RM como texto,
 sem maiores estruturações. A solução proposta pelos autores visa suportar o
 monitoramento das RMs apresentando ao usuário da FGRM, seja ele o afetado por
-uma falha, o responsável por relatar a requisição ou mesmo um membro da equipe
+uma falha ou responsável por relatar a requisição ou mesmo um membro da equipe
 de manutenção, a situação das RMs mediante animações produzidas com base nas
 atualizações ocorridas nas mesmas.
 
@@ -382,29 +382,31 @@ e \textit{In* Bug}\footnote{\url{http://inbug.inf.usi.ch}}~\cite{dal2014bug}.
 \subsubsection{Melhorias Propostas na Dimensão Informação}
 \label{ssub:melhorias_dim_informacao}
 
-Apresentamos os trabalhos relacionados à melhoria da qualidade da informação de
-uma RM\@. A melhoria pode envolver suporte ao registro de uma RM antes que ela
-seja armazenada no Repositório de RMs; a melhoria também pode envolver a
+Apresentamos os trabalhos relacionados com a melhoria da qualidade da
+informação fornecida na RM\@. A melhoria pode envolver suporte ao registro da
+RM antes que ela seja armazenada na FGRMs; a melhoria também pode envolver a
 organização da informação contida no relato para facilitar o entendimento pelos
-desenvolvedores e demais profissionais envolvidos na manutenção de software.
+desenvolvedores e demais profissionais envolvidos na manutenção do software.
 
 \paragraph{Suporte ao Registro da RM:}
 
-Para melhorar a qualidade da informação fornecida nas RMs os artigos sobre o
-tema, em sua maioria, definem um limiar para algum atributo do texto
-correspondente ao relato da RM\@. Caso este limiar não seja alcançado alguma
-ação é tomada, como por exemplo, a exibição de uma mensagem de alerta para o
-responsável pela criação da RM\@. A determinação do que seria um boa descrição
-de um problema de software foi obtida mediante uma pesquisa com profissionais
-envolvidos com manutenção de software no estudo de Zimmermann e
-outros~\cite{zimmermann2010makes}. Em outro estudo os próprios autores
-definiram as métricas que posteriormente foram utilizadas para avaliar o relato
-da RM~\cite{Tu:2014:MQI:2677832.2677844}.
+Em geral, com base nos estudos identificados neste mapeamento, foi possível
+verificar que os trabalhos relacionado com o suporte ao registro das RMs
+definem um atributo de interesse, como por exemplo a inclusão de anexos, e o
+seu respectivo limiar. Caso este limiar não seja alcançado alguma ação é
+tomada, como por exemplo, a exibição de uma mensagem de alerta para o
+responsável pela criação da RM\@. Uma possível definição do que seria uma
+descrição com qualidade de um problema de software foi feita pelo estudo de
+Zimmermann e outros~\cite{zimmermann2010makes} através de uma foi obtida mediante uma
+pesquisa com profissionais envolvidos com manutenção de software. Em outro
+estudo os próprios autores definiram as métricas que posteriormente foram
+utilizadas para avaliar o relato da RM~\cite{Tu:2014:MQI:2677832.2677844}.
 
-Um segundo nicho de estudos visa suportar a reprodução da falha do software.
-Estes estudos incluem tanto registrar o conjunto de ações que resultaram na
-falha~\cite{White:2015:GRR:2820282.2820291}, quanto em autocompletar o texto que
-compõe o relato de uma falha~\cite{moran2015auto}. Um ponto em comum deste dois
+Nos artigos encontrado verificamos uma outra linha de estudo que tem como
+objetivo suportar a reprodução da falha do software. Estes estudos incluem
+tanto registrar o conjunto de ações que podem ter resultado na
+falha~\cite{White:2015:GRR:2820282.2820291}, quanto em autocompletar o texto
+que compõe o relato da RM~\cite{moran2015auto}. Um ponto em comum deste dois
 estudos é que eles foram pensados para o ambiente de desenvolvimento de
 aplicações para dispositivos móveis, mais especificamente para dispositivos
 baseados no sistema Android\footnote{\url{https://www.android.com/}}. Uma
@@ -433,7 +435,7 @@ e sumarizar um ou mais relatos relacionados.
 \paragraph{Identificação de RMs Duplicadas}
 
 O processo de identificação de RMs duplicadas consiste em avaliar se
-determinado relato já foi realizado em algum outro momento.  A literatura
+determinado relato já foi realizado em algum outro momento. A literatura
 discute dois tipos de tratamento para o problema~\cite{kaushik2012comparative,
     Tian2012}:
 
@@ -544,20 +546,21 @@ estatístico PPM~\cite{malheiros2012source}.
 Nesta subseção são discutidos os estudos que foram considerados relacionados
 com papeis abordados na
 Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}. A
-Tabela~\ref{tab:graf_papel_por_artigo} exibe o total de artigos por papel que a
-funcionalidade proposta visa dar suporte.  Como pode ser observado verificamos
-um maior número de estudos para os papéis de \textit{Atribuidor e
+Tabela~\ref{tab:graf_papel_por_artigo} exibe o total de artigos pelo papel que
+a funcionalidade proposta visa dar suporte.  Como pode ser observado
+verificamos um maior número de estudos para os papéis de \textit{Atribuidor e
     Desenvolvedor}. Na Tabela~\ref{tab:taxonomia-suporte-papeis} é possível
-observar os estudos pelo papel o qual dão suporte. É possível observar que um
-mesmo estudo pode dar suporte a mais de um papel. Por exemplo, o estudo de
-Zimmermann e outros propõe uma ferramenta que mede a qualidade do relato das
-RMs e recomenda quais elementos devem ser adicionados para melhorar a
-qualidade~\cite{zimmermann2010makes}. Os possíveis benefícios podem ajudar o
-\textit{Reportador}, que pode ter reduzido o tempo para analisar a RM que ele
-registrou já que a RM fornece a informação necessária para sua análise; o
-\textit{Desenvolvedor}, que recebe uma RM com mais qualidade nos dados
-fornecidos; o \textit{Analista de Qualidade} que consegue avaliar se a RM foi
-atendida tendo em vista a maior facilidade em entender o que foi solicitado.
+observar os estudos pelo papel o qual dão suporte. Durante a nossa
+classificação verificou-se que mesmo estudo poderia dar suporte a mais de um
+papel. Por exemplo, o estudo de Zimmermann e outros propõe uma ferramenta que
+mede a qualidade do relato das RMs e recomenda quais elementos devem ser
+adicionados para melhorar a qualidade~\cite{zimmermann2010makes}. Os possíveis
+benefícios podem ajudar o \textit{Reportador}, que pode ter reduzido o tempo
+para analisar a RM que ele registrou já que a RM fornece a informação
+necessária para sua análise; o \textit{Desenvolvedor}, que recebe uma RM com
+mais qualidade nos dados fornecidos; o \textit{Analista de Qualidade} que
+consegue avaliar se a RM foi atendida tendo em vista a maior facilidade em
+entender o que foi solicitado.
 
 \begin{table}[htpb]
 \centering
@@ -585,7 +588,8 @@ Todos & 3 \\
 
 \paragraph{Atribuidor}
 
-Esta função tem como principal objetivo a atribuição das RMs para o
+Esta função essencialmente deve atribuir as RMs aos desenvolvedores
+considerando o planejamento do Escalonador. Idealmente deve-se selecionar o
 desenvolvedor mais apto~\cite{banitaan2013decoba}.  Os estudos recuperados
 focam em apresentar soluções de atribuição automática~\cite{banitaan2013decoba,
     shokripour2012automatic, somasundaram2012automatic, Naguib2013, Zhang2014,
@@ -628,7 +632,7 @@ encontrar o defeito no código fonte a partir do relato da falha durante execuç
 do software~\cite{corley2011recovering,Wong:2014:BBF:2705615.2706096,
     Thung:2014:BIT:2635868.2661678,Nguyen:2012:MAR:2393596.2393671,thung2013automatic,
     Romo:2015:TAT:2745802.2745833}. Verificamos ainda estudos que tentam
-predizer a probabilidade que determinada RM será
+determinar a probabilidade que determinada RM será
 reaberta~\cite{xia2015automatic}, o que pode ajudar ao Analista de Qualidade na
 priorização das requisições com alta possibilidade de reabertura.
 
@@ -696,30 +700,31 @@ desenvolvedores~\cite{zimmermann2010makes}.
 Dos estudos que fizeram parte do mapeamento um total de 10 foram implementados
 como extensões ou protótipos. No nosso entendimento este número poderia ser
 maior a fim de permitir avaliações pelos profissionais envolvidos em manutenção
-de software. Cabe ressaltar que no escopo de um estudo pode não estar prevista a
-efetiva transformação da melhoria proposta de modo a ser utilizada efetivamente
-pelo seu público-alvo, como por exemplo, a criação ou melhoria de uma
-funcionalidade em determinada FGRM\@. Além disso, não colocamos como objetivo de
-nossa dissertação avaliar ou discutir a facilidade que as FGRMs possuem para
-criar novas funcionalidades ou melhorias.
+de software. Cabe ressaltar que no escopo de um estudo pode não estar prevista
+a efetiva transformação da melhoria proposta de modo a ser utilizada
+efetivamente pelo seu público-alvo, como por exemplo, a criação ou melhoria de
+uma funcionalidade em determinada FGRM\@. Além disso, não colocamos como
+objetivo de nossa dissertação avaliar ou discutir a facilidade que as FGRMs
+possuem para criar novas funcionalidades ou melhorias.
 
-% Contudo, o nosso entendimento é de que um maior número de melhorias propostas na
-% literatura sendo utilizadas pelos profissionais envolvidos em manutenção de
-% software poderia melhorar a qualidade das soluções mediante a redução da
+% Contudo, o nosso entendimento é de que um maior número de melhorias propostas
+% na literatura sendo utilizadas pelos profissionais envolvidos em manutenção
+% de software poderia melhorar a qualidade das soluções mediante a redução da
 % diferença entre o estado-da-prática com o estado-da-arte.
 
 Quando analisamos o esquema de Classificação por Papéis, verificamos uma
 prevalência de estudos com foco no papel de \textit{Atribuidor}. Existe
 possivelmente uma crença de que é possível melhorar a produtividade do processo
 de manutenção de software reduzindo o esforço de encontrar o desenvolvedor mais
-apto. Os estudos que fazem parte desta classe destacam que um considerável
-conhecimento sobre o projeto é necessário bem como a capacidade de negociação
-com os desenvolvedores e demais partes interessadas são importantes para o
-desempenho do papel. Todavia, tendo em vista o esforço e tempo gasto por esta
-tarefa, especialmente quando realizada ma\-nu\-al\-men\-te, seria importante que
-as FGRMs automatizassem algumas destas atividades. Um outro ponto a destacar é
-que as FGRMs deveriam dar suporte ao Reportador que, na maioria da vezes, é o
-primeiro a registrar as informações que serão necessárias à solução da RM\@.
+apto~\cite{banitaan2013decoba}. Os estudos que fazem parte desta classe
+destacam que um considerável conhecimento sobre o projeto é necessário bem como
+a capacidade de negociação com os desenvolvedores e demais partes interessadas
+são importantes para o desempenho do papel. Todavia, tendo em vista o esforço e
+tempo gasto por esta tarefa, especialmente quando realizada
+ma\-nu\-al\-men\-te, seria importante que as FGRMs automatizassem algumas
+destas atividades. Um outro ponto a destacar é que as FGRMs deveriam dar
+suporte ao Reportador que, na maioria da vezes, é o primeiro a registrar as
+informações que serão necessárias à solução da RM\@.
 
 \section{Limitações e Ameaças à Validade}
 \label{sec:map_limitacoes_ameacas}
@@ -744,18 +749,19 @@ publicados nas principais conferências da área de Engenharia de Software.
 O fato que o autor foi o único responsável pela análise dos estudos aumenta o
 risco de erros. O processo de seleção e validação dos estudos primários pode
 levar a problemas de extração e agregação das informações quando há um grande
-número de artigos ou os dados são complexos~\cite{keele2007guidelines}. No
-entanto, neste estudo secundário, houve poucos estudos primários e os dados
-recuperados eram razoavelmente objetivos. Desta forma, não acreditamos em
-muitos erros.
+número de artigos ou os dados são complexos~\cite{keele2007guidelines}.
+
+% No entanto, neste estudo secundário, houve poucos estudos primários e os dados
+% recuperados eram razoavelmente objetivos. Desta forma, não acreditamos em
+% muitos erros.
 
 No tocante às questões deste estudo é possível que as perguntas de pesquisa
 definidas possam não abranger completamente o campo de investigação sobre as
 funcionalidades das FGRMs. No entanto, algumas discussões com membros do
 projeto e especialistas em Manutenção de Software foram realizadas para validar
 as perguntas. Assim, mesmo que não tenhamos considerado o melhor conjunto de
-questões, tentamos abordar as indagações mais frequentes e abertas no campo,
-tanto do ponto de vista do praticante como do investigador.
+questões, acreditamos que foi possível abordar as indagações mais frequentes e
+abertas no campo, tanto do ponto de vista do praticante como do investigador.
 
 Como as bases de pesquisa não funcionam com regras de busca compatíveis entre
 si, todas as sequências de pesquisa foram adaptadas e calibradas em cada uma
@@ -764,11 +770,12 @@ utilizam para indexar um documento. Neste sentido, a forma que as sentenças de
 busca foram estruturadas pode não ser a mais otimizada para pesquisa do maior
 número de documentos relevantes.
 
-O nosso estudo considerou publicações até maio de 2016. De lá pra cá verificamos
-que assuntos como Identificação de RMs Duplicadas~\cite{aggarwal2017detecting,
-    chaparro2017improving, sadat2017rediscovery} e Classificação da
-RM~\cite{karim2017understanding, zibran2016effectiveness, ohira2016case} ainda
-permanecem entre aqueles com a maior frequência de publicação.
+O nosso estudo considerou publicações até maio de 2016. De lá pra cá
+verificamos que assuntos como Identificação de RMs
+Duplicadas~\cite{aggarwal2017detecting, chaparro2017improving,
+    sadat2017rediscovery} e Classificação da RM~\cite{karim2017understanding,
+    zibran2016effectiveness, ohira2016case} ainda permanecem entre aqueles com
+a maior frequência de publicação.
 
 \section{Trabalhos Relacionados}
 \label{sec:map_trabalhos_relacionados}
@@ -787,12 +794,12 @@ múltiplos repositórios de RMs. Como consequência, muitos trabalhos que usaram
 dados de um único repositório de RM estavam fora do seu escopo.
 
 Por outro lado, o estudo realizado neste capítulo aumentou o escopo da análise
-sobre as funcionalidades oferecidas pelas FGRMs possibilitando uma visão mais
-abrangente do estado da arte deste tipo de investigação. Uma outra diferença
-com o trabalho de Kagdi~\cite{kagdi2012assigning} é que sua taxonomia considera
-as técnicas e métodos para mineração de repositórios de RMs como o foco
-principal do seu estudo, por outro lado este trabalho considera as FGRM, sobre
-o prisma de suas funcionalidades, como entidades de primeira classe.
+sobre as funcionalidades oferecidas pelas FGRMs possibilitando um acréscimo na
+visão do estado da arte deste tipo de investigação. Uma outra diferença com o
+trabalho de Kagdi~\cite{kagdi2012assigning} é que sua taxonomia considera as
+técnicas e métodos para mineração de repositórios de RMs como o foco principal
+do seu estudo, por outro lado este trabalho considera as FGRM, sobre o prisma
+de suas funcionalidades, como entidades de primeira classe.
 
 Na pesquisa realizada por Cavalcanti e outros~\cite{cavalcanti2014challenges}
 houve a classificação de estudos sobre repositórios de RMs em desafios e
@@ -820,8 +827,8 @@ divididos em dois esquemas de classificação: dimensões de melhoria e suporte 
 papel exercido na manutenção de software. Verificamos que tópicos como
 Localização de RMs Duplicadas, Atribuição de RMs e Classificação de
 RMs estão sendo tratados com maior frequência na literatura. Da mesma forma, o
-\textit{Atribuidor e Desenvolvedor} possuem um maior número de funcionalidades
-que podem dar-lhes suporte. Verificamos ainda que é reduzido o número de
-estudos que efetivaram as melhorias propostas em protótipos de ferramentas.
-Esta última constatação pode causar um distanciamento entre o estado da arte e
-o estado da prática.
+\textit{Atribuidor e Desenvolvedor} tiveram um maior número de artigos com
+funcionalidades que podem dar-lhes suporte. Verificamos ainda que é reduzido o
+número de estudos que efetivaram as melhorias propostas em protótipos de
+ferramentas. Esta última constatação pode causar um distanciamento entre o
+estado da arte e o estado da prática.
