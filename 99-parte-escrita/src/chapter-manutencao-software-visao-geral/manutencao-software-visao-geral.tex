@@ -1039,12 +1039,10 @@ composto por 01 profissional que se dedica a projetos de software livre (2\%) e
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.7\linewidth]{./chapter-estudo-funcionalidades-fgrm/img/grafico_escolha_ferramentas_funcao_participantes.pdf}
-	\caption{Funções desempenhadas pelos participantes}
-\label{fig:grafico_escolha_ferramentas_funcao_participantes}
+	\caption{Funções desempenhadas pelos participantes}\label{fig:grafico_escolha_ferramentas_funcao_participantes}
 \end{figure}
 
-\subsubsection{Ferramentas Escolhidas}
-\label{subsec:resultados_ferramentas_escolhidas}
+\subsubsection{Ferramentas Escolhidas}\label{subsec:resultados_ferramentas_escolhidas}
 
 A partir do levantamento realizado e do processo de seleção descrito na
 Seção~\ref{ssub:metodologia_criterios_selecao} obtivemos as ferramentas
@@ -1076,8 +1074,7 @@ Gitlab Issue Tracking System & Serviço & \@-\@ & https://gitlab.com/ \\
 \bottomrule
 \end{tabular}%
 }
-\caption{Ferramentas utilizadas no estudo}
-\label{tab:ferramenta_utilizadas_estudo}
+\caption{Ferramentas utilizadas no estudo}\label{tab:ferramenta_utilizadas_estudo}
 \end{table}
 
 A Tabela~\ref{tab:fgrm-docs} apresenta as ferramentas e o elo de ligação para
@@ -1108,12 +1105,10 @@ MantisBT & \url{https://www.mantisbt.org/wiki/doku.php/mantisbt:features} \\
 Redmine & \url{http://www.redmine.org/projects/redmine/wiki/Features} \\ \bottomrule
 \end{tabular}%
 }
-\caption{Documentações utilizadas no processo de coleta de dados.}
-\label{tab:fgrm-docs}
+\caption{Documentações utilizadas no processo de coleta de dados.}\label{tab:fgrm-docs}
 \end{table}
 
-\subsubsection{Espectro de Funcionalidades das FGRMs}
-\label{subsec:categorizacao_ferramentas}
+\subsubsection{Espectro de Funcionalidades das FGRMs}\label{subsec:categorizacao_ferramentas}
 
 Após a inspeção da documentação e validação dos dados obtivemos um total de 123
 cartões, sendo eles sistematizados manualmente. Como o nosso objetivo é derivar
@@ -1128,8 +1123,7 @@ Figura~\ref{fig:diagrama-espectro-funcionalidades-fgrm}.
 \begin{figure}[htpb]
 	\centering
     \includegraphics[width=1.15\linewidth]{./chapter-estudo-funcionalidades-fgrm/img/diagrama-espectro-funcionalidades-fgrm.eps}
-	\caption{Modelo de funcionalidades básicas das FGRMs}
-\label{fig:diagrama-espectro-funcionalidades-fgrm}
+	\caption{Modelo de funcionalidades básicas das FGRMs}\label{fig:diagrama-espectro-funcionalidades-fgrm}
 \end{figure}
 
 A figura foi construída com base nas categorias de funcionalidades exibidas na
@@ -1160,8 +1154,7 @@ Auditoria & 1 \\
 \end{tabular}%
 }
 \caption{Frequência de cada categoria de funcionalidade no conjunto de cartões
-	obtidos.}
-\label{tab:freq_categorias_cartoes}
+	obtidos.}\label{tab:freq_categorias_cartoes}
 \end{table}
 
 A partir da Tabela~\ref{tab:freq_categorias_cartoes} é possível verificar que o
@@ -1173,8 +1166,7 @@ podem ser agrupadas em um termo único denominado \textit{Operações de CRUD}
 na língua Inglesa). Algumas das categorias apresentadas na
 Tabela~\ref{tab:freq_categorias_cartoes} estão descritas descritas a seguir.
 
-\paragraph{Operações de CRUD:}
-\label{par:operações_de_crud}
+\paragraph{Operações de CRUD:}\label{par:operações_de_crud}
 
 Nesta categoria estão as funcionalidades que dão suporte à criação,	consulta,
 atualização e destruição das RMs. Com relação à criação verificamos que algumas
@@ -1203,8 +1195,7 @@ ao relato, através de filtros personalizáveis ou por meio de uma Linguagem de
 Domínio Específico (\textit{Domain-Specific Language} \@-\@ DSL) baseada em
 SQL\@.
 
-\paragraph{Gerenciamento da Informação:}
-\label{par:gerenciamento_da_informação}
+\paragraph{Gerenciamento da Informação:}\label{par:gerenciamento_da_informação}
 
 Dentro de um projeto de desenvolvimento ou manutenção de software gerenciar uma
 RM por vez não é muito eficiente. Neste sentido, é necessário que as FGRMs
@@ -1215,8 +1206,7 @@ nesta categoria estão focadas em suportar múltiplos \textit{SGBDs}. Além diss
 a ferramenta Bugzilla oferece funcionalidade para validação de consistências
 dos dados armazenados.
 
-\paragraph{Extensão de Funcionalidades:}
-\label{par:extensão_de_funcionalidades}
+\paragraph{Extensão de Funcionalidades:}\label{par:extensão_de_funcionalidades}
 
 As FGRMs oferecem recursos que permitem que outras ferramentas possam interagir
 e manipular a informação que elas armazenam. Nesta dimensão estão as
@@ -1231,8 +1221,7 @@ as atividades de gerência de uma RM mediante a utilização de uma API própria
 No caso do Bugzilla e do Mantis é permitido o acesso à informação das RMs
 através de Webservices.
 
-\paragraph{Integração com Sistemas de Controle de Versão:}
-\label{par:integração_com_sistemas_de_controle_de_versão}
+\paragraph{Integração com Sistemas de Controle de Versão:}\label{par:integração_com_sistemas_de_controle_de_versão}
 
 As FGRMs podem acessar os repositórios de código de fonte, gerenciados mediante
 um Sistema de Controle de Versão (SCV), permitindo que o usuário navegue pelo
@@ -1240,15 +1229,13 @@ seu conteúdo, visualize e procure as alterações realizadas. As ferramentas
 também possibilitam acesso aos diferentes tipos de SCV, tais como Git, SVN,
 Mercurial.
 
-\paragraph{Interfaces de Notificação:}
-\label{par:interfaces_de_notificação}
+\paragraph{Interfaces de Notificação:}\label{par:interfaces_de_notificação}
 
 Neste tópico estão as funcionalidades oferecidas pelas FGRMs para notificar as
 diversas partes interessadas envolvidas em determinada RM\@. As FGRMs podem
 notificar através de e-mail, RSS, Twitter e chats.
 
-\paragraph{Fluxo de trabalho:}
-\label{par:fluxo_de_trabalho}
+\paragraph{Fluxo de trabalho:}\label{par:fluxo_de_trabalho}
 
 Nesta categoria estão as funcionalidades que dão suporte às tarefas do
 desenvolvimento e manutenção de software. Nela estão incluídos funções para
@@ -1257,8 +1244,7 @@ personalizar o fluxo de trabalho adotado. Esta personalização é realizada
 através da definição de \textit{situações} próprias que se adéquem às
 necessidades do projeto de software.
 
-\paragraph{Gerenciamento de Artefatos:}
-\label{par:gerenciamento_de_artefatos}
+\paragraph{Gerenciamento de Artefatos:}\label{par:gerenciamento_de_artefatos}
 
 O processo de trabalho relacionado com a manutenção de software pode consumir
 ou gerar diversos artefatos, tais como documentos de requisitos, código fonte,
@@ -1285,8 +1271,7 @@ ou adaptação da interface para diferentes idiomas. As FGRMs possuem tradução
 para diversos idiomas e também possuem funcionalidades que permitem aos
 colaboradores criarem novas traduções.
 
-\paragraph{Segurança da Informação:}
-\label{par:segurança_da_informação}
+\paragraph{Segurança da Informação:}\label{par:segurança_da_informação}
 
 Neste grupo estão as funcionalidades de uma FGRM que estão diretamente
 relacionadas com proteção da informação no sentido de preservar o valor que
@@ -1294,8 +1279,7 @@ possui para um indivíduo ou uma organização. Assim as ferramentas oferecem
 funcionalidades para suporte à confidencialidade, integridade e autenticidade
 da informação armazenada.
 
-\paragraph{Visualização e Monitoramento de RMs:}
-\label{par:visualização_de_rm_s}
+\paragraph{Visualização e Monitoramento de RMs:}\label{par:visualização_de_rm_s}
 
 Em diversos contextos, devido ao volume das RMs, é importante que as partes
 interessadas na manutenção do software, possam visualizar e monitorar a situação
@@ -1306,8 +1290,7 @@ permitem ao usuário visualizar um conjunto específico de RMs. Nesta mesma
 categoria estão as funcionalidades para geração de relatórios para auxílio dos
 tomadores de decisões.
 
-\subsection{Discussão}
-\label{sec:discussao}
+\subsection{Discussão}\label{sec:discussao}
 
 Ao realizarmos a categorização dos cartões certos desafios se apresentaram. Para
 algumas funcionalidades não há uma separação clara em qual categoria ela poderia
@@ -1351,8 +1334,7 @@ do relato e atribuição e classificação automatizadas das RMs. As sugestões 
 novas funcionalidades para as FGRMs são discutidas no
 Capítulo~\ref{ch:sug_melhoria}.
 
-\subsection{Ameaças à Validade}
-\label{sec:ameacas_a_validade}
+\subsection{Ameaças à Validade}\label{sec:ameacas_a_validade}
 
 Em função da classificação ser uma atividade interpretativa, a classificação
 das funcionalidades em si mesma é uma limitação desta dissertação. Uma outra

@@ -73,7 +73,7 @@ função do esforço exigido pelo grande volume de ferramentas disponíveis quan
 esta dissertação foi escrita. Além disso, com base no processo de validação
 descrito na Seção~\ref{sec:sug_melhoria_avaliacao_das_melhorias} seria possível
 identificar se alguma das sugestões proposta já existe como funcionalidade em
-determinada FGRM. Ao longo da elaboração das sugestões verificamos que não
+determinada FGRM@. Ao longo da elaboração das sugestões verificamos que não
 conseguiríamos implementá-las e também não conseguiríamos analisar a
 complexidade de estratégias de implementação. Entretanto, como prova de
 conceito, a sugestão descrita na Seção~\ref{sub:supote_a_qualidade_do_relato}
@@ -363,8 +363,7 @@ novo formato de texto para o relato da RM\@. Além disso, a utilização de uma
 linguagem que exija conhecimento prévio pode inibir o desejo de reportar uma
 RM\@.
 
-\paragraph{Exemplo de Utilização:}
-\label{par:exemplo_de_utilização_s06}
+\paragraph{Exemplo de Utilização:}\label{par:exemplo_de_utilização_s06}
 
 Conforme discutido na Seção~\ref{sec:caracterizacao_ferramentas}, algumas FGRMs
 permitem a utilização de linguagens com semântica de apresentação no processo de
@@ -372,14 +371,12 @@ relato. No Github, o módulo para a criação de uma RM, (\textit{issue} no
 contexto da plataforma), permite o uso da linguagem Markdown como um dos
 formatos disponíveis.
 
-\subsection{Classificação Automática pela Urgência da RM}
-\label{sub:priorizacao_automatica_rms}
+\subsection{Classificação Automática pela Urgência da RM}\label{sub:priorizacao_automatica_rms}
 
 \sugestao{07}{As FGRMs deveriam fornecer uma classificação automática em termos
     da urgência da RM.}
 
-\paragraph{Justificativa:}
-\label{par:justificativa_s07}
+\paragraph{Justificativa:}\label{par:justificativa_s07}
 
 Conforme discutido na Seção~\ref{sub:diferenciacao_do_reportdor} a escolha das
 RMs que serão analisadas é um desafio para as equipes de manutenção. Em
@@ -405,8 +402,7 @@ equipes que organizam as suas atividades em iterações (\textit{sprints}) pode
 ocorrer a redução de iterações interrompidas o que pode evitar algum tipo de
 frustração e desmotivação com relação ao planejamento e objetivos da iteração.
 
-\paragraph{Limitações:}
-\label{par:limitacoes_s07}
+\paragraph{Limitações:}\label{par:limitacoes_s07}
 
 A priorização automática pode ser vista como um problema de
 \textit{Classificação de RM}, conforme discutido na
@@ -416,22 +412,19 @@ limitações. Neste sentido, o uso de técnicas supervisionadas, ou seja, com
 suporte de membros da equipe de manutenção, pode ajudar na melhoria dos
 resultados.
 
-\paragraph{Exemplo de Utilização:}
-\label{par:exemplo_de_utilização_s07}
+\paragraph{Exemplo de Utilização:}\label{par:exemplo_de_utilização_s07}
 
 Após uma nova RM ser criada, a FGRM dispara um processo para determinar se ela
 deve ser classificada como urgente conforme critérios previamente definidos.
 Caso positivo, a ferramenta realiza a priorização da RM através, por exemplo,
 da atribuição automatizada para um desenvolvedor disponível.
 
-\subsection{Suporte à tarefas compartilhadas}
-\label{sub:suporte_tarefas_compartilhadas}
+\subsection{Suporte à tarefas compartilhadas}\label{sub:suporte_tarefas_compartilhadas}
 
 \sugestao{08}{As FGRMs deveriam suportar tarefas compartilhadas, permitindo o
     trabalho colaborativo.}
 
-\paragraph{Justificativa:}
-\label{par:justificativa_s08}
+\paragraph{Justificativa:}\label{par:justificativa_s08}
 
 Dentro do que é proposto pelos agilistas, o compartilhamento de código é visto
 como uma boa prática~\cite{meyer2014agile}. Por outro lado, mantenedores tendem
@@ -448,8 +441,7 @@ comunidade. Os resultados mostraram que a abordagem atingiu uma precisão
 razoável de atribuição de RMs, além de construir um conjunto de desenvolvedores
 com experiência em solucionar determinadas RMs.
 
-\paragraph{Benefício Gerado:}
-\label{par:papéis_afetados_s08}
+\paragraph{Benefício Gerado:}\label{par:papéis_afetados_s08}
 
 A atribuição de uma RM a mais de um desenvolvedor flexibiliza a carga de
 trabalho e pode aumentar a moral da equipe. Em algumas situações os
@@ -458,8 +450,7 @@ tornarem generalistas, trabalhando com outros projetos. Esses benefícios são
 discutidos na literatura sobre o desenvolvimento e a manutenção que adotam as
 práticas propostas pelos agilistas~\cite{dybaa2008empirical,rudzki2009agile}.
 
-\paragraph{Limitações:}
-\label{par:limitacoes_s08}
+\paragraph{Limitações:}\label{par:limitacoes_s08}
 
 Uma funcionalidade com suporte ao compartilhamento de tarefas tem os mesmos
 desafios e problemas do processo de atribuição automatizada de RMs, conforme
@@ -467,15 +458,13 @@ discutido na Seção~\ref{ssub:melhorias_dim_processo}. Além disso, a RM deve
 permitir a divisão atômica de tarefas de modo que cada atividade fique com um
 único desenvolvedor o que nem sempre é possível.
 
-\paragraph{Exemplo de Utilização:}
-\label{par:exemplo_de_utilização_s08}
+\paragraph{Exemplo de Utilização:}\label{par:exemplo_de_utilização_s08}
 
 Quando uma nova RM é criada um processo automatizado define dois ou mais
 desenvolvedores como responsáveis. Posteriormente, a RM pode ser dividida em
 tarefas que serão compartilhadas entre os desenvolvedores.
 
-\section{Avaliação das Melhorias Propostas}
-\label{sec:sug_melhoria_avaliacao_das_melhorias}
+\section{Avaliação das Melhorias Propostas}\label{sec:sug_melhoria_avaliacao_das_melhorias}
 
 Este capítulo apresentou um conjunto de sugestões que foram construídas tomando
 como base a literatura da área e os levantamentos desta dissertação. Com o
@@ -486,8 +475,7 @@ que possuem relação com o desenvolvimento de FGRMs. O processo de seleção do
 participantes, o desenho do questionário e como foi realizada a aplicação estão
 descritos a seguir.
 
-\subsection{Seleção dos Participantes}
-\label{ssub:sug_melhoria_selecao_participantes}
+\subsection{Seleção dos Participantes}\label{ssub:sug_melhoria_selecao_participantes}
 
 O público-alvo deste questionário é o conjunto de profissionais que estejam
 ligados ao processo de desenvolvimento e manutenção de algum projeto de FGRMs.
@@ -542,12 +530,10 @@ respectivos colaboradores.
 \begin{figure}[htpb]
 	\centering
 	\includegraphics[width=0.8\linewidth]{./chapter-sugestoes-melhorias-fgrm/img/redmine_contribuidores.png}
-	\caption{Lista de contribuidores do projeto Redmine}
-\label{fig:redmine_contribuidores}
+	\caption{Lista de contribuidores do projeto Redmine}\label{fig:redmine_contribuidores}
 \end{figure}
 
-\subsection{Desenho do Questionário}
-\label{ssub:sug_melhoria_desenho_questionario}
+\subsection{Desenho do Questionário}\label{ssub:sug_melhoria_desenho_questionario}
 
 A fim de coletar a opinião dos participantes foi utilizado um questionário
 eletrônico. O formulário foi desenhado com a premissa de ser respondido em um
@@ -565,8 +551,7 @@ participante de enviar os dados de outras questões respondidas. A versão final
 do questionário pode ser visualizado no
 Apêndice~\ref{ch:app-form-sug-melhorias}.
 
-\subsection{Processo de Aplicação}
-\label{ssub:processo_de_aplicação}
+\subsection{Processo de Aplicação}\label{ssub:processo_de_aplicação}
 
 O questionário foi encaminhado à amostra de interesse através de correio
 eletrônico. O endereço foi coletado diretamente do projeto hospedado no Github.
@@ -580,8 +565,7 @@ resultados de que o reenvio pode ser um dos fatores que aumenta a taxa de
 participação em levantamentos por questionários realizados através da
 web~\cite{fan2010factors}.
 
-\section{Resultados da Avaliação das Sugestões de Melhorias}
-\label{sec:resultados_avaliacao_sug_de_melhorias}
+\section{Resultados da Avaliação das Sugestões de Melhorias}\label{sec:resultados_avaliacao_sug_de_melhorias}
 
 Após o envio do formulário aos participantes obtivemos um total de 29
 respostas.  Como algumas das questões do formulário não eram de preenchimento
@@ -592,8 +576,7 @@ de coleta de dados~\cite{fan2010factors}. Nas próximas seções apresentamos o
 perfil dos participantes, a relevância das sugestões propostas e o grau de
 facilidade de implementação das mesmas.
 
-\subsection{Perfil dos Participantes}
-\label{sub:sug_melhorias_resultados_perfil_dos_participantes}
+\subsection{Perfil dos Participantes}\label{sub:sug_melhorias_resultados_perfil_dos_participantes}
 
 No levantamento realizado incluímos uma questão sobre qual sistema o
 desenvolvedor contribui. A Tabela~\ref{tab:projetos_participantesmy-label}
@@ -618,8 +601,7 @@ OUTROS & 6 \\
 \bottomrule
 \end{tabular}%
 }
-\caption{Projetos que os participantes contribuem.}
-\label{tab:projetos_participantesmy-label}
+\caption{Projetos que os participantes contribuem.}\label{tab:projetos_participantesmy-label}
 \end{table}
 
 Com relação à função desempenhada mais da metade dos participantes são
@@ -633,8 +615,7 @@ mais do 10 membros. Quando questionamos sobre qual o tipo de atividade
 desempenhada pelo participante, cerca de 85\% trabalham com desenvolvimento ou
 manutenção de software.
 
-\subsection{Relevância das Sugestões}
-\label{sub:sug_melhorias_resultados_relevancia}
+\subsection{Relevância das Sugestões}\label{sub:sug_melhorias_resultados_relevancia}
 
 As sugestões de melhorias foram apresentadas aos participantes e eles
 respondiam se achavam as sugestões pertinentes mediante uma escala do tipo
@@ -667,8 +648,7 @@ pela reputação do Reportador. Por outro lado, as Sugestões \#6 \@-\@ \textit{
 \textit{Sugestão \#8} & 0 (0,0\%) & 1 (3,4\%) & 1 (3,4\%) & 15 (51,7\%) & 12 (41,4\%) \\ \bottomrule
 \end{tabular}%
 }
-\caption{Frequência e percentual das respostas sobre a relevância das sugestões de melhorias}
-\label{tab:freq_percentual_avaliacao_sug_melhorias}
+\caption{Frequência e percentual das respostas sobre a relevância das sugestões de melhorias}\label{tab:freq_percentual_avaliacao_sug_melhorias}
 \end{table}
 
 \begin{figure}[htpb]
@@ -699,8 +679,7 @@ Concordo & 1 \\
 Concordo Fortemente & 2 \\ \bottomrule
 \end{tabular}%
 }
-\caption{Pesos utilizados para ordenar as sugestões propostas.}
-\label{tab:pesos_rank_sug_melhorias}
+\caption{Pesos utilizados para ordenar as sugestões propostas.}\label{tab:pesos_rank_sug_melhorias}
 \end{table}
 
 Com base na Tabela~\ref{tab:ranking-sugestoes-melhorias} verificamos que
@@ -731,12 +710,10 @@ frequência.
 \textit{Sugestão \#3} & 3 & 9 & 13 & 2 & 2 & -9 \\ \bottomrule
 \end{tabular}%
 }
-\caption{Ranking das sugestões propostas}
-\label{tab:ranking-sugestoes-melhorias}
+\caption{Ranking das sugestões propostas}\label{tab:ranking-sugestoes-melhorias}
 \end{table}
 
-\subsection{Implementação das Sugestões}
-\label{sub:sug_melhorias_resultados_implementacao}
+\subsection{Implementação das Sugestões}\label{sub:sug_melhorias_resultados_implementacao}
 
 Neste etapa do estudo estávamos interessados em avaliar o nível de dificuldade
 para implementar as sugestões propostas. A frequência e o percentual das
@@ -766,8 +743,7 @@ visualizados na Figura~\ref{fig:plot_likert_avaliacao_implementacao_melhorias}
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=1.1\linewidth]{chapter-sugestoes-melhorias-fgrm/img/plot_likert_avaliacao_implementacao_melhorias_grayscale.pdf}
-    \caption{Avaliação sobre a  implementação das sugestões propostas.}
-\label{fig:plot_likert_avaliacao_implementacao_melhorias}
+    \caption{Avaliação sobre a  implementação das sugestões propostas.}\label{fig:plot_likert_avaliacao_implementacao_melhorias}
 \end{figure}
 
 As sugestões foram ordenadas pelo grau de dificuldade de implementação.
@@ -790,8 +766,7 @@ Fácil & 1 \\
 Muito Fácil & 2 \\ \bottomrule
 \end{tabular}%
 }
-\caption{Pesos utilizados no ranqueamento das sugestões de melhorias}
-\label{tab:pesos-implementacao-sug-melhorias}
+\caption{Pesos utilizados no ranqueamento das sugestões de melhorias}\label{tab:pesos-implementacao-sug-melhorias}
 \end{table}
 
 Foram consideradas ser de fácil implementação: o suporte do relato de uma RM
@@ -835,12 +810,10 @@ Sugestão \#1 & 8 & 16 & 3 & 2 & 0 & -30 \\
 \bottomrule
 \end{tabular}%
 }
-\caption{Ordenamento das sugestões pelo grau de dificuldade.}
-\label{tab:ranking_implementacao_sug_melhorias}
+\caption{Ordenamento das sugestões pelo grau de dificuldade.}\label{tab:ranking_implementacao_sug_melhorias}
 \end{table}
 
-\section{Discussão}
-\label{sec:sug_melhoria_discussao}
+\section{Discussão}\label{sec:sug_melhoria_discussao}
 
 Em geral podemos considerar que as sugestões propostas tiveram uma boa
 aceitação dos participantes. Em média 32\% dos participantes avaliaram as
@@ -881,8 +854,7 @@ classificação pode ser decorrente do caráter subjetivo que a qualidade do
 relato pode ter. Em cada projeto a qualidade do relato pode ter características
 distintas o que pode dificultar o seu suporte.
 
-\section{Ameaças à Validade}
-\label{sec:sug_melhoria_ameacas}
+\section{Ameaças à Validade}\label{sec:sug_melhoria_ameacas}
 
 Para avaliarmos as sugestões propostas utilizamos um levantamento empregando
 uma amostra de conveniência. Apesar da taxa de resposta estar dentro da faixa
