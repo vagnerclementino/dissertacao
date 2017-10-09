@@ -48,9 +48,9 @@ de adaptar o sistema às modificações ambientais.
 
 Posteriormente a IEEE/EIA 12207~-~Padrão para o Processo de Ciclo de Vida do
 Software~\cite{ISOIEC-12207-2008}, retrata a manutenção como um dos principais
-processos no ciclo de vida do software. Em seu texto a disciplina corresponde
-às atividades de modificação do código e da documentação associada em
-decorrência de uma falha ou necessidade de melhoria no
+processos no ciclo de vida do software. No texto do padrão a disciplina
+corresponde às atividades de modificação do código e da documentação associada
+em decorrência de uma falha ou necessidade de melhoria no
 software~\cite{IEEEComputerSociety:2014:GSE:2616205}.
 
 De maneira relacionada, \textit{Manutenibilidade} é a propriedade de um sistema
@@ -61,10 +61,10 @@ de qualidade do processo de Manutenção.
 
 É possível verificar que  \textit{manter e evoluir} são aspectos comuns das
 diferentes definições para Manutenção de Software. Embora exista o entendimento
-que os processos de manutenção e evolução possuem características
+de que os processos de manutenção e evolução possuem características
 distintas~\cite{tripathy2014software}, não está nos objetivos desta dissertação
-discutir e apresentar as diferenças. Neste sentido, utilizamos ambos os termos
-de forma intercambiáveis.
+discutir e apresentar as diferenças. Neste sentido, utilizamos os termos de
+forma intercambiáveis.
 
 \subsection{O Processo de Manutenção de Software}\label{sec:o_processo_de_manutecao_de_software}
 
@@ -72,12 +72,12 @@ O Processo de Manutenção de Software é caracterizado pelo conjunto de
 atividades, métodos, práticas e transformações utilizadas para desenvolver ou
 manter um software e seus artefatos associados~\cite{paulk1993key}. Existe na
 literatura alguns modelos para o processo de manutenção de software,
-especialmente baseados em uma visão ``tradicional''. Nesta perspectiva o
+especialmente baseados em uma visão ``tradicional'', no sentido de que
 desenvolvimento e a manutenção de software possuem uma separação clara.
 Contudo, no momento do desenvolvimento desta dissertação, existia uma tendência
 cada vez maior da adoção das práticas propostas pelos agilistas na manutenção
-de software. Esta inclinação surge da demanda por serviços de manutenção de
-rápido retorno para o usuário.
+de software. Segundo o nosso entendimento, essa inclinação surge da demanda por
+serviços de manutenção de rápido retorno para o usuário.
 
 \subsubsection{Manutenção de Software Tradicional}\label{subsec:manutenção_de_software_tradicional}
 
@@ -125,12 +125,12 @@ tarefas descritas a seguir:
    	\item Aposentadoria do Software
 \end{itemize}
 
-É possível notar que algumas atividades realizadas durante a manutenção de
-software são similares a outras presentes no desenvolvimento de software, como
-por exemplo, análise de desempenho, codificação, teste e documentação. Outra
-atividade comum é o gerenciamento dos requisitos. Nas duas situações os
-profissionais responsáveis por controlar os requisitos devem atualizar a
-do\-cu\-men\-ta\-ção  por conta de alterações ocorridas no código fonte.
+É possível notar que algumas atividades realizadas durante a manutenção são
+similares a outras presentes no desenvolvimento de software, como por exemplo,
+análise de desempenho, codificação, teste e documentação. Outra atividade comum
+é o gerenciamento dos requisitos. Nas duas situações recomenda-se aos
+profissionais responsáveis por controlar os requisitos atualizar a
+do\-cu\-men\-ta\-ção por conta de alterações ocorridas no código fonte.
 
 % Por outro lado, certas atividades estão vinculadas apenas ao contexto da
 % manutenção de software. O Corpo de Conhecimento em Engenharia de
@@ -157,7 +157,7 @@ do\-cu\-men\-ta\-ção  por conta de alterações ocorridas no código fonte.
 
 \subsubsection{Manutenção de Software na Perspectiva dos Agilistas}\label{sub:manutenção_de_software_com_método_dos_agilistas}
 
-Grande parte da literatura em Manutenção de Software trata de técnicas e
+A maior parte da literatura em Manutenção de Software trata de técnicas e
 metodologias tradicionais da Engenharia de Software. Todavia, verifica-se a
 tendência de que os departamentos dedicados à Manutenção de Software se mostrem
 interessados nas metodologias propostas pelos agilistas~\cite{Heeager2015}.  No
@@ -168,33 +168,31 @@ de manutenção tais como processo de trabalho iterativo, um maior envolvimento
 do cliente, a comunicação face a face e os testes frequentes.
 
 A adoção das práticas dos agilistas na manutenção de software pode apresentar
-algumas dificuldades~\cite{1402140}. Entre elas está a adequação das práticas
+algumas dificuldades~\cite{1402140}. Dentre elas está a adequação das práticas
 da organização com as necessidades da equipe de desenvolvimento. Por outro
 lado, a adoção de um modelo de manutenção de software usando práticas da
 Programação Extrema (\textit{Extreme Programming \@-\@ XP}) apresentou como
-resultado melhorias no aprendizado e produtividade da equipe por meio do
-aumento da moral, encorajamento e confiança entre os
+resultados a melhoria do aprendizado e produtividade da equipe e aumento no
+encorajamento e confiança entre os
 desenvolvedores~\cite{Choudhari:2014:EIM:2557833.2557845}.
 
 \subsection{Papéis na Manutenção de Software}\label{subsec:man_visao_geral_papeis_na_manutencao_de_software}
 
 As ações realizadas durante a manutenção de um software podem ser desempenhadas
-por uma ou mais pessoas. Similarmente ao que ocorre em equipes de
-desenvolvimento, cada integrante de uma equipe de manutenção pode desempenhar
-um ou mais papéis. Os nomes e as atividades desenvolvidas por cada um pode
-variar, contudo, é possível determinar uma classificação que agregue pontos
-comuns entre os diferentes papéis. Nesta dissertação, utilizamos a
+por uma ou mais pessoas. Os nomes e as atividades desenvolvidas por cada um
+pode variar, contudo, é possível determinar uma classificação que agregue
+pontos comuns entre os diferentes papéis. Nesta dissertação, utilizamos a
 classificação proposta por Polo e outros~\cite{Polo1999} cujo objetivo é
 definir uma estrutura da equipe de manutenção através da identificação de
-papéis responsáveis por tarefas. O conjunto de papéis é o resultado da
+papéis responsáveis por cada tarefa. O conjunto de papéis é o resultado da
 aplicação da metodologia MANTEMA~\cite{756695} em projetos de software
 bancários espanhóis em que o setor de manutenção foi terceirizado
 (\textit{outsourcing}). Os autores reforçam que apesar da classificação ter
-sido criada em um contexto específico, ela pode ser utilizada para aplicação em
+sido criada em um contexto específico, ela pode ser generalizada e utilizada em
 outras situações.
 
 Para esta dissertação removemos os papéis que segundo o nosso entendimento
-estão mais vinculados a um contexto de manutenção terceirizada. Além disso,
+estavam mais vinculados a um contexto de manutenção terceirizada. Além disso,
 dividimos o papel ``equipe de manutenção' (\textit{maintenance team}) em
 \textit{Desenvolvedor, Analista de Qualidade e Atribuidor } por percebermos que
 decompõem a equipe de forma adequada aos processos de manutenção existentes.
