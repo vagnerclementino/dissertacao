@@ -13,9 +13,9 @@
 
 Neste capítulo complementamos a contribuição do Capítulo 5 com a discussão de
 aspectos de implementação da Sugestão \#1\@-\@\textit{As FGRMs devem fornecer
-    realimentação (feedback) relacionado à qualidade do texto relatado} na
+    realimentação (feedback) relacionada à qualidade do texto relatado} na
 plataforma Github. A escolha da Sugestão \#1 e da plataforma Github envolve
-mais aspectos conveniência do que algum tipo de decisão formal.
+mais aspectos de conveniência do que algum tipo de decisão formal.
 
 \section{Qualidade do Relato de uma RM}\label{sec:avaliando_a_qualidade_do_relato_de_uma_rm}
 
@@ -32,8 +32,9 @@ A literatura discute que a baixa qualidade do relato prejudicam o andamento do
 projeto mais do que RMs duplicadas~\cite{bettenburg2007quality}. No estudo
 realizado por Zimmermann e outros~\cite{zimmermann2010makes} foi desenvolvido
 um levantamento com questionário entre desenvolvedores e usuários de três
-projetos de código aberto\footnote{Apache (\url{http://www.apache.org/}),
-    Eclipse (\url{https://www.eclipse.org}) e Mozilla
+projetos de código aberto\footnote{Apache
+    (\url{http://www.apache.org/})}\footnote{Eclipse
+    (\url{https://www.eclipse.org})}\footnote{Mozilla
     (\url{https://www.mozilla.org})}. O objetivo era coletar informação de modo
 a verificar o que produziria um bom relato. Os resultados demonstraram que, do
 ponto de vista dos desenvolvedores, são consideradas informações úteis para
@@ -47,7 +48,7 @@ estar no relato de uma RM\@:
         ocorreram antes do aparecimento da falha.
 \end{itemize}
 
-No estudo proposto por Zimmermann e outros~\cite{5070993} é discutida a
+No estudo proposto por Zimmermann e outros~\cite{zimmermann2009improving} é discutida a
 importância de que a informação descrita em uma RM seja relevante e completa a
 fim de que o problema relatado seja resolvido rapidamente. Contudo, na prática,
 a informação apenas chega ao desenvolvedor com a qualidade requerida após
@@ -59,7 +60,7 @@ identificar arquivos que precisam ser corrigidos para resolver o defeito.
 Conforme exposto, a utilização de uma extensão que suporte a melhoria da
 qualidade do relato pode resultar nas seguintes vantagens: redução no tempo
 necessário para análise do que foi solicitado na RM\@; facilidade na
-identificação de RMs duplicadas; melhor disciplina dos Reportadores sobre a boa
+identificação de RMs duplicadas; melhor disciplina dos reportadores sobre a boa
 prática de fornecer um relato com maior qualidade. Estas vantagens têm impacto
 no custo e qualidade do software produzido.
 
@@ -71,7 +72,8 @@ Github\footnote{\url{https://guides.github.com/features/issues/}}. De uma
 maneira geral, a extensão proposta realiza a análise do relato contido em uma
 RM e com base nele gera uma realimentação contendo ``dicas'' com ações que
 podem melhorar a qualidade da informação prestada. Nas próximas seções
-apresentamos com mais detalhe o desenho e o funcionamento da extensão proposta.
+apresentamos com mais detalhes o desenho e o funcionamento da extensão
+proposta.
 
 \subsection{Desenho da Extensão}\label{sub:desenho_da_extensao}
 
@@ -190,7 +192,7 @@ cada atributo é avaliado.
 
 Verifica se o reportador incluiu uma lista, na forma de itens, descrevendo as
 etapas executadas até a ocorrência da falha. Para detectar este padrão a
-extensão aproveita da linguagem Markdown, que é o padrão utilizado para redigir
+extensão aproveita a linguagem Markdown, que é o padrão utilizado para redigir
 o relato da \textit{RM}, e que possui uma sintaxe pré-definida para listas. O
 padrão é detectado através da utilização de expressões regulares. Pode ocorrer
 que o Reportador utilize outro formato para relatar as etapas executadas até a
@@ -243,7 +245,7 @@ seguida, categorizamos as palavras nos seguintes grupos:
 
 \begin{itemize}
 
-    \item itens de ação (do, work,open)
+    \item itens de ação (do, work, open)
     \item relacionado com compilação (build, task)
     \item relacionado com documentação (support, help, content)
     \item comportamento esperado ou observável (fail, error, crash)
@@ -301,14 +303,14 @@ dados de \textit{RMs} de projetos código aberto hospedados no Github.
 
 \subsection{Seleção dos Projetos}\label{sub:implementacao_selecao_projetos}
 
-Para realizarmos a execução da extensão usamos, por motivos já explicados, uma
-amostra de conveniência composta de projetos hospedados na plataforma Github.
-Para isso utilizamos os mesmos critérios descritos na
-Seção~\ref{ssub:sug_melhoria_selecao_participantes}. As exceções foi que
-incluímos a restrição de que o projeto fosse desenvolvido em Java e avaliamos os
-dez primeiros projetos ordenados pelo critério ``most stars''. O condicionante
-da linguagem Java é por conta de algumas decisões tomadas durante o
-desenvolvimento da extensão que exigem a utilização da linguagem. Após
+Para realizarmos a avaliação a partir de execuções da extensão usamos, por
+motivos já explicados, uma amostra de conveniência composta de projetos
+hospedados na plataforma Github.  Para isso utilizamos os mesmos critérios
+descritos na Seção~\ref{ssub:sug_melhoria_selecao_participantes}. As exceções
+foi que incluímos a restrição de que o projeto fosse desenvolvido em Java e
+avaliamos os dez primeiros projetos ordenados pelo critério ``most stars''. O
+condicionante da linguagem Java é por conta de algumas decisões tomadas durante
+o desenvolvimento da extensão que exigem a utilização da linguagem. Após
 aplicação dos critérios descritos obtivemos os projetos apresentados na
 Tabela~\ref{tab:projetos_utilizados}.
 
@@ -440,23 +442,23 @@ positivos.
 As execuções que foram realizadas têm como foco avaliar a viabilidade da
 extensão proposta. Neste sentido, os resultado obtidos na
 Seção~\ref{sec:avaliando_a_extensao_proposta} devem ser avaliados sobre esta
-ótica. Tomando como base os testes executado, verificamos que, em média, o
-tempo que a extensão leva para analisar uma RM, não causa impacto
-no seu processo de solução. Contudo, seria importante replicar o mesmo testes
-de duração em um ambiente controlado de modo a remover qualquer tipo de
+ótica. Tomando como base os testes executados, verificamos que, em média, o
+tempo que a extensão leva para analisar uma RM, não causa impacto no seu
+processo de solução. Contudo, seria importante replicar o mesmo testes de
+duração em um ambiente controlado de modo a diminuir algum qualquer tipo de
 enviesamento.
 
 Com relação aos problemas mais frequentes, é possível que exista uma tendência
 dos usuário em não incluir anexos, mas de relatar o problema copiando, por
 exemplo, as mensagens contendo a cadeia de registros de ativação no próprio
-corpo da \textit{RM}.Não verificamos estudos que comprovem esta hipótese nem os
-nossos resultados permitem comprová-la. Por outro lado, um fator a destacar é
-que mais da metade das \textit{RMs} analisadas apresentaram um texto com baixa
-legibilidade. Esta situação já foi verificada em estudos
+corpo da \textit{RM}. Não verificamos estudos que comprovem esta hipótese nem
+os nossos resultados permitem comprová-la. Por outro lado, um fator a destacar
+é que mais da metade das \textit{RMs} analisadas apresentaram um texto com
+baixa legibilidade. Esta situação já foi verificada em estudos
 anteriores~\cite{ko2006linguistic, bettenburg2007quality}. Esta métrica depende
 menos de uma análise de alguém vinculado ao projeto pelo fato de utilizar
 índices existentes e utilizados em diversas áreas para medir legibilidade.
-Neste sentido pode ser interessante ao projeto de software disciplinar os
+Neste sentido pode ser interessante ao projeto de software instruir os
 reportadores em fornecer sempre que possível um relato mais simples e direto.
 
 \section{Limitações e Ameaças à Validade}\label{sec:limitações_e_ameças_à_validade}
@@ -483,13 +485,9 @@ testes de legibilidade são bastante genéricos, contudo, certas adequações po
 ser necessárias para serem utilizados na análise do relato de uma RM\@.
 
 A principal limitação deste estudo está na extrapolação dos resultados. O ideal
-é que a execução da extensão fosse avaliada por um profissional vinculado aos
+é que a execução da extensão fosse avaliada por profissionais vinculados aos
 projetos utilizados. Esta análise poderia ajudar na detecção de falsos
 positivos, por exemplo.
-
-% Estendemos a importância deste tipo de suporte, mesmo que por inspeção de alguns
-% casos. Um trabalho futuro desta dissertação seria reaplicar a extensão em uma
-% configuração com suporte de um oráculo ligado ao projeto analisado.
 
 \section{Conclusão}\label{sec:implementacao_extensao_conclusao}
 
