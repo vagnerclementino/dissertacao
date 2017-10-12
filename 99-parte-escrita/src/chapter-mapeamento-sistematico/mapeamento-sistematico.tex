@@ -522,26 +522,26 @@ categoria, verificamos que modelos de RI vêm sendo utilizados para possibilitar
 a recomendação das RMs\@, tais como VSM~\cite{Wang2011bug} e o modelo
 estatístico PPM~\cite{malheiros2012source}.
 
-\subsection{Suporte à Papéis da Manutenção de Software}\label{sub:extensões_com_suporte_a_papeis}
+\subsection{Suporte aos Papéis desempenhados na Manutenção de Software}\label{sub:extensões_com_suporte_a_papeis}
 
 Nesta subseção são discutidos os estudos que foram considerados relacionados
 com papeis abordados na
 Subseção~\ref{subsec:man_visao_geral_papeis_na_manutencao_de_software}. A
 Tabela~\ref{tab:graf_papel_por_artigo} exibe o total de artigos pelo papel que
 a funcionalidade proposta visa dar suporte.  Como pode ser observado
-verificamos um maior número de estudos para os papéis de \textit{Atribuidor e
+verificamos um maior número de estudos para os papéis de \textit{Escalonador e
     Desenvolvedor}. Na Tabela~\ref{tab:taxonomia-suporte-papeis} é possível
-observar os estudos pelo papel o qual dão suporte. Durante a nossa
-classificação verificou-se que mesmo estudo poderia dar suporte a mais de um
-papel. Por exemplo, o estudo de Zimmermann e outros propõe uma ferramenta que
-mede a qualidade do relato das RMs e recomenda quais elementos devem ser
-adicionados para melhorar a qualidade~\cite{zimmermann2010makes}. Os possíveis
-benefícios podem ajudar o \textit{Reportador}, que pode ter reduzido o tempo
-para analisar a RM que ele registrou já que a RM fornece a informação
-necessária para sua análise; o \textit{Desenvolvedor}, que recebe uma RM com
-mais qualidade nos dados fornecidos; o \textit{Analista de Qualidade} que
-consegue avaliar se a RM foi atendida tendo em vista a maior facilidade em
-entender o que foi solicitado.
+observar os estudos pelo papel o qual consideramos que eles podem oferecer
+suporte. Durante a nossa classificação verificou-se que mesmo estudo poderia
+dar suporte a mais de um papel. Por exemplo, o estudo de Zimmermann e outros
+propõe uma ferramenta que mede a qualidade do relato das RMs e recomenda quais
+elementos devem ser adicionados para melhorar a
+qualidade~\cite{zimmermann2010makes}. Os possíveis benefícios podem ajudar o
+\textit{Reportador}, que pode ter reduzido o tempo para analisar a RM que ele
+registrou já que a RM fornece a informação necessária para sua análise; o
+\textit{Desenvolvedor}, que recebe uma RM com mais qualidade nos dados
+fornecidos; o \textit{Analista de Qualidade} que consegue avaliar se a RM foi
+atendida tendo em vista a maior facilidade em entender o que foi solicitado.
 
 \begin{table}[htpb]
 \centering
@@ -554,7 +554,7 @@ Escalonador & 27 \\
 Desenvolvedor & 26 \\
 Analista de Qualidade & 13 \\
 Gerente de Requisição de Mudança & 11 \\
-Agendador & 9 \\
+Atribuidor & 9 \\
 Reportador & 6 \\
 Líder da Manutenção & 4 \\
 Todos & 3 \\
@@ -568,22 +568,26 @@ Todos & 3 \\
 % Inclusão da tabela do suporte dos papéis
 \input{chapter-mapeamento-sistematico/tables/tb-taxonomia-papeis-suportados.tex}
 
+\paragraph{Escalonador}
+
+Esta função planeja a fila de RMs. Para dar suporte a essa atividade os estudos
+propõem classificação automatizada~\cite{gegick2010identifying,liu2014faceted,
+    behl2014bug, chawla2015automated,tian2015automated}; visualização das RMs
+armazenadas no repositórios de RMs~\cite{izquierdo2015gila}; agrupamento
+(clustering) das requisições~\cite{liu2014faceted}; identificação do tempo
+necessário para solucionar a RM (\textit{time to
+    fix})~\cite{hosseini2012market, Bhattacharya:2011:BTP:1985441.1985472};
+sumarização da informação contida na RM~\cite{mani2012ausum}; determinação de
+RMs duplicadas~\cite{Sun2011, Wu2011a}.
+
 \paragraph{Atribuidor}
 
 Esta função essencialmente deve atribuir as RMs aos desenvolvedores
 considerando o planejamento do Escalonador. Idealmente deve-se selecionar o
-desenvolvedor mais apto~\cite{banitaan2013decoba}.  Os estudos recuperados
-focam em apresentar soluções de atribuição automática~\cite{banitaan2013decoba,
+desenvolvedor mais apto~\cite{banitaan2013decoba}. Alguns trabalhos descrevem
+técnicas de atribuição automática~\cite{banitaan2013decoba,
     shokripour2012automatic, somasundaram2012automatic, Naguib2013, Zhang2014,
-    Zanetti2013}; classificação
-automatizada~\cite{gegick2010identifying,liu2014faceted, behl2014bug,
-    chawla2015automated,tian2015automated}; visualização das RMs armazenadas no
-repositórios de RMs~\cite{izquierdo2015gila}; agrupamento (clustering) das
-requisições~\cite{liu2014faceted}; identificação do tempo necessário para
-solucionar a RM (\textit{time to fix})~\cite{hosseini2012market,
-    Bhattacharya:2011:BTP:1985441.1985472}; sumarização da informação contida
-na RM~\cite{mani2012ausum}; determinação de RMs duplicadas~\cite{Sun2011,
-    Wu2011a}.
+    Zanetti2013}.
 
 \paragraph{Desenvolvedor:}
 
@@ -688,24 +692,16 @@ uma funcionalidade em determinada FGRM\@. Além disso, não colocamos como
 objetivo de nossa dissertação avaliar ou discutir a facilidade que as FGRMs
 possuem para criar novas funcionalidades ou melhorias.
 
-% Contudo, o nosso entendimento é de que um maior número de melhorias propostas
-% na literatura sendo utilizadas pelos profissionais envolvidos em manutenção
-% de software poderia melhorar a qualidade das soluções mediante a redução da
-% diferença entre o estado-da-prática com o estado-da-arte.
-
 Quando analisamos o esquema de Classificação por Papéis, verificamos uma
-prevalência de estudos com foco no papel de \textit{Atribuidor}. Existe
-possivelmente uma crença de que é possível melhorar a produtividade do processo
-de manutenção de software reduzindo o esforço de encontrar o desenvolvedor mais
-apto~\cite{banitaan2013decoba}. Os estudos que fazem parte desta classe
-destacam que um considerável conhecimento sobre o projeto é necessário bem como
-a capacidade de negociação com os desenvolvedores e demais partes interessadas
-são importantes para o desempenho do papel. Todavia, tendo em vista o esforço e
-tempo gasto por esta tarefa, especialmente quando realizada
-ma\-nu\-al\-men\-te, seria importante que as FGRMs automatizassem algumas
-destas atividades. Um outro ponto a destacar é que as FGRMs deveriam dar
-suporte ao Reportador que, na maioria da vezes, é o primeiro a registrar as
-informações que serão necessárias à solução da RM\@.
+prevalência de estudos com foco no papel de \textit{Escalonador}. Os estudos
+que fazem parte desta classe destacam que um considerável conhecimento sobre o
+projeto é necessário bem como a capacidade de negociação com os desenvolvedores
+e demais partes interessadas são importantes para o desempenho do papel.
+Todavia, tendo em vista o esforço e tempo gasto por esta tarefa, especialmente
+quando realizada ma\-nu\-al\-men\-te, seria importante que as FGRMs
+automatizassem algumas destas atividades. Um outro ponto a destacar é que as
+FGRMs deveriam dar suporte ao Reportador que, na maioria da vezes, é o primeiro
+a registrar as informações que serão necessárias à solução da RM\@.
 
 \section{Limitações e Ameaças à Validade}\label{sec:map_limitacoes_ameacas}
 
@@ -730,10 +726,6 @@ O fato que o autor foi o único responsável pela análise dos estudos aumenta o
 risco de erros. O processo de seleção e validação dos estudos primários pode
 levar a problemas de extração e agregação das informações quando há um grande
 número de artigos ou os dados são complexos~\cite{keele2007guidelines}.
-
-% No entanto, neste estudo secundário, houve poucos estudos primários e os dados
-% recuperados eram razoavelmente objetivos. Desta forma, não acreditamos em
-% muitos erros.
 
 No tocante às questões deste estudo é possível que as perguntas de pesquisa
 definidas possam não abranger completamente o campo de investigação sobre as
@@ -803,9 +795,9 @@ funcionalidades das FGRMs.
 Neste capítulo realizamos um mapeamento sistemático envolvendo 64 estudos
 divididos em dois esquemas de classificação: dimensões de melhoria e suporte ao
 papel exercido na manutenção de software. Verificamos que tópicos como
-Localização de RMs Duplicadas, Atribuição de RMs e Classificação de
-RMs estão sendo tratados com maior frequência na literatura. Da mesma forma, o
-\textit{Atribuidor e Desenvolvedor} tiveram um maior número de artigos com
+Localização de RMs Duplicadas, Atribuição de RMs e Classificação de RMs estão
+sendo tratados com maior frequência na literatura. Da mesma forma, o
+\textit{Escalonador e Desenvolvedor} tiveram um maior número de artigos com
 funcionalidades que podem dar-lhes suporte. Verificamos ainda que é reduzido o
 número de estudos que efetivaram as melhorias propostas em protótipos de
 ferramentas. Esta última constatação pode causar um distanciamento entre o
